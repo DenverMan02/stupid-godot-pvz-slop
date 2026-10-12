@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import os
 import subprocess
 from datetime import datetime
 
@@ -13,9 +14,13 @@ def run_cmd(cmd):
     return True
 
 def pull():
-    """Pull latest changes from the current branch."""
+    """Pull latest changes from the current branch and fetch LFS files."""
     print("--- Pulling latest changes ---")
-    return run_cmd(["git", "pull"])
+    if not run_cmd(["git", "pull"]):
+        return False
+    # Ensures large binary files are fetched if any were updated
+    run_cmd(["git", "lfs", "pull"])
+    return True
 
 def push(message=None):
     """Stage all files, commit, and push."""
@@ -65,6 +70,8 @@ def interactive_menu():
             print("[!] Invalid option. Try again.")
 
 def main():
+    script_name = os.path.basename(sys.argv[0])
+
     if len(sys.argv) == 1:
         interactive_menu()
     else:
@@ -78,10 +85,10 @@ def main():
             status()
         else:
             print("Usage:")
-            print("  python3 git_sync.py              (Interactive menu)")
-            print("  python3 git_sync.py pull         (Pull updates)")
-            print("  python3 git_sync.py push [msg]   (Stage, commit with optional message, and push)")
-            print("  python3 git_sync.py status       (Quick status check)")
+            print(f"  python3 {script_name}              (Interactive menu)")
+            print(f"  python3 {script_name} pull         (Pull updates)")
+            print(f"  python3 {script_name} push [msg]   (Stage, commit with optional message, and push)")
+            print(f"  python3 {script_name} status       (Quick status check)")
 
 if __name__ == "__main__":
     main()

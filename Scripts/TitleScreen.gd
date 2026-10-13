@@ -32,3 +32,4 @@ func _on_start() -> void:
 		AudioManager.play_sfx(click_sfx)
 
 	print("[TitleScreen] Clicked! Starting game...")
+	get_tree().change_scene_to_file("res://Scenes/Lawn.tscn")

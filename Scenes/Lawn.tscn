@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c8n4mdlawn001"]
+
+[ext_resource type="Script" path="res://Scripts/Lawn.gd" id="1_lawn"]
+[ext_resource type="Script" path="res://Scripts/LawnBackground.gd" id="2_bg_script"]
+[ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/texture_left.png" id="3_bg_left"]
+[ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/texture.png" id="4_bg_mid"]
+[ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/texture_right.png" id="5_bg_right"]
+[ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/Row 05.png" id="6_sod_row"]
+[ext_resource type="Script" path="res://Scripts/LawnGrid.gd" id="7_grid"]
+
+[node name="Lawn" type="Node2D"]
+script = ExtResource("1_lawn")
+
+[node name="Background" type="Node2D" parent="."]
+script = ExtResource("2_bg_script")
+
+[node name="TextureLeft" type="Sprite2D" parent="Background"]
+texture = ExtResource("3_bg_left")
+centered = false
+
+[node name="TextureMiddle" type="Sprite2D" parent="Background"]
+position = Vector2(556, 0)
+texture = ExtResource("4_bg_mid")
+centered = false
+
+[node name="TextureRight" type="Sprite2D" parent="Background"]
+position = Vector2(2604, 0)
+texture = ExtResource("5_bg_right")
+centered = false
+
+[node name="SodRow" type="Sprite2D" parent="Background"]
+position = Vector2(1017, 395)
+texture = ExtResource("6_sod_row")
+centered = false
+
+[node name="Grid" type="Node2D" parent="."]
+script = ExtResource("7_grid")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1194, 540)

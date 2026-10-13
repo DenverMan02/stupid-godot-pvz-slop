@@ -1,6 +1,6 @@
 extends Control
 
-@onready var prompt_label: Label = 
+@onready var prompt_label: Label
 var starting: bool = false
 
 func _ready() -> void:

@@ -53,18 +53,21 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "LingFugu",
 		"anim_json": "res://Assets/Plants/lingfugu.anim.json",
 		"tex_dir": "res://Assets/Plants/lingfugu.xfl/library/",
+		"scale": 2.0,
 	},
 	{
 		"id": "clivia",
 		"name": "Clivia",
 		"anim_json": "res://Assets/Plants/clivia.anim.json",
 		"tex_dir": "res://Assets/Plants/clivia.xfl/LIBRARY/",
+		"scale": 2.0,
 	},
 	{
 		"id": "garlic",
 		"name": "Garlic",
 		"anim_json": "res://Assets/Plants/garlic.anim.json",
 		"tex_dir": "res://Assets/Plants/garlic.xfl/LIBRARY/",
+		"scale": 2.0,
 	},
 ]
 
@@ -156,6 +159,10 @@ func spawn_plant_at(col: int, row: int, plant_idx: int) -> void:
 	plant_node.set("display_name", info["name"])
 	plant_node.set("anim_data_path", info["anim_json"])
 	plant_node.set("textures_base_dir", info["tex_dir"])
+
+	var v_scale: float = float(info.get("scale", 1.0))
+	plant_node.set("visual_scale", v_scale)
+	plant_node.scale = Vector2(v_scale, v_scale)
 
 	var spr = plant_node.get_node_or_null("XFLSprite2D")
 	if spr:

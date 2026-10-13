@@ -67,10 +67,15 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             texture_list.append(path)
         return texture_map[path]
 
+    COSTUME_KEYWORDS = ['_custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff']
+
     def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False):
-        if sym_name == 'sprite/_custom':
+        lower_name = sym_name.lower()
+        if any(k in lower_name for k in COSTUME_KEYWORDS):
             return
-        if anim_name != 'plantfood' and 'gatlingpea_' in sym_name:
+        if 'gatlingpea_helmet_screw' in lower_name:
+            return
+        if anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name):
             return
 
         dom = get_sym(sym_name)
@@ -93,6 +98,16 @@ def compile_plant_from_dir(plant_dir, output_path=None):
         eval_f = frame_idx if is_root else (frame_idx % tl_dur)
 
         for layer in reversed(layers):
+            if layer.attrib.get('layerType') in ['guide', 'mask']:
+                continue
+            if layer.attrib.get('visible') == 'false':
+                continue
+            lname = layer.attrib.get('name', '').lower()
+            if any(k in lname for k in ['_custom', 'costume', 'guide']):
+                continue
+            if anim_name != 'plantfood' and 'armor' in lname:
+                continue
+
             active_frame = None
             for f in layer.findall('.//xfl:DOMFrame', ns):
                 idx = int(f.attrib.get('index', 0))
@@ -107,9 +122,18 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             if elements is None:
                 continue
             for el in elements:
+                # Filter invisible elements with alphaMultiplier = 0
+                col_el = el.find('.//xfl:Color', ns)
+                if col_el is not None:
+                    alpha = float(col_el.attrib.get('alphaMultiplier', '1.0'))
+                    if alpha <= 0.05:
+                        continue
+
                 tag = el.tag.split('}')[-1]
                 if tag == 'DOMBitmapInstance':
                     img_name = el.attrib.get('libraryItemName')
+                    if '8x8' in img_name and 'peashooter' in img_name:
+                        continue
                     t_id = get_tex_id(img_name)
                     local_m = parse_matrix_elem(el)
                     final_m = mult_matrix(parent_mat, local_m)

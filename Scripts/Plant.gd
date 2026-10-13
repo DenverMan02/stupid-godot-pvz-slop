@@ -9,12 +9,12 @@ class_name Plant
 @export var col: int = 1
 @export var anim_data_path: String = "res://Assets/Plants/peashooter.anim.json"
 @export var textures_base_dir: String = "res://Assets/Plants/peashooter.xfl/library/"
+@export var visual_scale: float = 1.0
 
 ## Custom idle mappings for plants with oddly named idle animations
 ## Format: { "plant_id": ["intro", "loop"], ... }
 const IDLE_MAP: Dictionary = {
-	# Add any non-standard plant idle mappings here
-	# e.g. "lingfugu": ["idle"],
+	"wallnut": ["idle"],
 }
 
 var idle_animations: Array[String] = []
@@ -22,6 +22,7 @@ var current_idle_index: int = 0
 var is_performing_action: bool = false
 
 func _ready() -> void:
+	scale = Vector2(visual_scale, visual_scale)
 	if sprite:
 		# If path was configured via export or script, configure sprite
 		if not anim_data_path.is_empty():
@@ -36,11 +37,13 @@ func _ready() -> void:
 		_setup_idle_animations()
 		_play_current_idle()
 
-func configure_plant(type_id: String, disp_name: String, anim_json: String, tex_dir: String) -> void:
+func configure_plant(type_id: String, disp_name: String, anim_json: String, tex_dir: String, v_scale: float = 1.0) -> void:
 	plant_type = type_id
 	display_name = disp_name
 	anim_data_path = anim_json
 	textures_base_dir = tex_dir
+	visual_scale = v_scale
+	scale = Vector2(v_scale, v_scale)
 	if sprite:
 		sprite.set_animation_source(anim_json, tex_dir)
 		_setup_idle_animations()

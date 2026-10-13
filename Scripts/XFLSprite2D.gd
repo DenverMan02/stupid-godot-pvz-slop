@@ -133,14 +133,18 @@ func _process(delta: float) -> void:
 		var next_frame = current_frame + 1
 
 		if next_frame >= total_frames:
-			anim_finished.emit(current_animation)
 			if loop:
-				next_frame = 0
-			else:
-				next_frame = total_frames - 1
-				is_playing = false
-				_check_frame_events(next_frame)
+				current_frame = 0
+				_check_frame_events(0)
 				frame_changed = true
+				anim_finished.emit(current_animation)
+			else:
+				current_frame = total_frames - 1
+				is_playing = false
+				_check_frame_events(current_frame)
+				frame_changed = true
+				var finished_anim = current_animation
+				anim_finished.emit(finished_anim)
 				break
 
 		current_frame = next_frame

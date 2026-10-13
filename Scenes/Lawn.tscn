@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/texture_right.png" id="5_bg_right"]
 [ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/Row 05.png" id="6_sod_row"]
 [ext_resource type="Script" path="res://Scripts/LawnGrid.gd" id="7_grid"]
+[ext_resource type="PackedScene" path="res://Scenes/Peashooter.tscn" id="8_peashooter"]
 
 [node name="Lawn" type="Node2D"]
 script = ExtResource("1_lawn")
@@ -35,6 +36,10 @@ centered = false
 
 [node name="Grid" type="Node2D" parent="."]
 script = ExtResource("7_grid")
+
+[node name="Peashooter" parent="." instance=ExtResource("8_peashooter")]
+z_index = 22
+position = Vector2(924, 641)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1194, 540)

@@ -1,10 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c83k5nfl0v7s1"]
+[gd_scene format=3 uid="uid://c83k5nfl0v7s1"]
 
-[ext_resource type="Script" path="res://Scripts/TitleScreen.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://c2i1jnbn4ldfk" path="res://Scripts/TitleScreen.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://3406huga57w7" path="res://Logo/background.png" id="2_bg"]
-[ext_resource type="Texture2D" uid="uid://ty4mqf3f2fwk" path="res://Logo/o7ncalr39hn0h41fqo7qfcnb0a-72b0c86f3ec2569bae7d1fb10efd4748.png" id="3_logo"]
 
-[node name="TitleScreen" type="Control"]
+[node name="TitleScreen" type="Control" unique_id=1551218951]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_script")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." unique_id=1601206463]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,23 +23,7 @@ texture = ExtResource("2_bg")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Logo" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -236.0
-offset_top = -260.0
-offset_right = 236.0
-offset_bottom = 110.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("3_logo")
-stretch_mode = 3
-
-[node name="PromptLabel" type="Label" parent="."]
+[node name="PromptLabel" type="Label" parent="." unique_id=1043244040]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

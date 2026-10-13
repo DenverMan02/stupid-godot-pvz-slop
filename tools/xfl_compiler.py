@@ -33,6 +33,12 @@ def parse_matrix_elem(elem):
 def compile_plant_from_dir(plant_dir, output_path=None):
     dom_path = os.path.join(plant_dir, 'DOMDocument.xml')
     if not os.path.exists(dom_path):
+        for root, dirs, files in os.walk(plant_dir):
+            if 'DOMDocument.xml' in files:
+                dom_path = os.path.join(root, 'DOMDocument.xml')
+                plant_dir = root
+                break
+    if not os.path.exists(dom_path):
         print(f"Error: DOMDocument.xml not found at {dom_path}")
         return None
 
@@ -50,12 +56,13 @@ def compile_plant_from_dir(plant_dir, output_path=None):
         if sym_name in parsed_symbols:
             return parsed_symbols[sym_name]
         for lib in ['library', 'LIBRARY']:
-            path = os.path.join(plant_dir, lib, f"{sym_name}.xml")
-            if os.path.exists(path):
-                s_tree = ET.parse(path)
-                s_root = s_tree.getroot()
-                parsed_symbols[sym_name] = s_root
-                return s_root
+            for cand in [sym_name, sym_name.split('/')[-1] if '/' in sym_name else sym_name]:
+                path = os.path.join(plant_dir, lib, f"{cand}.xml")
+                if os.path.exists(path):
+                    s_tree = ET.parse(path)
+                    s_root = s_tree.getroot()
+                    parsed_symbols[sym_name] = s_root
+                    return s_root
         return None
 
     texture_map = {}
@@ -67,7 +74,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             texture_list.append(path)
         return texture_map[path]
 
-    COSTUME_KEYWORDS = ['_custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff']
+    COSTUME_KEYWORDS = ['_custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff', 'monocle', 'tophat']
 
     def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False):
         lower_name = sym_name.lower()
@@ -75,7 +82,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             return
         if 'gatlingpea_helmet_screw' in lower_name:
             return
-        if anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name):
+        if anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name or 'helmet' in lower_name):
             return
 
         dom = get_sym(sym_name)
@@ -131,8 +138,12 @@ def compile_plant_from_dir(plant_dir, output_path=None):
 
                 tag = el.tag.split('}')[-1]
                 if tag == 'DOMBitmapInstance':
-                    img_name = el.attrib.get('libraryItemName')
+                    img_name = el.attrib.get('libraryItemName', '')
                     if '8x8' in img_name and 'peashooter' in img_name:
+                        continue
+                    if anim_name != 'plantfood' and any(arm in img_name for arm in ['120x139', '120x100', '110x51']):
+                        continue
+                    if any(c in img_name for c in ['107x107', '49x35', '85x36', '70x72']):
                         continue
                     t_id = get_tex_id(img_name)
                     local_m = parse_matrix_elem(el)
@@ -171,20 +182,31 @@ def compile_plant_from_dir(plant_dir, output_path=None):
 
     instance_symbols = {}
     for layer in tl.findall('.//xfl:DOMLayer', ns):
-        lname = layer.attrib.get('name')
-        if lname in ['instance', 'instances']:
-            for f in layer.findall('.//xfl:DOMFrame', ns):
-                idx = int(f.attrib.get('index', 0))
-                for el in f.findall('.//xfl:DOMSymbolInstance', ns):
-                    sym = el.attrib.get('libraryItemName')
-                    if sym:
-                        instance_symbols[idx] = sym
+        lname = (layer.attrib.get('name') or '').lower()
+        if lname in ['label', 'labels', 'action', 'actions', 'guide']:
+            continue
+        for f in layer.findall('.//xfl:DOMFrame', ns):
+            idx = int(f.attrib.get('index', 0))
+            dur = int(f.attrib.get('duration', 1))
+            for el in f.findall('.//xfl:DOMSymbolInstance', ns):
+                sym = el.attrib.get('libraryItemName')
+                if sym:
+                    for f_i in range(idx, idx + dur):
+                        if f_i not in instance_symbols:
+                            instance_symbols[f_i] = sym
 
     compiled_anims = {}
     for anim_name, info in anim_defs.items():
         start = info['start']
         dur = info['duration']
-        sym_name = instance_symbols.get(start, f'label/{anim_name}')
+        sym_name = instance_symbols.get(start)
+        if not sym_name:
+            for cand in [f'label/{anim_name}', anim_name, 'Symbol 1', 'Symbol1']:
+                if get_sym(cand) is not None:
+                    sym_name = cand
+                    break
+        if not sym_name:
+            sym_name = f'label/{anim_name}'
 
         frames_data = []
         events_data = {}
@@ -225,5 +247,17 @@ def compile_plant_from_dir(plant_dir, output_path=None):
 
 if __name__ == '__main__':
     target = sys.argv[1] if len(sys.argv) > 1 else 'peashooter'
-    p_dir = f"Assets/Plants/{target}.xfl" if not target.endswith('.xfl') else target
-    compile_plant_from_dir(p_dir)
+    if target.lower() in ['all', '--all', '-a']:
+        plants_dir = 'Assets/Plants'
+        if os.path.exists(plants_dir):
+            for item in sorted(os.listdir(plants_dir)):
+                full = os.path.join(plants_dir, item)
+                if os.path.isdir(full) and item.endswith('.xfl'):
+                    print(f"\n--- Compiling {item} ---")
+                    try:
+                        compile_plant_from_dir(full)
+                    except Exception as e:
+                        print(f"Error compiling {item}: {e}")
+    else:
+        p_dir = f"Assets/Plants/{target}.xfl" if not target.endswith('.xfl') else target
+        compile_plant_from_dir(p_dir)

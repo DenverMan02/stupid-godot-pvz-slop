@@ -32,6 +32,9 @@ def pull(force=False):
         if not run_cmd(["git", "reset", "--hard", f"origin/{branch}"]):
             return False
         run_cmd(["git", "lfs", "pull"])
+        if os.path.exists("tools/xfl_compiler.py"):
+            print("--- Compiling/Updating plant animation assets ---")
+            subprocess.run([sys.executable, "tools/xfl_compiler.py", "all"])
         print("[✓] Successfully force-synced with remote!")
         return True
 
@@ -46,6 +49,9 @@ def pull(force=False):
 
     # Ensures large binary files are fetched if any were updated
     run_cmd(["git", "lfs", "pull"])
+    if os.path.exists("tools/xfl_compiler.py"):
+        print("--- Compiling/Updating plant animation assets ---")
+        subprocess.run([sys.executable, "tools/xfl_compiler.py", "all"])
     return True
 
 def push(message=None):

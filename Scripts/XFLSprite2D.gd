@@ -138,6 +138,7 @@ func _process(delta: float) -> void:
 				_check_frame_events(0)
 				frame_changed = true
 				anim_finished.emit(current_animation)
+				continue
 			else:
 				current_frame = total_frames - 1
 				is_playing = false
@@ -146,10 +147,10 @@ func _process(delta: float) -> void:
 				var finished_anim = current_animation
 				anim_finished.emit(finished_anim)
 				break
-
-		current_frame = next_frame
-		_check_frame_events(current_frame)
-		frame_changed = true
+		else:
+			current_frame = next_frame
+			_check_frame_events(current_frame)
+			frame_changed = true
 
 	if frame_changed:
 		queue_redraw()

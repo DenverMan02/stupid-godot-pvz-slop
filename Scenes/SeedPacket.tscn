@@ -15,6 +15,7 @@ mouse_filter = 0
 script = ExtResource("1_packet")
 
 [node name="CardTexture" type="TextureRect" parent="."]
+clip_children = 2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,7 +27,7 @@ texture = ExtResource("2_card_tex")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="CooldownProgress" type="TextureProgressBar" parent="."]
+[node name="CooldownProgress" type="TextureProgressBar" parent="CardTexture"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -46,6 +47,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2

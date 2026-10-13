@@ -5,6 +5,7 @@ extends Node2D
 @onready var background: Node2D = $Background
 @onready var plants_container: Node2D = $Plants
 @onready var suns_container: Node2D = $Suns
+@onready var zombies_container: Node2D = $Zombies
 @onready var seed_bank: SeedBank = $HUD/SeedBank
 @onready var peashooter_count_label: Label = $HUD/MarginContainer/VBoxContainer/CountLabel
 @onready var debug_status_label: Label = $HUD/MarginContainer/VBoxContainer/DebugLabel
@@ -19,6 +20,7 @@ var battle_music: AudioStream = preload("res://Audio/BGM/Worlds/Modern Day/moder
 var plant_scene: PackedScene = preload("res://Scenes/Plant.tscn")
 var peashooter_scene: PackedScene = preload("res://Scenes/Peashooter.tscn")
 var sun_scene: PackedScene = preload("res://Scenes/Sun.tscn")
+var zombie_scene: PackedScene = preload("res://Scenes/Zombie.tscn")
 
 const PLANT_REGISTRY: Array[Dictionary] = [
 	{
@@ -26,30 +28,35 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "Peashooter",
 		"anim_json": "res://Assets/Plants/peashooter.anim.json",
 		"tex_dir": "res://Assets/Plants/peashooter.xfl/library/",
+		"health": 300.0,
 	},
 	{
 		"id": "sunflower",
 		"name": "Sunflower",
 		"anim_json": "res://Assets/Plants/sunflower.anim.json",
 		"tex_dir": "res://Assets/Plants/sunflower.xfl/library/",
+		"health": 300.0,
 	},
 	{
 		"id": "wallnut",
 		"name": "Wall-nut",
 		"anim_json": "res://Assets/Plants/wallnut.anim.json",
 		"tex_dir": "res://Assets/Plants/wallnut.xfl/library/",
+		"health": 4000.0,
 	},
 	{
 		"id": "potatomine",
 		"name": "Potato Mine",
 		"anim_json": "res://Assets/Plants/potatomine.anim.json",
 		"tex_dir": "res://Assets/Plants/potatomine.xfl/library/",
+		"health": 300.0,
 	},
 	{
 		"id": "cabbagepult",
 		"name": "Cabbage-pult",
 		"anim_json": "res://Assets/Plants/cabbagepult.anim.json",
 		"tex_dir": "res://Assets/Plants/cabbagepult.xfl/library/",
+		"health": 300.0,
 	},
 	{
 		"id": "lingfugu",
@@ -58,6 +65,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"tex_dir": "res://Assets/Plants/lingfugu.xfl/library/",
 		"scale": 1.0,
 		"offset": Vector2.ZERO,
+		"health": 300.0,
 	},
 	{
 		"id": "clivia",
@@ -66,6 +74,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"tex_dir": "res://Assets/Plants/clivia.xfl/LIBRARY/",
 		"scale": 1.8,
 		"offset": Vector2(-25.0, 0.0),
+		"health": 300.0,
 	},
 	{
 		"id": "garlic",
@@ -74,24 +83,33 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"tex_dir": "res://Assets/Plants/garlic.xfl/LIBRARY/",
 		"scale": 1.8,
 		"offset": Vector2(-15.0, 45.0),
+		"health": 600.0,
 	},
 ]
 
+var level_started: bool = false
 var debug_mode: bool = false
 var plant_count: int = 0
 var selected_plant_index: int = 0
 var sun_amount: int = 50
 var sky_sun_timer: float = 6.0
+var zombie_spawn_timer: float = 16.0
 
 func _ready() -> void:
 	camera.position = Vector2(CAM_ZOMBIE_X, CAM_Y)
 
-	# Initial plant count from pre-placed plants
+	# Initial plant count and PvZ2 depth sorting for pre-placed plants
 	plant_count = plants_container.get_child_count()
+	for p in plants_container.get_children():
+		var r = p.get("row") if p.get("row") != null else 2
+		var c = p.get("col") if p.get("col") != null else 1
+		p.z_index = grid.get_depth_z_index(r, c)
+
 	_update_hud()
 
 	if seed_bank:
 		seed_bank.update_sun_display(sun_amount)
+		seed_bank.set_active(false)
 
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_music(cys_music)
@@ -105,15 +123,27 @@ func _start_camera_pan() -> void:
 
 func _on_pan_finished() -> void:
 	print("[Lawn] Camera pan finished! Ready... Set... Plant!")
+	level_started = true
+	if seed_bank:
+		seed_bank.set_active(true)
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_music(battle_music)
 
 func _process(delta: float) -> void:
+	if not level_started:
+		return
+
 	# Periodic sky sun falling
 	sky_sun_timer -= delta
 	if sky_sun_timer <= 0.0:
 		sky_sun_timer = randf_range(8.5, 11.5)
 		_spawn_sky_sun()
+
+	# Periodic zombie waves
+	zombie_spawn_timer -= delta
+	if zombie_spawn_timer <= 0.0:
+		zombie_spawn_timer = randf_range(14.0, 20.0)
+		spawn_zombie()
 
 func _spawn_sky_sun() -> void:
 	if not sun_scene:
@@ -133,6 +163,24 @@ func _spawn_sky_sun() -> void:
 	sun_inst.collected.connect(func(val):
 		add_sun(val)
 	)
+
+func spawn_zombie(row_idx: int = -1, start_x: float = 1950.0) -> void:
+	if not zombie_scene:
+		return
+	if row_idx < 0 or row_idx >= grid.rows:
+		row_idx = randi_range(0, grid.rows - 1)
+
+	var spawn_y = grid.cell_to_world(0, row_idx).y
+	var z_inst: Zombie = zombie_scene.instantiate()
+	z_inst.row = row_idx
+	z_inst.position = Vector2(start_x, spawn_y)
+	z_inst.z_index = grid.get_depth_z_index(row_idx, grid.columns - 1) + 3
+
+	if zombies_container:
+		zombies_container.add_child(z_inst)
+	else:
+		add_child(z_inst)
+	print("[Lawn] Spawned zombie on row %d at x=%.1f" % [row_idx, start_x])
 
 func add_sun(val: int) -> void:
 	sun_amount += val
@@ -168,6 +216,14 @@ func _unhandled_input(event: InputEvent) -> void:
 			grid.queue_redraw()
 			_update_hud()
 			print("[Lawn] Debug mode is now: %s" % ("ON" if debug_mode else "OFF"))
+
+		# Z key to spawn a zombie
+		elif event.keycode == KEY_Z:
+			var mouse_pos = get_global_mouse_position()
+			var cell = grid.world_to_cell(mouse_pos)
+			var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
+			var spawn_x = mouse_pos.x if debug_mode else 1950.0
+			spawn_zombie(target_row, spawn_x)
 
 		# Number keys 1-8 to select active plant to spawn (debug feature)
 		elif event.keycode in [KEY_1, KEY_KP_1]:
@@ -232,13 +288,18 @@ func spawn_plant_at(col: int, row: int, plant_idx: int) -> void:
 		plant_node = plant_scene.instantiate()
 
 	plant_node.position = plant_pos
-	plant_node.z_index = grid.get_row_z_index(row) + (plant_count % 10)
+	# PvZ2 Depth Ordering: lower row = higher priority, more right col = higher priority
+	plant_node.z_index = grid.get_depth_z_index(row, col)
 	plant_node.set("row", row)
 	plant_node.set("col", col)
 	plant_node.set("plant_type", info["id"])
 	plant_node.set("display_name", info["name"])
 	plant_node.set("anim_data_path", info["anim_json"])
 	plant_node.set("textures_base_dir", info["tex_dir"])
+
+	var p_health: float = float(info.get("health", 300.0))
+	plant_node.set("max_health", p_health)
+	plant_node.set("health", p_health)
 
 	var v_scale: float = float(info.get("scale", 1.0))
 	var v_offset: Vector2 = info.get("offset", Vector2.ZERO)
@@ -268,7 +329,7 @@ func _update_hud() -> void:
 		peashooter_count_label.text = "PLANTS: %d | [%d] %s" % [plant_count, selected_plant_index + 1, selected_name]
 	if debug_status_label:
 		if debug_mode:
-			debug_status_label.text = "[DEBUG ON] 1-8: Select | R-Click: Spawn | L-Click: Atk | M-Click: PlantFood"
+			debug_status_label.text = "[DEBUG ON] 1-8: Select | R-Click: Spawn | Z: Zombie | L-Click: Atk | M-Click: PlantFood"
 			debug_status_label.modulate = Color(0.4, 1.0, 0.4, 1.0)
 		else:
 			debug_status_label.text = "Press 'G' for Debug Mode"

@@ -10,9 +10,11 @@ signal packet_clicked(packet: SeedPacket)
 
 var cooldown_remaining: float = 0.0
 var is_selected: bool = false
+var is_active: bool = false
+var cached_sun: int = 50
 
 @onready var card_texture: TextureRect = $CardTexture
-@onready var cooldown_progress: TextureProgressBar = $CooldownProgress
+@onready var cooldown_progress: TextureProgressBar = $CardTexture/CooldownProgress
 @onready var select_highlight: TextureRect = $SelectHighlight
 
 func _ready() -> void:
@@ -31,19 +33,31 @@ func _ready() -> void:
 		cooldown_progress.max_value = 100.0
 		cooldown_progress.value = 0.0
 
+func set_active(active: bool) -> void:
+	is_active = active
+	update_availability(cached_sun)
+
 func _process(delta: float) -> void:
+	if not is_active:
+		return
+
 	if cooldown_remaining > 0.0:
 		cooldown_remaining = max(0.0, cooldown_remaining - delta)
 		if cooldown_progress:
 			cooldown_progress.visible = true
 			cooldown_progress.value = (cooldown_remaining / cooldown_duration) * 100.0
-	else:
-		if cooldown_progress and cooldown_progress.visible:
-			cooldown_progress.visible = false
-			cooldown_progress.value = 0.0
+		if cooldown_remaining <= 0.0:
+			if cooldown_progress:
+				cooldown_progress.visible = false
+				cooldown_progress.value = 0.0
+			# Instantly refresh brightness/greyness upon recharge completion
+			update_availability(cached_sun)
 
 func update_availability(current_sun: int) -> void:
-	if cooldown_remaining > 0.0:
+	cached_sun = current_sun
+	if not is_active:
+		card_texture.modulate = Color(0.48, 0.48, 0.48, 0.9)
+	elif cooldown_remaining > 0.0:
 		card_texture.modulate = Color(0.65, 0.65, 0.65, 1.0)
 	elif current_sun < sun_cost:
 		card_texture.modulate = Color(0.48, 0.48, 0.48, 0.9)
@@ -51,13 +65,14 @@ func update_availability(current_sun: int) -> void:
 		card_texture.modulate = Color(1.0, 1.0, 1.0, 1.0)
 
 func is_ready(current_sun: int) -> bool:
-	return cooldown_remaining <= 0.0 and current_sun >= sun_cost
+	return is_active and cooldown_remaining <= 0.0 and current_sun >= sun_cost
 
 func start_cooldown() -> void:
 	cooldown_remaining = cooldown_duration
 	if cooldown_progress:
 		cooldown_progress.visible = true
 		cooldown_progress.value = 100.0
+	update_availability(cached_sun)
 
 func set_selected(val: bool) -> void:
 	is_selected = val
@@ -65,5 +80,7 @@ func set_selected(val: bool) -> void:
 		select_highlight.visible = val
 
 func _gui_input(event: InputEvent) -> void:
+	if not is_active:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		packet_clicked.emit(self)

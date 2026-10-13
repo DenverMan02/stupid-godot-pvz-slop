@@ -12,16 +12,19 @@ var is_falling: bool = false
 var is_collected: bool = false
 var lifetime: float = 14.0
 
-@onready var sprite: Sprite2D = $Sprite2D
+@onready var sprite: XFLSprite2D = $XFLSprite2D
 
 func _ready() -> void:
 	input_pickable = true
 	input_event.connect(_on_input_event)
-	
+
+	if sprite:
+		sprite.play("animation", true)
+
 	# Gentle scale-in animation when spawned
 	scale = Vector2(0.2, 0.2)
 	var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-	tw.tween_property(self, "scale", Vector2(0.55, 0.55), 0.4)
+	tw.tween_property(self, "scale", Vector2(0.85, 0.85), 0.4)
 
 func spawn_from_sky(start_pos: Vector2, end_pos: Vector2) -> void:
 	global_position = start_pos
@@ -33,7 +36,7 @@ func spawn_from_sunflower(origin_pos: Vector2) -> void:
 	var angle = randf_range(-PI * 0.75, -PI * 0.25)
 	var dist = randf_range(50.0, 90.0)
 	var land_pos = origin_pos + Vector2(cos(angle) * dist, sin(angle) * dist + 40.0)
-	
+
 	var tw = create_tween().set_parallel(true).set_trans(Tween.TRANS_QUAD)
 	tw.tween_property(self, "global_position:x", land_pos.x, 0.6)
 	var y_tw = create_tween()
@@ -43,10 +46,6 @@ func spawn_from_sunflower(origin_pos: Vector2) -> void:
 func _process(delta: float) -> void:
 	if is_collected:
 		return
-
-	# Slow rotation
-	if sprite:
-		sprite.rotation += delta * 1.5
 
 	# Fall downwards towards landing target
 	if is_falling:

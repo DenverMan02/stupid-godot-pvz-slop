@@ -45,11 +45,20 @@ def compile_plant_from_dir(plant_dir, output_path=None):
     tree = ET.parse(dom_path)
     dom_root = tree.getroot()
 
+    item_name = os.path.basename(os.path.normpath(plant_dir)).replace('.xfl', '').lower()
+    is_zombie = 'zombie' in item_name
+    is_sun = item_name == 'sun'
+
     frame_rate = float(dom_root.attrib.get('frameRate', '30.0'))
     stage_w = float(dom_root.attrib.get('width', '390.0'))
     stage_h = float(dom_root.attrib.get('height', '390.0'))
-    pivot_x = stage_w / 2.0
-    pivot_y = 230.0
+
+    if is_sun:
+        pivot_x = 72.35
+        pivot_y = 79.7
+    else:
+        pivot_x = stage_w / 2.0
+        pivot_y = 230.0
 
     parsed_symbols = {}
     def get_sym(sym_name):
@@ -75,10 +84,13 @@ def compile_plant_from_dir(plant_dir, output_path=None):
         return texture_map[path]
 
     COSTUME_KEYWORDS = ['custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff', 'monocle', 'tophat']
+    ZOMBIE_HIDE_KEYWORDS = ['butter', 'ink', 'ground_swatch', 'brick', 'bucket', 'cone', 'zombie_arm_outer_upper_bone', '_particles']
 
     def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False):
         lower_name = sym_name.lower()
         if any(k in lower_name for k in COSTUME_KEYWORDS):
+            return
+        if is_zombie and any(k in lower_name for k in ZOMBIE_HIDE_KEYWORDS):
             return
         if 'gatlingpea_helmet_screw' in lower_name:
             return
@@ -111,6 +123,8 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                 continue
             lname = layer.attrib.get('name', '').lower()
             if any(k in lname for k in ['custom', 'costume', 'guide']):
+                continue
+            if is_zombie and any(k in lname for k in ZOMBIE_HIDE_KEYWORDS):
                 continue
             if anim_name != 'plantfood' and 'armor' in lname:
                 continue
@@ -227,9 +241,8 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             'frames': frames_data
         }
 
-    plant_name = os.path.basename(os.path.normpath(plant_dir)).replace('.xfl', '')
     out_data = {
-        'name': plant_name,
+        'name': item_name,
         'frame_rate': frame_rate,
         'stage_size': [stage_w, stage_h],
         'pivot': [pivot_x, pivot_y],
@@ -238,26 +251,29 @@ def compile_plant_from_dir(plant_dir, output_path=None):
     }
 
     if output_path is None:
-        output_path = os.path.join(os.path.dirname(plant_dir), f"{plant_name}.anim.json")
+        output_path = os.path.join(os.path.dirname(plant_dir), f"{item_name}.anim.json")
 
     with open(output_path, 'w') as out_f:
         json.dump(out_data, out_f)
-    print(f"Compiled {plant_name}: {len(compiled_anims)} animations, {len(texture_list)} textures -> {output_path}")
+    print(f"Compiled {item_name}: {len(compiled_anims)} animations, {len(texture_list)} textures -> {output_path}")
     return output_path
 
 if __name__ == '__main__':
-    target = sys.argv[1] if len(sys.argv) > 1 else 'peashooter'
+    target = sys.argv[1] if len(sys.argv) > 1 else 'all'
     if target.lower() in ['all', '--all', '-a']:
-        plants_dir = 'Assets/Plants'
-        if os.path.exists(plants_dir):
-            for item in sorted(os.listdir(plants_dir)):
-                full = os.path.join(plants_dir, item)
-                if os.path.isdir(full) and item.endswith('.xfl'):
-                    print(f"\n--- Compiling {item} ---")
-                    try:
-                        compile_plant_from_dir(full)
-                    except Exception as e:
-                        print(f"Error compiling {item}: {e}")
+        # Walk all asset directories for .xfl folders
+        for root_dir in ['Assets/Plants', 'Assets/Zombies', 'Assets/Misc', 'Assets/GridItems', 'Assets/UI']:
+            if not os.path.exists(root_dir):
+                continue
+            for cur_root, dirs, files in os.walk(root_dir):
+                for d in dirs:
+                    if d.endswith('.xfl'):
+                        full = os.path.join(cur_root, d)
+                        print(f"\n--- Compiling {full} ---")
+                        try:
+                            compile_plant_from_dir(full)
+                        except Exception as e:
+                            print(f"Error compiling {full}: {e}")
     else:
         p_dir = f"Assets/Plants/{target}.xfl" if not target.endswith('.xfl') else target
         compile_plant_from_dir(p_dir)

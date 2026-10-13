@@ -66,6 +66,11 @@ func _init_packets() -> void:
 		packets_container.add_child(pkt)
 		packet_nodes.append(pkt)
 
+func set_active(active: bool) -> void:
+	for pkt in packet_nodes:
+		if pkt:
+			pkt.set_active(active)
+
 func _on_packet_clicked(pkt: SeedPacket) -> void:
 	if selected_packet == pkt:
 		deselect_all()

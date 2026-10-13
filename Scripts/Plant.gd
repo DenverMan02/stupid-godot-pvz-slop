@@ -12,6 +12,18 @@ class_name Plant
 @export var visual_scale: float = 1.0
 @export var visual_offset: Vector2 = Vector2.ZERO
 
+@export var max_health: float = 300.0
+@export var health: float = 300.0
+
+func take_damage(amount: float) -> void:
+	health -= amount
+	# Subtle hit flash
+	modulate = Color(1.3, 0.7, 0.7, 1.0)
+	var tw = create_tween()
+	tw.tween_property(self, "modulate", Color.WHITE, 0.1)
+	if health <= 0.0:
+		queue_free()
+
 ## Custom idle mappings for plants with oddly named idle animations or specific idle states
 ## Wall-nut uses only "idle" so it does not cycle into its post-plantfood armored state
 const IDLE_MAP: Dictionary = {
@@ -30,6 +42,11 @@ var sun_scene: PackedScene = preload("res://Scenes/Sun.tscn")
 var sunflower_timer: float = 7.0
 
 func _process(delta: float) -> void:
+	var lawn = get_tree().current_scene
+	var level_started = lawn.get("level_started") if (lawn and "level_started" in lawn) else true
+	if not level_started:
+		return
+
 	if plant_type == "sunflower" and not is_performing_action:
 		sunflower_timer -= delta
 		if sunflower_timer <= 0.0:

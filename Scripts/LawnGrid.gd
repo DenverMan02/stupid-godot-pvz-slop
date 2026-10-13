@@ -84,8 +84,11 @@ func world_to_cell(pos: Vector2) -> Vector2i:
 func is_valid_cell(col: int, row: int) -> bool:
 	return col >= 0 and col < columns and row >= 0 and row < rows
 
+func get_depth_z_index(row: int, col: int, layer_offset: int = 2) -> int:
+	return (row * 100) + (col * 5) + layer_offset
+
 func get_row_z_index(row: int, layer_offset: int = 2) -> int:
-	return row * 10 + layer_offset
+	return get_depth_z_index(row, 0, layer_offset)
 
 func get_cell_polygon(col: int, row: int) -> PackedVector2Array:
 	var x0 = origin.x + col * cell_size.x

@@ -31,7 +31,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/peashooter.anim.json",
 		"tex_dir": "res://Assets/Plants/peashooter.xfl/library/",
 		"health": 300.0,
-		"offset": Vector2(0.0, 20.0),
+		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "sunflower",
@@ -39,7 +39,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/sunflower.anim.json",
 		"tex_dir": "res://Assets/Plants/sunflower.xfl/library/",
 		"health": 300.0,
-		"offset": Vector2(0.0, 20.0),
+		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "wallnut",
@@ -47,7 +47,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/wallnut.anim.json",
 		"tex_dir": "res://Assets/Plants/wallnut.xfl/library/",
 		"health": 4000.0,
-		"offset": Vector2(0.0, 20.0),
+		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "potatomine",
@@ -55,7 +55,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/potatomine.anim.json",
 		"tex_dir": "res://Assets/Plants/potatomine.xfl/library/",
 		"health": 300.0,
-		"offset": Vector2(0.0, 20.0),
+		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "cabbagepult",
@@ -63,7 +63,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/cabbagepult.anim.json",
 		"tex_dir": "res://Assets/Plants/cabbagepult.xfl/library/",
 		"health": 300.0,
-		"offset": Vector2(0.0, 20.0),
+		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "lingfugu",
@@ -80,7 +80,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/clivia.anim.json",
 		"tex_dir": "res://Assets/Plants/clivia.xfl/LIBRARY/",
 		"scale": 1.8,
-		"offset": Vector2(-25.0, 20.0),
+		"offset": Vector2(-25.0, 34.0),
 		"health": 300.0,
 	},
 	{
@@ -89,7 +89,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/garlic.anim.json",
 		"tex_dir": "res://Assets/Plants/garlic.xfl/LIBRARY/",
 		"scale": 1.8,
-		"offset": Vector2(-15.0, 45.0),
+		"offset": Vector2(-15.0, 56.0),
 		"health": 600.0,
 	},
 ]
@@ -114,7 +114,10 @@ func _ready() -> void:
 		# Align pre-placed plants down slightly
 		var spr = p.get_node_or_null("XFLSprite2D")
 		if spr:
-			spr.position = Vector2(0.0, 20.0)
+			spr.position = Vector2(0.0, 34.0)
+		var shd = p.get_node_or_null("Shadow")
+		if shd:
+			shd.position = Vector2(0.0, 44.0)
 
 	_update_hud()
 
@@ -137,35 +140,44 @@ func _on_pan_finished() -> void:
 	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/ready.ogg"):
 		AudioManager.play_sfx(load("res://Audio/SFX/ready.ogg"))
 
-	if start_banner and start_label:
-		start_banner.visible = true
-		start_banner.scale = Vector2(0.6, 0.6)
-		start_banner.modulate = Color(1, 1, 1, 0)
+	if start_label:
+		if start_banner:
+			start_banner.visible = true
+		start_label.visible = true
+		start_label.pivot_offset = Vector2(400.0, 80.0)
+		start_label.scale = Vector2(0.5, 0.5)
+		start_label.modulate = Color(1.0, 1.0, 1.0, 0.0)
 		start_label.text = "READY..."
-		start_label.modulate = Color(1.0, 0.9, 0.2, 1.0)
+		start_label.set("theme_override_colors/font_color", Color(1.0, 0.88, 0.2, 1.0))
 
 		var tw = create_tween()
 		# READY...
-		tw.tween_property(start_banner, "modulate:a", 1.0, 0.15)
-		tw.parallel().tween_property(start_banner, "scale", Vector2.ONE, 0.4).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-		tw.tween_interval(0.3)
+		tw.tween_property(start_label, "modulate:a", 1.0, 0.15)
+		tw.parallel().tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.4)
 		# SET...
 		tw.tween_callback(func():
 			start_label.text = "SET..."
-			start_banner.scale = Vector2(0.75, 0.75)
+			start_label.set("theme_override_colors/font_color", Color(1.0, 0.65, 0.15, 1.0))
+			start_label.scale = Vector2(0.65, 0.65)
 		)
-		tw.tween_property(start_banner, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-		tw.tween_interval(0.2)
+		tw.tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.35)
 		# PLANT!
 		tw.tween_callback(func():
 			start_label.text = "PLANT!"
-			start_label.modulate = Color(0.35, 1.0, 0.35, 1.0)
-			start_banner.scale = Vector2(0.7, 0.7)
+			start_label.set("theme_override_colors/font_color", Color(0.35, 1.0, 0.35, 1.0))
+			start_label.scale = Vector2(0.65, 0.65)
 		)
-		tw.tween_property(start_banner, "scale", Vector2(1.25, 1.25), 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-		tw.tween_interval(0.4)
-		tw.tween_property(start_banner, "modulate:a", 0.0, 0.25)
-		tw.tween_callback(_on_gameplay_start)
+		tw.tween_property(start_label, "scale", Vector2(1.3, 1.3), 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.45)
+		tw.tween_property(start_label, "modulate:a", 0.0, 0.25)
+		tw.tween_callback(func():
+			start_label.visible = false
+			if start_banner:
+				start_banner.visible = false
+			_on_gameplay_start()
+		)
 	else:
 		_on_gameplay_start()
 
@@ -225,10 +237,13 @@ func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0) -> void:
 	# 50% chance to replace with fem variant
 	var is_fem = randf() < 0.5
 	if is_fem:
-		var spr = z_inst.get_node_or_null("XFLSprite2D")
-		if spr:
-			spr.anim_data_path = "res://Assets/Zombies/zombie_tutorialfem.anim.json"
-			spr.textures_base_dir = "res://Assets/Zombies/zombie_tutorialfem.xfl/library/"
+		if z_inst.has_method("set_female_variant"):
+			z_inst.set_female_variant(true)
+		else:
+			var spr = z_inst.get_node_or_null("XFLSprite2D")
+			if spr:
+				spr.anim_data_path = "res://Assets/Zombies/zombie_tutorialfem.anim.json"
+				spr.textures_base_dir = "res://Assets/Zombies/zombie_tutorialfem.xfl/library/"
 
 	if zombies_container:
 		zombies_container.add_child(z_inst)
@@ -314,6 +329,10 @@ func _unhandled_input(event: InputEvent) -> void:
 							if plant_idx != -1:
 								spawn_plant_at(cell.x, cell.y, plant_idx)
 								seed_bank.on_plant_placed()
+					else:
+						# Cell is already occupied: play failure SFX
+						if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/failure.ogg"):
+							AudioManager.play_sfx(load("res://Audio/SFX/failure.ogg"))
 
 		# Right-click cancels selection, or spawns plant if in debug mode
 		elif event.button_index == MOUSE_BUTTON_RIGHT:

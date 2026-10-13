@@ -12,6 +12,7 @@ enum State {
 @export var walk_speed: float = 23.0
 @export var bite_damage: float = 100.0 # damage per second
 @export var row: int = 2
+@export var is_female: bool = false
 
 var current_state: State = State.WALK
 var target_plant: Node2D = null
@@ -20,8 +21,22 @@ var eat_sfx_timer: float = 0.0
 @onready var sprite: XFLSprite2D = $XFLSprite2D
 @onready var shadow: Sprite2D = $Shadow
 
+func set_female_variant(val: bool) -> void:
+	is_female = val
+	var anim_json = "res://Assets/Zombies/zombie_tutorialfem.anim.json" if val else "res://Assets/Zombies/zombie_tutorial.anim.json"
+	var tex_dir = "res://Assets/Zombies/zombie_tutorialfem.xfl/library/" if val else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
+	if sprite:
+		sprite.anim_data_path = anim_json
+		sprite.textures_base_dir = tex_dir
+		if sprite.is_inside_tree():
+			sprite.set_animation_source(anim_json, tex_dir)
+			if sprite.is_playing:
+				sprite.play(sprite.current_animation, sprite.loop)
+
 func _ready() -> void:
 	health = max_health
+	if is_female:
+		set_female_variant(true)
 	if sprite:
 		sprite.play("walk", true)
 		sprite.anim_finished.connect(_on_anim_finished)
@@ -38,14 +53,14 @@ func _process(delta: float) -> void:
 		return
 
 	# Dynamic PvZ2 visual depth ordering: zombies ALWAYS render over plants in the same row
-	# Plants in row have z_index up to row*100 + 47. Zombies get row*100 + 50 + col_offset.
+	# Plants in row have z_index up to row*100 + 47. Zombies get row*100 + 70 + col_offset.
 	var lawn_grid = lawn.get_node_or_null("Grid") if lawn else null
 	if lawn_grid:
 		var cell = lawn_grid.world_to_cell(global_position)
 		var col_val = clamp(cell.x, 0, 9)
-		z_index = (row * 100) + 50 + clamp(int(col_val * 2), 0, 20)
+		z_index = (row * 100) + 70 + clamp(int(col_val * 2), 0, 20)
 	else:
-		z_index = (row * 100) + 55
+		z_index = (row * 100) + 70
 
 	match current_state:
 		State.WALK:
@@ -139,9 +154,10 @@ func take_damage(amount: float) -> void:
 	health -= amount
 
 	# Flash white on hit
-	modulate = Color(2.5, 2.5, 2.5, 1.0)
-	var tw = create_tween()
-	tw.tween_property(self, "modulate", Color.WHITE, 0.08)
+	if sprite:
+		sprite.modulate = Color(3.0, 3.0, 3.0, 1.0)
+		var tw = create_tween()
+		tw.tween_property(sprite, "modulate", Color.WHITE, 0.08)
 
 	if health <= 0.0:
 		_set_state(State.DIE)

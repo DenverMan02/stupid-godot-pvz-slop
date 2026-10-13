@@ -61,8 +61,10 @@ func update_availability(current_sun: int) -> void:
 	var can_afford = current_sun >= sun_cost
 
 	if cost_label:
-		if not can_afford:
-			cost_label.modulate = Color(1.0, 0.25, 0.25, 1.0) # Red when cannot afford
+		if not is_active:
+			cost_label.modulate = Color(0.65, 0.65, 0.65, 0.85)
+		elif not can_afford:
+			cost_label.modulate = Color(1.0, 0.2, 0.2, 1.0) # Red when cannot afford
 		else:
 			cost_label.modulate = Color(1.0, 1.0, 1.0, 1.0) # White when affordable
 

@@ -33,8 +33,8 @@ func _ready() -> void:
 
 func get_target_scale() -> Vector2:
 	# Scaled relative to 50 sun: min size 0.25, max size 4.0
-	var scale_mult = clamp(sqrt(float(value) / 50.0), 0.25, 4.0)
-	return Vector2.ONE * (BASE_SCALE * scale_mult)
+	var scale_val = clamp(BASE_SCALE * sqrt(float(value) / 50.0), 0.25, 4.0)
+	return Vector2(scale_val, scale_val)
 
 func spawn_from_sky(start_pos: Vector2, end_pos: Vector2) -> void:
 	global_position = start_pos
@@ -64,7 +64,8 @@ func _process(delta: float) -> void:
 
 	# Collect if mouse touches sun
 	var m_pos = get_global_mouse_position()
-	if global_position.distance_to(m_pos) <= 55.0 * (scale.x / BASE_SCALE):
+	var touch_radius = 55.0 * max(scale.x / BASE_SCALE, 0.4)
+	if global_position.distance_to(m_pos) <= touch_radius:
 		_trigger_collect()
 		return
 
@@ -76,23 +77,25 @@ func _process(delta: float) -> void:
 			is_falling = false
 
 	# Sun merging: if > 50 suns on screen, gravitate like a magnet within 150px and merge
-	var parent = get_parent()
-	if parent and parent.get_child_count() > 50 and not is_falling:
-		for other in parent.get_children():
-			if other is Sun and other != self and not other.is_collected and not other.is_falling:
+	var all_suns = get_tree().get_nodes_in_group("suns")
+	if all_suns.size() > 50 and not is_falling:
+		for other in all_suns:
+			if other is Sun and other != self and is_instance_valid(other) and not other.is_collected and not other.is_falling:
 				var dist = global_position.distance_to(other.global_position)
-				if dist < 150.0:
+				if dist < 150.0 and dist > 0.1:
 					var dir = (other.global_position - global_position).normalized()
-					global_position += dir * (95.0 * delta)
-					if dist < 32.0 and get_instance_id() < other.get_instance_id():
+					global_position += dir * (120.0 * delta)
+					if dist < 35.0 and get_instance_id() < other.get_instance_id():
 						value += other.value
+						other.is_collected = true
 						other.queue_free()
+						lifetime = 10.0 # reset decay timer on merge
 						var stw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 						stw.tween_property(self, "scale", get_target_scale(), 0.3)
 						break
 
 	# Lifetime: 10 seconds before fade, 0.5s fade out
-	if not is_fading:
+	if not is_fading and not is_falling:
 		lifetime -= delta
 		if lifetime <= 0.0:
 			is_fading = true

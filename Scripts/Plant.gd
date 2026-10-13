@@ -17,14 +17,16 @@ var eaten_timer: float = 0.0
 func take_damage(amount: float, is_bite: bool = false) -> void:
 	health -= amount
 	if is_bite:
-		# When being eaten, always remain lighter
-		eaten_timer = 0.25
-		modulate = Color(1.35, 1.35, 1.35, 1.0)
+		# When being eaten, always remain lighter on sprite
+		eaten_timer = 0.2
+		if sprite:
+			sprite.modulate = Color(1.5, 1.5, 1.5, 1.0)
 	else:
 		# Flash bright white on normal hit
-		modulate = Color(2.5, 2.5, 2.5, 1.0)
-		var tw = create_tween()
-		tw.tween_property(self, "modulate", Color.WHITE, 0.08)
+		if sprite:
+			sprite.modulate = Color(3.0, 3.0, 3.0, 1.0)
+			var tw = create_tween()
+			tw.tween_property(sprite, "modulate", Color.WHITE, 0.08)
 
 	if health <= 0.0:
 		queue_free()
@@ -55,7 +57,8 @@ func _process(delta: float) -> void:
 	if eaten_timer > 0.0:
 		eaten_timer -= delta
 		if eaten_timer <= 0.0:
-			modulate = Color.WHITE
+			if sprite:
+				sprite.modulate = Color.WHITE
 
 	var lawn = get_tree().current_scene
 	var level_started = lawn.get("level_started") if (lawn and "level_started" in lawn) else true

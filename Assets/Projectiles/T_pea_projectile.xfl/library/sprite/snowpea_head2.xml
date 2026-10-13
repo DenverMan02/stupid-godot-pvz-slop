@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/snowpea_head2" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="snowpea_head2">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/T_pea_projectile_142x42" loop="loop">
+                  <matrix>
+                    <Matrix/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/T_pea_projectile_537x35" loop="loop">
+                  <matrix>
+                    <Matrix a="0.19866943359375" d="0.600006103515625" tx="-73.6" ty="2.5"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0.501960784313725"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

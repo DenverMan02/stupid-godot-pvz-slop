@@ -1,0 +1,79 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/background" href="media/background.png"/>
+    <DOMBitmapItem name="media/background_alt" href="media/background_alt.png"/>
+    <DOMBitmapItem name="media/load_icon_back_80x129" href="media/load_icon_back_80x129.png"/>
+    <DOMBitmapItem name="media/spiral" href="media/spiral.png"/>
+    <DOMBitmapItem name="media/streak_line_1_blue" href="media/streak_line_1_blue.png"/>
+    <DOMBitmapItem name="media/streak_line_1_purp" href="media/streak_line_1_purp.png"/>
+    <DOMBitmapItem name="media/streak_line_2_blue" href="media/streak_line_2_blue.png"/>
+    <DOMBitmapItem name="media/streak_line_2_purp" href="media/streak_line_2_purp.png"/>
+    <DOMBitmapItem name="media/streak_line_3_blue" href="media/streak_line_3_blue.png"/>
+    <DOMBitmapItem name="media/streak_line_3_purp" href="media/streak_line_3_purp.png"/>
+  </media>
+  <symbols>
+    <Include href="image/background.xml"/>
+    <Include href="image/background_alt.xml"/>
+    <Include href="image/load_icon_back_80x129.xml"/>
+    <Include href="image/spiral.xml"/>
+    <Include href="image/streak_line_1_blue.xml"/>
+    <Include href="image/streak_line_1_purp.xml"/>
+    <Include href="image/streak_line_2_blue.xml"/>
+    <Include href="image/streak_line_2_purp.xml"/>
+    <Include href="image/streak_line_3_blue.xml"/>
+    <Include href="image/streak_line_3_purp.xml"/>
+    <Include href="sprite/Symbol 1.xml"/>
+    <Include href="sprite/background.xml"/>
+    <Include href="sprite/background_alt.xml"/>
+    <Include href="sprite/petal_anim.xml"/>
+    <Include href="sprite/spiral.xml"/>
+    <Include href="sprite/streak1b.xml"/>
+    <Include href="sprite/streak1p.xml"/>
+    <Include href="sprite/streak2b.xml"/>
+    <Include href="sprite/streak2p.xml"/>
+    <Include href="sprite/streak3b.xml"/>
+    <Include href="sprite/streak3p.xml"/>
+    <Include href="label/animation.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="185" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="184">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="184">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="185">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

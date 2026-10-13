@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="label/animation3" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="animation3">
+      <layers>
+        <DOMLayer name="3">
+          <frames>
+            <DOMFrame index="0" duration="2">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/snowpea_head3" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="2.27732849121094" d="1.5859375" tx="233" ty="224.55"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0" duration="2">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/T_pea_projectile_209x43" loop="loop">
+                  <matrix>
+                    <Matrix tx="181.55" ty="151.25"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0" duration="2">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/T_pea_projectile_537x35" loop="loop">
+                  <matrix>
+                    <Matrix a="0.28704833984375" d="1.13433837890625" tx="128.55" ty="225.7"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0.4"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

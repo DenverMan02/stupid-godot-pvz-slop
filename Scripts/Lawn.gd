@@ -144,21 +144,22 @@ func _on_pan_finished() -> void:
 		if start_banner:
 			start_banner.visible = true
 		start_label.visible = true
-		start_label.pivot_offset = Vector2(400.0, 80.0)
+		start_label.pivot_offset = Vector2(450.0, 90.0)
 		start_label.scale = Vector2(0.5, 0.5)
 		start_label.modulate = Color(1.0, 1.0, 1.0, 0.0)
-		start_label.text = "READY..."
-		start_label.set("theme_override_colors/font_color", Color(1.0, 0.88, 0.2, 1.0))
+		start_label.text = "Ready..."
+		start_label.set("theme_override_colors/font_color", Color(0.92, 0.05, 0.05, 1.0))
+		start_label.set("theme_override_colors/font_outline_color", Color(0.0, 0.0, 0.0, 1.0))
+		start_label.set("theme_override_constants/outline_size", 28)
 
 		var tw = create_tween()
-		# READY...
+		# Ready...
 		tw.tween_property(start_label, "modulate:a", 1.0, 0.15)
 		tw.parallel().tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 		tw.tween_interval(0.4)
-		# SET...
+		# Set...
 		tw.tween_callback(func():
-			start_label.text = "SET..."
-			start_label.set("theme_override_colors/font_color", Color(1.0, 0.65, 0.15, 1.0))
+			start_label.text = "Set..."
 			start_label.scale = Vector2(0.65, 0.65)
 		)
 		tw.tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
@@ -166,7 +167,6 @@ func _on_pan_finished() -> void:
 		# PLANT!
 		tw.tween_callback(func():
 			start_label.text = "PLANT!"
-			start_label.set("theme_override_colors/font_color", Color(0.35, 1.0, 0.35, 1.0))
 			start_label.scale = Vector2(0.65, 0.65)
 		)
 		tw.tween_property(start_label, "scale", Vector2(1.3, 1.3), 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)

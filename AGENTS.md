@@ -25,6 +25,7 @@ The game must support **hundreds of simultaneously active XFL animation instance
 
 - Treat the committed XFL exports as the authoritative source for their visual animation data. Preserve source timelines and library assets unless a task explicitly calls for changing them.
 - The project uses an XFL-first approach to avoid reverse-engineering PAM binaries. Do not start a PAM parser or fall back to PAM-specific implementation without identifying a concrete limitation in the XFL export.
+- A large majority of PvZ2 animations are authored at **30 frames per second in Adobe Animate**. Respect each XFL document's declared frame rate (for example, `frameRate="30.000000"` in `DOMDocument.xml`) and preserve frame-based timeline timing. Do not hardcode 30 FPS as a universal assumption for every asset, and do not confuse timeline frames with seconds.
 - Prefer an import/build step that parses XFL data and prepares runtime-ready resources. **Do not parse XML, rediscover symbols, or resolve asset paths every frame.**
 - Cache and share immutable animation definitions, texture resources, and precomputed data across instances. Keep per-instance playback state separate from shared source data.
 - Preserve animation fidelity: nested symbols, timeline/keyframe timing, transforms, pivots/registration points, visibility/alpha, frame labels, looping, and relevant color/blend behavior. Verify which of these features occur in actual assets rather than assuming every feature is used.

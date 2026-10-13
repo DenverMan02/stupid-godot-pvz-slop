@@ -266,6 +266,7 @@ if __name__ == '__main__':
             if not os.path.exists(root_dir):
                 continue
             for cur_root, dirs, files in os.walk(root_dir):
+                dirs[:] = [d for d in dirs if 'research purposes' not in d.lower()]
                 for d in dirs:
                     if d.endswith('.xfl'):
                         full = os.path.join(cur_root, d)

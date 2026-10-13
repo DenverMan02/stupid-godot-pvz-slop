@@ -74,7 +74,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             texture_list.append(path)
         return texture_map[path]
 
-    COSTUME_KEYWORDS = ['_custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff', 'monocle', 'tophat']
+    COSTUME_KEYWORDS = ['custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff', 'monocle', 'tophat']
 
     def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False):
         lower_name = sym_name.lower()
@@ -110,7 +110,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             if layer.attrib.get('visible') == 'false':
                 continue
             lname = layer.attrib.get('name', '').lower()
-            if any(k in lname for k in ['_custom', 'costume', 'guide']):
+            if any(k in lname for k in ['custom', 'costume', 'guide']):
                 continue
             if anim_name != 'plantfood' and 'armor' in lname:
                 continue

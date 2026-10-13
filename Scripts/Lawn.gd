@@ -4,6 +4,8 @@ extends Node2D
 @onready var grid: LawnGrid = $Grid
 @onready var background: Node2D = $Background
 @onready var plants_container: Node2D = $Plants
+@onready var suns_container: Node2D = $Suns
+@onready var seed_bank: SeedBank = $HUD/SeedBank
 @onready var peashooter_count_label: Label = $HUD/MarginContainer/VBoxContainer/CountLabel
 @onready var debug_status_label: Label = $HUD/MarginContainer/VBoxContainer/DebugLabel
 
@@ -16,6 +18,7 @@ var battle_music: AudioStream = preload("res://Audio/BGM/Worlds/Modern Day/moder
 
 var plant_scene: PackedScene = preload("res://Scenes/Plant.tscn")
 var peashooter_scene: PackedScene = preload("res://Scenes/Peashooter.tscn")
+var sun_scene: PackedScene = preload("res://Scenes/Sun.tscn")
 
 const PLANT_REGISTRY: Array[Dictionary] = [
 	{
@@ -53,7 +56,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "LingFugu",
 		"anim_json": "res://Assets/Plants/lingfugu.anim.json",
 		"tex_dir": "res://Assets/Plants/lingfugu.xfl/library/",
-		"scale": 1.8,
+		"scale": 1.0,
 		"offset": Vector2.ZERO,
 	},
 	{
@@ -77,6 +80,8 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 var debug_mode: bool = false
 var plant_count: int = 0
 var selected_plant_index: int = 0
+var sun_amount: int = 50
+var sky_sun_timer: float = 6.0
 
 func _ready() -> void:
 	camera.position = Vector2(CAM_ZOMBIE_X, CAM_Y)
@@ -84,6 +89,9 @@ func _ready() -> void:
 	# Initial plant count from pre-placed plants
 	plant_count = plants_container.get_child_count()
 	_update_hud()
+
+	if seed_bank:
+		seed_bank.update_sun_display(sun_amount)
 
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_music(cys_music)
@@ -100,6 +108,57 @@ func _on_pan_finished() -> void:
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_music(battle_music)
 
+func _process(delta: float) -> void:
+	# Periodic sky sun falling
+	sky_sun_timer -= delta
+	if sky_sun_timer <= 0.0:
+		sky_sun_timer = randf_range(8.5, 11.5)
+		_spawn_sky_sun()
+
+func _spawn_sky_sun() -> void:
+	if not sun_scene:
+		return
+	var rand_col = randi_range(0, grid.columns - 1)
+	var rand_row = randi_range(0, grid.rows - 1)
+	var land_pos = grid.cell_to_world(rand_col, rand_row)
+	var start_pos = Vector2(land_pos.x, CAM_Y - 580.0)
+
+	var sun_inst: Sun = sun_scene.instantiate()
+	if suns_container:
+		suns_container.add_child(sun_inst)
+	else:
+		add_child(sun_inst)
+
+	sun_inst.spawn_from_sky(start_pos, land_pos)
+	sun_inst.collected.connect(func(val):
+		add_sun(val)
+	)
+
+func add_sun(val: int) -> void:
+	sun_amount += val
+	if seed_bank:
+		seed_bank.update_sun_display(sun_amount)
+
+func spend_sun(val: int) -> bool:
+	if sun_amount >= val:
+		sun_amount -= val
+		if seed_bank:
+			seed_bank.update_sun_display(sun_amount)
+		return true
+	return false
+
+func is_cell_occupied(col: int, row: int) -> bool:
+	for p in plants_container.get_children():
+		if p.get("col") == col and p.get("row") == row:
+			return true
+	return false
+
+func get_plant_index_by_id(id: String) -> int:
+	for i in range(PLANT_REGISTRY.size()):
+		if PLANT_REGISTRY[i]["id"] == id:
+			return i
+	return -1
+
 func _unhandled_input(event: InputEvent) -> void:
 	# Press G to toggle debug mode
 	if event is InputEventKey and event.pressed and not event.echo:
@@ -110,7 +169,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			_update_hud()
 			print("[Lawn] Debug mode is now: %s" % ("ON" if debug_mode else "OFF"))
 
-		# Number keys 1-8 to select active plant to spawn
+		# Number keys 1-8 to select active plant to spawn (debug feature)
 		elif event.keycode in [KEY_1, KEY_KP_1]:
 			_select_plant(0)
 		elif event.keycode in [KEY_2, KEY_KP_2]:
@@ -128,12 +187,30 @@ func _unhandled_input(event: InputEvent) -> void:
 		elif event.keycode in [KEY_8, KEY_KP_8]:
 			_select_plant(7)
 
-	# Right-click on tile spawns the currently selected plant (only in debug mode)
-	if debug_mode and event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+	# Mouse clicks for planting / actions
+	if event is InputEventMouseButton and event.pressed:
 		var mouse_pos = get_global_mouse_position()
 		var cell = grid.world_to_cell(mouse_pos)
-		if grid.is_valid_cell(cell.x, cell.y):
-			spawn_plant_at(cell.x, cell.y, selected_plant_index)
+
+		# Left-click to plant selected seed packet
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if seed_bank and seed_bank.selected_packet != null:
+				var pkt = seed_bank.selected_packet
+				if grid.is_valid_cell(cell.x, cell.y):
+					var occupied = is_cell_occupied(cell.x, cell.y)
+					if not occupied or debug_mode:
+						if spend_sun(pkt.sun_cost):
+							var plant_idx = get_plant_index_by_id(pkt.plant_id)
+							if plant_idx != -1:
+								spawn_plant_at(cell.x, cell.y, plant_idx)
+								seed_bank.on_plant_placed()
+
+		# Right-click cancels selection, or spawns plant if in debug mode
+		elif event.button_index == MOUSE_BUTTON_RIGHT:
+			if seed_bank and seed_bank.selected_packet != null:
+				seed_bank.deselect_all()
+			elif debug_mode and grid.is_valid_cell(cell.x, cell.y):
+				spawn_plant_at(cell.x, cell.y, selected_plant_index)
 
 func _select_plant(index: int) -> void:
 	if index >= 0 and index < PLANT_REGISTRY.size():

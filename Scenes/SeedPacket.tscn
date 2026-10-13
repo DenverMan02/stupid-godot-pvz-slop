@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://c_seed_packet_001"]
+
+[ext_resource type="Script" path="res://Scripts/SeedPacket.gd" id="1_packet"]
+[ext_resource type="Texture2D" path="res://SeedPackets/peashooter.png" id="2_card_tex"]
+[ext_resource type="Texture2D" path="res://SeedPackets/UIElements/cooldown.png" id="3_cooldown_tex"]
+[ext_resource type="Texture2D" path="res://SeedPackets/UIElements/select.png" id="4_select_tex"]
+
+[node name="SeedPacket" type="Control"]
+custom_minimum_size = Vector2(156, 112)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 156.0
+offset_bottom = 112.0
+mouse_filter = 0
+script = ExtResource("1_packet")
+
+[node name="CardTexture" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_card_tex")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CooldownProgress" type="TextureProgressBar" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+fill_mode = 3
+nine_patch_stretch = true
+texture_progress = ExtResource("3_cooldown_tex")
+tint_progress = Color(0, 0, 0, 0.65)
+
+[node name="SelectHighlight" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_select_tex")
+expand_mode = 1
+stretch_mode = 5

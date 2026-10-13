@@ -26,6 +26,37 @@ var plantfood_sequence: Array[String] = []
 var plantfood_sequence_index: int = 0
 var is_in_plantfood_sequence: bool = false
 
+var sun_scene: PackedScene = preload("res://Scenes/Sun.tscn")
+var sunflower_timer: float = 7.0
+
+func _process(delta: float) -> void:
+	if plant_type == "sunflower" and not is_performing_action:
+		sunflower_timer -= delta
+		if sunflower_timer <= 0.0:
+			sunflower_timer = 24.0
+			_produce_sun()
+
+func _produce_sun() -> void:
+	play_attack()
+	get_tree().create_timer(0.8).timeout.connect(func():
+		_spawn_sun_at_plant()
+	)
+
+func _spawn_sun_at_plant() -> void:
+	var sun_inst: Sun = sun_scene.instantiate()
+	var lawn = get_tree().current_scene
+	if lawn:
+		var suns_container = lawn.get_node_or_null("Suns")
+		if suns_container:
+			suns_container.add_child(sun_inst)
+		else:
+			lawn.add_child(sun_inst)
+		sun_inst.spawn_from_sunflower(global_position)
+		sun_inst.collected.connect(func(val):
+			if lawn.has_method("add_sun"):
+				lawn.add_sun(val)
+		)
+
 func _ready() -> void:
 	if sprite:
 		sprite.scale = Vector2(visual_scale, visual_scale)
@@ -219,6 +250,9 @@ func play_plantfood() -> void:
 	if not plantfood_sequence.is_empty():
 		is_performing_action = true
 		is_in_plantfood_sequence = true
+		if plant_type == "sunflower":
+			for i in range(3):
+				get_tree().create_timer(0.3 * (i + 1)).timeout.connect(_spawn_sun_at_plant)
 		if get_node_or_null("/root/AudioManager"):
 			var pf_sfx = preload("res://Audio/SFX/plantfood.ogg")
 			AudioManager.play_sfx(pf_sfx)
@@ -231,6 +265,8 @@ func _input(event: InputEvent) -> void:
 	var lawn = get_tree().current_scene
 	var is_debug = lawn.get("debug_mode") if (lawn and "debug_mode" in lawn) else false
 	if not is_debug:
+		return
+	if lawn and "seed_bank" in lawn and lawn.seed_bank and lawn.seed_bank.selected_packet != null:
 		return
 
 	if event is InputEventMouseButton and event.pressed:

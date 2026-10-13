@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://c_seed_bank_001"]
+
+[ext_resource type="Script" path="res://Scripts/SeedBank.gd" id="1_seedbank"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/background_3slice.png" id="2_bg_slice"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/sun.png" id="3_sun_tex"]
+
+[node name="SeedBank" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 780.0
+mouse_filter = 2
+script = ExtResource("1_seedbank")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="SunBank" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(156, 68)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Background" type="NinePatchRect" parent="VBoxContainer/SunBank"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg_slice")
+patch_margin_left = 18
+patch_margin_top = 18
+patch_margin_right = 18
+patch_margin_bottom = 18
+
+[node name="SunIcon" type="TextureRect" parent="VBoxContainer/SunBank"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = -28.0
+offset_right = 62.0
+offset_bottom = 28.0
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_sun_tex")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SunCountLabel" type="Label" parent="VBoxContainer/SunBank"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -92.0
+offset_top = -20.0
+offset_right = -12.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 28
+text = "50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PacketsContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8

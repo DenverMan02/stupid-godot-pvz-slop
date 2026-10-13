@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" path="res://Assets/Lawns/Modern Day/Row 05.png" id="6_sod_row"]
 [ext_resource type="Script" path="res://Scripts/LawnGrid.gd" id="7_grid"]
 [ext_resource type="PackedScene" path="res://Scenes/Peashooter.tscn" id="8_peashooter"]
+[ext_resource type="PackedScene" path="res://Scenes/SeedBank.tscn" id="9_seedbank"]
 
 [node name="Lawn" type="Node2D"]
 script = ExtResource("1_lawn")
@@ -43,10 +44,14 @@ script = ExtResource("7_grid")
 z_index = 22
 position = Vector2(924, 641)
 
+[node name="Suns" type="Node2D" parent="."]
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1194, 540)
 
 [node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="SeedBank" parent="HUD" instance=ExtResource("9_seedbank")]
 
 [node name="MarginContainer" type="MarginContainer" parent="HUD"]
 anchors_preset = 1

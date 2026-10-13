@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c_sun_001"]
+
+[ext_resource type="Script" path="res://Scripts/Sun.gd" id="1_sun"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/sun.png" id="2_sun_tex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sun"]
+radius = 42.0
+
+[node name="Sun" type="Area2D"]
+z_index = 50
+script = ExtResource("1_sun")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_sun_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sun")

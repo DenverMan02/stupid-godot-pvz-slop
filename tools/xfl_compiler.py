@@ -55,26 +55,37 @@ def get_texture_id(name):
         texture_list.append(path)
     return texture_map[path]
 
-def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list):
+def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list, is_root_label=False):
+    # Ignore costume container slot if default/no costume equipped
+    if symbol_name == 'sprite/_custom':
+        return
+
     dom = get_symbol(symbol_name)
     tl = dom.find('.//xfl:DOMTimeline', ns)
     if tl is None:
         return
-    layers = tl.findall('.//xfl:DOMLayer', ns)
-    for layer in reversed(layers):
-        frames = layer.findall('.//xfl:DOMFrame', ns)
-        if not frames:
-            continue
-        max_f = max(int(f.attrib.get('index', 0)) + int(f.attrib.get('duration', 1)) for f in frames)
-        if max_f == 0:
-            continue
-        curr_f = frame_idx % max_f
         
-        active_frame = None
-        for f in frames:
+    layers = tl.findall('.//xfl:DOMLayer', ns)
+    
+    tl_duration = 0
+    for l in layers:
+        for f in l.findall('.//xfl:DOMFrame', ns):
             idx = int(f.attrib.get('index', 0))
             dur = int(f.attrib.get('duration', 1))
-            if idx <= curr_f < idx + dur:
+            tl_duration = max(tl_duration, idx + dur)
+    if tl_duration == 0:
+        return
+
+    # In Flash: Root timeline does NOT loop individual layers!
+    # Sub-symbols loop their timeline if loop="loop"
+    eval_f = frame_idx if is_root_label else (frame_idx % tl_duration)
+    
+    for layer in reversed(layers):
+        active_frame = None
+        for f in layer.findall('.//xfl:DOMFrame', ns):
+            idx = int(f.attrib.get('index', 0))
+            dur = int(f.attrib.get('duration', 1))
+            if idx <= eval_f < idx + dur:
                 active_frame = f
                 break
         if active_frame is None:
@@ -95,10 +106,10 @@ def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list):
                 sub_name = el.attrib.get('libraryItemName')
                 sub_first = int(el.attrib.get('firstFrame', 0))
                 loop_type = el.attrib.get('loop', 'loop')
-                sub_f = sub_first if loop_type == 'single frame' else (sub_first + frame_idx)
+                sub_f = sub_first if loop_type == 'single frame' else (sub_first + eval_f)
                 local_m = parse_matrix_elem(el)
                 final_m = mult_matrix(parent_mat, local_m)
-                evaluate_symbol(sub_name, sub_f, final_m, draw_list)
+                evaluate_symbol(sub_name, sub_f, final_m, draw_list, is_root_label=False)
 
 # Load DOMDocument
 dom_xml = fetch_file('Assets/Plants/peashooter.xfl/DOMDocument.xml')
@@ -108,13 +119,11 @@ frame_rate = float(dom_root.attrib.get('frameRate', '30.0'))
 stage_w = float(dom_root.attrib.get('width', '390.0'))
 stage_h = float(dom_root.attrib.get('height', '390.0'))
 
-# Plant ground anchor pivot: center X = 195.0, ground baseline Y = 230.0
 pivot_x = 195.0
 pivot_y = 230.0
 
-# Extract animations and action events
 anim_defs = {}
-action_events = {} # frame_idx -> command
+action_events = {}
 
 tl = dom_root.find('.//xfl:DOMTimeline', ns)
 for layer in tl.findall('.//xfl:DOMLayer', ns):
@@ -131,7 +140,6 @@ for layer in tl.findall('.//xfl:DOMLayer', ns):
             idx = int(f.attrib.get('index', 0))
             for s in f.findall('.//xfl:script', ns):
                 txt = s.text or ''
-                # Look for fscommand("cmd", "arg")
                 m = re.search(r'fscommand\s*\(\s*["\']([^"\']+)["\']', txt)
                 if m:
                     action_events[idx] = m.group(1)
@@ -139,7 +147,6 @@ for layer in tl.findall('.//xfl:DOMLayer', ns):
 print('Discovered animations:', anim_defs)
 print('Discovered action events:', action_events)
 
-# Compile animations
 compiled_anims = {}
 
 for anim_name, info in anim_defs.items():
@@ -157,9 +164,8 @@ for anim_name, info in anim_defs.items():
             events_data[str(local_f)] = action_events[abs_f]
             
         draw_list = []
-        # Apply pivot offset matrix: [1, 0, 0, 1, -pivot_x, -pivot_y]
         base_mat = [1.0, 0.0, 0.0, 1.0, -pivot_x, -pivot_y]
-        evaluate_symbol(symbol_name, local_f, base_mat, draw_list)
+        evaluate_symbol(symbol_name, local_f, base_mat, draw_list, is_root_label=True)
         frames_data.append(draw_list)
         
     compiled_anims[anim_name] = {

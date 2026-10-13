@@ -1,0 +1,145 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="200.000000" height="200.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/sun_110x110" href="media/sun_110x110.png"/>
+    <DOMBitmapItem name="media/sun_110x110_2" href="media/sun_110x110_2.png"/>
+    <DOMBitmapItem name="media/sun_166x166" href="media/sun_166x166.png"/>
+    <DOMBitmapItem name="media/sun_1x1" href="media/sun_1x1.png"/>
+    <DOMBitmapItem name="media/sun_1x1_2" href="media/sun_1x1_2.png"/>
+    <DOMBitmapItem name="media/sun_203x203" href="media/sun_203x203.png"/>
+    <DOMBitmapItem name="media/sun_203x203_2" href="media/sun_203x203_2.png"/>
+    <DOMBitmapItem name="media/sun_203x203_3" href="media/sun_203x203_3.png"/>
+    <DOMBitmapItem name="media/sun_78x78" href="media/sun_78x78.png"/>
+  </media>
+  <symbols>
+    <Include href="image/sun_110x110.xml"/>
+    <Include href="image/sun_110x110_2.xml"/>
+    <Include href="image/sun_166x166.xml"/>
+    <Include href="image/sun_1x1.xml"/>
+    <Include href="image/sun_1x1_2.xml"/>
+    <Include href="image/sun_203x203.xml"/>
+    <Include href="image/sun_203x203_2.xml"/>
+    <Include href="image/sun_203x203_3.xml"/>
+    <Include href="image/sun_78x78.xml"/>
+    <Include href="sprite/sun_blue_orb.xml"/>
+    <Include href="sprite/sun_blue_rays.xml"/>
+    <Include href="sprite/sun_orb.xml"/>
+    <Include href="sprite/sun_rays.xml"/>
+    <Include href="sprite/sun_red_orb.xml"/>
+    <Include href="sprite/sun_red_rays.xml"/>
+    <Include href="sprite/sun_red_rays_fader.xml"/>
+    <Include href="label/animation.xml"/>
+    <Include href="label/transition_red.xml"/>
+    <Include href="label/red.xml"/>
+    <Include href="label/transition_blue.xml"/>
+    <Include href="label/blue.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="30" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" duration="16" name="transition_red" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="30" name="red" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="76" duration="16" name="transition_blue" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="30" name="blue" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="29">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" duration="15">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="45">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="29">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="75">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="76" duration="15">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="91">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="29">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="121">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="30">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="16">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/transition_red" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="46" duration="30">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/red" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="76" duration="16">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/transition_blue" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" duration="30">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/blue" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

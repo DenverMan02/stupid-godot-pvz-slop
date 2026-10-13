@@ -1,0 +1,354 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"LevelCommon": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_LEVELS", 
+					"path": "images/initial/effects/level_effect_all/level_effect_all.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_BACKGROUNDS_WATER_GARGANTUAR_RIPPLE", 
+					"path": "images/initial/water_effects/Water_Gargantuar_Ripple/Water_Gargantuar_Ripple.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_BACKGROUNDS_WATER_IMP_RIPPLE", 
+					"path": "images/initial/water_effects/Water_Imp_Ripple/Water_Imp_Ripple.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_BACKGROUNDS_WATER_SQUARE", 
+					"path": "images/initial/water_effects/Water_Square/Water_Square.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_BACKGROUNDS_WATER_TIDE_LINE", 
+					"path": "images/initial/water_effects/Water_Tide_Line/Water_Tide_Line.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_BACKGROUNDS_WATER_UNDERLAYER", 
+					"path": "images/initial/water_effects/Water_Underlayer/Water_Underlayer.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_BACKGROUNDS_WATER_ZOMBIE_RIPPLE", 
+					"path": "images/initial/water_effects/Water_Zombie_Ripple/Water_Zombie_Ripple.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBOSS_STUN_EFFECT", 
+					"path": "images/initial/effects/zombie_stunned/zombie_stunned.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_POTION_EFFECT", 
+					"path": "images/initial/effects/zombie_potion_effect/zombie_potion_effect.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_BRONZE_ASH", 
+					"path": "images/initial/effects/zombie_bronze_ash/zombie_bronze_ash.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_SLOWDOWN", 
+					"path": "images/initial/effects/zombie_slowdown/zombie_slowdown.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_TERRIFIED", 
+					"path": "images/initial/effects/zombie_terrified/zombie_terrified.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_DMG_REDUCTION", 
+					"path": "images/initial/effects/zombie_dmg_reduction/zombie_dmg_reduction.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_SPEEDUP", 
+					"path": "images/initial/effects/zombie_speedup/zombie_speedup.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_EAT_DPS", 
+					"path": "images/initial/effects/zombie_eat_dps/zombie_eat_dps.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_BRONZE_SHOCK", 
+					"path": "images/initial/effects/zombie_bronze_shock/zombie_bronze_shock.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_SUN", 
+					"path": "images/initial/effects/sun/sun.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_FROSTBITE_HEAT_PLANT", 
+					"path": "images/initial/effects/frostbite_heat_plant/frostbite_heat_plant.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_PLANTFOOD_PICKUP", 
+					"path": "images/initial/effects/plantfood_pickup/plantfood_pickup.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_PLANT_PLANTED", 
+					"path": "images/initial/effects/plant_planted/plant_planted.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_PLANT_UNPLANTED", 
+					"path": "images/initial/effects/plant_unplanted/plant_unplanted.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_PLANT_BURNT", 
+					"path": "images/initial/effects/plant_burnt/plant_burnt.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_MOWER_SPAWN", 
+					"path": "images/initial/effects/mower_spawn/mower_spawn.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_MOWER_ZOMBIE_HIT", 
+					"path": "images/initial/effects/mower_zombie_hit/mower_zombie_hit.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_ASH", 
+					"path": "images/initial/effects/zombie_ash/zombie_ash.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_SHOCK", 
+					"path": "images/initial/effects/zombie_shock/zombie_shock.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_FAT_ASH", 
+					"path": "images/initial/effects/zombie_fat_ash/zombie_fat_ash.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_FAT_SHOCK", 
+					"path": "images/initial/effects/zombie_fat_shock/zombie_fat_shock.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_IMP_SHOCK", 
+					"path": "images/initial/effects/zombie_imp_shock/zombie_imp_shock.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_IMP_ASH", 
+					"path": "images/initial/effects/zombie_imp_ash/zombie_imp_ash.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_BIG_ASH", 
+					"path": "images/initial/effects/zombie_big_ash/zombie_big_ash.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_BIG_SHOCK", 
+					"path": "images/initial/effects/zombie_big_shock/zombie_big_shock.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_SUN_EFFECT", 
+					"path": "images/initial/effects/zombie_sun_effect/zombie_sun_effect.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIES_STUN_EFFECT", 
+					"path": "images/initial/effects/zombie_stun/zombie_stun.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_STUN_EFFECT", 
+					"path": "images/initial/effects/zombie_stun_effect/zombie_stun_effect.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_SPLAT_PEA", 
+					"path": "images/initial/effects/splat_pea/splat_pea.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_T_SPLAT_PEA", 
+					"path": "images/initial/effects/T_splat_pea/T_splat_pea.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_SPLAT_GIANTPEA", 
+					"path": "images/initial/effects/splat_giantpea/splat_giantpea.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_CHILIBEAN_STUN_CLOUD", 
+					"path": "images/initial/effects/chilibean_stun_cloud/chilibean_stun_cloud.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_SPLAT_SNOW_PEA", 
+					"path": "images/initial/effects/splat_snow_pea/splat_snow_pea.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_T_SPLAT_SNOW_PEA", 
+					"path": "images/initial/effects/T_splat_snow_pea/T_splat_snow_pea.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_ANIMATIONS_TEXTFADEON", 
+					"path": "images/initial/animations/TextFadeOn/TextFadeOn.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PARTICLES", 
+					"path": "images/full/effects/frostbite_ice_block_particles/frostbite_ice_block_particles.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_REPEATER_PLANTFOOD_GIANTPEA", 
+					"path": "images/initial/effects/repeater_plantfood_giantpea/repeater_plantfood_giantpea.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_POWER_UP_LIGHTNING", 
+					"path": "images/initial/effects/power_up_lightning/power_up_lightning.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_POWER_UP_ZOMBIE_FLICK", 
+					"path": "images/initial/effects/power_up_zombie_flick/power_up_zombie_flick.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_POWER_UP_HEAD_PINCH", 
+					"path": "images/initial/effects/power_up_head_pinch/power_up_head_pinch.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_POWER_UP_FIRE", 
+					"path": "images/initial/effects/power_up_fire/power_up_fire.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_POWER_UP_FIRE_IMPACT", 
+					"path": "images/initial/effects/power_up_fire_impact/power_up_fire_impact.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_STAR_OBJECTIVE_FLOWER", 
+					"path": "images/initial/effects/star_objective_flower/star_objective_flower.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_STAR_OBJECTIVE_MOLD", 
+					"path": "images/initial/effects/star_objective_mold/star_objective_mold.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_STAR_OBJECTIVE_MOLD_ALT", 
+					"path": "images/initial/effects/star_objective_mold_alt/star_objective_mold_alt.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_PLANTFOOD_FX", 
+					"path": "images/initial/effects/plantfood_fx/plantfood_fx.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_GENERIC_EXPLOSION_BACK", 
+					"path": "images/initial/effects/generic_explosion_back/generic_explosion_back.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_GENERIC_EXPLOSION_FRONT", 
+					"path": "images/initial/effects/generic_explosion_front/generic_explosion_front.xfl"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_MINIGAME_BEACH_FOUL", 
+					"path": "images/initial/water_effects/beach_foul.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_BACKGROUNDS_BEACH_WATERSIGN", 
+					"path": "images/initial/water_effects/beach_watersign.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_EFFECTS_CARD_MOWER", 
+					"path": "images/initial/effects/card_mower.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_PLANTSHADOW2", 
+					"path": "images/initial/plantshadow2.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_PLANTSHADOW", 
+					"path": "images/initial/plantshadow.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_ICETRAP", 
+					"path": "images/initial/icetrap.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_PROJECTILEPEA", 
+					"path": "images/initial/ProjectilePea.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_PEA_SHADOWS", 
+					"path": "images/initial/pea_shadows.png", 
+					"additional": {
+						"cols": 2
+					}
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_EFFECTS_POWER_UP_ICE_PROJECTILE3", 
+					"path": "images/initial/effects/Power_Up_Ice_Projectile3.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_EFFECTS_POWER_UP_ICE_PROJECTILE2", 
+					"path": "images/initial/effects/Power_Up_Ice_Projectile2.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_EFFECTS_POWER_UP_ICE_PROJECTILE1", 
+					"path": "images/initial/effects/Power_Up_Ice_Projectile1.png"
+				}
+			]
+		}
+	}
+}

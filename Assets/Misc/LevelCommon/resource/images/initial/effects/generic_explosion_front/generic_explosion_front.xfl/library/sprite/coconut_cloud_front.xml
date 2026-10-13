@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/coconut_cloud_front" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="coconut_cloud_front">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/generic_explosion_front_1x1_2" loop="loop">
+                  <matrix>
+                    <Matrix a="1.067138671875" d="1.59225463867188" tx="16.9" ty="207.3"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/generic_explosion_front_236x223" loop="loop">
+                  <matrix>
+                    <Matrix d="-1" ty="62.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

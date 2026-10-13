@@ -1,0 +1,74 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="24.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/zombie_speedup_effect_125x126" href="media/zombie_speedup_effect_125x126.png"/>
+    <DOMBitmapItem name="media/zombie_speedup_effect_164x165" href="media/zombie_speedup_effect_164x165.png"/>
+    <DOMBitmapItem name="media/zombie_speedup_effect_213x214" href="media/zombie_speedup_effect_213x214.png"/>
+    <DOMBitmapItem name="media/zombie_speedup_effect_99x99" href="media/zombie_speedup_effect_99x99.png"/>
+  </media>
+  <symbols>
+    <Include href="image/zombie_speedup_effect_125x126.xml"/>
+    <Include href="image/zombie_speedup_effect_164x165.xml"/>
+    <Include href="image/zombie_speedup_effect_213x214.xml"/>
+    <Include href="image/zombie_speedup_effect_99x99.xml"/>
+    <Include href="label/idle.xml"/>
+    <Include href="label/over.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="20" name="idle" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" duration="20" name="over" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="19">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" duration="19">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="20">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/idle" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" duration="20">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/over" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

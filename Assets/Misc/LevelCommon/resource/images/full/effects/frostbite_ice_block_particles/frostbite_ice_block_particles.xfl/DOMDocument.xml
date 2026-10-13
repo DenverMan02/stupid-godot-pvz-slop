@@ -1,0 +1,115 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_103x98" href="media/frostbite_ice_block_particles_103x98.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_16x15" href="media/frostbite_ice_block_particles_16x15.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_1x1" href="media/frostbite_ice_block_particles_1x1.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_1x1_2" href="media/frostbite_ice_block_particles_1x1_2.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_1x1_3" href="media/frostbite_ice_block_particles_1x1_3.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_29x23" href="media/frostbite_ice_block_particles_29x23.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_32x28" href="media/frostbite_ice_block_particles_32x28.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_33x26" href="media/frostbite_ice_block_particles_33x26.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_37x34" href="media/frostbite_ice_block_particles_37x34.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_68x68" href="media/frostbite_ice_block_particles_68x68.png"/>
+    <DOMBitmapItem name="media/frostbite_ice_block_particles_77x130" href="media/frostbite_ice_block_particles_77x130.png"/>
+  </media>
+  <symbols>
+    <Include href="image/frostbite_ice_block_particles_103x98.xml"/>
+    <Include href="image/frostbite_ice_block_particles_16x15.xml"/>
+    <Include href="image/frostbite_ice_block_particles_1x1.xml"/>
+    <Include href="image/frostbite_ice_block_particles_1x1_2.xml"/>
+    <Include href="image/frostbite_ice_block_particles_1x1_3.xml"/>
+    <Include href="image/frostbite_ice_block_particles_29x23.xml"/>
+    <Include href="image/frostbite_ice_block_particles_32x28.xml"/>
+    <Include href="image/frostbite_ice_block_particles_33x26.xml"/>
+    <Include href="image/frostbite_ice_block_particles_37x34.xml"/>
+    <Include href="image/frostbite_ice_block_particles_68x68.xml"/>
+    <Include href="image/frostbite_ice_block_particles_77x130.xml"/>
+    <Include href="sprite/bounding_box.xml"/>
+    <Include href="sprite/ice_particle1_base.xml"/>
+    <Include href="sprite/ice_particle2_base.xml"/>
+    <Include href="sprite/ice_particle3_base.xml"/>
+    <Include href="sprite/ice_particle4_base.xml"/>
+    <Include href="sprite/power_up_freeze_cloud_front.xml"/>
+    <Include href="sprite/power_up_freeze_explode_puff.xml"/>
+    <Include href="sprite/power_up_freeze_explosion_01.xml"/>
+    <Include href="sprite/power_up_freeze_frostball.xml"/>
+    <Include href="label/animation.xml"/>
+    <Include href="label/animation2.xml"/>
+    <Include href="label/animation3.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="23" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" duration="20" name="animation2" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="43" duration="24" name="animation3" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="22">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="22">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" duration="19">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="42">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="43" duration="23">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="66">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="23">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" duration="20">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation2" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="43" duration="24">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation3" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

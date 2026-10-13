@@ -1,0 +1,100 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="label/animation" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0" duration="10">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix c="0.0934295654296875" tx="-78.35"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix a="0.95648193359375" b="0.288726806640625" c="-0.267684936523438" d="0.963760375976562" tx="-2.25" ty="-27.35"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="2">
+                  <matrix>
+                    <Matrix a="0.924146833716481" b="0.382037471633087" c="-0.382037471633087" d="0.924146833716481" tx="24.25" ty="-30.75"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="3">
+                  <matrix>
+                    <Matrix a="0.756402964984812" b="0.654105919987112" c="-0.654105919987112" d="0.756402964984812" tx="88.8" ty="-25.4"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="4">
+                  <matrix>
+                    <Matrix a="-0.103020567056518" b="0.994679226064038" c="-0.994679226064038" d="-0.103020567056518" tx="232.1" ty="115.95"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="5">
+                  <matrix>
+                    <Matrix a="-0.0661553228315457" b="0.997809337128619" c="-0.997809337128619" d="-0.0661553228315457" tx="219.9" ty="109.65"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0.670588235294118"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="6">
+                  <matrix>
+                    <Matrix a="-0.0311986097755822" b="0.999513204889296" c="-0.999513204889296" d="-0.0311986097755822" tx="207.75" ty="103.85"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0.333333333333333"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_transform" loop="loop" firstFrame="7">
+                  <matrix>
+                    <Matrix a="0.000796326710733263" b="0.999999682931835" c="-0.999999682931835" d="0.000796326710733263" tx="195.85" ty="98.95"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

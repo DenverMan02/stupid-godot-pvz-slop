@@ -1,0 +1,105 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/zombie_ash_104x95" href="media/zombie_ash_104x95.png"/>
+    <DOMBitmapItem name="media/zombie_ash_15x26" href="media/zombie_ash_15x26.png"/>
+    <DOMBitmapItem name="media/zombie_ash_18x14" href="media/zombie_ash_18x14.png"/>
+    <DOMBitmapItem name="media/zombie_ash_22x21" href="media/zombie_ash_22x21.png"/>
+    <DOMBitmapItem name="media/zombie_ash_22x22" href="media/zombie_ash_22x22.png"/>
+    <DOMBitmapItem name="media/zombie_ash_26x26" href="media/zombie_ash_26x26.png"/>
+    <DOMBitmapItem name="media/zombie_ash_37x18" href="media/zombie_ash_37x18.png"/>
+    <DOMBitmapItem name="media/zombie_ash_40x30" href="media/zombie_ash_40x30.png"/>
+    <DOMBitmapItem name="media/zombie_ash_53x33" href="media/zombie_ash_53x33.png"/>
+    <DOMBitmapItem name="media/zombie_ash_57x30" href="media/zombie_ash_57x30.png"/>
+    <DOMBitmapItem name="media/zombie_ash_61x18" href="media/zombie_ash_61x18.png"/>
+    <DOMBitmapItem name="media/zombie_ash_63x25" href="media/zombie_ash_63x25.png"/>
+    <DOMBitmapItem name="media/zombie_ash_69x23" href="media/zombie_ash_69x23.png"/>
+    <DOMBitmapItem name="media/zombie_ash_72x20" href="media/zombie_ash_72x20.png"/>
+    <DOMBitmapItem name="media/zombie_ash_76x27" href="media/zombie_ash_76x27.png"/>
+    <DOMBitmapItem name="media/zombie_ash_78x20" href="media/zombie_ash_78x20.png"/>
+    <DOMBitmapItem name="media/zombie_ash_7x7" href="media/zombie_ash_7x7.png"/>
+    <DOMBitmapItem name="media/zombie_ash_83x20" href="media/zombie_ash_83x20.png"/>
+    <DOMBitmapItem name="media/zombie_ash_83x89" href="media/zombie_ash_83x89.png"/>
+  </media>
+  <symbols>
+    <Include href="image/zombie_ash_104x95.xml"/>
+    <Include href="image/zombie_ash_15x26.xml"/>
+    <Include href="image/zombie_ash_18x14.xml"/>
+    <Include href="image/zombie_ash_22x21.xml"/>
+    <Include href="image/zombie_ash_22x22.xml"/>
+    <Include href="image/zombie_ash_26x26.xml"/>
+    <Include href="image/zombie_ash_37x18.xml"/>
+    <Include href="image/zombie_ash_40x30.xml"/>
+    <Include href="image/zombie_ash_53x33.xml"/>
+    <Include href="image/zombie_ash_57x30.xml"/>
+    <Include href="image/zombie_ash_61x18.xml"/>
+    <Include href="image/zombie_ash_63x25.xml"/>
+    <Include href="image/zombie_ash_69x23.xml"/>
+    <Include href="image/zombie_ash_72x20.xml"/>
+    <Include href="image/zombie_ash_76x27.xml"/>
+    <Include href="image/zombie_ash_78x20.xml"/>
+    <Include href="image/zombie_ash_7x7.xml"/>
+    <Include href="image/zombie_ash_83x20.xml"/>
+    <Include href="image/zombie_ash_83x89.xml"/>
+    <Include href="sprite/_zombie_ash_head.xml"/>
+    <Include href="sprite/zombie_ash_01.xml"/>
+    <Include href="sprite/zombie_ash_02.xml"/>
+    <Include href="sprite/zombie_ash_03.xml"/>
+    <Include href="sprite/zombie_ash_04.xml"/>
+    <Include href="sprite/zombie_ash_05.xml"/>
+    <Include href="sprite/zombie_ash_06.xml"/>
+    <Include href="sprite/zombie_ash_07.xml"/>
+    <Include href="sprite/zombie_ash_08.xml"/>
+    <Include href="sprite/zombie_ash_head_skull.xml"/>
+    <Include href="sprite/zombie_ash_particles.xml"/>
+    <Include href="sprite/zombie_ash_pile_bottom.xml"/>
+    <Include href="sprite/zombie_ash_pile_small.xml"/>
+    <Include href="sprite/zombie_ash_pile_top.xml"/>
+    <Include href="sprite/zombie_eye.xml"/>
+    <Include href="sprite/zombie_eye_sm.xml"/>
+    <Include href="sprite/zombie_eyelid.xml"/>
+    <Include href="sprite/zombie_pupil.xml"/>
+    <Include href="label/animation.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="105" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="104">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="104">
+              <Actionscript>
+                <script><![CDATA[stop();
+fscommand("playsample", "Play_Disco_Ash");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="105">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

@@ -1,0 +1,113 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_111x109" href="media/Water_Gargantuar_Ripple_111x109.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_21x12" href="media/Water_Gargantuar_Ripple_21x12.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_223x396" href="media/Water_Gargantuar_Ripple_223x396.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_225x59" href="media/Water_Gargantuar_Ripple_225x59.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_236x48" href="media/Water_Gargantuar_Ripple_236x48.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_237x46" href="media/Water_Gargantuar_Ripple_237x46.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_238x45" href="media/Water_Gargantuar_Ripple_238x45.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_238x51" href="media/Water_Gargantuar_Ripple_238x51.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_241x47" href="media/Water_Gargantuar_Ripple_241x47.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_241x49" href="media/Water_Gargantuar_Ripple_241x49.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_245x48" href="media/Water_Gargantuar_Ripple_245x48.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_248x46" href="media/Water_Gargantuar_Ripple_248x46.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_248x49" href="media/Water_Gargantuar_Ripple_248x49.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_249x48" href="media/Water_Gargantuar_Ripple_249x48.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_25x25" href="media/Water_Gargantuar_Ripple_25x25.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_71x19" href="media/Water_Gargantuar_Ripple_71x19.png"/>
+    <DOMBitmapItem name="media/Water_Gargantuar_Ripple_99x21" href="media/Water_Gargantuar_Ripple_99x21.png"/>
+  </media>
+  <symbols>
+    <Include href="image/Water_Gargantuar_Ripple_111x109.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_21x12.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_223x396.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_225x59.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_236x48.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_237x46.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_238x45.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_238x51.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_241x47.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_241x49.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_245x48.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_248x46.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_248x49.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_249x48.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_25x25.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_71x19.xml"/>
+    <Include href="image/Water_Gargantuar_Ripple_99x21.xml"/>
+    <Include href="sprite/Ripple_Trail_Base.xml"/>
+    <Include href="sprite/Ripple_Under_Shadow_Base.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave1.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave10.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave2.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave3.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave4.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave5.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave6.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave7.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave8.xml"/>
+    <Include href="sprite/Wading_Overlay_Wave9.xml"/>
+    <Include href="sprite/water_drop2.xml"/>
+    <Include href="label/ripple.xml"/>
+    <Include href="label/ripple_exit.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="59" name="ripple" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="59" duration="17" name="ripple_exit" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="58">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="58">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="59" duration="16">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="75">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="59">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/ripple" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="59" duration="17">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/ripple_exit" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

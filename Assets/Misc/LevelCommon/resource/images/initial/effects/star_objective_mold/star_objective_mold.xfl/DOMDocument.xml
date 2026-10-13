@@ -1,0 +1,143 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/star_objective_mold_12x12" href="media/star_objective_mold_12x12.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_146x84" href="media/star_objective_mold_146x84.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_28x28" href="media/star_objective_mold_28x28.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_32x32" href="media/star_objective_mold_32x32.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_35x32" href="media/star_objective_mold_35x32.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_39x36" href="media/star_objective_mold_39x36.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_7x7" href="media/star_objective_mold_7x7.png"/>
+    <DOMBitmapItem name="media/star_objective_mold_83x81" href="media/star_objective_mold_83x81.png"/>
+  </media>
+  <symbols>
+    <Include href="image/star_objective_mold_12x12.xml"/>
+    <Include href="image/star_objective_mold_146x84.xml"/>
+    <Include href="image/star_objective_mold_28x28.xml"/>
+    <Include href="image/star_objective_mold_32x32.xml"/>
+    <Include href="image/star_objective_mold_35x32.xml"/>
+    <Include href="image/star_objective_mold_39x36.xml"/>
+    <Include href="image/star_objective_mold_7x7.xml"/>
+    <Include href="image/star_objective_mold_83x81.xml"/>
+    <Include href="sprite/mold_body.xml"/>
+    <Include href="sprite/mold_eye_left.xml"/>
+    <Include href="sprite/mold_eye_right.xml"/>
+    <Include href="sprite/mold_pupil_left.xml"/>
+    <Include href="sprite/mold_pupil_right.xml"/>
+    <Include href="sprite/splat_pea.xml"/>
+    <Include href="sprite/splat_pea_particle.xml"/>
+    <Include href="label/idle.xml"/>
+    <Include href="label/fail.xml"/>
+    <Include href="label/win.xml"/>
+    <Include href="label/zombies.xml"/>
+    <Include href="label/zombies_idle.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="41" name="idle" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" duration="33" name="fail" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="74" duration="34" name="win" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="108" duration="5" name="zombies" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="113" duration="26" name="zombies_idle" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="40">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" duration="32">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="73">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="74" duration="33">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="107">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="108" duration="4">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="112">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="113" duration="25">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="138">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="41">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/idle" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="41" duration="33">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/fail" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="74" duration="34">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/win" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="108" duration="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/zombies" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="113" duration="26">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/zombies_idle" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

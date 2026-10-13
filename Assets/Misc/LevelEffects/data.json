@@ -1,0 +1,41 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"LevelEffects": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_LEVEL_WINDOW_ELECTRICITY", 
+					"path": "images/initial/effects/Level_window_electricity/Level_window_electricity.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_LEVELUP_TEXT_EN", 
+					"path": "images/initial/effects/Levelup_text_en/Levelup_text_en.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_LEVEL_BAR_POP", 
+					"path": "images/initial/effects/Level_bar_pop/Level_bar_pop.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_LEVEL_WINDOW_RAYS", 
+					"path": "images/initial/effects/Level_window_rays/Level_window_rays.xfl"
+				}
+			]
+		}
+	}
+}

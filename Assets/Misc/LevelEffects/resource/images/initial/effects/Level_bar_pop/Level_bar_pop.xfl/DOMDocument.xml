@@ -1,0 +1,83 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/Level_bar_pop_87x47" href="media/Level_bar_pop_87x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_97x47" href="media/Level_bar_pop_97x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_72x47" href="media/Level_bar_pop_72x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_28x22" href="media/Level_bar_pop_28x22.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_89x47" href="media/Level_bar_pop_89x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_57x36" href="media/Level_bar_pop_57x36.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_99x27" href="media/Level_bar_pop_99x27.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_96x30" href="media/Level_bar_pop_96x30.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_91x47" href="media/Level_bar_pop_91x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_55x47" href="media/Level_bar_pop_55x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_105x47" href="media/Level_bar_pop_105x47.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_167x163" href="media/Level_bar_pop_167x163.png"/>
+    <DOMBitmapItem name="media/Level_bar_pop_301x301" href="media/Level_bar_pop_301x301.png"/>
+  </media>
+  <symbols>
+    <Include href="image/Level_bar_pop_87x47.xml"/>
+    <Include href="image/Level_bar_pop_97x47.xml"/>
+    <Include href="image/Level_bar_pop_72x47.xml"/>
+    <Include href="image/Level_bar_pop_28x22.xml"/>
+    <Include href="image/Level_bar_pop_89x47.xml"/>
+    <Include href="image/Level_bar_pop_57x36.xml"/>
+    <Include href="image/Level_bar_pop_99x27.xml"/>
+    <Include href="image/Level_bar_pop_96x30.xml"/>
+    <Include href="image/Level_bar_pop_91x47.xml"/>
+    <Include href="image/Level_bar_pop_55x47.xml"/>
+    <Include href="image/Level_bar_pop_105x47.xml"/>
+    <Include href="image/Level_bar_pop_167x163.xml"/>
+    <Include href="image/Level_bar_pop_301x301.xml"/>
+    <Include href="label/animation.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="27" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="1">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1">
+              <Actionscript>
+                <script><![CDATA[fscommand("PlaySample", "Play_UI_Game_PlantLeveling_LevelUp_BarPop");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="24">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="26">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="27">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

@@ -1,0 +1,122 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/generic_explosion_back_117x88" href="media/generic_explosion_back_117x88.png"/>
+    <DOMBitmapItem name="media/generic_explosion_back_1x1" href="media/generic_explosion_back_1x1.png"/>
+    <DOMBitmapItem name="media/generic_explosion_back_205x194" href="media/generic_explosion_back_205x194.png"/>
+    <DOMBitmapItem name="media/generic_explosion_back_48x46" href="media/generic_explosion_back_48x46.png"/>
+  </media>
+  <symbols>
+    <Include href="image/generic_explosion_back_117x88.xml"/>
+    <Include href="image/generic_explosion_back_1x1.xml"/>
+    <Include href="image/generic_explosion_back_205x194.xml"/>
+    <Include href="image/generic_explosion_back_48x46.xml"/>
+    <Include href="sprite/_cherrybomb_explosion_cloud_rear.xml"/>
+    <Include href="sprite/coconut_cloud_back.xml"/>
+    <Include href="sprite/mc_cherrybomb_explosion_scorch.xml"/>
+    <Include href="label/animation.xml"/>
+    <Include href="label/animation2.xml"/>
+    <Include href="label/animation3.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="90" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="90" duration="90" name="animation2" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="180" duration="90" name="animation3" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="1">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1">
+              <Actionscript>
+                <script><![CDATA[fscommand("PlaySample", "Play_Plant_ExplodeONut_Explode");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="87">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="89">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="90" duration="1">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="91">
+              <Actionscript>
+                <script><![CDATA[fscommand("PlaySample", "Play_Plant_ExplodeONut_Explode");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="87">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="179">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="180" duration="1">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="181">
+              <Actionscript>
+                <script><![CDATA[fscommand("PlaySample", "Play_Plant_ExplodeONut_Explode");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="182" duration="87">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="269">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="90">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="90" duration="90">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation2" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="180" duration="90">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation3" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

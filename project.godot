@@ -11,13 +11,29 @@ config_version=5
 [application]
 
 config/name="Actual PvZ Project"
+config/description="A semi-MMO PvZ game made in Godot"
+config/version="0.0.0.1"
 config/features=PackedStringArray("4.7", "Mobile")
+boot_splash/show_image=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom="uid://bosry77wlc7pt"
+theme/custom_font="uid://cgbnift2ddb6f"
+
+[input_devices]
+
+joypads/ignore_joypad_on_unfocused_application=true
 
 [physics]
 
@@ -27,3 +43,4 @@ window/stretch/aspect="expand"
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

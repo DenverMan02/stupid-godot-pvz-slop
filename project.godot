@@ -14,9 +14,14 @@ config/name="Actual PvZ Project"
 config/description="A semi-MMO PvZ game made in Godot"
 config/version="0.0.0.1"
 config/features=PackedStringArray("4.7", "Mobile")
+run/main_scene="res://Scenes/TitleScreen.tscn"
 boot_splash/show_image=false
 boot_splash/use_filter=false
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioManager="*res://audiomanager.gd"
 
 [display]
 

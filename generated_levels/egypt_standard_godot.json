@@ -1,0 +1,694 @@
+{
+  "level_id": "egypt_standard",
+  "name": "Custom Generated Level",
+  "world": "Egypt",
+  "archetype": "Standard",
+  "difficulty_rating": 2,
+  "starting_sun": 50,
+  "natural_sun_drop": true,
+  "plant_selection": {
+    "mode": "Chooser",
+    "allowed_plants": [
+      "peashooter",
+      "sunflower",
+      "wallnut",
+      "potato_mine",
+      "cabbagepult",
+      "bloomerang",
+      "gravebuster"
+    ]
+  },
+  "lawn_layout": {
+    "grid_size": {
+      "rows": 5,
+      "cols": 9
+    },
+    "initial_plants": [],
+    "grid_items": [
+      {
+        "type": "gravestone",
+        "grid_x": 6,
+        "grid_y": 3
+      },
+      {
+        "type": "gravestone",
+        "grid_x": 6,
+        "grid_y": 1
+      },
+      {
+        "type": "gravestone",
+        "grid_x": 8,
+        "grid_y": 4
+      },
+      {
+        "type": "gravestone",
+        "grid_x": 6,
+        "grid_y": 5
+      }
+    ]
+  },
+  "wave_config": {
+    "flag_wave_interval": 5,
+    "min_next_wave_health_pct": 0.55,
+    "max_next_wave_health_pct": 0.7,
+    "first_wave_delay_secs": 3.0
+  },
+  "waves": [
+    {
+      "wave_number": 1,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 0.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 3.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 0.9,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 1.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 1.6,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 2.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 1.8,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 2.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 2.8,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 1.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 1.7,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 2.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 1.9,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 2.4,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 2,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 1.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 0.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 2.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 3,
+          "delay_secs": 1.2,
+          "has_plantfood": true
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 1,
+          "delay_secs": 0.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 2.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 4,
+          "delay_secs": 0.8,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 5,
+          "delay_secs": 3.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 2.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 1.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 0.2,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 3,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 3,
+          "delay_secs": 1.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 1.7,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 1.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 4,
+          "delay_secs": 2.8,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 2.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 3,
+          "delay_secs": 1.2,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 4,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 5,
+          "delay_secs": 1.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 4,
+          "delay_secs": 0.2,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 5,
+      "is_flag_wave": true,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 5,
+          "delay_secs": 0.5,
+          "has_plantfood": true
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 0.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 3,
+          "delay_secs": 1.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 0.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 1,
+          "delay_secs": 2.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 5,
+          "delay_secs": 0.4,
+          "has_plantfood": false
+        }
+      ],
+      "events": [
+        {
+          "event_type": "sandstorm",
+          "target_row": 3,
+          "target_col": 5,
+          "zombie_type": "mummy"
+        }
+      ]
+    },
+    {
+      "wave_number": 6,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 4,
+          "delay_secs": 0.9,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 5,
+          "delay_secs": 2.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 1,
+          "delay_secs": 3.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 1.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 2,
+          "delay_secs": 1.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 2.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 1.6,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 1,
+          "delay_secs": 2.2,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 7,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 5,
+          "delay_secs": 1.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 3,
+          "delay_secs": 0.5,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 1,
+          "delay_secs": 0.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 4,
+          "delay_secs": 2.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 1.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 0.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 2.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 2.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 2.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 2.0,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 8,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 1,
+          "delay_secs": 0.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 2,
+          "delay_secs": 0.9,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 4,
+          "delay_secs": 0.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 3,
+          "delay_secs": 2.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 5,
+          "delay_secs": 1.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 0.9,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 0.6,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 2.8,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 9,
+      "is_flag_wave": false,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 5,
+          "delay_secs": 0.8,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 2,
+          "delay_secs": 2.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 4,
+          "delay_secs": 2.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 1,
+          "delay_secs": 0.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 1.6,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 5,
+          "delay_secs": 0.8,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 3.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 4,
+          "delay_secs": 0.8,
+          "has_plantfood": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "wave_number": 10,
+      "is_flag_wave": true,
+      "spawns": [
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 5,
+          "delay_secs": 0.5,
+          "has_plantfood": true
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 1,
+          "delay_secs": 0.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 2,
+          "delay_secs": 2.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 3,
+          "delay_secs": 1.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 4,
+          "delay_secs": 1.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 5,
+          "delay_secs": 2.9,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 1,
+          "delay_secs": 1.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 0.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 3,
+          "delay_secs": 0.7,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "tomb_raiser",
+          "row": 4,
+          "delay_secs": 2.7,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 5,
+          "delay_secs": 1.2,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "pharaoh",
+          "row": 1,
+          "delay_secs": 0.3,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 2,
+          "delay_secs": 1.1,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 0.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 4,
+          "delay_secs": 0.7,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor2",
+          "row": 5,
+          "delay_secs": 1.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 1,
+          "delay_secs": 0.4,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy_armor1",
+          "row": 2,
+          "delay_secs": 1.0,
+          "has_plantfood": false
+        },
+        {
+          "zombie_type": "mummy",
+          "row": 3,
+          "delay_secs": 2.9,
+          "has_plantfood": false
+        }
+      ],
+      "events": [
+        {
+          "event_type": "sandstorm",
+          "target_row": 3,
+          "target_col": 5,
+          "zombie_type": "mummy"
+        }
+      ]
+    }
+  ]
+}

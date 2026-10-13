@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GodotPvZLevelSchema",
+  "description": "Clean, modular, and extensible level data format for Godot Plants vs. Zombies",
+  "type": "object",
+  "required": [
+    "level_id",
+    "name",
+    "world",
+    "archetype",
+    "starting_sun",
+    "waves"
+  ],
+  "properties": {
+    "level_id": {
+      "type": "string",
+      "example": "egypt_custom_01"
+    },
+    "name": {
+      "type": "string",
+      "example": "Ancient Pyramid Defense"
+    },
+    "world": {
+      "type": "string",
+      "enum": ["Egypt", "Pirate", "West", "Future", "Dark", "Beach", "Frostbite", "LostCity", "80s", "Dino", "Modern"],
+      "default": "Egypt"
+    },
+    "archetype": {
+      "type": "string",
+      "enum": ["Standard", "Conveyor Belt", "Last Stand", "Preset Defense"],
+      "default": "Standard"
+    },
+    "difficulty_rating": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "default": 2
+    },
+    "starting_sun": {
+      "type": "integer",
+      "default": 50
+    },
+    "natural_sun_drop": {
+      "type": "boolean",
+      "default": true
+    },
+    "plant_selection": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["Chooser", "Conveyor", "PresetOnly"],
+          "default": "Chooser"
+        },
+        "allowed_plants": {
+          "type": "array",
+          "items": { "type": "string" },
+          "example": ["peashooter", "sunflower", "wallnut", "potato_mine", "cabbagepult"]
+        },
+        "conveyor_queue": {
+          "type": "object",
+          "properties": {
+            "max_active_packets": { "type": "integer", "default": 5 },
+            "cards": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "plant": { "type": "string" },
+                  "weight": { "type": "integer", "default": 100 },
+                  "max_on_lawn": { "type": "integer", "default": 0 }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "lawn_layout": {
+      "type": "object",
+      "properties": {
+        "grid_size": {
+          "type": "object",
+          "properties": {
+            "rows": { "type": "integer", "default": 5 },
+            "cols": { "type": "integer", "default": 9 }
+          }
+        },
+        "initial_plants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "plant": { "type": "string" },
+              "grid_x": { "type": "integer" },
+              "grid_y": { "type": "integer" },
+              "protected": { "type": "boolean", "default": false }
+            }
+          }
+        },
+        "grid_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string", "enum": ["gravestone", "mold", "railcart", "water"] },
+              "grid_x": { "type": "integer" },
+              "grid_y": { "type": "integer" }
+            }
+          }
+        }
+      }
+    },
+    "wave_config": {
+      "type": "object",
+      "properties": {
+        "flag_wave_interval": { "type": "integer", "default": 5 },
+        "min_next_wave_health_pct": { "type": "number", "default": 0.55 },
+        "max_next_wave_health_pct": { "type": "number", "default": 0.70 },
+        "first_wave_delay_secs": { "type": "number", "default": 3.0 }
+      }
+    },
+    "waves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["wave_number", "is_flag_wave", "spawns"],
+        "properties": {
+          "wave_number": { "type": "integer" },
+          "is_flag_wave": { "type": "boolean", "default": false },
+          "spawns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["zombie_type", "row"],
+              "properties": {
+                "zombie_type": { "type": "string" },
+                "row": { "type": "integer", "minimum": 1, "maximum": 5 },
+                "delay_secs": { "type": "number", "default": 0.0 },
+                "has_plantfood": { "type": "boolean", "default": false }
+              }
+            }
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "event_type": { "type": "string", "enum": ["sandstorm", "swashbuckler_raid", "parachute_drop", "dino_appearance", "gravestone_rise"] },
+                "target_row": { "type": "integer" },
+                "target_col": { "type": "integer" },
+                "zombie_type": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

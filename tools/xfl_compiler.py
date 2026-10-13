@@ -55,9 +55,14 @@ def get_texture_id(name):
         texture_list.append(path)
     return texture_map[path]
 
-def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list, is_root_label=False):
-    # Ignore costume container slot if default/no costume equipped
+def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list, anim_name, is_root_label=False):
+    # 1. Ignore costume container slot if default/no costume equipped
     if symbol_name == 'sprite/_custom':
+        return
+
+    # 2. In normal attack/idle/water animations, ignore Gatling helmet parts (e.g. helmet screws)
+    # They only belong in plantfood where Gatling Pea transformation is active
+    if anim_name != 'plantfood' and 'gatlingpea_' in symbol_name:
         return
 
     dom = get_symbol(symbol_name)
@@ -76,8 +81,6 @@ def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list, is_root_label
     if tl_duration == 0:
         return
 
-    # In Flash: Root timeline does NOT loop individual layers!
-    # Sub-symbols loop their timeline if loop="loop"
     eval_f = frame_idx if is_root_label else (frame_idx % tl_duration)
     
     for layer in reversed(layers):
@@ -109,7 +112,7 @@ def evaluate_symbol(symbol_name, frame_idx, parent_mat, draw_list, is_root_label
                 sub_f = sub_first if loop_type == 'single frame' else (sub_first + eval_f)
                 local_m = parse_matrix_elem(el)
                 final_m = mult_matrix(parent_mat, local_m)
-                evaluate_symbol(sub_name, sub_f, final_m, draw_list, is_root_label=False)
+                evaluate_symbol(sub_name, sub_f, final_m, draw_list, anim_name, is_root_label=False)
 
 # Load DOMDocument
 dom_xml = fetch_file('Assets/Plants/peashooter.xfl/DOMDocument.xml')
@@ -165,7 +168,7 @@ for anim_name, info in anim_defs.items():
             
         draw_list = []
         base_mat = [1.0, 0.0, 0.0, 1.0, -pivot_x, -pivot_y]
-        evaluate_symbol(symbol_name, local_f, base_mat, draw_list, is_root_label=True)
+        evaluate_symbol(symbol_name, local_f, base_mat, draw_list, anim_name, is_root_label=True)
         frames_data.append(draw_list)
         
     compiled_anims[anim_name] = {

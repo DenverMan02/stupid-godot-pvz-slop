@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/cabbage_basket_attack" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="cabbage_basket_attack">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/cabbage_basket_front" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.984542846679688" b="0.175079345703125" c="-0.175079345703125" d="0.984542846679688" tx="-0.25" ty="6.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/cabbage_projectile" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.984542846679688" b="0.175079345703125" c="-0.175079345703125" d="0.984542846679688" tx="-14.15" ty="-5.5"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/cabbage_basket_back" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.984542846679688" b="0.175079345703125" c="-0.175079345703125" d="0.984542846679688" tx="-15.1" ty="3"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -13,11 +13,37 @@ def run_cmd(cmd):
         return False
     return True
 
-def pull():
-    """Pull latest changes from the current branch and fetch LFS files."""
-    print("--- Pulling latest changes ---")
-    if not run_cmd(["git", "pull"]):
+def get_current_branch():
+    """Detects the current git branch name."""
+    res = subprocess.run(["git", "branch", "--show-current"], capture_output=True, text=True)
+    branch = res.stdout.strip()
+    return branch if branch else "main"
+
+def pull(force=False):
+    """Pull latest changes from the current branch and fetch LFS files.
+    If force is True, fetches origin and hard-resets tracked files to match remote.
+    """
+    branch = get_current_branch()
+    
+    if force:
+        print(f"--- FORCE PULL: Overwriting local tracked files with origin/{branch} ---")
+        if not run_cmd(["git", "fetch", "origin"]):
+            return False
+        if not run_cmd(["git", "reset", "--hard", f"origin/{branch}"]):
+            return False
+        run_cmd(["git", "lfs", "pull"])
+        print("[✓] Successfully force-synced with remote!")
+        return True
+
+    print(f"--- Pulling latest changes from {branch} ---")
+    result = subprocess.run(["git", "pull"])
+    if result.returncode != 0:
+        print("\n[!] Standard 'git pull' failed (likely due to local uncommitted edits or conflict markers).")
+        choice = input(f"Do you want to FORCE overwrite local files with origin/{branch}? (y/N): ").strip().lower()
+        if choice in ("y", "yes"):
+            return pull(force=True)
         return False
+
     # Ensures large binary files are fetched if any were updated
     run_cmd(["git", "lfs", "pull"])
     return True
@@ -53,17 +79,20 @@ def interactive_menu():
         print("\n=== Git Sync Helper ===")
         print("1. Push (add, commit, push)")
         print("2. Pull (fetch & merge)")
-        print("3. Status")
-        print("4. Exit")
-        choice = input("Select an option (1-4): ").strip()
+        print("3. Force Pull (hard reset & overwrite with remote)")
+        print("4. Status")
+        print("5. Exit")
+        choice = input("Select an option (1-5): ").strip()
 
         if choice == "1":
             push()
         elif choice == "2":
             pull()
         elif choice == "3":
+            pull(force=True)
+        elif choice == "4":
             status()
-        elif choice in ("4", "q", "exit"):
+        elif choice in ("5", "q", "exit"):
             print("Goodbye!")
             break
         else:
@@ -79,14 +108,17 @@ def main():
         if command == "push":
             msg = " ".join(sys.argv[2:]) if len(sys.argv) > 2 else None
             push(msg)
-        elif command == "pull":
-            pull()
+        elif command in ("pull", "force-pull", "forcepull"):
+            # Check if user specified 'force' or '--force'
+            is_force = (command in ("force-pull", "forcepull")) or (len(sys.argv) > 2 and sys.argv[2].lower() in ("force", "--force", "-f"))
+            pull(force=is_force)
         elif command == "status":
             status()
         else:
             print("Usage:")
             print(f"  python3 {script_name}              (Interactive menu)")
-            print(f"  python3 {script_name} pull         (Pull updates)")
+            print(f"  python3 {script_name} pull         (Pull updates, prompt to force if conflict)")
+            print(f"  python3 {script_name} pull force   (Force overwrite local with remote)")
             print(f"  python3 {script_name} push [msg]   (Stage, commit with optional message, and push)")
             print(f"  python3 {script_name} status       (Quick status check)")
 

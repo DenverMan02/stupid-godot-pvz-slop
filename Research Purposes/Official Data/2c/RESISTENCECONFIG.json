@@ -1,0 +1,40 @@
+{
+	"#comment": "", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ZombieResistenceConfig", 
+			"aliases": [
+				"ResistenceConfig"
+			], 
+			"objdata": {
+				"ResistenceValueInfos": [
+					{
+						"MinValue": 0, 
+						"MaxValue": 0.2
+					}, 
+					{
+						"MinValue": 0.2, 
+						"MaxValue": 0.4
+					}, 
+					{
+						"MinValue": 0.4, 
+						"MaxValue": 0.6
+					}, 
+					{
+						"MinValue": 0.6, 
+						"MaxValue": 0.8
+					}, 
+					{
+						"MinValue": 0.8, 
+						"MaxValue": 1.0
+					}, 
+					{
+						"MinValue": 1.0, 
+						"MaxValue": 2.0
+					}
+				]
+			}
+		}
+	]
+}

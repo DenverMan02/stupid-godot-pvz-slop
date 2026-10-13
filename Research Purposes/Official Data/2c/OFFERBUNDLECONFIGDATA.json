@@ -1,0 +1,122 @@
+{
+	"#comment": "Oppo Bundle Config here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "OfferBundleConfig", 
+			"aliases": [
+				"OfferBundleConfigData"
+			], 
+			"objdata": {
+				"BundleInfoList": [
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gempackagelv6", 
+						"Gems": "200", 
+						"DisplayImage": "IMAGE_UI_RECHARGEBUNDLE_OFFER_6"
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gempackagelv7", 
+						"Gems": "700", 
+						"DisplayImage": "IMAGE_UI_RECHARGEBUNDLE_OFFER_7"
+					}
+				], 
+				"loginReward": [
+					{
+						"items": [
+							{
+								"id": 111156, 
+								"count": 10
+							}
+						]
+					}, 
+					{
+						"items": [
+							{
+								"id": 4013, 
+								"count": 20000
+							}
+						]
+					}, 
+					{
+						"items": [
+							{
+								"id": 111156, 
+								"count": 30
+							}
+						]
+					}, 
+					{
+						"items": [
+							{
+								"id": 4013, 
+								"count": 30000
+							}
+						]
+					}, 
+					{
+						"items": [
+							{
+								"id": 3008, 
+								"count": 30
+							}
+						]
+					}, 
+					{
+						"items": [
+							{
+								"id": 4013, 
+								"count": 50000
+							}
+						]
+					}, 
+					{
+						"items": [
+							{
+								"id": 111156, 
+								"count": 50
+							}
+						]
+					}
+				], 
+				"rechargeReward": [
+					1030, 
+					1024, 
+					1070, 
+					1022, 
+					1037, 
+					1063, 
+					1073, 
+					1078, 
+					1083, 
+					1084, 
+					1088, 
+					1019, 
+					1008, 
+					1009, 
+					1017, 
+					1039, 
+					1044, 
+					1040, 
+					1047, 
+					1062
+				], 
+				"rechargeLevel": [
+					6, 
+					18, 
+					30
+				], 
+				"rechargeRewardPlantPiecesBlue": [
+					10, 
+					25, 
+					45
+				], 
+				"rechargeRewardPlantPiecesGreen": [
+					10, 
+					30, 
+					50
+				], 
+				"rechargeRewardAvatarPicecs": 5
+			}
+		}
+	]
+}

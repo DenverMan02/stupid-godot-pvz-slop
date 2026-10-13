@@ -1,0 +1,283 @@
+{
+	"#comment": "All NPC loading data goes here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"CrazyDave"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_CRAZYDAVE", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "crazydave", 
+				"ArtCornerPosition": {
+					"mX": 35, 
+					"mY": 400
+				}, 
+				"ArtIsMirrored": false, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_CrazyDave", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"EvilCrazyDave"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_EVILCRAZYDAVE", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "evilcrazydave", 
+				"ArtCornerPosition": {
+					"mX": 35, 
+					"mY": 400
+				}, 
+				"ArtIsMirrored": false, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_EvilCrazyDave", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"ResearcherCrazyDave"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_RESEARCHERCRAZYDAVE", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "researchercrazydave", 
+				"ArtCornerPosition": {
+					"mX": 35, 
+					"mY": 400
+				}, 
+				"ArtIsMirrored": false, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_ResearcherCrazyDave", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"Winnie"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_WINNIE_WINNIE", 
+				"SoundBankPrefix": "TimeMachine", 
+				"Name": "winnie", 
+				"ArtCornerPosition": {
+					"mX": 170, 
+					"mY": 325
+				}, 
+				"ArtIsMirrored": true, 
+				"FontType": "Pico", 
+				"LoadResourceGroups": [
+					"NPC_Winnie", 
+					"AudioTimeMachine", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"SpecialWinnie"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_WINNIE_SPECIAL_WINNIE", 
+				"SoundBankPrefix": "TimeMachine", 
+				"Name": "specialwinnie", 
+				"ArtCornerPosition": {
+					"mX": 170, 
+					"mY": 325
+				}, 
+				"ArtIsMirrored": true, 
+				"FontType": "Pico", 
+				"LoadResourceGroups": [
+					"NPC_Special_Winnie", 
+					"AudioTimeMachine", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"Zbcommander"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_ZBCOMMANDER_ZBCOMMANDER", 
+				"SoundBankPrefix": "Zomboss_Scrawl", 
+				"Name": "zbcommander", 
+				"ArtCornerPosition": {
+					"mX": 220, 
+					"mY": 325
+				}, 
+				"ArtIsMirrored": true, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_Zbcommander", 
+					"ZombossEgyptAudio", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"CrazyDaveIcon"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_DAVEWINNIE_NARRATIONICONS", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "crazydaveicon", 
+				"DialogStyle": "Banner", 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_WorldMapIcons", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"WinnieIcon"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_DAVEWINNIE_NARRATIONICONS", 
+				"SoundBankPrefix": "TimeMachine", 
+				"Name": "winnieicon", 
+				"DialogStyle": "Banner", 
+				"ArtIsMirrored": true, 
+				"FontType": "Pico", 
+				"LoadResourceGroups": [
+					"NPC_WorldMapIcons", 
+					"AudioTimeMachine", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"ZombossIcon"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_NPC_NARRATIONICONS_ZOMBOSS", 
+				"SoundBankPrefix": "Zomboss_Scrawl", 
+				"Name": "zombossicon", 
+				"DialogStyle": "TopBanner", 
+				"ArtIsMirrored": false, 
+				"FontType": "AshleyScript", 
+				"EnterAudioEvent": "Play_Zomb_WildWest_Zomboss_Enter", 
+				"ExitAudioEvent": "Play_Zomb_WildWest_Zomboss_Exit", 
+				"LoadResourceGroups": [
+					"NPC_Zomboss_WorldMapIcons", 
+					"ZombossEgyptAudio", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"NewyearCrazyDave"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_CRAZYDAVE_NEWYEAR", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "newyearcrazydave", 
+				"ArtCornerPosition": {
+					"mX": 35, 
+					"mY": 400
+				}, 
+				"ArtIsMirrored": false, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_CrazyDave", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"No42CrazyDave"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_CRAZYDAVE_NO42", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "no42crazydave", 
+				"ArtCornerPosition": {
+					"mX": 35, 
+					"mY": 400
+				}, 
+				"ArtIsMirrored": false, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_CrazyDave", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"No42ZombossIcon"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_NPC_NARRATIONICONS_ZOMBOSS_NO42", 
+				"SoundBankPrefix": "Zomboss_Scrawl", 
+				"Name": "no42zombossicon", 
+				"DialogStyle": "TopBanner", 
+				"ArtIsMirrored": false, 
+				"FontType": "AshleyScript", 
+				"EnterAudioEvent": "Play_Zomb_WildWest_Zomboss_Enter", 
+				"ExitAudioEvent": "Play_Zomb_WildWest_Zomboss_Exit", 
+				"LoadResourceGroups": [
+					"NPC_Zomboss_WorldMapIcons", 
+					"ZombossEgyptAudio", 
+					"NPC_Common"
+				]
+			}
+		}, 
+		{
+			"objclass": "NPCDataSheet", 
+			"aliases": [
+				"AstronautCrazyDave"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_CRAZYDAVE_CRAZYDAVE_ASTRONAUT", 
+				"SoundBankPrefix": "CrazyDave", 
+				"Name": "astronautcrazydave", 
+				"ArtCornerPosition": {
+					"mX": 35, 
+					"mY": 400
+				}, 
+				"ArtIsMirrored": false, 
+				"FontType": "Brianne", 
+				"LoadResourceGroups": [
+					"NPC_CrazyDave", 
+					"AudioCrazyDave", 
+					"NPC_Common"
+				]
+			}
+		}
+	]
+}

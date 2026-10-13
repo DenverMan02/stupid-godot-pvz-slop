@@ -1,0 +1,606 @@
+{
+	"#comment": "Insert new Main Themes here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"projectile"
+			], 
+			"objdata": {
+				"Description": "[THEME_PROJECTILE_DESCRIPTION]", 
+				"Name": "[THEME_PROJECTILE_NAME]", 
+				"Type": "projectile", 
+				"ThemeNames": [
+					"junggled"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"nuke"
+			], 
+			"objdata": {
+				"Description": "[THEME_NUKE_DESCRIPTION]", 
+				"Name": "[THEME_NUKE_NAME]", 
+				"Type": "nuke", 
+				"ThemeNames": [
+					"healthdebuff"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"exploder"
+			], 
+			"objdata": {
+				"Description": "[THEME_EXPLODER_DESCRIPTION]", 
+				"Name": "[THEME_EXPLODER_NAME]", 
+				"Type": "exploder", 
+				"ThemeNames": [
+					"exploder"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"ko"
+			], 
+			"objdata": {
+				"Description": "[THEME_KO_DESCRIPTION]", 
+				"Name": "[THEME_KO_NAME]", 
+				"Type": "ko", 
+				"ThemeNames": [
+					"noplantfood"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"gravity"
+			], 
+			"objdata": {
+				"Description": "[THEME_GRAVITY_DESCRIPTION]", 
+				"Name": "[THEME_GRAVITY_NAME]", 
+				"Type": "gravity", 
+				"ThemeNames": [
+					"reducerange"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"zombie"
+			], 
+			"objdata": {
+				"Description": "[THEME_ZOMBIE_DESCRIPTION]", 
+				"Name": "[THEME_ZOMBIE_NAME]", 
+				"Type": "zombie", 
+				"ThemeNames": [
+					"armored"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"rift"
+			], 
+			"objdata": {
+				"Description": "[THEME_RIFT_DESCRIPTION]", 
+				"Name": "[THEME_RIFT_NAME]", 
+				"Type": "rift", 
+				"ThemeNames": [
+					"limitedpacket", 
+					"zombiespeed"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"zomboss"
+			], 
+			"objdata": {
+				"Description": "[THEME_ZOMBOSS_DESCRIPTION]", 
+				"Name": "[THEME_ZOMBOSS_NAME]", 
+				"Type": "zomboss", 
+				"ThemeNames": [
+					"reducerange", 
+					"healthdebuff"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"invisible"
+			], 
+			"objdata": {
+				"Description": "[THEME_INVISIBLE_DESCRIPTION]", 
+				"Name": "[THEME_INVISIBLE_NAME]", 
+				"Type": "invisible", 
+				"ThemeNames": [
+					"invisible"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"rusher"
+			], 
+			"objdata": {
+				"Description": "[THEME_RUSHER_DESCRIPTION]", 
+				"Name": "[THEME_RUSHER_NAME]", 
+				"Type": "rusher", 
+				"ThemeNames": [
+					"shrunken"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"sun"
+			], 
+			"objdata": {
+				"Description": "[THEME_SUN_DESCRIPTION]", 
+				"Name": "[THEME_SUN_NAME]", 
+				"Type": "sun", 
+				"ThemeNames": [
+					"sun"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"dark"
+			], 
+			"objdata": {
+				"Description": "[THEME_DARK_DESCRIPTION]", 
+				"Name": "[THEME_DARK_NAME]", 
+				"Type": "dark", 
+				"ThemeNames": [
+					"dark"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"blizzard"
+			], 
+			"objdata": {
+				"Description": "[THEME_BLIZZARD_DESCRIPTION]", 
+				"Name": "[THEME_BLIZZARD_NAME]", 
+				"Type": "blizzard", 
+				"ThemeNames": [
+					"blizzard"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"gravestone"
+			], 
+			"objdata": {
+				"Description": "[THEME_GRAVESTONE_DESCRIPTION]", 
+				"Name": "[THEME_GRAVESTONE_NAME]", 
+				"Type": "gravestone", 
+				"ThemeNames": [
+					"gravestone"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"plant_exploder"
+			], 
+			"objdata": {
+				"Description": "[THEME_EXPLODER_DESCRIPTION]", 
+				"Name": "[THEME_EXPLODER_NAME]", 
+				"Type": "plant_exploder", 
+				"ThemeNames": [
+					"plant_exploder"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"plant_aoe"
+			], 
+			"objdata": {
+				"Description": "[THEME_AOE_DESCRIPTION]", 
+				"Name": "[THEME_AOE_NAME]", 
+				"Type": "plant_aoe", 
+				"ThemeNames": [
+					"plant_aoe"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"plant_fastcd"
+			], 
+			"objdata": {
+				"Description": "[THEME_FASTCD_DESCRIPTION]", 
+				"Name": "[THEME_FASTCD_NAME]", 
+				"Type": "plant_fastcd", 
+				"ThemeNames": [
+					"plant_fastcd"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"plant_melee"
+			], 
+			"objdata": {
+				"Description": "[THEME_MELEE_DESCRIPTION]", 
+				"Name": "[THEME_MELEE_NAME]", 
+				"Type": "plant_melee", 
+				"ThemeNames": [
+					"plant_melee"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"lemon"
+			], 
+			"objdata": {
+				"Description": "[THEME_LEMON_DESCRIPTION]", 
+				"Name": "[THEME_LEMON_NAME]", 
+				"Type": "lemon", 
+				"ThemeNames": [
+					"lemon"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"seed_rain"
+			], 
+			"objdata": {
+				"Description": "[THEME_SEED_RAIN_DESCRIPTION]", 
+				"Name": "[THEME_SEED_RAIN_NAME]", 
+				"Type": "seed_rain", 
+				"ThemeNames": [
+					"seed_rain"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"wealth"
+			], 
+			"objdata": {
+				"Description": "[THEME_WEALTH_GOD_DESCRIPTION]", 
+				"Name": "[THEME_WEALTH_GOD_NAME]", 
+				"Type": "wealth", 
+				"ThemeNames": [
+					"wealth"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"spawn_offset"
+			], 
+			"objdata": {
+				"Description": "[THEME_SPAWN_OFFSET_DESCRIPTION]", 
+				"Name": "[THEME_SPWAN_OFFSET_NAME]", 
+				"Type": "spawn_offset", 
+				"ThemeNames": [
+					"spawn_offset"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"fire_reduce"
+			], 
+			"objdata": {
+				"Description": "[THEME_FIRE_REDUCE_DESCRIPTION]", 
+				"Name": "[THEME_FIRE_REDUCE_NAME]", 
+				"Type": "fire_reduce", 
+				"ThemeNames": [
+					"fire_reduce"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"lighting_reduce"
+			], 
+			"objdata": {
+				"Description": "[THEME_LIGHTING_REDUCE_DESCRIPTION]", 
+				"Name": "[THEME_LIGHTING_REDUCE_NAME]", 
+				"Type": "lighting_reduce", 
+				"ThemeNames": [
+					"lighting_reduce"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"cold_reduce"
+			], 
+			"objdata": {
+				"Description": "[THEME_COLD_REDUCE_DESCRIPTION]", 
+				"Name": "[THEME_COLD_REDUCE_NAME]", 
+				"Type": "cold_reduce", 
+				"ThemeNames": [
+					"cold_reduce"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"heavy_ballon"
+			], 
+			"objdata": {
+				"Description": "[THEME_HEAVY_BALLON_DESCRIPTION]", 
+				"Name": "[THEME_HEAVY_BALLON_NAME]", 
+				"Type": "heavy_ballon", 
+				"ThemeNames": [
+					"heavy_ballon"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"miner_cheating"
+			], 
+			"objdata": {
+				"Description": "[THEME_MINER_CHEATING_DESCRIPTION]", 
+				"Name": "[THEME_MINER_CHEATING_NAME]", 
+				"Type": "miner_cheating", 
+				"ThemeNames": [
+					"miner_cheating"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"knight_cheating"
+			], 
+			"objdata": {
+				"Description": "[THEME_KNIGHT_CHEATING_DESCRIPTION]", 
+				"Name": "[THEME_KNIGHT_CHEATING_NAME]", 
+				"Type": "knight_cheating", 
+				"ThemeNames": [
+					"knight_cheating"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"mage_cheating"
+			], 
+			"objdata": {
+				"Description": "[THEME_MAGE_CHEATING_DESCRIPTION]", 
+				"Name": "[THEME_MAGE_CHEATING_NAME]", 
+				"Type": "mage_cheating", 
+				"ThemeNames": [
+					"mage_cheating"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"balloon"
+			], 
+			"objdata": {
+				"Description": "[THEME_BALLOON_DESCRIPTION]", 
+				"Name": "[THEME_BALLOON_NAME]", 
+				"Type": "balloon", 
+				"ThemeNames": [
+					"balloon"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"piggy_bank"
+			], 
+			"objdata": {
+				"Description": "[THEME_PIGGYBANK_DESCRIPTION]", 
+				"Name": "[THEME_PIGGYBANK_NAME]", 
+				"Type": "piggy_bank", 
+				"ThemeNames": [
+					"piggy_bank"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"plant_seed"
+			], 
+			"objdata": {
+				"Description": "[THEME_PLANTSEED_DESCRIPTION]", 
+				"Name": "[THEME_PLANTSEED_NAME]", 
+				"Type": "plant_seed", 
+				"ThemeNames": [
+					"plant_seed"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"energy_fly"
+			], 
+			"objdata": {
+				"Description": "[THEME_ENERGYFLY_DESCRIPTION]", 
+				"Name": "[THEME_ENERGYFLY_NAME]", 
+				"Type": "energy_fly", 
+				"ThemeNames": [
+					"energy_fly"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"text_only"
+			], 
+			"objdata": {
+				"Description": "[THEME_TEXTONLY_DESCRIPTION]", 
+				"Name": "[THEME_TEXTONLY_NAME]", 
+				"Type": "text_only", 
+				"ThemeNames": [
+					"text_only"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"pea_rain"
+			], 
+			"objdata": {
+				"Description": "[THEME_PEA_RAIN_DESCRIPTION]", 
+				"Details": "[THEME_PEA_RAIN_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_PEA_RAIN_NAME]", 
+				"Type": "pea_rain", 
+				"Icon": "IMAGE_UI_HUD_INGAME_THEME_PEA_RAIN", 
+				"ThemeNames": [
+					"pea_rain"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"watering"
+			], 
+			"objdata": {
+				"Description": "[THEME_WATERING_DESCRIPTION]", 
+				"Details": "[THEME_WATERING_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_WATERING_NAME]", 
+				"Type": "watering", 
+				"Icon": "IMAGE_UI_HUD_INGAME_THEME_WATERING", 
+				"ThemeNames": [
+					"watering"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"mind_control"
+			], 
+			"objdata": {
+				"Description": "[THEME_MIND_CONTROL_DESCRIPTION]", 
+				"Details": "[THEME_MIND_CONTROL_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_MIND_CONTROL_NAME]", 
+				"Type": "mind_control", 
+				"ThemeNames": [
+					"mind_control"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"disable_boost"
+			], 
+			"objdata": {
+				"Description": "[THEME_DISABLE_BOOST_DESCRIPTION]", 
+				"Details": "[THEME_DISABLE_BOOST_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_DISABLE_BOOST_NAME]", 
+				"Type": "disable_boost", 
+				"ThemeNames": [
+					"disable_boost"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"printer"
+			], 
+			"objdata": {
+				"Description": "[THEME_PRINTER_DESCRIPTION]", 
+				"Details": "[THEME_PRINTER_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_PRINTER_NAME]", 
+				"Type": "printer", 
+				"ThemeNames": [
+					"printer"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"cleaner"
+			], 
+			"objdata": {
+				"Description": "[THEME_CLEANER_DESCRIPTION]", 
+				"Details": "[THEME_CLEANER_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_CLEANER_NAME]", 
+				"Type": "cleaner", 
+				"ThemeNames": [
+					"cleaner"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"sun_disabled"
+			], 
+			"objdata": {
+				"Description": "[THEME_SUN_DISABLED_DESCRIPTION]", 
+				"Details": "[THEME_SUN_DISABLED_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_SUN_DISABLED_NAME]", 
+				"Type": "sun_disabled", 
+				"ThemeNames": [
+					"sun_disabled"
+				]
+			}
+		}, 
+		{
+			"objclass": "RiftMainThemeProperties", 
+			"aliases": [
+				"zombie_sun"
+			], 
+			"objdata": {
+				"Description": "[THEME_ZOMBIE_SUN_DESCRIPTION]", 
+				"Details": "[THEME_ZOMBIE_SUN_DESCRIPTION_DETAILS]", 
+				"Name": "[THEME_ZOMBIE_SUN_NAME]", 
+				"Type": "zombie_sun", 
+				"ThemeNames": [
+					"zombie_sun"
+				]
+			}
+		}
+	]
+}

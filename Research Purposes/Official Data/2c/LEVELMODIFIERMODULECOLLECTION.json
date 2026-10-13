@@ -1,0 +1,2183 @@
+{
+	"#comment": "Insert new collection here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_default_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_DEFAULT_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[ZOMBIE_DEFAULT_DIFFICULTY_1]", 
+				"ModuleInfos": [
+					{
+						"BaseType": "default_zombie_level", 
+						"Level": 1
+					}, 
+					{
+						"BaseType": "default_artifact_times", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_default_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_DEFAULT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[ZOMBIE_DEFAULT_DIFFICULTY_2]", 
+				"ModuleInfos": [
+					{
+						"BaseType": "default_zombie_level", 
+						"Level": 2
+					}, 
+					{
+						"BaseType": "default_artifact_times", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_12th_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_DEFAULT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[ZOMBIE_DEFAULT_DIFFICULTY_2]", 
+				"ModuleInfos": [
+					{
+						"BaseType": "default_artifact_times", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_default_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_DEFAULT_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[ZOMBIE_DEFAULT_DIFFICULTY_3]", 
+				"ModuleInfos": [
+					{
+						"BaseType": "default_zombie_level", 
+						"Level": 3
+					}, 
+					{
+						"BaseType": "default_artifact_times", 
+						"Level": 3
+					}, 
+					{
+						"BaseType": "default_no_plantfood", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_12th_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_12TH_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[ZOMBIE_12TH_DIFFICULTY_3]", 
+				"ModuleInfos": [
+					{
+						"BaseType": "default_artifact_times", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_level_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_LEVEL_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[ZOMBIE_LEVEL_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_4", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_level_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_LEVEL_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[ZOMBIE_LEVEL_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_2", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_level_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_LEVEL_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[ZOMBIE_LEVEL_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_artifact_times_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ARTIFACT_TIMES_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[SPRING_ARTIFACT_TIMES_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "default_artifact_times", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_level_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"SubType": 2, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_level_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"SubType": 2, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_level_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"SubType": 2, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_level_difficulty_4"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_4_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_LEVEL_DIFFICULTY_4]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_level", 
+						"SubType": 2, 
+						"Level": 4
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_SPEED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[ZOMBIE_SPEED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_SPEED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[ZOMBIE_SPEED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_8", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_SPEED_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[ZOMBIE_SPEED_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_20", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_SPEED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[ZOMBIE_SPEED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"SubType": 3, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_speed_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"SubType": 3, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"SubType": 3, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_speed_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"SubType": 3, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"z_speed_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[Z_SPEED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[Z_SPEED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_27", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"SubType": 4, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_zombie_speed_difficulty_4"
+			], 
+			"objdata": {
+				"Description": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_4_DESCRIPTION]", 
+				"Name": "[SPRING_ZOMBIE_SPEED_DIFFICULTY_4]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed", 
+						"SubType": 3, 
+						"Level": 4
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_immunity_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_IMMUNITY_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[ZOMBIE_IMMUNITY_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_5", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_immunity", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_immunity_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_IMMUNITY_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[ZOMBIE_IMMUNITY_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_immunity", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_immunity_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_IMMUNITY_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[ZOMBIE_IMMUNITY_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_7", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_immunity", 
+						"SubType": 2, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_attack_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_ATTACK_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[ZOMBIE_ATTACK_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_3", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_attack", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_attack_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_ATTACK_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[ZOMBIE_ATTACK_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_12", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_attack", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_attack_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[ZOMBIE_ATTACK_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[ZOMBIE_ATTACK_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_6", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_attack", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"z_attack_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[Z_ATTACK_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[Z_ATTACK_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_17", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_attack", 
+						"SubType": 2, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_packets_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[PLANT_PACKETS_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[PLANT_PACKETS_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_9", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_packets", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_packets_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[PLANT_PACKETS_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[PLANT_PACKETS_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_10", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_packets", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_packets_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[PLANT_PACKETS_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[PLANT_PACKETS_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_26", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_packets", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sun_reduced_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUN_REDUCED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUN_REDUCED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_21", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sun_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SUN_REDUCED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SUN_REDUCED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_11", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sun_reduced_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[SUN_REDUCED_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[SUN_REDUCED_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_22", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_sun_reduced_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SPRING_SUN_REDUCED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SPRING_SUN_REDUCED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_21", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"SubType": 2, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_sun_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SPRING_SUN_REDUCED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SPRING_SUN_REDUCED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_21", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"SubType": 2, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_sun_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SPRING_sun_reduced_difficulty_2_DESCRIPTION]", 
+				"Name": "[SPRING_sun_reduced_difficulty_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_21", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"SubType": 2, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"spring_sun_reduced_difficulty_4"
+			], 
+			"objdata": {
+				"Description": "[SPRING_SUN_REDUCED_DIFFICULTY_4_DESCRIPTION]", 
+				"Name": "[SPRING_SUN_REDUCED_DIFFICULTY_4]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_21", 
+				"ModuleInfos": [
+					{
+						"BaseType": "sun_reduced", 
+						"SubType": 2, 
+						"Level": 4
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_damage_reduced_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[PLANT_DAMAGE_REDUCED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[PLANT_DAMAGE_REDUCED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_22", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[PLANT_DAMAGE_REDUCED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[PLANT_DAMAGE_REDUCED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_9", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_damage_reduced_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[PLANT_DAMAGE_REDUCED_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[PLANT_DAMAGE_REDUCED_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_25", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced", 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"shooter_plant_cost_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SHOOTER_PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SHOOTER_PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_8", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 1, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"warrior_plant_cost_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[WARRIOR_PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[WARRIOR_PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_6", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 2, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"supporter_plant_cost_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUPPORTER_PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUPPORTER_PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_2", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 3, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"protector_plant_cost_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[PROTECTOR_PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[PROTECTOR_PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_19", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 4, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sunmaker_plant_cost_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUNMAKER_PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUNMAKER_PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_1", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 5, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"specialist_plant_cost_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SPECIALIST_PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SPECIALIST_PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_13", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 6, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_planting_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[THEME_PROJECTILE_DESCRIPTION]", 
+				"Name": "[THEME_PROJECTILE_NAME]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_1", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 2, 
+						"Level": 2
+					}, 
+					{
+						"BaseType": "plant_cost_add", 
+						"SubType": 3, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"shooter_disable_plant_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SHOOTER_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SHOOTER_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_5", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"warrior_disable_plant_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[WARRIOR_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[WARRIOR_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_4", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 2, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"supporter_disable_plant_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SUPPORTER_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SUPPORTER_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_3", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 3, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"protector_disable_plant_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[PROTECTOR_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[PROTECTOR_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_13", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 4, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sunmaker_disable_plant_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SUNMAKER_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SUNMAKER_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_15", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 5, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"specialist_disable_plant_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[SPECIALIST_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SPECIALIST_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_14", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 6, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"shooter_specialist_disable_plant_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[SHOOTER_SPECIALIST_DISABLE_PLANT_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[SHOOTER_SPECIALIST_DISABLE_PLANT_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_8", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 1, 
+						"Level": 3
+					}, 
+					{
+						"BaseType": "disable_plant", 
+						"SubType": 6, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"shooter_plant_cd_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SHOOTER_PLANT_CD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SHOOTER_PLANT_CD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_16", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cd_add", 
+						"SubType": 1, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"warrior_plant_cd_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[WARRIOR_PLANT_CD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[WARRIOR_PLANT_CD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_14", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cd_add", 
+						"SubType": 2, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"supporter_plant_cd_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUPPORTER_PLANT_CD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUPPORTER_PLANT_CD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_10", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cd_add", 
+						"SubType": 3, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"protector_plant_cd_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[PROTECTOR_PLANT_CD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[PROTECTOR_PLANT_CD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_11", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cd_add", 
+						"SubType": 4, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sunmaker_plant_cd_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUNMAKER_PLANT_CD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUNMAKER_PLANT_CD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_15", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cd_add", 
+						"SubType": 5, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"specialist_plant_cd_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SPECIALIST_PLANT_CD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SPECIALIST_PLANT_CD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_12", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cd_add", 
+						"SubType": 6, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"mold_1"
+			], 
+			"objdata": {
+				"Description": "[MOLD_1_DESCRIPTION]", 
+				"Name": "[MOLD_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_18", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 1, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"mold_2"
+			], 
+			"objdata": {
+				"Description": "[MOLD_2_DESCRIPTION]", 
+				"Name": "[MOLD_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_6", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 2, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"mold_3"
+			], 
+			"objdata": {
+				"Description": "[MOLD_3_DESCRIPTION]", 
+				"Name": "[MOLD_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_2", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 3, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"m_2"
+			], 
+			"objdata": {
+				"Description": "[M_1_DESCRIPTION]", 
+				"Name": "[M_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_16", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"mold_4"
+			], 
+			"objdata": {
+				"Description": "[MOLD_4_DESCRIPTION]", 
+				"Name": "[mold_4]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_17", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 4, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"mold_5"
+			], 
+			"objdata": {
+				"Description": "[MOLD_5_DESCRIPTION]", 
+				"Name": "[mold_5]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_1", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 5, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"mold_6"
+			], 
+			"objdata": {
+				"Description": "[MOLD_6_DESCRIPTION]", 
+				"Name": "[mold_6]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_1", 
+				"ModuleInfos": [
+					{
+						"BaseType": "region_mold", 
+						"SubType": 6, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"egypt_zombie"
+			], 
+			"objdata": {
+				"Description": "[EGYPT_ZOMBIE_DESCRIPTION]", 
+				"Name": "[EGYPT_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_18", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 1, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"pirate_zombie"
+			], 
+			"objdata": {
+				"Description": "[PIRATE_ZOMBIE_DESCRIPTION]", 
+				"Name": "[PIRATE_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_5", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 2, 
+						"Level": 3
+					}, 
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 3, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"cowboy_zombie"
+			], 
+			"objdata": {
+				"Description": "[COWBOY_ZOMBIE_DESCRIPTION]", 
+				"Name": "[COWBOY_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_10", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 4, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"kongfu_zombie"
+			], 
+			"objdata": {
+				"Description": "[KONGFU_ZOMBIE_DESCRIPTION]", 
+				"Name": "[KONGFU_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_12", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 5, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"future_zombie"
+			], 
+			"objdata": {
+				"Description": "[FUTURE_ZOMBIE_DESCRIPTION]", 
+				"Name": "[FUTURE_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_24", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 6, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"dark_zombie"
+			], 
+			"objdata": {
+				"Description": "[DARK_ZOMBIE_DESCRIPTION]", 
+				"Name": "[DARK_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_11", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 7, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"beach_zombie"
+			], 
+			"objdata": {
+				"Description": "[BEACH_ZOMBIE_DESCRIPTION]", 
+				"Name": "[BEACH_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_21", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 8, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"iceage_zombie"
+			], 
+			"objdata": {
+				"Description": "[ICEAGE_ZOMBIE_DESCRIPTION]", 
+				"Name": "[ICEAGE_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_4", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 9, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"skycity_zombie"
+			], 
+			"objdata": {
+				"Description": "[SKYCITY_ZOMBIE_DESCRIPTION]", 
+				"Name": "[SKYCITY_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_17", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 10, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"lostcity_zombie"
+			], 
+			"objdata": {
+				"Description": "[LOSTCITY_ZOMBIE_DESCRIPTION]", 
+				"Name": "[LOSTCITY_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_9", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 11, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"eighties_zombie"
+			], 
+			"objdata": {
+				"Description": "[EIGHTIES_ZOMBIE_DESCRIPTION]", 
+				"Name": "[EIGHTIES_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_14", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 12, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"dino_zombie"
+			], 
+			"objdata": {
+				"Description": "[DINO_ZOMBIE_DESCRIPTION]", 
+				"Name": "[DINO_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_19", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 13, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"modern_zombie"
+			], 
+			"objdata": {
+				"Description": "[MODERN_ZOMBIE_DESCRIPTION]", 
+				"Name": "[MODERN_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_13", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 14, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"steam_zombie"
+			], 
+			"objdata": {
+				"Description": "[STEAM_ZOMBIE_DESCRIPTION]", 
+				"Name": "[STEAM_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_15", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 15, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"renai_zombie"
+			], 
+			"objdata": {
+				"Description": "[RENAI_ZOMBIE_DESCRIPTION]", 
+				"Name": "[RENAI_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_3", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 16, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"heian_zombie"
+			], 
+			"objdata": {
+				"Description": "[HEIAN_ZOMBIE_DESCRIPTION]", 
+				"Name": "[HEIAN_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_16", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 17, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"birthday_zombie"
+			], 
+			"objdata": {
+				"Description": "[BIRTHDAY_ZOMBIE_DESCRIPTION]", 
+				"Name": "[BIRTHDAY_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_23", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_types", 
+						"SubType": 18, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"shooter_plant_no_plantfood_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SHOOTER_PLANT_NO_PLANTFOOD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SHOOTER_PLANT_NO_PLANTFOOD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_28", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_no_plantfood", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"warrior_plant_no_plantfood_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[WARRIOR_PLANT_NO_PLANTFOOD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[WARRIOR_PLANT_NO_PLANTFOOD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_28", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_no_plantfood", 
+						"SubType": 2, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"supporter_plant_no_plantfood_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUPPORTER_PLANT_NO_PLANTFOOD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUPPORTER_PLANT_NO_PLANTFOOD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_28", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_no_plantfood", 
+						"SubType": 3, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"protector_plant_no_plantfood_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[PROTECTOR_PLANT_NO_PLANTFOOD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[PROTECTOR_PLANT_NO_PLANTFOOD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_28", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_no_plantfood", 
+						"SubType": 4, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"sunmaker_plant_no_plantfood_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SUNMAKER_PLANT_NO_PLANTFOOD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SUNMAKER_PLANT_NO_PLANTFOOD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_28", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_no_plantfood", 
+						"SubType": 5, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"specialist_plant_no_plantfood_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SPECIALIST_PLANT_NO_PLANTFOOD_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SPECIALIST_PLANT_NO_PLANTFOOD_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_12", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_no_plantfood", 
+						"SubType": 6, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"shovel_plant_spawn_gravestone_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SHOVEL_PLANT_SPAWN_GRAVESTONE_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[SHOVEL_PLANT_SPAWN_GRAVESTONE_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_18", 
+				"ModuleInfos": [
+					{
+						"BaseType": "shovel_plant_spawn_gravestone", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_cost_for_tag_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[PLANT_COST_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[PLANT_COST_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_29", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add_tag", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_cost_for_tag_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[PLANT_COST_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[PLANT_COST_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_29", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_cost_add_tag", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_for_type_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[TAG_ZOMBIE_SPEED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[TAG_ZOMBIE_SPEED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_3_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 1, 
+						"Level": 3
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_for_type_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[TAG_ZOMBIE_SPEED_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[TAG_ZOMBIE_SPEED_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_speed_for_type_difficulty_3"
+			], 
+			"objdata": {
+				"Description": "[TAG_ZOMBIE_SPEED_DIFFICULTY_3_DESCRIPTION]", 
+				"Name": "[TAG_ZOMBIE_SPEED_DIFFICULTY_3]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"plant_damage_reduced_for_type_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[NUTCRACKER_GARGANTUAR_DAMAGE_REDUCED_DIFFICULTY_1_DESCRIPTION]", 
+				"Name": "[NUTCRACKER_GARGANTUAR_DAMAGE_REDUCED_DIFFICULTY_1]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_1_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 1, 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_1_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_1_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_1_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 101, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_2_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_2_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_2_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 102, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_3_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_3_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_3_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 103, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_4_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_4_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_4_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 104, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_5_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_5_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_5_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 105, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_6_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_6_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_6_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 106, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_7_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_7_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_7_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 107, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_8_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_8_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_8_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 108, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_9_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_9_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_9_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 109, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_10_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_10_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_10_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 110, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_11_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_11_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_11_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 111, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_12_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_12_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_12_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 112, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_13_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_13_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_13_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 113, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_14_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_14_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_14_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 114, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_15_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_15_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_15_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 115, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_16_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_16_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_16_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 116, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_17_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_17_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_17_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 117, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_18_damage_reduced_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_18_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_18_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_31", 
+				"ModuleInfos": [
+					{
+						"BaseType": "plant_dmg_reduced_type", 
+						"SubType": 118, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_19_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_19_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_19_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 119, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"anniversary_2026_20_speed_difficulty_2"
+			], 
+			"objdata": {
+				"Description": "[ANNIVERSARY_2026_20_ZOMBIE_MODIFIER_DESCRIPTION]", 
+				"Name": "[ANNIVERSARY_2026_20_ZOMBIE_MODIFIER]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_30", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_speed_type", 
+						"SubType": 120, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"disable_plant_for_tag_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[SHOOTER_DISABLE_PLANT_DIFFICULTY_2_DESCRIPTION]", 
+				"Name": "[SHOOTER_DISABLE_PLANT_DIFFICULTY_2]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_33", 
+				"ModuleInfos": [
+					{
+						"BaseType": "disable_plant_tag", 
+						"SubType": 1, 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelModifierModuleCollection", 
+			"aliases": [
+				"zombie_hitpoints_difficulty_1"
+			], 
+			"objdata": {
+				"Description": "[HITPOINTS_UP_ZOMBIE_DESCRIPTION]", 
+				"Name": "[HITPOINTS_UP_ZOMBIE]", 
+				"ResourceName": "IMAGE_UI_UNCHARTED_CHALLENGE_2_32", 
+				"ModuleInfos": [
+					{
+						"BaseType": "zombie_hitpoints", 
+						"Level": 2
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,611 @@
+{
+	"#comment": "Make new game bonus here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_1", 
+				"LocalizedName": "[BONUS_GOLD_1]", 
+				"LocalizedInfo": "[BONUS_GOLD_1_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_1", 
+				"Bonus": "bonus_gold_1", 
+				"BonusNum": 10000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_2", 
+				"LocalizedName": "[BONUS_GOLD_2]", 
+				"LocalizedInfo": "[BONUS_GOLD_2_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_2", 
+				"Bonus": "bonus_gold_2", 
+				"BonusNum": 20000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_3", 
+				"LocalizedName": "[BONUS_GOLD_3]", 
+				"LocalizedInfo": "[BONUS_GOLD_3_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_3", 
+				"BonusNum": 30000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_4", 
+				"LocalizedName": "[BONUS_GOLD_4]", 
+				"LocalizedInfo": "[BONUS_GOLD_4_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_2", 
+				"Bonus": "bonus_gold_4", 
+				"BonusNum": 20000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_5", 
+				"LocalizedName": "[BONUS_GOLD_5]", 
+				"LocalizedInfo": "[BONUS_GOLD_5_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_5", 
+				"BonusNum": 30000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_6", 
+				"LocalizedName": "[BONUS_GOLD_6]", 
+				"LocalizedInfo": "[BONUS_GOLD_6_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_6", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_7", 
+				"LocalizedName": "[BONUS_GOLD_7]", 
+				"LocalizedInfo": "[BONUS_GOLD_7_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_7", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_8", 
+				"LocalizedName": "[BONUS_GOLD_8]", 
+				"LocalizedInfo": "[BONUS_GOLD_8_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_8", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_9", 
+				"LocalizedName": "[BONUS_GOLD_9]", 
+				"LocalizedInfo": "[BONUS_GOLD_9_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_9", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_10", 
+				"LocalizedName": "[BONUS_GOLD_10]", 
+				"LocalizedInfo": "[BONUS_GOLD_10_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_10", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_11", 
+				"LocalizedName": "[BONUS_GOLD_11]", 
+				"LocalizedInfo": "[BONUS_GOLD_11_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_11", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_12", 
+				"LocalizedName": "[BONUS_GOLD_12]", 
+				"LocalizedInfo": "[BONUS_GOLD_12_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_12", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_13", 
+				"LocalizedName": "[BONUS_GOLD_13]", 
+				"LocalizedInfo": "[BONUS_GOLD_13_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_13", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_gold_14", 
+				"LocalizedName": "[BONUS_GOLD_14]", 
+				"LocalizedInfo": "[BONUS_GOLD_14_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_GOLD_3", 
+				"Bonus": "bonus_gold_14", 
+				"BonusNum": 50000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_diamond_1", 
+				"LocalizedName": "[BONUS_DIAMOND_1]", 
+				"LocalizedInfo": "[BONUS_DIAMOND_1_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_DIAMOND", 
+				"Bonus": "bonus_diamond_1", 
+				"BonusNum": 18
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_diamond_2", 
+				"LocalizedName": "[BONUS_DIAMOND_2]", 
+				"LocalizedInfo": "[BONUS_DIAMOND_2_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_DIAMOND", 
+				"Bonus": "bonus_diamond_2", 
+				"BonusNum": 38
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_diamond_3", 
+				"LocalizedName": "[BONUS_DIAMOND_3]", 
+				"LocalizedInfo": "[BONUS_DIAMOND_3_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_DIAMOND", 
+				"Bonus": "bonus_diamond_3", 
+				"BonusNum": 58
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_diamond_4", 
+				"LocalizedName": "[BONUS_DIAMOND_4]", 
+				"LocalizedInfo": "[BONUS_DIAMOND_4_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_DIAMOND", 
+				"Bonus": "bonus_diamond_4", 
+				"BonusNum": 38
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_gold_250", 
+				"LocalizedName": "[BONUS_CARD_GOLD_250]", 
+				"LocalizedInfo": "[BONUS_CARD_GOLD_250_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_GOLD_250", 
+				"Bonus": "bonus_card_gold_250", 
+				"BonusNum": 100
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_gold_500", 
+				"LocalizedName": "[BONUS_CARD_GOLD_500]", 
+				"LocalizedInfo": "[BONUS_CARD_GOLD_500_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_GOLD_500", 
+				"Bonus": "bonus_card_gold_500", 
+				"BonusNum": 500
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_gold_1000", 
+				"LocalizedName": "[BONUS_CARD_GOLD_1000]", 
+				"LocalizedInfo": "[BONUS_CARD_GOLD_1000_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_GOLD_1000", 
+				"Bonus": "bonus_card_gold_1000", 
+				"BonusNum": 1000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_gold_5000", 
+				"LocalizedName": "[BONUS_CARD_GOLD_5000]", 
+				"LocalizedInfo": "[BONUS_CARD_GOLD_5000_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_GOLD_5000", 
+				"Bonus": "bonus_card_gold_5000", 
+				"BonusNum": 5000
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_diamond_5", 
+				"LocalizedName": "[BONUS_CARD_DIAMOND_5]", 
+				"LocalizedInfo": "[BONUS_CARD_DIAMOND_5_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_DIAMOND_5", 
+				"Bonus": "bonus_card_diamond_5", 
+				"BonusNum": 5
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_diamond_10", 
+				"LocalizedName": "[BONUS_CARD_DIAMOND_10]", 
+				"LocalizedInfo": "[BONUS_CARD_DIAMOND_10_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_DIAMOND_10", 
+				"Bonus": "bonus_card_diamond_10", 
+				"BonusNum": 10
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_diamond_50", 
+				"LocalizedName": "[BONUS_CARD_DIAMOND_50]", 
+				"LocalizedInfo": "[BONUS_CARD_DIAMOND_50_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_DIAMOND_50", 
+				"Bonus": "bonus_card_diamond_50", 
+				"BonusNum": 50
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_egypt", 
+				"LocalizedName": "[BONUS_CARD_KEY_EGYPT]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_EGYPT_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_EGYPT", 
+				"Bonus": "bonus_card_key_egypt", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_pirate", 
+				"LocalizedName": "[BONUS_CARD_KEY_PIRATE]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_PIRATE_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_PIRATE", 
+				"Bonus": "bonus_card_key_pirate", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_cowboy", 
+				"LocalizedName": "[BONUS_CARD_KEY_COWBOY]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_COWBOY_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_COWBOY", 
+				"Bonus": "bonus_card_key_cowboy", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_kongfu", 
+				"LocalizedName": "[BONUS_CARD_KEY_KONGFU]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_KONGFU_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_KONGFU", 
+				"Bonus": "bonus_card_key_kongfu", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_future", 
+				"LocalizedName": "[BONUS_CARD_KEY_FUTURE]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_FUTURE_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_FUTURE", 
+				"Bonus": "bonus_card_key_future", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_dark", 
+				"LocalizedName": "[BONUS_CARD_KEY_DARK]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_DARK_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_DARK", 
+				"Bonus": "bonus_card_key_dark", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_beach", 
+				"LocalizedName": "[BONUS_CARD_KEY_BEACH]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_BEACH_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_BEACH", 
+				"Bonus": "bonus_card_key_beach", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_iceage", 
+				"LocalizedName": "[BONUS_CARD_KEY_ICEAGE]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_ICEAGE_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_ICEAGE", 
+				"Bonus": "bonus_card_key_iceage", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_skycity", 
+				"LocalizedName": "[BONUS_CARD_KEY_SKYCITY]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_SKYCITY_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_SKYCITY", 
+				"Bonus": "bonus_card_key_skycity", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_key_lostcity", 
+				"LocalizedName": "[BONUS_CARD_KEY_LOSTCITY]", 
+				"LocalizedInfo": "[BONUS_CARD_KEY_LOSTCITY_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_KEY_LOSTCITY", 
+				"Bonus": "bonus_card_key_lostcity", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_fertilizer", 
+				"LocalizedName": "[BONUS_MAGIC_FERTILIZER]", 
+				"LocalizedInfo": "[BONUS_MAGIC_FERTILIZER_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_FERTILIZER", 
+				"Bonus": "bonus_magic_fertilizer", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_fertilizer_2", 
+				"LocalizedName": "[BONUS_MAGIC_FERTILIZER]", 
+				"LocalizedInfo": "[BONUS_MAGIC_FERTILIZER_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_FERTILIZER", 
+				"Bonus": "bonus_magic_fertilizer_2", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_drum", 
+				"LocalizedName": "[BONUS_MAGIC_DRUM]", 
+				"LocalizedInfo": "[BONUS_MAGIC_DRUM_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_DRUM", 
+				"Bonus": "bonus_magic_drum", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_snowflake", 
+				"LocalizedName": "[BONUS_MAGIC_SNOWFLAKE]", 
+				"LocalizedInfo": "[BONUS_MAGIC_SNOWFLAKE_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_SNOWFLAKE", 
+				"Bonus": "bonus_magic_snowflake", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_peapod", 
+				"LocalizedName": "[BONUS_CARD_PIECE_PEAPOD]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_PEAPOD_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_PEAPOD", 
+				"Bonus": "bonus_card_piece_peapod", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_kernelpult", 
+				"LocalizedName": "[BONUS_CARD_PIECE_KERNELPULT]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_KERNELPULT_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_KERNELPULT", 
+				"Bonus": "bonus_card_piece_kernelpult", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_snowpea", 
+				"LocalizedName": "[BONUS_CARD_PIECE_SNOWPEA]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_SNOWPEA_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_SNOWPEA", 
+				"Bonus": "bonus_card_piece_snowpea", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_torchwood", 
+				"LocalizedName": "[BONUS_CARD_PIECE_TORCHWOOD]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_TORCHWOOD_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_TORCHWOOD", 
+				"Bonus": "bonus_card_piece_torchwood", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_lightningreed", 
+				"LocalizedName": "[BONUS_CARD_PIECE_LIGHTNINGREED]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_LIGHTNINGREED_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_LIGHTNINGREED", 
+				"Bonus": "bonus_card_piece_lightningreed", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_coconutcannon", 
+				"LocalizedName": "[BONUS_CARD_PIECE_COCONUTCANNON]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_COCONUTCANNON_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_COCONUTCANNON", 
+				"Bonus": "bonus_card_piece_coconutcannon", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_melonpult", 
+				"LocalizedName": "[BONUS_CARD_PIECE_MELONPULT]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_MELONPULT_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_MELONPULT", 
+				"Bonus": "bonus_card_piece_melonpult", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_imitater", 
+				"LocalizedName": "[BONUS_CARD_PIECE_IMITATER]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_IMITATER_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_IMITATER", 
+				"Bonus": "bonus_card_piece_imitater", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_firegourd", 
+				"LocalizedName": "[BONUS_CARD_PIECE_FIREGOURD]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_FIREGOURD_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_FIREGOURD", 
+				"Bonus": "bonus_card_piece_firegourd", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_peach", 
+				"LocalizedName": "[BONUS_CARD_PIECE_PEACH]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_PEACH_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_PEACH", 
+				"Bonus": "bonus_card_piece_peach", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_magnifyinggrass", 
+				"LocalizedName": "[BONUS_CARD_PIECE_MAGNIFYINGGRASS]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_MAGNIFYINGGRASS_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_MAGNIFYINGGRASS", 
+				"Bonus": "bonus_card_piece_magnifyinggrass", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_card_piece_starfruit", 
+				"LocalizedName": "[BONUS_CARD_PIECE_STARFRUIT]", 
+				"LocalizedInfo": "[BONUS_CARD_PIECE_STARFRUIT_DESCRIPTION]", 
+				"BonusImage": "IMAGE_ENDLEVEL_BONUS_CARD_PIECE_STARFRUIT", 
+				"Bonus": "bonus_card_piece_starfruit", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_torch", 
+				"LocalizedName": "[BONUS_MAGIC_TORCH]", 
+				"LocalizedInfo": "[BONUS_MAGIC_TORCH_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_TORCH", 
+				"Bonus": "bonus_magic_torch", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_regeneration", 
+				"LocalizedName": "[BONUS_MAGIC_REGENERATION]", 
+				"LocalizedInfo": "[BONUS_MAGIC_REGENERATION_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_REGENERATION", 
+				"Bonus": "bonus_magic_regeneration", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_pole", 
+				"LocalizedName": "[BONUS_MAGIC_POLE]", 
+				"LocalizedInfo": "[BONUS_MAGIC_POLE_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_POLE", 
+				"Bonus": "bonus_magic_pole", 
+				"BonusNum": 1
+			}
+		}, 
+		{
+			"objclass": "BonusType", 
+			"objdata": {
+				"TypeName": "bonus_magic_pole_2", 
+				"LocalizedName": "[BONUS_MAGIC_POLE]", 
+				"LocalizedInfo": "[BONUS_MAGIC_POLE_DESCRIPTION]", 
+				"BonusImage": "IMAGE_WORLDMAP_COMMON_MAGIC_POLE", 
+				"Bonus": "bonus_magic_pole_2", 
+				"BonusNum": 1
+			}
+		}
+	]
+}

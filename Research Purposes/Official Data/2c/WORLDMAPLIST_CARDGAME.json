@@ -1,0 +1,97 @@
+{
+	"objects": [
+		{
+			"objclass": "WorldMapList", 
+			"objdata": {
+				"MapList": [
+					{
+						"WorldId": 7007, 
+						"ComingSoon": false, 
+						"Disabled": false, 
+						"EntryPoint": "card_game_n_1", 
+						"Hidden": true, 
+						"IsCardGameWorld": true, 
+						"LastLevel": [
+							"card_game_n_7"
+						], 
+						"MapName": "card_game_n", 
+						"SpiralTheme": 1, 
+						"WorldResources": {
+							"ID": 150, 
+							"ResGroups": [
+								"WorldMap_Twister", 
+								"WorldMap_Kongfu"
+							], 
+							"ImagePrefix": "IMAGE_WORLDMAP_TWISTER", 
+							"AnimationPrefix": "POPANIM_WORLDMAP_TWISTER", 
+							"AnimationDetails": [
+								{
+									"AnimNumber": 21, 
+									"AnimReplayDelayTimeMin": 0, 
+									"AnimReplayDelayTimeMax": 0, 
+									"UsesRasterizedImagesInAnim": true
+								}, 
+								{
+									"AnimNumber": 22, 
+									"AnimReplayDelayTimeMin": 0, 
+									"AnimReplayDelayTimeMax": 0, 
+									"UsesRasterizedImagesInAnim": true
+								}, 
+								{
+									"AnimNumber": 23, 
+									"AnimReplayDelayTimeMin": 0, 
+									"AnimReplayDelayTimeMax": 0, 
+									"UsesRasterizedImagesInAnim": true
+								}
+							]
+						}
+					}, 
+					{
+						"WorldId": 7008, 
+						"ComingSoon": false, 
+						"Disabled": false, 
+						"EntryPoint": "card_game_h_1", 
+						"Hidden": true, 
+						"IsCardGameWorld": true, 
+						"LastLevel": [
+							"card_game_h_7"
+						], 
+						"MapName": "card_game_h", 
+						"SpiralTheme": 1, 
+						"WorldResources": {
+							"ID": 151, 
+							"ResGroups": [
+								"WorldMap_Twister", 
+								"WorldMap_Kongfu"
+							], 
+							"ImagePrefix": "IMAGE_WORLDMAP_TWISTER", 
+							"AnimationPrefix": "POPANIM_WORLDMAP_TWISTER", 
+							"AnimationDetails": [
+								{
+									"AnimNumber": 21, 
+									"AnimReplayDelayTimeMin": 0, 
+									"AnimReplayDelayTimeMax": 0, 
+									"UsesRasterizedImagesInAnim": true
+								}, 
+								{
+									"AnimNumber": 22, 
+									"AnimReplayDelayTimeMin": 0, 
+									"AnimReplayDelayTimeMax": 0, 
+									"UsesRasterizedImagesInAnim": true
+								}, 
+								{
+									"AnimNumber": 23, 
+									"AnimReplayDelayTimeMin": 0, 
+									"AnimReplayDelayTimeMax": 0, 
+									"UsesRasterizedImagesInAnim": true
+								}
+							]
+						}
+					}
+				]
+			}, 
+			"uid": "1.0.ffffffff"
+		}
+	], 
+	"version": 1
+}

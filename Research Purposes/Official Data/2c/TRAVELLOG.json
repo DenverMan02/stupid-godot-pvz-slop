@@ -1,0 +1,2376 @@
+{
+	"#comment": "Make new task types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "TravelLogConfig", 
+			"objdata": {
+				"TravelLogDatas": [
+					{
+						"TravelLogBattleZData": {
+							"ID": 1001, 
+							"GroupID": 0, 
+							"Name": "[TASK_BATTLEZ]", 
+							"Description": "[TASK_BATTLEZ_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_BATTLEZ", 
+							"Awards": [
+								{
+									"Type": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 1, 
+									"Amount": 1000
+								}
+							], 
+							"Requirement": 1, 
+							"TaskIcon": 2, 
+							"NeedWin": false
+						}
+					}, 
+					{
+						"TravelLogPassLevelData": {
+							"ID": 1003, 
+							"GroupID": 0, 
+							"Name": "[TASK_PASSLEVEL]", 
+							"Description": "[TASK_PASSLEVEL_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_GENERIC", 
+							"Awards": [
+								{
+									"Type": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 1, 
+									"Amount": 1000
+								}
+							], 
+							"Requirement": 4, 
+							"TaskIcon": 4, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogPassChallengeData": {
+							"ID": 1004, 
+							"GroupID": 0, 
+							"Name": "[TASK_PASSCHALLENGE]", 
+							"Description": "[TASK_PASSCHALLENGE_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_GENERIC", 
+							"Awards": [
+								{
+									"Type": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 1, 
+									"Amount": 1000
+								}
+							], 
+							"Requirement": 2, 
+							"TaskIcon": 5, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogCollectPlantChipsData": {
+							"ID": 1005, 
+							"GroupID": 0, 
+							"Name": "[TASK_COLLECTPLANTCHIPS]", 
+							"Description": "[TASK_COLLECTPLANTCHIPS_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_GENERIC", 
+							"Awards": [
+								{
+									"Type": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 1, 
+									"Amount": 1000
+								}
+							], 
+							"Requirement": 10, 
+							"TaskIcon": 6
+						}
+					}, 
+					{
+						"TravelLogDailyIntegralData": {
+							"ID": 1006, 
+							"GroupID": 0, 
+							"Name": "[TASK_DAILYINTEGRAL]", 
+							"Description": "[TASK_DAILYINTEGRAL_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_GENERIC", 
+							"Awards": [
+								{
+									"Type": 2, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 20, 
+							"TaskIcon": 3
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2001, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_EGYPT]", 
+							"ZombieName": "mummy"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2002, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 30, 
+							"WorldName": "[WORLD_NAME_EGYPT]", 
+							"ZombieName": "camel_almanac"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2003, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 20, 
+							"WorldName": "[WORLD_NAME_EGYPT]", 
+							"ZombieName": "explorer"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2004, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_EGYPT]", 
+							"ZombieName": "egypt_gargantuar"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2005, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PIRATE", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_PIRATE]", 
+							"ZombieName": "pirate"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2006, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PIRATE", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 30, 
+							"WorldName": "[WORLD_NAME_PIRATE]", 
+							"ZombieName": "seagull"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2007, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PIRATE", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_PIRATE]", 
+							"ZombieName": "pirate_gargantuar"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2008, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_COWBOY", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_COWBOY]", 
+							"ZombieName": "cowboy"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2009, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_COWBOY", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 20, 
+							"WorldName": "[WORLD_NAME_COWBOY]", 
+							"ZombieName": "chicken_farmer"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2010, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_COWBOY", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_COWBOY]", 
+							"ZombieName": "cowboy_gargantuar"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2011, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_KONGFU", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_KONGFU]", 
+							"ZombieName": "kongfu_basic"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2012, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_KONGFU", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_KONGFU]", 
+							"ZombieName": "kongfu_strong_bronze"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2013, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_FUTURE", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 20, 
+							"WorldName": "[WORLD_NAME_FUTURE]", 
+							"ZombieName": "future_protector"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2014, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_FUTURE", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_FUTURE]", 
+							"ZombieName": "future_gargantuar"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2015, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DARK", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_DARKAGE]", 
+							"ZombieName": "dark"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2016, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DARK", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 30, 
+							"WorldName": "[WORLD_NAME_DARKAGE]", 
+							"ZombieName": "dark_juggler"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2017, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_BEACH", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_BEACH]", 
+							"ZombieName": "beach"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2018, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_BEACH", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_BEACH]", 
+							"ZombieName": "beach_gargantuar"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2019, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DINO", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_DINO]", 
+							"ZombieName": "dino"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2020, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_ICEAGE", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_ICEAGE]", 
+							"ZombieName": "iceage"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2021, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_LOSTCITY", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_LOSTCITY]", 
+							"ZombieName": "lostcity"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2022, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_SKYCITY", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_SKYCITY]", 
+							"ZombieName": "skycity"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2023, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_STEAM", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_STEAM]", 
+							"ZombieName": "steam_worker"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2024, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EIGHTIES", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_EIGHTIES]", 
+							"ZombieName": "eighties"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2025, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_RENAI", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"WorldName": "[WORLD_NAME_RENAI]", 
+							"ZombieName": "renai_worker"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2026, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_RENAI", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 30, 
+							"WorldName": "[WORLD_NAME_RENAI]", 
+							"ZombieName": "renai_perfumer"
+						}
+					}, 
+					{
+						"TravelLogBeatZombiesData": {
+							"ID": 2027, 
+							"GroupID": 1, 
+							"Name": "[TASK_BEATZOMBIES]", 
+							"Description": "[TASK_BEATZOMBIES_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_RENAI", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"WorldName": "[WORLD_NAME_RENAI]", 
+							"ZombieName": "renai_gargantuar"
+						}
+					}, 
+					{
+						"TravelLogWeeklyIntegralData": {
+							"ID": 2100, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLYINTEGRAL]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_GENERIC", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 150
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2101, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_CACTUS]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_cactus_01", 
+								"premiumquest_cactus_02", 
+								"premiumquest_cactus_03", 
+								"premiumquest_cactus_04", 
+								"premiumquest_cactus_05", 
+								"premiumquest_cactus_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2102, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_CAULIPOWER]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_caulipower_01", 
+								"premiumquest_caulipower_02", 
+								"premiumquest_caulipower_03", 
+								"premiumquest_caulipower_04", 
+								"premiumquest_caulipower_05", 
+								"premiumquest_caulipower_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2103, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_BLOOMINGHEART]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_bloomingheart_01", 
+								"premiumquest_bloomingheart_02", 
+								"premiumquest_bloomingheart_03", 
+								"premiumquest_bloomingheart_04", 
+								"premiumquest_bloomingheart_05", 
+								"premiumquest_bloomingheart_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2104, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_CHOMPER]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 2, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_chomper_01", 
+								"premiumquest_chomper_02"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2105, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_COLDSNAPDRAGON]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_coldsnapdragon_01", 
+								"premiumquest_coldsnapdragon_02", 
+								"premiumquest_coldsnapdragon_03", 
+								"premiumquest_coldsnapdragon_04", 
+								"premiumquest_coldsnapdragon_05", 
+								"premiumquest_coldsnapdragon_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2106, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_DANDELION]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_dandelion_01", 
+								"premiumquest_dandelion_02", 
+								"premiumquest_dandelion_03", 
+								"premiumquest_dandelion_04", 
+								"premiumquest_dandelion_05", 
+								"premiumquest_dandelion_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2107, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_ELECTRICBLUEBERRY]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_electricblueberry_01", 
+								"premiumquest_electricblueberry_02", 
+								"premiumquest_electricblueberry_03", 
+								"premiumquest_electricblueberry_04", 
+								"premiumquest_electricblueberry_05", 
+								"premiumquest_electricblueberry_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2108, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_ELECTRICPEASHOOTE]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_electricpeashooter_01", 
+								"premiumquest_electricpeashooter_02", 
+								"premiumquest_electricpeashooter_03", 
+								"premiumquest_electricpeashooter_04", 
+								"premiumquest_electricpeashooter_05", 
+								"premiumquest_electricpeashooter_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2109, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_ESCAPEROOT]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_escaperoot_01", 
+								"premiumquest_escaperoot_02", 
+								"premiumquest_escaperoot_03", 
+								"premiumquest_escaperoot_04", 
+								"premiumquest_escaperoot_05", 
+								"premiumquest_escaperoot_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2110, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_EXPLODEONUT]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_explodeonut_01", 
+								"premiumquest_explodeonut_02", 
+								"premiumquest_explodeonut_03", 
+								"premiumquest_explodeonut_04", 
+								"premiumquest_explodeonut_05", 
+								"premiumquest_explodeonut_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2111, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_FIREPEASHOOTER]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_firepeashooter_01", 
+								"premiumquest_firepeashooter_02", 
+								"premiumquest_firepeashooter_03", 
+								"premiumquest_firepeashooter_04", 
+								"premiumquest_firepeashooter_05", 
+								"premiumquest_firepeashooter_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2112, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_GRAPESHOT]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_grapeshot_01", 
+								"premiumquest_grapeshot_02", 
+								"premiumquest_grapeshot_03", 
+								"premiumquest_grapeshot_04", 
+								"premiumquest_grapeshot_05", 
+								"premiumquest_grapeshot_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2113, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_HOMINGTHISTLE]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 3, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_homingthistle_01", 
+								"premiumquest_homingthistle_02", 
+								"premiumquest_homingthistle_03"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2114, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_HOTDATE]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 8, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_hotdate_01", 
+								"premiumquest_hotdate_02", 
+								"premiumquest_hotdate_03", 
+								"premiumquest_hotdate_04", 
+								"premiumquest_hotdate_05", 
+								"premiumquest_hotdate_06", 
+								"premiumquest_hotdate_07", 
+								"premiumquest_hotdate_08"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2115, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_HURRIKALE]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 8, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_hurrikale_01", 
+								"premiumquest_hurrikale_02", 
+								"premiumquest_hurrikale_03", 
+								"premiumquest_hurrikale_04", 
+								"premiumquest_hurrikale_05", 
+								"premiumquest_hurrikale_06", 
+								"premiumquest_hurrikale_07", 
+								"premiumquest_hurrikale_08"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2116, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_LAVAGUAVA]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 7, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_lavaguava_01", 
+								"premiumquest_lavaguava_02", 
+								"premiumquest_lavaguava_03", 
+								"premiumquest_lavaguava_04", 
+								"premiumquest_lavaguava_05", 
+								"premiumquest_lavaguava_06", 
+								"premiumquest_lavaguava_07"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2117, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_MISSILETOE]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 8, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_missiletoe_01", 
+								"premiumquest_missiletoe_02", 
+								"premiumquest_missiletoe_03", 
+								"premiumquest_missiletoe_04", 
+								"premiumquest_missiletoe_05", 
+								"premiumquest_missiletoe_06", 
+								"premiumquest_missiletoe_07", 
+								"premiumquest_missiletoe_08"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2118, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_PARSNIP]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_parsnip_01", 
+								"premiumquest_parsnip_02", 
+								"premiumquest_parsnip_03", 
+								"premiumquest_parsnip_04", 
+								"premiumquest_parsnip_05", 
+								"premiumquest_parsnip_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2119, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_POWERLILY]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_powerlily_01", 
+								"premiumquest_powerlily_02", 
+								"premiumquest_powerlily_03", 
+								"premiumquest_powerlily_04", 
+								"premiumquest_powerlily_05", 
+								"premiumquest_powerlily_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2120, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_SAPFLING]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 8, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_sapfling_01", 
+								"premiumquest_sapfling_02", 
+								"premiumquest_sapfling_03", 
+								"premiumquest_sapfling_04", 
+								"premiumquest_sapfling_05", 
+								"premiumquest_sapfling_06", 
+								"premiumquest_sapfling_07", 
+								"premiumquest_sapfling_08"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2121, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_SHADOWPEASHOOTER]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_shadowpeashooter_01", 
+								"premiumquest_shadowpeashooter_02", 
+								"premiumquest_shadowpeashooter_03", 
+								"premiumquest_shadowpeashooter_04", 
+								"premiumquest_shadowpeashooter_05", 
+								"premiumquest_shadowpeashooter_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2122, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_SHRINKINGVIOLET]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_shrinkingviolet_01", 
+								"premiumquest_shrinkingviolet_02", 
+								"premiumquest_shrinkingviolet_03", 
+								"premiumquest_shrinkingviolet_04", 
+								"premiumquest_shrinkingviolet_05", 
+								"premiumquest_shrinkingviolet_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2123, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_SQUASH]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_squash_01", 
+								"premiumquest_squash_02", 
+								"premiumquest_squash_03", 
+								"premiumquest_squash_04", 
+								"premiumquest_squash_05", 
+								"premiumquest_squash_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2124, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_STARFRUIT]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 8, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_starfruit_01", 
+								"premiumquest_starfruit_02", 
+								"premiumquest_starfruit_03", 
+								"premiumquest_starfruit_04", 
+								"premiumquest_starfruit_05", 
+								"premiumquest_starfruit_06", 
+								"premiumquest_starfruit_07", 
+								"premiumquest_starfruit_08"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2125, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_TOADSTOOL]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 6, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_toadstool_01", 
+								"premiumquest_toadstool_02", 
+								"premiumquest_toadstool_03", 
+								"premiumquest_toadstool_04", 
+								"premiumquest_toadstool_05", 
+								"premiumquest_toadstool_06"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2126, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_WASABIWHIP]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 9, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_wasabiwhip_01", 
+								"premiumquest_wasabiwhip_02", 
+								"premiumquest_wasabiwhip_03", 
+								"premiumquest_wasabiwhip_04", 
+								"premiumquest_wasabiwhip_05", 
+								"premiumquest_wasabiwhip_06", 
+								"premiumquest_wasabiwhip_07", 
+								"premiumquest_wasabiwhip_08", 
+								"premiumquest_wasabiwhip_09"
+							]
+						}
+					}, 
+					{
+						"TravelLogEpicTaskData": {
+							"ID": 2127, 
+							"GroupID": 1, 
+							"Name": "[TASK_WEEKLY_PLANTCHALLENGE_WITCHHAZEL]", 
+							"Description": "[TASK_WEEKLYINTEGRAL_DESCRIPTION_PLANTCHALLENGE]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PREMIUM_PLANT", 
+							"Awards": [
+								{
+									"Type": 3, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 10, 
+							"NeedWin": true, 
+							"LevelList": [
+								"premiumquest_witchhazel_01", 
+								"premiumquest_witchhazel_02", 
+								"premiumquest_witchhazel_03", 
+								"premiumquest_witchhazel_04", 
+								"premiumquest_witchhazel_05", 
+								"premiumquest_witchhazel_06", 
+								"premiumquest_witchhazel_07", 
+								"premiumquest_witchhazel_08", 
+								"premiumquest_witchhazel_09", 
+								"premiumquest_witchhazel_10"
+							]
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3011, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_EGYPT1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "egypt", 
+							"Level": 8, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3012, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_EGYPT2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "egypt", 
+							"Level": 8, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3013, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_EGYPT3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EGYPT2]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EGYPT", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "egypt", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3021, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_PIRATE1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PIRATE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "pirate", 
+							"Level": 8, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3022, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_PIRATE2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PIRATE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "pirate", 
+							"Level": 8, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3023, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_PIRATE3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_PIRATE3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_PIRATE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "pirate", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3031, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_COWBOY1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_COWBOY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "cowboy", 
+							"Level": 8, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3032, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_COWBOY2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_COWBOY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "cowboy", 
+							"Level": 8, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3033, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_COWBOY3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_COWBOY3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_COWBOY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "cowboy", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3041, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_KONGFU1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_KONGFU", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "kongfu", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3042, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_KONGFU2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_KONGFU", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "kongfu", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3043, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_KONGFU3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_KONGFU3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_KONGFU", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "kongfu", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3051, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_FUTURE1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_FUTURE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "future", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3052, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_FUTURE2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_FUTURE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "future", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3053, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_FUTURE3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_FUTURE3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_FUTURE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "future", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3061, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_EIGHTIES1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EIGHTIES", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "eighties", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3062, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_EIGHTIES2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EIGHTIES", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "eighties", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3063, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_EIGHTIES3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EIGHTIES3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_EIGHTIES", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "eighties", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3071, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_DARK1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DARK", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "dark", 
+							"Level": 10, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3072, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_DARK2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DARK", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "dark", 
+							"Level": 10, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3073, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_DARK3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_DARK3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DARK", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "dark", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3081, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_BEACH1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_BEACH", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "beach", 
+							"Level": 11, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3082, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_BEACH2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_BEACH", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "beach", 
+							"Level": 11, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3083, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_BEACH3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_PIRATE1]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_BEACH", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "beach", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3091, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_DINO1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DINO", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "dino", 
+							"Level": 11, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3092, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_DINO2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DINO", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "dino", 
+							"Level": 11, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3093, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_DINO3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_DINO3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_DINO", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "dino", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3101, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_ICEAGE1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_ICEAGE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "iceage", 
+							"Level": 12, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3102, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_ICEAGE2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_ICEAGE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "iceage", 
+							"Level": 12, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3103, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_ICEAGE3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_ICEAGE3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_ICEAGE", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "iceage", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3111, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_LOSTCITY1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_LOSTCITY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "lostcity", 
+							"Level": 12, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3112, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_LOSTCITY2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_LOSTCITY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "lostcity", 
+							"Level": 12, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3113, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_LOSTCITY3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_LOSTCITY3]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_LOSTCITY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "lostcity", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3121, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_SKYCITY1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_SKYCITY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "skycity", 
+							"Level": 15, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3122, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_SKYCITY2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_SKYCITY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "skycity", 
+							"Level": 15, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3123, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_SKYCITY3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_PIRATE1]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_SKYCITY", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "skycity", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3131, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_MODERN1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_MODERN", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "modern", 
+							"Level": 16, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3132, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_MODERN2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_MODERN", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "modern", 
+							"Level": 16, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3133, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_MODERN3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_PIRATE1]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_MODERN", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "modern", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3141, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_STEAM1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_STEAM", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "steam", 
+							"Level": 9, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3142, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_STEAM2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_STEAM", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "steam", 
+							"Level": 9, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3143, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_STEAM3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_PIRATE1]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_STEAM", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "steam", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3151, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_RENAI1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_RENAI", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "renai", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3152, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_RENAI2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_RENAI", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "renai", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3153, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_RENAI3]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_PIRATE1]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_RENAI", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "renai", 
+							"Level": 0, 
+							"IsHard": false, 
+							"IsBoss": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3161, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_HEIAN1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_HEIAN", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "heian", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3162, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_HEIAN2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_HEIAN", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "heian", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3163, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_ATLANTIS1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_ATLANTIS", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "atlantis", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3164, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_ATLANTIS2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_ATLANTIS", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "atlantis", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3165, 
+							"GroupID": 2, 
+							"Name": "[TASK_WORLDTASK_MOON1]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_EASY]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_MOON", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "moon", 
+							"Level": 13, 
+							"IsHard": false, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"TravelLogWorldTaskData": {
+							"ID": 3166, 
+							"GroupID": -1, 
+							"Name": "[TASK_WORLDTASK_MOON2]", 
+							"Description": "[TASK_WORLDTASK_DESCRIPTION_HARD]", 
+							"Background": "IMAGE_UI_QUESTS_BACKGROUND_MOON", 
+							"Awards": [
+								{
+									"Type": 4, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"WorldName": "moon", 
+							"Level": 13, 
+							"IsHard": true, 
+							"IsBoss": false, 
+							"NeedWin": true
+						}
+					}
+				]
+			}
+		}
+	]
+}

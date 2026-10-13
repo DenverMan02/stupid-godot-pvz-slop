@@ -1,0 +1,149 @@
+{
+	"#comment": "Configuration for server connection", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "UpdateServerConfig", 
+			"aliases": [
+				"UpdateServerConfig"
+			], 
+			"objdata": {
+				"ReleaseURL": "http://cloudpvz2ios.ditwan.cn", 
+				"ShippingURL": "http://cloudpvz2ios.ditwan.cn", 
+				"ReleaseFListURL": "http://112.65.16.150:8011/new_pvz2_ios/", 
+				"ReleaseRsbURL": "http://112.65.16.150:8011/download/", 
+				"ShippingFListURL": "https://profile.pvz2ios.popcap.com.cn/new_pvz2_ios/", 
+				"ShippingRsbURL": "http://downloadpvz2ios.ditwan.cn", 
+				"ReleaseNoticeURL": "http://profileintelligent.ditwan.cn/new_pvz2_ios_qa/", 
+				"ShippingNoticeURL": "http://profileintelligent.ditwan.cn/new_pvz2_ios/"
+			}
+		}, 
+		{
+			"objclass": "MagentoServerConfig", 
+			"aliases": [
+				"MagentoServerConfig"
+			], 
+			"objdata": {
+				"MagentoBaseProductURL": "http://pvz-shop-almost.pt.popcap.com.cn/index.php/shiny/1.1/product", 
+				"MagentoBaseCategoryURL": "http://pvz-shop-almost.pt.popcap.com.cn/index.php/shiny/1.1/category", 
+				"ReceiptValidationURL": "http://testcloud.pvz2ios.popcap.com.cn/index.php?", 
+				"bIsSandBox": true
+			}
+		}, 
+		{
+			"objclass": "LogServerConfig", 
+			"aliases": [
+				"LogServerConfig"
+			], 
+			"objdata": {
+				"ReleaseLogServerIp": "iosandroidlog.ditwan.cn", 
+				"ShippingLogServerIp": "iosandroidlog.ditwan.cn", 
+				"LogServerPort": "4346"
+			}
+		}, 
+		{
+			"objclass": "LawnStringServerConfig", 
+			"aliases": [
+				"LawnStringServerConfig"
+			], 
+			"objdata": {
+				"ReleaseFileInfoURL": "https://pvz2cdn.ditwan.cn/ios/res_release/", 
+				"ShippingFileInfoURL": "https://pvz2cdn.ditwan.cn/ios/res_shipping/", 
+				"ReleaseFileURL": "https://pvz2cdn.ditwan.cn/ios/res_release/", 
+				"ShippingFileURL": "https://pvz2cdn.ditwan.cn/ios/res_shipping/"
+			}
+		}, 
+		{
+			"objclass": "TGALogConfig", 
+			"aliases": [
+				"TGALogConfig"
+			], 
+			"objdata": {
+				"ReleaseURL": "https://pvz2iostga.talkyun.com.cn/pvz2h5logs/tologs", 
+				"ShippingURL": "https://pvz2iostga.talkyun.com.cn/pvz2h5logs/tologs"
+			}
+		}, 
+		{
+			"objclass": "PHPServerConfig", 
+			"aliases": [
+				"PHPServerConfig"
+			], 
+			"objdata": {
+				"ReleaseURL": "http://192.168.10.228/pvz2ios/index.php?", 
+				"ShippingURL": "http://cloudpvz2ios.ditwan.cn", 
+				"ReleasePVPURL": "http://192.168.10.228/pvz2pvp/index.php?", 
+				"ShippingPVPURL": "http://pvppvz2ios.ditwan.cn/index.php", 
+				"ReleaseUUIDURL": "http://192.168.10.228:8088/gate", 
+				"ShippingUUIDURL": "http://uuidpvz2ios.ditwan.cn:8080/gate", 
+				"HeartBeatInterval": 900
+			}
+		}, 
+		{
+			"objclass": "CustomLevelServerConfig", 
+			"aliases": [
+				"CustomLevelServerConfig"
+			], 
+			"objdata": {
+				"ReleaseURL": "https://pvz2cdn.ditwan.cn/ios/", 
+				"ShippingURL": "https://pvz2cdn.ditwan.cn/ios/"
+			}
+		}, 
+		{
+			"objclass": "JsonUpdateServerConfig", 
+			"aliases": [
+				"JsonUpdateServerConfig"
+			], 
+			"objdata": {
+				"ReleaseFileInfoURL": "https://pvz2cdn.ditwan.cn/", 
+				"ShippingFileInfoURL": "https://pvz2cdn.ditwan.cn/", 
+				"ReleaseFileURL": "https://pvz2cdn.ditwan.cn/", 
+				"ShippingFileURL": "https://pvz2cdn.ditwan.cn/"
+			}
+		}, 
+		{
+			"objclass": "PHPServerConfig", 
+			"aliases": [
+				"PHPServerConfigHttps"
+			], 
+			"objdata": {
+				"ReleaseURL": "https://192.168.10.228/pvz2ios/index.php?", 
+				"ShippingURL": "https://cloudpvz2ios.ditwan.cn", 
+				"ReleasePVPURL": "https://192.168.10.228/pvz2pvp/index.php?", 
+				"ShippingPVPURL": "https://pvppvz2ios.ditwan.cn/index.php", 
+				"ReleaseUUIDURL": "https://192.168.10.228:8088/gate", 
+				"ShippingUUIDURL": "https://uuidpvz2ios.ditwan.cn:8888/gate", 
+				"HeartBeatInterval": 900
+			}
+		}, 
+		{
+			"objclass": "RechargeCheckConfig", 
+			"aliases": [
+				"RechargeCheckConfig"
+			], 
+			"objdata": {
+				"ReleaseCheckServerURL": "http://192.168.10.228/pvz2ios/index.php?", 
+				"ShippingCheckServerURL": "http://cloudpvz2ios.ditwan.cn/index.php?"
+			}
+		}, 
+		{
+			"objclass": "TimeServerConfig", 
+			"aliases": [
+				"TimeServerConfig"
+			], 
+			"objdata": {
+				"ReleaseURL": "http://192.168.10.228/pvz2ios/index.php?", 
+				"ShippingURL": "http://cloudpvz2ios.ditwan.cn"
+			}
+		}, 
+		{
+			"objclass": "TimeServerConfig", 
+			"aliases": [
+				"TimeServerConfigHttps"
+			], 
+			"objdata": {
+				"ReleaseURL": "https://192.168.10.228/pvz2ios/index.php?", 
+				"ShippingURL": "https://cloudpvz2ios.ditwan.cn"
+			}
+		}
+	]
+}

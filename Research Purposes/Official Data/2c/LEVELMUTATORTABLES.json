@@ -1,0 +1,2668 @@
+{
+	"#comment": "Make new grid item types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsTest"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperVeryFast@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun2000@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(MutatorBuffBombardmintTestEasy@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+100@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun1000@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(MutatorBuffBombardmintTestMed@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperVerySlow@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount4@LevelMutatorModules)", 
+							"RTID(OverridePowerupsDisabled@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun500@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave3Ultra@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel5@LevelMutatorModules)", 
+							"RTID(MutatorBuffBombardmintTestHard@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-100@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridTest"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column0", 
+								"Type": "mold"
+							}, 
+							{
+								"Grid": "Column0_To_Column0", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_beach"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column1", 
+								"Type": "mold"
+							}, 
+							{
+								"Grid": "Column0_To_Column1", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_beach"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column2", 
+								"Type": "mold"
+							}, 
+							{
+								"Grid": "Column0_To_Column2", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_beach"
+							}
+						]
+					}, 
+					{
+						"Level": 3, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column3", 
+								"Type": "mold"
+							}, 
+							{
+								"Grid": "Column0_To_Column3", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_beach"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorRiftZombossTest"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideZombossPhases3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsAll"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun9000@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave12Slow@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(MutatorBuffBombardmintTestEasy@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun2000@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel4@LevelMutatorModules)", 
+							"RTID(MutatorBuffBombardmintTestMed@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverridePowerupsDisabled@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun1000@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(MutatorBuffBombardmintTestHard@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"############ Level Type Mutator Tables ############": 0
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftBattlez"
+			], 
+			"objdata": {
+				"TypeName": "MutatorPropsTest", 
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftConveyor"
+			], 
+			"objdata": {
+				"TypeName": "MutatorPropsTest", 
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave12Slow@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftNormal"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+100@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun9000@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave12Slow@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+50@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun2000@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun1000@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimed"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSun@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSun@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSun@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedPirate"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunPirate@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunPirate@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunPirate@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedDark"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunDark@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunDark@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunDark@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedFuture"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunFuture@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunFuture@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunFuture@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedCowboy"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunCowboy@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunCowboy@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunCowboy@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedDino"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunDino@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunDino@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunDino@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedLostcity"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunLostcity@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunLostcity@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunLostcity@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedIceage"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunIceage@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunIceage@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunIceage@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftTimedBeach"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedSunBeach@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunBeach@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool1@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool2@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool3@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideRiftTimedSunBeach@LevelMutatorModules)", 
+							"RTID(OverrideRiftTimedTool@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun99999@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftLastStand"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftPresetPlants"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+150@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun9000@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave12Slow@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+50@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun2000@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideMaxSun1000@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftLastStand_PresetPlants"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftBowling"
+			], 
+			"objdata": {
+				"TypeName": "MutatorPropsTest", 
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave12Slow@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsBeghouled"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave12Slow@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+150@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave9Moderate@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+100@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(OverrideMowersNone@LevelMutatorModules)", 
+							"RTID(OverrideFirstWave6Fast@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+50@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsVasebreaker"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverridePowerupsDisabled@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Dark"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Future"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases11@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Pirate"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases11@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Cowboy"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Dino"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Steam"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Egypt"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases4@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_LostCity"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_IceAge"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases13@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorPropsRiftZomboss_Beach"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(OverrideSunDropperFast@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+200@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood2@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount7@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel0@LevelMutatorModules)", 
+							"RTID(OverrideMowersInfinite@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases5@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(OverrideSunDropperDefault@LevelMutatorModules)", 
+							"RTID(ModifyStartSun+0@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood1@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount6@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel3@LevelMutatorModules)", 
+							"RTID(OverrideMowersRegenOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases7@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel3@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(OverrideSunDropperSlow@LevelMutatorModules)", 
+							"RTID(ModifyStartSun-250@LevelMutatorModules)", 
+							"RTID(OverrideStartingPlantfood0@LevelMutatorModules)", 
+							"RTID(OverrideSeedSlotCount5@LevelMutatorModules)", 
+							"RTID(OverrideZombieLevel6@LevelMutatorModules)", 
+							"RTID(OverrideMowersOnce@LevelMutatorModules)", 
+							"RTID(OverrideZombossPhases9@LevelMutatorModules)", 
+							"RTID(OverrideZombieGeneralLevel6@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorRiftZombossBattery1"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(ZombossBatterySystem_Easy@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(ZombossBatterySystem_Med@LevelMutatorModules)"
+						]
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(ZombossBatterySystem_Hard@LevelMutatorModules)"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"############ Grid Item Mutator Tables ############": 0
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column2", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold2"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "RiftEasy", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Mold06", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Mold05", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold3"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column0", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column1", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold4"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column8", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column8", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column5_To_Column8", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold5"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column7", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column7", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column5_To_Column7", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold6"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Mold22", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Mold22", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Mold22", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftMold7"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column8", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column8", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column8", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1Sandstorm1"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_1", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1Sandstorm2"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_2", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_2", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_2", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1Sandstorm3"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_3", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_3", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_3", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1Sandstorm4"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_4", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_4", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Sandstorm_4", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1Banplantfood"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Banplantfood", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Banplantfood", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_Banplantfood", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1_S3hardmode_1"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_1", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1_S3hardmode_2"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_2", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_2", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_2", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1_S3hardmode_3"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_3", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_3", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_3", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1_S3hardmode_4"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_4", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_4", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_4", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1_S3hardmode_5"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_5", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_5", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S3hardmode_5", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"Pvz1_S11hardmode_1"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S11hardmode_1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S11hardmode_1", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Pvz1_S11hardmode_1", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftLinkedTiles"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "PowerTilesRift1", 
+								"Type": "griditems", 
+								"Subtype": "powertile_delta"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "PowerTilesRift1", 
+								"Type": "griditems", 
+								"Subtype": "powertile_beta"
+							}
+						]
+					}, 
+					{
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftLinkedTiles2"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "PowerTilesRift4", 
+								"Type": "griditems", 
+								"Subtype": "powertile_alpha"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "PowerTilesRift3", 
+								"Type": "griditems", 
+								"Subtype": "powertile_beta"
+							}
+						]
+					}, 
+					{
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftLinkedTiles3"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "PowerTilesRift6", 
+								"Type": "griditems", 
+								"Subtype": "powertile_alpha"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "PowerTilesRift5", 
+								"Type": "griditems", 
+								"Subtype": "powertile_beta"
+							}
+						]
+					}, 
+					{
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftGravestones"
+			], 
+			"objdata": {
+				"TypeName": "MutatorGridTest", 
+				"Tables": [
+					{
+						"Level": 0
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column2", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_dark"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column0_To_Column3", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_dark"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftGravestones2"
+			], 
+			"objdata": {
+				"TypeName": "MutatorGridTest", 
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Column8_To_Column8", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_dark"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column7_To_Column8", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_dark"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column6_To_Column8", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_dark"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftGravestones3"
+			], 
+			"objdata": {
+				"TypeName": "MutatorGridTest", 
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "Column5", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_battlez_sun"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "Column4", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_battlez_sun"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "Column4_To_Column5", 
+								"Type": "griditems", 
+								"Subtype": "gravestone_battlez_sun"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftSliders"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "SlidersRift1", 
+								"Type": "griditems", 
+								"Subtype": "slider_down"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "SlidersRift2", 
+								"Type": "griditems", 
+								"Subtype": "slider_down"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftFrozenZombies"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "FrozenZombiesRift1", 
+								"Type": "griditems", 
+								"Subtype": "frozenzombie"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "FrozenZombiesRift1", 
+								"Type": "griditems", 
+								"Subtype": "slider_down"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "FrozenZombiesRift1", 
+								"Type": "griditems", 
+								"Subtype": "slider_down"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftTraps"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "TrapsRift1B0", 
+								"Type": "griditems", 
+								"Subtype": "flame_spreader_trap"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "TrapsRift1B1", 
+								"Type": "griditems", 
+								"Subtype": "flame_spreader_trap"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "TrapsRift1B2", 
+								"Type": "griditems", 
+								"Subtype": "flame_spreader_trap"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftBoostTiles"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "BoostTiles1", 
+								"Type": "griditems", 
+								"Subtype": "boosttile10"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "BoostTiles2", 
+								"Type": "griditems", 
+								"Subtype": "boosttile5"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "BoostTiles3", 
+								"Type": "griditems", 
+								"Subtype": "boosttile3"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftBoostTiles1"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "BoostTiles4", 
+								"Type": "griditems", 
+								"Subtype": "boosttile10"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "BoostTiles5", 
+								"Type": "griditems", 
+								"Subtype": "boosttile5"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "BoostTiles6", 
+								"Type": "griditems", 
+								"Subtype": "boosttile3"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"MutatorGridRiftGoldTiles1"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "GoldTiles01", 
+								"Type": "griditems", 
+								"Subtype": "goldtile"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "GoldTiles08", 
+								"Type": "griditems", 
+								"Subtype": "goldtile"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "GoldTiles07", 
+								"Type": "griditems", 
+								"Subtype": "goldtile"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorTableProps", 
+			"aliases": [
+				"unchartedneedforspeed"
+			], 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"GridMaps": [
+							{
+								"Grid": "needforspeed_right", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 1, 
+						"GridMaps": [
+							{
+								"Grid": "needforspeed_right", 
+								"Type": "mold"
+							}
+						]
+					}, 
+					{
+						"Level": 2, 
+						"GridMaps": [
+							{
+								"Grid": "needforspeed_right", 
+								"Type": "mold"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

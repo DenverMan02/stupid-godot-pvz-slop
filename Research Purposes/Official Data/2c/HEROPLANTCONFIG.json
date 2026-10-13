@@ -1,0 +1,62 @@
+{
+	"#comment": "hero plant config", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "HeroPlantPropertySheet", 
+			"aliases": [
+				"HeroPlantArmorflameDefault"
+			], 
+			"objdata": {
+				"PlantName": "armorflame", 
+				"SunCondtion": 5000, 
+				"TimeCondtion": 30, 
+				"RechargeTime": 30, 
+				"RespawnTime": 30, 
+				"GradeUP": [
+					{
+						"AttackUP": 0.1, 
+						"HealthUP": 0.1, 
+						"TalentPoints": 1, 
+						"ExpRequired": 15
+					}
+				], 
+				"GradeRange": [
+					{
+						"MinGrade": 1, 
+						"MaxGrade": 4
+					}
+				], 
+				"Talent": [
+					{
+						"TalentName": "[ARMORFLAME_TALENT_NAME_1]", 
+						"TalentIcon": "IMAGE_UI_HEROPLANT_TALENT_ICON_ARMORFLAME1", 
+						"TalentDescription": "ARMORFLAME_TALENT_DESCRIPTION_1", 
+						"MaxLevel": 3, 
+						"LevelUpCost": [
+							1
+						]
+					}, 
+					{
+						"TalentName": "[ARMORFLAME_TALENT_NAME_2]", 
+						"TalentIcon": "IMAGE_UI_HEROPLANT_TALENT_ICON_ARMORFLAME2", 
+						"TalentDescription": "ARMORFLAME_TALENT_DESCRIPTION_2", 
+						"MaxLevel": 3, 
+						"LevelUpCost": [
+							1
+						]
+					}, 
+					{
+						"TalentName": "[ARMORFLAME_TALENT_NAME_3]", 
+						"TalentIcon": "IMAGE_UI_HEROPLANT_TALENT_ICON_ARMORFLAME3", 
+						"TalentDescription": "ARMORFLAME_TALENT_DESCRIPTION_3", 
+						"MaxLevel": 3, 
+						"LevelUpCost": [
+							1
+						]
+					}
+				]
+			}
+		}
+	]
+}

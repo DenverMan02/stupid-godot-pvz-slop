@@ -1,0 +1,72 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"Track1"
+			], 
+			"objclass": "ThymedEventTrackDefinition", 
+			"objdata": {
+				"Track": "track1", 
+				"EnergyCostPerNode": [
+					10
+				], 
+				"EnergyCap": 80, 
+				"EnergyRefillPeriodSeconds": 360, 
+				"DownTab": "IMAGE_UI_CALENDAR_EVENT_DOWN", 
+				"ActiveTab": "IMAGE_UI_CALENDAR_EVENT_ACTIVE", 
+				"HintTexts": [
+					"[EVENTS_HINT_1]", 
+					"[EVENTS_HINT_2]", 
+					"[EVENTS_HINT_3]"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Track2"
+			], 
+			"objclass": "ThymedEventTrackDefinition", 
+			"objdata": {
+				"Track": "track2", 
+				"EnergyCostPerNode": [
+					10
+				], 
+				"EnergyCap": 80, 
+				"EnergyRefillPeriodSeconds": 360, 
+				"DownTab": "IMAGE_UI_CALENDAR_EVENT_DOWN", 
+				"ActiveTab": "IMAGE_UI_CALENDAR_EVENT_ACTIVE", 
+				"HintTexts": [
+					"[EVENTS_HINT_1]", 
+					"[EVENTS_HINT_2]", 
+					"[EVENTS_HINT_3]"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Track3"
+			], 
+			"objclass": "ThymedEventTrackDefinition", 
+			"objdata": {
+				"Track": "track3", 
+				"EnergyCostPerNode": [
+					1, 
+					2, 
+					3, 
+					4, 
+					5
+				], 
+				"EnergyCap": 20, 
+				"EnergyRefillPeriodSeconds": 10, 
+				"DownTab": "IMAGE_UI_CALENDAR_EVENT_DOWN", 
+				"ActiveTab": "IMAGE_UI_CALENDAR_EVENT_ACTIVE", 
+				"HintTexts": [
+					"[EVENTS_HINT_1]", 
+					"[EVENTS_HINT_2]", 
+					"[EVENTS_HINT_3]"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

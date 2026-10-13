@@ -1,0 +1,558 @@
+{
+	"#comment": "probability show", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"Festival2019_Cracker"
+			], 
+			"objdata": {
+				"title": "[FESTIVAL2019_CRACKER_TITLE]", 
+				"keys": [
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]"
+				], 
+				"values": [
+					20.0, 
+					20.0, 
+					60.0
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"Festival2019_OneYuan"
+			], 
+			"objdata": {
+				"title": "[FESTIVAL2019_ONEYUAN_TITLE]", 
+				"keys": [
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LOTTERY_GOLD]", 
+					"[LOTTERY_DIAMOND]"
+				], 
+				"values": [
+					29.0, 
+					38.6, 
+					19.3, 
+					13.1
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"Christmas2018_Lottery"
+			], 
+			"objdata": {
+				"title": "[LIMITEDLOTTERY_PROBABILITY]", 
+				"keys": [
+					"[LOTTERY_DIAMOND]", 
+					"[CHRISTMAS2018_LOTTERY_PIECE]", 
+					"[CHRISTMAS2018_LOTTERY_PENDANT]", 
+					"[LOTTERY_GOLD]", 
+					"[LIMITEDGACHA_LEGENDPLANTS_LEVEL2]"
+				], 
+				"values": [
+					6.2, 
+					28.1, 
+					20.0, 
+					44.7, 
+					1.0
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"Festival2019_RedPacket"
+			], 
+			"objdata": {
+				"title": "[FESTIVAL2019_REDPACLET_TITLE]", 
+				"keys": [
+					"[FESTIVAL2019_REDPACLET_GOLD]", 
+					"[FESTIVAL2019_REDPACLET_DIAMOND]", 
+					"[FESTIVAL2019_REDPACLET_NUTRITION]", 
+					"[FESTIVAL2019_REDPACLET_PLANTCHIP]"
+				], 
+				"values": [
+					34.0, 
+					17.8, 
+					13.6, 
+					34.6
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"Cornucopia_Detail"
+			], 
+			"objdata": {
+				"title": "[GACHA_POOL_SHOW]", 
+				"keys": [
+					"[MAT_CORNUCOPIA_EMBLEM_MUST]", 
+					"[CORNUCOPIA_BONUS_DETAIL_GEM]", 
+					"[PLANT_PIECE]", 
+					"[CORNUCOPIA_CRYSTAL_5000]"
+				], 
+				"values": [
+					100, 
+					37.48, 
+					62.47, 
+					0.05
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"WinneTreasureConfig_Normal"
+			], 
+			"objdata": {
+				"title": "", 
+				"keys": [
+					"[WINNETREASURE_WHITEPLANTS]", 
+					"[WINNETREASURE_GREENPLANTS]", 
+					"[WINNETREASURE_BLUEPLANTS]", 
+					"[WINNETREASURE_EPICPLANTS]"
+				], 
+				"values": [
+					40.0, 
+					10.0, 
+					39.0, 
+					11.0
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"WinneTreasureConfig_Rare"
+			], 
+			"objdata": {
+				"title": "", 
+				"keys": [
+					"[WINNETREASURE_BLUEPLANTS]", 
+					"[WINNETREASURE_EPICPLANTS]", 
+					"[WINNETREASURE_LEGENDPLANTS]"
+				], 
+				"values": [
+					74.0, 
+					20.0, 
+					6.0
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"WinneTreasureConfig_Legend"
+			], 
+			"objdata": {
+				"title": "", 
+				"keys": [
+					"[WINNETREASURE_EPICPLANTS]", 
+					"[WINNETREASURE_LEGENDPLANTS]"
+				], 
+				"values": [
+					80.0, 
+					20.0
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"WinneTreasureConfig_Avatar"
+			], 
+			"objdata": {
+				"title": "", 
+				"keys": [
+					"[WINNETREASURE_AVATAR]", 
+					"[WINNETREASURE_AVATARPIECE]"
+				], 
+				"values": [
+					22.4, 
+					77.6
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"Lottery_1"
+			], 
+			"objdata": {
+				"title": "[LIMITEDLOTTERY_PROBABILITY]", 
+				"keys": [
+					"[LOTTERY_LEGENDPLANTS_LEVEL2]", 
+					"[LOTTERY_EPICPLANTS_LEVEL2]", 
+					"[LOTTERY_DRESSPIECE]", 
+					"[LOTTERY_DIAMOND]", 
+					"[LOTTERY_GOLD]", 
+					"[LOTTERY_PENDANTPIECE]", 
+					"[LOTTERY_CUP]"
+				], 
+				"values": [
+					0.7, 
+					1.4, 
+					3.6, 
+					4.6, 
+					64.3, 
+					25.0, 
+					0.4
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"LimitedGacha"
+			], 
+			"objdata": {
+				"title": "[LIMITEDGACHA_PROBABILITY]", 
+				"keys": [
+					"[LIMITEDGACHA_LEGENDPLANTS_LEVEL2]", 
+					"[LIMITEDGACHA_LEGENDPLANTS]", 
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]"
+				], 
+				"values": [
+					1.8, 
+					0.9, 
+					14.3, 
+					3.6, 
+					28.5, 
+					8.0, 
+					42.9
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"NewYearCracker"
+			], 
+			"objdata": {
+				"title": "[LIMITEDGACHA_PROBABILITY]", 
+				"keys": [
+					"[LIMITEDGACHA_LEGENDPLANTS_LEVEL2]", 
+					"[LIMITEDGACHA_LEGENDPLANTS]", 
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]"
+				], 
+				"values": [
+					1.8, 
+					0.9, 
+					14.3, 
+					3.6, 
+					28.5, 
+					8.0, 
+					42.9
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"NewYearRedPacket"
+			], 
+			"objdata": {
+				"title": "[LIMITEDGACHA_PROBABILITY]", 
+				"keys": [
+					"[LIMITEDGACHA_LEGENDPLANTS_LEVEL2]", 
+					"[LIMITEDGACHA_LEGENDPLANTS]", 
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]"
+				], 
+				"values": [
+					1.8, 
+					0.9, 
+					14.3, 
+					3.6, 
+					28.5, 
+					8.0, 
+					42.9
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"PlantTreeEvent"
+			], 
+			"objdata": {
+				"title": "[PLANT_TREE_EVENT_TITLE]", 
+				"keys": [
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]", 
+					"[PLANT_TREE_EVENT_GREENPIECE]", 
+					"[PLANT_TREE_EVENT_WHITEPIECE]", 
+					"[LOTTERY_GOLD]"
+				], 
+				"values": [
+					10.0, 
+					11.6, 
+					20.0, 
+					26.6, 
+					11.6, 
+					20.2
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"BossChallenge"
+			], 
+			"objdata": {
+				"title": "[BOSSCHALLENGE_TITLE]", 
+				"keys": [
+					"[BOSSCHALLENGE_LEGENDPLANTS_PIECE]", 
+					"[BOSSCHALLENGE_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]", 
+					"[PLANT_TREE_EVENT_WHITEPIECE]", 
+					"[CHRISTMAS2018_LOTTERY_PENDANT]", 
+					"[LOTTERY_GOLD]"
+				], 
+				"values": [
+					7.0, 
+					4.5, 
+					18.8, 
+					17.9, 
+					20.5, 
+					31.3
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"SecretGacha"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[SECRET_GACHA_LEGENDPLANTS_PIECE]", 
+					"[SECRET_GACHA_EPICPLANTS_PIECE]", 
+					"[SECRET_GACHA_BLUEPLANTS_PIECE]", 
+					"[SECRET_GACHA_LOTTERY_PENDANT]"
+				], 
+				"values": [
+					6.0, 
+					57.97, 
+					35.98, 
+					0.05
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"AdsLottery"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[SECRET_GACHA_LEGENDPLANTS_PIECE]", 
+					"[SECRET_GACHA_EPICPLANTS_PIECE]", 
+					"[SECRET_GACHA_BLUEPLANTS_PIECE]", 
+					"[SECRET_GACHA_EVENT_WHITEPIECE]", 
+					"[SECRET_GACHA_LOTTERY_PENDANT]", 
+					"[SECRET_GACHA_COIN_PENDANT]", 
+					"[MAT_MYSTERY_CRYSTAL]"
+				], 
+				"values": [
+					6.35, 
+					6.35, 
+					6.72, 
+					70.9, 
+					5.22, 
+					3.73, 
+					0.75
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"CallofWish"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[CALL_OF_WISH_LEGENDPLANTS_LEVEL1]", 
+					"[CALL_OF_WISH_LEGENDPLANTS_PIECE]", 
+					"[CALL_OF_WISH_LEGENDPLANTS_OTHER_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]"
+				], 
+				"values": [
+					0.5, 
+					7.2, 
+					8.8, 
+					31.5, 
+					52
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"ArborDay"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[ZHUFUJUAN]", 
+					"[LIMITEDGACHA_LEGENDPLANTS_PIECE]", 
+					"[LIMITEDGACHA_EPICPLANTS_PIECE]", 
+					"[LIMITEDGACHA_BLUEPLANTS_PIECE]", 
+					"[PLANT_TREE_EVENT_GREENPIECE]", 
+					"[SECRET_GACHA_EVENT_WHITEPIECE]", 
+					"[SECRET_GACHA_LOTTERY_PENDANT]"
+				], 
+				"values": [
+					0.5, 
+					2.4, 
+					10.9, 
+					23.2, 
+					35.5, 
+					22.0, 
+					5.5
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"LimitedSummon"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[WINNETREASURE_LEGENDPLANTS]", 
+					"[WINNETREASURE_EPICPLANTS]", 
+					"[WINNETREASURE_BLUEPLANTS]", 
+					"[WINNETREASURE_GREENPLANTS]", 
+					"[WINNETREASURE_WHITEPLANTS]"
+				], 
+				"values": [
+					7.41, 
+					12.36, 
+					18.5, 
+					24.7, 
+					37.02
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"WishingPool_version1"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[WISHING_POOL_GEM500]", 
+					"[WISHING_POOL_GEM200]", 
+					"[WISHING_POOL_GEM100]", 
+					"[WISHING_POOL_GEM50]", 
+					"[WISHING_POOL_GEM30]", 
+					"[WISHING_POOL_GOLD1]", 
+					"[WISHING_POOL_GOLD2]", 
+					"[WISHING_POOL_GOLD3]", 
+					"[BONUS_MAGIC_FERTILIZER_DESCRIPTION]", 
+					"[WISHING_POOL_MYSTERY1]", 
+					"[WISHING_POOL_MYSTERY2]", 
+					"[WISHING_POOL_GREENPLANT1]", 
+					"[WISHING_POOL_GREENPLANT2]", 
+					"[WISHING_POOL_BLUEPLANT]", 
+					"[WISHING_POOL_PURPLEPLANT]", 
+					"[WISHING_POOL_GOLDENPLANT_VERSION1]", 
+					"[WISHING_POOL_DUBBLE]"
+				], 
+				"values": [
+					3.0, 
+					6.03, 
+					8.0, 
+					11.11, 
+					2.98, 
+					8.0, 
+					11.11, 
+					2.0, 
+					3.0, 
+					4.0, 
+					8.0, 
+					6.0, 
+					6.0, 
+					4.5, 
+					3.81, 
+					2.55, 
+					10.0
+				]
+			}
+		}, 
+		{
+			"objclass": "ProbabilityConfig", 
+			"aliases": [
+				"WishingPool_version2"
+			], 
+			"objdata": {
+				"title": "[SECRET_GACHA_TITLE]", 
+				"keys": [
+					"[WISHING_POOL_GEM500]", 
+					"[WISHING_POOL_GEM200]", 
+					"[WISHING_POOL_GEM100]", 
+					"[WISHING_POOL_GEM50]", 
+					"[WISHING_POOL_GEM30]", 
+					"[WISHING_POOL_GOLD1]", 
+					"[WISHING_POOL_GOLD2]", 
+					"[WISHING_POOL_GOLD3]", 
+					"[BONUS_MAGIC_FERTILIZER_DESCRIPTION]", 
+					"[WISHING_POOL_MYSTERY1]", 
+					"[WISHING_POOL_MYSTERY2]", 
+					"[WISHING_POOL_GREENPLANT1]", 
+					"[WISHING_POOL_GREENPLANT2]", 
+					"[WISHING_POOL_BLUEPLANT]", 
+					"[WISHING_POOL_PURPLEPLANT]", 
+					"[WISHING_POOL_GOLDENPLANT_VERSION2]", 
+					"[WISHING_POOL_DUBBLE]"
+				], 
+				"values": [
+					3.0, 
+					6.03, 
+					8.0, 
+					11.11, 
+					2.98, 
+					8.0, 
+					11.11, 
+					2.0, 
+					3.0, 
+					4.0, 
+					8.0, 
+					6.0, 
+					6.0, 
+					4.5, 
+					3.81, 
+					2.55, 
+					10.0
+				]
+			}
+		}
+	]
+}

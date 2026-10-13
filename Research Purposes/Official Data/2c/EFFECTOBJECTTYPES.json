@@ -1,0 +1,225 @@
+{
+	"#comment": "Make new effect object types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"####### ... ########": 0
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_frostwind"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_frostwind", 
+				"EffectObjectClass": "EffectObject_FrostWind", 
+				"ResourceGroups": [
+					"IceAgeFrostWindGroup", 
+					"FrostbiteIceBlockPlantGroup"
+				], 
+				"Properties": "RTID(EffectObjectFrostWind@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_frostwind_zomboss"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_frostwind_zomboss", 
+				"EffectObjectClass": "EffectObject_FrostWind", 
+				"ResourceGroups": [
+					"IceAgeFrostWindGroup", 
+					"FrostbiteIceBlockPlantGroup"
+				], 
+				"Properties": "RTID(EffectObjectIceAgeZombossFrostWind@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_trapfire"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_trapfire", 
+				"EffectObjectClass": "EffectObject_DamageOverTime", 
+				"ResourceGroups": [
+					"LevelCommon", 
+					"LevelCommon2", 
+					"ZombieLostCityZombossGroup"
+				], 
+				"Properties": "RTID(EffectObjectTrapFire@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_planeshadow"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_planeshadow", 
+				"EffectObjectClass": "EffectObject_StretchedScrollingImage", 
+				"ResourceGroups": [
+					"LevelCommon", 
+					"LevelCommon2", 
+					"ZombieLostCityZombossGroup"
+				], 
+				"Properties": "RTID(EffectObjectPlaneShadow@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"strawburst_plantfood"
+			], 
+			"objdata": {
+				"TypeName": "strawburst_plantfood", 
+				"EffectObjectClass": "EffectObject_StrawburstPlantfood", 
+				"ResourceGroups": [
+					"PlantStrawBurst"
+				], 
+				"Properties": "RTID(EffectObjectStrawburstPlantfood@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"strawburst_plantfood_avatar"
+			], 
+			"objdata": {
+				"TypeName": "strawburst_plantfood_avatar", 
+				"EffectObjectClass": "EffectObject_StrawburstPlantfood", 
+				"ResourceGroups": [
+					"PlantStrawBurst"
+				], 
+				"Properties": "RTID(EffectObjectStrawburstPlantfoodAvatar@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_dinotread"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_dinotread", 
+				"EffectObjectClass": "EffectObject_DinoTread", 
+				"ResourceGroups": [
+					"DinoBrontoTreadGroup", 
+					"ZombieDinoZombossAudio", 
+					"ZombieDinoShanghaiAudio"
+				], 
+				"Properties": "RTID(EffectObjectDinoTread@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_dinotread_for_artifact_dinosaur_horn"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_dinotread_for_artifact_dinosaur_horn", 
+				"EffectObjectClass": "EffectObject_DinoTread_For_Artifact_Dinosaur_horn", 
+				"ResourceGroups": [
+					"DinoBrontoTreadGroup", 
+					"ZombieDinoZombossAudio", 
+					"ZombieDinoShanghaiAudio"
+				], 
+				"Properties": "RTID(EffectObjectDinoTreadForArtifactDinosaurHorn@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effect_dinoshadow"
+			], 
+			"objdata": {
+				"TypeName": "effect_dinoshadow", 
+				"EffectObjectClass": "Effect_DinoShadow", 
+				"ResourceGroups": [
+					"DinoShadowRexGroup", 
+					"ZombieDinoZombossAudio"
+				], 
+				"Properties": "RTID(EffectDinoShadow@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"escaperoot_targetplant"
+			], 
+			"objdata": {
+				"TypeName": "escaperoot_targetplant", 
+				"EffectObjectClass": "EffectObject_TargetPlant", 
+				"ResourceGroups": [
+					"PlantEscapeRoot", 
+					"PlantEscapeRootAudio"
+				], 
+				"Properties": "RTID(EffectObjectTargetPlant@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"snappea_burrowattack"
+			], 
+			"objdata": {
+				"TypeName": "snappea_burrowattack", 
+				"EffectObjectClass": "EffectObject_BurrowAttack", 
+				"ResourceGroups": [
+					"PlantSnapPea"
+				], 
+				"Properties": "RTID(EffectObjectBurrowAttack@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"SolarTomatoAOEExplosion"
+			], 
+			"objdata": {
+				"TypeName": "SolarTomatoAOEExplosion", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"Effects_SolarTomato"
+				], 
+				"Properties": "RTID(EffectObjectSolarTomatoAOEExplosion@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"EffectObject_GardenerGrass"
+			], 
+			"objdata": {
+				"TypeName": "EffectObject_GardenerGrass", 
+				"EffectObjectClass": "EffectObject_GardenerGrass", 
+				"ResourceGroups": [], 
+				"Properties": "RTID(EffectObject_GardenerGrassPropsDefault@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"EffectObject_HocusCrocusFog"
+			], 
+			"objdata": {
+				"TypeName": "EffectObject_HocusCrocusFog", 
+				"EffectObjectClass": "EffectObject_HocusCrocusFog", 
+				"ResourceGroups": [], 
+				"Properties": "RTID(EffectObjectHocusCrocusFogDefault@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"EffectObject_WizardCrucibleVenom"
+			], 
+			"objdata": {
+				"TypeName": "EffectObject_WizardCrucibleVenom", 
+				"EffectObjectClass": "EffectObject_WizardCrucibleVenom", 
+				"ResourceGroups": [], 
+				"Properties": "RTID(EffectObjectWizardCrucibleVenomDefault@PropertySheets)"
+			}
+		}
+	]
+}

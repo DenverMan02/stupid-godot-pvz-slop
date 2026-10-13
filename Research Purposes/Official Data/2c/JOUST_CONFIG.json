@@ -1,0 +1,456 @@
+{
+	"#comment": "Joust Configuration", 
+	"#comment2": "PGS Requires that only one type can exist in this file", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "JoustPropertySheet", 
+			"aliases": [
+				"JoustConfig"
+			], 
+			"objdata": {
+				"ReplayRecordEventBasePeriodSecondsMin": 2, 
+				"ReplayRecordEventBasePeriodSecondsMax": 4, 
+				"FreePlayRechargeTimeSeconds": 28800, 
+				"NetworkTimeoutSeconds": 5, 
+				"PlantsRequiredToUnlock": 10, 
+				"MaxAvatarName": 1310, 
+				"AvatarNamePattern": "[JOUST_AVATAR_NAME]", 
+				"MaxAvatarIcon": 25, 
+				"AvatarIconPattern": "IMAGE_UI_JOUST_AVATARS_AVATAR_", 
+				"LeagueIcons": [
+					"IMAGE_UI_JOUST_LEAGUES_CUP_IRON", 
+					"IMAGE_UI_JOUST_LEAGUES_CUP_COPPER", 
+					"IMAGE_UI_JOUST_LEAGUES_CUP_SILVER", 
+					"IMAGE_UI_JOUST_LEAGUES_CUP_GOLD", 
+					"IMAGE_UI_JOUST_LEAGUES_CUP_JADE"
+				], 
+				"LeagueNames": [
+					"[JOUST_LEAGUE_NAME_IRON]", 
+					"[JOUST_LEAGUE_NAME_COPPER]", 
+					"[JOUST_LEAGUE_NAME_SILVER]", 
+					"[JOUST_LEAGUE_NAME_GOLD]", 
+					"[JOUST_LEAGUE_NAME_JADE]"
+				], 
+				"ShortLeagueNames": [
+					"[JOUST_LEAGUE_NAME_IRON_SHORT]", 
+					"[JOUST_LEAGUE_NAME_COPPER_SHORT]", 
+					"[JOUST_LEAGUE_NAME_SILVER_SHORT]", 
+					"[JOUST_LEAGUE_NAME_GOLD_SHORT]", 
+					"[JOUST_LEAGUE_NAME_JADE_SHORT]"
+				], 
+				"HowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_JOUST_HOW_TO_PLAY_HOWTOPLAY_01", 
+							"Description": "[JOUST_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_JOUST_HOW_TO_PLAY_HOWTOPLAY_02", 
+							"Description": "[JOUST_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_JOUST_HOW_TO_PLAY_HOWTOPLAY_04", 
+							"Description": "[JOUST_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_JOUST_HOW_TO_PLAY_HOWTOPLAY_05", 
+							"Description": "[JOUST_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_JOUST_HOW_TO_PLAY_HOWTOPLAY_06", 
+							"Description": "[JOUST_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"PredefinedLoadouts": [
+					[
+						{
+							"PlantType": "sunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "peashooter", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "wallnut", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "potatomine", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "cabbagepult", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "bonkchoy", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "twinsunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "snapdragon", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "spikerock", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "coconutcannon", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "spikeweed", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "kernelpult", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "sunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "splitpea", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "chilibean", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "lightningreed", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "tallnut", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "melonpult", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "twinsunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "laserbean", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "citron", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "holonut", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "powerplant", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "mangnifyinggrass", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "sunshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "puffshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "fumeshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "sunbean", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "magnetshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "iceburg", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "sunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "bowlingbulb", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "guacodile", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "banana", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "wallnut", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "threepeater", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "twinsunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "xshot", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "stunion", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "pepperpult", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "chardguard", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "spikeweed", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "twinsunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "endurian", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "goldleaf", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "redstinger", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "akee", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "stallia", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "sunshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "phatbeet", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "celerystalker", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "sporeshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "intensivecarrot", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "garlic", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "primalsunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "primalwallnut", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "primalpotatomine", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "primalpeashooter", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "wintermelon", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "cherry_bomb", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "moonflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "nightshade", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "shadowshroom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "dusklobber", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "goldbloom", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "grimrose", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					], 
+					[
+						{
+							"PlantType": "sunflower", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "electriccurrant", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "aloe", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "primalwallnut", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "potatomine", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}, 
+						{
+							"PlantType": "primalpeashooter", 
+							"PlantLevel": 0, 
+							"IsImitater": false
+						}
+					]
+				]
+			}
+		}
+	]
+}

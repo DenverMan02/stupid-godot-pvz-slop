@@ -1,0 +1,150 @@
+{
+	"#comment": "Make new training type here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_change", 
+				"ObjectType": "zombie", 
+				"CostPVPCoin": 5, 
+				"SpaceSize": 1, 
+				"TrainingTime": 30, 
+				"NeedHomeLevel": 1, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_imp", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 60, 
+				"SpaceSize": 1, 
+				"CostPVPCoin": 10, 
+				"NeedHomeLevel": 2, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_dead", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 180, 
+				"SpaceSize": 2, 
+				"CostPVPCoin": 15, 
+				"NeedHomeLevel": 3, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_seagull", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 240, 
+				"SpaceSize": 2, 
+				"CostPVPCoin": 15, 
+				"NeedHomeLevel": 4, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_cannon", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 300, 
+				"SpaceSize": 3, 
+				"CostPVPCoin": 20, 
+				"NeedHomeLevel": 5, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_nurse", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 360, 
+				"SpaceSize": 3, 
+				"CostPVPCoin": 20, 
+				"NeedHomeLevel": 6, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_hammer", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 420, 
+				"SpaceSize": 4, 
+				"CostPVPCoin": 30, 
+				"NeedHomeLevel": 7, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_wizard", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 480, 
+				"SpaceSize": 5, 
+				"CostPVPCoin": 40, 
+				"NeedHomeLevel": 8, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_monk_drink", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 1140, 
+				"SpaceSize": 6, 
+				"CostPVPCoin": 65, 
+				"NeedHomeLevel": 9, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_gargantuar", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 1800, 
+				"SpaceSize": 8, 
+				"CostPVPCoin": 110, 
+				"NeedHomeLevel": 10, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_chicken_farmer", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 2400, 
+				"SpaceSize": 11, 
+				"CostPVPCoin": 400, 
+				"NeedHomeLevel": 13, 
+				"NeedWorldName": ""
+			}
+		}, 
+		{
+			"objclass": "TrainingType", 
+			"objdata": {
+				"TypeName": "pvp_football_mech", 
+				"ObjectType": "zombie", 
+				"TrainingTime": 2900, 
+				"SpaceSize": 14, 
+				"CostPVPCoin": 900, 
+				"NeedHomeLevel": 15, 
+				"NeedWorldName": ""
+			}
+		}
+	]
+}

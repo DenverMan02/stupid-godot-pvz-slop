@@ -1,0 +1,9063 @@
+{
+	"#comment": "Plant Power Data!  Beware ye all who enter here!", 
+	"objects": [
+		{
+			"aliases": [
+				"ailmint_puffshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Puffshroom_ExpirationDurationSeconds", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "puffshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_fumeshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900, 
+							2900
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "fumeshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_bloominghearts"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "bloominghearts"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_garlic"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200
+						]
+					}
+				], 
+				"TypeName": "garlic"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_sporeshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800, 
+							2800
+						]
+					}
+				], 
+				"TypeName": "sporeshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_chilibean"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionStunDuration", 
+						"SubType": "0", 
+						"Values": [
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ChilibeanDuplication", 
+						"SubType": "Duplicator", 
+						"Type": "Power", 
+						"Values": [
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates", 
+							"TenDuplicates"
+						]
+					}
+				], 
+				"TypeName": "chilibean"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_poisonpeashooter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "PoisonPeashooter_PoisonDPSPerStack", 
+						"Values": [
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "PoisonPeashooter_PlantfoodPoisonDPS", 
+						"Values": [
+							132, 
+							132, 
+							132, 
+							132, 
+							132, 
+							132, 
+							132, 
+							132, 
+							132, 
+							132
+						]
+					}
+				], 
+				"TypeName": "poisonpeashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_banana"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Values": [
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2
+						]
+					}
+				], 
+				"TypeName": "banana"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_kernelpult"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "Kernelpult_ButterDuration", 
+						"Values": [
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16
+						]
+					}
+				], 
+				"TypeName": "kernelpult"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_melonpult"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Values": [
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamagePF", 
+						"SubType": "1", 
+						"Values": [
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40
+						]
+					}
+				], 
+				"TypeName": "melonpult"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_akee"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "Akee_NormalProjectileBounceCount", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "Akee_PFProjectileBounceCount", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"TypeName": "akee"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_cabbagepult"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}
+				], 
+				"TypeName": "cabbagepult"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_coconutcannon"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"TypeName": "coconutcannon"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_applemortar"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionStunDuration", 
+						"SubType": "0", 
+						"Values": [
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionSplashDamagePF", 
+						"Values": [
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionStunDurationPF", 
+						"SubType": "1", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"TypeName": "applemortar"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_slingpea"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Type": "ActionSplashDamage", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamagePF", 
+						"Values": [
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionSplashDamagePF", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionStunDurationPF", 
+						"SubType": "1", 
+						"Values": [
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5
+						]
+					}
+				], 
+				"TypeName": "slingpea"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_blastberry"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Blastberry_NormalBombletDamage", 
+						"SubType": "0", 
+						"Type": "ChildDamage", 
+						"Values": [
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Blastberry_PFBombletDamage", 
+						"SubType": "0", 
+						"Type": "PFChildDamage", 
+						"Values": [
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85
+						]
+					}
+				], 
+				"TypeName": "blastberry"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_turkeypult"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Turkeypult_TurkeyLevel", 
+						"Values": [
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7
+						]
+					}
+				], 
+				"TypeName": "turkeypult"
+			}
+		}, 
+		{
+			"aliases": [
+				"armamint_stickybombrice"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "StickyBombRice_CreatedBombBaseDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "StickyBombRice_CreatedBombPropagationMultiplier", 
+						"Values": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "StickyBombRice_PlantfoodCreatedBombBaseDamage", 
+						"Values": [
+							525, 
+							525, 
+							525, 
+							525, 
+							525, 
+							525, 
+							525, 
+							525, 
+							525, 
+							525
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "StickyBombRice_PlantfoodCreatedBombPropagationMultiplier", 
+						"Values": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25
+						]
+					}
+				], 
+				"TypeName": "stickybombrice"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_potatomine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "", 
+						"Name": "Potatomine_ArmingTime", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "", 
+						"Name": "PotatomineExplosion", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8"
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "PotatomineDuplication", 
+						"SubType": "Duplicator", 
+						"Type": "Power", 
+						"Values": [
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates", 
+							"FiveDuplicates"
+						]
+					}
+				], 
+				"TypeName": "potatomine"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_cherry_bomb"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}
+				], 
+				"TypeName": "cherry_bomb"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_primalpotatomine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "", 
+						"Name": "PrimalPotatoMine_ArmingTime", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "", 
+						"Name": "PotatomineExplosion", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3"
+						]
+					}
+				], 
+				"TypeName": "primalpotatomine"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_bombegranate"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "GridItemDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}
+				], 
+				"TypeName": "bombegranate"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_explodeonut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"StringStats": [
+					{
+						"DistributionType": "", 
+						"Name": "ExplodeONutShield", 
+						"SubType": "Shield", 
+						"Type": "Power", 
+						"Values": [
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000", 
+							"Shield8000"
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ExplodeONutExplosion", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6", 
+							"ExplodeONutDamageLvl6"
+						]
+					}
+				], 
+				"TypeName": "explodeonut"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_strawburst"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"StringStats": [
+					{
+						"DistributionType": "", 
+						"Name": "StrawburstGrowth", 
+						"SubType": "StrawburstGrowth", 
+						"Type": "Power", 
+						"Values": [
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6", 
+							"StrawburstGrowthLvl6"
+						]
+					}
+				], 
+				"TypeName": "strawburst"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_grapeshot"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}
+				], 
+				"TypeName": "grapeshot"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_escaperoot"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "", 
+						"Name": "EscapeRoot_TimeUntilArmed", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Potatomine", 
+						"DistributionType": "", 
+						"Name": "EscapeRoot_PotatoMineDamage", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8", 
+							"PotatoMineDamageLvl8"
+						]
+					}, 
+					{
+						"Context": "PrimalPotatomine", 
+						"DistributionType": "", 
+						"Name": "EscapeRoot_PrimalPotatoMineDamage", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3", 
+							"PrimalPotatoMineDamageLvl3"
+						]
+					}, 
+					{
+						"Context": "Cherrybomb", 
+						"DistributionType": "", 
+						"Name": "EscapeRoot_CherryBombDamage", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7", 
+							"EscapeRootCherrybombDamageLvl7"
+						]
+					}, 
+					{
+						"Context": "Grapeshot", 
+						"DistributionType": "", 
+						"Name": "EscapeRoot_GrapeshotDamage", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7", 
+							"EscapeRootGrapeshotDamageLvl7"
+						]
+					}
+				], 
+				"TypeName": "escaperoot"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_moonflower"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Moonflower_SunPerNeighbor", 
+						"Values": [
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Moonflower_MaxSunProduction", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}
+				], 
+				"TypeName": "moonflower"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_shadowshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ShadowShroom_PoisonDPS", 
+						"Values": [
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60
+						]
+					}
+				], 
+				"TypeName": "shadowshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_dusklobber"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Values": [
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85, 
+							85
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamagePF", 
+						"SubType": "1", 
+						"Values": [
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900
+						]
+					}
+				], 
+				"TypeName": "dusklobber"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_nightshade"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageUpgraded", 
+						"SubType": "3", 
+						"Type": "ActionDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Nightshade_MeleeDamage", 
+						"Values": [
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Nightshade_PFMeleeDamage", 
+						"Values": [
+							1100, 
+							1100, 
+							1100, 
+							1100, 
+							1100, 
+							1100, 
+							1100, 
+							1100, 
+							1100, 
+							1100
+						]
+					}
+				], 
+				"TypeName": "nightshade"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_grimrose"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Grimrose_SlapDamage", 
+						"Values": [
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200
+						]
+					}
+				], 
+				"TypeName": "grimrose"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_murkadamia"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Murkadamia_MurkRegenerationDPS", 
+						"Values": [
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Murkadamia_MurkArmorMax", 
+						"Values": [
+							11500, 
+							11500, 
+							11500, 
+							11500, 
+							11500, 
+							11500, 
+							11500, 
+							11500, 
+							11500, 
+							11500
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Murkadamia_MurkReflectionDamage", 
+						"Values": [
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7, 
+							0.7
+						]
+					}
+				], 
+				"TypeName": "murkadamia"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_shadowpeashooter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageBoosted", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							115, 
+							115, 
+							115, 
+							115, 
+							115, 
+							115, 
+							115, 
+							115, 
+							115, 
+							115
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantFood", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							950, 
+							950, 
+							950, 
+							950, 
+							950, 
+							950, 
+							950, 
+							950, 
+							950, 
+							950
+						]
+					}
+				], 
+				"TypeName": "shadowpeashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_gloomvine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "GloomVineDamageNormal", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6", 
+							"GloomVineNormalDamageLvl6"
+						]
+					}, 
+					{
+						"Context": "PhatbeetPowerful", 
+						"DistributionType": "Overwrite", 
+						"Name": "GloomVinePFDamage", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6", 
+							"GloomVinePFDamageLvl6"
+						]
+					}
+				], 
+				"TypeName": "gloomvine"
+			}
+		}, 
+		{
+			"aliases": [
+				"concealmint_noctarine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "NoctarineCloud_PoweredGasDamageBonus", 
+						"Values": [
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "NoctarineCloud_PoweredActionDamage", 
+						"Values": [
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "NoctarineCloud_CorpseExplosionDamage", 
+						"Values": [
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1
+						]
+					}
+				], 
+				"TypeName": "noctarine"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_magnetshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "MagnetShroom_DestroyPulledObjectsTime", 
+						"Values": [
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5, 
+							2.5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "MagnetShroom_GridSquareRangeHeight", 
+						"Values": [
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "MagnetShroom_GridSquareRangeWidth", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}
+				], 
+				"TypeName": "magnetshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_gravebuster"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Gravebuster_EatTime", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Name": "Area", 
+						"Values": [
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							""
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "GravebusterExplosion", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2", 
+							"GraveBusterPotatomineDamageLvl2"
+						]
+					}
+				], 
+				"TypeName": "gravebuster"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_sapfling"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"TypeName": "sapfling"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_stallia"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Stallia_Knockback", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Stallia_StallDuration", 
+						"Values": [
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Stallia_PlantfoodStallDuration", 
+						"Values": [
+							27, 
+							27, 
+							27, 
+							27, 
+							27, 
+							27, 
+							27, 
+							27, 
+							27, 
+							27
+						]
+					}
+				], 
+				"TypeName": "stallia"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_lilypad"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900
+						]
+					}
+				], 
+				"TypeName": "lilypad"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_stunion"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Stunion_PoisonDPS", 
+						"Values": [
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50
+						]
+					}
+				], 
+				"TypeName": "stunion"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_springbean"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Springbean_KnockbackOffset", 
+						"Values": [
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225, 
+							225
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Springbean_AttackRecoveryTime", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"TypeName": "springbean"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_hurrikale"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Hurrikale_BlowDuration", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Hurrikale_ChillDuration", 
+						"Values": [
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16
+						]
+					}
+				], 
+				"TypeName": "hurrikale"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_witchhazel"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							9, 
+							9, 
+							9, 
+							9, 
+							9, 
+							9, 
+							9, 
+							9, 
+							9, 
+							9
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Values": [
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "WitchHazel_BasicTransformationLevel", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "WitchHazel_PlantfoodTransformationLevel", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Range", 
+						"Values": [
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							"", 
+							""
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "WitchHazel_BasicTransformationType", 
+						"Values": [
+							"fumeshroom", 
+							"fumeshroom", 
+							"fumeshroom", 
+							"fumeshroom", 
+							"fumeshroom", 
+							"fumeshroom", 
+							"toadstool", 
+							"toadstool", 
+							"toadstool", 
+							"toadstool"
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "WitchHazel_PlantfoodTransformationType", 
+						"Values": [
+							"toadstool", 
+							"toadstool", 
+							"toadstool", 
+							"toadstool", 
+							"toadstool", 
+							"toadstool", 
+							"hypnoshroom", 
+							"hypnoshroom", 
+							"hypnoshroom", 
+							"hypnoshroom"
+						]
+					}
+				], 
+				"TypeName": "witchhazel"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_shrinkingviolet"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ShrinkingViolet_DamageMultiplier", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}
+				], 
+				"TypeName": "shrinkingviolet"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_hypnoshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Hypnoshroom_HealPercentage", 
+						"Values": [
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25
+						]
+					}
+				], 
+				"TypeName": "hypnoshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_caulipower"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Caulipower_HealPercentage", 
+						"Values": [
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25
+						]
+					}
+				], 
+				"TypeName": "caulipower"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_intensivecarrot"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "IntensiveCarrot_TargetHealth", 
+						"Values": [
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25
+						]
+					}
+				], 
+				"TypeName": "intensivecarrot"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_sunflower"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							3.5, 
+							3.4, 
+							3.3, 
+							3.2, 
+							3.1, 
+							3, 
+							2.9, 
+							2.8, 
+							2.7, 
+							2.6
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "SunflowerSunProduction", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer75", 
+							"SunProducer75", 
+							"SunProducer75", 
+							"SunProducer75", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer125"
+						]
+					}
+				], 
+				"TypeName": "sunflower"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_sunshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							2.5, 
+							2.5, 
+							2.4, 
+							2.4, 
+							2.3, 
+							2.3, 
+							2.2, 
+							2.2, 
+							2.1, 
+							2.1
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "SunshroomGrowthStages", 
+						"SubType": "SunshroomGrowth", 
+						"Type": "Power", 
+						"Values": [
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7", 
+							"SunshroomGrowthLevel7"
+						]
+					}
+				], 
+				"TypeName": "sunshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_twinsunflower"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							4.76, 
+							4.76, 
+							4.76, 
+							4.66, 
+							4.66, 
+							4.66, 
+							4.56, 
+							4.56, 
+							4.56, 
+							4.46
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "TwinsunSunProduction", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer75", 
+							"SunProducer75", 
+							"SunProducer75", 
+							"SunProducer75", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer125"
+						]
+					}
+				], 
+				"TypeName": "twinsunflower"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_primalsunflower"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							4.76, 
+							4.76, 
+							4.76, 
+							4.66, 
+							4.66, 
+							4.66, 
+							4.56, 
+							4.56, 
+							4.56, 
+							4.46
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "PrimalSunflowerSunProduction", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer175", 
+							"SunProducer175", 
+							"SunProducer175", 
+							"SunProducer175", 
+							"SunProducer225"
+						]
+					}
+				], 
+				"TypeName": "primalsunflower"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_sunbean"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Sunbean_SunPerHitpoint", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Sunbean_MaxSunPerZombie", 
+						"Values": [
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Sunbean_MaxSunPerZombieOnPlantfoodBurst", 
+						"Values": [
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700
+						]
+					}
+				], 
+				"TypeName": "sunbean"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_toadstool"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Toadstool_PFAmountOfSunProducedPerZombie", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Toadstool_ChewTimeSeconds", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}
+				], 
+				"TypeName": "toadstool"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_solartomato"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "SolarTomato_SolarFlareStunDuration", 
+						"Values": [
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "SolarTomato_SolarFlareDamage", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "SolarTomatoSunProduction", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100"
+						]
+					}
+				], 
+				"TypeName": "solartomato"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_shinevine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "2", 
+						"Values": [
+							3.5, 
+							3.4, 
+							3.3, 
+							3.2, 
+							3.1, 
+							3, 
+							2.9, 
+							2.8, 
+							2.7, 
+							2.6
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "2", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ShineVine_SunProductionModifier", 
+						"Values": [
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionStunDurationPF", 
+						"SubType": "1", 
+						"Values": [
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25, 
+							5.25
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionStunDuration", 
+						"SubType": "0", 
+						"Values": [
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25, 
+							4.25
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Shinevine_FlashDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Shinevine_PFFlashDamage", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "PhatbeetPowerful", 
+						"DistributionType": "Overwrite", 
+						"Name": "Shinevine_SunProduction", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125", 
+							"SunProducer125"
+						]
+					}, 
+					{
+						"Context": "PhatbeetOuterPF", 
+						"DistributionType": "Overwrite", 
+						"Name": "Shinevine_PFSunProduction", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250", 
+							"SunProducer250"
+						]
+					}
+				], 
+				"TypeName": "shinevine"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_ghostpepper"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200
+						]
+					}
+				], 
+				"TypeName": "ghostpepper"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_firepeashooter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "FirePeashooter_PercentChanceOfPlasmaPea", 
+						"Values": [
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlasma", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330
+						]
+					}
+				], 
+				"TypeName": "firepeashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_pepperpult"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Values": [
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "", 
+						"Name": "Pepperpult_WarmingRadius", 
+						"SubType": "WarmingRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6", 
+							"PepperpultNormalWarmingRadiusLvl6"
+						]
+					}, 
+					{
+						"Context": "Plantfood", 
+						"DistributionType": "", 
+						"Name": "Pepperpult_WarmingRadiusPF", 
+						"SubType": "WarmingRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6"
+						]
+					}
+				], 
+				"TypeName": "pepperpult"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_jalapeno"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}
+				], 
+				"TypeName": "jalapeno"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_hotdate"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800, 
+							1800
+						]
+					}
+				], 
+				"TypeName": "hotdate"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_jackolantern"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "JackOLantern_FlamethrowerDPS", 
+						"Values": [
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550, 
+							550
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "JackOLantern_GridLengthOfFlamethrower", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "GridItemDamage", 
+						"Values": [
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350
+						]
+					}
+				], 
+				"TypeName": "jackolantern"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_pyrevine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "PyreVine_FlamethrowerDPS", 
+						"Values": [
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "PyreVine_GridLengthOfFlamethrower", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "PyreVine_PFFlameDamage", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "", 
+						"Name": "PyreVine_WarmingRadius", 
+						"SubType": "WarmingRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6", 
+							"PepperpultPFWarmingRadiusLvl6"
+						]
+					}
+				], 
+				"TypeName": "pyrevine"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_lavaguava"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "LavaGuava_ExplosionDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60
+						]
+					}
+				], 
+				"TypeName": "lavaguava"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_hotpotato"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "HotPotato_ProximityDPS", 
+						"Values": [
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "HotPotato_CanRemoveOctopus", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"TypeName": "hotpotato"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_snapdragon"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "", 
+						"Name": "Snapdragon_NormalDamage", 
+						"SubType": "LinearBurst", 
+						"Type": "Power", 
+						"Values": [
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11", 
+							"SnapdragonNormalAttackLvl11"
+						]
+					}, 
+					{
+						"Context": "Plantfood", 
+						"DistributionType": "", 
+						"Name": "Snapdragon_PFDamage", 
+						"SubType": "LinearBurst", 
+						"Type": "Power", 
+						"Values": [
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6", 
+							"SnapdragonPFAttackLvl6"
+						]
+					}
+				], 
+				"TypeName": "snapdragon"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_endurian"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}
+				], 
+				"TypeName": "endurian"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_chardguard"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ChardGuard_PushesPerLeaf", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}
+				], 
+				"TypeName": "chardguard"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_aloe"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "Aloe_HealCooldown", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Aloe_TargetHPHealAmount", 
+						"Values": [
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800
+						]
+					}
+				], 
+				"TypeName": "aloe"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_hollyknight"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000
+						]
+					}
+				], 
+				"TypeName": "hollyknight"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_hollybarrierleaf"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000, 
+							3000
+						]
+					}
+				], 
+				"TypeName": "hollybarrierleaf"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_hollybarrierleafplantfood"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000, 
+							5000
+						]
+					}
+				], 
+				"TypeName": "hollybarrierleafplantfood"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_peanut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							12000, 
+							12000, 
+							12000, 
+							12000, 
+							12000, 
+							12000, 
+							12000, 
+							12000, 
+							12000, 
+							12000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}
+				], 
+				"TypeName": "peanut"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_sweetpotato"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							8500, 
+							8500, 
+							8500, 
+							8500, 
+							8500, 
+							8500, 
+							8500, 
+							8500, 
+							8500, 
+							8500
+						]
+					}
+				], 
+				"TypeName": "sweetpotato"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_wallnut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000
+						]
+					}
+				], 
+				"TypeName": "wallnut"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_primalwallnut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000, 
+							11000
+						]
+					}
+				], 
+				"TypeName": "primalwallnut"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_tallnut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							32000, 
+							32000, 
+							32000, 
+							32000, 
+							32000, 
+							32000, 
+							32000, 
+							32000, 
+							32000, 
+							32000
+						]
+					}
+				], 
+				"TypeName": "tallnut"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_holonut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							4500, 
+							4500, 
+							4500, 
+							4500, 
+							4500, 
+							4500, 
+							4500, 
+							4500, 
+							4500, 
+							4500
+						]
+					}
+				], 
+				"TypeName": "holonut"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_blockoli"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							16000, 
+							16000, 
+							16000, 
+							16000, 
+							16000, 
+							16000, 
+							16000, 
+							16000, 
+							16000, 
+							16000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							325, 
+							325, 
+							325, 
+							325, 
+							325, 
+							325, 
+							325, 
+							325, 
+							325, 
+							325
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							975, 
+							975, 
+							975, 
+							975, 
+							975, 
+							975, 
+							975, 
+							975, 
+							975, 
+							975
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Blockoli_ShieldSmashStunDuration", 
+						"Values": [
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7
+						]
+					}
+				], 
+				"TypeName": "blockoli"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_laser_bean"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180, 
+							180
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200, 
+							3200
+						]
+					}
+				], 
+				"TypeName": "laser_bean"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_bloomerang"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Bloomerang_HitCount", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Bloomerang_PlantfoodProjectileCount", 
+						"Values": [
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16, 
+							16
+						]
+					}
+				], 
+				"TypeName": "bloomerang"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_cactus"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Cactus_SpikeDamage", 
+						"Values": [
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Cactus_PFSpikeDamage", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}
+				], 
+				"TypeName": "cactus"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_spikeweed"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40, 
+							40
+						]
+					}
+				], 
+				"TypeName": "spikeweed"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_homingthistle"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140, 
+							140
+						]
+					}, 
+					{
+						"DistributionType": "", 
+						"Name": "ActionXVelocity", 
+						"SubType": "0", 
+						"Values": [
+							533, 
+							533, 
+							533, 
+							533, 
+							533, 
+							533, 
+							533, 
+							533, 
+							533, 
+							533
+						]
+					}
+				], 
+				"TypeName": "homingthistle"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_spikerock"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}
+				], 
+				"TypeName": "spikerock"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_pokra"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageProjectile", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamagePF", 
+						"Values": [
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Pokra_FinalStrikeSlowDuration", 
+						"Values": [
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Pokra_PFStrikeSlowDuration", 
+						"Values": [
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "PlantFoodPlayCount", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}
+				], 
+				"TypeName": "pokra"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_dartichoke"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							210, 
+							210, 
+							210, 
+							210, 
+							210, 
+							210, 
+							210, 
+							210, 
+							210, 
+							210
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePerfectPlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePerfect", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630, 
+							630
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Dartichoke_NormalBoostChance", 
+						"Values": [
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75, 
+							0.75
+						]
+					}
+				], 
+				"TypeName": "dartichoke"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_heathseeker"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "HeathSeeker_ActionDamagePiercing", 
+						"Values": [
+							560, 
+							560, 
+							560, 
+							560, 
+							560, 
+							560, 
+							560, 
+							560, 
+							560, 
+							560
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "HeathSeeker_ActionDamagePrimary", 
+						"Values": [
+							1290, 
+							1290, 
+							1290, 
+							1290, 
+							1290, 
+							1290, 
+							1290, 
+							1290, 
+							1290, 
+							1290
+						]
+					}
+				], 
+				"TypeName": "heathseeker"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_wintermelon"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							425, 
+							425, 
+							425, 
+							425, 
+							425, 
+							425, 
+							425, 
+							425, 
+							425, 
+							425
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160, 
+							160
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Wintermelon_ChillDuration", 
+						"Values": [
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15
+						]
+					}
+				], 
+				"TypeName": "wintermelon"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_iceburg"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionChillDuration", 
+						"SubType": "0", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionFreezeDuration", 
+						"SubType": "0", 
+						"Values": [
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionExplodeRadius", 
+						"SubType": "0", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionExplodeType", 
+						"SubType": "0", 
+						"Values": [
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius", 
+							"radius"
+						]
+					}
+				], 
+				"TypeName": "iceburg"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_snowpea"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "3", 
+						"Type": "ActionDamage", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "SnowPea_PercentChanceOfFreezingPea", 
+						"Values": [
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageFreezing", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "snowpea"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_missiletoe"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionSplashDamage", 
+						"SubType": "0", 
+						"Values": [
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000, 
+							2000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "MissileToe_ChillDuration", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "MissileToe_FreezeDuration", 
+						"Values": [
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12
+						]
+					}
+				], 
+				"TypeName": "missiletoe"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_coldsnapdragon"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "ColdSnapdragon_NormalDamage", 
+						"SubType": "LinearBurst", 
+						"Type": "Power", 
+						"Values": [
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11", 
+							"ColdSnapdragonNormalAttackLvl11"
+						]
+					}, 
+					{
+						"Context": "Plantfood", 
+						"DistributionType": "Overwrite", 
+						"Name": "ColdSnapdragon_PFDamage", 
+						"SubType": "LinearBurst", 
+						"Type": "Power", 
+						"Values": [
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6", 
+							"ColdSnapdragonPFAttackLvl6"
+						]
+					}
+				], 
+				"TypeName": "coldsnapdragon"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_iceweed"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Iceweed_PFBladeDamage", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							1300, 
+							1300, 
+							1300, 
+							1300, 
+							1300, 
+							1300, 
+							1300, 
+							1300, 
+							1300, 
+							1300
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Iceweed_PFSpikeDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}
+				], 
+				"TypeName": "iceweed"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_electricpeashooter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ElectricPeashooter_BoltDamage", 
+						"Values": [
+							29, 
+							29, 
+							29, 
+							29, 
+							29, 
+							29, 
+							29, 
+							29, 
+							29, 
+							29
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50
+						]
+					}
+				], 
+				"TypeName": "electricpeashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_electriccurrant"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "CurrantWallDamage", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90
+						]
+					}
+				], 
+				"TypeName": "electriccurrant"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_electricblueberry"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ElectricBlueberry_WeightTargetGargantuarZombie", 
+						"Values": [
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ElectricBlueberry_WeightTargetOtherZombie", 
+						"Values": [
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ElectricBlueberry_WeightTargetNormalZombie", 
+						"Values": [
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30, 
+							30
+						]
+					}
+				], 
+				"TypeName": "electricblueberry"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_lightningreed"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "LightningReed_NumShotBounces", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60, 
+							60
+						]
+					}
+				], 
+				"TypeName": "lightningreed"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_magnifyinggrass"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "1", 
+						"Values": [
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800
+						]
+					}
+				], 
+				"TypeName": "magnifyinggrass"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_empea"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "", 
+						"Name": "EMPeach_ActivationRadius", 
+						"Values": [
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400, 
+							400
+						]
+					}
+				], 
+				"TypeName": "empea"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_citron"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Citron_ChargeTimeMultiplier", 
+						"Values": [
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2, 
+							2
+						]
+					}
+				], 
+				"TypeName": "citron"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_electricitea"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							1680, 
+							1680, 
+							1680, 
+							1680, 
+							1680, 
+							1680, 
+							1680, 
+							1680, 
+							1680, 
+							1680
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageExplosion", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400
+						]
+					}
+				], 
+				"TypeName": "electricitea"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_ultomato"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							2200, 
+							2200, 
+							2200, 
+							2200, 
+							2200, 
+							2200, 
+							2200, 
+							2200, 
+							2200, 
+							2200
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Ultomato_BeamDPSUpgrade1", 
+						"Values": [
+							575, 
+							575, 
+							575, 
+							575, 
+							575, 
+							575, 
+							575, 
+							575, 
+							575, 
+							575
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Ultomato_BeamDPSUpgrade2", 
+						"Values": [
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Ultomato_BeamDPSUpgrade3", 
+						"Values": [
+							2500, 
+							2500, 
+							2500, 
+							2500, 
+							2500, 
+							2500, 
+							2500, 
+							2500, 
+							2500, 
+							2500
+						]
+					}
+				], 
+				"TypeName": "ultomato"
+			}
+		}, 
+		{
+			"aliases": [
+				"filamint_powervine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55, 
+							55
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}
+				], 
+				"TypeName": "powervine"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_peashooter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}
+				], 
+				"TypeName": "peashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_repeater"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "repeater"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_threepeater"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "threepeater"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_splitpea"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageReverse", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}
+				], 
+				"TypeName": "splitpea"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_xshot"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}
+				], 
+				"TypeName": "xshot"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_peapod"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}
+				], 
+				"TypeName": "peapod"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_redstinger"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "LeftActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "CenterActionDamage", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}
+				], 
+				"TypeName": "redstinger"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_primalpeashooter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120, 
+							120
+						]
+					}
+				], 
+				"TypeName": "primalpeashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_dandelion"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200
+						]
+					}
+				], 
+				"TypeName": "dandelion"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_starfruit"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}
+				], 
+				"TypeName": "starfruit"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_bowlingbulb"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageSmall", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80, 
+							80
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageMedium", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageLarge", 
+						"SubType": "3", 
+						"Type": "ActionDamage", 
+						"Values": [
+							360, 
+							360, 
+							360, 
+							360, 
+							360, 
+							360, 
+							360, 
+							360, 
+							360, 
+							360
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "BowlingBulb_RegenOrder", 
+						"Values": [
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms", 
+							"lms"
+						]
+					}
+				], 
+				"TypeName": "bowlingbulb"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_torchwood"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageExplosion", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900, 
+							900
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageEaten", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100, 
+							100
+						]
+					}
+				], 
+				"TypeName": "torchwood"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_tumbleweed"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							105, 
+							105, 
+							105, 
+							105, 
+							105, 
+							105, 
+							105, 
+							105, 
+							105, 
+							105
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Tumbleweed_BonusTumblersChance", 
+						"Values": [
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35, 
+							0.35
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Tumbleweed_KnockbackChance", 
+						"Values": [
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9, 
+							0.9
+						]
+					}
+				], 
+				"TypeName": "tumbleweed"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_chomper"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Chomper_ChewTimeSeconds", 
+						"Values": [
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5, 
+							1.5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Chomper_GobbleCapacity", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}
+				], 
+				"TypeName": "chomper"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_bonkchoy"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345, 
+							345
+						]
+					}
+				], 
+				"TypeName": "bonkchoy"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_squash"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Squash_NormalZombiesToTarget", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Squash_PlantfoodZombiesToTarget", 
+						"Values": [
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7
+						]
+					}
+				], 
+				"TypeName": "squash"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_celerystalker"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							280, 
+							280, 
+							280, 
+							280, 
+							280, 
+							280, 
+							280, 
+							280, 
+							280, 
+							280
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "CeleryStalker_PlantFoodPlantsToSpawn", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"TypeName": "celerystalker"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_phatbeet"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "PhatBeetDamageNormal", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6", 
+							"PhatBeetNormalDamageLvl6"
+						]
+					}, 
+					{
+						"Context": "PhatbeetPowerful", 
+						"DistributionType": "Overwrite", 
+						"Name": "PhatBeetDamagePowerful", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6", 
+							"PhatBeetPowerfulDamageLvl6"
+						]
+					}, 
+					{
+						"Context": "Plantfood", 
+						"DistributionType": "Overwrite", 
+						"Name": "PhatBeetInnerPF", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6", 
+							"PhatBeetInnerPFDamageLvl6"
+						]
+					}, 
+					{
+						"Context": "PhatbeetOuterPF", 
+						"DistributionType": "Overwrite", 
+						"Name": "PhatBeetOuterPF", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6", 
+							"PhatBeetOuterPFDamageLvl6"
+						]
+					}
+				], 
+				"TypeName": "phatbeet"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_parsnip"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Values": [
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800
+						]
+					}
+				], 
+				"TypeName": "parsnip"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_tanglekelp"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "TangleKelp_SlapDamage", 
+						"Values": [
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000, 
+							1000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "TangleKelp_MaxNormalWaterKills", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "TangleKelp_MinPlantfoodWaterKills", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "TangleKelp_MaxPlantfoodWaterKills", 
+						"Values": [
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7, 
+							7
+						]
+					}
+				], 
+				"TypeName": "tanglekelp"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_kiwibeast"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "KiwiBeast_GrowthStageOneDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "KiwiBeast_GrowthStageTwoDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "KiwiBeast_GrowthStageThreeDamage", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "KiwiBeast_PlantfoodDamage", 
+						"Values": [
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800, 
+							800
+						]
+					}
+				], 
+				"TypeName": "kiwibeast"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_guacodile"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300, 
+							300
+						]
+					}
+				], 
+				"TypeName": "guacodile"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_wasabiwhip"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200, 
+							200
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "WasabiWhip_TargetCount", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}
+				], 
+				"TypeName": "wasabiwhip"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_snappea"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75, 
+							75
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "SnapPea_ChewTimeSeconds", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageZombieHead", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							1500, 
+							1500, 
+							1500, 
+							1500, 
+							1500, 
+							1500, 
+							1500, 
+							1500, 
+							1500, 
+							1500
+						]
+					}
+				], 
+				"TypeName": "snappea"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_headbutter"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							415, 
+							415, 
+							415, 
+							415, 
+							415, 
+							415, 
+							415, 
+							415, 
+							415, 
+							415
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageButter", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							220, 
+							220, 
+							220, 
+							220, 
+							220, 
+							220, 
+							220, 
+							220, 
+							220, 
+							220
+						]
+					}
+				], 
+				"TypeName": "headbutter"
+			}
+		}, 
+		{
+			"aliases": [
+				"enforcemint_tigergrass"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Tigergrass_TigerAttackDamage", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Tigergrass_TigerPFAttackDamage", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							397, 
+							397, 
+							397, 
+							397, 
+							397, 
+							397, 
+							397, 
+							397, 
+							397, 
+							397
+						]
+					}
+				], 
+				"TypeName": "tigergrass"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_zoybeanpod"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ZoybeanPod_ZombieLevel", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ZoybeanPod_PlantFoodZombieLevel", 
+						"Values": [
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ZoybeanPod_CycleTime", 
+						"Values": [
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8, 
+							8
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ZoybeanPod_ZombieTypeToSpawn", 
+						"Values": [
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2", 
+							"zoybeanpod_armor2"
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ZoybeanPod_PlantFoodZombieTypeToSpawn", 
+						"Values": [
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar", 
+							"zoybeanpod_gargantuar"
+						]
+					}
+				], 
+				"TypeName": "zoybeanpod"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_dazeychain"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Reincarnation_WhiteActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65, 
+							65
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Reincarnation_PinkActionDamage", 
+						"SubType": "2", 
+						"Type": "ActionDamage", 
+						"Values": [
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Reincarnation_RedActionDamage", 
+						"SubType": "4", 
+						"Type": "ActionDamage", 
+						"Values": [
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Reincarnation_WhiteResidualStun", 
+						"SubType": "1", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Reincarnation_PinkResidualStun", 
+						"SubType": "3", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Reincarnation_RedResidualStun", 
+						"SubType": "5", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}
+				], 
+				"TypeName": "dazeychain"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_olivepit"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "OlivePit_ChewTime", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "OlivePit_PitCapacity", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}
+				], 
+				"TypeName": "olivepit"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_buttercup"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Buttercup_ButterConditionDuration", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20, 
+							20
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Buttercup_PFButterConditionDuration", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25
+						]
+					}
+				], 
+				"TypeName": "buttercup"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_imppear"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ImpPear_ImpIndigestion", 
+						"Values": [
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90, 
+							90
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "ImpPear_PFZombiesImped", 
+						"Values": [
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15
+						]
+					}
+				], 
+				"TypeName": "imppear"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_pyrevine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "PyreVine_FlamethrowerDPS", 
+						"Values": [
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130, 
+							130
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "PyreVine_GridLengthOfFlamethrower", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "PyreVine_PFFlameDamage", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "PyreVine_WarmingRadius", 
+						"SubType": "WarmingRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6"
+						]
+					}
+				], 
+				"TypeName": "pyrevine"
+			}
+		}, 
+		{
+			"aliases": [
+				"peppermint_inferno"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48, 
+							48
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "Inferno_WarmingRadius", 
+						"SubType": "WarmingRadius", 
+						"Type": "Power", 
+						"Values": [
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6", 
+							"PyreVineWarmingRadiusLvl6"
+						]
+					}
+				], 
+				"TypeName": "inferno"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_pokra"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240, 
+							240
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageProjectile", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePlantfood", 
+						"SubType": "2", 
+						"Type": "ActionDamagePF", 
+						"Values": [
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400, 
+							1400
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Pokra_FinalStrikeSlowDuration", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Pokra_PFStrikeSlowDuration", 
+						"Values": [
+							10, 
+							11, 
+							12, 
+							13, 
+							14, 
+							15, 
+							16, 
+							17, 
+							18, 
+							19
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "PlantFoodPlayCount", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}
+				], 
+				"TypeName": "pokra"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_pumpkin"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Hitpoints", 
+						"Values": [
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000, 
+							8000
+						]
+					}
+				], 
+				"TypeName": "pumpkin"
+			}
+		}, 
+		{
+			"aliases": [
+				"reinforcemint_gumnut"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Gumnut_BaseGumHealth", 
+						"Values": [
+							20000, 
+							20000, 
+							20000, 
+							20000, 
+							20000, 
+							20000, 
+							20000, 
+							20000, 
+							20000, 
+							20000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Gumnut_ZombieGumHealth", 
+						"Values": [
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600, 
+							600
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Gumnut_PFZombiesGummed", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}
+				], 
+				"TypeName": "gumnut"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_puffball"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "Puffball_DecayPoisonDPS", 
+						"Values": [
+							275, 
+							275, 
+							275, 
+							275, 
+							275, 
+							275, 
+							275, 
+							275, 
+							275, 
+							275
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "StunDuration", 
+						"SubType": "0", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10, 
+							10
+						]
+					}
+				], 
+				"TypeName": "puffball"
+			}
+		}, 
+		{
+			"aliases": [
+				"enchantmint_hocus"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Override", 
+						"Name": "Hocus_TeleportRechargeTime", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Hocus_TeleportDamage", 
+						"Values": [
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350, 
+							350
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "Hocus_PFZombiesTeleported", 
+						"Values": [
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12
+						]
+					}
+				], 
+				"TypeName": "hocus"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_explodeovine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ExplodeOVine_PlantingExplosion", 
+						"Values": [
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200, 
+							1200
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ExplodeOVine_Explosion", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ExplodeOVine_PFExplosion", 
+						"Values": [
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400, 
+							2400
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "ExplodeOVine_ExplosionKnockbackRange", 
+						"Values": [
+							145, 
+							145, 
+							145, 
+							145, 
+							145, 
+							145, 
+							145, 
+							145, 
+							145, 
+							145
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "ExplodeOVine_ExplosionKnockbackDistance", 
+						"Values": [
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "ExplodeOVineShield", 
+						"SubType": "Shield", 
+						"Type": "Power", 
+						"Values": [
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000", 
+							"Shield3000"
+						]
+					}
+				], 
+				"TypeName": "explodeovine"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_boomflower"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "BoomFlower_NormalBalloonDamage", 
+						"Values": [
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "BoomFlower_NormalBalloonSplashDamage", 
+						"Values": [
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425, 
+							1425
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "BoomFlower_PFBalloonSplashDamage", 
+						"Values": [
+							1725, 
+							1725, 
+							1725, 
+							1725, 
+							1725, 
+							1725, 
+							1725, 
+							1725, 
+							1725, 
+							1725
+						]
+					}
+				], 
+				"TypeName": "boomflower"
+			}
+		}, 
+		{
+			"aliases": [
+				"bombardmint_teleportatomine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "TeleportatoMine_ArmTime", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"DistributionType": "", 
+						"Name": "TeleportatoMineExplosion", 
+						"SubType": "DamageRadius", 
+						"Type": "Power", 
+						"Values": [
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6", 
+							"TeleportatoMineDamageLvl6"
+						]
+					}
+				], 
+				"TypeName": "teleportatomine"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_boingsetta"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Override", 
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18, 
+							18
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							10000, 
+							10000, 
+							10000, 
+							10000, 
+							10000, 
+							10000, 
+							10000, 
+							10000, 
+							10000, 
+							10000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							30000, 
+							30000, 
+							30000, 
+							30000, 
+							30000, 
+							30000, 
+							30000, 
+							30000, 
+							30000, 
+							30000
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionChillDurationNormal", 
+						"SubType": "0", 
+						"Type": "ActionChillDuration", 
+						"Values": [
+							11, 
+							11, 
+							11, 
+							11, 
+							11, 
+							11, 
+							11, 
+							11, 
+							11, 
+							11
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionChillDurationPF", 
+						"SubType": "1", 
+						"Type": "ActionChillDuration", 
+						"Values": [
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15, 
+							15
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "Boingsetta_ZombieDamagePF", 
+						"Values": [
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195, 
+							195
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "Boingsetta_KnockbackOffset", 
+						"Values": [
+							125, 
+							125, 
+							125, 
+							125, 
+							125, 
+							125, 
+							125, 
+							125, 
+							125, 
+							125
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "Boingsetta_KnockbackOffsetPF", 
+						"Values": [
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175, 
+							175
+						]
+					}
+				], 
+				"TypeName": "boingsetta"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_icebloom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionChillDurationNormal", 
+						"SubType": "0", 
+						"Type": "ActionChillDuration", 
+						"Values": [
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionFreezeDurationNormal", 
+						"SubType": "0", 
+						"Type": "ActionFreezeDuration", 
+						"Values": [
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12, 
+							12
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500, 
+							500
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionChillDurationLocal", 
+						"SubType": "1", 
+						"Type": "ActionChillDuration", 
+						"Values": [
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionFreezeDurationLocal", 
+						"SubType": "1", 
+						"Type": "ActionFreezeDuration", 
+						"Values": [
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14, 
+							14
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageLocal", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700, 
+							700
+						]
+					}
+				], 
+				"TypeName": "icebloom"
+			}
+		}, 
+		{
+			"aliases": [
+				"containmint_draftodil"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150, 
+							150
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							255, 
+							255, 
+							255, 
+							255, 
+							255, 
+							255, 
+							255, 
+							255, 
+							255, 
+							255
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "Draftodil_LightweightZombieFlickChance", 
+						"Values": [
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionStunDuration", 
+						"SubType": "0", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25, 
+							1.25
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionStunDurationPF", 
+						"SubType": "1", 
+						"Type": "ActionStunDuration", 
+						"Values": [
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5, 
+							5
+						]
+					}
+				], 
+				"TypeName": "draftodil"
+			}
+		}, 
+		{
+			"aliases": [
+				"appeasemint_pvine"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamageNormal", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110, 
+							110
+						]
+					}, 
+					{
+						"DistributionType": "Overwrite", 
+						"Name": "PVine_ActionDamageBonus", 
+						"Values": [
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4, 
+							4
+						]
+					}
+				], 
+				"TypeName": "pvine"
+			}
+		}, 
+		{
+			"aliases": [
+				"enlightenmint_solarsage"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Override", 
+						"Name": "SolarSageEnlightened_SunProductionTimer", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "SolarSageEnlightened_Infectivity", 
+						"Values": [
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50, 
+							50
+						]
+					}, 
+					{
+						"DistributionType": "Override", 
+						"Name": "SolarSageEnlightened_InfectivityCooldown", 
+						"Values": [
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3, 
+							3
+						]
+					}
+				], 
+				"StringStats": [
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "SolarSage_SunProductionPlanted", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100"
+						]
+					}, 
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "SolarSage_SunProductionTriggered", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150", 
+							"SunProducer150"
+						]
+					}, 
+					{
+						"Context": "Normal", 
+						"DistributionType": "Overwrite", 
+						"Name": "SolarSage_SunProductionZombie", 
+						"SubType": "SunProducer", 
+						"Type": "Power", 
+						"Values": [
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100", 
+							"SunProducer100"
+						]
+					}
+				], 
+				"TypeName": "solarsage"
+			}
+		}, 
+		{
+			"aliases": [
+				"spearmint_bramblebush"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Values": [
+							165, 
+							165, 
+							165, 
+							165, 
+							165, 
+							165, 
+							165, 
+							165, 
+							165, 
+							165
+						]
+					}, 
+					{
+						"DistributionType": "Add", 
+						"Name": "ActionDamagePF", 
+						"SubType": "0", 
+						"Values": [
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330, 
+							330
+						]
+					}
+				], 
+				"TypeName": "bramblebush"
+			}
+		}
+	], 
+	"version": 1
+}

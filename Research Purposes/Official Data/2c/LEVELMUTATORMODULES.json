@@ -1,0 +1,2918 @@
+{
+	"#comment": "Put mutator LevelModule definitions here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideStartingPlantfood0"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartingPlantfood@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_PF", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideStartingPlantfood1"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 1, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartingPlantfood@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_PF", 
+				"IconText": "+1"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideStartingPlantfood2"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 2, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartingPlantfood@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_PF", 
+				"IconText": "+2"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount4"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 4, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "4"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount5"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 5, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "5"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount6"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 6, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "6"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount7"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 7, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "7"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount8"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 8, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "8"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorPowerupSetProps", 
+			"aliases": [
+				"OverridePowerupsDisabled"
+			], 
+			"objdata": {
+				"PowerupSetOverride": "LevelPowerupsDisabled", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyPowerupsDisabled@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN", 
+				"IconText": "POWERUPS"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun9000"
+			], 
+			"objdata": {
+				"MaxSunOverride": 9000, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<9000"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun99999"
+			], 
+			"objdata": {
+				"MaxSunOverride": 99999, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<99999"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun2000"
+			], 
+			"objdata": {
+				"MaxSunOverride": 2000, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<2000"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun1500"
+			], 
+			"objdata": {
+				"MaxSunOverride": 1500, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<1500"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun1000"
+			], 
+			"objdata": {
+				"MaxSunOverride": 1000, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<1000"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun500"
+			], 
+			"objdata": {
+				"MaxSunOverride": 500, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<500"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+0"
+			], 
+			"objdata": {
+				"StartSunModifier": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+0"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+25"
+			], 
+			"objdata": {
+				"StartSunModifier": 25, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+25"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+50"
+			], 
+			"objdata": {
+				"StartSunModifier": 50, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+50"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+100"
+			], 
+			"objdata": {
+				"StartSunModifier": 100, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+100"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+150"
+			], 
+			"objdata": {
+				"StartSunModifier": 150, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+150"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+200"
+			], 
+			"objdata": {
+				"StartSunModifier": 200, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+200"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun-100"
+			], 
+			"objdata": {
+				"StartSunModifier": -100, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "-100"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun-150"
+			], 
+			"objdata": {
+				"StartSunModifier": -150, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "-150"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun-250"
+			], 
+			"objdata": {
+				"StartSunModifier": -250, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "-250"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersNone"
+			], 
+			"objdata": {
+				"SpawnOverride": "none", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_MOVERS", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersOnce"
+			], 
+			"objdata": {
+				"SpawnOverride": "once", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_MOVERS", 
+				"IconText": "1"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersRegenOnce"
+			], 
+			"objdata": {
+				"SpawnOverride": "regen_once", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_MOVERS", 
+				"IconText": "2"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersInfinite"
+			], 
+			"objdata": {
+				"SpawnOverride": "infinite", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_MOVERS", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave3Ultra"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 3, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_12", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave6Fast"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 6, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_12", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave9Moderate"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 9, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_9", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave12Slow"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 12, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_6", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel0"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_BASIC", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel3"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 3, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_MED", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel4"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 4, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_MED", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel5"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 5, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_MED", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel6"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 6, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel7"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 7, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel8"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 8, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel3"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 3
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel4"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 4
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel5"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 5
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel6"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 6
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel7"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 7
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel8"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 8
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases3"
+			], 
+			"objdata": {
+				"ZombossPhases": 3
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases4"
+			], 
+			"objdata": {
+				"ZombossPhases": 4
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases5"
+			], 
+			"objdata": {
+				"ZombossPhases": 5
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases7"
+			], 
+			"objdata": {
+				"ZombossPhases": 7
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases8"
+			], 
+			"objdata": {
+				"ZombossPhases": 8
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases9"
+			], 
+			"objdata": {
+				"ZombossPhases": 9
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases10"
+			], 
+			"objdata": {
+				"ZombossPhases": 10
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases11"
+			], 
+			"objdata": {
+				"ZombossPhases": 11
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases12"
+			], 
+			"objdata": {
+				"ZombossPhases": 12
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases13"
+			], 
+			"objdata": {
+				"ZombossPhases": 13
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases15"
+			], 
+			"objdata": {
+				"ZombossPhases": 15
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases17"
+			], 
+			"objdata": {
+				"ZombossPhases": 17
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases19"
+			], 
+			"objdata": {
+				"ZombossPhases": 19
+			}
+		}, 
+		{
+			"objclass": "LootOverrideZombossRiftModuleProps", 
+			"aliases": [
+				"ZombossBatterySystem_Easy"
+			], 
+			"objdata": {
+				"Entries": [
+					{
+						"MinSeconds": 18, 
+						"MaxSeconds": 22, 
+						"Drop": "Gem"
+					}, 
+					{
+						"MinSeconds": 8, 
+						"MaxSeconds": 13, 
+						"Drop": "GoldCoin"
+					}, 
+					{
+						"MinSeconds": 3, 
+						"MaxSeconds": 5, 
+						"Drop": "SilverCoin"
+					}, 
+					{
+						"MinSeconds": 50, 
+						"MaxSeconds": 60, 
+						"Drop": "Sprout"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LootOverrideZombossRiftModuleProps", 
+			"aliases": [
+				"ZombossBatterySystem_Med"
+			], 
+			"objdata": {
+				"Entries": [
+					{
+						"MinSeconds": 15, 
+						"MaxSeconds": 22, 
+						"Drop": "Gem"
+					}, 
+					{
+						"MinSeconds": 6, 
+						"MaxSeconds": 13, 
+						"Drop": "GoldCoin"
+					}, 
+					{
+						"MinSeconds": 2, 
+						"MaxSeconds": 5, 
+						"Drop": "SilverCoin"
+					}, 
+					{
+						"MinSeconds": 45, 
+						"MaxSeconds": 60, 
+						"Drop": "Sprout"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LootOverrideZombossRiftModuleProps", 
+			"aliases": [
+				"ZombossBatterySystem_Hard"
+			], 
+			"objdata": {
+				"Entries": [
+					{
+						"MinSeconds": 12, 
+						"MaxSeconds": 22, 
+						"Drop": "Gem"
+					}, 
+					{
+						"MinSeconds": 4, 
+						"MaxSeconds": 13, 
+						"Drop": "GoldCoin"
+					}, 
+					{
+						"MinSeconds": 1, 
+						"MaxSeconds": 5, 
+						"Drop": "SilverCoin"
+					}, 
+					{
+						"MinSeconds": 40, 
+						"MaxSeconds": 60, 
+						"Drop": "Sprout"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperVerySlow"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(VerySlowSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperSlow"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(SlowSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSun"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "tutorial_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "tutorial", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "tutorial_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "tutorial_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "tutorial_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "fairy_tale_armed_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "ra", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "modern_balloon", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "modern_miner", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "tomb_raiser", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "prospector", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "roman_healer", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "renai_perfumer", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_wizard", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_archmage", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_juggler", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_cavalry", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "disco_mech", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "modern_allstar", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_octopus", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "west_bull", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_protector", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunPirate"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "pirate", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "barrelroller", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "cannon", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "seagull", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_captain", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_captain_parrot", 
+						"SunDropValues": [
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25
+						]
+					}, 
+					{
+						"ZombieTypeName": "swashbuckler", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "pirate_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunDark"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "dark", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_armor3", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_wizard", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_juggler", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_imp_dragon", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_king", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_archmage", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_cavalry", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dark_rogue", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunFuture"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "future", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_jetpack", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_protector", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "mech_cone", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "football_mech", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "disco_mech", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "future_jetpack_disco", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunCowboy"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "cowboy", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "cowboy_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "cowboy_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "cowboy_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "cowboy_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "prospector", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "west_bull", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "poncho", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "poncho_plate", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "poncho_no_plate", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "piano", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "chicken_farmer", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"SunDropValues": [
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25
+						]
+					}, 
+					{
+						"ZombieTypeName": "cowboy_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunDino"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "dino", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_armor3", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_bully", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_pushegg", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_pushptero", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_pushbronto", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_pushtyranno", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_pushzomshell", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_stealegg", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_stealptero", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_stealbronto", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_stealtyranno", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_stealzomshell", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "dino_eggshell", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunLostcity"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "lostcity", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_jane", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_bug", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_bug_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_bug_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_lostpilot", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_crystalskull", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_impporter", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_gargantuar_danger", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_relichunter", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_doctor", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_excavator", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "lostcity_guide", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunIceage"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "iceage", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_armor3", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_hunter", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_dodo", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_weaselhoarder", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_weasel", 
+						"SunDropValues": [
+							25, 
+							25, 
+							25, 
+							25, 
+							25, 
+							25
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_troglobite", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_walrus", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_ski", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "iceage_chief", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedSunProps", 
+			"aliases": [
+				"OverrideRiftTimedSunBeach"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN_DROP", 
+				"IconText": "", 
+				"SunDrops": [
+					{
+						"ZombieTypeName": "beach", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_flag", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_fem", 
+						"SunDropValues": [
+							50, 
+							100, 
+							150, 
+							200, 
+							250, 
+							300
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_fem_armor1", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_fem_armor2", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_snorkel", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_surfer", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_imp", 
+						"SunDropValues": [
+							25, 
+							50, 
+							75, 
+							100, 
+							125, 
+							150
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_gargantuar", 
+						"SunDropValues": [
+							200, 
+							300, 
+							400, 
+							500, 
+							600, 
+							700
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_fisherman", 
+						"SunDropValues": [
+							75, 
+							150, 
+							225, 
+							300, 
+							375, 
+							450
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_octopus", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}, 
+					{
+						"ZombieTypeName": "beach_shell", 
+						"SunDropValues": [
+							100, 
+							200, 
+							300, 
+							400, 
+							500, 
+							600
+						]
+					}
+				], 
+				"InvalidPlantTypes": [
+					"sunflower"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftTimedToolProps", 
+			"aliases": [
+				"OverrideRiftTimedTool"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedTool@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_SUN", 
+				"IconText": "", 
+				"ToolTypes": [
+					"tool_rift_plant_levelup", 
+					"tool_rift_plantfood", 
+					"tool_rift_artifact"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideRiftTimedTool1"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedTool1@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_TOOL_LEVEL_UP", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideRiftTimedTool2"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 7, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedTool2@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_TOOL_PF", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideRiftTimedTool3"
+			], 
+			"objdata": {
+				"MaxSunOverride": 99999, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedTool3@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_TOOL_ARTIFACT", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideRiftTimedTool4"
+			], 
+			"objdata": {
+				"SpawnOverride": "none", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedTool4@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_TOOL_WAVE", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideRiftTimedTool5"
+			], 
+			"objdata": {
+				"SpawnOverride": "none", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyRiftTimedTool5@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_PRODUCE_PF", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperDefault"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(DefaultSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SUN_HALFWAY", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperFast"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SUN_OUT", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperVeryFast"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(VeryFastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SUN_OUT", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffBombardmintTestEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "concealmint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "reinforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffBombardmintTestMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "50% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "concealmint"
+						}, 
+						{
+							"#comment": "50% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "reinforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffBombardmintTestHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0, 
+							"DamageResistance": 0, 
+							"FamilyType": "concealmint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0, 
+							"DamageResistance": 0, 
+							"FamilyType": "reinforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1A"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1AEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1AMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1AHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1B"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "wintermint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1BEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "filamint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "concealmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1BMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1BHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "filamint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "concealmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "appeasemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2Easy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "peppermint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "enlightenmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2Med"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2Hard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "peppermint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "enlightenmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffFilamintEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "filamint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffFilamintMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "filamint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffFilamintHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "filamint"
+						}
+					]
+				}
+			}
+		}
+	]
+}

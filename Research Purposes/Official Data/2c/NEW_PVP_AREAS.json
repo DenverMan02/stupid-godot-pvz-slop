@@ -1,0 +1,239 @@
+{
+	"#comment": "Insert new Area here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "NewPVPAreaSliderProperties", 
+			"aliases": [
+				"slider"
+			], 
+			"objdata": {
+				"TypeName": "slider", 
+				"ClassName": "NewPVPAreaSlider", 
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 9, 
+						"GridY": 0, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "slider_up_modern"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "slider_up_modern"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 5, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 9, 
+						"GridY": 4, 
+						"TypeName": "slider_down_modern"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 6, 
+						"TypeName": "slider_up_modern"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 6, 
+						"TypeName": "slider_up_modern"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaMistProperties", 
+			"aliases": [
+				"mist"
+			], 
+			"objdata": {
+				"TypeName": "mist", 
+				"ClassName": "NewPVPAreaMist", 
+				"m_iInitMistPosX": 9, 
+				"m_iNormValX": 700, 
+				"m_iBloverEffectInterval": 15
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaGuideDoorProperties", 
+			"aliases": [
+				"guide_door"
+			], 
+			"objdata": {
+				"TypeName": "guide_door", 
+				"ClassName": "NewPVPAreaGuideDoor", 
+				"GuideDoors": [
+					{
+						"StartLocation": {
+							"mX": 8, 
+							"mY": 0
+						}, 
+						"EndLocation": {
+							"mX": 4, 
+							"mY": 0
+						}
+					}, 
+					{
+						"StartLocation": {
+							"mX": 8, 
+							"mY": 2
+						}, 
+						"EndLocation": {
+							"mX": 4, 
+							"mY": 2
+						}
+					}, 
+					{
+						"StartLocation": {
+							"mX": 8, 
+							"mY": 4
+						}, 
+						"EndLocation": {
+							"mX": 4, 
+							"mY": 4
+						}
+					}, 
+					{
+						"StartLocation": {
+							"mX": 8, 
+							"mY": 6
+						}, 
+						"EndLocation": {
+							"mX": 4, 
+							"mY": 6
+						}
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaMergeProperties", 
+			"aliases": [
+				"merge"
+			], 
+			"objdata": {
+				"TypeName": "merge", 
+				"ClassName": "NewPVPAreaMerge", 
+				"TargetableZombieTypes": {
+					"ListType": "blacklist", 
+					"List": [
+						"zombossmech_future", 
+						"wealth_god", 
+						"turkeypult_basic", 
+						"turkeypult_turkzilla_lv5", 
+						"turkeypult_turkzilla", 
+						"turkeypult_turkzilla_avatar", 
+						"dark_rogue"
+					]
+				}, 
+				"MinMergeNum": 3, 
+				"MergeDuration": 3.0
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaSunTileProperties", 
+			"aliases": [
+				"sun_tile"
+			], 
+			"objdata": {
+				"TypeName": "sun_tile", 
+				"ClassName": "NewPVPAreaSunTile", 
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 9, 
+						"GridY": 1, 
+						"TypeName": "sun_tile"
+					}, 
+					{
+						"GridX": 10, 
+						"GridY": 0, 
+						"TypeName": "sun_tile"
+					}, 
+					{
+						"GridX": 10, 
+						"GridY": 2, 
+						"TypeName": "sun_tile"
+					}, 
+					{
+						"GridX": 9, 
+						"GridY": 5, 
+						"TypeName": "sun_tile"
+					}, 
+					{
+						"GridX": 10, 
+						"GridY": 4, 
+						"TypeName": "sun_tile"
+					}, 
+					{
+						"GridX": 10, 
+						"GridY": 6, 
+						"TypeName": "sun_tile"
+					}
+				], 
+				"SunTileUpgradeInfos": [
+					{
+						"SunAdd": 30, 
+						"Interval": 10.0
+					}, 
+					{
+						"SunAdd": 50, 
+						"Interval": 10.0
+					}, 
+					{
+						"SunAdd": 100, 
+						"Interval": 10.0
+					}, 
+					{
+						"SunAdd": 240, 
+						"Interval": 10.0
+					}, 
+					{
+						"SunAdd": 500, 
+						"Interval": 10.0
+					}, 
+					{
+						"SunAdd": 800, 
+						"Interval": 10.0
+					}, 
+					{
+						"SunAdd": 2000, 
+						"Interval": 10.0
+					}
+				]
+			}
+		}
+	]
+}

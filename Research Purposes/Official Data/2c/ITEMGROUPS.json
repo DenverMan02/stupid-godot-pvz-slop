@@ -1,0 +1,38 @@
+{
+	"#comment": "Helpfull to group different entities and reuse the group at multiple places. Each group can be strings, zombies, plants, grid items, board entities.", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "CustomZombieRestrictionSet", 
+			"aliases": [
+				"ZombiesButteringExcludeList"
+			], 
+			"objdata": {
+				"TypeName": "ZombiesButteringExcludeList", 
+				"ListDataType": "className", 
+				"ListType": "blacklist", 
+				"List": [
+					"ZombieZombossMech", 
+					"ZombieStatue", 
+					"ZombiePirateBarrel", 
+					"ZombieBobsledTeam", 
+					"ZombieFutureJetpack", 
+					"ZombieZomboni"
+				], 
+				"ChecksThatAreFalse": [
+					"dying", 
+					"markedForDeath", 
+					"ignoringAllDamage", 
+					"bleedingOut", 
+					"swinging", 
+					"flying"
+				], 
+				"NonActiveConditions": [
+					"freeze", 
+					"stun", 
+					"hypnotized"
+				]
+			}
+		}
+	]
+}

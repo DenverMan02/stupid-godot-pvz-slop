@@ -1,0 +1,567 @@
+{
+	"#comment": "PVZ1 Configuration", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PVZ1ModePropertySheet", 
+			"aliases": [
+				"PVZ1Config"
+			], 
+			"objdata": {
+				"#comment": "time energy how to play", 
+				"HowToPlayData1": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_TIME_ENERGY_1", 
+							"Subtitle": "[PVZ1_HOW_TO_PLAY_1]", 
+							"Description": "[PVZ1_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_TIME_ENERGY_2", 
+							"Subtitle": "[PVZ1_HOW_TO_PLAY_2]", 
+							"Description": "[PVZ1_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_TIME_ENERGY_3", 
+							"Subtitle": "[PVZ1_HOW_TO_PLAY_3]", 
+							"Description": "[PVZ1_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_TIME_ENERGY_4", 
+							"Subtitle": "[PVZ1_HOW_TO_PLAY_4]", 
+							"Description": "[PVZ1_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_TIME_ENERGY_5", 
+							"Subtitle": "[PVZ1_HOW_TO_PLAY_5]", 
+							"Description": "[PVZ1_HOWTOPLAY_5_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "pvz1 mode how to play", 
+				"HowToPlayData2": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_MAIN_MODE_1", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[MODE_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_MAIN_MODE_3", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[MODE_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_HARD_LEVEL_1", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[MODE_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_HARD_LEVEL_2", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[MODE_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_MINIGAME_LEVEL_1", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[MODE_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "first hard level how to play", 
+				"HowToPlayData3": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_HARD_LEVEL_1", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_1]", 
+							"Description": "[RIFT_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PVZ1_HOW_TO_PLAY_HARD_LEVEL_2", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_2]", 
+							"Description": "[RIFT_HOWTOPLAY_2_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "new pvp mode how to play", 
+				"NewPvPHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_MAIN1", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_MAIN2", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_MAIN3", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_MAIN4", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_MAIN5", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_HOWTOPLAY_5_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "new pvp mode army how to play", 
+				"NewPvPArmyHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_ARMY1", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_ARMY_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_ARMY2", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_ARMY_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_NEW_PVP_HOW_TO_PLAY_ARMY3", 
+							"Subtitle": "[MODE_HOW_TO_PLAY_1]", 
+							"Description": "[NEWPVP_ARMY_HOWTOPLAY_3_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "uncharted spring festival how to play", 
+				"UnchartedHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_1", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_1]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_1", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_1]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_1", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_1]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_2", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_2]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_2", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_2]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_2", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_2]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_6_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_3", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_3]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_7_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_3", 
+							"Subtitle": "[UNCHARTED_MODE_HOW_TO_PLAY_3]", 
+							"Description": "[UNCHARTED_MODE_HOWTOPLAY_8_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "uncharted Mausoleum hard how to play", 
+				"UnchartedMausoleumHardHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_4", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_1]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_5", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_2]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_6", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_3]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_7", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_4]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_8", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_5]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_9", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_6]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "uncharted Mausoleum hard how to play", 
+				"UnchartedMausoleumSecondHalfHardHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_16", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_7]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_7_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_17", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_1]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_17", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_2]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_17", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_3]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_17", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_4]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_18", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_5]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_19", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_6]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "uncharted Mausoleum DangerRoom how to play", 
+				"UnchartedMausoleumDangerRoomHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_10", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_1]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_11", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_2]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_12", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_3]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_13", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_4]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_14", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_5]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_15", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_6]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"UnchartedMausoleumSecondHalfHardHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_4", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_1]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_5", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_2]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_6", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_3]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_7", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_4]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_8", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_5]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_9", 
+							"Subtitle": "[MAUSOLEUMHARD_HOW_TO_PLAY_6]", 
+							"Description": "[MAUSOLEUMHARD_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "uncharted Mausoleum DangerRoom how to play", 
+				"UnchartedMausoleumSecondHalfDangerRoomHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_16", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_7]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_7_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_20", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_1]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_21", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_2]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_22", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_8]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_8_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_23", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_4]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_23", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_5]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_UNCHARTED_HOW_TO_PLAY_24", 
+							"Subtitle": "[MAUSOLEUMDANGERROOM_HOW_TO_PLAY_9]", 
+							"Description": "[MAUSOLEUMDANGERROOM_HOWTOPLAY_9_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "plantwars how to play", 
+				"PlantWarsHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_PLANTWARS_HOW_TO_PLAY_1", 
+							"Subtitle": "[PLANTWARS_MODE_HOW_TO_PLAY_1]", 
+							"Description": "[PLANTWARS_MODE_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PLANTWARS_HOW_TO_PLAY_2", 
+							"Subtitle": "[PLANTWARS_MODE_HOW_TO_PLAY_2]", 
+							"Description": "[PLANTWARS_MODE_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PLANTWARS_HOW_TO_PLAY_3", 
+							"Subtitle": "[PLANTWARS_MODE_HOW_TO_PLAY_3]", 
+							"Description": "[PLANTWARS_MODE_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PLANTWARS_HOW_TO_PLAY_4", 
+							"Subtitle": "[PLANTWARS_MODE_HOW_TO_PLAY_4]", 
+							"Description": "[PLANTWARS_MODE_HOWTOPLAY_4_DESCRIPTION]"
+						}
+					]
+				}, 
+				"#comment": "GingleBell how to play", 
+				"GingleBellHowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_1", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_1]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_2", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_2]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_3", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_3]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_4", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_4]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_5", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_5]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_6", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_6]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					], 
+					"LevelEntries": [
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_4", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_4]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_5", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_5]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_GINGLEBELL_HOW_TO_PLAY_6", 
+							"Subtitle": "[GINGLEBELL_HOW_TO_PLAY_6]", 
+							"Description": "[GINGLEBELL_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}, 
+				"PlantBannedList": [
+					"eggplantninja", 
+					"boophonegeisha", 
+					"pokra", 
+					"escaperoot", 
+					"powerlily", 
+					"snappea", 
+					"headbutterlettuce"
+				], 
+				"PvZ1PlantList": [
+					"peashooter", 
+					"sunflower", 
+					"cherry_bomb", 
+					"wallnut", 
+					"potatomine", 
+					"snowpea", 
+					"chomper", 
+					"repeater", 
+					"puffshroom", 
+					"sunshroom", 
+					"fumeshroom", 
+					"gravebuster", 
+					"hypnoshroom", 
+					"lilypad", 
+					"squash", 
+					"threepeater", 
+					"tanglekelp", 
+					"jalapeno", 
+					"spikeweed", 
+					"torchwood", 
+					"tallnut", 
+					"streetlamp", 
+					"cactus", 
+					"blover", 
+					"starfruit", 
+					"magnetshroom", 
+					"cabbagepult", 
+					"kernelpult", 
+					"coffeebean", 
+					"garlic", 
+					"melonpult", 
+					"gatlingpea", 
+					"twinsunflower", 
+					"nekotail", 
+					"wintermelon", 
+					"spikerock", 
+					"cobcannon", 
+					"flowerpot", 
+					"imitater", 
+					"splitpea", 
+					"pumpkin", 
+					"seashroom", 
+					"marigold", 
+					"scaredyshroom", 
+					"doomshroom", 
+					"umbrellaleaf", 
+					"glaciershroom", 
+					"goldmagnet"
+				], 
+				"PvZ1MinigamePlantList": [
+					"peashooter", 
+					"sunflower", 
+					"cherry_bomb", 
+					"wallnut", 
+					"potatomine", 
+					"snowpea", 
+					"chomper", 
+					"repeater", 
+					"puffshroom", 
+					"sunshroom", 
+					"fumeshroom", 
+					"gravebuster", 
+					"hypnoshroom", 
+					"lilypad", 
+					"squash", 
+					"threepeater", 
+					"tanglekelp", 
+					"jalapeno", 
+					"spikeweed", 
+					"torchwood", 
+					"tallnut", 
+					"streetlamp", 
+					"cactus", 
+					"blover", 
+					"starfruit", 
+					"magnetshroom", 
+					"cabbagepult", 
+					"kernelpult", 
+					"coffeebean", 
+					"garlic", 
+					"melonpult", 
+					"gatlingpea", 
+					"twinsunflower", 
+					"nekotail", 
+					"wintermelon", 
+					"spikerock", 
+					"cobcannon", 
+					"flowerpot", 
+					"imitater", 
+					"splitpea", 
+					"pumpkin", 
+					"seashroom", 
+					"marigold", 
+					"scaredyshroom", 
+					"doomshroom", 
+					"umbrellaleaf", 
+					"glaciershroom", 
+					"goldmagnet"
+				]
+			}
+		}
+	]
+}

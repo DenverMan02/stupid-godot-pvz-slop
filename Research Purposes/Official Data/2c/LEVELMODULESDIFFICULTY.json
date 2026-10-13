@@ -1,0 +1,219 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"aliases": [
+				"LevelModuleDifficultyStartingPlantfood"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "PLANTFOOD", 
+				"Description": "[MUTATOR_STARTING_PLANTFOOD_DESC]", 
+				"Name": "[MUTATOR_STARTING_PLANTFOOD]", 
+				"DisplayPriority": "medium"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultySeedSlotCount"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "SEED SLOT", 
+				"Description": "[MUTATOR_SEED_SLOT_DESC]", 
+				"Name": "[MUTATOR_SEED_SLOT]", 
+				"DisplayPriority": "high", 
+				"DisplayPriorityOverrides": [
+					{
+						"EventSubType": "conveyor", 
+						"DisplayPriority": "never"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyPowerupsDisabled"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "POWERUPS GONE", 
+				"Description": "[MUTATOR_POWERUPS_DESC]", 
+				"Name": "[MUTATOR_POWERUPS]", 
+				"DisplayPriority": "never"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyMaxSun"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "MAX SUN", 
+				"Description": "[MUTATOR_MAX_SUN_DESC]", 
+				"Name": "[MUTATOR_MAX_SUN]", 
+				"DisplayPriority": "low"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedSun"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "SUN DROPPER", 
+				"Description": "[MUTATOR_RIFT_TIMED_SUN_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_SUN]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedTool"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "RIFT TOOL", 
+				"Description": "[MUTATOR_RIFT_TIMED_ZOMBIE_SUN_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_ZOMBIE_SUN]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedTool1"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "RIFT TOOL", 
+				"Description": "[MUTATOR_RIFT_TIMED_TOOL_LEVELUP_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_TOOL_LEVELUP]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedTool2"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "RIFT TOOL", 
+				"Description": "[MUTATOR_RIFT_TIMED_TOOL_PF_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_TOOL_PF]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedTool3"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "RIFT TOOL", 
+				"Description": "[MUTATOR_RIFT_TIMED_TOOL_ARTIFACT_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_TOOL_ARTIFACT]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedTool4"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "RIFT TOOL", 
+				"Description": "[MUTATOR_RIFT_TIMED_TOOL_WAVE_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_TOOL_WAVE]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyRiftTimedTool5"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "RIFT TOOL", 
+				"Description": "[MUTATOR_RIFT_TIMED_TOOL_NO_PRODUCE_PF_DESC]", 
+				"Name": "[MUTATOR_RIFT_TIMED_TOOL_NO_PRODUCE_PF]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultySunDropper"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "SUN DROPPER", 
+				"Description": "[MUTATOR_SUN_DROPPER_DESC]", 
+				"Name": "[MUTATOR_SUN_DROPPER]", 
+				"DisplayPriority": "high"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyStartSun"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "START SUN", 
+				"Description": "[MUTATOR_STARTING_SUN_DESC]", 
+				"Name": "[MUTATOR_STARTING_SUN]", 
+				"DisplayPriority": "medium"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyMowers"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "MOWERS", 
+				"Description": "[MUTATOR_MOWERS_DESC]", 
+				"Name": "[MUTATOR_MOWERS]", 
+				"DisplayPriority": "medium"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyFirstWave"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "FIRST WAVE", 
+				"Description": "[MUTATOR_FIRST_WAVE_DESC]", 
+				"Name": "[MUTATOR_FIRST_WAVE]", 
+				"DisplayPriority": "low"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelModuleDifficultyZombieLevel"
+			], 
+			"objclass": "LevelModuleDifficultyProps", 
+			"objdata": {
+				"IconImage": "IMAGE_WORLDMAP_RIFT_TYPE_ICON_NORMAL", 
+				"IconText": "ZOMBIE LEVEL", 
+				"Description": "[MUTATOR_ZOMBIE_LEVEL_DESC]", 
+				"Name": "[MUTATOR_ZOMBIE_LEVEL]", 
+				"DisplayPriority": "high"
+			}
+		}
+	]
+}

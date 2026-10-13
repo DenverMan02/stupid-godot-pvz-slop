@@ -1,0 +1,3276 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "CustomLevelConfig", 
+			"aliases": [
+				"CustomConfig"
+			], 
+			"objdata": {
+				"CommonConfigs": {
+					"DelayBeforeHugeWave": 5.0, 
+					"MaxNextWaveHealthPercent": 0.85, 
+					"MinNextWaveHealthPercent": 0.7, 
+					"TimeToFirstWave": 12.0, 
+					"TimeToFirstWaveConveyor": 5.0, 
+					"ConveyorDelay": 3.0, 
+					"ConveyorMaxPackets": 8.0, 
+					"ConveyorPlantMaxCount": 7.0, 
+					"ConveyorPlantMaxWeightFactor": 0, 
+					"ConveyorPlantMinCount": 4.0, 
+					"ConveyorPlantMinWeightFactor": 2.0, 
+					"ConveyorSpeedMaxPackets": 0, 
+					"ConveyorSpeed": 100.0
+				}, 
+				"ModuleConfigs": {
+					"beach": {
+						"World": "beach", 
+						"StageModule": "BeachStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"BeachMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "beach_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "beach_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"egypt": {
+						"World": "egypt", 
+						"StageModule": "EgyptStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"EgyptMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "egypt_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "egypt_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "egypt_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "mummy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "mummy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "egypt_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"cowboy": {
+						"World": "cowboy", 
+						"StageModule": "WestStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"WestMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "west_bullrider", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "west_bullrider", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "west_bullrider", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "cowboy_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "cowboy_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"pirate": {
+						"World": "pirate", 
+						"StageModule": "PirateStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"PirateMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "pirate_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "pirate_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"future": {
+						"World": "future", 
+						"StageModule": "FutureStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"FutureMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"kongfu": {
+						"World": "kongfu", 
+						"StageModule": "KongfuStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"KongfuMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_monk_imp", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_agile_bronze", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_monk_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "kongfu_basic_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_basic_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "kongfu_agile_bronze", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"eighties": {
+						"World": "eighties", 
+						"StageModule": "EightiesStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"EightiesMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "eighties_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "eighties_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"dark": {
+						"World": "dark", 
+						"StageModule": "DarkStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"DarkMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_king", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dark_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dark_king", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"dino": {
+						"World": "dino", 
+						"StageModule": "DinoStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"DinoMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_pushegg", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_pushegg", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "dino_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "dino_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"iceage": {
+						"World": "iceage", 
+						"StageModule": "IceageStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"IceageMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "iceage_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "iceage_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"lostcity": {
+						"World": "lostcity", 
+						"StageModule": "LostCityStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"LostCityMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_bug", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_bug", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "lostcity_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "lostcity_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"modern": {
+						"World": "modern", 
+						"StageModule": "ModernStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"ModernMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "tutorial_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "tutorial_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"steam": {
+						"World": "steam", 
+						"StageModule": "SteamStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"SteamMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_imp", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "steam_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "steam_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"renai": {
+						"World": "renai", 
+						"StageModule": "RenaiStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"RenaiMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_carver", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_carver", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "renai_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "renai_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"heian": {
+						"World": "heian", 
+						"StageModule": "HeianStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"HeianMowers"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_ninja", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_ninja", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"fairy_tale": {
+						"World": "fairy_tale", 
+						"StageModule": "FairyTaleStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_worker", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_ninja", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_ninja", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "heian_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "heian_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"childrenday": {
+						"World": "childrenday", 
+						"StageModule": "ChildrenDayStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 1, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 2, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 3, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 4, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_gargantuar", 
+										"Weight": 25
+									}
+								]
+							}, 
+							{
+								"PickCount": 6, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor2", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "children_lollipops", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 7, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "children_toygun", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 8, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 9, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 10, 
+								"Configs": [
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_armor1", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "childrensday_gargantuar", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"statue": {
+						"World": "statue", 
+						"StageModule": "RenaiStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultCustomLevel"
+						]
+					}, 
+					"evil_dave": {
+						"World": "evil_dave", 
+						"StageModule": "FutureStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"DefaultCustomLevel"
+						], 
+						"DefaultZombieList": [
+							"future_jetpack", 
+							"future", 
+							"future_armor1", 
+							"future_protector", 
+							"future_armor2", 
+							"football_mech", 
+							"future_gargantuar", 
+							"lostcity_jane", 
+							"dark_juggler", 
+							"iceage_armor3", 
+							"eighties_boombox", 
+							"chicken_farmer", 
+							"pirate_captain", 
+							"dark_rogue", 
+							"explorer", 
+							"modern_miner", 
+							"modern_newspaper", 
+							"dino_imp", 
+							"pvz1_bungee", 
+							"modern_balloon", 
+							"tutorial_gargantuar", 
+							"camel_twohump", 
+							"pharaoh", 
+							"swashbuckler", 
+							"cannon", 
+							"barrelroller", 
+							"cowboy", 
+							"cowboy_armor1", 
+							"cowboy_armor2", 
+							"prospector", 
+							"piano", 
+							"kongfu_basic", 
+							"kongfu_monk_nunchaku", 
+							"kongfu_basic_armor3", 
+							"kongfu_qigong", 
+							"kongfu_monk_drink", 
+							"kongfu_selfexplode", 
+							"kongfu_strong_bronze", 
+							"future_imp", 
+							"dark_imp_dragon", 
+							"dark_armor3", 
+							"dark_wizard", 
+							"beach_snorkel", 
+							"beach_surfer", 
+							"beach_fisherman", 
+							"beach_shell", 
+							"iceage_weasel", 
+							"iceage_dodo", 
+							"iceage_hunter", 
+							"iceage_ski", 
+							"iceage_walrus", 
+							"lostcity_bug", 
+							"lostcity_crystalskull", 
+							"lostcity_guide", 
+							"eighties_punk", 
+							"eighties_breakdancer", 
+							"eighties_mc", 
+							"eighties_gargantuar", 
+							"zcorp", 
+							"zcorp_armor1", 
+							"zcorp_armor2", 
+							"zcorp_imp", 
+							"zcorp_consultant", 
+							"zcorp_helpdesk", 
+							"zcorp_racer_chair", 
+							"needforspeed", 
+							"needforspeed_armor1", 
+							"needforspeed_armor2", 
+							"universe_uncharted_lostcity_jane", 
+							"uncharted_gentleman"
+						], 
+						"DefaultWaveList": [
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}, 
+							{
+								"PickCount": 5, 
+								"Configs": [
+									{
+										"ZombieTypeName": "future", 
+										"Weight": 50
+									}, 
+									{
+										"ZombieTypeName": "future_armor2", 
+										"Weight": 50
+									}
+								]
+							}
+						]
+					}, 
+					"tower_defend": {
+						"World": "tower_defend", 
+						"StageModule": "TheatreDarkStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel"
+						]
+					}, 
+					"single_handed": {
+						"World": "single_handed", 
+						"StageModule": "FutureStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"StandardIntro", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel"
+						]
+					}, 
+					"vase_breaker": {
+						"World": "vase_breaker", 
+						"StageModule": "LostCityStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"DefaultCustomLevel", 
+							"VaseBreakerArcade", 
+							"VaseBreakerFlow"
+						]
+					}
+				}, 
+				"WaveEventConfigs": {
+					"#comment": "Sandstrom", 
+					"sandstorm": {
+						"ValueMaps": {
+							"GroupSize": 1.0, 
+							"TimeBetweenGroups": 1.0, 
+							"Type": 0
+						}
+					}, 
+					"#comment": "SpiderRain", 
+					"spider_rain": {
+						"ValueMaps": {
+							"GroupSize": 1.0, 
+							"TimeBeforeFullSpawn": 4.0, 
+							"TimeBetweenGroups": 1, 
+							"ZombieFallTime": 1.5
+						}, 
+						"StringMaps": {
+							"WaveStartMessage": "[WARNING_SPIDERRAIN]", 
+							"SpawnZombieName": "future_imp"
+						}
+					}, 
+					"#comment": "ParachuteRain", 
+					"parachute_rain": {
+						"ValueMaps": {
+							"GroupSize": 2.0, 
+							"TimeBeforeFullSpawn": 1.0, 
+							"TimeBetweenGroups": 0.2, 
+							"ZombieFallTime": 1.5, 
+							"SpiderCount": 4.0
+						}, 
+						"StringMaps": {
+							"WaveStartMessage": "[WARNING_PARACHUTERAIN]", 
+							"SpawnZombieName": "lostcity_lostpilot"
+						}
+					}, 
+					"#comment": "DinoRun", 
+					"dino_run": {
+						"StringMaps": {
+							"WaveStartMessage": "[WARNING_DINO_RUN]"
+						}
+					}, 
+					"#comment": "RaidingParty", 
+					"raiding_party": {
+						"ValueMaps": {
+							"GroupSize": 1.0, 
+							"TimeBetweenGroups": 1.0
+						}
+					}, 
+					"#comment": "FrostWind", 
+					"frost_wind": {
+						"ValueMaps": {
+							"Direction": 0
+						}
+					}, 
+					"#comment": "TowerDefend", 
+					"tower_defend": {
+						"ValueMaps": {
+							"HitpointsPercentAddPerWave": 0.2, 
+							"BasicLaunchTimePercent": 0.9, 
+							"AdvLaunchTimePercent": 0.8, 
+							"SpawnPlantFoodCount": 0, 
+							"SunDrop": 50.0, 
+							"WavePointStart": 100.0, 
+							"WavePointIncrement": 120.0, 
+							"WaveSpendingPointIncrement": 120.0, 
+							"WaveSpendingPoints": 100.0
+						}, 
+						"StringMaps": {
+							"HousePopAnim": "POPANIM_TOWERDEFEND_HOUSE_PIG_1"
+						}
+					}, 
+					"#comment": "SingleHanded", 
+					"single_handed": {
+						"ValueMaps": {
+							"InitWeaponLaunchTimePercent": 0.8, 
+							"MissileCount": 1.0, 
+							"MissileInterval": 50.0, 
+							"RocketHitTime": 6.0, 
+							"RocketSpeed": 500.0, 
+							"TimeSpeed": 1.5, 
+							"ZombiesWalkSpeed": 0.7, 
+							"ZombiesHitpointsPercent": 0.1, 
+							"WavePointStart": 100.0, 
+							"WavePointIncrement": 120.0, 
+							"WaveSpendingPointIncrement": 500.0, 
+							"WaveSpendingPoints": 500.0
+						}
+					}
+				}
+			}
+		}
+	]
+}

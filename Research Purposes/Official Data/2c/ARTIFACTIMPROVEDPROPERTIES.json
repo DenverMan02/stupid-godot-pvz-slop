@@ -1,0 +1,50 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ArtifactImprovedPropertySheet", 
+			"aliases": [
+				"artifact_wind"
+			], 
+			"objdata": {
+				"ArtifactId": 60001, 
+				"Name": "", 
+				"Description": "", 
+				"EnabledBoost": [
+					"RTID(ImprovedDamage1000@ArtifactImprovedProperties)", 
+					"RTID(ImprovedDuration1002@ArtifactImprovedProperties)"
+				]
+			}
+		}, 
+		{
+			"objclass": "ArtifactBoostPropertySheet", 
+			"aliases": [
+				"ImprovedDamage1000"
+			], 
+			"objdata": {
+				"Type": "improved_dmg", 
+				"Rare": 2, 
+				"Id": 1000, 
+				"ValueRange": {
+					"Min": 0.1, 
+					"Max": 0.2
+				}
+			}
+		}, 
+		{
+			"objclass": "ArtifactBoostPropertySheet", 
+			"aliases": [
+				"ImprovedDuration1002"
+			], 
+			"objdata": {
+				"Type": "improved_duration", 
+				"Rare": 1, 
+				"Id": 1002, 
+				"ValueRange": {
+					"Min": 0.1, 
+					"Max": 0.3
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,171 @@
+{
+	"#comment": "Make new present tables here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "egypt_normal_01", 
+				"Entries": [
+					{
+						"PresentType": "key_egypt_small", 
+						"Weight": 40
+					}, 
+					{
+						"PresentType": "coinpack_medium", 
+						"Weight": 60
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "egypt_shiny_01", 
+				"Shiny": true, 
+				"Entries": [
+					{
+						"PresentType": "key_egypt_small", 
+						"Weight": 50
+					}, 
+					{
+						"PresentType": "coinpack_large", 
+						"Weight": 50
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "pirate_normal_01", 
+				"Entries": [
+					{
+						"PresentType": "key_pirate_small", 
+						"Weight": 30
+					}, 
+					{
+						"PresentType": "coinpack_medium", 
+						"Weight": 70
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "pirate_shiny_01", 
+				"Shiny": true, 
+				"Entries": [
+					{
+						"PresentType": "key_pirate_small", 
+						"Weight": 50
+					}, 
+					{
+						"PresentType": "coinpack_large", 
+						"Weight": 50
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "cowboy_normal_01", 
+				"Entries": [
+					{
+						"PresentType": "key_cowboy_small", 
+						"Weight": 25
+					}, 
+					{
+						"PresentType": "coinpack_medium", 
+						"Weight": 75
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "cowboy_shiny_01", 
+				"Shiny": true, 
+				"Entries": [
+					{
+						"PresentType": "key_cowboy_small", 
+						"Weight": 50
+					}, 
+					{
+						"PresentType": "coinpack_large", 
+						"Weight": 50
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "kongfu_normal_01", 
+				"Entries": [
+					{
+						"PresentType": "key_kongfu_small", 
+						"Weight": 25
+					}, 
+					{
+						"PresentType": "coinpack_medium", 
+						"Weight": 75
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "kongfu_shiny_01", 
+				"Shiny": true, 
+				"Entries": [
+					{
+						"PresentType": "key_kongfu_small", 
+						"Weight": 50
+					}, 
+					{
+						"PresentType": "coinpack_large", 
+						"Weight": 50
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "future_normal_01", 
+				"Entries": [
+					{
+						"PresentType": "key_future_small", 
+						"Weight": 25
+					}, 
+					{
+						"PresentType": "coinpack_medium", 
+						"Weight": 75
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PresentTable", 
+			"objdata": {
+				"TypeName": "future_shiny_01", 
+				"Shiny": true, 
+				"Entries": [
+					{
+						"PresentType": "key_future_small", 
+						"Weight": 50
+					}, 
+					{
+						"PresentType": "coinpack_large", 
+						"Weight": 50
+					}
+				]
+			}
+		}
+	]
+}

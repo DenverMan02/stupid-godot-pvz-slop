@@ -1,0 +1,1134 @@
+{
+	"#comment": "Plant Adventure Configs here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PlantAdventureConfig", 
+			"aliases": [
+				"PlantAdventureConfigData"
+			], 
+			"objdata": {
+				"MaxTeam": 4, 
+				"MonthlyCardTeamPro": 0, 
+				"DungeonList": [
+					{
+						"WorldName": "egypt_pirate", 
+						"TabIndex": 1, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_EGYPT_PIRATE", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_EGYPT_PIRATE_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "egypt", 
+								"DungeonName": "egypt5", 
+								"DungeonID": "10427", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2000, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "peashooter", 
+								"PlantChipsBonusID": "1101", 
+								"PlantRequire": [
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "egypt", 
+								"DungeonName": "egypt9", 
+								"DungeonID": "10428", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2000, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "cabbagepult", 
+								"PlantChipsBonusID": "1105", 
+								"PlantRequire": [
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "egypt", 
+								"DungeonName": "egypt14", 
+								"DungeonID": "10429", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2000, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "sunflower", 
+								"PlantChipsBonusID": "1102", 
+								"PlantRequire": [
+									"sun"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "pirate", 
+								"DungeonName": "pirate2", 
+								"DungeonID": "10430", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2000, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "kernelpult", 
+								"PlantChipsBonusID": "1121", 
+								"PlantRequire": [
+									"yellow", 
+									"weapon"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}, 
+							{
+								"WorldName": "pirate", 
+								"DungeonName": "pirate7", 
+								"DungeonID": "10431", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2000, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "spikeweed", 
+								"PlantChipsBonusID": "1111", 
+								"PlantRequire": [
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "pirate", 
+								"DungeonName": "pirate10", 
+								"DungeonID": "10432", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2000, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "springbean", 
+								"PlantChipsBonusID": "1110", 
+								"PlantRequire": [
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "cowboy_kongfu", 
+						"TabIndex": 2, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_COWBOY_KONGFU", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_COWBOY_KONGFU_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "cowboy", 
+								"DungeonName": "cowboy2", 
+								"DungeonID": "10433", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "splitpea", 
+								"PlantChipsBonusID": "1116", 
+								"PlantRequire": [
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "cowboy", 
+								"DungeonName": "cowboy5", 
+								"DungeonID": "10434", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "chilibean", 
+								"PlantChipsBonusID": "1115", 
+								"PlantRequire": [
+									"red", 
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}, 
+							{
+								"WorldName": "cowboy", 
+								"DungeonName": "cowboy10", 
+								"DungeonID": "10435", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "lightningreed", 
+								"PlantChipsBonusID": "1122", 
+								"PlantRequire": [
+									"electric", 
+									"green", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "kongfu", 
+								"DungeonName": "kongfu4", 
+								"DungeonID": "10436", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "firegourd", 
+								"PlantChipsBonusID": "1134", 
+								"PlantRequire": [
+									"yellow", 
+									"sun"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}, 
+							{
+								"WorldName": "kongfu", 
+								"DungeonName": "kongfu7", 
+								"DungeonID": "10437", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "turnip", 
+								"PlantChipsBonusID": "1135", 
+								"PlantRequire": [
+									"white"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "future_dark", 
+						"TabIndex": 3, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_FUTURE_DARK", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_FUTURE_DARK_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "future", 
+								"DungeonName": "future4", 
+								"DungeonID": "10438", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "potatomine", 
+								"PlantChipsBonusID": "1104", 
+								"PlantRequire": [
+									"weapon"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "future", 
+								"DungeonName": "future12", 
+								"DungeonID": "10439", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "wallnut", 
+								"PlantChipsBonusID": "1103", 
+								"PlantRequire": [
+									"yellow"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "future", 
+								"DungeonName": "future19", 
+								"DungeonID": "10440", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "iceburg", 
+								"PlantChipsBonusID": "1106", 
+								"PlantRequire": [
+									"blue"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "dark", 
+								"DungeonName": "dark5", 
+								"DungeonID": "10441", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "fumeshroom", 
+								"PlantChipsBonusID": "1150", 
+								"PlantRequire": [
+									"shroom", 
+									"purple", 
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "dark", 
+								"DungeonName": "dark16", 
+								"DungeonID": "10442", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "magnetshroom", 
+								"PlantChipsBonusID": "1155", 
+								"PlantRequire": [
+									"shroom", 
+									"red"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "beach_iceage", 
+						"TabIndex": 4, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_BEACH_ICEAGE", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_BEACH_ICEAGE_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "beach", 
+								"DungeonName": "beach5", 
+								"DungeonID": "10443", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2600, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "tanglekelp", 
+								"PlantChipsBonusID": "1166", 
+								"PlantRequire": [
+									"aquatic", 
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}, 
+							{
+								"WorldName": "beach", 
+								"DungeonName": "beach9", 
+								"DungeonID": "10444", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2600, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "guacodile", 
+								"PlantChipsBonusID": "1168", 
+								"PlantRequire": [
+									"aquatic", 
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}, 
+							{
+								"WorldName": "iceage", 
+								"DungeonName": "iceage7", 
+								"DungeonID": "10445", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2600, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "firepeashooter", 
+								"PlantChipsBonusID": "1178", 
+								"PlantRequire": [
+									"red", 
+									"pea", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "skycity_lostcity", 
+						"TabIndex": 5, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_SKYCITY_LOSTCITY", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_SKYCITY_LOSTCITY_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "skycity", 
+								"DungeonName": "skycity2", 
+								"DungeonID": "10446", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "xshot", 
+								"PlantChipsBonusID": "1183", 
+								"PlantRequire": [
+									"fly", 
+									"purple", 
+									"rotation"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "skycity", 
+								"DungeonName": "skycity7", 
+								"DungeonID": "10447", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "doublesamara", 
+								"PlantChipsBonusID": "1189", 
+								"PlantRequire": [
+									"fly"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "skycity", 
+								"DungeonName": "skycity9", 
+								"DungeonID": "10448", 
+								"CoolDownTime": 240, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 3, 
+								"PlantChipsBonus": "anthurium", 
+								"PlantChipsBonusID": "1190", 
+								"PlantRequire": [
+									"fly", 
+									"red"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}, 
+							{
+								"WorldName": "lostcity", 
+								"DungeonName": "lostcity2", 
+								"DungeonID": "10449", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "redstinger", 
+								"PlantChipsBonusID": "111109", 
+								"PlantRequire": [
+									"red", 
+									"brothers", 
+									"pea"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "lostcity", 
+								"DungeonName": "lostcity17", 
+								"DungeonID": "10450", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "jackfruit", 
+								"PlantChipsBonusID": "111114", 
+								"PlantRequire": [
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "eighties", 
+						"TabIndex": 6, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_EIGHTIES", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_EIGHTIES_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "eighties", 
+								"DungeonName": "eighties2", 
+								"DungeonID": "10451", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "celerystalker", 
+								"PlantChipsBonusID": "111125", 
+								"PlantRequire": [
+									"green", 
+									"short", 
+									"kongfu"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "eighties", 
+								"DungeonName": "eighties9", 
+								"DungeonID": "10452", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "intensivecarrot", 
+								"PlantChipsBonusID": "111128", 
+								"PlantRequire": [
+									"red"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "dino", 
+								"DungeonName": "dino5", 
+								"DungeonID": "10453", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "primalpeashooter", 
+								"PlantChipsBonusID": "111135", 
+								"PlantRequire": [
+									"weapon", 
+									"pea", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "dino", 
+								"DungeonName": "dino9", 
+								"DungeonID": "10454", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "perfumeshroom", 
+								"PlantChipsBonusID": "111137", 
+								"PlantRequire": [
+									"red", 
+									"shroom", 
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "steam", 
+						"TabIndex": 7, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_MODERN_STEAM", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_MODERN_STEAM_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "modern", 
+								"DungeonName": "modern2", 
+								"DungeonID": "10457", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "shadowshroom", 
+								"PlantChipsBonusID": "111151", 
+								"PlantRequire": [
+									"weapon", 
+									"pea", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "modern", 
+								"DungeonName": "modern13", 
+								"DungeonID": "10458", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "moonflower", 
+								"PlantChipsBonusID": "111152", 
+								"PlantRequire": [
+									"weapon", 
+									"pea", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "steam", 
+								"DungeonName": "steam6", 
+								"DungeonID": "10459", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "passionflower", 
+								"PlantChipsBonusID": "111168", 
+								"PlantRequire": [
+									"weapon", 
+									"pea", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "steam", 
+								"DungeonName": "steam11", 
+								"DungeonID": "10460", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "lotusshooter", 
+								"PlantChipsBonusID": "111166", 
+								"PlantRequire": [
+									"weapon", 
+									"pea", 
+									"firebomb"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "renai", 
+						"TabIndex": 8, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_RENAI_HEIAN", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_RENAI_HEIAN_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "renai", 
+								"DungeonName": "renai3", 
+								"DungeonID": "10461", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "waxgourd", 
+								"PlantChipsBonusID": "111191", 
+								"PlantRequire": [
+									"green", 
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "renai", 
+								"DungeonName": "renai8", 
+								"DungeonID": "10462", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "aloes", 
+								"PlantChipsBonusID": "111189", 
+								"PlantRequire": [
+									"red"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}, 
+							{
+								"WorldName": "heian", 
+								"DungeonName": "heian3", 
+								"DungeonID": "10463", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "dendrobiumguard", 
+								"PlantChipsBonusID": "22000180", 
+								"PlantRequire": [
+									"green", 
+									"short"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "heian", 
+								"DungeonName": "heian8", 
+								"DungeonID": "10464", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2200, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "stephania", 
+								"PlantChipsBonusID": "22000160", 
+								"PlantRequire": [
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 30, 
+										"Quantity": 2
+									}
+								]
+							}
+						]
+					}, 
+					{
+						"WorldName": "atlantis", 
+						"TabIndex": 9, 
+						"TabIcon": "IMAGE_UI_PLANTADVENTURE_ICON_ATLANTIS_MOON", 
+						"TabIconDown": "IMAGE_UI_PLANTADVENTURE_ICON_ATLANTIS_MOON_DOWN", 
+						"Dungeon": [
+							{
+								"WorldName": "atlantis", 
+								"DungeonName": "atlantis5", 
+								"DungeonID": "10465", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 2400, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "seashroom", 
+								"PlantChipsBonusID": "22001360", 
+								"PlantRequire": [
+									"blue", 
+									"shroom"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "atlantis", 
+								"DungeonName": "atlantis20", 
+								"DungeonID": "10466", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 2800, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "seaderris", 
+								"PlantChipsBonusID": "22001370", 
+								"PlantRequire": [
+									"purple"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 70, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "moon", 
+								"DungeonName": "moon3", 
+								"DungeonID": "10467", 
+								"CoolDownTime": 480, 
+								"RewardCoins": 3000, 
+								"MaxAdventureTimes": 2, 
+								"PlantChipsBonus": "cosmicpea", 
+								"PlantChipsBonusID": "22001830", 
+								"PlantRequire": [
+									"purple", 
+									"pea"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 90, 
+										"Quantity": 1
+									}, 
+									{
+										"Probility": 10, 
+										"Quantity": 0
+									}
+								]
+							}, 
+							{
+								"WorldName": "moon", 
+								"DungeonName": "moon8", 
+								"DungeonID": "10468", 
+								"CoolDownTime": 120, 
+								"RewardCoins": 3000, 
+								"MaxAdventureTimes": 5, 
+								"PlantChipsBonus": "gravitree", 
+								"PlantChipsBonusID": "22001860", 
+								"PlantRequire": [
+									"green"
+								], 
+								"BonusInfo": [
+									{
+										"Probility": 10, 
+										"Quantity": 1
+									}
+								]
+							}
+						]
+					}
+				], 
+				"SurpriseInfo": [
+					{
+						"ObjectSku": "none", 
+						"ObjectId": "0000", 
+						"Probility": 1000, 
+						"Quantity": 0, 
+						"GemsCost": 0
+					}, 
+					{
+						"ObjectSku": "avatar_piece_bonkchoy", 
+						"ObjectId": "1309", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_holonut", 
+						"ObjectId": "1344", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_hypnoshroom", 
+						"ObjectId": "1351", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_homingthistle", 
+						"ObjectId": "1369", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_pepperpult", 
+						"ObjectId": "1380", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_asparagus", 
+						"ObjectId": "1391", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_lavaguava", 
+						"ObjectId": "111311", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "avatar_piece_torchwood", 
+						"ObjectId": "1320", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "unique_fertilizer_piece", 
+						"ObjectId": "22001", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "unique_accelerate_piece", 
+						"ObjectId": "22003", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "unique_torch_piece", 
+						"ObjectId": "22009", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 100
+					}, 
+					{
+						"ObjectSku": "epic_drum_piece", 
+						"ObjectId": "22014", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 50
+					}, 
+					{
+						"ObjectSku": "epic_regeneration_piece", 
+						"ObjectId": "22015", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 50
+					}, 
+					{
+						"ObjectSku": "epic_pole_piece", 
+						"ObjectId": "22020", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 50
+					}, 
+					{
+						"ObjectSku": "magic_snowflake_piece", 
+						"ObjectId": "22025", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 30
+					}, 
+					{
+						"ObjectSku": "normal_fertilizer_piece", 
+						"ObjectId": "22027", 
+						"Probility": 6, 
+						"Quantity": 5, 
+						"GemsCost": 10
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"#comment": "Rift Configuration", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "RiftPropertySheet", 
+			"aliases": [
+				"RiftConfig"
+			], 
+			"objdata": {
+				"PlantsRequiredToUnlock": 15, 
+				"EventEndNoteConfig": {
+					"LocalNoteMinDelayTime": 300, 
+					"LocalNoteMaxDelayTime": 600
+				}, 
+				"ZombossEndNoteConfig": {
+					"LocalNoteMinDelayTime": 14400, 
+					"LocalNoteMaxDelayTime": 21600
+				}, 
+				"ZombossPointOfLossGemCost": 25, 
+				"ZombossPointOfLossNumAvailable": 2, 
+				"ZombossPointOfLossTimeGained": 30, 
+				"HowToPlayData": {
+					"Version": 1, 
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_PENNY_PURSUITS_HOW_TO_PLAY_PANEL01", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_1]", 
+							"Description": "[RIFT_HOWTOPLAY_1_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PENNY_PURSUITS_HOW_TO_PLAY_PANEL02", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_2]", 
+							"Description": "[RIFT_HOWTOPLAY_2_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PENNY_PURSUITS_HOW_TO_PLAY_PANEL03", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_3]", 
+							"Description": "[RIFT_HOWTOPLAY_3_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PENNY_PURSUITS_HOW_TO_PLAY_PANEL04", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_4]", 
+							"Description": "[RIFT_HOWTOPLAY_4_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PENNY_PURSUITS_HOW_TO_PLAY_PANEL05", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_5]", 
+							"Description": "[RIFT_HOWTOPLAY_5_DESCRIPTION]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_PENNY_PURSUITS_HOW_TO_PLAY_PANEL06", 
+							"Subtitle": "[RIFT_HOW_TO_PLAY_6]", 
+							"Description": "[RIFT_HOWTOPLAY_6_DESCRIPTION]"
+						}
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,283 @@
+{
+	"#comment": "Insert new Perks here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "MiniGamePerkZombieSpeedReducedProperties", 
+			"aliases": [
+				"zombie_speed_reduced"
+			], 
+			"objdata": {
+				"TypeName": "zombie_speed_reduced", 
+				"ClassName": "MiniGamePerkZombieSpeedReduced", 
+				"Description": "[MINIGAME_PERK_REDUCE_ZOMBIE_SPEED_DESCRIPTION]", 
+				"IconName": "", 
+				"UntargetableZombieTypes": {
+					"ListType": "blacklist", 
+					"List": [
+						"davezombie"
+					]
+				}, 
+				"ZombieSpeedReduced": [
+					0.05, 
+					0.1, 
+					0.15, 
+					0.2, 
+					0.25
+				]
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkZombieGlobalStuckProperties", 
+			"aliases": [
+				"zombie_global_stuck"
+			], 
+			"objdata": {
+				"TypeName": "zombie_global_stuck", 
+				"ClassName": "MiniGamePerkZombieGlobalStuck", 
+				"Description": "[MINIGAME_PERK_STUCK_ALL_ZOMBIE_DESCRIPTION]", 
+				"IconName": "", 
+				"UntargetableZombieTypes": {
+					"ListType": "blacklist", 
+					"List": [
+						"davezombie"
+					]
+				}, 
+				"ZombieStuckDuration": [
+					{
+						"Interval": 20.0, 
+						"Duration": 1.0
+					}, 
+					{
+						"Interval": 20.0, 
+						"Duration": 1.5
+					}, 
+					{
+						"Interval": 20.0, 
+						"Duration": 2.0
+					}, 
+					{
+						"Interval": 20.0, 
+						"Duration": 2.5
+					}, 
+					{
+						"Interval": 20.0, 
+						"Duration": 3.0
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkItemKillAllZombiesProperties", 
+			"aliases": [
+				"item_kill_all_zombies"
+			], 
+			"objdata": {
+				"TypeName": "item_kill_all_zombies", 
+				"ClassName": "MiniGamePerkItemKillAllZombies", 
+				"Description": "[MINIGAME_PERK_KILL_ALL_ZOMBIE_DESCRIPTION]", 
+				"IconName": "", 
+				"UntargetableZombieTypes": {
+					"ListType": "blacklist", 
+					"List": [
+						"davezombie"
+					]
+				}, 
+				"UseTimes": [
+					1
+				], 
+				"LevelID": -1
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkPlantStatsIncreasedProperties", 
+			"aliases": [
+				"plant_stats_increased"
+			], 
+			"objdata": {
+				"TypeName": "plant_stats_increased", 
+				"ClassName": "MiniGamePerkPlantStatsIncreased", 
+				"Description": "[MINIGAME_PERK_PLANTS_STATS_INCREASED_DESCRIPTION]", 
+				"IconName": "", 
+				"Buffs": [
+					{
+						"LevelID": 0, 
+						"BuffType": "perkbuff_plant_cd_reduced", 
+						"Values": [
+							0.05, 
+							0.1, 
+							0.15, 
+							0.2, 
+							0.25
+						], 
+						"TargetablePlantTypes": {
+							"ListType": "whitelist", 
+							"List": [
+								"minigame_imitater", 
+								"jalapeno", 
+								"squash", 
+								"cherry_bomb"
+							]
+						}
+					}, 
+					{
+						"LevelID": 2, 
+						"BuffType": "perkbuff_plant_cd_reduced", 
+						"Values": [
+							0.05, 
+							0.1, 
+							0.15, 
+							0.2, 
+							0.25
+						], 
+						"TargetablePlantTypes": {
+							"ListType": "whitelist", 
+							"List": [
+								"FrozenChillyPepper", 
+								"FrozenIcebloom"
+							]
+						}
+					}, 
+					{
+						"LevelID": 3, 
+						"BuffType": "perkbuff_plant_appear_time_reduced", 
+						"Values": [
+							0.05, 
+							0.1, 
+							0.15, 
+							0.2, 
+							0.25
+						], 
+						"TargetablePlantTypes": {
+							"ListType": "whitelist", 
+							"List": [
+								"tool_projectile_wallnut", 
+								"tool_projectile_wallnut_big", 
+								"tool_projectile_wallnut_explode", 
+								"tool_projectile_wallnut_primeval", 
+								"tool_projectile_jackfruit"
+							]
+						}
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkGameDurationIncreasedProperties", 
+			"aliases": [
+				"mini_game_duration_increased"
+			], 
+			"objdata": {
+				"TypeName": "mini_game_duration_increased", 
+				"ClassName": "MiniGamePerkGameDurationIncreased", 
+				"Description": "[MINIGAME_PERK_GAME_DURATION_INCREASED]", 
+				"IconName": "", 
+				"DurationIncreased": [
+					5.0, 
+					10.0, 
+					15.0
+				]
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkCoinIncreasedProperties", 
+			"aliases": [
+				"mini_game_coin_increased"
+			], 
+			"objdata": {
+				"TypeName": "mini_game_coin_increased", 
+				"ClassName": "MiniGamePerkCoinIncreased", 
+				"Description": "[MINIGAME_PERK_GAME_COIN_INCREASED]", 
+				"IconName": "", 
+				"CoinIncreased": [
+					10, 
+					20, 
+					30, 
+					40, 
+					50
+				]
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkItemXRayProperties", 
+			"aliases": [
+				"special_item_x_ray"
+			], 
+			"objdata": {
+				"TypeName": "special_item_x_ray", 
+				"ClassName": "MiniGamePerkItemXRay", 
+				"Description": "[MINIGAME_PERK_XRAY]", 
+				"IconName": "", 
+				"UseTimes": [
+					1
+				], 
+				"LevelID": 2
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkItemBowlingProperties", 
+			"aliases": [
+				"special_item_bowling"
+			], 
+			"objdata": {
+				"TypeName": "special_item_bowling", 
+				"ClassName": "MiniGamePerkItemBowling", 
+				"Description": "[MINIGAME_PERK_BOWLING]", 
+				"IconName": "", 
+				"UseTimes": [
+					1
+				], 
+				"LevelID": 3
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkItemRefreshCardProperties", 
+			"aliases": [
+				"special_item_refresh_card"
+			], 
+			"objdata": {
+				"TypeName": "special_item_refresh_card", 
+				"ClassName": "MiniGamePerkItemRefreshCard", 
+				"Description": "[MINIGAME_PERK_REFRESH_CARD]", 
+				"IconName": "", 
+				"UseTimes": [
+					1
+				], 
+				"LevelID": 0
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkItemTimeBackProperties", 
+			"aliases": [
+				"special_item_time_back"
+			], 
+			"objdata": {
+				"TypeName": "special_item_time_back", 
+				"ClassName": "MiniGamePerkItemTimeBack", 
+				"Description": "[MINIGAME_PERK_TIME_BACK]", 
+				"IconName": "", 
+				"UseTimes": [
+					1
+				], 
+				"LevelID": 1
+			}
+		}, 
+		{
+			"objclass": "MiniGamePerkGameTeamSkyProperties", 
+			"aliases": [
+				"special_item_team_sky"
+			], 
+			"objdata": {
+				"TypeName": "special_item_team_sky", 
+				"ClassName": "MiniGamePerkGameTeamSky", 
+				"Description": "[MINIGAME_PERK_TEAM_SKY]", 
+				"IconName": "", 
+				"TeamUnlocked": [
+					1, 
+					2, 
+					3
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,502 @@
+{
+	"#comment": "All PropertySheet objects should go here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "AwardConfigPropertySheet", 
+			"aliases": [
+				"AwardConfig"
+			], 
+			"objdata": {
+				"GiftBoxRewards": [
+					{
+						"Category": "GiftBox", 
+						"Award": "costumegroup_lod", 
+						"AwardQuantity": 1, 
+						"Probability": 2
+					}, 
+					{
+						"Category": "GiftBox", 
+						"AwardParam": "powerupflickzombie", 
+						"Probability": 2, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "GiftBox", 
+						"AwardParam": "powerupwizardfinger", 
+						"Probability": 2, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "GiftBox", 
+						"AwardParam": "powerupsnowball", 
+						"Probability": 2, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "GiftBox", 
+						"AwardParam": "powerupflamethrower", 
+						"Probability": 2, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "GiftBox", 
+						"AwardParam": "", 
+						"Probability": 1, 
+						"Award": "gems", 
+						"AwardQuantity": 10
+					}, 
+					{
+						"Category": "VasebreakerGiftBox", 
+						"Award": "costumegroup_lod", 
+						"AwardQuantity": 1, 
+						"Probability": 4
+					}, 
+					{
+						"Category": "VasebreakerGiftBox", 
+						"AwardParam": "powerupvasebreakerbutter", 
+						"Probability": 5, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "VasebreakerGiftBox", 
+						"AwardParam": "powerupvasebreakermove", 
+						"Probability": 5, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "VasebreakerGiftBox", 
+						"AwardParam": "powerupvasebreakerreveal", 
+						"Probability": 5, 
+						"Award": "powerupuse", 
+						"AwardQuantity": 1
+					}, 
+					{
+						"Category": "VasebreakerGiftBox", 
+						"AwardParam": "", 
+						"Probability": 3, 
+						"Award": "gems", 
+						"AwardQuantity": 20
+					}, 
+					{
+						"Category": "FirstGiftBox", 
+						"Award": "costumegroup_lod", 
+						"AwardQuantity": 1, 
+						"Probability": 1
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "StackImageProps", 
+			"aliases": [
+				"StackImageCoins"
+			], 
+			"objdata": {
+				"Image": [
+					"IMAGE_UI_COINS_STACK_0", 
+					"IMAGE_UI_COINS_STACK_1", 
+					"IMAGE_UI_COINS_STACK_2", 
+					"IMAGE_UI_COINS_STACK_3", 
+					"IMAGE_UI_COINS_STACK_4", 
+					"IMAGE_UI_COINS_STACK_5", 
+					"IMAGE_UI_COINS_STACK_6", 
+					"IMAGE_UI_COINS_STACK_7"
+				], 
+				"Threshold": [
+					5000, 
+					10000, 
+					20000, 
+					40000, 
+					100000, 
+					150000, 
+					200000, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "StackImageProps", 
+			"aliases": [
+				"StackImageCoinsPrize"
+			], 
+			"objdata": {
+				"Image": [
+					"IMAGE_UI_COINS_STACK_0", 
+					"IMAGE_UI_COINS_STACK_1", 
+					"IMAGE_UI_COINS_STACK_2", 
+					"IMAGE_UI_COINS_STACK_3", 
+					"IMAGE_UI_COINS_STACK_4", 
+					"IMAGE_UI_COINS_STACK_5", 
+					"IMAGE_UI_COINS_STACK_6", 
+					"IMAGE_UI_COINS_STACK_7"
+				], 
+				"Threshold": [
+					100, 
+					250, 
+					500, 
+					1000, 
+					2500, 
+					5000, 
+					10000, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"CakeTankDrops1"
+			], 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "modern_superfanimp", 
+						"Hypnotized": true, 
+						"TossGridXDelta": -4.7, 
+						"TossGridYDelta": -2, 
+						"SpawnGridZDelta": 2, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 350
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"CakeTankDrops2"
+			], 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "birthday_juggler", 
+						"Hypnotized": true, 
+						"TossGridXDelta": -1.7, 
+						"TossGridYDelta": -1, 
+						"SpawnGridXDelta": -0.5, 
+						"SpawnGridZDelta": 1.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 200
+					}, 
+					{
+						"Type": "birthday_juggler", 
+						"Hypnotized": true, 
+						"TossGridXDelta": -1.7, 
+						"TossGridYDelta": 1, 
+						"SpawnGridXDelta": -0.5, 
+						"SpawnGridZDelta": 1.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 200
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"CakeTankDrops3"
+			], 
+			"objdata": {
+				"Collectables": [
+					"plantfood", 
+					"coin_silver", 
+					"sun_medium"
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"CakeTankDrops4"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"ZombieChristmasCakeTankDrops1"
+			], 
+			"objdata": {
+				"ZombieHordes": [
+					{
+						"Type": "christmas", 
+						"Hypnotized": false, 
+						"BasicQuantity": 2, 
+						"DynamicQuantity": 2, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 2, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 350
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"ZombieChristmasCakeTankDrops2"
+			], 
+			"objdata": {
+				"ZombieHordes": [
+					{
+						"Type": "christmas", 
+						"Hypnotized": false, 
+						"BasicQuantity": 5, 
+						"DynamicQuantity": 4, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 1.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 250
+					}, 
+					{
+						"Type": "nutcracker", 
+						"Hypnotized": false, 
+						"BasicQuantity": 1, 
+						"DynamicQuantity": 0, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 1.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 250
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"ZombieChristmasCakeTankDrops3"
+			], 
+			"objdata": {
+				"ZombieHordes": [
+					{
+						"Type": "christmas", 
+						"Hypnotized": false, 
+						"BasicQuantity": 8, 
+						"DynamicQuantity": 3, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 1.0, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 150
+					}, 
+					{
+						"Type": "nutcracker", 
+						"Hypnotized": false, 
+						"BasicQuantity": 1, 
+						"DynamicQuantity": 0, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 1.0, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 150
+					}, 
+					{
+						"Type": "christmas_gargantuar", 
+						"Hypnotized": false, 
+						"BasicQuantity": 1, 
+						"DynamicQuantity": 0, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 1.0, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 150
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieDropProps", 
+			"aliases": [
+				"ZombieChristmasCakeTankDrops4"
+			], 
+			"objdata": {
+				"ZombieHordes": [
+					{
+						"Type": "christmas", 
+						"Hypnotized": false, 
+						"BasicQuantity": 10, 
+						"DynamicQuantity": 3, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 0.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 50
+					}, 
+					{
+						"Type": "nutcracker", 
+						"Hypnotized": false, 
+						"BasicQuantity": 1, 
+						"DynamicQuantity": 0, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 0.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 50
+					}, 
+					{
+						"Type": "christmas_gargantuar", 
+						"Hypnotized": false, 
+						"BasicQuantity": 1, 
+						"DynamicQuantity": 3, 
+						"TossGridXRange": 3, 
+						"TossGridYRange": 5, 
+						"SpawnGridXDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridYDelta": {
+							"Min": -0.5, 
+							"Max": 0.5
+						}, 
+						"SpawnGridZDelta": 0.5, 
+						"TossDuration": 2.0, 
+						"TossApexHeight": 50
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "StackImageProps", 
+			"aliases": [
+				"StackImageGems"
+			], 
+			"objdata": {
+				"Image": [
+					"IMAGE_UI_GEMS_STACK_1", 
+					"IMAGE_UI_GEMS_STACK_2", 
+					"IMAGE_UI_GEMS_STACK_3", 
+					"IMAGE_UI_GEMS_STACK_4", 
+					"IMAGE_UI_GEMS_STACK_5"
+				], 
+				"Threshold": [
+					25, 
+					75, 
+					200, 
+					500, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "StackImageProps", 
+			"aliases": [
+				"StackImageSprouts"
+			], 
+			"objdata": {
+				"Image": [
+					"IMAGE_UI_SPROUTS_STACK_1", 
+					"IMAGE_UI_SPROUTS_STACK_2", 
+					"IMAGE_UI_SPROUTS_STACK_3", 
+					"IMAGE_UI_SPROUTS_STACK_4", 
+					"IMAGE_UI_SPROUTS_STACK_5", 
+					"IMAGE_UI_SPROUTS_STACK_6"
+				], 
+				"Threshold": [
+					2, 
+					3, 
+					5, 
+					10, 
+					25, 
+					-1
+				]
+			}
+		}, 
+		{
+			"#comment": "Note I am hijacking this struct.  The 'images' below are popanim animation name suffixes rather than image filenames.", 
+			"objclass": "StackImageProps", 
+			"aliases": [
+				"StackImageTickets"
+			], 
+			"objdata": {
+				"Image": [
+					"IMAGE_UI_TICKETS_STACK_1", 
+					"IMAGE_UI_TICKETS_STACK_2", 
+					"IMAGE_UI_TICKETS_STACK_3", 
+					"IMAGE_UI_TICKETS_STACK_4", 
+					"IMAGE_UI_TICKETS_STACK_4"
+				], 
+				"Threshold": [
+					4, 
+					10, 
+					20, 
+					50, 
+					-1
+				]
+			}
+		}
+	]
+}

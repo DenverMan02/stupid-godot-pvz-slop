@@ -1,0 +1,56 @@
+{
+	"lastUID": 18, 
+	"objects": [
+		{
+			"aliases": [
+				"LevelOfTheDayProps"
+			], 
+			"objclass": "LevelOfTheDayPropertySheet", 
+			"objdata": {
+				"#comment1": "none, valentines, stpatrick, easter, birthday, summernights, halloween, foodfight, xmas ", 
+				"#comment2": "progressive2, unvault1, timetwist1, thingsandstuff ", 
+				"#comment3": "background art changes only: egypt_bg, cowboy_bg, future_bg, dark_bg, beach_bg, iceage_bg, lostcity_bg, eighties_bg, dino_bg ", 
+				"AndroidExcludelist": [], 
+				"ConsecutiveCostumeRewardConsolationCategory": "Fallback", 
+				"FirstTimeNarrative": "LOD_LEVEL_INTRO", 
+				"KilledZombieExcludelist": [
+					"RTID(cannon@ZombieTypes)", 
+					"RTID(pirate_captain@ZombieTypes)", 
+					"RTID(prospector@ZombieTypes)", 
+					"RTID(chicken_farmer@ZombieTypes)", 
+					"RTID(west_bull@ZombieTypes)"
+				], 
+				"ReplayLevelCostCoins": 1000, 
+				"SenorPinataInterval": 5, 
+				"SoonestIntroLevel": "egypt6"
+			}
+		}, 
+		{
+			"aliases": [
+				"PinataSoundDefault"
+			], 
+			"objclass": "PinataSoundData", 
+			"objdata": {
+				"MegaPinataBreakSound": "Play_UI_LOD_Zombie_Pinata_Break_Special", 
+				"MegaPinataDropSound": "Play_UI_LOD_Zombie_Pinata_Drop", 
+				"PinataBreakSound": "Play_UI_LOD_Pinata_Break", 
+				"PinataConsolationBreakSound": "Play_UI_LOD_Zombie_Pinata_Break_Basic", 
+				"PinataDropSound": "Play_UI_LOD_Pinata_Drop"
+			}
+		}, 
+		{
+			"aliases": [
+				"PinataSoundXmasDefault"
+			], 
+			"objclass": "PinataSoundData", 
+			"objdata": {
+				"MegaPinataBreakSound": "Play_UI_LOD_Reward_Present_Open_Super", 
+				"MegaPinataDropSound": "Play_UI_LOD_Reward_Present_Drop_Super", 
+				"PinataBreakSound": "Play_UI_LOD_Reward_Present_Open", 
+				"PinataConsolationBreakSound": "Play_UI_LOD_Reward_Present_Open", 
+				"PinataDropSound": "Play_UI_LOD_Reward_Present_Drop"
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,49 @@
+{
+	"#comment": "Embedded RSB Version", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PVZVersion", 
+			"objdata": {
+				"major": 0, 
+				"minor": 0, 
+				"content": 0, 
+				"version_app": "7", 
+				"update_url": "", 
+				"manifest_md5": "C8D6A681C416A5824815D0F54D81BE79", 
+				"version_notice": {
+					"VersionCode": 400, 
+					"TitleImage": "", 
+					"NoticeTextContent": "[UPDATE_NOTICE_CONTEXT]", 
+					"VersionUrl": "[VERSION_UPDATE_URL]"
+				}, 
+				"FilesVersion": [
+					{
+						"FileName": "pvz2_ss.txt", 
+						"FileMD5": "C12D7241AA63012D6DEA378A58433AB3", 
+						"FileVersion": 234, 
+						"TableIndex": "TABLE_INVALID"
+					}, 
+					{
+						"FileName": "pvz2_ac1.txt", 
+						"FileMD5": "8FAA5A48D2A092316D95BB644875CEE1", 
+						"FileVersion": 234, 
+						"TableIndex": "TABLE_ACTIVITY_CONFIG"
+					}, 
+					{
+						"FileName": "pvz2_pc.txt", 
+						"FileMD5": "28A5F0519142408D36BA633F112A1D45", 
+						"FileVersion": 234, 
+						"TableIndex": "TABLE_PURCHASE_CONFIG"
+					}, 
+					{
+						"FileName": "pvz2_m.txt", 
+						"FileMD5": "91BAFB974CA129A6D32A673329B9281A", 
+						"FileVersion": 234, 
+						"TableIndex": "TABLE_MAGENTO"
+					}
+				]
+			}
+		}
+	]
+}

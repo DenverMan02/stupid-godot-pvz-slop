@@ -1,0 +1,501 @@
+{
+	"#comment": "Make new game features here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_6_slots", 
+				"LocalizedName": "[UPGRADE_6_SLOTS]", 
+				"LocalizedInfo": "[UPGRADE_6_SLOTS_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SEEDBANK_SLOT", 
+				"Feature": "6_slots", 
+				"IsAPowerup": true, 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_7_slots", 
+				"LocalizedName": "[UPGRADE_7_SLOTS]", 
+				"LocalizedInfo": "[UPGRADE_7_SLOTS_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SEEDBANK_SLOT", 
+				"Feature": "7_slots", 
+				"IsAPowerup": true, 
+				"HomeWorld": "pirate"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_8_slots", 
+				"LocalizedName": "[UPGRADE_8_SLOTS]", 
+				"LocalizedInfo": "[UPGRADE_8_SLOTS_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SEEDBANK_SLOT", 
+				"Feature": "seedslot2", 
+				"IsAPowerup": true, 
+				"HomeWorld": "cowboy"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "manual_mowers_1", 
+				"LocalizedName": "[UPGRADE_MANUAL_MOWERS_1]", 
+				"LocalizedInfo": "[UPGRADE_MANUAL_MOWERS_DESCRIPTION_1]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MANUAL_MOWERS", 
+				"Feature": "manual_mowers_1", 
+				"HomeWorld": "future"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_shovel_1", 
+				"LocalizedName": "[UPGRADE_SHOVEL]", 
+				"LocalizedInfo": "[UPGRADE_SHOVEL_1_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SUN_SHOVEL", 
+				"Feature": "sunshovel_lvl1", 
+				"IsAPowerup": true, 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_kongfu_coming_soon", 
+				"LocalizedName": "[UPGRADE_KONGFU_COMING_SOON]", 
+				"LocalizedInfo": "[UPGRADE_KONGFU_COMING_SOON_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_CARD_COMING_SOON", 
+				"Feature": "kongfu_coming_soon", 
+				"IsAPowerup": false, 
+				"HomeWorld": "kongfu"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_shovel_2", 
+				"LocalizedName": "[UPGRADE_SHOVEL]", 
+				"LocalizedInfo": "[UPGRADE_SHOVEL_2_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SUN_SHOVEL", 
+				"Feature": "sunshovel_lvl2", 
+				"IsAPowerup": true, 
+				"HomeWorld": "pirate"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_shovel_3", 
+				"LocalizedName": "[UPGRADE_SHOVEL]", 
+				"LocalizedInfo": "[UPGRADE_SHOVEL_3_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SUN_SHOVEL", 
+				"Feature": "sunshovel3", 
+				"IsAPowerup": true, 
+				"HomeWorld": "cowboy"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_shovel_4", 
+				"LocalizedName": "[UPGRADE_SHOVEL]", 
+				"LocalizedInfo": "[UPGRADE_SHOVEL_4_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SUN_SHOVEL", 
+				"Feature": "sunshovel_lvl4", 
+				"IsAPowerup": true, 
+				"HomeWorld": "kongfu"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_pf_refresh", 
+				"LocalizedName": "[UPGRADE_PF_REFRESH]", 
+				"LocalizedInfo": "[UPGRADE_PF_REFRESH_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_PLANTFOOD_REFRESH", 
+				"Feature": "pf_refresh", 
+				"IsAPowerup": true, 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "wallnut_firstaid", 
+				"LocalizedName": "[UPGRADE_WALLNUT_FIRSTAID]", 
+				"LocalizedInfo": "[UPGRADE_WALLNUT_FIRSTAID_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_WALLNUT_FIRSTAID", 
+				"Feature": "wallnut_firstaid", 
+				"IsAPowerup": true, 
+				"HomeWorld": "cowboy"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "plantfood_extra_slot_1", 
+				"LocalizedName": "[UPGRADE_PLANTFOOD_EXTRA_SLOT_1]", 
+				"LocalizedInfo": "[UPGRADE_PLANTFOOD_EXTRA_SLOT_1_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_PLANTFOOD_SLOT", 
+				"Feature": "pf_slots_lvl1", 
+				"IsAPowerup": true, 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "plantfood_extra_slot_2", 
+				"LocalizedName": "[UPGRADE_PLANTFOOD_EXTRA_SLOT_2]", 
+				"LocalizedInfo": "[UPGRADE_PLANTFOOD_EXTRA_SLOT_2_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_PLANTFOOD_SLOT", 
+				"Feature": "pf_slots_lvl2", 
+				"IsAPowerup": true, 
+				"HomeWorld": "pirate"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "plantfood_extra_slot_3", 
+				"LocalizedName": "[UPGRADE_PLANTFOOD_EXTRA_SLOT_3]", 
+				"LocalizedInfo": "[UPGRADE_PLANTFOOD_EXTRA_SLOT_3_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_PLANTFOOD_SLOT", 
+				"Feature": "pf_slots_lvl3", 
+				"IsAPowerup": true, 
+				"HomeWorld": "cowboy"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "starting_sun_1", 
+				"LocalizedName": "[UPGRADE_STARTING_SUN]", 
+				"LocalizedInfo": "[UPGRADE_STARTING_SUN_1_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_STARTING_SUN", 
+				"Feature": "starting_sun_lvl1", 
+				"IsAPowerup": true, 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "starting_sun_2", 
+				"LocalizedName": "[UPGRADE_STARTING_SUN]", 
+				"LocalizedInfo": "[UPGRADE_STARTING_SUN_2_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_STARTING_SUN", 
+				"Feature": "startingsun2", 
+				"IsAPowerup": true, 
+				"HomeWorld": "pirate"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "starting_sun_3", 
+				"LocalizedName": "[UPGRADE_STARTING_SUN]", 
+				"LocalizedInfo": "[UPGRADE_STARTING_SUN_3_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_STARTING_SUN", 
+				"Feature": "startingsun3", 
+				"IsAPowerup": true, 
+				"HomeWorld": "cowboy"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "starting_sun_4", 
+				"LocalizedName": "[UPGRADE_STARTING_SUN]", 
+				"LocalizedInfo": "[UPGRADE_STARTING_SUN_4_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_STARTING_SUN", 
+				"Feature": "startingsun4", 
+				"IsAPowerup": true, 
+				"HomeWorld": "kongfu"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_1", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_1_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_1", 
+				"Feature": "feature_mower_type_1", 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_2", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_2_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_2", 
+				"Feature": "feature_mower_type_2", 
+				"HomeWorld": "pirate"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_3", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_3_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_3", 
+				"Feature": "feature_mower_type_3", 
+				"HomeWorld": "cowboy"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_4", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_4_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_4", 
+				"Feature": "feature_mower_type_4", 
+				"HomeWorld": "kongfu"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_5", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_5_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_5", 
+				"Feature": "feature_mower_type_5", 
+				"HomeWorld": "future"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_6", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_6_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_6", 
+				"Feature": "feature_mower_type_6", 
+				"HomeWorld": "dark"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_7", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_7_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_7", 
+				"Feature": "feature_mower_type_7", 
+				"HomeWorld": "beach"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_8", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_8_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_8", 
+				"Feature": "feature_mower_type_8", 
+				"HomeWorld": "iceage"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_10", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_10_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_10", 
+				"Feature": "feature_mower_type_10", 
+				"HomeWorld": "lostcity"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_11", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_11_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_11", 
+				"Feature": "feature_mower_type_11", 
+				"HomeWorld": "eighties"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_12", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_12_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_12", 
+				"Feature": "feature_mower_type_12", 
+				"HomeWorld": "dino"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_13", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_13_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_13", 
+				"Feature": "feature_mower_type_13", 
+				"HomeWorld": "modern"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_14", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_14_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_14", 
+				"Feature": "feature_mower_type_14", 
+				"HomeWorld": "steam"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_15", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_15_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_15", 
+				"Feature": "feature_mower_type_15", 
+				"HomeWorld": "renai"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_16", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_16_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_16", 
+				"Feature": "feature_mower_type_16", 
+				"HomeWorld": "heian"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "mower_type_17", 
+				"LocalizedName": "[UPGRADE_MOWER]", 
+				"LocalizedInfo": "[UPGRADE_MOWER_17_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_MOWER_17", 
+				"Feature": "feature_mower_type_17", 
+				"HomeWorld": "moon"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "data_collection_terminal_18", 
+				"LocalizedName": "[DATA_COLLECTION_TERMINAL]", 
+				"LocalizedInfo": "[DATA_COLLECTION_TERMINAL_18_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_DATA_COLLECTION_TERMINAL_18", 
+				"Feature": "data_collection_terminal_18", 
+				"HomeWorld": "moon"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "lightning_finger_19", 
+				"LocalizedName": "[LIGHTNING_FINGER]", 
+				"LocalizedInfo": "[LIGHTNING_FINGER_19_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_LIGHTNING_FINGER_19", 
+				"Feature": "lightning_finger_19", 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "floating_finger_20", 
+				"LocalizedName": "[FLOATING_FINGER]", 
+				"LocalizedInfo": "[FLOATING_FINGER_20_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_FLOATING_FINGER_20", 
+				"Feature": "floating_finger_20", 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "scissor_finger_21", 
+				"LocalizedName": "[SCISSOR_FINGER]", 
+				"LocalizedInfo": "[SCISSOR_FINGER_21_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_SCISSOR_FINGER_21", 
+				"Feature": "scissor_finger_21", 
+				"HomeWorld": "egypt"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_cannon_1", 
+				"LocalizedName": "[UPGRADE_CANNON_1]", 
+				"LocalizedInfo": "[UPGRADE_CANNON_1_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_CANON1", 
+				"Feature": "feature_cannon_1", 
+				"IsAPowerup": false, 
+				"HomeWorld": "skycity"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "upgrade_shield_1", 
+				"LocalizedName": "[UPGRADE_SHIELD_1]", 
+				"LocalizedInfo": "[UPGRADE_SHIELD_1_INFO]", 
+				"UpgradeImage": "IMAGE_WORLDMAP_COMMON_UPGRADE_SHIELD1", 
+				"Feature": "feature_shield_1", 
+				"IsAPowerup": false, 
+				"HomeWorld": "skycity"
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "powerupvasebreakermove", 
+				"LocalizedName": "[POWERUP_VASEBREAKER_MOVE]", 
+				"LocalizedInfo": "[POWERUP_VASEBREAKER_MOVE_DESCRIPTION]", 
+				"UpgradeImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERMOVE", 
+				"Feature": "feature_powerup_vasebreaker_move", 
+				"HomeWorld": "modern", 
+				"IsAPowerup": true
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "powerupvasebreakerbutter", 
+				"LocalizedName": "[POWERUP_VASEBREAKER_BUTTER]", 
+				"LocalizedInfo": "[POWERUP_VASEBREAKER_BUTTER_DESCRIPTION]", 
+				"UpgradeImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERBUTTER", 
+				"Feature": "feature_powerup_vasebreaker_butter", 
+				"HomeWorld": "modern", 
+				"IsAPowerup": true
+			}
+		}, 
+		{
+			"objclass": "GameFeatureType", 
+			"objdata": {
+				"TypeName": "powerupvasebreakerreveal", 
+				"LocalizedName": "[POWERUP_VASEBREAKER_REVEAL]", 
+				"LocalizedInfo": "[POWERUP_VASEBREAKER_REVEAL_DESCRIPTION]", 
+				"UpgradeImage": "IMAGE_UI_POWERUPS_POWER_VASEBREAKERREVEAL", 
+				"Feature": "feature_powerup_vasebreaker_reveal", 
+				"HomeWorld": "modern", 
+				"IsAPowerup": true
+			}
+		}
+	]
+}

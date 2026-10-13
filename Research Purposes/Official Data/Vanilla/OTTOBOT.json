@@ -1,0 +1,1031 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"OttoBot"
+			], 
+			"objclass": "OttoBotData", 
+			"objdata": {
+				"Config": {
+					"NumberValues": {
+						"GameTickInterval": 1, 
+						"IdealPlantToSunProductionRatio": 20, 
+						"TopChoices": 1
+					}, 
+					"StringValues": {
+						"TestLevel": "dev/test_ottobot"
+					}
+				}, 
+				"PlantData": [
+					{
+						"PlantID": "sunflower", 
+						"Keywords": [
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "wallnut", 
+						"Keywords": [
+							"lane", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "potatomine", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "bloomerang", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"pierce"
+						]
+					}, 
+					{
+						"PlantID": "cabbagepult", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber"
+						]
+					}, 
+					{
+						"PlantID": "repeater", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "bonkchoy", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee", 
+							"backward"
+						]
+					}, 
+					{
+						"PlantID": "peashooter", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "iceberg", 
+						"Keywords": [
+							"lane", 
+							"trap", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "gravebuster", 
+						"Keywords": [
+							"gravebuster"
+						]
+					}, 
+					{
+						"PlantID": "twinsunflower", 
+						"Keywords": [
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "kernelpult", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "snapdragon", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "spikeweed", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"pierce"
+						]
+					}, 
+					{
+						"PlantID": "springbean", 
+						"Keywords": [
+							"springbean"
+						]
+					}, 
+					{
+						"PlantID": "coconutcannon", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"area", 
+							"manual_auto"
+						]
+					}, 
+					{
+						"PlantID": "threepeater", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "spikerock", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"pierce"
+						]
+					}, 
+					{
+						"PlantID": "cherry_bomb", 
+						"Keywords": [
+							"attack", 
+							"area", 
+							"instant"
+						]
+					}, 
+					{
+						"PlantID": "splitpea", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"backward"
+						]
+					}, 
+					{
+						"PlantID": "chilibean", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "peapod", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "lightningreed", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "melonpult", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber"
+						]
+					}, 
+					{
+						"PlantID": "tallnut", 
+						"Keywords": [
+							"lane", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "wintermelon", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "hotpotato", 
+						"Keywords": [
+							"hotpotato"
+						]
+					}, 
+					{
+						"PlantID": "pepperpult", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber"
+						]
+					}, 
+					{
+						"PlantID": "chardguard", 
+						"Keywords": [
+							"lane", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "stunion", 
+						"Keywords": [
+							"lane", 
+							"trap", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "rotobaga", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "redstinger", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "akee", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber"
+						]
+					}, 
+					{
+						"PlantID": "endurian", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "stallia", 
+						"Keywords": [
+							"lane", 
+							"trap", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "goldleaf", 
+						"Keywords": [
+							"goldleaf"
+						]
+					}, 
+					{
+						"PlantID": "laser_bean", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"pierce"
+						]
+					}, 
+					{
+						"PlantID": "blover", 
+						"Keywords": [
+							"board", 
+							"antiair", 
+							"instant"
+						]
+					}, 
+					{
+						"PlantID": "citron", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "empea", 
+						"Keywords": [
+							"empea"
+						]
+					}, 
+					{
+						"PlantID": "holonut", 
+						"Keywords": [
+							"lane", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "magnifyinggrass", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"manual_auto"
+						]
+					}, 
+					{
+						"PlantID": "powerplant", 
+						"Keywords": [
+							"powerplant"
+						]
+					}, 
+					{
+						"PlantID": "sunshroom", 
+						"Keywords": [
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "puffshroom", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "fumeshroom", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "sunbean", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "magnetshroom", 
+						"Keywords": [
+							"multilane", 
+							"magnetshroom"
+						]
+					}, 
+					{
+						"PlantID": "phatbeet", 
+						"Keywords": [
+							"area", 
+							"attack", 
+							"melee"
+						]
+					}, 
+					{
+						"PlantID": "celerystalker", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee", 
+							"backward"
+						]
+					}, 
+					{
+						"PlantID": "thymewarp", 
+						"Keywords": [
+							"thymewarp"
+						]
+					}, 
+					{
+						"PlantID": "garlic", 
+						"Keywords": [
+							"lane", 
+							"wall", 
+							"shift"
+						]
+					}, 
+					{
+						"PlantID": "sporeshroom", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber"
+						]
+					}, 
+					{
+						"PlantID": "intensivecarrot", 
+						"Keywords": [
+							"intensivecarrot"
+						]
+					}, 
+					{
+						"PlantID": "primalpeashooter", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "primalwallnut", 
+						"Keywords": [
+							"lane", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "perfumeshroom", 
+						"Keywords": [
+							"perfumeshroom"
+						]
+					}, 
+					{
+						"PlantID": "primalsunflower", 
+						"Keywords": [
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "primalpotatomine", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "lilypad", 
+						"Keywords": [
+							"lane", 
+							"water"
+						]
+					}, 
+					{
+						"PlantID": "tanglekelp", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"trap", 
+							"water"
+						]
+					}, 
+					{
+						"PlantID": "bowlingbulb", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "guacodile", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "banana", 
+						"Keywords": [
+							"area", 
+							"attack", 
+							"manual_target"
+						]
+					}, 
+					{
+						"PlantID": "moonflower", 
+						"Keywords": [
+							"sun", 
+							"moonflower"
+						]
+					}, 
+					{
+						"PlantID": "nightshade", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee", 
+							"shadow"
+						]
+					}, 
+					{
+						"PlantID": "shadowshroom", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"shadow"
+						]
+					}, 
+					{
+						"PlantID": "dusklobber", 
+						"Keywords": [
+							"multilane", 
+							"lobber", 
+							"attack", 
+							"shadow"
+						]
+					}, 
+					{
+						"PlantID": "grimrose", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"trap", 
+							"shadow"
+						]
+					}, 
+					{
+						"PlantID": "snowpea", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "powerlily", 
+						"Keywords": [
+							"powerlily"
+						]
+					}, 
+					{
+						"PlantID": "squash", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "torchwood", 
+						"Keywords": [
+							"torchwood"
+						]
+					}, 
+					{
+						"PlantID": "jalapeno", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"instant"
+						]
+					}, 
+					{
+						"PlantID": "imitater", 
+						"Keywords": [
+							"imitater"
+						]
+					}, 
+					{
+						"PlantID": "starfruit", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "hypnoshroom", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "peanut", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"wall"
+						]
+					}, 
+					{
+						"PlantID": "chomper", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee"
+						]
+					}, 
+					{
+						"PlantID": "homingthistle", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "ghostpepper", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "sweetpotato", 
+						"Keywords": [
+							"lane", 
+							"wall", 
+							"shift"
+						]
+					}, 
+					{
+						"PlantID": "sapfling", 
+						"Keywords": [
+							"lane", 
+							"lobber", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "hurrikale", 
+						"Keywords": [
+							"lane", 
+							"stun", 
+							"knockback"
+						]
+					}, 
+					{
+						"PlantID": "firepeashooter", 
+						"Keywords": [
+							"lane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "dandelion", 
+						"Keywords": [
+							"multilane", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "lavaguava", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "toadstool", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee", 
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "strawburst", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"manual"
+						]
+					}, 
+					{
+						"PlantID": "cactus", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"pierce"
+						]
+					}, 
+					{
+						"PlantID": "electricblueberry", 
+						"Keywords": [
+							"board", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "jackolantern", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"manual_hold"
+						]
+					}, 
+					{
+						"PlantID": "grapeshot", 
+						"Keywords": [
+							"area", 
+							"attack", 
+							"instant"
+						]
+					}, 
+					{
+						"PlantID": "coldsnapdragon", 
+						"Keywords": [
+							"multilane", 
+							"attack", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "shrinkingviolet", 
+						"Keywords": [
+							"area", 
+							"trap", 
+							"shrinkingviolet"
+						]
+					}, 
+					{
+						"PlantID": "bloominghearts", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"lobber"
+						]
+					}, 
+					{
+						"PlantID": "escaperoot", 
+						"Keywords": [
+							"lane", 
+							"trap"
+						]
+					}, 
+					{
+						"PlantID": "goldbloom", 
+						"Keywords": [
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "wasabiwhip", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee"
+						]
+					}, 
+					{
+						"PlantID": "explodeonut", 
+						"Keywords": [
+							"lane", 
+							"trap", 
+							"wall", 
+							"area"
+						]
+					}, 
+					{
+						"PlantID": "kiwibeast", 
+						"Keywords": [
+							"lane", 
+							"wall", 
+							"melee", 
+							"area"
+						]
+					}, 
+					{
+						"PlantID": "bombegranate", 
+						"Keywords": [
+							"attack", 
+							"area", 
+							"instant"
+						]
+					}, 
+					{
+						"PlantID": "applemortar", 
+						"Keywords": [
+							"multilane", 
+							"attack", 
+							"lobber", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "witchhazel", 
+						"Keywords": [
+							"board", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "parsnip", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"melee"
+						]
+					}, 
+					{
+						"PlantID": "missiletoe", 
+						"Keywords": [
+							"manual_target", 
+							"stun"
+						]
+					}, 
+					{
+						"PlantID": "hotdate", 
+						"Keywords": [
+							"lane", 
+							"attack", 
+							"wall", 
+							"shift"
+						]
+					}, 
+					{
+						"PlantID": "caulipower", 
+						"Keywords": [
+							"board", 
+							"attack"
+						]
+					}, 
+					{
+						"PlantID": "solartomato", 
+						"Keywords": [
+							"area", 
+							"stun", 
+							"sun"
+						]
+					}, 
+					{
+						"PlantID": "electricpeashooter", 
+						"Keywords": [
+							"multilane", 
+							"attack", 
+							"pierce"
+						]
+					}, 
+					{
+						"PlantID": "aloe", 
+						"Keywords": [
+							"aloe"
+						]
+					}, 
+					{
+						"PlantID": "electriccurrant", 
+						"Keywords": [
+							"electriccurrant"
+						]
+					}, 
+					{
+						"PlantID": "hollyknight", 
+						"Keywords": [
+							"lane", 
+							"wall", 
+							"manual_target"
+						]
+					}
+				], 
+				"Loadouts": [
+					{
+						"LoadoutID": 0, 
+						"Plants": [
+							"sunflower", 
+							"wallnut", 
+							"potatomine", 
+							"bloomerang", 
+							"cabbagepult", 
+							"repeater", 
+							"bonkchoy"
+						]
+					}, 
+					{
+						"LoadoutID": 1, 
+						"Plants": [
+							"melonpult", 
+							"wallnut", 
+							"potatomine", 
+							"bloomerang", 
+							"cabbagepult", 
+							"repeater", 
+							"bonkchoy"
+						]
+					}, 
+					{
+						"LoadoutID": 2, 
+						"Plants": []
+					}, 
+					{
+						"LoadoutID": 3, 
+						"Plants": []
+					}, 
+					{
+						"LoadoutID": 4, 
+						"Plants": []
+					}, 
+					{
+						"LoadoutID": 5, 
+						"Plants": []
+					}
+				], 
+				"KeywordData": [
+					{
+						"Keyword": "sun", 
+						"LaneWeights": [
+							1, 
+							0.8, 
+							0.5, 
+							0.2, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1
+						]
+					}, 
+					{
+						"Keyword": "lane", 
+						"LaneWeights": [
+							0.1, 
+							0.1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1, 
+							1
+						]
+					}, 
+					{
+						"Keyword": "wall", 
+						"LaneWeights": [
+							0.2, 
+							0.1, 
+							0.1, 
+							0.2, 
+							0.2, 
+							0.6, 
+							0.8, 
+							1, 
+							1
+						]
+					}, 
+					{
+						"Keyword": "trap", 
+						"LaneWeights": [
+							0.4, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.8, 
+							1, 
+							0.5, 
+							0.3, 
+							0.1
+						]
+					}, 
+					{
+						"Keyword": "attack", 
+						"LaneWeights": [
+							0.1, 
+							0.3, 
+							1, 
+							1, 
+							1, 
+							0.8, 
+							0.8, 
+							0.4, 
+							0.1
+						]
+					}, 
+					{
+						"Keyword": "pierce", 
+						"LaneWeights": [
+							0.5, 
+							0.5, 
+							1, 
+							1, 
+							1, 
+							0.7, 
+							0.6, 
+							0.2, 
+							0.1
+						]
+					}, 
+					{
+						"Keyword": "lobber", 
+						"LaneWeights": [
+							0.7, 
+							1, 
+							1, 
+							0.8, 
+							0.6, 
+							0.3, 
+							0.1, 
+							0.1, 
+							0.1
+						]
+					}, 
+					{
+						"Keyword": "melee", 
+						"LaneWeights": [
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.1, 
+							0.5, 
+							1, 
+							0.7, 
+							0.3
+						]
+					}
+				], 
+				"ScriptData": [
+					{
+						"ActionID": "Level", 
+						"Args": [
+							"Egypt6", 
+							"1"
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,33 @@
+{
+	"#comment": "Allowed Universal Links", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "UniversalLinkTranslationPropertySheet", 
+			"aliases": [
+				"AllowedUniversaLinks"
+			], 
+			"objdata": {
+				"Version": 1, 
+				"Entries": [
+					{
+						"UniversalLink": "arena", 
+						"AppAction": "deeplink:joust"
+					}, 
+					{
+						"UniversalLink": "adventure", 
+						"AppAction": "deeplink:egypt"
+					}, 
+					{
+						"UniversalLink": "penny", 
+						"AppAction": "deeplink:rift"
+					}, 
+					{
+						"UniversalLink": "event-1", 
+						"AppAction": "deeplink:event:1"
+					}
+				]
+			}
+		}
+	]
+}

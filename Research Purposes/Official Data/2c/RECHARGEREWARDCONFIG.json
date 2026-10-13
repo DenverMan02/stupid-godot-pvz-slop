@@ -1,0 +1,676 @@
+{
+	"#comment": "Recharge Reward Config here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "RechargeRewardConfig", 
+			"objdata": {
+				"StartDate": 20150829, 
+				"EndDate": 20150904, 
+				"DefaultBanner": "IMAGE_UI_RECHARGEREWARD_BANNER_FIRST_RECHARGE", 
+				"FirstRechargeRewardContentAndroid": [
+					{
+						"i": 1008, 
+						"q": 1
+					}, 
+					{
+						"i": 3008, 
+						"q": 50
+					}, 
+					{
+						"i": 4013, 
+						"q": 50000
+					}
+				], 
+				"RewardContentIOS": [
+					{
+						"RequiredAmount": 6, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_6", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 60, 
+						"RewardList": [
+							{
+								"i": 2209, 
+								"q": 10
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 36, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_36", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 190, 
+						"RandomReward": true, 
+						"RewardList": [
+							{
+								"i": 1033, 
+								"q": 1, 
+								"w": 8
+							}, 
+							{
+								"i": 1019, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1022, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1083, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1025, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1024, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1063, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1030, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1037, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1076, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1029, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1040, 
+								"q": 1, 
+								"w": 2
+							}, 
+							{
+								"i": 1075, 
+								"q": 1, 
+								"w": 2
+							}, 
+							{
+								"i": 1023, 
+								"q": 1, 
+								"w": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 98, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_98", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 380, 
+						"RewardList": [
+							{
+								"i": 1032, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 200, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_200", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 580, 
+						"RewardList": [
+							{
+								"i": 1132, 
+								"q": 30
+							}, 
+							{
+								"i": 4013, 
+								"q": 50000
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 500, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_500", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 1132, 
+								"q": 30
+							}, 
+							{
+								"i": 4013, 
+								"q": 50000
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 750, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_750", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 200011, 
+								"q": 3
+							}, 
+							{
+								"i": 111084, 
+								"q": 3
+							}, 
+							{
+								"i": 1023, 
+								"q": 3
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 1000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_1000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 1345, 
+								"q": 30
+							}, 
+							{
+								"i": 3008, 
+								"q": 500
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 1500, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_1500", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23098, 
+								"q": 10
+							}, 
+							{
+								"i": 23011, 
+								"q": 10
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 2000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_2000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 111085, 
+								"q": 3
+							}, 
+							{
+								"i": 200009, 
+								"q": 3
+							}, 
+							{
+								"i": 111019, 
+								"q": 3
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 3000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_3000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23046, 
+								"q": 1
+							}, 
+							{
+								"i": 25330, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 5000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_5000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23226, 
+								"q": 50
+							}, 
+							{
+								"i": 23124, 
+								"q": 150
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 7000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_7000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 22000830, 
+								"q": 140
+							}, 
+							{
+								"i": 22001010, 
+								"q": 140
+							}, 
+							{
+								"i": 22000390, 
+								"q": 140
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 10000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_10000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23225, 
+								"q": 80
+							}, 
+							{
+								"i": 25636, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 15000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_15000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23098, 
+								"q": 200
+							}, 
+							{
+								"i": 61504, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 20000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_20000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23225, 
+								"q": 100
+							}, 
+							{
+								"i": 3008, 
+								"q": 8888
+							}
+						]
+					}
+				], 
+				"RewardContentAndroid": [
+					{
+						"RequiredAmount": 6, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_6", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 60, 
+						"RewardList": [
+							{
+								"i": 2209, 
+								"q": 10
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 36, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_36", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 190, 
+						"RandomReward": true, 
+						"RewardList": [
+							{
+								"i": 1033, 
+								"q": 1, 
+								"w": 8
+							}, 
+							{
+								"i": 1019, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1022, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1083, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1025, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1024, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1063, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1030, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1037, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1076, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1029, 
+								"q": 1, 
+								"w": 4
+							}, 
+							{
+								"i": 1040, 
+								"q": 1, 
+								"w": 2
+							}, 
+							{
+								"i": 1075, 
+								"q": 1, 
+								"w": 2
+							}, 
+							{
+								"i": 1023, 
+								"q": 1, 
+								"w": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 98, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_98", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 380, 
+						"RewardList": [
+							{
+								"i": 1032, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 200, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_200", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 580, 
+						"RewardList": [
+							{
+								"i": 1132, 
+								"q": 30
+							}, 
+							{
+								"i": 4013, 
+								"q": 50000
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 500, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_500", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 1132, 
+								"q": 50
+							}, 
+							{
+								"i": 4013, 
+								"q": 100000
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 750, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_750", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 200011, 
+								"q": 3
+							}, 
+							{
+								"i": 111084, 
+								"q": 3
+							}, 
+							{
+								"i": 1023, 
+								"q": 3
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 1000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_1000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 1345, 
+								"q": 30
+							}, 
+							{
+								"i": 3008, 
+								"q": 500
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 1500, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_1500", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23098, 
+								"q": 10
+							}, 
+							{
+								"i": 23011, 
+								"q": 10
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 2000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_2000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 111085, 
+								"q": 3
+							}, 
+							{
+								"i": 200009, 
+								"q": 3
+							}, 
+							{
+								"i": 111019, 
+								"q": 3
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 3000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_3000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23046, 
+								"q": 1
+							}, 
+							{
+								"i": 25330, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 5000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_5000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23226, 
+								"q": 50
+							}, 
+							{
+								"i": 23124, 
+								"q": 150
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 7000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_7000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 22000830, 
+								"q": 140
+							}, 
+							{
+								"i": 22001010, 
+								"q": 140
+							}, 
+							{
+								"i": 22000390, 
+								"q": 140
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 10000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_10000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23225, 
+								"q": 80
+							}, 
+							{
+								"i": 25636, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 15000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_15000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23098, 
+								"q": 200
+							}, 
+							{
+								"i": 61504, 
+								"q": 1
+							}
+						]
+					}, 
+					{
+						"RequiredAmount": 20000, 
+						"BannerImage": "IMAGE_UI_RECHARGEREWARD_BANNER_1", 
+						"RewardImage": "IMAGE_UI_RECHARGEREWARD_REWARD_20000", 
+						"RewardDescription": "[ABC]", 
+						"ContentWidth": 800, 
+						"RewardList": [
+							{
+								"i": 23225, 
+								"q": 100
+							}, 
+							{
+								"i": 3008, 
+								"q": 8888
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

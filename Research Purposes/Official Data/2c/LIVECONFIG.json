@@ -1,0 +1,32 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PVZLiveConfig", 
+			"objdata": {
+				"ContentRefreshMinutes": 60, 
+				"EASquaredAwaitAdRewardTimeout": 0.5, 
+				"Toggles": [
+					{
+						"Key": "EASquared", 
+						"Enabled": true, 
+						"DisplayName": "EA Squared", 
+						"Category": "live"
+					}, 
+					{
+						"Key": "SupersonicUnityAds", 
+						"Enabled": true, 
+						"DisplayName": "Supersonic Unity Ads", 
+						"Category": "live"
+					}, 
+					{
+						"Key": "EASquaredAwaitAdCloseDelay", 
+						"Enabled": true, 
+						"DisplayName": "EA2 Delay Ad Closing", 
+						"Category": "live"
+					}
+				]
+			}
+		}
+	]
+}

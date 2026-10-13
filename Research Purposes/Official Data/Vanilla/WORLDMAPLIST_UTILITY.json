@@ -1,0 +1,45 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"uid": "1.0.ffffffff", 
+			"objclass": "WorldMapList", 
+			"objdata": {
+				"MapList": [
+					{
+						"MapName": "coming_soon", 
+						"UnlockedFrom": "", 
+						"EntryPoint": "", 
+						"LastLevel": [
+							"TODO"
+						], 
+						"ComingSoon": true, 
+						"Hidden": false, 
+						"UniverseIconOffset": {
+							"mX": 0, 
+							"mY": 0
+						}, 
+						"Disabled": false, 
+						"UseNightSpiral": false, 
+						"DrawWorldName": false, 
+						"PreviewEventPanel": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"WorldResources": {
+							"ID": 0, 
+							"ResGroups": [], 
+							"ImagePrefix": "IMAGE_WORLDMAP_COMING_SOON", 
+							"AnimationPrefix": "POPANIM_WORLDMAP_COMING_SOON", 
+							"AnimationDetails": [
+								{
+									"AnimNumber": 1, 
+									"AnimReplayDelayTimeMin": 0.0, 
+									"AnimReplayDelayTimeMax": 0.0, 
+									"UsesRasterizedImagesInAnim": false
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,522 @@
+{
+	"#comment": "All Tool Packet related objects should go here", 
+	"#comment": "Hardcoded comparisons require a tool_ prefix to your type", 
+	"#comment": "Remember to add an image for each tool for the conveyor/packet display: IMAGE_UI_PACKETS_TOOLS_XXXX", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_powertile_alpha", 
+				"ToolPacketClass": "ToolPacketData_PowerTile", 
+				"ResourceGroup": "PowerTileModule", 
+				"PowerTileType": "alpha", 
+				"Cost": 200
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_powertile_beta", 
+				"ToolPacketClass": "ToolPacketData_PowerTile", 
+				"ResourceGroup": "PowerTileModule", 
+				"PowerTileType": "beta", 
+				"Cost": 200
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_powertile_gamma", 
+				"ToolPacketClass": "ToolPacketData_PowerTile", 
+				"ResourceGroup": "PowerTileModule", 
+				"PowerTileType": "gamma", 
+				"Cost": 200
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_powertile_delta", 
+				"ToolPacketClass": "ToolPacketData_PowerTile", 
+				"ResourceGroup": "PowerTileModule", 
+				"PowerTileType": "delta"
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_powertile_epsilon", 
+				"ToolPacketClass": "ToolPacketData_PowerTile", 
+				"ResourceGroup": "PowerTileModule", 
+				"PowerTileType": "epsilon"
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_bowlingbulb1", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "PlantBowlingBulb", 
+				"TypeToSpawn": "BowlingBulbDefault", 
+				"SpawnOffset": {
+					"x": -15.0, 
+					"y": -16.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Attack_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_BOWLINGBULB_PROJECTILE1", 
+				"CursorAnim": "animation", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_bowlingbulb2", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "PlantBowlingBulb", 
+				"TypeToSpawn": "BowlingBulbDefault2", 
+				"SpawnOffset": {
+					"x": -15.0, 
+					"y": -20.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Attack_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_BOWLINGBULB_PROJECTILE2", 
+				"CursorAnim": "animation", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_bowlingbulb3", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "PlantBowlingBulb", 
+				"TypeToSpawn": "BowlingBulbDefault3", 
+				"SpawnOffset": {
+					"x": -15.0, 
+					"y": -25.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Attack_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_BOWLINGBULB_PROJECTILE3", 
+				"CursorAnim": "animation", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_bowlingbulb_explode", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "PlantBowlingBulb", 
+				"TypeToSpawn": "PlantfoodBowlerDefault", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_BOWLINGBULB_PLANTFOOD_PROJECTILE", 
+				"CursorAnim": "animation", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_bowlingbulb_mega", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "PlantBowlingBulb", 
+				"TypeToSpawn": "BowlingBulbMegaDefault", 
+				"SpawnOffset": {
+					"x": -5.0, 
+					"y": -25.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_BOWLINGBULB_PROJECTILE1", 
+				"CursorAnim": "animation", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_wallnut", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "NewBowling", 
+				"TypeToSpawn": "BowlingWallnutProjectileDefault", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_NEWBOWLING_NUT", 
+				"CursorAnim": "idle", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}, 
+				"ResourceGroups": [
+					"PlantWallnut", 
+					"PlantWallnutAudio", 
+					"PlantExplodeONut", 
+					"PlantExplodeONutAudio", 
+					"PlantPotatomineAudio", 
+					"MiniGameBowlingAudio"
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_wallnut_big", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "NewBowling", 
+				"TypeToSpawn": "BowlingBigWallnutProjectileDefault", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_NEWBOWLING_BIGNUT", 
+				"CursorAnim": "idle02", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}, 
+				"ResourceGroups": [
+					"PlantWallnut", 
+					"PlantWallnutAudio", 
+					"PlantExplodeONut", 
+					"PlantExplodeONutAudio", 
+					"PlantPotatomineAudio", 
+					"MiniGameBowlingAudio"
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_wallnut_explode", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "NewBowling", 
+				"TypeToSpawn": "BowlingWallnutBoomProjectileDefault", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_NEWBOWLING_EXPLODENUT", 
+				"CursorAnim": "idle03", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}, 
+				"ResourceGroups": [
+					"PlantWallnut", 
+					"PlantWallnutAudio", 
+					"PlantExplodeONut", 
+					"PlantExplodeONutAudio", 
+					"PlantPotatomineAudio", 
+					"MiniGameBowlingAudio"
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_wallnut_primeval", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "NewBowling", 
+				"TypeToSpawn": "BowlingPrimevalWallnutProjectileDefault", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_EFFECTS_NEWBOWLING_PRIMEVALNUT", 
+				"CursorAnim": "idle04", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}, 
+				"ResourceGroups": [
+					"PlantWallnut", 
+					"PlantWallnutAudio", 
+					"PlantExplodeONut", 
+					"PlantExplodeONutAudio", 
+					"PlantPotatomineAudio", 
+					"MiniGameBowlingAudio"
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_projectile_jackfruit", 
+				"ToolPacketClass": "ToolPacketData_Projectile", 
+				"ResourceGroup": "PlantJackfruit", 
+				"TypeToSpawn": "BowlingJackfruitProjectileDefault", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "Play_Plant_BowlingBulb_Plantfood_Fire_Minigame", 
+				"CursorPopAnim": "POPANIM_PLANT_JACKFRUIT", 
+				"CursorAnim": "walk_bowling", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}, 
+				"ResourceGroups": [
+					"NewBowling", 
+					"PlantJackfruit", 
+					"PlantJackfruitAudio", 
+					"MiniGameBowlingAudio"
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_rift_plant_levelup", 
+				"ToolPacketClass": "ToolPacketData_RiftPlantLevelUp", 
+				"CostList": [
+					1000, 
+					3000, 
+					8000, 
+					10000
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_rift_plantfood", 
+				"ToolPacketClass": "ToolPacketData_RiftPlantfood", 
+				"CostList": [
+					100, 
+					200, 
+					400, 
+					800, 
+					1600, 
+					3200, 
+					6400, 
+					12800, 
+					25600
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_rift_artifact", 
+				"ToolPacketClass": "ToolPacketData_RiftArtifact", 
+				"CostList": [
+					200, 
+					800, 
+					2000, 
+					4000, 
+					8000, 
+					16000, 
+					32000
+				]
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_buff_small_elixir", 
+				"ToolPacketClass": "ToolPacketData_SmallElixir", 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "", 
+				"CursorPopAnim": "POPANIM_EFFECTS_ARTIFACT_CALABASH_ELIXIR", 
+				"CursorAnim": "animation1", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_buff_medium_elixir", 
+				"ToolPacketClass": "ToolPacketData_MediumElixir", 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "", 
+				"CursorPopAnim": "POPANIM_EFFECTS_ARTIFACT_CALABASH_ELIXIR", 
+				"CursorAnim": "animation2", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_buff_large_elixir", 
+				"ToolPacketClass": "ToolPacketData_LargeElixir", 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "", 
+				"CursorPopAnim": "POPANIM_EFFECTS_ARTIFACT_CALABASH_ELIXIR", 
+				"CursorAnim": "animation3", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_buff_thunder_elixir", 
+				"ToolPacketClass": "ToolPacketData_ThunderElixir", 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "", 
+				"CursorPopAnim": "POPANIM_EFFECTS_ARTIFACT_CALABASH_ELIXIR", 
+				"CursorAnim": "animation4", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_atlantis_shell", 
+				"ToolPacketClass": "ToolPacketData_AtlantisShell", 
+				"ResourceGroup": "AtlantisShellGroup", 
+				"TypeToSpawn": "", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "", 
+				"CursorPopAnim": "POPANIM_EFFECTS_ATLANTIS_SHELL", 
+				"CursorAnim": "idle", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_aquarium_zombie1", 
+				"ToolPacketClass": "ToolPacketData_Aquarium", 
+				"Cost": 100, 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "Normal", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": ""
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_aquarium_zombie2", 
+				"ToolPacketClass": "ToolPacketData_Aquarium", 
+				"Cost": 0, 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "Dive", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": ""
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_aquarium_zombie3", 
+				"ToolPacketClass": "ToolPacketData_Aquarium", 
+				"Cost": 750, 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "Priest", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": ""
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_aquarium_zombie4", 
+				"ToolPacketClass": "ToolPacketData_Aquarium", 
+				"Cost": 1000, 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "Poseidon", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": ""
+			}
+		}, 
+		{
+			"objclass": "ToolPacketProps", 
+			"objdata": {
+				"TypeName": "tool_santa_present", 
+				"ToolPacketClass": "ToolPacketData_SantaPresent", 
+				"Cost": 0, 
+				"ResourceGroup": "", 
+				"TypeToSpawn": "", 
+				"SpawnOffset": {
+					"x": -10.0, 
+					"y": -27.0
+				}, 
+				"SpawnSound": "", 
+				"CursorPopAnim": "POPANIM_EFFECTS_SANTA_PRESENT", 
+				"CursorAnim": "idle", 
+				"CursorOffset": {
+					"x": -100, 
+					"y": -97
+				}
+			}
+		}
+	]
+}

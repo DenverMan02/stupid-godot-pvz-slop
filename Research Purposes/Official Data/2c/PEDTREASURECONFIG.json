@@ -1,0 +1,1388 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "TreasureConfig", 
+			"aliases": [
+				"PedTreasureConfig"
+			], 
+			"objdata": {
+				"TreasurePools": [
+					{
+						"map": "Bronze", 
+						"purchasetype": "gold", 
+						"price": 10000, 
+						"tpactid": 2240, 
+						"img": "IMAGE_UI_STORE_PENDANTCAN_BTN1", 
+						"title": "IMAGE_UI_STORE_PENDANTCAN_POOL1", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_EGYPTPIRATE"
+					}, 
+					{
+						"map": "Gold", 
+						"purchasetype": "gem", 
+						"price": 8, 
+						"tpactid": 2241, 
+						"img": "IMAGE_UI_STORE_PENDANTCAN_BTN2", 
+						"title": "IMAGE_UI_STORE_PENDANTCAN_POOL2", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_WESTKONGFU"
+					}, 
+					{
+						"map": "Mithril", 
+						"purchasetype": "gem", 
+						"price": 35, 
+						"tpactid": 2242, 
+						"img": "IMAGE_UI_STORE_PENDANTCAN_BTN3", 
+						"title": "IMAGE_UI_STORE_PENDANTCAN_POOL3", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_FURTURE"
+					}
+				], 
+				"TreasureRewardList": [
+					{
+						"Sku": "epic_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_clock", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_explode", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 30, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 30, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 30, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 30, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 30, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 30, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "normal_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 50, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "normal_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 50, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "normal_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 50, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_accelerate", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_sunmoney", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_clock", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_cost", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_explode", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_duck", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_clock", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_explode", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 100, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 100, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 100, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 100, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 100, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "magic_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 100, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_accelerate_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_sunmoney_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_duck_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_accelerate_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_sunmoney_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_duck_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 15, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "unique_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_accelerate", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_sunmoney", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_clock", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_cost", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_explode", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_duck", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_fertilizer", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_drum", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_regeneration", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_clock", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_explode", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_torch", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_snowflake", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_pole", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_accelerate_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_sunmoney_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_duck_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 10, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_accelerate_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_sunmoney_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "unique_duck_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_fertilizer_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_drum_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_regeneration_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_clock_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_explode_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_torch_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_snowflake_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_pole_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_cost", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 2, 
+						"map": "Bronze", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_cost", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 60, 
+						"map": "Gold", 
+						"leaf": 0
+					}, 
+					{
+						"Sku": "epic_cost", 
+						"Type": "accessory", 
+						"Count": 1, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 1, 
+						"Probability": 40, 
+						"map": "Mithril", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "epic_cost_piece", 
+						"Type": "accessory_piece", 
+						"Count": 2, 
+						"Probability": 20, 
+						"map": "Mithril", 
+						"leaf": 1
+					}
+				]
+			}
+		}
+	]
+}

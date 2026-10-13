@@ -1,0 +1,130 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "CollectionType", 
+			"objdata": {
+				"CollectionName": "collection_fairytale", 
+				"MaxRare": 3, 
+				"Names": [
+					"[COLLECTION_FAIRYTALE_NAME1]", 
+					"[COLLECTION_FAIRYTALE_NAME2]", 
+					"[COLLECTION_FAIRYTALE_NAME3]"
+				], 
+				"Description": "[COLLECTION_FAIRYTALE_DESCRIPTION]", 
+				"Boosts": [
+					[
+						{
+							"PlantBoostProps": "RTID(TrueDamageAppend@PropertySheets)", 
+							"Values": [
+								0.02, 
+								10, 
+								10, 
+								0.3
+							]
+						}
+					], 
+					[
+						{
+							"PlantBoostProps": "RTID(TrueDamageAppend@PropertySheets)", 
+							"Values": [
+								0.04, 
+								10, 
+								10, 
+								0.35
+							]
+						}
+					], 
+					[
+						{
+							"PlantBoostProps": "RTID(TrueDamageAppend@PropertySheets)", 
+							"Values": [
+								0.1, 
+								10, 
+								10, 
+								0.4
+							]
+						}
+					]
+				], 
+				"DesStuff": [
+					[
+						"2", 
+						"10", 
+						"10", 
+						"30"
+					], 
+					[
+						"4", 
+						"10", 
+						"10", 
+						"35"
+					], 
+					[
+						"10", 
+						"10", 
+						"10", 
+						"40"
+					]
+				], 
+				"BlackList": [
+					"sunflower", 
+					"wallnut", 
+					"twinsunflower", 
+					"springbean", 
+					"powerlily", 
+					"gravebuster", 
+					"torchwood", 
+					"tallnut", 
+					"peach", 
+					"firegourd", 
+					"blover", 
+					"empea", 
+					"holonut", 
+					"powerplant", 
+					"hypnoshroom", 
+					"sunshroom", 
+					"sunbean", 
+					"magnetshroom", 
+					"streetlamp", 
+					"coffeebean", 
+					"lilypad", 
+					"sweetpotato", 
+					"sapfling", 
+					"hurrikale", 
+					"hotpotato", 
+					"chardguard", 
+					"saucer", 
+					"groundcherry", 
+					"pineapple", 
+					"birthsunflower", 
+					"goldleaf", 
+					"thymewarp", 
+					"garlic", 
+					"intensivecarrot", 
+					"shrinkingviolet", 
+					"primalwallnut", 
+					"perfumeshroom", 
+					"primalsunflower", 
+					"bramble", 
+					"moonflower", 
+					"explodeonut", 
+					"smallexplodeonu", 
+					"goldbloom", 
+					"flattenedshroom", 
+					"aloes", 
+					"waxgourd", 
+					"imppear", 
+					"olive", 
+					"hydrocotyledrummer", 
+					"icelotus", 
+					"dendrobiumguard", 
+					"gumnut", 
+					"olivepit", 
+					"beercoconut", 
+					"flowerpot"
+				]
+			}
+		}
+	]
+}

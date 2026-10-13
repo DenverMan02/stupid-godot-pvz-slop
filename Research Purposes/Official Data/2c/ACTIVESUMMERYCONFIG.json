@@ -1,0 +1,171 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ActiveSummeryConfig", 
+			"aliases": [
+				"ActiveSummeryConfig"
+			], 
+			"objdata": {
+				"FirePlants": [
+					"iceshroom", 
+					"wintermelon", 
+					"electricblueberry", 
+					"snowpea"
+				], 
+				"IcePlants": [
+					"flamelady", 
+					"pinkstarfruit", 
+					"matchflower", 
+					"fireshroom"
+				], 
+				"CompositPlantName": "matchflower", 
+				"CompositPlantNeedNum": 1, 
+				"CompositMatName": "mat_evolution_fireflower", 
+				"CompositMatNeedNum": 100, 
+				"FitPlantDamageRate": 1.5, 
+				"UnFitPlantDamageRate": 0.5, 
+				"FireStartLevel": "vacation_boss_west", 
+				"IceStartLevel": "vacation_boss_kongfu", 
+				"MaterialCostEachLottery": 2, 
+				"RedPlants": {
+					"ListType": "whitelist", 
+					"List": [
+						"flamelady", 
+						"matchflower", 
+						"pinkstarfruit", 
+						"fireshroom", 
+						"cherry_bomb", 
+						"chilibean", 
+						"jalapeno", 
+						"firepeashooter", 
+						"roseswordman", 
+						"anthurium", 
+						"groundcherry", 
+						"redstinger", 
+						"dragonfruit"
+					]
+				}, 
+				"BluePlants": {
+					"ListType": "whitelist", 
+					"List": [
+						"iceshroom", 
+						"wintermelon", 
+						"electricblueberry", 
+						"snowpea", 
+						"iceburg", 
+						"holonut"
+					]
+				}, 
+				"IceLotteryList": [
+					{
+						"i": 23003, 
+						"q": 50
+					}, 
+					{
+						"i": 4013, 
+						"q": 1000
+					}, 
+					{
+						"i": 22006, 
+						"q": 2
+					}, 
+					{
+						"i": 111321, 
+						"q": 5
+					}, 
+					{
+						"i": 3008, 
+						"q": 50
+					}, 
+					{
+						"i": 22014, 
+						"q": 10
+					}, 
+					{
+						"i": 23003, 
+						"q": 100
+					}, 
+					{
+						"i": 4013, 
+						"q": 10000
+					}, 
+					{
+						"i": 22006, 
+						"q": 10
+					}, 
+					{
+						"i": 111321, 
+						"q": 10
+					}, 
+					{
+						"i": 3008, 
+						"q": 1000
+					}, 
+					{
+						"i": 22014, 
+						"q": 2
+					}
+				], 
+				"IceSpecialLottery": {
+					"i": 23003, 
+					"q": 50
+				}, 
+				"FireLotteryList": [
+					{
+						"i": 111120, 
+						"q": 5
+					}, 
+					{
+						"i": 4013, 
+						"q": 1000
+					}, 
+					{
+						"i": 22003, 
+						"q": 2
+					}, 
+					{
+						"i": 111320, 
+						"q": 5
+					}, 
+					{
+						"i": 3008, 
+						"q": 50
+					}, 
+					{
+						"i": 22013, 
+						"q": 10
+					}, 
+					{
+						"i": 111120, 
+						"q": 10
+					}, 
+					{
+						"i": 4013, 
+						"q": 10000
+					}, 
+					{
+						"i": 22003, 
+						"q": 10
+					}, 
+					{
+						"i": 111320, 
+						"q": 10
+					}, 
+					{
+						"i": 3008, 
+						"q": 1000
+					}, 
+					{
+						"i": 22013, 
+						"q": 2
+					}
+				], 
+				"FireSpecialLottery": {
+					"i": 111120, 
+					"q": 10
+				}
+			}
+		}
+	]
+}

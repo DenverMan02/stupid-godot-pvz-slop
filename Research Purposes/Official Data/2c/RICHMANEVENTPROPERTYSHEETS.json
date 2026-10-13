@@ -1,0 +1,139 @@
+{
+	"#comment": "RichMan Event Config here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "EventUIPropertySheet", 
+			"aliases": [
+				"EventUIConfigData"
+			], 
+			"objdata": {
+				"EventConfigs": [
+					{
+						"EventId": 3, 
+						"Config": {
+							"Header": "[EVENT0_HEADER]", 
+							"Description": "[EVENT0_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_3", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_DARK"
+						}
+					}, 
+					{
+						"EventId": 0, 
+						"Config": {
+							"Header": "[EVENT1_HEADER]", 
+							"Description": "[EVENT1_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_0", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_LIGHT"
+						}
+					}, 
+					{
+						"EventId": 1, 
+						"Config": {
+							"Header": "[EVENT11_HEADER]", 
+							"Description": "[EVENT11_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_1", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_DARK"
+						}
+					}, 
+					{
+						"EventId": 2, 
+						"Config": {
+							"Header": "[EVENT2_HEADER]", 
+							"Description": "[EVENT2_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_2", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_LIGHT"
+						}
+					}, 
+					{
+						"EventId": 5, 
+						"Config": {
+							"Header": "[EVENT3_HEADER]", 
+							"Description": "[EVENT3_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_5", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_DARK"
+						}
+					}, 
+					{
+						"EventId": 6, 
+						"Config": {
+							"Header": "[EVENT4_HEADER]", 
+							"Description": "[EVENT4_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_6", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_LIGHT"
+						}
+					}, 
+					{
+						"EventId": 7, 
+						"Config": {
+							"Header": "[EVENT12_HEADER]", 
+							"Description": "[EVENT12_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_7", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_DARK"
+						}
+					}, 
+					{
+						"EventId": 8, 
+						"Config": {
+							"Header": "[EVENT5_HEADER]", 
+							"Description": "[EVENT5_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_8", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_LIGHT"
+						}
+					}, 
+					{
+						"EventId": 9, 
+						"Config": {
+							"Header": "[EVENT6_HEADER]", 
+							"Description": "[EVENT6_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_9", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_DARK"
+						}
+					}, 
+					{
+						"EventId": 12, 
+						"Config": {
+							"Header": "[EVENT8_HEADER]", 
+							"Description": "[EVENT8_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_12", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_LIGHT"
+						}
+					}, 
+					{
+						"EventId": 11, 
+						"Config": {
+							"Header": "[EVENT9_HEADER]", 
+							"Description": "[EVENT9_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_11", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_DARK"
+						}
+					}, 
+					{
+						"EventId": 13, 
+						"Config": {
+							"Header": "[EVENT10_HEADER]", 
+							"Description": "[EVENT10_DES]", 
+							"IconImage": "IMAGE_UI_RICHMAN_ICON_13", 
+							"BackgroundImage": "IMAGE_UI_RICHMAN_ENTRY_BG_LIGHT"
+						}
+					}
+				], 
+				"BoardConfig": {
+					"NumOfColumns": 9, 
+					"NumOfRows": 5, 
+					"Gap": 2, 
+					"InitialX": 10, 
+					"InitialY": 10
+				}, 
+				"PieceConfig": {
+					"ArtCenter": {
+						"x": -40.0, 
+						"y": -45.0
+					}, 
+					"TurnRightNode": 8, 
+					"TurnLeftNode": 20
+				}
+			}
+		}
+	]
+}

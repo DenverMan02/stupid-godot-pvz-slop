@@ -1,0 +1,141 @@
+{
+	"#comment": "Consumption Reward here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ConsumptionRewardInfo", 
+			"objdata": {
+				"ExtraPlantList": [
+					"hypnoshroom", 
+					"bowlingbulb", 
+					"holonut", 
+					"starfruit", 
+					"oakshooter", 
+					"lemon", 
+					"twinsunflower", 
+					"magicshroom", 
+					"anthurium", 
+					"pineapple", 
+					"citron", 
+					"torchwood", 
+					"guacodile", 
+					"snowpea", 
+					"melonpult", 
+					"dandelion", 
+					"tanglekelp", 
+					"banana", 
+					"iceshroom", 
+					"wintermelon", 
+					"lotusshower", 
+					"cherry_bomb", 
+					"snapdragon", 
+					"carrotlauncher", 
+					"laser_bean", 
+					"coconutcannon", 
+					"lightningreed", 
+					"fireshroom", 
+					"homingthistle", 
+					"sunshroom"
+				], 
+				"TopicItem": [
+					{
+						"Topic": "act_6", 
+						"Prefix": "avatar_piece_", 
+						"LawnStringNotify": "[CONSUMPTION_NOTIFY_1]", 
+						"ImageButton": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_CONSUMPTION_1", 
+						"ImageTitle": "IMAGE_UI_CONSUMPTION_REWARD_TITLE_LABEL_3", 
+						"RewardItem": [
+							{
+								"Name": "gem", 
+								"Count": 50, 
+								"ItemDesc": "[CONSUMPTION_DESC_1]", 
+								"DesValue": 100
+							}, 
+							{
+								"Name": "coin", 
+								"Count": 150000, 
+								"ItemDesc": "[CONSUMPTION_DESC_2]", 
+								"DesValue": 300
+							}, 
+							{
+								"Name": "accessory_epic_clock", 
+								"ItemDesc": "[CONSUMPTION_DESC_3]", 
+								"DesValue": 600
+							}, 
+							{
+								"Name": "avatar_piece_hypnoshroom", 
+								"Count": 30, 
+								"ItemDesc": "[CONSUMPTION_DESC_4]", 
+								"DesValue": 1200
+							}, 
+							{
+								"Name": "avatar_piece_birthsunflower", 
+								"Count": 30, 
+								"ItemDesc": "[CONSUMPTION_DESC_5]", 
+								"DesValue": 2000
+							}, 
+							{
+								"Name": "accessory_epic_regeneration", 
+								"ItemDesc": "[CONSUMPTION_DESC_6]", 
+								"DesValue": 3500
+							}, 
+							{
+								"Name": "accessory_unique_explode", 
+								"ItemDesc": "[CONSUMPTION_DESC_7]", 
+								"DesValue": 5000
+							}
+						]
+					}, 
+					{
+						"Topic": "act_7", 
+						"Prefix": "avatar_piece_", 
+						"LawnStringNotify": "[CONSUMPTION_NOTIFY_2]", 
+						"ImageButton": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_CONSUMPTION_2", 
+						"ImageTitle": "IMAGE_UI_CONSUMPTION_REWARD_TITLE_LABEL_4", 
+						"RewardItem": [
+							{
+								"Name": "gem", 
+								"Count": 50, 
+								"ItemDesc": "[CONSUMPTION_DESC_8]", 
+								"DesValue": 100
+							}, 
+							{
+								"Name": "coin", 
+								"Count": 150000, 
+								"ItemDesc": "[CONSUMPTION_DESC_9]", 
+								"DesValue": 300
+							}, 
+							{
+								"Name": "accessory_epic_explode", 
+								"ItemDesc": "[CONSUMPTION_DESC_10]", 
+								"DesValue": 600
+							}, 
+							{
+								"Name": "avatar_piece_hypnoshroom", 
+								"Count": 30, 
+								"ItemDesc": "[CONSUMPTION_DESC_11]", 
+								"DesValue": 1200
+							}, 
+							{
+								"Name": "avatar_piece_magicshroom", 
+								"Count": 30, 
+								"ItemDesc": "[CONSUMPTION_DESC_12]", 
+								"DesValue": 2000
+							}, 
+							{
+								"Name": "accessory_epic_snowflake", 
+								"ItemDesc": "[CONSUMPTION_DESC_13]", 
+								"DesValue": 3500
+							}, 
+							{
+								"Name": "accessory_unique_drum", 
+								"ItemDesc": "[CONSUMPTION_DESC_14]", 
+								"DesValue": 5000
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

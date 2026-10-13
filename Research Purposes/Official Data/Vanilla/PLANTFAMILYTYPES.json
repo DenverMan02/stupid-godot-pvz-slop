@@ -1,0 +1,216 @@
+{
+	"#comment": "Make new family types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Enforcemint"
+			], 
+			"objdata": {
+				"TypeName": "Enforcemint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_MELEE", 
+				"PacketIconColor": "PlantFamilyEnforcemint", 
+				"PlantAnimResourceGroup": "PlantEnforcemint", 
+				"PlantType": "enforcemint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_ENFORCEMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Ailmint"
+			], 
+			"objdata": {
+				"TypeName": "Ailmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_POISON", 
+				"PacketIconColor": "PlantFamilyAilmint", 
+				"PlantType": "ailmint", 
+				"PlantAnimResourceGroup": "PlantAilmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_AILMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Concealmint"
+			], 
+			"objdata": {
+				"TypeName": "Concealmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_SHADOW", 
+				"PacketIconColor": "PlantFamilyConcealmint", 
+				"PlantType": "concealmint", 
+				"PlantAnimResourceGroup": "PlantConcealmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_CONCEALMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Enlightenmint"
+			], 
+			"objdata": {
+				"TypeName": "Enlightenmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_SUN", 
+				"PacketIconColor": "PlantFamilyEnlightenmint", 
+				"PinataType": "egypt", 
+				"PlantType": "enlightenmint", 
+				"PlantAnimResourceGroup": "PlantEnlightenmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_ENLIGHTENMINT"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Filamint"
+			], 
+			"objdata": {
+				"TypeName": "Filamint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_ELECTRICITY", 
+				"PacketIconColor": "PlantFamilyFilamint", 
+				"PlantType": "filamint", 
+				"PlantAnimResourceGroup": "PlantFilamint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_FILAMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Reinforcemint"
+			], 
+			"objdata": {
+				"TypeName": "Reinforcemint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_DEFENSE", 
+				"PacketIconColor": "PlantFamilyReinforcemint", 
+				"PlantType": "reinforcemint", 
+				"PlantAnimResourceGroup": "PlantReinforcemint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_REINFORCEMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Armamint"
+			], 
+			"objdata": {
+				"TypeName": "Armamint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_LOBBER", 
+				"PacketIconColor": "PlantFamilyArmamint", 
+				"PlantType": "armamint", 
+				"PlantAnimResourceGroup": "PlantArmamint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_ARMAMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Bombardmint"
+			], 
+			"objdata": {
+				"TypeName": "Bombardmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_EXPLOSIVE", 
+				"PacketIconColor": "PlantFamilyBombardmint", 
+				"PlantType": "bombardmint", 
+				"PlantAnimResourceGroup": "PlantBombardmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_BOMBARDMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Containmint"
+			], 
+			"objdata": {
+				"TypeName": "Containmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_SLOW", 
+				"PacketIconColor": "PlantFamilyContainmint", 
+				"PlantType": "containmint", 
+				"PlantAnimResourceGroup": "PlantContainmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_CONTAINMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Peppermint"
+			], 
+			"objdata": {
+				"TypeName": "Peppermint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_FIRE", 
+				"PacketIconColor": "PlantFamilyPeppermint", 
+				"PlantType": "peppermint", 
+				"PlantAnimResourceGroup": "PlantPeppermint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_PEPPERMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Enchantmint"
+			], 
+			"objdata": {
+				"TypeName": "Enchantmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_MAGIC", 
+				"PacketIconColor": "PlantFamilyEnchantmint", 
+				"PlantType": "enchantmint", 
+				"PlantAnimResourceGroup": "PlantEnchantmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_ENCHANTMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Wintermint"
+			], 
+			"objdata": {
+				"TypeName": "Wintermint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_COLD", 
+				"PacketIconColor": "PlantFamilyWintermint", 
+				"PlantType": "wintermint", 
+				"PlantAnimResourceGroup": "PlantWintermint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_WINTERMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Spearmint"
+			], 
+			"objdata": {
+				"TypeName": "Spearmint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_SHARP", 
+				"PacketIconColor": "PlantFamilySpearmint", 
+				"PlantType": "spearmint", 
+				"PlantAnimResourceGroup": "PlantSpearmint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_SPEARMINT", 
+				"PinataType": "egypt"
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyType", 
+			"aliases": [
+				"Appeasemint"
+			], 
+			"objdata": {
+				"TypeName": "Appeasemint", 
+				"PacketIcon": "IMAGE_UI_PACKETS_MINTFAM_PEASHOOTER", 
+				"PacketIconColor": "PlantFamilyAppeasemint", 
+				"PlantType": "appeasemint", 
+				"PlantAnimResourceGroup": "PlantAppeasemint", 
+				"PlantAnim": "POPANIM_EMPOWERMINTS_PLANT_APPEASEMINT", 
+				"PinataType": "egypt"
+			}
+		}
+	]
+}

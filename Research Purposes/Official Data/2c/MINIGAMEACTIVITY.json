@@ -1,0 +1,173 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "MiniGameActivity", 
+			"aliases": [
+				"MiniGameActivity"
+			], 
+			"objdata": {
+				"MiniGames": [
+					{
+						"Name": "egypt4", 
+						"Probability": 3, 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN1"
+					}, 
+					{
+						"Name": "egypt4", 
+						"Probability": 3, 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN2"
+					}, 
+					{
+						"Name": "egypt6", 
+						"Probability": 10, 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN3"
+					}
+				], 
+				"RewardList": [
+					{
+						"Rewards": [
+							{
+								"Sku": "sunflower", 
+								"Type": "plant", 
+								"Count": 1
+							}, 
+							{
+								"Sku": "plant_piece_sunflower", 
+								"Type": "plant_piece", 
+								"Count": 4
+							}, 
+							{
+								"Sku": "dandelion", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN1", 
+						"Probability": 3, 
+						"Level": 1
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_dandelion", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "oakshooter", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN4", 
+						"Probability": 3, 
+						"Level": 1
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_pamegranate", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "pamegranate", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN3", 
+						"Probability": 3, 
+						"level": 1
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_peach", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "peach", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN2", 
+						"Probability": 3, 
+						"level": 2
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_puffshroom", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "puffshroom", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN1", 
+						"Probability": 3, 
+						"level": 2
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_starfruit", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "starfruit", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN1", 
+						"Probability": 3, 
+						"level": 2
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_citron", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "citron", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_GOLDCAN_BTN4", 
+						"Probability": 3, 
+						"level": 3
+					}, 
+					{
+						"Rewards": [
+							{
+								"Sku": "plant_piece_repeater", 
+								"Type": "plant_piece", 
+								"Count": 5
+							}, 
+							{
+								"Sku": "repeater", 
+								"Type": "plant", 
+								"Count": 1
+							}
+						], 
+						"Img": "IMAGE_UI_STORE_CHECKMARK", 
+						"Probability": 12, 
+						"level": 3
+					}
+				]
+			}
+		}
+	]
+}

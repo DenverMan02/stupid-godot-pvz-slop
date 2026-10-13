@@ -1,0 +1,325 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"RiftBaseConfigKey"
+			], 
+			"objclass": "RiftConfigSheet", 
+			"objdata": {
+				"EnergyRefillCap": 15, 
+				"EnergyRefillPeriodSeconds": 1440, 
+				"PerkSelectionCosts": [
+					0, 
+					5, 
+					10
+				], 
+				"RiftLevelCosts": [
+					5, 
+					5, 
+					5
+				], 
+				"ZPSBackupRewards": [
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2000
+					}
+				], 
+				"ZPSCap": 100, 
+				"ZPSDecayPeriodSeconds": 0, 
+				"ZPSGainedPerDifficultyLevel": [
+					15, 
+					20, 
+					30
+				], 
+				"ZPSResetValue": 0, 
+				"ZombossAvailableHours": 999, 
+				"ZombossCycleHours": 24, 
+				"ZombossFightsPerCycle": 1, 
+				"ZombossUnlockCost": 100, 
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1, 
+						"HitPointsLevel": 1
+					}, 
+					{
+						"AttackLevel": 2, 
+						"HitPointsLevel": 2
+					}, 
+					{
+						"AttackLevel": 3, 
+						"HitPointsLevel": 3
+					}, 
+					{
+						"AttackLevel": 4.5, 
+						"HitPointsLevel": 4.5
+					}, 
+					{
+						"AttackLevel": 5, 
+						"HitPointsLevel": 5
+					}, 
+					{
+						"AttackLevel": 8, 
+						"HitPointsLevel": 8
+					}, 
+					{
+						"AttackLevel": 9, 
+						"HitPointsLevel": 9
+					}, 
+					{
+						"AttackLevel": 10, 
+						"HitPointsLevel": 10
+					}, 
+					{
+						"AttackLevel": 11, 
+						"HitPointsLevel": 11
+					}, 
+					{
+						"AttackLevel": 12, 
+						"HitPointsLevel": 12
+					}, 
+					{
+						"AttackLevel": 13, 
+						"HitPointsLevel": 13
+					}, 
+					{
+						"AttackLevel": 14, 
+						"HitPointsLevel": 14
+					}, 
+					{
+						"AttackLevel": 15, 
+						"HitPointsLevel": 15
+					}, 
+					{
+						"AttackLevel": 16, 
+						"HitPointsLevel": 16
+					}, 
+					{
+						"AttackLevel": 17, 
+						"HitPointsLevel": 17
+					}, 
+					{
+						"AttackLevel": 18, 
+						"HitPointsLevel": 18
+					}, 
+					{
+						"AttackLevel": 19, 
+						"HitPointsLevel": 19
+					}, 
+					{
+						"AttackLevel": 20, 
+						"HitPointsLevel": 20
+					}, 
+					{
+						"AttackLevel": 21, 
+						"HitPointsLevel": 21
+					}
+				], 
+				"ZombieLevelForDifficulty": [
+					1, 
+					3, 
+					6
+				], 
+				"BaseScoreFactor1": 420.0, 
+				"BaseScoreFactor2": [
+					25.0, 
+					31.25, 
+					37.5
+				], 
+				"BaseScoreFactor3": 125.0, 
+				"RiftTimedLevelBaseScoreFactor1": 900.0, 
+				"RiftTimedLevelBaseScoreFactor2": 40.0, 
+				"MaxScoreNormal": [
+					11760, 
+					14700, 
+					17640
+				], 
+				"MaxScoreRiftTimed": [
+					12000, 
+					36000, 
+					36000
+				], 
+				"MaxScoreTimeLimited": [
+					9400, 
+					11700, 
+					14100
+				], 
+				"MaxScoreBoss": 22500, 
+				"BonusScoreFactor": [
+					1.05, 
+					1.12, 
+					1.3
+				], 
+				"BossScoreFactor": [
+					1.0, 
+					1.0, 
+					2.5
+				], 
+				"LeagueIcons": [
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_WOOD", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_IRON", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_COPPER", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_SILVER", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_GOLD", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_JADE", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_CRYSTAL", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_BRICK"
+				], 
+				"LeagueSmallIcons": [
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_WOOD_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_IRON_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_COPPER_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_SILVER_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_GOLD_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_JADE_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_CRYSTAL_SM", 
+					"IMAGE_UI_PENNY_PURSUITS_COMMON_CUP_BRICK_SM"
+				], 
+				"FrameMaps": [
+					[
+						{
+							"Start": 0, 
+							"End": 2, 
+							"Type": 0, 
+							"NextLeague": 3
+						}, 
+						{
+							"Start": 3, 
+							"End": 5, 
+							"Type": 1, 
+							"NextLeague": 2
+						}, 
+						{
+							"Start": 6, 
+							"End": 8, 
+							"Type": 2, 
+							"NextLeague": 1
+						}
+					], 
+					[
+						{
+							"Start": 0, 
+							"End": 1, 
+							"Type": 0, 
+							"NextLeague": 4
+						}, 
+						{
+							"Start": 2, 
+							"End": 4, 
+							"Type": 1, 
+							"NextLeague": 3
+						}, 
+						{
+							"Start": 5, 
+							"End": 7, 
+							"Type": 2, 
+							"NextLeague": 2
+						}
+					], 
+					[
+						{
+							"Start": 0, 
+							"End": 1, 
+							"Type": 0, 
+							"NextLeague": 5
+						}, 
+						{
+							"Start": 2, 
+							"End": 3, 
+							"Type": 1, 
+							"NextLeague": 4
+						}, 
+						{
+							"Start": 4, 
+							"End": 6, 
+							"Type": 2, 
+							"NextLeague": 3
+						}
+					], 
+					[
+						{
+							"Start": 0, 
+							"End": 1, 
+							"Type": 0, 
+							"NextLeague": 6
+						}, 
+						{
+							"Start": 2, 
+							"End": 3, 
+							"Type": 1, 
+							"NextLeague": 5
+						}, 
+						{
+							"Start": 4, 
+							"End": 5, 
+							"Type": 2, 
+							"NextLeague": 4
+						}
+					], 
+					[
+						{
+							"Start": 0, 
+							"End": 2, 
+							"Type": 1, 
+							"NextLeague": 6
+						}, 
+						{
+							"Start": 3, 
+							"End": 5, 
+							"Type": 2, 
+							"NextLeague": 5
+						}
+					], 
+					[
+						{
+							"Start": 0, 
+							"End": 4, 
+							"Type": 2, 
+							"NextLeague": 6
+						}
+					], 
+					[
+						{
+							"Start": 0, 
+							"End": 2, 
+							"Type": 2, 
+							"NextLeague": 7
+						}
+					], 
+					[]
+				], 
+				"LeagueNames": [
+					"[JOUST_LEAGUE_NAME_WOOD_1]", 
+					"[JOUST_LEAGUE_NAME_IRON_2]", 
+					"[JOUST_LEAGUE_NAME_COPPER_3]", 
+					"[JOUST_LEAGUE_NAME_SILVER_4]", 
+					"[JOUST_LEAGUE_NAME_GOLD_5]", 
+					"[JOUST_LEAGUE_NAME_JADE_6]", 
+					"[JOUST_LEAGUE_NAME_CRYSTAL_7]", 
+					"[JOUST_LEAGUE_NAME_BRICK_8]"
+				], 
+				"ShortLeagueNames": [
+					"[JOUST_LEAGUE_NAME_WOOD_SHORT_1]", 
+					"[JOUST_LEAGUE_NAME_IRON_SHORT_2]", 
+					"[JOUST_LEAGUE_NAME_COPPER_SHORT_3]", 
+					"[JOUST_LEAGUE_NAME_SILVER_SHORT_4]", 
+					"[JOUST_LEAGUE_NAME_GOLD_SHORT_5]", 
+					"[JOUST_LEAGUE_NAME_JADE_SHORT_6]", 
+					"[JOUST_LEAGUE_NAME_CRYSTAL_SHORT_7]", 
+					"[JOUST_LEAGUE_NAME_BRICK_SHORT_8]"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

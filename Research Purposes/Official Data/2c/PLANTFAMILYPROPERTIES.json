@@ -1,0 +1,3943 @@
+{
+	"#comment": "Plant Family proporties!  Vegetabilitationality! Doc:https://confluence.ea.com/pages/viewpage.action?pageId=560125976", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"#comment": "Template! Copy + Paste me!", 
+			"aliases": [
+				"PlantFamilyPropertySheetTemplate"
+			], 
+			"objdata": {
+				"FamilyID": -1, 
+				"Name": "", 
+				"Description": "", 
+				"PlantList": [
+					"sunflower"
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraSunMoney@PlantFamilyProperties)", 
+						"Values": [
+							25, 
+							0.1
+						]
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraProduceSunSpeed@PlantFamilyProperties)", 
+					"Values": [
+						1
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"#comment": "Template! Copy + Paste me!", 
+			"aliases": [
+				"PlantFamilyBoostPropertySheetTemplate"
+			], 
+			"objdata": {
+				"Type": "", 
+				"#[extra_sunmoney,extra_hitpoints,extra_hitpoints_value,extra_attack,regeneration,fast_cooldown,lower_cost,fast_plant,improved_atk_rate,improved_explode_damage,improved_flame_damage,improved_cold_damage,improved_lightning_damage,water_master,invincible,ghost,plant_sun_refund]": 0, 
+				"AttrType": "", 
+				"Name": "", 
+				"Description": "", 
+				"ValueIndex": 1, 
+				"#(option) defalut:1": 0, 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.06, 
+					0.11, 
+					0.16, 
+					0.21, 
+					0.26
+				]
+			}
+		}, 
+		{
+			"############ Plant Family Boosts START ############--------------------------------------------------------------------------------------------------------------": 0
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraAttack"
+			], 
+			"objdata": {
+				"Type": "extra_attack", 
+				"AttrType": "extra_attack", 
+				"Name": "[PLANT_FAMILY_SKILL_EXTRA_ATTACK]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraAttackSpeed"
+			], 
+			"objdata": {
+				"Type": "improved_atk_rate", 
+				"AttrType": "improved_atk_rate", 
+				"Name": "[PLANT_FAMILY_SKILL_IMPROVED_ATK_RATE]", 
+				"Description": "", 
+				"AddValue": 0.005, 
+				"Qualitys": [
+					0.035, 
+					0.06, 
+					0.11, 
+					0.16, 
+					0.26
+				], 
+				"Values": [
+					0.01
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraProduceSunSpeed"
+			], 
+			"objdata": {
+				"Type": "improved_atk_rate", 
+				"AttrType": "improved_sunproduce_rate", 
+				"Name": "[PLANT_FAMILY_SKILL_IMPROVED_SUNPRODUCE_RATE]", 
+				"Description": "", 
+				"AddValue": 0.005, 
+				"Qualitys": [
+					0.035, 
+					0.06, 
+					0.11, 
+					0.16, 
+					0.26
+				], 
+				"Values": [
+					0.01
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostFastPlant"
+			], 
+			"objdata": {
+				"Type": "fast_plant", 
+				"AttrType": "fast_plant", 
+				"Name": "[PLANT_FAMILY_SKILL_FAST_PLANT]", 
+				"Description": "", 
+				"AddValue": 0.02, 
+				"Qualitys": [
+					0.14, 
+					0.24, 
+					0.44, 
+					0.64, 
+					1.04
+				], 
+				"Values": [
+					0.04
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraSunMoney25"
+			], 
+			"objdata": {
+				"Type": "extra_sunmoney", 
+				"AttrType": "extra_sunmoney_25", 
+				"Name": "[PLANT_FAMILY_SKILL_EXTRA_SUNMONEY_25]", 
+				"Description": "", 
+				"ValueIndex": 2, 
+				"values:[25,0.1] arg1:SunMoney arg2:Probability": 0, 
+				"AddValue": 0.02, 
+				"Qualitys": [
+					0.14, 
+					0.24, 
+					0.44, 
+					0.64, 
+					1.04
+				], 
+				"Values": [
+					25, 
+					0.04
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraSunMoney50"
+			], 
+			"objdata": {
+				"Type": "extra_sunmoney", 
+				"AttrType": "extra_sunmoney_50", 
+				"Name": "[PLANT_FAMILY_SKILL_EXTRA_SUNMONEY_50]", 
+				"Description": "", 
+				"ValueIndex": 2, 
+				"values:[50,0.1] arg1:SunMoney arg2:Probability": 0, 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					50, 
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraHitpoints"
+			], 
+			"objdata": {
+				"Type": "extra_hitpoints", 
+				"AttrType": "extra_hitpoints", 
+				"Name": "[PLANT_FAMILY_SKILL_EXTRA_HITPOINTS]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostExtraDefend"
+			], 
+			"objdata": {
+				"Type": "extra_hitpoints", 
+				"AttrType": "extra_defend", 
+				"Name": "[PLANT_FAMILY_SKILL_EXTRA_DEFEND]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostRegeneration"
+			], 
+			"objdata": {
+				"Type": "regeneration", 
+				"AttrType": "regeneration", 
+				"Name": "[PLANT_FAMILY_SKILL_REGENERATION]", 
+				"Description": "", 
+				"AddValue": 0.005, 
+				"Qualitys": [
+					0.035, 
+					0.06, 
+					0.11, 
+					0.16, 
+					0.26
+				], 
+				"ValueIndex": 2, 
+				"Values": [
+					0, 
+					0.01, 
+					5
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostImprovedExplodeDamage"
+			], 
+			"objdata": {
+				"Type": "improved_explode_damage", 
+				"AttrType": "improved_explode_damage", 
+				"Name": "[PLANT_FAMILY_SKILL_IMPROVED_EXPLODE_DAMAGE]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostImprovedLightningDamage"
+			], 
+			"objdata": {
+				"Type": "improved_lightning_damage", 
+				"AttrType": "improved_lightning_damage", 
+				"Name": "[PLANT_FAMILY_SKILL_IMPROVED_LIGHTNING_DAMAGE]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostImprovedFlameDamage"
+			], 
+			"objdata": {
+				"Type": "improved_flame_damage", 
+				"AttrType": "improved_flame_damage", 
+				"Name": "[PLANT_FAMILY_SKILL_IMPROVED_FLAME_DAMAGE]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostImprovedColdDamage"
+			], 
+			"objdata": {
+				"Type": "improved_cold_damage", 
+				"AttrType": "improved_cold_damage", 
+				"Name": "[PLANT_FAMILY_SKILL_IMPROVED_COLD_DAMAGE]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostMeleeAttack"
+			], 
+			"objdata": {
+				"Type": "extra_attack", 
+				"AttrType": "extra_melee_attack", 
+				"Name": "[PLANT_FAMILY_SKILL_EXTRA_MELEE_ATTACK]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					0.02
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostLowerCost"
+			], 
+			"objdata": {
+				"Type": "lower_cost", 
+				"AttrType": "lower_cost", 
+				"Name": "[PLANT_FAMILY_SKILL_LOWER_COST]", 
+				"Description": "", 
+				"DisplayType": 1, 
+				"AddValue": 1, 
+				"Qualitys": [
+					7, 
+					12, 
+					22, 
+					32, 
+					52
+				], 
+				"Values": [
+					2
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostInvincible"
+			], 
+			"objdata": {
+				"Type": "invincible", 
+				"AttrType": "invincible", 
+				"Name": "[PLANT_FAMILY_SKILL_INVINCIBLE]", 
+				"Description": "", 
+				"AddValue": 0.005, 
+				"Qualitys": [
+					0.035, 
+					0.06, 
+					0.11, 
+					0.16, 
+					0.26
+				], 
+				"Values": [
+					0.01, 
+					3, 
+					30, 
+					100
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostGhost"
+			], 
+			"objdata": {
+				"Type": "ghost", 
+				"AttrType": "ghost", 
+				"Name": "[PLANT_FAMILY_SKILL_GHOST]", 
+				"Description": "", 
+				"AddValue": 0.02, 
+				"Qualitys": [
+					0.14, 
+					0.24, 
+					0.44, 
+					0.64, 
+					1.04
+				], 
+				"Values": [
+					0.04, 
+					5
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyBoostPropertySheet", 
+			"aliases": [
+				"FamilyBoostPlantSunRefund"
+			], 
+			"objdata": {
+				"Type": "plant_sun_refund", 
+				"AttrType": "plant_sun_refund", 
+				"Name": "[PLANT_FAMILY_SKILL_PLANT_SUN_REFUND]", 
+				"Description": "", 
+				"AddValue": 0.01, 
+				"ValueIndex": 2, 
+				"Qualitys": [
+					0.07, 
+					0.12, 
+					0.22, 
+					0.32, 
+					0.52
+				], 
+				"Values": [
+					1, 
+					0.02
+				]
+			}
+		}, 
+		{
+			"############ Plant Family Boosts END ############----------------------------------------------------------------------------------------------------------------": 0
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50001, 
+				"Name": "[PLANT_FAMILY_NAME_50001]", 
+				"Description": "", 
+				"PlantQuality": 1, 
+				"PlantList": [
+					"wallnut", 
+					"sunflower", 
+					"cabbagepult", 
+					"potatomine", 
+					"peashooter"
+				], 
+				"PlantPosition": [
+					{
+						"x": -61, 
+						"y": 87
+					}, 
+					{
+						"x": 54, 
+						"y": 81
+					}, 
+					{
+						"x": -130, 
+						"y": 34
+					}, 
+					{
+						"x": 7, 
+						"y": 11
+					}, 
+					{
+						"x": 113, 
+						"y": 19
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50009, 
+				"Name": "[PLANT_FAMILY_NAME_50009]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"magnifyinggrass", 
+					"laser_bean", 
+					"starfruit", 
+					"pinkstarfruit", 
+					"citron"
+				], 
+				"PlantPosition": [
+					{
+						"x": -70, 
+						"y": -82
+					}, 
+					{
+						"x": 46, 
+						"y": -95
+					}, 
+					{
+						"x": -112, 
+						"y": -8
+					}, 
+					{
+						"x": -2, 
+						"y": 8
+					}, 
+					{
+						"x": 102, 
+						"y": -10
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedExplodeDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50005, 
+				"Name": "[PLANT_FAMILY_NAME_50005]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"broccoli", 
+					"bonkchoy", 
+					"kiwifruit", 
+					"matchflower", 
+					"dragoncane"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -100
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 1, 
+						"y": -34
+					}, 
+					{
+						"x": 115, 
+						"y": -38
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostMeleeAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostMeleeAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50013, 
+				"Name": "[PLANT_FAMILY_NAME_50013]", 
+				"Description": "", 
+				"PlantQuality": 3, 
+				"PlantList": [
+					"lemon", 
+					"peanut", 
+					"wintersweet", 
+					"oakshooter", 
+					"redstinger"
+				], 
+				"PlantPosition": [
+					{
+						"x": -58, 
+						"y": -99
+					}, 
+					{
+						"x": 54, 
+						"y": -90
+					}, 
+					{
+						"x": -131, 
+						"y": -40
+					}, 
+					{
+						"x": 0, 
+						"y": -20
+					}, 
+					{
+						"x": 94, 
+						"y": -29
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50003, 
+				"Name": "[PLANT_FAMILY_NAME_50003]", 
+				"Description": "", 
+				"PlantQuality": 2, 
+				"PlantList": [
+					"tallnut", 
+					"holonut", 
+					"primalwallnut", 
+					"endurian", 
+					"chardguard"
+				], 
+				"PlantPosition": [
+					{
+						"x": -57, 
+						"y": -107
+					}, 
+					{
+						"x": 52, 
+						"y": -105
+					}, 
+					{
+						"x": -110, 
+						"y": -55
+					}, 
+					{
+						"x": -23, 
+						"y": -30
+					}, 
+					{
+						"x": 101, 
+						"y": -47
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50011, 
+				"Name": "[PLANT_FAMILY_NAME_50011]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"carrotlauncher", 
+					"cobcannon", 
+					"banana", 
+					"greenturnip", 
+					"coconutcannon"
+				], 
+				"PlantPosition": [
+					{
+						"x": -63, 
+						"y": -92
+					}, 
+					{
+						"x": 73, 
+						"y": -105
+					}, 
+					{
+						"x": -123, 
+						"y": -56
+					}, 
+					{
+						"x": -10, 
+						"y": -38
+					}, 
+					{
+						"x": 105, 
+						"y": -28
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedExplodeDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50007, 
+				"Name": "[PLANT_FAMILY_NAME_50007]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"iceshroom", 
+					"coldsnapdragon", 
+					"wintermelon", 
+					"iceburg", 
+					"snowpea"
+				], 
+				"PlantPosition": [
+					{
+						"x": -65, 
+						"y": -93
+					}, 
+					{
+						"x": 60, 
+						"y": -102
+					}, 
+					{
+						"x": -132, 
+						"y": -44
+					}, 
+					{
+						"x": -3, 
+						"y": -14
+					}, 
+					{
+						"x": 107, 
+						"y": -19
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedExplodeDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50015, 
+				"Name": "[PLANT_FAMILY_NAME_50015]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"grapeshot", 
+					"peapod", 
+					"chestnut", 
+					"horsebean", 
+					"bowlingbulb"
+				], 
+				"PlantPosition": [
+					{
+						"x": -70, 
+						"y": -95
+					}, 
+					{
+						"x": 48, 
+						"y": -100
+					}, 
+					{
+						"x": -107, 
+						"y": -30
+					}, 
+					{
+						"x": -8, 
+						"y": -18
+					}, 
+					{
+						"x": 101, 
+						"y": -32
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50002, 
+				"Name": "[PLANT_FAMILY_NAME_50002]", 
+				"Description": "", 
+				"PlantQuality": 3, 
+				"PlantList": [
+					"primalsunflower", 
+					"twinsunflower", 
+					"sunflower", 
+					"sunshroom", 
+					"birthsunflower"
+				], 
+				"PlantPosition": [
+					{
+						"x": -61, 
+						"y": -97
+					}, 
+					{
+						"x": 53, 
+						"y": -81
+					}, 
+					{
+						"x": -106, 
+						"y": -31
+					}, 
+					{
+						"x": 6, 
+						"y": -19
+					}, 
+					{
+						"x": 108, 
+						"y": -4
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraProduceSunSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraSunMoney25@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraSunMoney50@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraSunMoney50@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50010, 
+				"Name": "[PLANT_FAMILY_NAME_50010]", 
+				"Description": "", 
+				"PlantQuality": 3, 
+				"PlantList": [
+					"peapod", 
+					"primalpeashooter", 
+					"threepeater", 
+					"repeater", 
+					"gatlingpea"
+				], 
+				"PlantPosition": [
+					{
+						"x": -57, 
+						"y": -101
+					}, 
+					{
+						"x": 60, 
+						"y": -105
+					}, 
+					{
+						"x": -102, 
+						"y": -39
+					}, 
+					{
+						"x": 9, 
+						"y": -28
+					}, 
+					{
+						"x": 113, 
+						"y": -28
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50006, 
+				"Name": "[PLANT_FAMILY_NAME_50006]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"snapdragon", 
+					"firepeashooter", 
+					"fireshroom", 
+					"dragonfruit", 
+					"flamelady"
+				], 
+				"PlantPosition": [
+					{
+						"x": -52, 
+						"y": -92
+					}, 
+					{
+						"x": 62, 
+						"y": -91
+					}, 
+					{
+						"x": -117, 
+						"y": -41
+					}, 
+					{
+						"x": -3, 
+						"y": -45
+					}, 
+					{
+						"x": 102, 
+						"y": -28
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedExplodeDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50014, 
+				"Name": "[PLANT_FAMILY_NAME_50014]", 
+				"Description": "", 
+				"PlantQuality": 2, 
+				"PlantList": [
+					"firegourd", 
+					"laser_bean", 
+					"bamboo", 
+					"acorn", 
+					"bloomerang"
+				], 
+				"PlantPosition": [
+					{
+						"x": -67, 
+						"y": -82
+					}, 
+					{
+						"x": 53, 
+						"y": -94
+					}, 
+					{
+						"x": -108, 
+						"y": -26
+					}, 
+					{
+						"x": -2, 
+						"y": -19
+					}, 
+					{
+						"x": 105, 
+						"y": -34
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50004, 
+				"Name": "[PLANT_FAMILY_NAME_50004]", 
+				"Description": "", 
+				"PlantQuality": 3, 
+				"PlantList": [
+					"celerystalker", 
+					"chomper", 
+					"agave", 
+					"roseswordman", 
+					"toadstool"
+				], 
+				"PlantPosition": [
+					{
+						"x": -63, 
+						"y": -104
+					}, 
+					{
+						"x": 81, 
+						"y": -106
+					}, 
+					{
+						"x": -120, 
+						"y": -54
+					}, 
+					{
+						"x": -4, 
+						"y": -11
+					}, 
+					{
+						"x": 127, 
+						"y": -36
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostMeleeAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostMeleeAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50012, 
+				"Name": "[PLANT_FAMILY_NAME_50012]", 
+				"Description": "", 
+				"PlantQuality": 2, 
+				"PlantList": [
+					"kernelpult", 
+					"pepperpult", 
+					"melonpult", 
+					"akee", 
+					"primalrafflesia"
+				], 
+				"PlantPosition": [
+					{
+						"x": -77, 
+						"y": -91
+					}, 
+					{
+						"x": 29, 
+						"y": -116
+					}, 
+					{
+						"x": -140, 
+						"y": -45
+					}, 
+					{
+						"x": -11, 
+						"y": 0
+					}, 
+					{
+						"x": 104, 
+						"y": -29
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50008, 
+				"Name": "[PLANT_FAMILY_NAME_50008]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"cactus", 
+					"anthurium", 
+					"lightningreed", 
+					"electricblueberry", 
+					"nekotail"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 60, 
+						"y": -81
+					}, 
+					{
+						"x": -126, 
+						"y": -32
+					}, 
+					{
+						"x": -17, 
+						"y": -16
+					}, 
+					{
+						"x": 106, 
+						"y": -13
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedExplodeDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50016, 
+				"Name": "[PLANT_FAMILY_NAME_50016]", 
+				"Description": "", 
+				"PlantQuality": 2, 
+				"PlantList": [
+					"hypnoshroom", 
+					"sporeshroom", 
+					"magicshroom", 
+					"puffshroom", 
+					"fumeshroom"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50017, 
+				"Name": "[PLANT_FAMILY_NAME_50017]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"moonflower", 
+					"nightshade", 
+					"dusklobber", 
+					"shadowshroom", 
+					"grimrose"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50018, 
+				"Name": "[PLANT_FAMILY_NAME_50018]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"vanilla", 
+					"lotusshooter", 
+					"goldbloom", 
+					"convallariachemist", 
+					"mulberry"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50019, 
+				"Name": "[PLANT_FAMILY_NAME_50019]", 
+				"Description": "", 
+				"PlantQuality": 3, 
+				"PlantList": [
+					"aloes", 
+					"bearberry", 
+					"waxgourd", 
+					"pomegranatejeweler", 
+					"olive"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50020, 
+				"Name": "[PLANT_FAMILY_NAME_50020]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"eggplantninja", 
+					"whitemelon", 
+					"icelotus", 
+					"tupistrastalker", 
+					"dendrobiumguard"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50021, 
+				"Name": "[PLANT_FAMILY_NAME_50021]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"cypripedium", 
+					"stephania", 
+					"imppear", 
+					"snappea", 
+					"chilibean"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostGhost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50022, 
+				"Name": "[PLANT_FAMILY_NAME_50022]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"riflebamboo", 
+					"mangosteen", 
+					"crownflower", 
+					"nukelauncher", 
+					"slingpea"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50023, 
+				"Name": "[PLANT_FAMILY_NAME_50023]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"hammerflower", 
+					"gardenergrass", 
+					"headbutterlettuce", 
+					"clawgloriosa", 
+					"explodeonut"
+				], 
+				"PlantPosition": [
+					{
+						"x": -72, 
+						"y": -82
+					}, 
+					{
+						"x": 47, 
+						"y": -84
+					}, 
+					{
+						"x": -128, 
+						"y": -36
+					}, 
+					{
+						"x": 9, 
+						"y": -17
+					}, 
+					{
+						"x": 107, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostMeleeAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedExplodeDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50024, 
+				"Name": "[PLANT_FAMILY_NAME_50024]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"springprincess", 
+					"byttneriameteorhammer", 
+					"orchidmage", 
+					"dazeychain", 
+					"applemortar"
+				], 
+				"PlantPosition": [
+					{
+						"x": -63, 
+						"y": -92
+					}, 
+					{
+						"x": 73, 
+						"y": -105
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": -10, 
+						"y": -38
+					}, 
+					{
+						"x": 105, 
+						"y": -28
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50025, 
+				"Name": "[PLANT_FAMILY_NAME_50025]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"hocuscrocus", 
+					"zoybeanpod", 
+					"inferno", 
+					"missiletoe", 
+					"shrinkingviolet"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 138, 
+						"y": -38
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50026, 
+				"Name": "[PLANT_FAMILY_NAME_50026]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"ents", 
+					"beercoconut", 
+					"sugarcane", 
+					"pineapple", 
+					"hollyknight"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 138, 
+						"y": -38
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50027, 
+				"Name": "[PLANT_FAMILY_NAME_50027]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"tigerstool", 
+					"jewelrabbit", 
+					"gluttonydragon", 
+					"eywa", 
+					"longmalily"
+				], 
+				"PlantPosition": [
+					{
+						"x": -88, 
+						"y": -120
+					}, 
+					{
+						"x": 51, 
+						"y": -120
+					}, 
+					{
+						"x": 138, 
+						"y": -38
+					}, 
+					{
+						"x": 138, 
+						"y": -38
+					}, 
+					{
+						"x": 225, 
+						"y": -38
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50028, 
+				"Name": "[PLANT_FAMILY_NAME_50028]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"beanchemist", 
+					"witchhazel", 
+					"impatiensshooter", 
+					"draftodil", 
+					"boophonegeisha"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 138, 
+						"y": -38
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50029, 
+				"Name": "[PLANT_FAMILY_NAME_50029]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"phatbeet", 
+					"caulipower", 
+					"lancerhoya", 
+					"eleocurling", 
+					"pinecone"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 138, 
+						"y": -38
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50030, 
+				"Name": "[PLANT_FAMILY_NAME_50030]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"thundersnapdragon", 
+					"electriccurrant", 
+					"dartichoke", 
+					"electricitea", 
+					"electricpeashooter"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 40, 
+						"y": -80
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 160, 
+						"y": -38
+					}, 
+					{
+						"x": 25, 
+						"y": -60
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50031, 
+				"Name": "[PLANT_FAMILY_NAME_50031]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"parsnip", 
+					"turkeypult", 
+					"kiwibeast", 
+					"guacodile", 
+					"dragonroar"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50032, 
+				"Name": "[PLANT_FAMILY_NAME_50032]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"stickybombrice", 
+					"boomflower", 
+					"dandelion", 
+					"strawburst", 
+					"primalpotatomine"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50033, 
+				"Name": "[PLANT_FAMILY_NAME_50033]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"olivepit", 
+					"gumnut", 
+					"spikerock", 
+					"spikeweed", 
+					"springbean"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50034, 
+				"Name": "[PLANT_FAMILY_NAME_50034]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"vamporcini", 
+					"jackolantern", 
+					"pumpkin", 
+					"pumpkinwitch", 
+					"ghostpepper"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50035, 
+				"Name": "[PLANT_FAMILY_NAME_50035]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"burdockbatter", 
+					"fishhookgrass", 
+					"geraniifencer", 
+					"squash", 
+					"elaeocarpus"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50036, 
+				"Name": "[PLANT_FAMILY_NAME_50036]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"hydrocotyledrummer", 
+					"plantain", 
+					"morningglory", 
+					"tuliptrumpeter", 
+					"hoyacordata"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50037, 
+				"Name": "[PLANT_FAMILY_NAME_50037]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"poisonpeashooter", 
+					"pokra", 
+					"stallia", 
+					"sarracenia", 
+					"stunion"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50038, 
+				"Name": "[PLANT_FAMILY_NAME_50038]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"sweetpotato", 
+					"hotdate", 
+					"garlic", 
+					"rapeflower", 
+					"lemon"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50039, 
+				"Name": "[PLANT_FAMILY_NAME_50039]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"pokra", 
+					"bromelblade", 
+					"turnip", 
+					"dracaena", 
+					"peach"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50040, 
+				"Name": "[PLANT_FAMILY_NAME_50040]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"meteorflower", 
+					"alarmsagittifolia", 
+					"lavaguava", 
+					"cherry_bomb", 
+					"jalapeno"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostRegeneration@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50041, 
+				"Name": "[PLANT_FAMILY_NAME_50041]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"nightcap", 
+					"shadowvanilla", 
+					"shinevine", 
+					"happyleek", 
+					"shadowpeashooter"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50042, 
+				"Name": "[PLANT_FAMILY_NAME_50042]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"hatmushroom", 
+					"buttercup", 
+					"sapfling", 
+					"saucer", 
+					"mandrake"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -90
+					}, 
+					{
+						"x": 0, 
+						"y": -90
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50043, 
+				"Name": "[PLANT_FAMILY_NAME_50043]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"wasabiwhip", 
+					"monotropa", 
+					"torchwood", 
+					"cottonyeti", 
+					"icycurrant"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedFlameDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50044, 
+				"Name": "[PLANT_FAMILY_NAME_50044]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"deodarcedar", 
+					"crownflower", 
+					"ultomato", 
+					"powervine", 
+					"empea"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50045, 
+				"Name": "[PLANT_FAMILY_NAME_50045]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"maybee", 
+					"narcissusshooter", 
+					"passionflower", 
+					"heathseeker", 
+					"rafflesia"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostImprovedColdDamage@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50046, 
+				"Name": "[PLANT_FAMILY_NAME_50046]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"homingthistle", 
+					"riflebamboo", 
+					"gatlingpea", 
+					"heliconiagunner", 
+					"pamegranate"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50047, 
+				"Name": "[PLANT_FAMILY_NAME_50047]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"intensivecarrot", 
+					"turnip", 
+					"carrotlauncher", 
+					"powerplant", 
+					"greenturnip"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50048, 
+				"Name": "[PLANT_FAMILY_NAME_50048]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"paphiopedilum", 
+					"bubblecoral", 
+					"heavendatura", 
+					"firecrackerflower"
+				], 
+				"PlantPosition": [
+					{
+						"x": -76, 
+						"y": -110
+					}, 
+					{
+						"x": 51, 
+						"y": -100
+					}, 
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50049, 
+				"Name": "[PLANT_FAMILY_NAME_50049]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"wiregelsemium", 
+					"electricpeel", 
+					"eagleclaw"
+				], 
+				"PlantPosition": [
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostImprovedLightningDamage@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50050, 
+				"Name": "[PLANT_FAMILY_NAME_50050]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"guardshroom", 
+					"cthulhuactinia", 
+					"devilsflower"
+				], 
+				"PlantPosition": [
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraDefend@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}, 
+		{
+			"objclass": "PlantFamilyPropertySheet", 
+			"aliases": [
+				"test"
+			], 
+			"objdata": {
+				"FamilyID": 50051, 
+				"Name": "[PLANT_FAMILY_NAME_50051]", 
+				"Description": "", 
+				"PlantQuality": 4, 
+				"PlantList": [
+					"seashroom", 
+					"oxygenalgae", 
+					"kelpguard", 
+					"seashooter", 
+					"aquaweed"
+				], 
+				"PlantPosition": [
+					{
+						"x": -114, 
+						"y": -33
+					}, 
+					{
+						"x": 150, 
+						"y": 0
+					}, 
+					{
+						"x": 1, 
+						"y": -17
+					}
+				], 
+				"EnableFamilyBoost": [
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraHitpoints@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostInvincible@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostFastPlant@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostExtraAttackSpeed@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostLowerCost@PlantFamilyProperties)"
+					}, 
+					{
+						"PlantBoostProps": "RTID(FamilyBoostPlantSunRefund@PlantFamilyProperties)"
+					}
+				], 
+				"DefaultFamilyBoost": {
+					"PlantBoostProps": "RTID(FamilyBoostExtraAttack@PlantFamilyProperties)"
+				}
+			}
+		}
+	]
+}

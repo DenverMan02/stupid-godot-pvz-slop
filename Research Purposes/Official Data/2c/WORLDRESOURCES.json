@@ -1,0 +1,195 @@
+{
+	"#comment": "All resource groups that world maps can use and their image prefixes go here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "WorldResourcesDataSheet", 
+			"aliases": [
+				"WorldResources"
+			], 
+			"objdata": {
+				"Groups": [
+					{
+						"ID": 0, 
+						"ResGroups": [
+							"WorldMap_Tutorial"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_TUTORIAL", 
+						"AnimationPrefix": "", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"ID": 1, 
+						"ResGroups": [
+							"WorldMap_Egypt", 
+							"WorldMap_Egypt_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_EGYPT", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_EGYPT", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 6.0, 
+								"TimeMax": 12.0
+							}
+						]
+					}, 
+					{
+						"ID": 2, 
+						"ResGroups": [
+							"WorldMap_Pirate", 
+							"WorldMap_Pirate_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_PIRATE", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_PIRATE", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 3.0
+							}, 
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}, 
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 3.0
+							}, 
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 3.0
+							}
+						]
+					}, 
+					{
+						"ID": 3, 
+						"ResGroups": [
+							"WorldMap_Cowboy", 
+							"WorldMap_Cowboy_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_COWBOY", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_COWBOY", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 6.0, 
+								"TimeMax": 12.0
+							}
+						]
+					}, 
+					{
+						"ID": 4, 
+						"ResGroups": [
+							"WorldMap_KongFu", 
+							"WorldMap_KongFu_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_KONGFU", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_KONGFU", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"ID": 5, 
+						"ResGroups": [
+							"WorldMap_Future", 
+							"WorldMap_Future_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_FUTURE", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_FUTURE", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 6.0, 
+								"TimeMax": 12.0
+							}
+						]
+					}, 
+					{
+						"ID": 6, 
+						"ResGroups": [
+							"WorldMap_Dark", 
+							"WorldMap_Dark_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_DARK", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_DARK", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"ID": 7, 
+						"ResGroups": [
+							"WorldMap_Beach", 
+							"WorldMap_Beach_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_BEACH", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_BEACH", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"ID": 8, 
+						"ResGroups": [
+							"WorldMap_Iceage", 
+							"WorldMap_Iceage_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_ICEAGE", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_ICEAGE", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"ID": 9, 
+						"ResGroups": [
+							"WorldMap_Skycity", 
+							"WorldMap_Skycity_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_SKYCITY", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_SKYCITY", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"ID": 10, 
+						"ResGroups": [
+							"WorldMap_Lostcity", 
+							"WorldMap_Lostcity_NonPVR"
+						], 
+						"ImagePrefix": "IMAGE_WORLDMAP_LOSTCITY", 
+						"AnimationPrefix": "POPANIM_WORLDMAP_ANIM_LOSTCITY", 
+						"AnimationDelays": [
+							{
+								"TimeMin": 0.0, 
+								"TimeMax": 0.0
+							}
+						]
+					}, 
+					{
+						"#comment": "End of groups"
+					}
+				]
+			}
+		}
+	]
+}

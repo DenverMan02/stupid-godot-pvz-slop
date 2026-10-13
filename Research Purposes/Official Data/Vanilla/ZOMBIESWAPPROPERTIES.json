@@ -1,0 +1,581 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"aliases": [
+				"Test"
+			], 
+			"objclass": "ZombieSwapProperties", 
+			"objdata": {
+				"ZombieSwaps": [
+					{
+						"PostSwapType": "feastivus", 
+						"PreSwapTypes": [
+							"tutorial", 
+							"tutorial_armor1", 
+							"tutorial_armor2", 
+							"mummy", 
+							"pirate", 
+							"cowboy", 
+							"zcorp"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"placeholderforallzombietypes"
+			], 
+			"objclass": "ZombieSwapProperties", 
+			"objdata": {
+				"ZombieSwaps": [
+					{
+						"PostSwapType": "lunar", 
+						"PreSwapTypes": [
+							"tutorial_armor1", 
+							"tutorial_imp", 
+							"camel_onehump", 
+							"camel_manyhump", 
+							"camel_two_hump", 
+							"mummy", 
+							"mummy_armor1", 
+							"mummy_armor2", 
+							"egypt_imp", 
+							"zcorp", 
+							"zcorp_fem", 
+							"zcorp_armor1", 
+							"zcorp_fem_armor1", 
+							"zcorp_armor2", 
+							"zcorp_fem_armor2", 
+							"pirate", 
+							"pirate_armor1", 
+							"pirate_armor2", 
+							"pirate_imp", 
+							"cowboy", 
+							"cowboy_armor1", 
+							"cowboy_armor2", 
+							"future", 
+							"future_armor1", 
+							"future_armor2", 
+							"future_imp", 
+							"dark", 
+							"dark_armor1", 
+							"dark_armor2", 
+							"dark_imp", 
+							"iceage", 
+							"iceage_armor1", 
+							"iceage_armor2", 
+							"iceage_imp", 
+							"lostcity", 
+							"lostcity_armor1", 
+							"lostcity_armor2", 
+							"lostcity_imp", 
+							"eighties", 
+							"eighties_armor1", 
+							"eighties_armor2", 
+							"eighties_imp", 
+							"dino", 
+							"dino_armor1", 
+							"dino_armor2", 
+							"dino_imp", 
+							"roman", 
+							"roman_armor1", 
+							"roman_armor2", 
+							"roman_imp", 
+							"carnie", 
+							"carnie_armor1", 
+							"carnie_armor2", 
+							"carnie_imp", 
+							"beach", 
+							"beach_fem", 
+							"beach_armor1", 
+							"beach_fem_armor1", 
+							"beach_armor2", 
+							"beach_fem_armor2"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LunarZooYear"
+			], 
+			"objclass": "ZombieSwapProperties", 
+			"objdata": {
+				"ZombieSwaps": [
+					{
+						"PostSwapType": "lunar", 
+						"PreSwapTypes": [
+							"tutorial", 
+							"mummy", 
+							"zcorp", 
+							"zcorp_fem", 
+							"pirate", 
+							"cowboy", 
+							"future", 
+							"dark", 
+							"iceage", 
+							"lostcity", 
+							"eighties", 
+							"dino", 
+							"roman", 
+							"carnie", 
+							"beach", 
+							"beach_fem"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_armor1", 
+						"PreSwapTypes": [
+							"tutorial_armor1", 
+							"mummy_armor1", 
+							"zcorp_armor1", 
+							"zcorp_fem_armor1", 
+							"pirate_armor1", 
+							"cowboy_armor1", 
+							"future_armor1", 
+							"dark_armor1", 
+							"iceage_armor1", 
+							"lostcity_armor1", 
+							"eighties_armor1", 
+							"dino_armor1", 
+							"roman_armor1", 
+							"carnie_armor1", 
+							"beach_armor1", 
+							"beach_fem_armor1"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_armor2", 
+						"PreSwapTypes": [
+							"tutorial_armor2", 
+							"mummy_armor2", 
+							"zcorp_armor2", 
+							"zcorp_fem_armor2", 
+							"pirate_armor2", 
+							"cowboy_armor2", 
+							"future_armor2", 
+							"dark_armor2", 
+							"iceage_armor2", 
+							"lostcity_armor2", 
+							"eighties_armor2", 
+							"dino_armor2", 
+							"roman_armor2", 
+							"carnie_armor2", 
+							"beach_armor2", 
+							"beach_fem_armor2"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_superfanimp", 
+						"PreSwapTypes": [
+							"egypt_imp", 
+							"pirate_imp", 
+							"dark_imp", 
+							"future_imp", 
+							"eighties_imp", 
+							"dino_imp", 
+							"beach_imp", 
+							"lostcity_imp", 
+							"roman_imp"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_flag", 
+						"PreSwapTypes": [
+							"tutorial_flag", 
+							"mummy_flag", 
+							"zcorp_flag", 
+							"pirate_flag", 
+							"cowboy_flag", 
+							"future_flag", 
+							"dark_flag", 
+							"iceage_flag", 
+							"lostcity_flag", 
+							"eighties_flag", 
+							"dino_flag", 
+							"roman_flag", 
+							"carnie_flag", 
+							"beach_flag"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_camel_onehump", 
+						"PreSwapTypes": [
+							"camel_onehump"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_camel_twohump", 
+						"PreSwapTypes": [
+							"camel_twohump"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_camel_manyhump", 
+						"PreSwapTypes": [
+							"camel_manyhump"
+						]
+					}, 
+					{
+						"PostSwapType": "lunar_camel_segment", 
+						"PreSwapTypes": [
+							"camel_segment"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LuckOTheZombie"
+			], 
+			"objclass": "ZombieSwapProperties", 
+			"objdata": {
+				"ZombieSwaps": [
+					{
+						"PostSwapType": "stpatrick", 
+						"PreSwapTypes": [
+							"tutorial", 
+							"mummy", 
+							"zcorp", 
+							"zcorp_fem", 
+							"pirate", 
+							"cowboy", 
+							"future", 
+							"dark", 
+							"iceage", 
+							"lostcity", 
+							"eighties", 
+							"dino", 
+							"roman", 
+							"carnie", 
+							"beach", 
+							"beach_fem"
+						]
+					}, 
+					{
+						"PostSwapType": "stpatrick_armor1", 
+						"PreSwapTypes": [
+							"tutorial_armor1", 
+							"mummy_armor1", 
+							"zcorp_armor1", 
+							"zcorp_fem_armor1", 
+							"pirate_armor1", 
+							"cowboy_armor1", 
+							"future_armor1", 
+							"dark_armor1", 
+							"iceage_armor1", 
+							"lostcity_armor1", 
+							"eighties_armor1", 
+							"dino_armor1", 
+							"roman_armor1", 
+							"carnie_armor1", 
+							"beach_armor1", 
+							"beach_fem_armor1"
+						]
+					}, 
+					{
+						"PostSwapType": "stpatrick_armor2", 
+						"PreSwapTypes": [
+							"tutorial_armor2", 
+							"mummy_armor2", 
+							"zcorp_armor2", 
+							"zcorp_fem_armor2", 
+							"pirate_armor2", 
+							"cowboy_armor2", 
+							"future_armor2", 
+							"dark_armor2", 
+							"iceage_armor2", 
+							"lostcity_armor2", 
+							"eighties_armor2", 
+							"dino_armor2", 
+							"roman_armor2", 
+							"carnie_armor2", 
+							"beach_armor2", 
+							"beach_fem_armor2"
+						]
+					}, 
+					{
+						"PostSwapType": "leprachaun_dodo", 
+						"PreSwapTypes": [
+							"iceage_dodo"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Springening"
+			], 
+			"objclass": "ZombieSwapProperties", 
+			"objdata": {
+				"ZombieSwaps": [
+					{
+						"PostSwapType": "spring", 
+						"PreSwapTypes": [
+							"tutorial", 
+							"mummy", 
+							"zcorp", 
+							"zcorp_fem", 
+							"pirate", 
+							"cowboy", 
+							"future", 
+							"dark", 
+							"iceage", 
+							"lostcity", 
+							"eighties", 
+							"dino", 
+							"roman", 
+							"carnie", 
+							"beach", 
+							"beach_fem"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_armor1", 
+						"PreSwapTypes": [
+							"tutorial_armor1", 
+							"mummy_armor1", 
+							"zcorp_armor1", 
+							"zcorp_fem_armor1", 
+							"pirate_armor1", 
+							"cowboy_armor1", 
+							"future_armor1", 
+							"dark_armor1", 
+							"iceage_armor1", 
+							"lostcity_armor1", 
+							"eighties_armor1", 
+							"dino_armor1", 
+							"roman_armor1", 
+							"carnie_armor1", 
+							"beach_armor1", 
+							"beach_fem_armor1"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_armor2", 
+						"PreSwapTypes": [
+							"tutorial_armor2", 
+							"mummy_armor2", 
+							"zcorp_armor2", 
+							"zcorp_fem_armor2", 
+							"pirate_armor2", 
+							"cowboy_armor2", 
+							"future_armor2", 
+							"dark_armor2", 
+							"iceage_armor2", 
+							"lostcity_armor2", 
+							"eighties_armor2", 
+							"dino_armor2", 
+							"roman_armor2", 
+							"carnie_armor2", 
+							"beach_armor2", 
+							"beach_fem_armor2"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_flag", 
+						"PreSwapTypes": [
+							"tutorial_flag", 
+							"mummy_flag", 
+							"zcorp_flag", 
+							"pirate_flag", 
+							"cowboy_flag", 
+							"future_flag", 
+							"dark_flag", 
+							"iceage_flag", 
+							"lostcity_flag", 
+							"eighties_flag", 
+							"dino_flag", 
+							"roman_flag", 
+							"carnie_flag", 
+							"beach_flag"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_camel_onehump", 
+						"PreSwapTypes": [
+							"camel_onehump"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_camel_twohump", 
+						"PreSwapTypes": [
+							"camel_twohump"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_camel_manyhump", 
+						"PreSwapTypes": [
+							"camel_manyhump"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_camel_segment", 
+						"PreSwapTypes": [
+							"camel_segment"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_imp", 
+						"PreSwapTypes": [
+							"egypt_imp", 
+							"pirate_imp", 
+							"dark_imp", 
+							"future_imp", 
+							"eighties_imp", 
+							"dino_imp", 
+							"beach_imp", 
+							"lostcity_imp", 
+							"roman_imp"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_gargantuar", 
+						"PreSwapTypes": [
+							"tutorial_gargantuar", 
+							"egypt_gargantuar", 
+							"pirate_gargantuar", 
+							"cowboy_gargantuar", 
+							"future_gargantuar", 
+							"dark_gargantuar", 
+							"iceage_gargantuar", 
+							"lostcity_gargantuar", 
+							"eighties_gargantuar", 
+							"dino_gargantuar", 
+							"roman_gargantuar", 
+							"carnie_gargantuar", 
+							"beach_gargantuar"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_poncho", 
+						"PreSwapTypes": [
+							"poncho"
+						]
+					}, 
+					{
+						"PostSwapType": "spring_wizard", 
+						"PreSwapTypes": [
+							"dark_wizard"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Birthdayz"
+			], 
+			"objclass": "ZombieSwapProperties", 
+			"objdata": {
+				"ZombieSwaps": [
+					{
+						"PostSwapType": "birthday", 
+						"PreSwapTypes": [
+							"tutorial", 
+							"mummy", 
+							"zcorp", 
+							"zcorp_fem", 
+							"pirate", 
+							"cowboy", 
+							"future", 
+							"dark", 
+							"iceage", 
+							"lostcity", 
+							"eighties", 
+							"dino", 
+							"roman", 
+							"carnie", 
+							"beach", 
+							"beach_fem"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_flag", 
+						"PreSwapTypes": [
+							"tutorial_flag", 
+							"mummy_flag", 
+							"zcorp_flag", 
+							"pirate_flag", 
+							"cowboy_flag", 
+							"future_flag", 
+							"dark_flag", 
+							"iceage_flag", 
+							"lostcity_flag", 
+							"eighties_flag", 
+							"dino_flag", 
+							"roman_flag", 
+							"carnie_flag", 
+							"beach_flag"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_barrel", 
+						"PreSwapTypes": [
+							"barrelroller"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_gargantuar", 
+						"PreSwapTypes": [
+							"tutorial_gargantuar", 
+							"egypt_gargantuar", 
+							"pirate_gargantuar", 
+							"cowboy_gargantuar", 
+							"future_gargantuar", 
+							"dark_gargantuar", 
+							"iceage_gargantuar", 
+							"lostcity_gargantuar", 
+							"eighties_gargantuar", 
+							"dino_gargantuar", 
+							"roman_gargantuar", 
+							"carnie_gargantuar", 
+							"beach_gargantuar"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_pharaoh", 
+						"PreSwapTypes": [
+							"pharaoh"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_juggler", 
+						"PreSwapTypes": [
+							"dark_juggler"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_troglobite", 
+						"PreSwapTypes": [
+							"iceage_troglobite"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_troglobite", 
+						"PreSwapTypes": [
+							"iceage_troglobite_1block"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_troglobite", 
+						"PreSwapTypes": [
+							"iceage_troglobite_2block"
+						]
+					}, 
+					{
+						"PostSwapType": "birthday_jetpack", 
+						"PreSwapTypes": [
+							"future_jetpack"
+						]
+					}
+				]
+			}
+		}
+	]
+}

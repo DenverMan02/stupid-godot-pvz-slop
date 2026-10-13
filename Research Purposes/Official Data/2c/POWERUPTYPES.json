@@ -1,0 +1,312 @@
+{
+	"#comment": "Make new powerup types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerupwizardfinger", 
+				"ClassName": "PowerupWizardFinger", 
+				"UIImageName": "IMAGE_UI_HUD_INGAME_POWERUP_SHOCK", 
+				"UIBorderShortName": "SHOCK", 
+				"BoardTimerColor": {
+					"mRed": 255, 
+					"mGreen": 145, 
+					"mBlue": 250, 
+					"mAlpha": 125
+				}, 
+				"StringID": "POWERUP_WIZARDFINGER", 
+				"Cost": 1200, 
+				"TotalTime": 3.0, 
+				"TimePerUse": 0.001
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerupflickzombie", 
+				"ClassName": "PowerupFlickZombie", 
+				"UIImageName": "IMAGE_UI_HUD_INGAME_POWERUP_SWEEP", 
+				"UIBorderShortName": "SWEEP", 
+				"BoardTimerColor": {
+					"mRed": 255, 
+					"mGreen": 230, 
+					"mBlue": 60, 
+					"mAlpha": 125
+				}, 
+				"StringID": "POWERUP_FLICK", 
+				"Cost": 800, 
+				"TotalTime": 5.0, 
+				"TimePerUse": 0.01
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "poweruppinchzombie", 
+				"ClassName": "PowerupPinchZombie", 
+				"UIImageName": "IMAGE_UI_HUD_INGAME_POWERUP_PINCH", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 150, 
+					"mGreen": 255, 
+					"mBlue": 150, 
+					"mAlpha": 125
+				}, 
+				"StringID": "POWERUP_PINCH", 
+				"Cost": 800, 
+				"TotalTime": 6.0, 
+				"TimePerUse": 0.01
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "poweruptacticalcuke", 
+				"ClassName": "PowerupTacticalCuke", 
+				"UIImageName": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE", 
+				"UIBorderShortName": "CUKE", 
+				"BoardTimerColor": {
+					"mRed": 250, 
+					"mGreen": 250, 
+					"mBlue": 120, 
+					"mAlpha": 125
+				}, 
+				"StringID": "POWERUP_CUKE", 
+				"Cost": 1500, 
+				"AdditionCost": [
+					0, 
+					10, 
+					30, 
+					60, 
+					100, 
+					150, 
+					210, 
+					280, 
+					360, 
+					450, 
+					550
+				], 
+				"AdditionDamage": 2400, 
+				"TotalTime": 1.0, 
+				"TimePerUse": 0.01
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerupdangerroomtacticalcuke", 
+				"ClassName": "PowerupTacticalCuke", 
+				"UIImageName": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE", 
+				"UIBorderShortName": "CUKE", 
+				"BoardTimerColor": {
+					"mRed": 250, 
+					"mGreen": 250, 
+					"mBlue": 120, 
+					"mAlpha": 125
+				}, 
+				"StringID": "POWERUP_CUKE", 
+				"Cost": 1500, 
+				"AdditionCost": [
+					0, 
+					10, 
+					30, 
+					60, 
+					100, 
+					150, 
+					210, 
+					280, 
+					360, 
+					450, 
+					550
+				], 
+				"AdditionDamage": 2400, 
+				"TotalTime": 1.0, 
+				"TimePerUse": 0.01
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerupvasebreakerreveal", 
+				"ClassName": "PowerupVaseBreakerReveal", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_VASEBREAKERREVEAL", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 166, 
+					"mGreen": 252, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 200, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_TapActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"TutorialEventName": "nar_powerup_tutorial_vasebreaker_reveal", 
+				"IgnoresThreats": true
+			}
+		}, 
+		{
+			"objclass": "PowerupTypeVaseBreakerButter", 
+			"objdata": {
+				"TypeName": "powerupvasebreakerbutter", 
+				"ClassName": "PowerupVaseBreakerButter", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_VASEBREAKERBUTTER", 
+				"UIBorderShortName": "SWEEP", 
+				"BoardTimerColor": {
+					"mRed": 252, 
+					"mGreen": 236, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 300, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_ButterActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"ButterDuration": 8.0, 
+				"TutorialEventName": "nar_powerup_tutorial_vasebreaker_butter"
+			}
+		}, 
+		{
+			"objclass": "PowerupTypeVaseBreakerMove", 
+			"objdata": {
+				"TypeName": "powerupvasebreakermove", 
+				"ClassName": "PowerupVaseBreakerMove", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_VASEBREAKERMOVE", 
+				"UIBorderShortName": "SHOCK", 
+				"BoardTimerColor": {
+					"mRed": 221, 
+					"mGreen": 198, 
+					"mBlue": 255, 
+					"mAlpha": 125
+				}, 
+				"Cost": 400, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_MoveActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"TutorialEventName": "nar_powerup_tutorial_vasebreaker_move", 
+				"IgnoresThreats": true, 
+				"//": "Sets which griditems will block the vase from being moved onto a square.", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsWhichBlockMove": {
+					"ListType": "whitelist", 
+					"List": [
+						"vase", 
+						"railcart_cowboy", 
+						"surfboard", 
+						"planttarget_iceblock", 
+						"zombietarget_iceblock"
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerup_item_kill_all_zombies", 
+				"ClassName": "PowerupMiniGamePerkKillAllZombies", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_MINIGAMEPERKKILLALLZOMBIES", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 166, 
+					"mGreen": 252, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 0, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_TapActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"IgnoresThreats": true
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerup_special_item_x_ray", 
+				"ClassName": "PowerupMiniGamePerkXRay", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_MINIGAMEPERKXRAY", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 166, 
+					"mGreen": 252, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 0, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_TapActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"IgnoresThreats": true
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerup_special_item_bowling", 
+				"ClassName": "PowerupMiniGamePerkBowling", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_MINIGAMEPERKBOWLING", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 166, 
+					"mGreen": 252, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 0, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_TapActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"IgnoresThreats": true
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerup_special_item_refresh_card", 
+				"ClassName": "PowerupMiniGamePerkRefreshCard", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_MINIGAMEPERKREFRESHCARD", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 166, 
+					"mGreen": 252, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 0, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_TapActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"IgnoresThreats": true
+			}
+		}, 
+		{
+			"objclass": "PowerupType", 
+			"objdata": {
+				"TypeName": "powerup_special_item_time_back", 
+				"ClassName": "PowerupMiniGamePerkTimeBack", 
+				"UIImageName": "IMAGE_UI_ARCADE_POWERUPS_POWER_MINIGAMEPERKTIMEBACK", 
+				"UIBorderShortName": "PINCH", 
+				"BoardTimerColor": {
+					"mRed": 166, 
+					"mGreen": 252, 
+					"mBlue": 126, 
+					"mAlpha": 125
+				}, 
+				"Cost": 0, 
+				"HasInventory": false, 
+				"AudioOnPowerupSelected": "Play_UI_MiniGame_VaseBreak_TapActivate", 
+				"TotalTime": 0.5, 
+				"TimePerUse": 0.5, 
+				"IgnoresThreats": true
+			}
+		}
+	]
+}

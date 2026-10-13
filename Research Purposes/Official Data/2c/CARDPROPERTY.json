@@ -1,0 +1,1279 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"#annotate": "---------------------------------------FORMAL CARD CONFIG---------------------------------------"
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63001, 
+				"TypeName": "normal_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 0, 
+				"Description": "[NORMAL_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_tutorial@ZombieTypes)", 
+									"Multiple": 3, 
+									"Regular": true, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_3x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_tutorial", 
+						"DisplayCount": 3, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_1", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_1", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 30.0, 
+					"HitPoints": 100.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63002, 
+				"TypeName": "self_explode_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 0, 
+				"Description": "[SELF_EXPLODE_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_selfexplode@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_selfexplode", 
+						"DisplayCount": 1, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_1", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_1", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 1000.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63003, 
+				"TypeName": "mech_cone_zombie", 
+				"Cost": 2, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 1, 
+				"Description": "[MECH_CONE_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_mech_cone@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_mech_cone", 
+						"DisplayCount": 1, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_1", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_1", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 30.0, 
+					"HitPoints": 1500.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63004, 
+				"TypeName": "launch_missile", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 2, 
+				"Description": "[LAUNCH_MISSILE_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_missile_leader@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_FullScreen_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 2000.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63005, 
+				"TypeName": "normal_gravestone", 
+				"Cost": 2, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 1, 
+				"Description": "[NORMAL_GRAVESTONE_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_gravestoneZombieTimeSpawner_normal@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(GridItem_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "grid_item", 
+						"TypeName": "cardgame_gravestoneZombieTimeSpawner_normal", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 500.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63006, 
+				"TypeName": "chicken_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 1, 
+				"Description": "[CHICKEN_ZOMBIED_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(chicken@ZombieTypes)", 
+									"Multiple": 20, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_3x3@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "chicken", 
+						"DisplayCount": 3, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 20.0, 
+					"HitPoints": 1.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63007, 
+				"TypeName": "future_gargantuar_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 1, 
+				"Description": "[FUTURE_GARGANTUAR_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_future_gargantuar@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_future_gargantuar", 
+						"DisplayCount": 1, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 250.0, 
+					"HitPoints": 2000.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63008, 
+				"TypeName": "chicken_gravestone", 
+				"Cost": 2, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 1, 
+				"Description": "[CHICKEN_GRAVESTONE_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_gravestoneZombieTimeSpawner_chicken@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(GridItem_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "grid_item", 
+						"TypeName": "cardgame_gravestoneZombieTimeSpawner_chicken", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 500.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63009, 
+				"TypeName": "rage_potion", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 1, 
+				"Description": "[RAGE_POTION_DES]", 
+				"EffectList": [
+					{
+						"AddConditionEffectProperty": {
+							"Codition": "potionspeed2", 
+							"Team": "plants"
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_FullScreen_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_5", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_5", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63010, 
+				"TypeName": "shield_potion", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 1, 
+				"Description": "[SHIELD_POTION_DES]", 
+				"EffectList": [
+					{
+						"AddConditionEffectProperty": {
+							"Codition": "cardgame_shield", 
+							"Duration": 10, 
+							"Team": "plants"
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_FullScreen_3x3@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_5", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_5", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63011, 
+				"TypeName": "gravestone_upgrade", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 2, 
+				"Description": "[GRAVESTONE_UPGRADE_DES]", 
+				"EffectList": [
+					{
+						"UpgradeGravestoneCardEffectProperty": {}
+					}
+				], 
+				"TargetProps": "RTID(GraveStoneUpgrade_Target@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "skill", 
+						"TypeName": "POPANIM_EFFECTS_CARD_GAME_CURSOR_SPANNER", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63012, 
+				"TypeName": "cavalry_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 2, 
+				"Description": "[CAVALRY_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_cavalry@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_cavalry", 
+						"DisplayCount": 1, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 500.0, 
+					"HitPoints": 800.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63013, 
+				"TypeName": "electric_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 2, 
+				"Description": "[ELECTRIC_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_electric@ZombieTypes)", 
+									"Multiple": 3, 
+									"Regular": true, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_3x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_electric", 
+						"DisplayCount": 3, 
+						"AnimOffset": [
+							{
+								"Min": -15.0, 
+								"Max": 15.0
+							}, 
+							{
+								"Min": 0, 
+								"Max": 0
+							}
+						]
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 50.0, 
+					"HitPoints": 100.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63014, 
+				"TypeName": "shooter_gravestone", 
+				"Cost": 2, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 2, 
+				"Description": "[SHOOTER_GRAVESTONE_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_gravestoneZombieTimeSpawner_shooter@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(GridItem_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "grid_item", 
+						"TypeName": "cardgame_gravestoneZombieTimeSpawner_shooter", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 500.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63015, 
+				"TypeName": "protector_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 2, 
+				"Description": "[PROTECTOR_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_protector@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_protector", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 30.0, 
+					"HitPoints": 2000.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63016, 
+				"TypeName": "firewall", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 1, 
+				"Description": "[FIREWALL_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_firewall@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_FullScreen_Column3@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 400.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63017, 
+				"TypeName": "magic_mirror", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 3, 
+				"Description": "[MAGIC_MIRROR_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_magic_mirror@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(GridItem_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 500.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63018, 
+				"TypeName": "zombie_duplicate", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 3, 
+				"Description": "[ZOMBIE_DUPLICATE_DES]", 
+				"EffectList": [
+					{
+						"AddAuraCardEffectProperty": {
+							"AuraProperty": "RTID(doubled_summon_zombie@CardProperty)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_FullScreen_NoTarget@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_5", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_5", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63019, 
+				"TypeName": "disco_mech_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 3, 
+				"Description": "[DISCO_MECH_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_disco_mech@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_disco_mech", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 30.0, 
+					"HitPoints": 1500.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63020, 
+				"TypeName": "battle_plane_zombie", 
+				"Cost": 1, 
+				"Tags": [
+					"zombie", 
+					"creature", 
+					"summon"
+				], 
+				"Rarity": 3, 
+				"Description": "[BATTLE_PLANE_ZOMBIE_DES]", 
+				"EffectList": [
+					{
+						"SummonZombieEffectProperty": {
+							"ZombieList": [
+								{
+									"ZombieType": "RTID(cardgame_battleplane@ZombieTypes)", 
+									"Multiple": 1, 
+									"OffRangeX": {
+										"x": 0, 
+										"y": 40
+									}
+								}
+							]
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "zombie", 
+						"TypeName": "cardgame_battleplane", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 100.0, 
+					"HitPoints": 800.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63021, 
+				"TypeName": "speedup_staff", 
+				"Cost": 1, 
+				"Tags": [
+					"skill"
+				], 
+				"Rarity": 3, 
+				"Description": "[SPEEDUP_STAFF_DES]", 
+				"EffectList": [
+					{
+						"AddGridItemCardEffectProperty": {
+							"GridItemType": "RTID(cardgame_gravestone_staff@GridItemTypes)"
+						}
+					}
+				], 
+				"TargetProps": "RTID(GridItem_Normal_1x1@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "grid_item", 
+						"TypeName": "cardgame_gravestone_staff", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"objclass": "CardType", 
+			"objdata": {
+				"CardID": 63022, 
+				"TypeName": "curse", 
+				"Cost": 1, 
+				"Tags": [
+					"curse", 
+					"exhaust"
+				], 
+				"Rarity": 9, 
+				"Description": "[CURSE_DES]", 
+				"EffectList": [
+					{
+						"RoundActionHurtPlayerProperty": {
+							"EffectType": "before_player_discard", 
+							"DamageRate": 0.1
+						}
+					}
+				], 
+				"TargetProps": "RTID(Grid_FullScreen_NoTarget@CardProperty)", 
+				"TargetCursorConfig": {
+					"TargetCursorClass": "GridTargetCursor", 
+					"Anim": {
+						"Type": "special", 
+						"DisplayCount": 1
+					}
+				}, 
+				"CardInfo": {
+					"CardBackgroundImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardSelectImgName": "IMAGE_UI_CARD_GAME_CARDS_4", 
+					"CardTouchMoveImgName": "IMAGE_UI_CARD_GAME_CARD_CURSOR"
+				}, 
+				"Attribute": {
+					"Attack": 0.0, 
+					"HitPoints": 0.0
+				}
+			}
+		}, 
+		{
+			"#annotate": "---------------------------------------OTHER CARD CONFIG---------------------------------------"
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_Normal_1x1"
+			], 
+			"objdata": {
+				"Left": 0, 
+				"Right": 0, 
+				"Up": 0, 
+				"Down": 0, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 6, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_Normal_3x3"
+			], 
+			"objdata": {
+				"Left": -1, 
+				"Right": 1, 
+				"Up": -1, 
+				"Down": 1, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 6, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_Normal_3x1"
+			], 
+			"objdata": {
+				"Left": 0, 
+				"Right": 0, 
+				"Up": -1, 
+				"Down": 1, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 6, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_Normal_Column"
+			], 
+			"objdata": {
+				"Left": 0, 
+				"Right": 0, 
+				"Up": -100, 
+				"Down": 100, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 6, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_FullScreen_1x1"
+			], 
+			"objdata": {
+				"Left": 0, 
+				"Right": 0, 
+				"Up": 0, 
+				"Down": 0, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 13, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_FullScreen_3x3"
+			], 
+			"objdata": {
+				"Left": -1, 
+				"Right": 1, 
+				"Up": -1, 
+				"Down": 1, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 13, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_FullScreen_Column"
+			], 
+			"objdata": {
+				"Left": 0, 
+				"Right": 0, 
+				"Up": -100, 
+				"Down": 100, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 13, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_FullScreen_Column3"
+			], 
+			"objdata": {
+				"Left": -1, 
+				"Right": 1, 
+				"Up": -100, 
+				"Down": 100, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 13, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_Normal_NoTarget"
+			], 
+			"objdata": {
+				"Targeted": false, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 6, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridTargetProperty", 
+			"aliases": [
+				"Grid_FullScreen_NoTarget"
+			], 
+			"objdata": {
+				"Targeted": false, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 13, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieTargetProperty", 
+			"aliases": [
+				"Zombie_AllZombie_Target"
+			], 
+			"objdata": {
+				"AllZombie": true, 
+				"TeamFlag": "plants"
+			}
+		}, 
+		{
+			"objclass": "GraveStoneUpgradeTargetProperty", 
+			"aliases": [
+				"GraveStoneUpgrade_Target"
+			], 
+			"objdata": {
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 13, 
+					"mHeight": 7
+				}
+			}
+		}, 
+		{
+			"objclass": "GridItemTargetProperty", 
+			"aliases": [
+				"GridItem_Normal_1x1"
+			], 
+			"objdata": {
+				"Left": 0, 
+				"Right": 0, 
+				"Up": 0, 
+				"Down": 0, 
+				"TargetRange": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 6, 
+					"mHeight": 7
+				}, 
+				"GridItemCheck": true
+			}
+		}, 
+		{
+			"#annotate": "---------------------------------------aura effect---------------------------------------"
+		}, 
+		{
+			"objclass": "GiveFreeZombieCardAuraProperty", 
+			"aliases": [
+				"give_one_free_zombie_card"
+			], 
+			"objdata": {
+				"GiveNumber": 1
+			}
+		}, 
+		{
+			"objclass": "DoubledSummonZombieAuraProperty", 
+			"aliases": [
+				"doubled_summon_zombie"
+			], 
+			"objdata": {
+				"DoubledTimes": 2
+			}
+		}, 
+		{
+			"#annotate": "---------------------------------------card setting property---------------------------------------"
+		}, 
+		{
+			"objclass": "CardSettingProperty", 
+			"objdata": {
+				"MoveToEnemyBlackList": [
+					"cardgame_cavalry", 
+					"cardgame_electric"
+				], 
+				"MoveToBossBlackList": [
+					"cardgame_cavalry"
+				], 
+				"GridItemPlaceCheckList": []
+			}
+		}
+	]
+}

@@ -1,0 +1,67 @@
+{
+	"#comment": "Store Gift Data Here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "StoreGiftConfig", 
+			"aliases": [
+				"StoreGiftConfig"
+			], 
+			"objdata": {
+				"StoreGiftDataArray": [
+					{
+						"Product": "RTID(MagentoProduct_test_gift_one@Magento)", 
+						"Image": "IMAGE_UI_STORE_SALE_IMAGE_1", 
+						"AddCoin": 0, 
+						"PlantPiecesArray": [
+							{
+								"PlantName": "iceburg", 
+								"NameContent": "[ICEBURG]", 
+								"PieceCount": 15
+							}, 
+							{
+								"PlantName": "torchwood", 
+								"NameContent": "[BONUS_CARD_PIECE_TORCHWOOD]", 
+								"PieceCount": 15
+							}
+						], 
+						"AvatarPiecesArray": [], 
+						"UnlockAvatarArray": [
+							"iceburg"
+						]
+					}, 
+					{
+						"Product": "RTID(MagentoProduct_test_gift_two@Magento)", 
+						"Image": "IMAGE_UI_STORE_SALE_IMAGE_2", 
+						"AddCoin": 100000, 
+						"PlantPiecesArray": [], 
+						"AvatarPiecesArray": [], 
+						"UnlockAvatarArray": [
+							"kernelpult", 
+							"snowpea"
+						]
+					}, 
+					{
+						"Product": "RTID(MagentoProduct_test_gift_three@Magento)", 
+						"Image": "IMAGE_UI_STORE_SALE_IMAGE_3", 
+						"AddCoin": 0, 
+						"PlantPiecesArray": [], 
+						"AvatarPiecesArray": [
+							{
+								"AvatarPlantName": "iceburg", 
+								"NameContent": "[STORE_PRODUCT_AVATAR_ICEBURG_TITLE]", 
+								"PieceCount": 3
+							}, 
+							{
+								"AvatarPlantName": "wallnut", 
+								"NameContent": "[STORE_PRODUCT_AVATAR_WALLNUT_TITLE]", 
+								"PieceCount": 5
+							}
+						], 
+						"UnlockAvatarArray": []
+					}
+				]
+			}
+		}
+	]
+}

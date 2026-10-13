@@ -1,0 +1,499 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "MarketLayoutProps", 
+			"aliases": [
+				"MarketLayoutProps"
+			], 
+			"objdata": {
+				"GlobalConfig": {
+					"NotificationTimerEvent": "QA 2020 Year of 8 Hour Events", 
+					"NotificationDailyGiftCategory": "Daily Offers", 
+					"DefaultTabType": "Promoted Offers"
+				}, 
+				"Markets": [
+					{
+						"Type": "Main", 
+						"Clusters": [
+							"Promotions", 
+							"Events", 
+							"Groups", 
+							"Plants", 
+							"Resources"
+						]
+					}, 
+					{
+						"Type": "Tutorial", 
+						"Clusters": [
+							"Tutorial"
+						]
+					}, 
+					{
+						"Type": "CoinQuickStore", 
+						"Clusters": [
+							"CoinQuickStore"
+						], 
+						"QuickStoreInnerHeader": "[STORE_COINS_CURRENT_PROFILE]", 
+						"ShowInnerHeaderOnlyForMultipleProfiles": "true"
+					}, 
+					{
+						"Type": "GemQuickStore", 
+						"Clusters": [
+							"GemQuickStore"
+						], 
+						"QuickStoreInnerHeader": "[STORE_GEMS_CURRENT_PROFILE]", 
+						"ShowInnerHeaderOnlyForMultipleProfiles": "true"
+					}, 
+					{
+						"Type": "SproutQuickStore", 
+						"Clusters": [
+							"SproutQuickStore"
+						], 
+						"QuickStoreInnerHeader": "[STORE_SPROUTS_CURRENT_PROFILE]", 
+						"ShowInnerHeaderOnlyForMultipleProfiles": "true"
+					}, 
+					{
+						"Type": "GauntletQuickStore", 
+						"Clusters": [
+							"GauntletQuickStore"
+						], 
+						"QuickStoreInnerHeader": "[STORE_TICKETS_CURRENT_PROFILE]", 
+						"ShowInnerHeaderOnlyForMultipleProfiles": "true"
+					}, 
+					{
+						"Type": "FuelQuickStore", 
+						"Clusters": [
+							"FuelQuickStore"
+						], 
+						"QuickStoreInnerHeader": ""
+					}, 
+					{
+						"Type": "MintQuickStore", 
+						"Clusters": [
+							"MintQuickStore"
+						], 
+						"QuickStoreInnerHeader": ""
+					}, 
+					{
+						"Type": "EventEnergy1QuickStore", 
+						"Clusters": [
+							"EventEnergy1QuickStore"
+						], 
+						"QuickStoreInnerHeader": ""
+					}
+				], 
+				"Clusters": [
+					{
+						"Type": "Promotions", 
+						"Tabs": [
+							"Promoted Offers", 
+							"Timed Offers"
+						]
+					}, 
+					{
+						"Type": "Groups", 
+						"Tabs": [
+							"Pinatas", 
+							"Bundles"
+						]
+					}, 
+					{
+						"Type": "Plants", 
+						"Tabs": [
+							"Plants"
+						]
+					}, 
+					{
+						"Type": "Resources", 
+						"Tabs": [
+							"Resources"
+						]
+					}, 
+					{
+						"Type": "Events", 
+						"Tabs": [
+							"Events"
+						]
+					}, 
+					{
+						"Type": "Tutorial", 
+						"Tabs": [
+							"Tutorial"
+						]
+					}, 
+					{
+						"Type": "CoinQuickStore", 
+						"Tabs": [
+							"CoinQuickStore"
+						]
+					}, 
+					{
+						"Type": "GemQuickStore", 
+						"Tabs": [
+							"GemQuickStore"
+						]
+					}, 
+					{
+						"Type": "SproutQuickStore", 
+						"Tabs": [
+							"SproutQuickStore"
+						]
+					}, 
+					{
+						"Type": "GauntletQuickStore", 
+						"Tabs": [
+							"GauntletQuickStore"
+						]
+					}, 
+					{
+						"Type": "FuelQuickStore", 
+						"Tabs": [
+							"FuelQuickStore"
+						]
+					}, 
+					{
+						"Type": "MintQuickStore", 
+						"Tabs": [
+							"MintQuickStore"
+						]
+					}, 
+					{
+						"Type": "EventEnergy1QuickStore", 
+						"Tabs": [
+							"EventEnergy1QuickStore"
+						]
+					}
+				], 
+				"Tabs": [
+					{
+						"Type": "Promoted Offers", 
+						"Name": "[STORE_TAB_PROMOTED_OFFERS]", 
+						"ImageDown": "IMAGE_UI_STORE_GEMSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_GEMSTAB_ACTIVE", 
+						"Categories": [
+							"Promoted Offers"
+						]
+					}, 
+					{
+						"Type": "Timed Offers", 
+						"Name": "[STORE_ADVENTURE]", 
+						"ImageDown": "IMAGE_UI_STORE_SPROUTSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_SPROUTSTAB_ACTIVE", 
+						"Categories": [
+							"8 Hour Offers", 
+							"Daily Offers", 
+							"QATest"
+						]
+					}, 
+					{
+						"Type": "Pinatas", 
+						"Name": "[STORE_TAB_PINATAS]", 
+						"ImageDown": "IMAGE_UI_STORE_PINATASTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_PINATASTAB_ACTIVE", 
+						"Categories": [
+							"Pinatas"
+						]
+					}, 
+					{
+						"Type": "Bundles", 
+						"Name": "[STORE_TAB_BUNDLES]", 
+						"ImageDown": "IMAGE_UI_STORE_BUNDLESTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_BUNDLESTAB_ACTIVE", 
+						"Categories": [
+							"Bundles"
+						]
+					}, 
+					{
+						"Type": "Plants", 
+						"Name": "[STORE_TAB_PLANTS]", 
+						"ImageDown": "IMAGE_UI_STORE_PLANTSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_PLANTSTAB_ACTIVE", 
+						"Categories": [
+							"Plants"
+						]
+					}, 
+					{
+						"Type": "Resources", 
+						"Name": "[STORE_TAB_RESOURCES]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"Coins", 
+							"Gems", 
+							"Tickets", 
+							"Upgrades"
+						]
+					}, 
+					{
+						"Type": "Events", 
+						"Name": "[STORE_TAB_SPECIAL]", 
+						"ImageDown": "IMAGE_UI_STORE_UPGRADESTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_UPGRADESTAB_ACTIVE", 
+						"Categories": [
+							"Events"
+						]
+					}, 
+					{
+						"Type": "Tutorial", 
+						"Name": "[STORE_TAB_TUTORIAL]", 
+						"ImageDown": "IMAGE_UI_STORE_PINATASTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_PLANTSTAB_ACTIVE", 
+						"Categories": [
+							"Tutorial"
+						]
+					}, 
+					{
+						"Type": "CoinQuickStore", 
+						"Name": "[STORE_TAB_COINS]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"QuickCoins"
+						]
+					}, 
+					{
+						"Type": "GemQuickStore", 
+						"Name": "[STORE_TAB_GEMS]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"QuickGems"
+						]
+					}, 
+					{
+						"Type": "SproutQuickStore", 
+						"Name": "[STORE_TAB_SPROUTS]", 
+						"ImageDown": "IMAGE_UI_STORE_SPROUTSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_SPROUTSTAB_ACTIVE", 
+						"Categories": [
+							"QuickSprouts"
+						]
+					}, 
+					{
+						"Type": "GauntletQuickStore", 
+						"Name": "[STORE_TAB_GAUNTLETS]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"QuickGauntlets"
+						]
+					}, 
+					{
+						"Type": "FuelQuickStore", 
+						"Name": "[STORE_TAB_FUEL]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"QuickFuel"
+						]
+					}, 
+					{
+						"Type": "MintQuickStore", 
+						"Name": "[STORE_TAB_MINTS]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"Coins"
+						]
+					}, 
+					{
+						"Type": "EventEnergy1QuickStore", 
+						"Name": "[STORE_TAB_ENERGY]", 
+						"ImageDown": "IMAGE_UI_STORE_COINSTAB_DOWN", 
+						"ImageActive": "IMAGE_UI_STORE_COINSTAB_ACTIVE", 
+						"Categories": [
+							"QuickEnergy1"
+						]
+					}
+				], 
+				"Categories": [
+					{
+						"Type": "QATest", 
+						"LabelText": "QATest", 
+						"MaxCount": -1, 
+						"DebugOnly": true, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_GEM_CARD"
+					}, 
+					{
+						"Type": "Promoted Offers", 
+						"LabelText": "", 
+						"MaxCount": -1, 
+						"PromotionSlots": [
+							"Slot1", 
+							"Slot2", 
+							"Slot3", 
+							"Slot4"
+						]
+					}, 
+					{
+						"Type": "Daily Offers", 
+						"LabelText": " ", 
+						"MaxCount": 24, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_SPROUT_CARD", 
+						"ShowTimer": true, 
+						"Comment": "The timer only appears if all products in this category have the same time remaining.  If you need to segregate, currently you would make a new category."
+					}, 
+					{
+						"Type": "8 Hour Offers", 
+						"LabelText": " ", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_SPROUT_CARD", 
+						"ShowTimer": true, 
+						"Comment": "The timer only appears if all products in this category have the same time remaining.  If you need to segregate, currently you would make a new category."
+					}, 
+					{
+						"Type": "Pinatas", 
+						"LabelText": "", 
+						"MaxCount": 46, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_GEM_CARD"
+					}, 
+					{
+						"Type": "Bundles", 
+						"LabelText": "", 
+						"MaxCount": 36, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_BUNDLE_CARD"
+					}, 
+					{
+						"Type": "Plants", 
+						"LabelText": "", 
+						"MaxCount": 36, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_PLANT_CARD"
+					}, 
+					{
+						"Type": "Tutorial", 
+						"LabelText": "", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_PLANT_CARD"
+					}, 
+					{
+						"Type": "Coins", 
+						"LabelText": "", 
+						"MaxCount": 7, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_COIN_CARD"
+					}, 
+					{
+						"Type": "Tickets", 
+						"LabelText": "", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_COIN_CARD"
+					}, 
+					{
+						"Type": "Gems", 
+						"LabelText": "", 
+						"MaxCount": 7, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_GEM_CARD"
+					}, 
+					{
+						"Type": "QuickCoins", 
+						"LabelText": "", 
+						"MaxCount": 7, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_COIN_CARD"
+					}, 
+					{
+						"Type": "QuickGems", 
+						"LabelText": "", 
+						"MaxCount": 7, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_GEM_CARD"
+					}, 
+					{
+						"Type": "QuickGauntlets", 
+						"LabelText": "", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_UPGRADE_CARD"
+					}, 
+					{
+						"Type": "QuickFuel", 
+						"LabelText": "", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_PLANT_CARD"
+					}, 
+					{
+						"Type": "QuickSprouts", 
+						"LabelText": "", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_SPROUT_CARD"
+					}, 
+					{
+						"Type": "Upgrades", 
+						"LabelText": "", 
+						"MaxCount": 8, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_UPGRADE_CARD"
+					}, 
+					{
+						"Type": "Events", 
+						"LabelText": "", 
+						"MaxCount": 40, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_UPGRADE_CARD"
+					}, 
+					{
+						"Type": "Legacy", 
+						"LabelText": "Legacy", 
+						"MaxCount": -1, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_COIN_CARD"
+					}, 
+					{
+						"Type": "RvPlantRental", 
+						"LabelText": "", 
+						"MaxCount": -1, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_PLANT_CARD"
+					}, 
+					{
+						"Type": "QuickEnergy1", 
+						"LabelText": "EventEnergy", 
+						"MaxCount": 6, 
+						"Card": "IMAGE_UI_CARDS_STORE_STORE_PLANT_CARD"
+					}
+				], 
+				"PromotionSlots": [
+					{
+						"Type": "Slot1", 
+						"GroupPriority": [
+							"NewPlant", 
+							"SeasonOffers", 
+							"StarterBundles", 
+							"MidPlayerOffers"
+						], 
+						"FallbackCategory": "Bundles"
+					}, 
+					{
+						"Type": "Slot2", 
+						"GroupPriority": [
+							"HolidayOffers", 
+							"POTWOffers", 
+							"StarterBundles", 
+							"RiftOffers"
+						], 
+						"FallbackCategory": "Bundles"
+					}, 
+					{
+						"Type": "Slot3", 
+						"GroupPriority": [
+							"HolidayOffers", 
+							"POTWOffers", 
+							"StarterBundles"
+						], 
+						"FallbackCategory": "Upgrades"
+					}, 
+					{
+						"Type": "Slot4", 
+						"GroupPriority": [
+							"POTWOffers", 
+							"HolidayOffers", 
+							"StarterBundles", 
+							"SeasonOffers", 
+							"AdWatch"
+						], 
+						"FallbackCategory": ""
+					}
+				], 
+				"ItemThemes": [
+					{
+						"Type": "lod", 
+						"CardImage": "IMAGE_UI_CARDS_STORE_STORE_DYNAMIC_SLOT_CARD"
+					}
+				]
+			}
+		}
+	]
+}

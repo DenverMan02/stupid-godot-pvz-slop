@@ -1,0 +1,421 @@
+{
+	"#comment": "Make new present types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"uid": "1.1.1", 
+			"objclass": "PresentTypeCoin", 
+			"objdata": {
+				"TypeName": "coinpack_small", 
+				"PopAnim": "POPANIM_EFFECTS_COIN_SILVER", 
+				"Animation": "animation", 
+				"CoinValue": "10"
+			}
+		}, 
+		{
+			"uid": "1.2.1", 
+			"objclass": "PresentTypeCoin", 
+			"objdata": {
+				"TypeName": "coinpack_medium", 
+				"PopAnim": "POPANIM_EFFECTS_COIN_GOLD", 
+				"Animation": "animation", 
+				"CoinValue": "100"
+			}
+		}, 
+		{
+			"uid": "1.3.1", 
+			"objclass": "PresentTypeCoin", 
+			"objdata": {
+				"TypeName": "coinpack_large", 
+				"PopAnim": "POPANIM_EFFECTS_COIN_DIAMOND", 
+				"Animation": "IDLE", 
+				"Scale": 0.5, 
+				"CoinValue": "1000"
+			}
+		}, 
+		{
+			"uid": "1.4.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_egypt_small", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_EGYPT", 
+				"Animation": "idle", 
+				"Scale": 0.5, 
+				"WorldName": "egypt", 
+				"KeyCount": 1
+			}
+		}, 
+		{
+			"uid": "1.5.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_egypt_medium", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_EGYPT", 
+				"Animation": "idle", 
+				"Scale": 0.62, 
+				"WorldName": "egypt", 
+				"KeyCount": 2
+			}
+		}, 
+		{
+			"uid": "1.6.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_egypt_large", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_EGYPT", 
+				"Animation": "idle", 
+				"WorldName": "egypt", 
+				"KeyCount": 3
+			}
+		}, 
+		{
+			"uid": "1.7.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_pirate_small", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_PIRATE", 
+				"Animation": "idle", 
+				"Scale": 0.5, 
+				"WorldName": "pirate", 
+				"KeyCount": 1
+			}
+		}, 
+		{
+			"uid": "1.8.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_pirate_medium", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_PIRATE", 
+				"Animation": "idle", 
+				"Scale": 0.62, 
+				"WorldName": "pirate", 
+				"KeyCount": 2
+			}
+		}, 
+		{
+			"uid": "1.9.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_pirate_large", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_PIRATE", 
+				"Animation": "idle", 
+				"WorldName": "pirate", 
+				"KeyCount": 3
+			}
+		}, 
+		{
+			"uid": "1.10.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_cowboy_small", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_COWBOY", 
+				"Animation": "idle", 
+				"Scale": 0.5, 
+				"WorldName": "cowboy", 
+				"KeyCount": 1
+			}
+		}, 
+		{
+			"uid": "1.11.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_cowboy_medium", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_COWBOY", 
+				"Animation": "idle", 
+				"Scale": 0.62, 
+				"WorldName": "cowboy", 
+				"KeyCount": 2
+			}
+		}, 
+		{
+			"uid": "1.12.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_cowboy_large", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_COWBOY", 
+				"Animation": "idle", 
+				"WorldName": "cowboy", 
+				"KeyCount": 3
+			}
+		}, 
+		{
+			"#comment": "presents are for drop groups only begin", 
+			"uid": "1.13.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_1000", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 1000
+			}
+		}, 
+		{
+			"uid": "1.14.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_1500", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 1500
+			}
+		}, 
+		{
+			"uid": "1.15.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_2000", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 2000
+			}
+		}, 
+		{
+			"uid": "1.16.1", 
+			"objclass": "PresentTypeDropEmpty", 
+			"objdata": {
+				"TypeName": "emtpy"
+			}
+		}, 
+		{
+			"uid": "1.17.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_2500", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 2500
+			}
+		}, 
+		{
+			"uid": "1.18.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_3000", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 3000
+			}
+		}, 
+		{
+			"uid": "1.19.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_snowpea_1", 
+				"PieceName": "snowpea", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_SNOWPEA", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.20.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_torchwood_1", 
+				"PieceName": "torchwood", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_TORCHWOOD", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.21.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_3500", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 3500
+			}
+		}, 
+		{
+			"uid": "1.22.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_5000", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 5000
+			}
+		}, 
+		{
+			"uid": "1.23.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_kernelpult_1", 
+				"PieceName": "kernelpult", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_KERNELPULT", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.24.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_lightningreed_1", 
+				"PieceName": "lightningreed", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_LIGHTNINGREED", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.25.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_coconutcannon_1", 
+				"PieceName": "coconutcannon", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_COCONUTCANNON", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.26.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_7500", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 7500
+			}
+		}, 
+		{
+			"uid": "1.27.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_melonpult_1", 
+				"PieceName": "melonpult", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_MELONPULT", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.28.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_peapod_1", 
+				"PieceName": "peapod", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_PEAPOD", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.29.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_imitater_1", 
+				"PieceName": "imitater", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_IMITATER", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.30.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_10000", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 10000
+			}
+		}, 
+		{
+			"uid": "1.31.1", 
+			"objclass": "PresentTypeDropGold", 
+			"objdata": {
+				"TypeName": "gold_4000", 
+				"Image": "IMAGE_ENDLEVEL_MONEYBAG", 
+				"CoinValue": 4000
+			}
+		}, 
+		{
+			"#comment": "presents are for drop groups only end", 
+			"uid": "1.32.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_gravebuster_1", 
+				"PieceName": "gravebuster", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_GRAVEBUSTER", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.33.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_kongfu_small", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_KONGFU", 
+				"Animation": "idle", 
+				"Scale": 0.5, 
+				"WorldName": "kongfu", 
+				"KeyCount": 1
+			}
+		}, 
+		{
+			"uid": "1.34.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_kongfu_medium", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_KONGFU", 
+				"Animation": "idle", 
+				"Scale": 0.62, 
+				"WorldName": "kongfu", 
+				"KeyCount": 2
+			}
+		}, 
+		{
+			"uid": "1.35.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_kongfu_large", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_KONGFU", 
+				"Animation": "idle", 
+				"WorldName": "kongfu", 
+				"KeyCount": 3
+			}
+		}, 
+		{
+			"uid": "1.33.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_future_small", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_FUTURE", 
+				"Animation": "idle", 
+				"Scale": 0.5, 
+				"WorldName": "future", 
+				"KeyCount": 1
+			}
+		}, 
+		{
+			"uid": "1.34.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_future_medium", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_FUTURE", 
+				"Animation": "idle", 
+				"Scale": 0.62, 
+				"WorldName": "future", 
+				"KeyCount": 2
+			}
+		}, 
+		{
+			"uid": "1.35.1", 
+			"objclass": "PresentTypeKey", 
+			"objdata": {
+				"TypeName": "key_future_large", 
+				"PopAnim": "POPANIM_EFFECTS_KEY_FUTURE", 
+				"Animation": "idle", 
+				"WorldName": "future", 
+				"KeyCount": 3
+			}
+		}, 
+		{
+			"uid": "1.36.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_firegourd_1", 
+				"PieceName": "firegourd", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_FIREGOURD", 
+				"PieceCount": 1
+			}
+		}, 
+		{
+			"uid": "1.37.1", 
+			"objclass": "PresentTypeDropPiece", 
+			"objdata": {
+				"TypeName": "piece_peach_1", 
+				"PieceName": "peach", 
+				"Image": "IMAGE_UI_FRAGMENT_PIECES_PACKETS_PEACH", 
+				"PieceCount": 1
+			}
+		}
+	]
+}

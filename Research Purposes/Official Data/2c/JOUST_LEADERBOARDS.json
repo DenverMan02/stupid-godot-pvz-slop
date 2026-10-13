@@ -1,0 +1,47 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"Leaderboard_Normal"
+			], 
+			"objclass": "JoustLeaderboardDefinition", 
+			"objdata": {
+				"DemotionCount": 3, 
+				"LeaderboardSize": 15, 
+				"MinimumLeagueBeforeDemotion": 3, 
+				"MinimumPlayerCountBeforeDemotion": 10, 
+				"NumLeagues": 9, 
+				"PromotionCount": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"Leaderboard_Fast"
+			], 
+			"objclass": "JoustLeaderboardDefinition", 
+			"objdata": {
+				"DemotionCount": 3, 
+				"LeaderboardSize": 15, 
+				"MinimumLeagueBeforeDemotion": 3, 
+				"MinimumPlayerCountBeforeDemotion": 10, 
+				"NumLeagues": 9, 
+				"PromotionCount": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"Leaderboard_Playtest"
+			], 
+			"objclass": "JoustLeaderboardDefinition", 
+			"objdata": {
+				"DemotionCount": 3, 
+				"LeaderboardSize": 100, 
+				"MinimumLeagueBeforeDemotion": 3, 
+				"MinimumPlayerCountBeforeDemotion": 13, 
+				"NumLeagues": 9, 
+				"PromotionCount": 10
+			}
+		}
+	], 
+	"version": 1
+}

@@ -70,4 +70,3 @@ func play_sfx(stream: AudioStream) -> void:
 	_sfx_index = (_sfx_index + 1) % SFX_POOL_SIZE
 	p.stream = stream
 	p.play()
-

@@ -1,0 +1,258 @@
+{
+	"#comment": "Make new effect object types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"####### ... ########": 0
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_frostwind"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_frostwind", 
+				"EffectObjectClass": "EffectObject_FrostWind", 
+				"ResourceGroups": [
+					"IceAgeFrostWindGroup", 
+					"FrostbiteIceBlockPlantGroup"
+				], 
+				"Properties": "RTID(EffectObjectFrostWind@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_frostwind_zomboss"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_frostwind_zomboss", 
+				"EffectObjectClass": "EffectObject_FrostWind", 
+				"ResourceGroups": [
+					"IceAgeFrostWindGroup", 
+					"FrostbiteIceBlockPlantGroup"
+				], 
+				"Properties": "RTID(EffectObjectIceAgeZombossFrostWind@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_trapfire"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_trapfire", 
+				"EffectObjectClass": "EffectObject_DamageOverTime", 
+				"ResourceGroups": [
+					"LevelCommon", 
+					"ZombieLostCityZombossGroup", 
+					"PrizeEffectsCommon"
+				], 
+				"Properties": "RTID(EffectObjectTrapFire@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"effectobject_planeshadow"
+			], 
+			"objdata": {
+				"TypeName": "effectobject_planeshadow", 
+				"EffectObjectClass": "EffectObject_StretchedScrollingImage", 
+				"ResourceGroups": [
+					"LevelCommon", 
+					"ZombieLostCityZombossGroup", 
+					"PrizeEffectsCommon"
+				], 
+				"Properties": "RTID(EffectObjectPlaneShadow@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"strawburst_plantfood"
+			], 
+			"objdata": {
+				"TypeName": "strawburst_plantfood", 
+				"EffectObjectClass": "EffectObject_StrawburstPlantfood", 
+				"ResourceGroups": [
+					"PlantStrawburst", 
+					"PlantStrawburstAudio"
+				], 
+				"Properties": "RTID(EffectObjectStrawburstPlantfood@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"escaperoot_targetplant"
+			], 
+			"objdata": {
+				"TypeName": "escaperoot_targetplant", 
+				"EffectObjectClass": "EffectObject_TargetPlant", 
+				"ResourceGroups": [
+					"PlantEscapeRoot", 
+					"PlantEscapeRootAudio"
+				], 
+				"Properties": "RTID(EffectObjectTargetPlant@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"tombstone_spawn"
+			], 
+			"objdata": {
+				"TypeName": "tombstone_spawn", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"Tombstone_Dark_Effects"
+				], 
+				"Properties": "RTID(EffectObjectTombstoneSpawn@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"level_planting"
+			], 
+			"objdata": {
+				"TypeName": "level_planting", 
+				"EffectObjectClass": "EffectObject_LevelPlanting", 
+				"ResourceGroups": [
+					"LevelCommon", 
+					"PrizeEffectsCommon"
+				], 
+				"Properties": "RTID(EffectObjectLevelPlanting@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"GenericExplosionFront"
+			], 
+			"objdata": {
+				"TypeName": "lookups_by_string_name_are_a_mistake", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"LevelCommon", 
+					"PrizeEffectsCommon"
+				], 
+				"Properties": "RTID(EffectObjectGenericExplosionFront@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"PotatoMineExplosion"
+			], 
+			"objdata": {
+				"TypeName": "lookups_by_string_name_are_a_mistake", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"PlantPotatomine"
+				], 
+				"Properties": "RTID(EffectObjectPotatoMineExplosion@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"PrimalPotatoMineExplosion"
+			], 
+			"objdata": {
+				"TypeName": "lookups_by_string_name_are_a_mistake", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"PlantPrimalPotatomineExplosion"
+				], 
+				"Properties": "RTID(EffectObjectPrimalPotatoMineExplosion@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"SolarTomatoMainExplosion"
+			], 
+			"objdata": {
+				"TypeName": "SolarTomatoMainExplosion", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"PlantSolarTomato"
+				], 
+				"Properties": "RTID(EffectObjectSolarTomatoMainExplosion@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"SolarTomatoAOEExplosion"
+			], 
+			"objdata": {
+				"TypeName": "SolarTomatoAOEExplosion", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"PlantSolarTomato"
+				], 
+				"Properties": "RTID(EffectObjectSolarTomatoAOEExplosion@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"snappea_burrowattack"
+			], 
+			"objdata": {
+				"TypeName": "snappea_burrowattack", 
+				"EffectObjectClass": "EffectObject_BurrowAttack", 
+				"ResourceGroups": [
+					"PlantSnapPea", 
+					"PlantPeaShooter"
+				], 
+				"Properties": "RTID(EffectObjectBurrowAttack@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"puffball_confetti"
+			], 
+			"objdata": {
+				"TypeName": "puffball_confetti", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"PlantPuffball"
+				], 
+				"Properties": "RTID(EffectObjectPuffballConfetti@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"murkadamia_tentacles"
+			], 
+			"objdata": {
+				"TypeName": "murkadamia_tentacles", 
+				"EffectObjectClass": "EffectObject_AnimSequence", 
+				"ResourceGroups": [
+					"PlantMurkadamia"
+				], 
+				"Properties": "RTID(EffectObjectMurkadamiaTentacles@PropertySheets)"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectType", 
+			"aliases": [
+				"TeleportatoMineExplosion"
+			], 
+			"objdata": {
+				"TypeName": "lookups_by_string_name_are_a_mistake", 
+				"EffectObjectClass": "EffectObject", 
+				"ResourceGroups": [
+					"PlantTeleportatoMine"
+				], 
+				"Properties": "RTID(EffectObjectTeleportatoMineExplosion@PropertySheets)"
+			}
+		}
+	]
+}

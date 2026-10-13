@@ -1,0 +1,76 @@
+{
+	"#comment": "Insert new Area Main here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "NewPVPAreaMainProperties", 
+			"aliases": [
+				"slider_main"
+			], 
+			"objdata": {
+				"Description": "[NEW_PVP_AREA_SLIDER_DESCRIPTION]", 
+				"Name": "[NEW_PVP_AREA_SLIDER_NAME]", 
+				"Type": "slider_main", 
+				"AreaNames": [
+					"slider"
+				]
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaMainProperties", 
+			"aliases": [
+				"mist_main"
+			], 
+			"objdata": {
+				"Description": "[NEW_PVP_AREA_MIST_DESCRIPTION]", 
+				"Name": "[NEW_PVP_AREA_MIST_NAME]", 
+				"Type": "mist_main", 
+				"AreaNames": [
+					"mist"
+				]
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaMainProperties", 
+			"aliases": [
+				"guide_door_main"
+			], 
+			"objdata": {
+				"Description": "[NEW_PVP_AREA_GUIDE_DOOR_DESCRIPTION]", 
+				"Name": "[NEW_PVP_AREA_GUIDE_DOOR_NAME]", 
+				"Type": "guide_door_main", 
+				"AreaNames": [
+					"guide_door"
+				]
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaMainProperties", 
+			"aliases": [
+				"merge_main"
+			], 
+			"objdata": {
+				"Description": "[NEW_PVP_AREA_MERGE_DESCRIPTION]", 
+				"Name": "[NEW_PVP_AREA_MERGE_NAME]", 
+				"Type": "merge_main", 
+				"AreaNames": [
+					"merge"
+				]
+			}
+		}, 
+		{
+			"objclass": "NewPVPAreaMainProperties", 
+			"aliases": [
+				"sun_tile_main"
+			], 
+			"objdata": {
+				"Description": "[NEW_PVP_AREA_SUN_TILE_DESCRIPTION]", 
+				"Name": "[NEW_PVP_AREA_SUN_TILE_NAME]", 
+				"Type": "sun_tile_main", 
+				"AreaNames": [
+					"sun_tile"
+				]
+			}
+		}
+	]
+}

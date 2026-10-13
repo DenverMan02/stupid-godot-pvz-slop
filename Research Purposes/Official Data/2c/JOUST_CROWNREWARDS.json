@@ -1,0 +1,52 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"CrownSet_Normal"
+			], 
+			"objclass": "JoustCrownRewardDefinition", 
+			"objdata": {
+				"CrownsLoss": 1, 
+				"CrownsProgressiveBonus": [
+					5, 
+					10, 
+					15, 
+					20, 
+					25, 
+					30, 
+					35, 
+					40, 
+					45, 
+					50, 
+					55, 
+					60, 
+					65, 
+					70, 
+					75, 
+					80, 
+					85, 
+					90, 
+					95, 
+					100
+				], 
+				"CrownsWinBase": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"CrownSet_High"
+			], 
+			"objclass": "JoustCrownRewardDefinition", 
+			"objdata": {
+				"CrownsLoss": 0, 
+				"CrownsProgressiveBonus": [
+					10, 
+					13, 
+					40
+				], 
+				"CrownsWinBase": 10
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,71 @@
+{
+	"#comment": "JoustPlantPower Config here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "JoustPlantPowerConfig", 
+			"aliases": [
+				"JoustPlantPowerConfigData"
+			], 
+			"objdata": {
+				"SetList": [
+					{
+						"RareType": 0, 
+						"LevelPower": [
+							10, 
+							20, 
+							30, 
+							40, 
+							50
+						], 
+						"AvatarPower": 10
+					}, 
+					{
+						"RareType": 1, 
+						"LevelPower": [
+							24, 
+							48, 
+							72, 
+							96, 
+							120
+						], 
+						"AvatarPower": 20
+					}, 
+					{
+						"RareType": 2, 
+						"LevelPower": [
+							36, 
+							72, 
+							108, 
+							144, 
+							180
+						], 
+						"AvatarPower": 30
+					}, 
+					{
+						"RareType": 3, 
+						"LevelPower": [
+							48, 
+							96, 
+							144, 
+							192, 
+							240
+						], 
+						"AvatarPower": 40
+					}, 
+					{
+						"RareType": 4, 
+						"LevelPower": [
+							60, 
+							120, 
+							180, 
+							240, 
+							300
+						], 
+						"AvatarPower": 50
+					}
+				]
+			}
+		}
+	]
+}

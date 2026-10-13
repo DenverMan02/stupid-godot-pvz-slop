@@ -1,0 +1,7302 @@
+{
+	"#comment": "All UI Sheet objects should go here", 
+	"version": 1, 
+	"objects": [
+		{
+			"#comment": "######################################################################\n\t\t\n\t\t\tName\t\t\t\t Data Type   Default   Description\n\t\t\t===================================================================================================\n\t\t\tClass\t\t\t\t- (string) - UIWidget\tClass to spawn when the property sheet is loaded.\n \n\t\t\tParent\t\t\t\t- (string) - null       Parent UIWidget to attach to\n \n\t\t\tParentAnchor\t\t- (string) - TopLeft    Location on parent we anchor to. Values:\n\t\t\t[TopLeft, Top, TopRight, Left, Center, Right, UITopBarBottomLeft, Bottom, BottomRight]\n \n\t\t\tAnchor\t\t\t\t- (string) - TopLeft    Location on parent we anchor to. Values:\n\t\t\t[TopLeft, Top, TopRight, Left, Center, Right, BottomLeft, Bottom, BottomRight]\n \n\t\t\tResourceGroup\t\t- (string) - null       Resource group name that has our art resources\n \n\t\t\tWidth\t\t\t\t- (uint16) - 0          Set the SCREEN width of the widget. Values:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t\t: Auto-fit to the max size it can be in regards to all widgets\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t> 0\t\t: Size to use\n \n\t\t\tHeight\t\t\t\t- (uint16)  - 0          Set the SCREEN height of the widget. Values:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t\t: Auto-fit to the max size it can be in regards to all widgets\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t> 0\t\t: Size to use\n\n\t\t\tVirtualWidth\t\t- (uint16) - 0          Set the virtual width of the widget (will be SCALED to the SCREEN with UI_S). Values:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t\t: Auto-fit to the max size it can be in regards to all widgets\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t> 0\t\t: Size to use\n \n\t\t\tVirtualHeight\t\t- (uint16)  - 0         Set the virtual height of the widget (will be SCALED to the SCREEN with UI_S). Values:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t\t: Auto-fit to the max size it can be in regards to all widgets\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t> 0\t\t: Size to use\n \n\t\t\tSizeFromImage\t\t- (string) - null       Sets the width and height of the widget based upon the size of the specified image.\n \n\t\t\tSizeFromScreen\t\t- (bool)   - false      Sets the width and height of the widget based upon the size of the device screen.\n \n\t\t\tWidthFromImage\t\t- (string) - null       Sets the width of the widget based upon the size of the specified image.\n \n\t\t\tHeightFromImage\t\t- (string) - null       Sets the height of the widget based upon the size of the specified image.\n \n\t\t\tInputPriority\t\t- (int8)   - 0          Specify the priority that the widget receives mouse input. Values:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t0      : Receives no Input\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t1 - 4  : Lower numbers have higher priority\n \n\t\t\tVirtualHitInsets\t- (array)\t\t\t\tSpecify the virtual insets for the hit detection (will be SCALED to the SCREEN with UI_S).\n\t\t\t\t\tmLeft\t\t- (int16)  - 0\t\t\tleft inset\n\t\t\t\t\tmTop\t\t- (int16)  - 0\t\t\ttop inset\n\t\t\t\t\tmRight\t\t- (int16)  - 0\t\t\tright inset\n\t\t\t\t\tmBottom\t\t- (int16)  - 0\t\t\tbottom inset\n\t \n\t\t\tPositionOffset\t\t- (array)\t\t\t\tLocation offset from our anchor location. NOTE: This is assumed to be in SCREEN SPACE. If you want it scaled, set ScalePositionOffset\n\t\t\t\t\tx\t\t\t- (int)\t   - 0\t\t\tx offset\n\t\t\t\t\ty\t\t\t- (int)\t   - 0\t\t\ty offset\n\n\t\t\tScalePositionOffset\t- (bool)   - false      Specify if we scale the position offset with the UI_S macro\n \n\t\t\tRenderOrder\t\t\t- (int16)  - 0\t\t\tRender order of the widget, lower numbers are drawn first.\n \t\t    SingleInstance\t\t- (bool)   - true\t\tJust create one widget, if you want create more, please set false.\n\t\t\t######################################################################", 
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIScreen"
+			], 
+			"objdata": {
+				"SizeFromScreen": true, 
+				"SupportForFullScreen": true, 
+				"InputPriority": 0
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISunBank"
+			], 
+			"objdata": {
+				"Class": "SunBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 94, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 35, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIMoonCapacityBank"
+			], 
+			"objdata": {
+				"Class": "MoonCapacityBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 120, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 35, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAdsSunBank"
+			], 
+			"objdata": {
+				"Class": "CustomLevelAds", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 163, 
+				"VirtualHeight": 50, 
+				"InputPriority": 3, 
+				"PositionOffset": {
+					"x": 130, 
+					"y": 2
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICoinBank"
+			], 
+			"objdata": {
+				"Class": "CoinBank", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 115, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -100, 
+					"y": -15
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIGemBank"
+			], 
+			"objdata": {
+				"Class": "GemBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": -122, 
+					"y": 14
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpacetimeEnergy"
+			], 
+			"objdata": {
+				"Class": "UISpacetimeEnergy", 
+				"Parent": "UIPVZ1ModeHowToPlayBtn", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "UI_TimeEnergy", 
+				"SizeFromImage": "IMAGE_UI_TIME_ENERGY_BAR_FRONT", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": -275, 
+					"y": -5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINostalgiaAchievementDialog"
+			], 
+			"objdata": {
+				"Class": "NostalgiaAchievementDialog", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 250, 
+				"VirtualHeight": 60, 
+				"InputPriority": 1, 
+				"RenderOrder": 4, 
+				"PositionOffset": {
+					"x": 8, 
+					"y": 80
+				}, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UITimerBank"
+			], 
+			"objdata": {
+				"Class": "TimerBank", 
+				"Parent": "UISunBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"#PVZ2_CHINESE Make UIGemBank clickable": 1, 
+				"PositionOffset": {
+					"x": 140, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaStarBank"
+			], 
+			"objdata": {
+				"Class": "ArenaStarBank", 
+				"Parent": "UIGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 200, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_ARENA_STAR_ON", 
+				"InputPriority": 0, 
+				"#PVZ2_CHINESE Make UIGemBank clickable": 1, 
+				"PositionOffset": {
+					"x": -40, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaStartTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ArenaStartTimer", 
+				"Parent": "UIGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"WidthFromImage": "IMAGE_UI_HUD_INGAME_ARENA_COUNT_DOWN", 
+				"VirtualHeight": 80, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -40, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIBossChallengeTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "BossChallengeTimer", 
+				"Parent": "UIGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"Width": 250, 
+				"Height": 100, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -25, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaPlayerBank"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ArenaPlayerBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"WidthFromImage": "IMAGE_UI_HUD_INGAME_ARENA_OPP_BG", 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_ARENA_OPP_BG", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIViewBoardOrZombies"
+			], 
+			"objdata": {
+				"Class": "ViewBoardOrZombiesButton", 
+				"Parent": "UIPauseButton", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_VIEWZOMBIES_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIQinHardTips"
+			], 
+			"objdata": {
+				"Class": "UIQinEndlessTipsButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_VIEWZOMBIES_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 90
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIStartGameButton"
+			], 
+			"objdata": {
+				"Class": "StartGameButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 140, 
+				"HeightFromImage": "IMAGE_UI_GENERIC_PURPLEBUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -87, 
+					"y": 85
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPTestButton"
+			], 
+			"objdata": {
+				"Class": "NewPVPTestButton", 
+				"Parent": "UINewPVPZombieUpgradeSkillBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_New_PVP", 
+				"SizeFromImage": "IMAGE_UI_ARCADE_POWERUPS_POWER_BEGHOULEDFILL", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -87, 
+					"y": 85
+				}, 
+				"RenderOrder": 1, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaPVPStartButton"
+			], 
+			"objdata": {
+				"Class": "ArenaPVPStartButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 160, 
+				"HeightFromImage": "IMAGE_UI_GENERIC_PURPLEBUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -180, 
+					"y": -80
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaOccupyStartButton"
+			], 
+			"objdata": {
+				"Class": "ArenaOccupyStartButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 90, 
+				"HeightFromImage": "IMAGE_UI_GENERIC_PURPLEBUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 80, 
+					"y": -20
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaOccupyQuitButton"
+			], 
+			"objdata": {
+				"Class": "ArenaOccupyQuitButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 90, 
+				"HeightFromImage": "IMAGE_UI_GENERIC_PURPLEBUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -220, 
+					"y": -20
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINextWaveButton"
+			], 
+			"objdata": {
+				"Class": "NextWaveButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"RenderOrder": 365, 
+				"VirtualWidth": 180, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_NEXTWARE_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -13, 
+					"y": 141
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINextWaveInstantButton"
+			], 
+			"objdata": {
+				"Class": "NextWaveButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 180, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_NEXTWAVE_INSTANT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -13, 
+					"y": 141
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPauseButton"
+			], 
+			"objdata": {
+				"Class": "PauseButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_PAUSE_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -8, 
+					"y": 8
+				}, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICustomLevelAppraise"
+			], 
+			"objdata": {
+				"Class": "CustomLevelAppraiseUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 50, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -120, 
+					"y": 8
+				}, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChangeSpeedButton"
+			], 
+			"objdata": {
+				"Class": "SpeedChange", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 115, 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_SPEED", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -64, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsBoardZombieDetails"
+			], 
+			"objdata": {
+				"Class": "PlantWarsBoardZombieDetails", 
+				"Parent": "UIChangeSpeedButton", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 60, 
+				"VirtualHeight": 27, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -62, 
+					"y": 7
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaChangeSpeedButton"
+			], 
+			"objdata": {
+				"Class": "ArenaChangeSpeedButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 115, 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_ARENA_CHANGE_SPEED", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -143, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArenaEndingButton"
+			], 
+			"objdata": {
+				"Class": "ArenaEndingButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 115, 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_ARENA_END", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -12, 
+					"y": 12
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBank"
+			], 
+			"objdata": {
+				"Class": "SeedBankNew", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 40
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRiftSeedBank"
+			], 
+			"objdata": {
+				"Class": "RiftSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 40
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAtlantisShellSeedBank"
+			], 
+			"objdata": {
+				"Class": "AtlantisShellSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 40
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpaceTimeTearSeedBank"
+			], 
+			"objdata": {
+				"Class": "SpaceTimeTearSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 40
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAquariumCoinBank"
+			], 
+			"objdata": {
+				"Class": "AquariumCoinBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 94, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 35, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAquariumSeedBank"
+			], 
+			"objdata": {
+				"Class": "AquariumSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 40
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAquariumSkillContainer"
+			], 
+			"objdata": {
+				"Class": "AquariumSkillContainer", 
+				"Parent": "UIAquariumCoinBank", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 400, 
+				"VirtualHeight": 65, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 500, 
+					"y": 20
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAquariumSkill"
+			], 
+			"objdata": {
+				"Class": "AquariumSkill", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 60, 
+				"VirtualHeight": 60, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAquariumHowToPlayBtn"
+			], 
+			"objdata": {
+				"Class": "UIAquariumHowToPlayButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -120, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBankAtlantisShellPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_ToolAtlantisShell", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedSeedBank"
+			], 
+			"objdata": {
+				"Class": "UnchartedSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 40
+				}, 
+				"RenderOrder": -1, 
+				"ScalePositionOffset": true, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIConveyorSeedBank"
+			], 
+			"objdata": {
+				"Class": "ConveyorSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"VirtualHeight": 600, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": -1, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPneumaticSeedBank"
+			], 
+			"objdata": {
+				"Class": "PneumaticSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"Width": 200, 
+				"Height": 768, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": -1
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVPSeedBank"
+			], 
+			"objdata": {
+				"Class": "PVPSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"Width": 168, 
+				"Height": 555, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -22
+				}, 
+				"RenderOrder": -1
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVPSkillEnergy"
+			], 
+			"objdata": {
+				"Class": "PVPSkillEnergyUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"Width": 150, 
+				"Height": 50, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": -1
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBankPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBankToolPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_Tool", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBankAquariumPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_ToolAquarium", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBankRiftPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_ToolRift", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedBankPowerupPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_Powerup", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVPSkillSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_PVPSkill", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_ZOMBIE_SKILL_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVPSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_PVP", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPSeedBank"
+			], 
+			"objdata": {
+				"Class": "NewPVPSeedBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "UI_New_PVP", 
+				"Width": 168, 
+				"Height": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": -1
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_NewPVP", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPTopZombieQueue"
+			], 
+			"objdata": {
+				"Class": "UINewPVPTopZombieQueue", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_New_PVP", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 300, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPTopZombieQueueItem"
+			], 
+			"objdata": {
+				"Class": "UINewPVPTopZombieQueueItem", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_ZOMBIE_PVP2_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPSunIncreaseBank"
+			], 
+			"objdata": {
+				"Class": "UINewPVPSunIncreaseBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_New_PVP", 
+				"VirtualWidth": 380, 
+				"VirtualHeight": 100, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 100, 
+					"y": -5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPSurrenderButton"
+			], 
+			"objdata": {
+				"Class": "UINewPVPSurrenderButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_VIEWZOMBIES_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPReportButton"
+			], 
+			"objdata": {
+				"Class": "UINewPVPReportButton", 
+				"Parent": "UINewPVPSurrenderButton", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_VIEWZOMBIES_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -50, 
+					"y": 0
+				}, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPZombieUpgradeSkillBank"
+			], 
+			"objdata": {
+				"Class": "UINewPVPZombieUpgradeSkillBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"Width": 168, 
+				"Height": 540, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 2.34
+				}, 
+				"RenderOrder": -1
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPSkillBank"
+			], 
+			"objdata": {
+				"Class": "UINewPVPSkillBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_FRAME", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 2.34
+				}, 
+				"RenderOrder": -1
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPInitialSkill"
+			], 
+			"objdata": {
+				"Class": "UINewPVPInitialSkill", 
+				"Parent": "UINewPVPSkillBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_SHOCK", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": 2
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPRoundBank"
+			], 
+			"objdata": {
+				"Class": "UINewPVPRoundBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 150, 
+				"VirtualHeight": 30, 
+				"ResourceGroup": "UI_New_PVP", 
+				"PositionOffset": {
+					"x": 1000, 
+					"y": 1000
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"NewPVPInfoCard"
+			], 
+			"objdata": {
+				"Class": "NewPVPInfoCard", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 300, 
+				"VirtualHeight": 80, 
+				"ResourceGroup": "UI_Rank_Avatar", 
+				"PositionOffset": {
+					"x": 1200, 
+					"y": 236
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIIZombieSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_IZombie", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_Uncharted", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIDangerRoomSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_DangerRoom", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIDangerRoomTrainingSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_DangerRoomTraining", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UITopBar"
+			], 
+			"objdata": {
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"WidthFromScreen": true, 
+				"Height": 60, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIBottomBar"
+			], 
+			"objdata": {
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"BoardScaledVirtualWidth": 567, 
+				"Height": 78, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -33, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestTopLeft"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestTop"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestTopRight"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestLeft"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestCenter"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestRight"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestBottomLeft"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestBottom"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnchorTestBottomRight"
+			], 
+			"objdata": {
+				"Class": "UIAnchorDebugBlock", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"VirtualWidth": 56, 
+				"VirtualHeight": 56, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupMatchInfo"
+			], 
+			"objdata": {
+				"Class": "DaveCupMatchInfo", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 80, 
+				"RenderOrder": 100, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupTips"
+			], 
+			"objdata": {
+				"Class": "DaveCupTips", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"VirtualWidth": 500, 
+				"VirtualHeight": 60, 
+				"RenderOrder": 100, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 100
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupTimer"
+			], 
+			"objdata": {
+				"Class": "DaveCupCountdown", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 230, 
+				"VirtualHeight": 100, 
+				"RenderOrder": 300, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -40
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupClock"
+			], 
+			"objdata": {
+				"Class": "DaveCupClockAnim", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 50, 
+				"VirtualHeight": 50, 
+				"RenderOrder": 400, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -120
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIHeadshotLeft"
+			], 
+			"objdata": {
+				"Class": "DaveCupHeadshot", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"VirtualWidth": 60, 
+				"VirtualHeight": 420, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIHeadshotRight"
+			], 
+			"objdata": {
+				"Class": "DaveCupHeadshot", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"VirtualWidth": 60, 
+				"VirtualHeight": 420, 
+				"RenderOrder": 200, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupImageVS"
+			], 
+			"objdata": {
+				"Class": "DaveCupImageVS", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"VirtualWidth": 85, 
+				"VirtualHeight": 85, 
+				"RenderOrder": 100, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupBystander"
+			], 
+			"objdata": {
+				"Class": "DaveCupBystander", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"VirtualWidth": 120, 
+				"VirtualHeight": 40, 
+				"RenderOrder": 100, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -80
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupAllInLeft"
+			], 
+			"objdata": {
+				"Class": "DaveCupAllInSupport", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 66, 
+				"RenderOrder": 100, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -220, 
+					"y": 140
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupSupportLeft"
+			], 
+			"objdata": {
+				"Class": "DaveCupSupport", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 66, 
+				"RenderOrder": 50, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": -220, 
+					"y": 140
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupAllInRight"
+			], 
+			"objdata": {
+				"Class": "DaveCupAllInSupport", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 66, 
+				"RenderOrder": 100, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 220, 
+					"y": 140
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupSupportRight"
+			], 
+			"objdata": {
+				"Class": "DaveCupSupport", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 66, 
+				"RenderOrder": 50, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 220, 
+					"y": 140
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupTeamDetailsLeft"
+			], 
+			"objdata": {
+				"Class": "DaveCupTeamDetails", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"VirtualWidth": 300, 
+				"VirtualHeight": 70, 
+				"RenderOrder": 20, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -200, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupTeamDetailsRight"
+			], 
+			"objdata": {
+				"Class": "DaveCupTeamDetails", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"VirtualWidth": 300, 
+				"VirtualHeight": 70, 
+				"RenderOrder": 20, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupEmojiSwitch"
+			], 
+			"objdata": {
+				"Class": "DaveCupEmojiSwitch", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"VirtualWidth": 55, 
+				"VirtualHeight": 55, 
+				"RenderOrder": 200, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupEmoji"
+			], 
+			"objdata": {
+				"Class": "DaveCupEmoji", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"VirtualWidth": 55, 
+				"VirtualHeight": 55, 
+				"RenderOrder": 200, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -75, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"DaveCupReturn"
+			], 
+			"objdata": {
+				"Class": "DaveCupReturn", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 60, 
+				"VirtualHeight": 60, 
+				"RenderOrder": 200, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheStabilityUI"
+			], 
+			"objdata": {
+				"Class": "SouDaCheStabilityUI", 
+				"Parent": "SouDaCheNodeProgressBar", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"VirtualWidth": 120, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"RenderOrder": 360, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -130, 
+					"y": 20
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SoudacheCoinBarUI"
+			], 
+			"objdata": {
+				"Class": "SoudacheCoinBarUI", 
+				"Parent": "SouDaCheStabilityUI", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Right", 
+				"VirtualWidth": 120, 
+				"VirtualHeight": 42, 
+				"ResourceGroup": "UI_Fragment_Material", 
+				"RenderOrder": 361, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -290, 
+					"y": 70
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheZombiePreviewUI"
+			], 
+			"objdata": {
+				"Class": "SouDaCheZombiePreviewUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"SizeFromScreen": true, 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"RenderOrder": 340, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheNodeProgressBar"
+			], 
+			"objdata": {
+				"Class": "SouDaCheNodeProgressBar", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"VirtualWidth": 460, 
+				"VirtualHeight": 74, 
+				"RenderOrder": 350, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 80, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheWarehouseUI"
+			], 
+			"objdata": {
+				"Class": "SouDaCheWarehouseUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 600, 
+				"RenderOrder": 355, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 30, 
+					"y": 85
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheWarehouseSlot"
+			], 
+			"objdata": {
+				"Class": "SouDaCheWarehouseSlot", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"RenderOrder": 356, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheCardTipUI"
+			], 
+			"objdata": {
+				"Class": "SouDaCheCardTipUI", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"VirtualWidth": 220, 
+				"VirtualHeight": 60, 
+				"RenderOrder": 357, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheBondPreviewButton"
+			], 
+			"objdata": {
+				"Class": "SouDaCheBondPreviewButton", 
+				"Parent": "SouDaCheBondPreviewUI", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"SizeFromImage": "IMAGE_UI_SOUDACHE_BOND_PREVIEW_BUTTON_DOWN", 
+				"Width": 122, 
+				"Height": 136, 
+				"RenderOrder": 355, 
+				"InputPriority": 4, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheBondPreviewUI"
+			], 
+			"objdata": {
+				"Class": "SouDaCheBondPreviewUI", 
+				"Parent": "UIPauseButton", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"VirtualWidth": 130, 
+				"VirtualHeight": 400, 
+				"RenderOrder": 355, 
+				"InputPriority": 5, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 15
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheBondDetailPanel"
+			], 
+			"objdata": {
+				"Class": "SouDaCheBondDetailPanel", 
+				"Parent": "SouDaCheBondPreviewUI", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Right", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"VirtualWidth": 220, 
+				"VirtualHeight": 340, 
+				"RenderOrder": 400, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheBattleIntroUI"
+			], 
+			"objdata": {
+				"Class": "SouDaCheBattleIntroUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"WidthFromScreen": true, 
+				"HeightFromScreen": true, 
+				"RenderOrder": 400, 
+				"InputPriority": 100, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheStartBattleButton"
+			], 
+			"objdata": {
+				"Class": "SouDaCheStartBattleButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"VirtualWidth": 200, 
+				"VirtualHeight": 60, 
+				"RenderOrder": 360, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -30
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SouDaCheNextNodeButton"
+			], 
+			"objdata": {
+				"Class": "SouDaCheNextNodeButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "UI_SouDaChe_Game", 
+				"VirtualWidth": 120, 
+				"VirtualHeight": 120, 
+				"RenderOrder": 360, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -140, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantfood"
+			], 
+			"objdata": {
+				"Class": "PlantfoodUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_PLANTFOOD_BANK", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 2.34
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAdsPlantfood"
+			], 
+			"objdata": {
+				"Class": "CustomLevelAds", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 163, 
+				"VirtualHeight": 50, 
+				"InputPriority": 3, 
+				"PositionOffset": {
+					"x": 160, 
+					"y": -13
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICollection"
+			], 
+			"objdata": {
+				"Class": "CollectionUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_PAUSE_BUTTON", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"WorldCupScoreUI"
+			], 
+			"objdata": {
+				"Class": "UIWorldCupScore", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_WORLDCUP_SCORE_BG", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 170, 
+					"y": 2.34
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIShovel"
+			], 
+			"objdata": {
+				"Class": "ShovelUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_SHOVEL_BUTTON", 
+				"InputPriority": 2, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -2
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISoudacheGarbageButton"
+			], 
+			"objdata": {
+				"Class": "SoudacheGarbageButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_SOUDACHE_GARBAGE_BTN", 
+				"InputPriority": 2, 
+				"VirtualHitInsets": {
+					"mLeft": -20, 
+					"mTop": -20, 
+					"mRight": 20, 
+					"mBottom": 20
+				}, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -2
+				}, 
+				"ScalePositionOffset": true, 
+				"Visible": false
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISoudacheRecycleButton"
+			], 
+			"objdata": {
+				"Class": "SoudacheRecycleButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_RECYCLE_SHOVEL_BUTTON", 
+				"InputPriority": 2, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": -124, 
+					"y": -2
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISoudacheShopButton"
+			], 
+			"objdata": {
+				"Class": "SoudacheShopButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_RECYCLE_SHOVEL_BUTTON", 
+				"InputPriority": 2, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": -248, 
+					"y": -2
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPFPSCounter"
+			], 
+			"objdata": {
+				"Class": "NewPVPFPSCounter", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 90, 
+				"VirtualHeight": 40, 
+				"PositionOffset": {
+					"x": -70, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISkyCannon"
+			], 
+			"objdata": {
+				"Class": "SkyCannonUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": 220, 
+					"y": 14
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISkyCannonType"
+			], 
+			"objdata": {
+				"Class": "SkyCannonTypeUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_FISHING_CANNONBACK_S", 
+				"InputPriority": 1, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": 260, 
+					"y": 14
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIFishingEnergyBar"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "FishingEnergyBar", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 240, 
+				"VirtualHeight": 40, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 145, 
+					"y": 11.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpeedChange"
+			], 
+			"objdata": {
+				"Class": "SpeedChange", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_SHOVEL_BUTTON", 
+				"InputPriority": 2, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": -100, 
+					"y": -2
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWhackHammer"
+			], 
+			"objdata": {
+				"Class": "WhackHammerUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_SHOVEL_BUTTON", 
+				"InputPriority": 2, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -2
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRunningSubwaySkill"
+			], 
+			"objdata": {
+				"Class": "RunningSubwaySkillButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 405, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true, 
+				"RenderOrder": 5
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIconWithPrismTower"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButtonWithPrismTower", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIconWithCalabash"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButtonWithCalabash", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIconWithCamera"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButtonWithCamera", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIconWithSwarm"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButtonWithSwarm", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIconWithHolo"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButtonWithHolo", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIconWithBeehive"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButtonWithBeehive", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIArtifactIcon"
+			], 
+			"objdata": {
+				"Class": "BoardArtifactButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UILunarTerminalButton"
+			], 
+			"objdata": {
+				"Class": "LunarTerminalButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 305, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIHeroPlantIcon"
+			], 
+			"objdata": {
+				"Class": "BoardHeroPlantButton", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HEROPLANT_BUTTON_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 520, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ1ModeHowToPlayBtn"
+			], 
+			"objdata": {
+				"Class": "UIPVZ1ModeHowToPlayButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -120, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISouDaCheHowToPlayBtn"
+			], 
+			"objdata": {
+				"Class": "UISouDaCheHowToPlayButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -120, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ2UnchartedHowToPlayBtn"
+			], 
+			"objdata": {
+				"Class": "UIPVZ2UnchartedHowToPlayButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -130, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapScrollBannerSwitchButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ScrollBannerSwitchButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_SCROLLBANNER_SWITCH", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPowerup"
+			], 
+			"objdata": {
+				"Class": "PowerupTimeUI", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_BORDER", 
+				"RenderOrder": 2, 
+				"InputPriority": 2
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPowerupHolder"
+			], 
+			"objdata": {
+				"Class": "PowerupHolderUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_CUKE_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 405, 
+					"y": 14
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIGoldenFingerHolder"
+			], 
+			"objdata": {
+				"Class": "GoldenFingerHolderUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_POWERUP_FRAME", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 400, 
+					"y": 20
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UITutorialDemoBar"
+			], 
+			"objdata": {
+				"Class": "TutorialDemoBarUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_DEMO", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 100
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISkipTutorialButton"
+			], 
+			"objdata": {
+				"Class": "TutorialSkipButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 120, 
+				"VirtualHeight": 40, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -120, 
+					"y": 100
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIProgressBar"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "WaveProgressMeter", 
+				"Parent": "UIGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -243.625, 
+					"y": 11.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRenaiProgressBar"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "RenaiWaveProgressMeter", 
+				"Parent": "UIGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -243.625, 
+					"y": 11.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIBeghouledProgressBar"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "BeghouledWaveProgressMeter", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 210, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 183, 
+					"y": 19.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIBossProgressBar"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "BossProgressMeter", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 183, 
+					"y": 19.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRiftBossProgressBar"
+			], 
+			"objdata": {
+				"Class": "BossProgressMeterRift", 
+				"Parent": "UIShovel", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 210, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -270, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIBattlezBossStageCounter"
+			], 
+			"objdata": {
+				"Class": "ChallengeScoringUI", 
+				"Parent": "UIShovel", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"VirtualWidth": 270, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"RenderOrder": 2, 
+				"PositionOffset": {
+					"x": -40, 
+					"y": -18
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAirshipProgress"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "AirshipProgressMeter", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 183, 
+					"y": 19.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISubmarineProgress"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "SubmarineProgressMeter", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 198, 
+					"y": 19.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPeaRainProgressMeter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "PeaRainProgressMeter", 
+				"Parent": "UIPlantfood", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 215.0, 
+					"y": 5.0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardGameHomeProgress"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "AirshipProgressMeter", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 105, 
+					"y": 16.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINewPVPHealthBar"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "NewPVPHealthBar", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "UI_New_PVP", 
+				"VirtualWidth": 150, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 105, 
+					"y": 216.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeSunCounter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeSunCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 117, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeSunCounter2"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeSunCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 117, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePlantCounter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengePlantCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePlantCounter2"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengePlantCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePlantCounter3"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengePlantCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeSunTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeSunTimerUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeLevelTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeLevelTimerUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRiftTimedEventTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeRiftTimedEventUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 120, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsTimedEventTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengePlantWarsTimedEventUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 120, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 213, 
+					"y": 19.125
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeZombieKillCounter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeSandstormZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeBufferTileZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePotionZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeTentZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeUnfreezePlants"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeFirecrackerZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeFireworksZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeProtectPlantByProtectorShield"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengePlantCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeBlowBarrelZombie"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeBarrelPowderZombieKill"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 110, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeApplyConditionCounter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeGridItemCounter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeGeneralPhasesCounter"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeCounterUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsCreditUI"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "PlantWarsCreditUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"VirtualWidth": 260, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 65
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIZombieRushCreditUI"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ZombieRushCreditUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"VirtualWidth": 260, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 65
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIZombieFeverUI"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ZombieFeverUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "Center", 
+				"Anchor": "Center", 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 90
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ2Training"
+			], 
+			"objdata": {
+				"Class": "PVZ2TrainingUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"VirtualWidth": 260, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 65
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ2TrainingTime"
+			], 
+			"objdata": {
+				"Class": "PVZ2TrainingTimeUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"VirtualWidth": 155, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpaceTimeTearTime"
+			], 
+			"objdata": {
+				"Class": "SpaceTimeTearTimeUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 155, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 350, 
+					"y": 7
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpaceTimeTearScore"
+			], 
+			"objdata": {
+				"Class": "SpaceTimeTearScoreUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 230, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 525, 
+					"y": 7
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIMiniGameCreditUI"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "MiniGameCreditUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"VirtualWidth": 180, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 65
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIBronzeTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "BronzeTimerUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 180, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIQigongTimer"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "BronzeTimerUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 440, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeZombieCombo"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeZombieComboUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePlantFreeze"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengePlantFreezeUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICrossedRiverDodoRider"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UICrossedRiverDodoRider", 
+				"Class": "CrossedRiverDodoRiderUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 130, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ1Klotski"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UIPVZ1Klotski", 
+				"Class": "PVZ1KlotskiUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 155, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRemainRiverDodoRider"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UIRemainRiverDodoRider", 
+				"Class": "RemainRiverDodoRiderUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 150, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 150, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPooyanScore"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UITopBarScore", 
+				"Class": "PooyanModuleScoreUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 250, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -100, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRunningSubwayTarget"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UITopBarScore", 
+				"Class": "RunningSubwayTargetUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"VirtualWidth": 250, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true, 
+				"RenderOrder": 5
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePlantSurvive"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UIChallengePlantSurvive", 
+				"Class": "ChallengePlantSurviveUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengePlantSurviveNewPVP"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UIChallengePlantSurvive", 
+				"Class": "ChallengePlantSurviveUI", 
+				"Parent": "UIBottomBar", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"VirtualWidth": 80, 
+				"VirtualHeight": 35, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -70, 
+					"y": -9
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeCardGameTurnPass"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's UIChallengePlantSurvive", 
+				"Class": "ChallengeCardGameTurnPassUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeBlowZombie"
+			], 
+			"objdata": {
+				"#comment": "This widget is AUTO POSITIONED on the X AXIS by Board's ArrangeChallengeUI", 
+				"Class": "ChallengeBlowZombieUI", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 80, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISeedChooser"
+			], 
+			"objdata": {
+				"Class": "SeedChooser", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromScreen": true, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": 2, 
+				"##### Properties END #####": 0
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedSeedChooser"
+			], 
+			"objdata": {
+				"Class": "UnchartedSeedChooser", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromScreen": true, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": 2, 
+				"##### Properties END #####": 0
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIDangerRoomSeedChooser"
+			], 
+			"objdata": {
+				"Class": "DangerRoomSeedChooser", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromScreen": true, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": 2, 
+				"##### Properties END #####": 0
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVPSeedChooser"
+			], 
+			"objdata": {
+				"Class": "PVPSeedChooser", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromScreen": true, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": 2, 
+				"##### Properties END #####": 0
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTopBar"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TopBar", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Top", 
+				"Anchor": "Top", 
+				"WidthFromScreen": true, 
+				"HeightFromImage": "IMAGE_UI_HUD_WORLDMAP_TOP_BAR_FADE", 
+				"InputPriority": 2, 
+				"RenderOrder": -1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapRiftRankButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_RiftRankButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_PENNY_PURSUITS_COMMON_BUTTON_RIFTRANK", 
+				"InputPriority": 1, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 75
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIRiftPlayerInfoBank"
+			], 
+			"objdata": {
+				"Class": "RiftPlayerInfoBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"VirtualWidth": 180, 
+				"VirtualHeight": 200, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": -10, 
+					"y": 85
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantBannedHeadshot"
+			], 
+			"objdata": {
+				"Class": "PlantBannedHeadshot", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"Width": 168, 
+				"Height": 555, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 30, 
+					"y": 85
+				}, 
+				"RenderOrder": 2
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ1BannedUI"
+			], 
+			"objdata": {
+				"Class": "PVZ1BannedUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 75, 
+				"VirtualHeight": 75, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 30, 
+					"y": 135
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPVZ1InfoUI"
+			], 
+			"objdata": {
+				"Class": "PVZ1InfoUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 290, 
+				"VirtualHeight": 65, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 30, 
+					"y": 68
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsMapThemBuff"
+			], 
+			"objdata": {
+				"Class": "PlantWarsMapThemeBuffUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 240, 
+				"VirtualHeight": 59, 
+				"InputPriority": 1, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 105
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsMapTitle"
+			], 
+			"objdata": {
+				"Class": "PlantWarsMapTitleUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 240, 
+				"VirtualHeight": 80, 
+				"InputPriority": 0, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 125, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapRiftStoreButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_RiftStoreButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_PENNY_PURSUITS_COMMON_BUTTON_RIFTSTORE", 
+				"InputPriority": 1, 
+				"ResourceGroup": "", 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 195
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPerkLibraryButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PerkLibraryButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_PENNY_PURSUITS_COMMON_BUTTON_PENNYPERK", 
+				"InputPriority": 1, 
+				"ResourceGroup": "UI_Perks", 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 315
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapBackButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_BackButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_MENU", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 8
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapKeyBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_KeyBank", 
+				"Parent": "UIWorldMapStarBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_KEY_BANK", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -35, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIStaminaDisplayPanel"
+			], 
+			"objdata": {
+				"Class": "StaminaDisplayPanel", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_STAMINA_COIN_BUY_DOWN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -40, 
+					"y": 100
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAlmanacButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AlmanacButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_ALMANAC", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 246, 
+					"y": 60
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt4"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapStarBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_StarBank", 
+				"Parent": "UIWorldMapGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_KEY_BANK", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -26, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapScrollBarSpeaker"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ScrollBarSpeaker", 
+				"Parent": "UIWorldMapStarBank", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_SCROLL_BAR_SPEAKER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -30, 
+					"y": 20
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapCoinBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CoinBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_COIN_BANK_MAP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": 12
+				}, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardGameCountDownWidget"
+			], 
+			"objdata": {
+				"Class": "CardGameCountDownWidget", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_WORLD_CARD_GAME_TIME_COUNTDOWN", 
+				"PositionOffset": {
+					"x": -10, 
+					"y": 12
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapEventBar"
+			], 
+			"objdata": {
+				"Class": "WorldMap_EventBar", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"WidthFromScreen": true, 
+				"HeightFromImage": "IMAGE_UI_HUD_WORLDMAP_LOD_MINI_STRETCH", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -45
+				}, 
+				"IgnoreSafeArea": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapGemBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_GemBank", 
+				"Parent": "UIWorldMapCoinBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GEM_BANK_MAP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -30, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPVZ1EnergyBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PVZ1EnergyBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_PVZ1_FUEL_CURRENCY_COUNTER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -8, 
+					"y": 5
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPVZ1CoinBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PVZ1CoinBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_PVZ1_COIN_CURRENCY_COUNTER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -180, 
+					"y": 3
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapNewPVPCoinBank"
+			], 
+			"objdata": {
+				"Class": "NewPVPCoinBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_PVZ1_COIN_CURRENCY_COUNTER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -180, 
+					"y": 18
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPVZ1CoinHardBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PVZ1CoinHardBank", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_PVZ1_COIN_HARD_CURRENCY_COUNTER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -20, 
+					"y": 3
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapFuelBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_FuelBank", 
+				"Parent": "UIWorldMapGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_FUEL_CURRENCY_COUNTER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -40, 
+					"y": 3
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapZMatchTicketBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ZMatchTicketBank", 
+				"Parent": "UIWorldMapGemBank", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GEM_BANK_MAP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -30, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapUniverseViewButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_UniverseViewButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_WORLDNAV_BUTTON_GALAXY", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt15"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPVPButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PVPButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_PVP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -135, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapDailyAchievementButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_DailyAchievementButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_DAILYACHIEVEMENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -130
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLotteryButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LotteryButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GIFT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -6
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapNewerButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_NewerButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_NEWER_GIFT_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -20, 
+					"y": -6
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLoginRewardButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LoginRewardButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_DAILY_SIGN_REWARD", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 146, 
+					"y": 60
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt2"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLawnMailButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LawnMailButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_MAIL", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 146, 
+					"y": 120
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapVivoGameCenterButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_VivoGameCenterButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_VIVO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 246, 
+					"y": 120
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPlatformGiftButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlatformGiftButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_PLATFORM_GIFT_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 446, 
+					"y": 60
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapGameCommunityButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_GameCommunityButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_COMMUNITY", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 246, 
+					"y": 120
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTWLoginRewardButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TWLoginRewardButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GIFT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 346, 
+					"y": 60
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt4"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapDailySignGetAllRewardNotice"
+			], 
+			"objdata": {
+				"Class": "WorldMap_DailySignGetAllRewardNotice", 
+				"Parent": "UIWorldMapLoginRewardButton", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TIPS_3", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 38
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAuthenticationButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AuthenticationButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GIFT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 332, 
+					"y": 68
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldFirstRechargeButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AcFirstRechargeButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GIFT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -105, 
+					"y": -350
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapWorldKeyBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_WorldKeyBank", 
+				"Parent": "UIWorldMapAlmanacButton", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_WORLDKEY_HUD", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -3
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpacetimeKeyBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_SpacetimeKeyBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 135, 
+				"VirtualHeight": 54, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINo42UniverseSpacetimeKeyBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_No42UniverseSpacetimeKeyBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 135, 
+				"VirtualHeight": 54, 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -100, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnniversarySelectLevelInfoButton"
+			], 
+			"objdata": {
+				"Class": "UIAnniversarySelectLevelInfoButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 135, 
+				"VirtualHeight": 54, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpringFestival2024InfoButton"
+			], 
+			"objdata": {
+				"Class": "UISpringFestival2024InfoButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 135, 
+				"VirtualHeight": 54, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpringFestival2024LevelResetButton"
+			], 
+			"objdata": {
+				"Class": "UISpringFestival2024ResetButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_CHALLENGE_RESET", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -30, 
+					"y": 95
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpringFestival2024Difficulty"
+			], 
+			"objdata": {
+				"Class": "UISpringFestival2024Difficulty", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_REWARD_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 80
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpringFestival2024DifficultyButton"
+			], 
+			"objdata": {
+				"Class": "UISpringFestival2024DifficultyButton", 
+				"Parent": "UISpringFestival2024Difficulty", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_REWARD_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpringFestival2024Boost"
+			], 
+			"objdata": {
+				"Class": "UISpringFestival2024Boost", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_REWARD_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 150
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpringFestival2024BoostButton"
+			], 
+			"objdata": {
+				"Class": "UISpringFestival2024BoostButton", 
+				"Parent": "UISpringFestival2024Boost", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_REWARD_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIAnniversaryInfoButton"
+			], 
+			"objdata": {
+				"Class": "UIAnniversaryInfoButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 135, 
+				"VirtualHeight": 54, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsInfoButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantWarsInfoButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 74, 
+				"VirtualHeight": 54, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantWarsLeaderBoardButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantWarsLeaderBoardButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_REWARD", 
+				"InputPriority": 1, 
+				"VirtualWidth": 66, 
+				"VirtualHeight": 54, 
+				"PositionOffset": {
+					"x": -30, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpacetimeKeyInfoButton"
+			], 
+			"objdata": {
+				"Class": "UISpacetimeKeyInfoButton", 
+				"Parent": "UISpacetimeKeyBank", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpacetimeKeyNo42UniverseInfoButton"
+			], 
+			"objdata": {
+				"Class": "UISpacetimeKeyInfoButton", 
+				"Parent": "UINo42UniverseSpacetimeKeyBank", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 40, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapUnchartedBottomBar"
+			], 
+			"objdata": {
+				"Class": "WorldMap_UnchartedBottomBar", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"WidthFromScreen": true, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_NORMAL_DOWN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -55
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapUnchartedBottomBar_No42Universe"
+			], 
+			"objdata": {
+				"Class": "WorldMap_UnchartedBottomBar_No42Universe", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"WidthFromScreen": true, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_NORMAL_DOWN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -42
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapCardGameBottomBar"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CardGameBottomBar", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "Bottom", 
+				"Anchor": "Bottom", 
+				"ResourceGroup": "", 
+				"WidthFromScreen": true, 
+				"HeightFromImage": "IMAGE_UI_WORLD_CARD_GAME_CARD_SET", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -42
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardPickBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CardPickBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"HeightFromImage": "IMAGE_UI_WORLD_CARD_GAME_CARD_PICK", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -65
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardPickButton"
+			], 
+			"objdata": {
+				"Class": "CardPickButton", 
+				"Parent": "UICardPickBank", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_WORLD_CARD_GAME_CARD_PICK", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardGameSwitchWidget"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CardGameSwitchWidget", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 200, 
+				"HeightFromImage": "IMAGE_UI_WORLD_CARD_GAME_CARD_SET", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": -65
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardGameResetButton"
+			], 
+			"objdata": {
+				"Class": "CardGameResetButton", 
+				"Parent": "UICardGameSwitchWidget", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_WORLD_CARD_GAME_RESET", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICardGamePreviewButton"
+			], 
+			"objdata": {
+				"Class": "CardGamePreviewButton", 
+				"Parent": "UICardGameSwitchWidget", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_WORLD_CARD_GAME_CARD_DISPLAY", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpacetimeStarBank"
+			], 
+			"objdata": {
+				"Class": "WorldMap_SpacetimeStarBank", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 220, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_REWARD_UP", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -80
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UISpacetimeStarRewardButton"
+			], 
+			"objdata": {
+				"Class": "UISpacetimeStarRewardButton", 
+				"Parent": "UISpacetimeStarBank", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_REWARD_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINo42UniverseShopButton"
+			], 
+			"objdata": {
+				"Class": "UINo42UniverseShopButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 120, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_SHOP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -100
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UINo42UniversePlantAlmanacButton"
+			], 
+			"objdata": {
+				"Class": "UINo42UniversePlantAlmanacButton", 
+				"Parent": "UINo42UniverseShopButton", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 120, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_ALMANAC", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedModeSwitchWidget"
+			], 
+			"objdata": {
+				"Class": "WorldMap_UnchartedModeSwitchWidget", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 200, 
+				"HeightFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_NORMAL_UP", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -10, 
+					"y": -60
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedModeNormalButton"
+			], 
+			"objdata": {
+				"Class": "UIUnchartedModeNormalButton", 
+				"Parent": "UIUnchartedModeSwitchWidget", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_NORMAL_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedModeHardButton"
+			], 
+			"objdata": {
+				"Class": "UIUnchartedModeHardButton", 
+				"Parent": "UIUnchartedModeSwitchWidget", 
+				"ParentAnchor": "Right", 
+				"Anchor": "Right", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_HARD_UP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedModeResetHardButton"
+			], 
+			"objdata": {
+				"Class": "UIQinImperialTombResetButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_CHALLENGE_RESET", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 135, 
+					"y": 15
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIUnchartedModeEndlessHardButton"
+			], 
+			"objdata": {
+				"Class": "UIQinImperialTombEndlessButton", 
+				"Parent": "UIUnchartedModeSwitchWidget", 
+				"ParentAnchor": "Left", 
+				"Anchor": "Left", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_HARD_UP", 
+				"InputPriority": 1, 
+				"RenderOrder": 1, 
+				"PositionOffset": {
+					"x": -95, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIQinImperialTombShopButton"
+			], 
+			"objdata": {
+				"Class": "UIQinImperialTombShopButton", 
+				"Parent": "UIWorldMapUnchartedBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_HARD_UP", 
+				"InputPriority": 1, 
+				"RenderOrder": 1, 
+				"PositionOffset": {
+					"x": 50, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIQinImperialTombTaskButton"
+			], 
+			"objdata": {
+				"Class": "UIQinImperialTombTaskButton", 
+				"Parent": "UIWorldMapUnchartedBottomBar", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_UNCHARTED_HUD_WORLDMAP_TASK", 
+				"InputPriority": 1, 
+				"RenderOrder": 1, 
+				"PositionOffset": {
+					"x": 140, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIQinImperialTombHardInfoButton"
+			], 
+			"objdata": {
+				"Class": "UIQinImperialTombHardInfoButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_PURPLEBUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -80, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIQinImperialTombInfoButton"
+			], 
+			"objdata": {
+				"Class": "UIQinImperialTombInfoButton", 
+				"Parent": "UIWorldMapTopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_GENERIC_INFO_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 10
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAvatarCollectionButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AvatarCollectionButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_WORLDMAP_AVATAR_BTN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -20, 
+					"y": -80
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTreasureButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TreasureButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_TREASURE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -370, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapSales"
+			], 
+			"objdata": {
+				"Class": "WorldMap_SalesButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TINY_ICON_SALES", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 160, 
+					"y": -170
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLuaVirtualBtns"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LuaButtonsDelegate", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TINY_ICON_SALES", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -530
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapStarConvertButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_StarConvert", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_STAR_CONVERT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt3"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLevelofDay"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LevelofDay", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TINY_ICON_CHILDRENDAY", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -330
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPlantAdventure"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantAdventureButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TINY_ICON_PLANT_ADVENTURE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -570, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapRift"
+			], 
+			"objdata": {
+				"Class": "WorldMap_RiftButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_PENNY_ICON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -260, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapOppoNewerEvent"
+			], 
+			"objdata": {
+				"Class": "WorldMap_OppoNewerButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TINY_ICON_OPPO_NEWER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -590, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTaptapEvent"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TaptapButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_TINY_ICON_TAPTAP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 246, 
+					"y": 120
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPlantLevelUpButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantLevelUpButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_PLANT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -230, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapActivityLevelsButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ActivityLevelsButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_CHALLENGE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -470, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapBagButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_BagButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_BAG", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -130, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapDailyActivityButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_DailyActivityButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_DAILY_ACTIVITY", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -430, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapChallengeButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ChallengeButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_CHALLENGE_NEW", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -330, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapShopButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ShopButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_SHOP", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -530, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapFestivalButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_FestivalButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_FESTIVAL_BANNER_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 10, 
+					"y": -10
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapWelfareButtonExtra"
+			], 
+			"objdata": {
+				"Class": "WorldMap_WelfareButtonExtra", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_BOON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -130, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt6"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapNewPlayerButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_NewPlayerButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_NEWPLAYER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -350, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapOneYuanButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_OneYuanButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ONE_YUAN", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPiggyBankButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PiggyBankButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_PIGGY_BANK_UPDATE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapCallOfWishButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CallOfWishButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_CALL_OF_WISH", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapArtifactPresentButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ArtifactPresentButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPVZ2UnchartedModeButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PVZ2UnchartedModeButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_UNCHARTED_ICON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapGrowthPackageButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_GrowthPackageButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapBattleOrderButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_BattleOrderButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapCornucopiaButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CornucopiaButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPartyAssistButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PartyAssistButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTreasurePavilionButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TreasurePavilionButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapInvitationButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_InvitationButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPlantCultivateButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantCultivateButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTenYearRecordButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TenYearRecordButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPennyGiftBoxButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PennyGiftBoxButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_ACTIVITY_HOME_PENNYGIFTBOX", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapTourismOctoberButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_TourismOctoberButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_ACTIVITY_HOME_TOURISM_OCTOBER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapGiftFoReturnButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_GiftFoReturn", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLimitedSummonButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LimitedSummonButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapCarnivalButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_CarnivalButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapNewYearGoodsButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_NewYearGoods", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapDaveTreasureButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_DaveTreasureButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_ACTIVITY_HOME_DAVETREASURE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapActivityHomeButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ActivityHomeButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_ACTIVITY_HOME_ENTRY", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": 235
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt4"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapActivityHomeButtonExtra"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ActivityHomeButtonExtra", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_BOON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -155
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapChristmasButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ChristmasButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_CHRISTMAS", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -330
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"WorldMapRechargeReward"
+			], 
+			"objdata": {
+				"Class": "WorldMap_RechargeReward", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_ACTIVITY_HOME_RECHARGEREWARD", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 160, 
+					"y": -150
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapWelfareButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_WelfareButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomRight", 
+				"Anchor": "BottomRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_BOON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": -450
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPlantTrialButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantTrialButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_PLANTTRIAL", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 130, 
+					"y": -368
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapActivityCenterButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ActivityCenterButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ACTIVECENTER", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": -330
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapRechargeRewardButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_FirstRechargeButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "aaa", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapRechargeBundleButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_RechargeBundleButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_RECHARGE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLevelPackageButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LevelPackageButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_RECHARGE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 20, 
+					"y": 130
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAnniversaryButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AnniversaryButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_RECHARGE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapPlantSpecialButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PlantSpecialOfferUIButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_RECHARGE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLimitedGachaButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LimitGachaButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_RECHARGE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLuckBagButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LuckBagUIButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_RECHARGE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true, 
+				"UnlockFrom": "egypt5"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapOfflineBundleButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_OfflineBundleButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_OFFLINE_BUNDLE", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 30, 
+					"y": 110
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAdsRewardButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AdsRewardButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GIFT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -285, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAdsLotteryButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AdsLotteryButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_GIFT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -285, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapHeadshotButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_HeadshotButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"VirtualWidth": 120, 
+				"VirtualHeight": 110, 
+				"ResourceGroup": "UI_HeadshotFrame", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UITowerDefendUpgrade"
+			], 
+			"objdata": {
+				"Class": "TowerDefendUpgradeUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_SUN_SPEND_BG", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -12, 
+					"y": 60
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIOakArrow"
+			], 
+			"objdata": {
+				"Class": "OakArrowUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_OAK_ARROW_BTN", 
+				"RenderOrder": 2, 
+				"InputPriority": 2
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIOakArrowHolder"
+			], 
+			"objdata": {
+				"Class": "OakArrowHolderUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_OAK_ARROW_HOLDER_BG"
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIOakArrowAdd"
+			], 
+			"objdata": {
+				"Class": "OakArrowAddUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_OAK_ARROW_AMOUNT_ADD", 
+				"RenderOrder": 3, 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": -30, 
+					"y": 50
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIHammer"
+			], 
+			"objdata": {
+				"Class": "WhackAMoleUI", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_OAK_ARROW_BTN", 
+				"RenderOrder": 2, 
+				"InputPriority": 2
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"SteamMiniGameScore"
+			], 
+			"objdata": {
+				"Class": "UISteamMiniGameScore", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_OAK_ARROW_BTN", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 170, 
+					"y": 2.34
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"MazeMiniGameCredit"
+			], 
+			"objdata": {
+				"Class": "UIMazeMiniGameCredit", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_OAK_ARROW_BTN", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 140, 
+					"y": 2.34
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"MazeMiniGameLifeCounter"
+			], 
+			"objdata": {
+				"Class": "UIMazeMiniGameLifeCounter", 
+				"Parent": "MazeMiniGameCredit", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"VirtualWidth": 150, 
+				"HeightFromImage": "IMAGE_UI_STATUE_MAZE_MAZE_ICON", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": -120, 
+					"y": 14
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIChallengeScoringSubsystem"
+			], 
+			"objdata": {
+				"Class": "ChallengeScoringUI", 
+				"Parent": "UIShovel", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomRight", 
+				"VirtualWidth": 230, 
+				"HeightFromImage": "IMAGE_UI_HUD_INGAME_BACKGROUND_3SLICE", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": -290, 
+					"y": 8
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapLuckyChestShopButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_LuckyChestShopButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapAutumnHarvestButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_AutumnHarvestButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapNighttheToyButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_NighttheToyButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapNewYearPackButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_NewYearPackButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapHeavenTreasureButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_HeavenTreasure", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"WorldMapPoseidonTreasureButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_PoseidonTreasureButton", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIWorldMapColorCustomizationButton"
+			], 
+			"objdata": {
+				"Class": "WorldMap_ColorCustomization", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_WORLDMAP_BIG_ICON_ARTIFACT_PRESENT", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 200, 
+					"y": 50
+				}, 
+				"ScalePositionOffset": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIPlantPropsSwitch"
+			], 
+			"objdata": {
+				"Class": "PlantPropsSwitch", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_VIEWZOMBIES_BUTTON", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 15, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIFumeshroomPropsSwitch"
+			], 
+			"objdata": {
+				"Class": "FumeshroomPropsSwitch", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_VIEWZOMBIES_BUTTON", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 15, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICosmicPeaCooldown"
+			], 
+			"objdata": {
+				"Class": "CosmicPlantCooldownWidget", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_COSMICBACK", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICosmicMushroomCooldown"
+			], 
+			"objdata": {
+				"Class": "CosmicPlantCooldownWidget", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_COSMICBACK", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UICosmicNutCooldown"
+			], 
+			"objdata": {
+				"Class": "CosmicPlantCooldownWidget", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_COSMICBACK", 
+				"InputPriority": 0, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"ImmuneToDeviceScaling": true
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIMausoleumSeedPacket"
+			], 
+			"objdata": {
+				"Class": "SeedPacket_Mausoleum", 
+				"ParentAnchor": "TopLeft", 
+				"Anchor": "TopLeft", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_PACKETS_READY", 
+				"InputPriority": 2, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UIMausoleumSeedChooser"
+			], 
+			"objdata": {
+				"Class": "MausoleumSeedChooser", 
+				"Parent": "UIScreen", 
+				"ParentAnchor": "BottomLeft", 
+				"Anchor": "BottomLeft", 
+				"ResourceGroup": "", 
+				"SizeFromScreen": true, 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"RenderOrder": 2, 
+				"##### Properties END #####": 0
+			}
+		}, 
+		{
+			"objclass": "UIWidgetSheet", 
+			"aliases": [
+				"UITimeTunnelAnimSkipButton"
+			], 
+			"objdata": {
+				"Class": "UITimeTunnelAnimSkipButton", 
+				"Parent": "UITopBar", 
+				"ParentAnchor": "TopRight", 
+				"Anchor": "TopRight", 
+				"ResourceGroup": "", 
+				"SizeFromImage": "IMAGE_UI_HUD_INGAME_PAUSE_BUTTON", 
+				"InputPriority": 1, 
+				"PositionOffset": {
+					"x": -8, 
+					"y": 8
+				}, 
+				"RenderOrder": 1, 
+				"VirtualHitInsets": {
+					"mLeft": -5, 
+					"mTop": -5, 
+					"mRight": 5, 
+					"mBottom": 5
+				}
+			}
+		}, 
+		{
+			"############ UI END ############": 0
+		}
+	]
+}

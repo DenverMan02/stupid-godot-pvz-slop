@@ -1,0 +1,6797 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ActivityConfig", 
+			"aliases": [
+				"ActivityConfig"
+			], 
+			"objdata": {
+				"MaxCoinSpecialCollected": 5000, 
+				"ActivityTopic": "2016SpringFestival", 
+				"FirstRechargeAward": false, 
+				"FirstRechargeAwardMultiple": 2, 
+				"CukePackageAddCount": 2, 
+				"ActivityRechargePlantPiece": {
+					"Valid": false, 
+					"TextContent": "[RECHARGE_REWARD_PLANT_PIECES]", 
+					"Image": "IMAGE_UI_STORE_CHERRYBOMBPIECE", 
+					"PlantName": "cherry_bomb", 
+					"PieceCount": 30
+				}, 
+				"WeeklyGameModes": [
+					[
+						"yeti", 
+						"devil"
+					], 
+					[
+						"yeti", 
+						"gargantuar"
+					], 
+					[
+						"yeti", 
+						"devil"
+					], 
+					[
+						"yeti", 
+						"gargantuar"
+					], 
+					[
+						"yeti", 
+						"gargantuar", 
+						"devil"
+					], 
+					[
+						"yeti", 
+						"gargantuar", 
+						"devil"
+					], 
+					[
+						"yeti", 
+						"gargantuar", 
+						"devil"
+					]
+				], 
+				"WeeklyGameModesCount": [
+					{
+						"ModeType": "devil", 
+						"Count": 1
+					}, 
+					{
+						"ModeType": "gargantuar", 
+						"Count": 1
+					}, 
+					{
+						"ModeType": "yeti", 
+						"Count": 1
+					}
+				], 
+				"MysteryCrystalDropData": {
+					"NormalDropAmount": 50, 
+					"HardDropAmount": 100
+				}, 
+				"ActivityDate": {
+					"StartDate": 20250709, 
+					"EndDate": 20250820
+				}, 
+				"ActivityCentreDate": {
+					"StartDate": 20160201, 
+					"EndDate": 20160222
+				}, 
+				"DayFirstPayRewardData": {
+					"StartDate": 20131115, 
+					"EndDate": 20131130
+				}, 
+				"TwoYearData": {
+					"StartDate": 20151029, 
+					"EndDate": 20151115
+				}, 
+				"NoticeContent": {
+					"IsActivated": false, 
+					"TitleBackGroundImage": "", 
+					"TitleTextContent": "[NOTICE_TITLE_TEXT]", 
+					"NoticeTextContent": "[NOTICE_CONTENT_IOS]"
+				}, 
+				"ScrollBarBark": {
+					"IsActivated": true, 
+					"BarkProperty": {
+						"ColorType": "white", 
+						"DisplayCount": 2, 
+						"ScollSpeed": 50, 
+						"DelayTime": 3, 
+						"Type": "Rand"
+					}, 
+					"BarkTextContent": [
+						"[SPEAKER_LENOVO_ONE]"
+					]
+				}, 
+				"Tips": {
+					"IsActivated": true, 
+					"TipsProperty": {
+						"BaseIndex": 1, 
+						"ColorType": "White"
+					}, 
+					"TipsContent": [
+						"[SPRING_TIPS_1]", 
+						"[SPRING_TIPS_2]", 
+						"[SPRING_TIPS_3]", 
+						"[SPRING_TIPS_4]", 
+						"[SPRING_TIPS_5]", 
+						"[SPRING_TIPS_6]", 
+						"[SPRING_TIPS_8]", 
+						"[SPRING_TIPS_9]"
+					], 
+					"TipsImage": [
+						"IMAGE_UI_TIPS_LOADINGBANNER_3390", 
+						"IMAGE_UI_TIPS_LOADINGBANNER_3391", 
+						"IMAGE_UI_TIPS_LOADINGBANNER_3392", 
+						"IMAGE_UI_TIPS_LOADINGBANNER_3393"
+					]
+				}, 
+				"ActivityStoreBannerImage": "", 
+				"DoubleCoin": false, 
+				"AutoSunCollect": false, 
+				"WorldMapActivityPieceLevelList": [
+					{
+						"LevelName": "egypt7", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "pirate3", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "pirate6", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "cowboy2", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "cowboy4", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "kongfu5", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "kongfu10", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "kongfu21", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "kongfu27", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "future2", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "future5", 
+						"Valid": false
+					}, 
+					{
+						"LevelName": "future9", 
+						"Valid": false
+					}
+				], 
+				"DailyAchievementActivatedDate": {
+					"StartDate": 20250217, 
+					"EndDate": 20250302, 
+					"IsActivated": true
+				}, 
+				"StorePlantGiftsActivatedDateList": [
+					{
+						"StartDate": 20150820, 
+						"EndDate": 20150826, 
+						"IsActivated": true
+					}, 
+					{
+						"StartDate": 20150827, 
+						"EndDate": 20150902, 
+						"IsActivated": true
+					}, 
+					{
+						"StartDate": 20150903, 
+						"EndDate": 20150909, 
+						"IsActivated": true
+					}, 
+					{
+						"StartDate": 20150910, 
+						"EndDate": 20150916, 
+						"IsActivated": true
+					}
+				], 
+				"LanternRiddlesActivatedDate": {
+					"StartDate": 20160207, 
+					"EndDate": 20160222, 
+					"EntryCloseDate": 20160222, 
+					"IsActivated": true
+				}, 
+				"RedPackActivedDate": {
+					"StartDate": 20150213, 
+					"EndDate": 20150224, 
+					"EntryCloseDate": 20150411, 
+					"IsActivated": true
+				}, 
+				"RedPackClosedDate": {
+					"StartDate": 20150618, 
+					"EndDate": 20150715, 
+					"IsActivated": true
+				}, 
+				"ConsumptionActivedData": {
+					"IsActivated": true, 
+					"ActItem": [
+						{
+							"Topic": "act_6", 
+							"StartDate": 20151029, 
+							"EndDate": 20151107
+						}, 
+						{
+							"Topic": "act_7", 
+							"StartDate": 20151107, 
+							"EndDate": 20151115
+						}
+					]
+				}, 
+				"DangerRoomActivatedDate": {
+					"EventStartDate": 20151001, 
+					"EventEndDate": 20151007, 
+					"RewardStartDate": 20151008, 
+					"RewardEndDate": 20151014, 
+					"IsActivated": true
+				}, 
+				"SpringBossActivatedData": {
+					"EventStartDate": 20150213, 
+					"EventEndDate": 20150224, 
+					"MaxTimesPerDay": 2, 
+					"Rate": 30, 
+					"ZombieType": [
+						"RTID(wealth_god@ZombieTypes)"
+					], 
+					"ActivityLevel": [
+						"festival_wealthgod_easy", 
+						"festival_wealthgod_normal", 
+						"festival_wealthgod_hard"
+					]
+				}, 
+				"SpringGiftActivatedData": {
+					"EventStartDate": 20151029, 
+					"EventEndDate": 20151115, 
+					"AndCost": 10, 
+					"IosCost": 30, 
+					"Rewards": [
+						{
+							"planttype": "RTID(hypnoshroom@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(bowlingbulb@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(holonut@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(starfruit@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(oakshooter@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(lemon@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(twinsunflower@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(magicshroom@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(anthurium@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(pineapple@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(citron@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(torchwood@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(guacodile@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(snowpea@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(melonpult@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(dandelion@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(tanglekelp@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(banana@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(iceshroom@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(wintermelon@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(lotusshower@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(cherry_bomb@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(snapdragon@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(carrotlauncher@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(laser_bean@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(coconutcannon@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(lightningreed@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(fireshroom@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(homingthistle@PlantTypes)", 
+							"gem": 330
+						}, 
+						{
+							"planttype": "RTID(sunshroom@PlantTypes)", 
+							"gem": 330
+						}
+					]
+				}, 
+				"BossFightActivateData": {
+					"EventStartDate": 20151001, 
+					"EventEndDate": 20151007, 
+					"BossLevels": [
+						{
+							"WorldName": "", 
+							"LevelName": "vacation_boss_kongfu"
+						}, 
+						{
+							"WorldName": "", 
+							"LevelName": "vacation_boss_west"
+						}, 
+						{
+							"WorldName": "", 
+							"LevelName": "vacation_boss_kongfu_explosive"
+						}, 
+						{
+							"WorldName": "", 
+							"LevelName": "vacation_boss_skycity"
+						}, 
+						{
+							"WorldName": "", 
+							"LevelName": "vacation_boss_beach"
+						}, 
+						{
+							"WorldName": "", 
+							"LevelName": "vacation_boss_eighties"
+						}
+					], 
+					"BonusAccessories": [
+						{
+							"Bonus": "unique_explode", 
+							"Min": 5, 
+							"Max": 5
+						}, 
+						{
+							"Bonus": "epic_clock", 
+							"Min": 5, 
+							"Max": 5
+						}, 
+						{
+							"Bonus": "magic_drum", 
+							"Min": 5, 
+							"Max": 5
+						}, 
+						{
+							"Bonus": "normal_regeneration", 
+							"Min": 5, 
+							"Max": 5
+						}
+					]
+				}, 
+				"PlantBonusActivateData": {
+					"EventStartDate": 20151001, 
+					"EventEndDate": 20151003
+				}, 
+				"AvatarBonusActivateData": {
+					"EventStartDate": 20151004, 
+					"EventEndDate": 20151007
+				}, 
+				"ChristmasAccessoryData": {
+					"EventStartDate": 20160201, 
+					"EventEndDate": 20160222, 
+					"CoinsPrice": 30000, 
+					"GemsPrice": 50, 
+					"FreeMaxTime": 1, 
+					"CoinMaxTime": 2, 
+					"GemMaxTime": 5, 
+					"FreeList": [
+						{
+							"Index": 1, 
+							"ObjectId": 22021, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 2, 
+							"ObjectId": 22022, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 3, 
+							"ObjectId": 22023, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 4, 
+							"ObjectId": 22024, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 5, 
+							"ObjectId": 22025, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 6, 
+							"ObjectId": 22026, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 7, 
+							"ObjectId": 22027, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 8, 
+							"ObjectId": 22028, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 9, 
+							"ObjectId": 22029, 
+							"Quantity": 2, 
+							"Probility": 1
+						}
+					], 
+					"CoinList": [
+						{
+							"Index": 1, 
+							"ObjectId": 22013, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 2, 
+							"ObjectId": 22014, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 3, 
+							"ObjectId": 22015, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 4, 
+							"ObjectId": 22016, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 5, 
+							"ObjectId": 22017, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 6, 
+							"ObjectId": 22018, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 7, 
+							"ObjectId": 22019, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 8, 
+							"ObjectId": 22020, 
+							"Quantity": 2, 
+							"Probility": 1
+						}
+					], 
+					"GemList": [
+						{
+							"Index": 1, 
+							"ObjectId": 22001, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 2, 
+							"ObjectId": 22002, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 3, 
+							"ObjectId": 22003, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 4, 
+							"ObjectId": 22004, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 5, 
+							"ObjectId": 22005, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 6, 
+							"ObjectId": 22006, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 7, 
+							"ObjectId": 22007, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 8, 
+							"ObjectId": 22008, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 9, 
+							"ObjectId": 22009, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 10, 
+							"ObjectId": 22010, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 11, 
+							"ObjectId": 22011, 
+							"Quantity": 2, 
+							"Probility": 1
+						}, 
+						{
+							"Index": 12, 
+							"ObjectId": 22012, 
+							"Quantity": 2, 
+							"Probility": 1
+						}
+					]
+				}, 
+				"GoldenEggData": {
+					"EventStartDate": 20160201, 
+					"EventEndDate": 20160211, 
+					"RewardRequstRMB": 6, 
+					"RewardHammerQuantity": 1, 
+					"DailyHammerMax": 10, 
+					"HammerMax": 10, 
+					"EggOpenGemCost": 10, 
+					"GoldenEggBonusList": [
+						1151, 
+						1165, 
+						1144, 
+						1140, 
+						1160, 
+						1171, 
+						1108, 
+						1197, 
+						1190, 
+						1195, 
+						1143, 
+						1120, 
+						1168, 
+						1119, 
+						1124, 
+						1161, 
+						1166, 
+						1167, 
+						1158, 
+						1131, 
+						1175, 
+						1132, 
+						1112, 
+						1147, 
+						1139, 
+						1123, 
+						1122, 
+						1159, 
+						1169, 
+						1152
+					], 
+					"ProbilityList": [
+						{
+							"Quantity": 3, 
+							"Probility": 3, 
+							"Refresh": false
+						}, 
+						{
+							"Quantity": 5, 
+							"Probility": 5, 
+							"Refresh": false
+						}, 
+						{
+							"Quantity": 10, 
+							"Probility": 2, 
+							"Refresh": true
+						}
+					]
+				}, 
+				"ChristmasProtectData": {
+					"EventStartDate": 20160201, 
+					"EventEndDate": 20160215, 
+					"MaxPlayCount": 3, 
+					"ChristmasTreeRewardList": [
+						{
+							"objectId": "4013", 
+							"Count": 5000, 
+							"Probability": 4998
+						}, 
+						{
+							"objectId": "4013", 
+							"Count": 8000, 
+							"Probability": 3136
+						}, 
+						{
+							"objectId": "4013", 
+							"Count": 12000, 
+							"Probability": 2156
+						}, 
+						{
+							"objectId": "3008", 
+							"Count": 5, 
+							"Probability": 1274
+						}, 
+						{
+							"objectId": "3008", 
+							"Count": 10, 
+							"Probability": 882
+						}, 
+						{
+							"objectId": "3008", 
+							"Count": 15, 
+							"Probability": 490
+						}, 
+						{
+							"objectId": "3008", 
+							"Count": 20, 
+							"Probability": 294
+						}, 
+						{
+							"objectId": "1301", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1302", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1303", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1304", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1305", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1306", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1307", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1308", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1309", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1310", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1311", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1312", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1314", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1315", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1316", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1319", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1320", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1321", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1322", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1323", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1324", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1325", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1327", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1328", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1329", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1330", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1331", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1333", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1334", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1335", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1336", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1337", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1339", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1340", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1343", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1344", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1347", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1349", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1350", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1351", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1352", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1354", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1355", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1356", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1358", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1359", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1360", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1361", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1362", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1363", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1364", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1365", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1366", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1367", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1368", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1369", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1370", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1371", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1372", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1373", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1374", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1375", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1376", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1378", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1380", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1381", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1382", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1383", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1384", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1385", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1386", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1388", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1389", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1390", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1391", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1392", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1393", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1394", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1395", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1397", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1398", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1399", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111301", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111302", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111303", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111304", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111308", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111309", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111310", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111311", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111312", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111313", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "111315", 
+							"Count": 1, 
+							"Probability": 51
+						}, 
+						{
+							"objectId": "1301", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1302", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1303", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1304", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1305", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1306", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1307", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1308", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1309", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1310", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1311", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1312", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1314", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1315", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1316", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1319", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1320", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1321", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1322", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1323", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1324", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1325", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1327", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1328", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1329", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1330", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1331", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1333", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1334", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1335", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1336", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1337", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1339", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1340", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1343", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1344", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1347", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1349", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1350", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1351", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1352", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1354", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1355", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1356", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1358", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1359", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1360", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1361", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1362", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1363", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1364", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1365", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1366", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1367", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1368", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1369", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1370", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1371", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1372", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1373", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1374", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1375", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1376", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1378", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1380", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1381", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1382", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1383", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1384", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1385", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1386", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1388", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1389", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1390", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1391", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1392", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1393", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1394", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1395", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1397", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1398", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1399", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111301", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111302", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111303", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111304", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111308", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111309", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111310", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111311", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111312", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111313", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "111315", 
+							"Count": 2, 
+							"Probability": 26
+						}, 
+						{
+							"objectId": "1301", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1302", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1303", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1304", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1305", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1306", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1307", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1308", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1309", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1310", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1311", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1312", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1314", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1315", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1316", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1319", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1320", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1321", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1322", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1323", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1324", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1325", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1327", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1328", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1329", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1330", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1331", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1333", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1334", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1335", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1336", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1337", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1339", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1340", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1343", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1344", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1347", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1349", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1350", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1351", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1352", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1354", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1355", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1356", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1358", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1359", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1360", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1361", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1362", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1363", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1364", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1365", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1366", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1367", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1368", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1369", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1370", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1371", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1372", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1373", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1374", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1375", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1376", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1378", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1380", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1381", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1382", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1383", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1384", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1385", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1386", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1388", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1389", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1390", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1391", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1392", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1393", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1394", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1395", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1397", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1398", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "1399", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111301", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111302", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111303", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111304", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111308", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111309", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111310", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111311", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111312", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111313", 
+							"Count": 3, 
+							"Probability": 17
+						}, 
+						{
+							"objectId": "111315", 
+							"Count": 3, 
+							"Probability": 17
+						}
+					]
+				}, 
+				"ChristmasLotteryData": {
+					"EventStartDate": 20160201, 
+					"EventEndDate": 20160215, 
+					"ChristmasLotteryCost": 99, 
+					"ChristmasLotterySpecialChance": [
+						2, 
+						5, 
+						9
+					], 
+					"ChristmasLotterySpecialChanceCommon": 5, 
+					"ChristmasGachaRewardList": [
+						{
+							"objectId": "1130", 
+							"Count": 1, 
+							"Probability": 2
+						}, 
+						{
+							"objectId": "1152", 
+							"Count": 5, 
+							"Probability": 2
+						}, 
+						{
+							"objectId": "1193", 
+							"Count": 5, 
+							"Probability": 3
+						}, 
+						{
+							"objectId": "1178", 
+							"Count": 5, 
+							"Probability": 3
+						}
+					], 
+					"ChristmasGachaRewardSpecial": [
+						{
+							"objectId": "1074", 
+							"Count": 1, 
+							"Probability": 1
+						}
+					]
+				}, 
+				"PlantGiftDataList": [
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.wintermelon", 
+						"actid": 6031, 
+						"PlantName": "wintermelon", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_1", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.41, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.28, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.2, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 240
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.fireshroom", 
+						"actid": 6059, 
+						"PlantName": "fireshroom", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_2", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.41, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.28, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.2, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 240
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.iceshroom", 
+						"actid": 6058, 
+						"PlantName": "iceshroom", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_3", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.41, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.28, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.2, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 240
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.banana", 
+						"actid": 6067, 
+						"PlantName": "banana", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_4", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.37, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.27, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.19, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 300
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.lemon", 
+						"actid": 6071, 
+						"PlantName": "lemon", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_5", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.37, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.27, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.19, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 300
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.lotusshower", 
+						"actid": 6075, 
+						"PlantName": "lotusshower", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_6", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.37, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.27, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.19, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 300
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.carrotlauncher", 
+						"actid": 6047, 
+						"PlantName": "carrotlauncher", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_11", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.37, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.27, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.19, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 300
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.dandelion", 
+						"actid": 6061, 
+						"PlantName": "dandelion", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_12", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.37, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.27, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.19, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 300
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.hypnoshroom", 
+						"actid": 6051, 
+						"PlantName": "hypnoshroom", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_20", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.41, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.28, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.2, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 240
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.gift.citron", 
+						"actid": 6043, 
+						"PlantName": "citron", 
+						"Image": "IMAGE_UI_STORE_BUNDLE_24", 
+						"ExpensesData": [
+							{
+								"Level": 1, 
+								"Discount": 0.41, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_4"
+							}, 
+							{
+								"Level": 2, 
+								"Discount": 0.29, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 3, 
+								"Discount": 0.28, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_3"
+							}, 
+							{
+								"Level": 4, 
+								"Discount": 0.2, 
+								"DiscountImage": "IMAGE_UI_PLANTGIFT_DISCOUNT_2"
+							}
+						], 
+						"AvatarGem": 240
+					}
+				], 
+				"StoreGiftsActivatedDate": {
+					"StartDate": 20131224, 
+					"EndDate": 20130111, 
+					"IsActivated": true
+				}, 
+				"GeneralSaleObjectList": [
+					{
+						"Sku": "com.popcap.pvz2.coins.40000", 
+						"Image": "IMAGE_UI_CARDS_STORE_BESTDEAL_RIBBON", 
+						"Discount": 0, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.diamonds3", 
+						"Image": "IMAGE_UI_STORE_FIRST_BUY", 
+						"Discount": 0, 
+						"FirstAward": true, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.diamonds4", 
+						"Image": "IMAGE_UI_STORE_FIRST_BUY", 
+						"Discount": 0, 
+						"FirstAward": true, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.diamonds5", 
+						"Image": "IMAGE_UI_STORE_FIRST_BUY", 
+						"Discount": 0, 
+						"FirstAward": true, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.diamonds6", 
+						"Image": "IMAGE_UI_STORE_FIRST_BUY", 
+						"Discount": 0, 
+						"FirstAward": true, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.pvz2.sun.2000", 
+						"Image": "IMAGE_UI_CARDS_STORE_BESTDEAL_RIBBON", 
+						"Discount": 0, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.luxury.gift", 
+						"Image": "IMAGE_UI_CARDS_STORE_DISCOUNT_30", 
+						"Discount": 30, 
+						"Date": 0
+					}, 
+					{
+						"Sku": "com.popcap.ios.chs.PVZ2.onsale.gift", 
+						"Image": "IMAGE_UI_CARDS_STORE_DISCOUNT_30", 
+						"Discount": 30, 
+						"Date": 0
+					}
+				], 
+				"SpecialGameLevelGroup": [
+					{
+						"SpecialGameLevelType": "gargantuar", 
+						"IsAvatar": false, 
+						"PlantNameArray": [
+							{
+								"GameLevel": "Normal", 
+								"PlantCount": 5, 
+								"NormalWeight": 100, 
+								"FewWeight": 40, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"tallnut", 
+									"melonpult", 
+									"puffshroom", 
+									"stunion", 
+									"rafflesia", 
+									"cabbagepult", 
+									"peashooter", 
+									"wallnut", 
+									"threepeater", 
+									"celerystalker", 
+									"bamboo"
+								], 
+								"ArrayFew": [
+									"bloomerang", 
+									"saucer", 
+									"spikerock", 
+									"pamegranate"
+								], 
+								"ArrayRare": []
+							}, 
+							{
+								"GameLevel": "Hard", 
+								"PlantCount": 6, 
+								"NormalWeight": 100, 
+								"FewWeight": 75, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"snowpea", 
+									"pineapple", 
+									"bloomerang", 
+									"repeater", 
+									"spikerock", 
+									"starfruit", 
+									"melonpult", 
+									"twinsunflower", 
+									"phatbeet", 
+									"celerystalker", 
+									"pamegranate"
+								], 
+								"ArrayFew": [
+									"squash", 
+									"lotusshower", 
+									"guacodile", 
+									"agave"
+								], 
+								"ArrayRare": []
+							}, 
+							{
+								"GameLevel": "Legend", 
+								"PlantCount": 7, 
+								"NormalWeight": 100, 
+								"FewWeight": 100, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"snowpea", 
+									"pineapple", 
+									"starfruit", 
+									"twinsunflower", 
+									"bloomerang", 
+									"pumpkinwitch", 
+									"spikerock", 
+									"dragonfruit", 
+									"phatbeet", 
+									"celerystalker", 
+									"agave"
+								], 
+								"ArrayFew": [
+									"dandelion", 
+									"fireshroom", 
+									"squash", 
+									"scaredyshroom", 
+									"vanilla"
+								], 
+								"ArrayRare": []
+							}
+						]
+					}, 
+					{
+						"SpecialGameLevelType": "devil", 
+						"IsAvatar": false, 
+						"PlantNameArray": [
+							{
+								"GameLevel": "Normal", 
+								"PlantCount": 5, 
+								"NormalWeight": 100, 
+								"FewWeight": 30, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"perfumeshroom", 
+									"sugarcane", 
+									"rafflesia", 
+									"stallia", 
+									"potatomine", 
+									"puffshroom", 
+									"cabbagepult", 
+									"iceburg", 
+									"turnip", 
+									"icelotus", 
+									"oxygenalgae"
+								], 
+								"ArrayFew": [
+									"magnifyinggrass", 
+									"snowpea", 
+									"pineapple", 
+									"explodeonut"
+								], 
+								"ArrayRare": []
+							}, 
+							{
+								"GameLevel": "Hard", 
+								"PlantCount": 6, 
+								"NormalWeight": 100, 
+								"FewWeight": 60, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"lightningreed", 
+									"snowpea", 
+									"spikerock", 
+									"sapfling", 
+									"stunion", 
+									"torchwood", 
+									"stunion", 
+									"sapfling", 
+									"explodeonut"
+								], 
+								"ArrayFew": [
+									"primalsunflower", 
+									"repeater", 
+									"starfruit", 
+									"laser_bean"
+								], 
+								"ArrayRare": []
+							}, 
+							{
+								"GameLevel": "Legend", 
+								"PlantCount": 7, 
+								"NormalWeight": 100, 
+								"FewWeight": 80, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"pepperpult", 
+									"cottonyeti", 
+									"starfruit", 
+									"magnifyinggrass", 
+									"intensivecarrot", 
+									"doublesamara", 
+									"acorn", 
+									"magnifyinggrass", 
+									"acorn", 
+									"sporeshroom", 
+									"laser_bean"
+								], 
+								"ArrayFew": [
+									"horsebean", 
+									"coconutcannon", 
+									"oakshooter", 
+									"kiwifruit"
+								], 
+								"ArrayRare": []
+							}
+						]
+					}, 
+					{
+						"SpecialGameLevelType": "yeti", 
+						"IsAvatar": true, 
+						"PlantNameArray": [
+							{
+								"GameLevel": "Normal", 
+								"PlantCount": 5, 
+								"NormalWeight": 100, 
+								"FewWeight": 20, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"tallnut", 
+									"melonpult", 
+									"puffshroom", 
+									"stunion", 
+									"cabbagepult", 
+									"peashooter", 
+									"wallnut", 
+									"celerystalker", 
+									"sugarcane", 
+									"stallia", 
+									"potatomine", 
+									"iceburg", 
+									"turnip", 
+									"icelotus", 
+									"oxygenalgae", 
+									"bamboo"
+								], 
+								"ArrayFew": [
+									"magnifyinggrass", 
+									"pineapple", 
+									"threepeater", 
+									"peapod", 
+									"rafflesia", 
+									"explodeonut", 
+									"pamegranate"
+								], 
+								"ArrayRare": []
+							}, 
+							{
+								"GameLevel": "Hard", 
+								"PlantCount": 6, 
+								"NormalWeight": 100, 
+								"FewWeight": 60, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"pineapple", 
+									"bloomerang", 
+									"spikerock", 
+									"starfruit", 
+									"melonpult", 
+									"phatbeet", 
+									"celerystalker", 
+									"lightningreed", 
+									"snowpea", 
+									"torchwood", 
+									"stunion", 
+									"sapfling", 
+									"explodeonut", 
+									"pamegranate"
+								], 
+								"ArrayFew": [
+									"oakshooter", 
+									"squash", 
+									"lotusshower", 
+									"twinsunflower", 
+									"repeater", 
+									"guacodile", 
+									"agave", 
+									"laser_bean"
+								], 
+								"ArrayRare": []
+							}, 
+							{
+								"GameLevel": "Legend", 
+								"PlantCount": 7, 
+								"NormalWeight": 100, 
+								"FewWeight": 80, 
+								"RareWeight": 0, 
+								"ArrayNormal": [
+									"snowpea", 
+									"pineapple", 
+									"starfruit", 
+									"twinsunflower", 
+									"bloomerang", 
+									"pumpkinwitch", 
+									"spikerock", 
+									"dragonfruit", 
+									"phatbeet", 
+									"primalpotatomine", 
+									"celerystalker", 
+									"agave", 
+									"laser_bean"
+								], 
+								"ArrayFew": [
+									"horsebean", 
+									"coconutcannon", 
+									"dandelion", 
+									"fireshroom", 
+									"oakshooter", 
+									"squash", 
+									"kiwifruit", 
+									"vanilla"
+								], 
+								"ArrayRare": []
+							}
+						]
+					}
+				], 
+				"PieceDropDataList": [
+					{
+						"PieceName": "plant_piece_acorn", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_acorn", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_rafflesia", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_rafflesia", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_peach", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_peach", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_guacodile", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_guacodile", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_starfruit", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_starfruit", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_agave", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_agave", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_laser_bean", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_laser_bean", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_coconutcannon", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_coconutcannon", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_spikerock", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_phatbeet", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_spikerock", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_phatbeet", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_celerystalker", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_celerystalker", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_sporeshroom", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_sporeshroom", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_pineapple", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_pineapple", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_lotusshower", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_lotusshower", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_tallnut", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_tallnut", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_saucer", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_saucer", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_peapod", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_peapod", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_fireshroom", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_fireshroom", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_primalsunflower", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_primalsunflower", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_sapfling", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_sapfling", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_stallia", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_stallia", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_puffshroom", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_puffshroom", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_bamboo", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_bamboo", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_icelotus", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_icelotus", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_oxygenalgae", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_oxygenalgae", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_melonpult", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_melonpult", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_pamegranate", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_pamegranate", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_explodeonut", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_explodeonut", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_twinsunflower", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_twinsunflower", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_akee", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_akee", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_repeater", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_repeater", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_peanut", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_peanut", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_cottonyeti", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_cottonyeti", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_horsebean", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_horsebean", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_stunion", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_stunion", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_dandelion", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_dandelion", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_scaredyshroom", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_vanilla", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_vanilla", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_kiwifruit", 
+						"PercentNormalArray": [
+							0.2, 
+							0.3
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_kiwifruit", 
+						"PercentNormalArray": [
+							0.15, 
+							0.15, 
+							0.15, 
+							0.15, 
+							1
+						], 
+						"PercentHardArray": [
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							0.2, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							0.25, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_squash", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_squash", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_potatomine", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_potatomine", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_magnifyinggrass", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_magnifyinggrass", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_threepeater", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_threepeater", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_bloomerang", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_bloomerang", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_snowpea", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_snowpea", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_peashooter", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_peashooter", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_laser_bean", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_laser_bean", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_sunflower", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_sunflower", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_oakshooter", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_oakshooter", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_dragonfruit", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_dragonfruit", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_intensivecarrot", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_intensivecarrot", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_pepperpult", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_pepperpult", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_doublesamara", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_doublesamara", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_oakshooter", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_oakshooter", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_pumpkinwitch", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_pumpkinwitch", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_perfumeshroom", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_perfumeshroom", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_sugarcane", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_sugarcane", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_iceburg", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_iceburg", 
+						"PercentNormalArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_torchwood", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_torchwood", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_turnip", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_turnip", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_cabbagepult", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_cabbagepult", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_primalpotatomine", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_primalpotatomine", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_lightningreed", 
+						"PercentNormalArray": [
+							0.5, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.4, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.5, 
+							0.5, 
+							0.5, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_lightningreed", 
+						"PercentNormalArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							1
+						], 
+						"PercentHardArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.3, 
+							0.5, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "plant_piece_wallnut", 
+						"PercentNormalArray": [
+							1, 
+							1
+						], 
+						"PercentHardArray": [
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"PercentLegendArray": [
+							1, 
+							1, 
+							1, 
+							0.5, 
+							0.5
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}, 
+					{
+						"PieceName": "avatar_piece_wallnut", 
+						"PercentNormalArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentHardArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"PercentLegendArray": [
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							0.8, 
+							1
+						], 
+						"ActicityCombat": 1, 
+						"StartDate": 20140501, 
+						"EndDate": 20140630, 
+						"StartTime": 1200, 
+						"EndTime": 2359
+					}
+				], 
+				"DiscountPlantList": [
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "sunflower", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "tallnut", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "tallnut", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "lightningreed", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "repeater", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "firegourd", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "peach", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "snapdragon", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "bloomerang", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "cabbagepult", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "springbean", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "imitater", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "coconutcannon", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "wallnut", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "potatomine", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "kernelpult", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "twinsunflower", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "snowpea", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "torchwood", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "peapod", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "spikerock", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "melonpult", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "snapdragon", 
+						"IsAvatar": true, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "threepeater", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}, 
+					{
+						"DiscountDate": 20130409, 
+						"PlantName": "wintermelon", 
+						"IsAvatar": false, 
+						"Discount": 50, 
+						"DiscountImage": "IMAGE_UI_CARDS_STORE_DISCOUNT_50"
+					}
+				]
+			}
+		}
+	]
+}

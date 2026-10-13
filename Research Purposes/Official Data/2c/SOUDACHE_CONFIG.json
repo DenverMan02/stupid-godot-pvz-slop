@@ -1,0 +1,311 @@
+{
+	"#comment": "SouDaChe Configuration", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "SouDaCheConfigSheet", 
+			"aliases": [
+				"SouDaCheConfig"
+			], 
+			"objdata": {
+				"m_nodeConfigs": [
+					{
+						"nodeId": 1, 
+						"nodeType": 0, 
+						"stage": 1, 
+						"nextNodeId": 2, 
+						"waveStart": 1, 
+						"waveEnd": 2, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 2, 
+						"nodeType": 0, 
+						"stage": 1, 
+						"nextNodeId": 3, 
+						"waveStart": 3, 
+						"waveEnd": 5, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 3, 
+						"nodeType": 0, 
+						"stage": 1, 
+						"nextNodeId": 4, 
+						"waveStart": 6, 
+						"waveEnd": 8, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 4, 
+						"nodeType": 0, 
+						"stage": 1, 
+						"nextNodeId": 5, 
+						"waveStart": 9, 
+						"waveEnd": 11, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 75.0
+					}, 
+					{
+						"nodeId": 5, 
+						"nodeType": 0, 
+						"stage": 1, 
+						"nextNodeId": 6, 
+						"waveStart": 12, 
+						"waveEnd": 14, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 75.0
+					}, 
+					{
+						"nodeId": 6, 
+						"nodeType": 1, 
+						"stage": 1, 
+						"nextNodeId": 7, 
+						"waveStart": 15, 
+						"waveEnd": 18, 
+						"isEvacuationTrigger": true, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 90.0
+					}, 
+					{
+						"nodeId": 7, 
+						"nodeType": 0, 
+						"stage": 2, 
+						"nextNodeId": 8, 
+						"waveStart": 1, 
+						"waveEnd": 3, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 8, 
+						"nodeType": 0, 
+						"stage": 2, 
+						"nextNodeId": 9, 
+						"waveStart": 4, 
+						"waveEnd": 6, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 9, 
+						"nodeType": 0, 
+						"stage": 2, 
+						"nextNodeId": 10, 
+						"waveStart": 7, 
+						"waveEnd": 9, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 10, 
+						"nodeType": 0, 
+						"stage": 2, 
+						"nextNodeId": 11, 
+						"waveStart": 10, 
+						"waveEnd": 12, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 75.0
+					}, 
+					{
+						"nodeId": 11, 
+						"nodeType": 0, 
+						"stage": 2, 
+						"nextNodeId": 12, 
+						"waveStart": 13, 
+						"waveEnd": 15, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 75.0
+					}, 
+					{
+						"nodeId": 12, 
+						"nodeType": 1, 
+						"stage": 2, 
+						"nextNodeId": 13, 
+						"waveStart": 16, 
+						"waveEnd": 19, 
+						"isEvacuationTrigger": true, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 90.0
+					}, 
+					{
+						"nodeId": 13, 
+						"nodeType": 0, 
+						"stage": 3, 
+						"nextNodeId": 14, 
+						"waveStart": 1, 
+						"waveEnd": 3, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 14, 
+						"nodeType": 0, 
+						"stage": 3, 
+						"nextNodeId": 15, 
+						"waveStart": 4, 
+						"waveEnd": 6, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 15, 
+						"nodeType": 0, 
+						"stage": 3, 
+						"nextNodeId": 16, 
+						"waveStart": 7, 
+						"waveEnd": 9, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 55.0
+					}, 
+					{
+						"nodeId": 16, 
+						"nodeType": 0, 
+						"stage": 3, 
+						"nextNodeId": 17, 
+						"waveStart": 10, 
+						"waveEnd": 13, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 75.0
+					}, 
+					{
+						"nodeId": 17, 
+						"nodeType": 0, 
+						"stage": 3, 
+						"nextNodeId": 18, 
+						"waveStart": 14, 
+						"waveEnd": 17, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 75.0
+					}, 
+					{
+						"nodeId": 18, 
+						"nodeType": 1, 
+						"stage": 3, 
+						"nextNodeId": 0, 
+						"waveStart": 18, 
+						"waveEnd": 22, 
+						"isEvacuationTrigger": false, 
+						"stabilityLossPerBreach": 10, 
+						"countdownTime": 90.0
+					}
+				], 
+				"m_stageLevelPools": [
+					[
+						"soudache_d1_1_1"
+					], 
+					[
+						"soudache_d1_2_1"
+					], 
+					[
+						"soudache_d1_3_1"
+					]
+				], 
+				"m_howToPlayData": {
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_01", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_01]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_01]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_02", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_02]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_02]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_03", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_03]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_03]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_04", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_04]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_04]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_05", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_05]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_05]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_06", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_06]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_06]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_07", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_07]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_07]"
+						}
+					]
+				}, 
+				"m_howToPlayData1": {
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_01", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_01]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_01]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_02", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_02]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_02]"
+						}
+					]
+				}, 
+				"m_howToPlayData2": {
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_03", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_03]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_03]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_04", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_04]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_04]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_05", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_05]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_05]"
+						}, 
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_06", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_06]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_06]"
+						}
+					]
+				}, 
+				"m_howToPlayData3": {
+					"Entries": [
+						{
+							"ImageId": "IMAGE_UI_SOUDACHE_HOW_TO_PLAY_HOWTOPLAY_07", 
+							"Subtitle": "[SOUDACHE_HOWTOPLAY_SUBTITLE_07]", 
+							"Description": "[SOUDACHE_HOWTOPLAY_DESC_07]"
+						}
+					]
+				}
+			}
+		}
+	]
+}

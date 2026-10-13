@@ -1,0 +1,791 @@
+{
+	"#comment": "Make new task types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "DaveTaskConfig", 
+			"objdata": {
+				"DaveTaskVersion": 6, 
+				"DaveTaskDatas": [
+					{
+						"DaveTaskPassLevelData": {
+							"ID": 1001, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PASSLEVEL_1]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassPVZ1Data": {
+							"ID": 1002, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PVZ1_1]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"IsNormalChallange": true, 
+							"NeedWin": false
+						}
+					}, 
+					{
+						"DaveTaskPlantAdventureData": {
+							"ID": 1003, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PLANTADVENTURE_1]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassLevelData": {
+							"ID": 1004, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PASSLEVEL_2]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 2, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskEndlessData": {
+							"ID": 1005, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_ENDLESS_1]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassLevelData": {
+							"ID": 1006, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PASSLEVEL_3]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 3, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPlantAdventureData": {
+							"ID": 1007, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PLANTADVENTURE_2]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 2, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPVZ1Data": {
+							"ID": 1008, 
+							"GroupID": 0, 
+							"Name": "[DAVE_TREASURE_PVZ1_2]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 1, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassHardLevelData": {
+							"ID": 2001, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_PASSHARDLEVEL_5]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 5, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskEndlessData": {
+							"ID": 2002, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_ENDLESS_5]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 5, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPlantAdventureData": {
+							"ID": 2003, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_PLANTADVENTURE_8]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 8, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskBeatBossData": {
+							"ID": 2004, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_BEATBOSS_3]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 3, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskBattleZData": {
+							"ID": 2005, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_BATTLEZ_3]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 3, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassHardLevelData": {
+							"ID": 2006, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_PASSHARDLEVEL_10]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 10, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPlantAdventureData": {
+							"ID": 2007, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_PLANTADVENTURE_5]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 5, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskEndlessData": {
+							"ID": 2008, 
+							"GroupID": 1, 
+							"Name": "[DAVE_TREASURE_ENDLESS_7]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 10000
+								}
+							], 
+							"Requirement": 7, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskBattleZData": {
+							"ID": 3001, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_BATTLEZ_15]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 15, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassManyPVZ1Data": {
+							"ID": 3002, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_PVZ1_8]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 8, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassHardLevelData": {
+							"ID": 3003, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_PASSHARDLEVEL_30]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 30, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPassEasyLevelData": {
+							"ID": 3004, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_PASSLEVEL_30]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 30, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskNormalDrawData": {
+							"ID": 3005, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_NORMALDRAW_15]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 15, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskPlantAdventureData": {
+							"ID": 3006, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_PLANTADVENTURE_30]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 30, 
+							"IsNormalChallange": true, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskEndlessBeatBossData": {
+							"ID": 3007, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_ENDLESSBEATBOSS_5]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 5, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskExtinguishFireData": {
+							"ID": 3008, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_EXTINGUISHFIRE_15]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 15, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}, 
+					{
+						"DaveTaskTransgenicData": {
+							"ID": 3009, 
+							"GroupID": 2, 
+							"Name": "[DAVE_TREASURE_TRANSGENIC_10]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 10
+								}, 
+								{
+									"Type": 2, 
+									"SubType": 0, 
+									"Amount": 30000
+								}
+							], 
+							"Requirement": 10, 
+							"IsNormalChallange": false, 
+							"NeedWin": true
+						}
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyTaskConfig", 
+			"objdata": {
+				"DaveTaskVersion": 0, 
+				"DaveTaskDatas": [
+					{
+						"DaveTaskPassPennyLevelData": {
+							"ID": 1001, 
+							"GroupID": 0, 
+							"Name": "[PENNY_GUIDE_PASS_LEVEL_3]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 3, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskKillZombieOnPennyLevelData": {
+							"ID": 1002, 
+							"GroupID": 0, 
+							"Name": "[PENNY_GUIDE_KILL_ZOMBIE_50]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 3
+								}
+							], 
+							"Requirement": 50, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskObtainPennySignalData": {
+							"ID": 1003, 
+							"GroupID": 0, 
+							"Name": "[PENNY_GUIDE_OBTAIN_SIGNAL_50]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 1
+								}
+							], 
+							"Requirement": 50, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskConsumeFuelData": {
+							"ID": 2001, 
+							"GroupID": 1, 
+							"Name": "[PENNY_GUIDE_CONSUME_FUEL_35]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}
+							], 
+							"Requirement": 35, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskFinishPennyLevelBossData": {
+							"ID": 2002, 
+							"GroupID": 1, 
+							"Name": "[PENNY_GUIDE_ZOMBIE_BOSS_6]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 15
+								}
+							], 
+							"Requirement": 6, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskObtainPennySignalData": {
+							"ID": 2003, 
+							"GroupID": 1, 
+							"Name": "[PENNY_GUIDE_OBTAIN_SIGNAL_200]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}
+							], 
+							"Requirement": 200, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskWinPennyLevelBossData": {
+							"ID": 2004, 
+							"GroupID": 1, 
+							"Name": "[PENNY_GUIDE_WIN_ZOMBIE_BOSS_2]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 5
+								}
+							], 
+							"Requirement": 2, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskObtainSunmoneyOnPennyLevelData": {
+							"ID": 3001, 
+							"GroupID": 2, 
+							"Name": "[PENNY_GUIDE_OBTAIN_SUNMONEY_25000]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 30
+								}
+							], 
+							"Requirement": 25000, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskAddPlantOnPennyLevelData": {
+							"ID": 3002, 
+							"GroupID": 2, 
+							"Name": "[PENNY_GUIDE_ADD_PLANT_400]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 30
+								}
+							], 
+							"Requirement": 400, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskKillZombieOnPennyLevelData": {
+							"ID": 3003, 
+							"GroupID": 2, 
+							"Name": "[PENNY_GUIDE_KILL_ZOMBIE_500]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 30
+								}
+							], 
+							"Requirement": 500, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}, 
+					{
+						"DaveTaskPlantfoodOnPennyLevelData": {
+							"ID": 3004, 
+							"GroupID": 2, 
+							"Name": "[PENNY_GUIDE_PLANTFOOD_50]", 
+							"Description": "", 
+							"Background": "IMAGE_UI_DAVETREASURE_TASK_BG", 
+							"Awards": [
+								{
+									"Type": 1, 
+									"SubType": 0, 
+									"Amount": 30
+								}
+							], 
+							"Requirement": 50, 
+							"IsNormalChallange": true, 
+							"ActivityName": "PENNY"
+						}
+					}
+				]
+			}
+		}
+	]
+}

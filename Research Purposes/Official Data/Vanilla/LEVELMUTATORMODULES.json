@@ -1,0 +1,1324 @@
+{
+	"#comment": "Put mutator LevelModule definitions here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideStartingPlantfood0"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartingPlantfood@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_PF", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideStartingPlantfood1"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 1, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartingPlantfood@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_PF", 
+				"IconText": "+1"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartingPlantfoodProps", 
+			"aliases": [
+				"OverrideStartingPlantfood2"
+			], 
+			"objdata": {
+				"StartingPlantfoodOverride": 2, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartingPlantfood@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_PF", 
+				"IconText": "+2"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount4"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 4, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "4"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount5"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 5, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "5"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount6"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 6, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "6"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount7"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 7, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "7"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSeedSlotCountProps", 
+			"aliases": [
+				"OverrideSeedSlotCount8"
+			], 
+			"objdata": {
+				"SeedSlotCountOverride": 8, 
+				"DifficultyProps": "RTID(LevelModuleDifficultySeedSlotCount@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SEED_PACKET", 
+				"IconText": "8"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorPowerupSetProps", 
+			"aliases": [
+				"OverridePowerupsDisabled"
+			], 
+			"objdata": {
+				"PowerupSetOverride": "LevelPowerupsDisabled", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyPowerupsDisabled@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN", 
+				"IconText": "POWERUPS"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun9000"
+			], 
+			"objdata": {
+				"MaxSunOverride": 9000, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<9000"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun2000"
+			], 
+			"objdata": {
+				"MaxSunOverride": 2000, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<2000"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun1500"
+			], 
+			"objdata": {
+				"MaxSunOverride": 1500, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<1500"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun1000"
+			], 
+			"objdata": {
+				"MaxSunOverride": 1000, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<1000"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMaxSunProps", 
+			"aliases": [
+				"OverrideMaxSun500"
+			], 
+			"objdata": {
+				"MaxSunOverride": 500, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMaxSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "<500"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+0"
+			], 
+			"objdata": {
+				"StartSunModifier": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+0"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+25"
+			], 
+			"objdata": {
+				"StartSunModifier": 25, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+25"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+50"
+			], 
+			"objdata": {
+				"StartSunModifier": 50, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+50"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+100"
+			], 
+			"objdata": {
+				"StartSunModifier": 100, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+100"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+150"
+			], 
+			"objdata": {
+				"StartSunModifier": 150, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+150"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun+200"
+			], 
+			"objdata": {
+				"StartSunModifier": 200, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "+200"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun-100"
+			], 
+			"objdata": {
+				"StartSunModifier": -100, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "-100"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun-150"
+			], 
+			"objdata": {
+				"StartSunModifier": -150, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "-150"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorStartSunProps", 
+			"aliases": [
+				"ModifyStartSun-250"
+			], 
+			"objdata": {
+				"StartSunModifier": -250, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyStartSun@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_STARTING_SUN", 
+				"IconText": "-250"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersNone"
+			], 
+			"objdata": {
+				"SpawnOverride": "none", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_MOVERS", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersOnce"
+			], 
+			"objdata": {
+				"SpawnOverride": "once", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_MOVERS", 
+				"IconText": "1"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersRegenOnce"
+			], 
+			"objdata": {
+				"SpawnOverride": "regen_once", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_MOVERS", 
+				"IconText": "2"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorMowerSpawnProps", 
+			"aliases": [
+				"OverrideMowersInfinite"
+			], 
+			"objdata": {
+				"SpawnOverride": "infinite", 
+				"DifficultyProps": "RTID(LevelModuleDifficultyMowers@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_MOVERS", 
+				"IconText": "∞"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave3Ultra"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 3, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_12", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave6Fast"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 6, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_12", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave9Moderate"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 9, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_9", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieCountdownFirstWaveSecsProps", 
+			"aliases": [
+				"OverrideFirstWave12Slow"
+			], 
+			"objdata": {
+				"FirstWaveSecs": 12, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyFirstWave@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_HEADSTART_6", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel0"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 0
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel1"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 1, 
+				"#comment": "BaseGridItemLevel value should be greater than 0 to override GridItem Level. If BaseGridItemLevel is less than or equal to 0, GridItem takes the level of Zombie"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel2"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 2
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel3"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 3
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel4"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 4
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel5"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 5
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel6"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 6
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel7"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 7
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel8"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 8
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel9"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 9
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel10"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 10
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel12"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 12
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorGridItemLevelProps", 
+			"aliases": [
+				"OverrideGridItemLevel13"
+			], 
+			"objdata": {
+				"BaseGridItemLevel": 13
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel0"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 0, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_BASIC", 
+				"IconText": "LV 1"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel1"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 1, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_BASIC", 
+				"IconText": "LV 2"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel2"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 2, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_BASIC", 
+				"IconText": "LV 3"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel3"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 3, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_MED", 
+				"IconText": "LV 4"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel4"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 4, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_MED", 
+				"IconText": "LV 5"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel5"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 5, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_MED", 
+				"IconText": "LV 6"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel6"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 6, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 7"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel7"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 7, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 8"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel8"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 8, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 9"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel9"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 9, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 10"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel10"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 10, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 11"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel11"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 11, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 12"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieLevelProps", 
+			"aliases": [
+				"OverrideZombieLevel12"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 12, 
+				"DifficultyProps": "RTID(LevelModuleDifficultyZombieLevel@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_ZOMBIE_LEVEL_ANGRY", 
+				"IconText": "LV 13"
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel3"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 3
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel4"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 4
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel5"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 5
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel6"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 6
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel7"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 7
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorZombieGeneralLevelProps", 
+			"aliases": [
+				"OverrideZombieGeneralLevel8"
+			], 
+			"objdata": {
+				"BaseZombieLevel": 8
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases3"
+			], 
+			"objdata": {
+				"ZombossPhases": 3
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases4"
+			], 
+			"objdata": {
+				"ZombossPhases": 4
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases5"
+			], 
+			"objdata": {
+				"ZombossPhases": 5
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases6"
+			], 
+			"objdata": {
+				"ZombossPhases": 6
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases7"
+			], 
+			"objdata": {
+				"ZombossPhases": 7
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases8"
+			], 
+			"objdata": {
+				"ZombossPhases": 8
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases9"
+			], 
+			"objdata": {
+				"ZombossPhases": 9
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases10"
+			], 
+			"objdata": {
+				"ZombossPhases": 10
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases11"
+			], 
+			"objdata": {
+				"ZombossPhases": 11
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases12"
+			], 
+			"objdata": {
+				"ZombossPhases": 12
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases13"
+			], 
+			"objdata": {
+				"ZombossPhases": 13
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases15"
+			], 
+			"objdata": {
+				"ZombossPhases": 15
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases17"
+			], 
+			"objdata": {
+				"ZombossPhases": 17
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorRiftZombossPhasesProps", 
+			"aliases": [
+				"OverrideZombossPhases19"
+			], 
+			"objdata": {
+				"ZombossPhases": 19
+			}
+		}, 
+		{
+			"objclass": "LootOverrideZombossRiftModuleProps", 
+			"aliases": [
+				"ZombossBatterySystem_Easy"
+			], 
+			"objdata": {
+				"Entries": [
+					{
+						"MinSeconds": 18, 
+						"MaxSeconds": 22, 
+						"Drop": "Gem"
+					}, 
+					{
+						"MinSeconds": 8, 
+						"MaxSeconds": 13, 
+						"Drop": "GoldCoin"
+					}, 
+					{
+						"MinSeconds": 3, 
+						"MaxSeconds": 5, 
+						"Drop": "SilverCoin"
+					}, 
+					{
+						"MinSeconds": 50, 
+						"MaxSeconds": 60, 
+						"Drop": "Sprout"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LootOverrideZombossRiftModuleProps", 
+			"aliases": [
+				"ZombossBatterySystem_Med"
+			], 
+			"objdata": {
+				"Entries": [
+					{
+						"MinSeconds": 15, 
+						"MaxSeconds": 22, 
+						"Drop": "Gem"
+					}, 
+					{
+						"MinSeconds": 6, 
+						"MaxSeconds": 13, 
+						"Drop": "GoldCoin"
+					}, 
+					{
+						"MinSeconds": 2, 
+						"MaxSeconds": 5, 
+						"Drop": "SilverCoin"
+					}, 
+					{
+						"MinSeconds": 45, 
+						"MaxSeconds": 60, 
+						"Drop": "Sprout"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LootOverrideZombossRiftModuleProps", 
+			"aliases": [
+				"ZombossBatterySystem_Hard"
+			], 
+			"objdata": {
+				"Entries": [
+					{
+						"MinSeconds": 12, 
+						"MaxSeconds": 22, 
+						"Drop": "Gem"
+					}, 
+					{
+						"MinSeconds": 4, 
+						"MaxSeconds": 13, 
+						"Drop": "GoldCoin"
+					}, 
+					{
+						"MinSeconds": 1, 
+						"MaxSeconds": 5, 
+						"Drop": "SilverCoin"
+					}, 
+					{
+						"MinSeconds": 40, 
+						"MaxSeconds": 60, 
+						"Drop": "Sprout"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperVerySlow"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(VerySlowSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperSlow"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(SlowSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_NO_SUN", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperDefault"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(DefaultSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SUN_HALFWAY", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperFast"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(FastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SUN_OUT", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "LevelMutatorSunDropperProps", 
+			"aliases": [
+				"OverrideSunDropperVeryFast"
+			], 
+			"objdata": {
+				"LevelModuleOverride": "RTID(VeryFastSunDropper@LevelModules)", 
+				"DifficultyProps": "RTID(LevelModuleDifficultySunDropper@LevelModulesDifficulty)", 
+				"IconImage": "IMAGE_UI_PENNY_PURSUITS_DIFFICULTY_MODIFIER_ICONS_DIFFICULTY_MODIFIER_SUN_OUT", 
+				"IconText": ""
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffBombardmintTestEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "concealmint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "reinforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffBombardmintTestMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "50% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "concealmint"
+						}, 
+						{
+							"#comment": "50% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "reinforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffBombardmintTestHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0, 
+							"DamageResistance": 0, 
+							"FamilyType": "concealmint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0, 
+							"DamageResistance": 0, 
+							"FamilyType": "reinforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1A"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1AEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1AMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1AHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1B"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "wintermint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1BEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "filamint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "concealmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1BMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift1BHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "filamint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "concealmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "appeasemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2Easy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "peppermint"
+						}, 
+						{
+							"#comment": "150% damage and condition", 
+							"ConditionResistance": 1.5, 
+							"DamageResistance": 1.5, 
+							"FamilyType": "enlightenmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2Med"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": []
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffRift2Hard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "peppermint"
+						}, 
+						{
+							"#comment": "0% damage and condition", 
+							"ConditionResistance": 0.5, 
+							"DamageResistance": 0.5, 
+							"FamilyType": "enlightenmint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffFilamintEasy"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "filamint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffFilamintMed"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "filamint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "ZombieResistancesModuleProperties", 
+			"aliases": [
+				"MutatorBuffFilamintHard"
+			], 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2.0, 
+							"DamageResistance": 2.0, 
+							"FamilyType": "filamint"
+						}
+					]
+				}
+			}
+		}
+	]
+}

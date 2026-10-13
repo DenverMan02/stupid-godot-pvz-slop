@@ -1,0 +1,3043 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "TreasureConfig", 
+			"aliases": [
+				"TreasureConfig"
+			], 
+			"objdata": {
+				"TreasurePools": [
+					{
+						"map": "EgyptPirate", 
+						"purchasetype": "gem", 
+						"price": 35, 
+						"tpactid": 2211, 
+						"tpacttid": 52211, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN1", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL1", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_EGYPTPIRATE"
+					}, 
+					{
+						"map": "CowboyKongfu", 
+						"purchasetype": "gem", 
+						"price": 35, 
+						"tpactid": 2212, 
+						"tpacttid": 52212, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN2", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL2", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_WESTKONGFU"
+					}, 
+					{
+						"map": "Future", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2213, 
+						"tpacttid": 52213, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN3", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL3", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_FURTURE"
+					}, 
+					{
+						"map": "Dark", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2214, 
+						"tpacttid": 52214, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN4", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL4", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_DARK"
+					}, 
+					{
+						"map": "Beach", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2215, 
+						"tpacttid": 52215, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN6", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL6", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_BEACH"
+					}, 
+					{
+						"map": "Iceage", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2216, 
+						"tpacttid": 52216, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN7", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL7", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_ICEAGE"
+					}, 
+					{
+						"map": "Sky", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2217, 
+						"tpacttid": 52217, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN8", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL8", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_SKYCITY"
+					}, 
+					{
+						"map": "LostCity", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2218, 
+						"tpacttid": 52218, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN9", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL9", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_LOSTCITY"
+					}, 
+					{
+						"map": "Daily", 
+						"purchasetype": "gem", 
+						"price": 50, 
+						"tpactid": 2236, 
+						"tpacttid": 52236, 
+						"img": "IMAGE_UI_STORE_GOLDCAN_BTN5", 
+						"title": "IMAGE_UI_STORE_GOLDCAN_POOL5", 
+						"bkimg": "IMAGE_UI_STORE_GACHA_BK_SECRET"
+					}
+				], 
+				"TreasureRewardList": [
+					{
+						"Sku": "sunflower", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "peashooter", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "wallnut", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "potatomine", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "iceburg", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "twinsunflower", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "bloomerang", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "bonkchoy", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "repeater", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "cabbagepult", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "torchwood", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "snowpea", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "springbean", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "spikeweed", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "snapdragon", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "tallnut", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "spikerock", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "coconutcannon", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "kernelpult", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "lightningreed", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sunflower", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peashooter", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_wallnut", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_potatomine", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_iceburg", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_twinsunflower", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bloomerang", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bonkchoy", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_repeater", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_cabbagepult", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_torchwood", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_snowpea", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_springbean", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_spikeweed", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_snapdragon", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_tallnut", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_spikerock", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_coconutcannon", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_kernelpult", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lightningreed", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sunflower", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peashooter", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_wallnut", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_potatomine", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_iceburg", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_twinsunflower", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bloomerang", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bonkchoy", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_repeater", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_cabbagepult", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_torchwood", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_snowpea", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_springbean", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_spikeweed", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_snapdragon", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_tallnut", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_spikerock", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_coconutcannon", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_kernelpult", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lightningreed", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_sunflower", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_peashooter", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_wallnut", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_potatomine", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_iceburg", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_twinsunflower", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_bloomerang", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_bonkchoy", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_repeater", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_cabbagepult", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_torchwood", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_snowpea", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_springbean", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_spikeweed", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_snapdragon", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_tallnut", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_spikerock", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_coconutcannon", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_kernelpult", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_lightningreed", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "EgyptPirate", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "squash", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "chilibean", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "jalapeno", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "splitpea", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "threepeater", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "wintermelon", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "melonpult", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "peapod", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "bamboo", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "turnip", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "firegourd", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "peach", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_squash", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chilibean", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_jalapeno", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_splitpea", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_threepeater", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_wintermelon", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_melonpult", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peapod", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bamboo", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_turnip", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_firegourd", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peach", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_squash", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chilibean", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_jalapeno", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_splitpea", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_threepeater", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_wintermelon", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_melonpult", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peapod", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bamboo", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_turnip", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_firegourd", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peach", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_squash", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_chilibean", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_splitpea", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_threepeater", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_wintermelon", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_melonpult", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_peapod", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_bamboo", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_turnip", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_firegourd", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_peach", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "CowboyKongfu", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "magnifyinggrass", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "laser_bean", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "holonut", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "starfruit", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "citron", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_magnifyinggrass", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_laser_bean", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_holonut", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_starfruit", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_citron", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_magnifyinggrass", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_laser_bean", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_holonut", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_starfruit", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_citron", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_magnifyinggrass", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_laser_bean", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_holonut", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_starfruit", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_citron", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Future", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "sunshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "puffshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "magnetshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "fumeshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "hypnoshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "peanut", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "oakshooter", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sunshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_puffshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_magnetshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_fumeshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_hypnoshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peanut", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_oakshooter", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sunshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_puffshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_magnetshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_fumeshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_hypnoshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_peanut", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_oakshooter", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_sunshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_puffshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_magnetshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_fumeshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_hypnoshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_peanut", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_oakshooter", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Dark", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "lilypad", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "bowlingbulb", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "banana", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "guacodile", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "tanglekelp", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "homingthistle", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "lemon", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lilypad", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bowlingbulb", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_banana", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_guacodile", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_tanglekelp", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_homingthistle", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lemon", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lilypad", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_bowlingbulb", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_banana", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_guacodile", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_tanglekelp", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_homingthistle", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lemon", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "lotusshower", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lotusshower", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lotusshower", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_lilypad", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_bowlingbulb", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_banana", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_guacodile", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_tanglekelp", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_homingthistle", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_lemon", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_lotusshower", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Beach", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "iceshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "fireshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 1, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "carrotlauncher", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "dandelion", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "broccoli", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "pamegranate", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_iceshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_fireshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_carrotlauncher", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_dandelion", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_broccoli", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pamegranate", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_iceshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_fireshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_carrotlauncher", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_dandelion", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_broccoli", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pamegranate", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "chomper", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chomper", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chomper", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "sweetpotato", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sweetpotato", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sweetpotato", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "sapfling", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sapfling", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sapfling", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "ghostpepper", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_ghostpepper", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_ghostpepper", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "chestnut", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chestnut", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chestnut", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "xshot", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_xshot", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_xshot", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_iceshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_fireshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_carrotlauncher", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_dandelion", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_broccoli", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_pamegranate", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_chomper", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_sweetpotato", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_sapfling", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_ghostpepper", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_chestnut", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_xshot", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "firepeashooter", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "pepperpult", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "chardguard", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "stunion", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "rafflesia", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "acorn", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_firepeashooter", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pepperpult", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chardguard", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_stunion", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_rafflesia", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_acorn", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_firepeashooter", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pepperpult", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_chardguard", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_stunion", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_rafflesia", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_acorn", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_firepeashooter", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_pepperpult", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_chardguard", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_stunion", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_rafflesia", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_acorn", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Iceage", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "doublesamara", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "anthurium", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "asparagus", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "saucer", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "horsebean", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "pineapple", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_doublesamara", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_anthurium", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_asparagus", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_saucer", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_horsebean", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pineapple", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_doublesamara", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_anthurium", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_asparagus", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_saucer", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_horsebean", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pineapple", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_doublesamara", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_anthurium", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_asparagus", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_saucer", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_horsebean", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_groundcherry", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_pineapple", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Sky", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "sugarcane", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sugarcane", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_sugarcane", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_sugarcane", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "roseswordman", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_roseswordman", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_roseswordman", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_roseswordman", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "magicshroom", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_magicshroom", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_magicshroom", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_magicshroom", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "electricblueberry", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_electricblueberry", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_electricblueberry", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_electricblueberry", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "endurian", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_endurian", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_endurian", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_endurian", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "pumpkinwitch", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pumpkinwitch", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_pumpkinwitch", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_pumpkinwitch", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "agave", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_agave", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_agave", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_agave", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "cottonyeti", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_cottonyeti", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_cottonyeti", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_cottonyeti", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "akee", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "redstinger", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "stallia", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "lavaguava", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "toadstool", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "jackfruit", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 3, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_akee", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_redstinger", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_stallia", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lavaguava", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_toadstool", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_jackfruit", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_akee", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_redstinger", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_stallia", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_lavaguava", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_toadstool", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_jackfruit", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_akee", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_redstinger", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_stallia", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_lavaguava", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_toadstool", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "LostCity", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "kiwifruit", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_kiwifruit", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_kiwifruit", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_kiwifruit", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "wintersweet", 
+						"Type": "plant", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_wintersweet", 
+						"Type": "plant_piece", 
+						"Count": 1, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "plant_piece_wintersweet", 
+						"Type": "plant_piece", 
+						"Count": 2, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}, 
+					{
+						"Sku": "avatar_piece_wintersweet", 
+						"Type": "avatar_piece", 
+						"Count": 6, 
+						"Probability": 5, 
+						"map": "Daily", 
+						"leaf": 1
+					}
+				]
+			}
+		}
+	]
+}

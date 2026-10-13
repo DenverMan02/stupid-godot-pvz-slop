@@ -54,6 +54,7 @@ The game must support **hundreds of simultaneously active XFL animation instance
 - Keep generated Godot cache files out of commits. Follow the repository's Git LFS configuration for audio assets.
 - Run the most relevant available checks after changes (for example, a headless Godot project check and focused importer/renderer tests). Be explicit about any checks that could not be run; never report unrun tests as passing.
 - Do not commit or push changes unless the project owner explicitly asks for it.
+- **Ignore the "Research Purposes" folder**: This directory contains over 2,800 raw level files and reference dumps. Do **NOT** scan, crawl, parse, compile, or traverse the `"Research Purposes"` directory unless the project owner explicitly directs you to enter it for a specific task. Tool scripts (like XFL compilers or asset indexers) must explicitly skip this directory.
 
 ## Working approach
 

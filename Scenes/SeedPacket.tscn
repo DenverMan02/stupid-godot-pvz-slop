@@ -41,6 +41,26 @@ nine_patch_stretch = true
 texture_progress = ExtResource("3_cooldown_tex")
 tint_progress = Color(0, 0, 0, 0.65)
 
+[node name="CostLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -32.0
+offset_right = -10.0
+offset_bottom = -2.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 20
+text = "100"
+horizontal_alignment = 2
+vertical_alignment = 1
+
 [node name="SelectHighlight" type="TextureRect" parent="."]
 visible = false
 layout_mode = 1

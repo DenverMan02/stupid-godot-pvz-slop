@@ -15,6 +15,7 @@ var cached_sun: int = 50
 
 @onready var card_texture: TextureRect = $CardTexture
 @onready var cooldown_progress: TextureProgressBar = $CardTexture/CooldownProgress
+@onready var cost_label: Label = $CostLabel
 @onready var select_highlight: TextureRect = $SelectHighlight
 
 func _ready() -> void:
@@ -26,6 +27,8 @@ func _ready() -> void:
 	if ResourceLoader.exists(packet_path):
 		card_texture.texture = load(packet_path)
 
+	if cost_label:
+		cost_label.text = str(sun_cost)
 	if select_highlight:
 		select_highlight.visible = false
 	if cooldown_progress:
@@ -55,11 +58,19 @@ func _process(delta: float) -> void:
 
 func update_availability(current_sun: int) -> void:
 	cached_sun = current_sun
+	var can_afford = current_sun >= sun_cost
+
+	if cost_label:
+		if not can_afford:
+			cost_label.modulate = Color(1.0, 0.25, 0.25, 1.0) # Red when cannot afford
+		else:
+			cost_label.modulate = Color(1.0, 1.0, 1.0, 1.0) # White when affordable
+
 	if not is_active:
 		card_texture.modulate = Color(0.48, 0.48, 0.48, 0.9)
 	elif cooldown_remaining > 0.0:
 		card_texture.modulate = Color(0.65, 0.65, 0.65, 1.0)
-	elif current_sun < sun_cost:
+	elif not can_afford:
 		card_texture.modulate = Color(0.48, 0.48, 0.48, 0.9)
 	else:
 		card_texture.modulate = Color(1.0, 1.0, 1.0, 1.0)

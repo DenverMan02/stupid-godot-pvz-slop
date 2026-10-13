@@ -7,6 +7,8 @@ extends Node2D
 @onready var suns_container: Node2D = $Suns
 @onready var zombies_container: Node2D = $Zombies
 @onready var seed_bank: SeedBank = $HUD/SeedBank
+@onready var start_banner: Control = $HUD/StartBanner
+@onready var start_label: Label = $HUD/StartBanner/StartLabel
 @onready var peashooter_count_label: Label = $HUD/MarginContainer/VBoxContainer/CountLabel
 @onready var debug_status_label: Label = $HUD/MarginContainer/VBoxContainer/DebugLabel
 
@@ -29,6 +31,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/peashooter.anim.json",
 		"tex_dir": "res://Assets/Plants/peashooter.xfl/library/",
 		"health": 300.0,
+		"offset": Vector2(0.0, 20.0),
 	},
 	{
 		"id": "sunflower",
@@ -36,6 +39,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/sunflower.anim.json",
 		"tex_dir": "res://Assets/Plants/sunflower.xfl/library/",
 		"health": 300.0,
+		"offset": Vector2(0.0, 20.0),
 	},
 	{
 		"id": "wallnut",
@@ -43,6 +47,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/wallnut.anim.json",
 		"tex_dir": "res://Assets/Plants/wallnut.xfl/library/",
 		"health": 4000.0,
+		"offset": Vector2(0.0, 20.0),
 	},
 	{
 		"id": "potatomine",
@@ -50,6 +55,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/potatomine.anim.json",
 		"tex_dir": "res://Assets/Plants/potatomine.xfl/library/",
 		"health": 300.0,
+		"offset": Vector2(0.0, 20.0),
 	},
 	{
 		"id": "cabbagepult",
@@ -57,6 +63,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/cabbagepult.anim.json",
 		"tex_dir": "res://Assets/Plants/cabbagepult.xfl/library/",
 		"health": 300.0,
+		"offset": Vector2(0.0, 20.0),
 	},
 	{
 		"id": "lingfugu",
@@ -73,7 +80,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"anim_json": "res://Assets/Plants/clivia.anim.json",
 		"tex_dir": "res://Assets/Plants/clivia.xfl/LIBRARY/",
 		"scale": 1.8,
-		"offset": Vector2(-25.0, 0.0),
+		"offset": Vector2(-25.0, 20.0),
 		"health": 300.0,
 	},
 	{
@@ -104,6 +111,10 @@ func _ready() -> void:
 		var r = p.get("row") if p.get("row") != null else 2
 		var c = p.get("col") if p.get("col") != null else 1
 		p.z_index = grid.get_depth_z_index(r, c)
+		# Align pre-placed plants down slightly
+		var spr = p.get_node_or_null("XFLSprite2D")
+		if spr:
+			spr.position = Vector2(0.0, 20.0)
 
 	_update_hud()
 
@@ -122,7 +133,43 @@ func _start_camera_pan() -> void:
 	tween.finished.connect(_on_pan_finished)
 
 func _on_pan_finished() -> void:
-	print("[Lawn] Camera pan finished! Ready... Set... Plant!")
+	print("[Lawn] Camera pan finished! Playing Ready... Set... Plant!")
+	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/ready.ogg"):
+		AudioManager.play_sfx(load("res://Audio/SFX/ready.ogg"))
+
+	if start_banner and start_label:
+		start_banner.visible = true
+		start_banner.scale = Vector2(0.6, 0.6)
+		start_banner.modulate = Color(1, 1, 1, 0)
+		start_label.text = "READY..."
+		start_label.modulate = Color(1.0, 0.9, 0.2, 1.0)
+
+		var tw = create_tween()
+		# READY...
+		tw.tween_property(start_banner, "modulate:a", 1.0, 0.15)
+		tw.parallel().tween_property(start_banner, "scale", Vector2.ONE, 0.4).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.3)
+		# SET...
+		tw.tween_callback(func():
+			start_label.text = "SET..."
+			start_banner.scale = Vector2(0.75, 0.75)
+		)
+		tw.tween_property(start_banner, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.2)
+		# PLANT!
+		tw.tween_callback(func():
+			start_label.text = "PLANT!"
+			start_label.modulate = Color(0.35, 1.0, 0.35, 1.0)
+			start_banner.scale = Vector2(0.7, 0.7)
+		)
+		tw.tween_property(start_banner, "scale", Vector2(1.25, 1.25), 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.4)
+		tw.tween_property(start_banner, "modulate:a", 0.0, 0.25)
+		tw.tween_callback(_on_gameplay_start)
+	else:
+		_on_gameplay_start()
+
+func _on_gameplay_start() -> void:
 	level_started = true
 	if seed_bank:
 		seed_bank.set_active(true)
@@ -164,7 +211,7 @@ func _spawn_sky_sun() -> void:
 		add_sun(val)
 	)
 
-func spawn_zombie(row_idx: int = -1, start_x: float = 1950.0) -> void:
+func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0) -> void:
 	if not zombie_scene:
 		return
 	if row_idx < 0 or row_idx >= grid.rows:
@@ -174,13 +221,20 @@ func spawn_zombie(row_idx: int = -1, start_x: float = 1950.0) -> void:
 	var z_inst: Zombie = zombie_scene.instantiate()
 	z_inst.row = row_idx
 	z_inst.position = Vector2(start_x, spawn_y)
-	z_inst.z_index = grid.get_depth_z_index(row_idx, grid.columns - 1) + 3
+
+	# 50% chance to replace with fem variant
+	var is_fem = randf() < 0.5
+	if is_fem:
+		var spr = z_inst.get_node_or_null("XFLSprite2D")
+		if spr:
+			spr.anim_data_path = "res://Assets/Zombies/zombie_tutorialfem.anim.json"
+			spr.textures_base_dir = "res://Assets/Zombies/zombie_tutorialfem.xfl/library/"
 
 	if zombies_container:
 		zombies_container.add_child(z_inst)
 	else:
 		add_child(z_inst)
-	print("[Lawn] Spawned zombie on row %d at x=%.1f" % [row_idx, start_x])
+	print("[Lawn] Spawned %szombie on row %d at x=%.1f" % ["female " if is_fem else "", row_idx, start_x])
 
 func add_sun(val: int) -> void:
 	sun_amount += val
@@ -222,7 +276,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			var mouse_pos = get_global_mouse_position()
 			var cell = grid.world_to_cell(mouse_pos)
 			var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
-			var spawn_x = mouse_pos.x if debug_mode else 1950.0
+			var spawn_x = mouse_pos.x if debug_mode else 2254.0
 			spawn_zombie(target_row, spawn_x)
 
 		# Number keys 1-8 to select active plant to spawn (debug feature)
@@ -302,7 +356,7 @@ func spawn_plant_at(col: int, row: int, plant_idx: int) -> void:
 	plant_node.set("health", p_health)
 
 	var v_scale: float = float(info.get("scale", 1.0))
-	var v_offset: Vector2 = info.get("offset", Vector2.ZERO)
+	var v_offset: Vector2 = info.get("offset", Vector2(0.0, 20.0))
 	plant_node.set("visual_scale", v_scale)
 	plant_node.set("visual_offset", v_offset)
 	plant_node.scale = Vector2.ONE
@@ -319,9 +373,8 @@ func spawn_plant_at(col: int, row: int, plant_idx: int) -> void:
 	plant_count += 1
 	_update_hud()
 
-	if get_node_or_null("/root/AudioManager"):
-		var plant_sfx = preload("res://Audio/SFX/planted.ogg")
-		AudioManager.play_sfx(plant_sfx)
+	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/planted.ogg"):
+		AudioManager.play_sfx(load("res://Audio/SFX/planted.ogg"))
 
 func _update_hud() -> void:
 	var selected_name = PLANT_REGISTRY[selected_plant_index]["name"]

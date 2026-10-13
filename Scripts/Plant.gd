@@ -12,15 +12,20 @@ class_name Plant
 @export var visual_scale: float = 1.0
 @export var visual_offset: Vector2 = Vector2.ZERO
 
-@export var max_health: float = 300.0
-@export var health: float = 300.0
+var eaten_timer: float = 0.0
 
-func take_damage(amount: float) -> void:
+func take_damage(amount: float, is_bite: bool = false) -> void:
 	health -= amount
-	# Subtle hit flash
-	modulate = Color(1.3, 0.7, 0.7, 1.0)
-	var tw = create_tween()
-	tw.tween_property(self, "modulate", Color.WHITE, 0.1)
+	if is_bite:
+		# When being eaten, always remain lighter
+		eaten_timer = 0.25
+		modulate = Color(1.35, 1.35, 1.35, 1.0)
+	else:
+		# Flash bright white on normal hit
+		modulate = Color(2.5, 2.5, 2.5, 1.0)
+		var tw = create_tween()
+		tw.tween_property(self, "modulate", Color.WHITE, 0.08)
+
 	if health <= 0.0:
 		queue_free()
 
@@ -42,6 +47,16 @@ var sun_scene: PackedScene = preload("res://Scenes/Sun.tscn")
 var sunflower_timer: float = 7.0
 
 func _process(delta: float) -> void:
+	# Despawn if >500px outside screen in any direction
+	if global_position.x < -266.0 or global_position.x > 2654.0 or global_position.y < -500.0 or global_position.y > 1580.0:
+		queue_free()
+		return
+
+	if eaten_timer > 0.0:
+		eaten_timer -= delta
+		if eaten_timer <= 0.0:
+			modulate = Color.WHITE
+
 	var lawn = get_tree().current_scene
 	var level_started = lawn.get("level_started") if (lawn and "level_started" in lawn) else true
 	if not level_started:

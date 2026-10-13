@@ -84,6 +84,9 @@ func _on_packet_clicked(pkt: SeedPacket) -> void:
 		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/select_plant.ogg"):
 			AudioManager.play_sfx(load("res://Audio/SFX/select_plant.ogg"))
 		packet_selected.emit(pkt)
+	else:
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/failure.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/failure.ogg"))
 
 func update_sun_display(amount: int) -> void:
 	current_sun = amount

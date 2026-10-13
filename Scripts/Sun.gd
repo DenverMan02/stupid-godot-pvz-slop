@@ -7,24 +7,34 @@ signal collected(value: int)
 @export var fall_speed: float = 120.0
 @export var auto_collect: bool = false
 
+const BASE_SCALE: float = 0.85
+
 var target_pos: Vector2 = Vector2.ZERO
 var is_falling: bool = false
 var is_collected: bool = false
-var lifetime: float = 14.0
+var lifetime: float = 10.0
+var is_fading: bool = false
 
 @onready var sprite: XFLSprite2D = $XFLSprite2D
 
 func _ready() -> void:
 	input_pickable = true
 	input_event.connect(_on_input_event)
+	mouse_entered.connect(_on_mouse_entered)
+	add_to_group("suns")
 
 	if sprite:
 		sprite.play("animation", true)
 
-	# Gentle scale-in animation when spawned
+	# Scale in based on sun value
 	scale = Vector2(0.2, 0.2)
 	var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-	tw.tween_property(self, "scale", Vector2(0.85, 0.85), 0.4)
+	tw.tween_property(self, "scale", get_target_scale(), 0.35)
+
+func get_target_scale() -> Vector2:
+	# Scaled relative to 50 sun: min size 0.25, max size 4.0
+	var scale_mult = clamp(sqrt(float(value) / 50.0), 0.25, 4.0)
+	return Vector2.ONE * (BASE_SCALE * scale_mult)
 
 func spawn_from_sky(start_pos: Vector2, end_pos: Vector2) -> void:
 	global_position = start_pos
@@ -47,6 +57,17 @@ func _process(delta: float) -> void:
 	if is_collected:
 		return
 
+	# Despawn if >500px outside screen in any direction
+	if global_position.x < -266.0 or global_position.x > 2654.0 or global_position.y < -500.0 or global_position.y > 1580.0:
+		queue_free()
+		return
+
+	# Collect if mouse touches sun
+	var m_pos = get_global_mouse_position()
+	if global_position.distance_to(m_pos) <= 55.0 * (scale.x / BASE_SCALE):
+		_trigger_collect()
+		return
+
 	# Fall downwards towards landing target
 	if is_falling:
 		global_position.y += fall_speed * delta
@@ -54,24 +75,50 @@ func _process(delta: float) -> void:
 			global_position.y = target_pos.y
 			is_falling = false
 
-	# Despawn if neglected
-	lifetime -= delta
-	if lifetime <= 0.0:
-		var fade_tw = create_tween()
-		fade_tw.tween_property(self, "modulate:a", 0.0, 0.6)
-		fade_tw.finished.connect(queue_free)
+	# Sun merging: if > 50 suns on screen, gravitate like a magnet within 150px and merge
+	var parent = get_parent()
+	if parent and parent.get_child_count() > 50 and not is_falling:
+		for other in parent.get_children():
+			if other is Sun and other != self and not other.is_collected and not other.is_falling:
+				var dist = global_position.distance_to(other.global_position)
+				if dist < 150.0:
+					var dir = (other.global_position - global_position).normalized()
+					global_position += dir * (95.0 * delta)
+					if dist < 32.0 and get_instance_id() < other.get_instance_id():
+						value += other.value
+						other.queue_free()
+						var stw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+						stw.tween_property(self, "scale", get_target_scale(), 0.3)
+						break
+
+	# Lifetime: 10 seconds before fade, 0.5s fade out
+	if not is_fading:
+		lifetime -= delta
+		if lifetime <= 0.0:
+			is_fading = true
+			var fade_tw = create_tween()
+			fade_tw.tween_property(self, "modulate:a", 0.0, 0.5)
+			fade_tw.finished.connect(queue_free)
+
+func _on_mouse_entered() -> void:
+	_trigger_collect()
 
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if is_collected:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		var lawn = get_tree().current_scene
-		var target_pos = Vector2(90, 60)
-		if lawn and lawn.get_node_or_null("HUD/SeedBank"):
-			var sb = lawn.get_node("HUD/SeedBank")
-			if sb.has_method("get_sun_icon_global_pos"):
-				target_pos = sb.get_sun_icon_global_pos()
-		collect(target_pos)
+		_trigger_collect()
+
+func _trigger_collect() -> void:
+	if is_collected:
+		return
+	var lawn = get_tree().current_scene
+	var target_pos = Vector2(90, 60)
+	if lawn and lawn.get_node_or_null("HUD/SeedBank"):
+		var sb = lawn.get_node("HUD/SeedBank")
+		if sb.has_method("get_sun_icon_global_pos"):
+			target_pos = sb.get_sun_icon_global_pos()
+	collect(target_pos)
 
 func collect(target_ui_pos: Vector2 = Vector2(100, 60)) -> void:
 	if is_collected:
@@ -79,11 +126,27 @@ func collect(target_ui_pos: Vector2 = Vector2(100, 60)) -> void:
 	is_collected = true
 	collected.emit(value)
 
+	# Play sun_collect sound variations based on value
 	if get_node_or_null("/root/AudioManager"):
-		if ResourceLoader.exists("res://Audio/SFX/points.ogg"):
-			AudioManager.play_sfx(load("res://Audio/SFX/points.ogg"))
-		elif ResourceLoader.exists("res://Audio/SFX/match.ogg"):
-			AudioManager.play_sfx(load("res://Audio/SFX/match.ogg"))
+		var sfx_path = "res://Audio/SFX/sun_collect.ogg"
+		var r = randf()
+		if value > 50:
+			if r < 0.60:
+				sfx_path = "res://Audio/SFX/sun_collect_speeder.ogg"
+			elif r < 0.85:
+				sfx_path = "res://Audio/SFX/sun_collect_speed.ogg"
+			else:
+				sfx_path = "res://Audio/SFX/sun_collect.ogg"
+		else:
+			if r < 0.34:
+				sfx_path = "res://Audio/SFX/sun_collect.ogg"
+			elif r < 0.68:
+				sfx_path = "res://Audio/SFX/sun_collect_speed.ogg"
+			else:
+				sfx_path = "res://Audio/SFX/sun_collect_speeder.ogg"
+
+		if ResourceLoader.exists(sfx_path):
+			AudioManager.play_sfx(load(sfx_path))
 
 	# Fly smoothly towards Sun Bank in top-left
 	var cam = get_viewport().get_camera_2d()

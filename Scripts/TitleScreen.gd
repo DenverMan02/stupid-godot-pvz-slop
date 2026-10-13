@@ -1,6 +1,6 @@
 extends Control
 
-@onready var prompt_label: Label
+@onready var prompt_label: Label = 
 var starting: bool = false
 
 func _ready() -> void:
@@ -19,7 +19,7 @@ func _gui_input(event: InputEvent) -> void:
 		_on_start()
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventKey and event.pressed and not event.echo:
+	if (event is InputEventMouseButton and event.pressed) or (event is InputEventKey and event.pressed and not event.echo):
 		_on_start()
 
 func _on_start() -> void:

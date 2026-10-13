@@ -8,17 +8,21 @@ var universe_music: AudioStream = preload("res://Audio/BGM/Menu.mp3")
 
 func _ready() -> void:
 	music_player = AudioStreamPlayer.new()
-	music_player.bus = "BGM"
+	if AudioServer.get_bus_index("BGM") != -1:
+		music_player.bus = "BGM"
 	add_child(music_player)
 
 	sfx_player = AudioStreamPlayer.new()
-	sfx_player.bus = "SFX"
+	if AudioServer.get_bus_index("SFX") != -1:
+		sfx_player.bus = "SFX"
 	add_child(sfx_player)
 
 	play_music(title_music)
 
 
 func play_music(stream: AudioStream) -> void:
+	if stream == null:
+		return
 	if music_player.stream == stream and music_player.playing:
 		return
 
@@ -27,9 +31,12 @@ func play_music(stream: AudioStream) -> void:
 
 
 func stop_music() -> void:
-	music_player.stop()
+	if music_player:
+		music_player.stop()
 
 
 func play_sfx(stream: AudioStream) -> void:
+	if stream == null:
+		return
 	sfx_player.stream = stream
 	sfx_player.play()

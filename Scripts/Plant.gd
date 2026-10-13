@@ -11,6 +11,8 @@ class_name Plant
 @export var textures_base_dir: String = "res://Assets/Plants/peashooter.xfl/library/"
 @export var visual_scale: float = 1.0
 @export var visual_offset: Vector2 = Vector2.ZERO
+@export var max_health: float = 300.0
+@export var health: float = 300.0
 
 var eaten_timer: float = 0.0
 
@@ -46,7 +48,10 @@ var plantfood_sequence_index: int = 0
 var is_in_plantfood_sequence: bool = false
 
 var sun_scene: PackedScene = preload("res://Scenes/Sun.tscn")
+var projectile_scene: PackedScene = preload("res://Scenes/Projectile.tscn")
 var sunflower_timer: float = 7.0
+var attack_timer: float = 0.0
+var target_zombie_for_shot: Node2D = null
 
 func _process(delta: float) -> void:
 	# Despawn if >500px outside screen in any direction
@@ -65,11 +70,47 @@ func _process(delta: float) -> void:
 	if not level_started:
 		return
 
+	# Sunflower sun production
 	if plant_type == "sunflower" and not is_performing_action:
 		sunflower_timer -= delta
 		if sunflower_timer <= 0.0:
 			sunflower_timer = 24.0
 			_produce_sun()
+
+	# Peashooter and Cabbage-pult lane targeting & attacking
+	elif (plant_type == "peashooter" or plant_type == "cabbagepult") and not is_performing_action and not is_in_plantfood_sequence:
+		var target = _find_zombie_in_row()
+		if target:
+			attack_timer -= delta
+			if attack_timer <= 0.0:
+				var cooldown_time = 1.425 if plant_type == "peashooter" else 2.85
+				attack_timer = cooldown_time
+				target_zombie_for_shot = target
+				play_attack()
+		else:
+			# Keep attack timer nearly primed so it reacts quickly when a zombie enters the lane
+			attack_timer = min(attack_timer, 0.2)
+
+func _find_zombie_in_row() -> Node2D:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return null
+	var zombies_node = lawn.get_node_or_null("Zombies")
+	if not zombies_node:
+		return null
+
+	var closest_zombie: Node2D = null
+	var min_dist: float = 999999.0
+
+	for z in zombies_node.get_children():
+		if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion():
+			if z.row == row and z.health > 0.0 and z.global_position.x > (global_position.x - 30.0):
+				var dist = z.global_position.x - global_position.x
+				if dist < min_dist:
+					min_dist = dist
+					closest_zombie = z
+
+	return closest_zombie
 
 func _produce_sun() -> void:
 	play_attack()
@@ -93,6 +134,7 @@ func _spawn_sun_at_plant() -> void:
 		)
 
 func _ready() -> void:
+	health = max_health
 	if sprite:
 		sprite.scale = Vector2(visual_scale, visual_scale)
 		sprite.position = visual_offset
@@ -210,16 +252,108 @@ func _on_anim_event(event_name: String) -> void:
 			push_warning("[%s] Unhandled animation event: %s" % [display_name, event_name])
 
 func _on_use_action() -> void:
-	print("[%s] use_action pulsed at row %d, col %d!" % [display_name, row, col])
-	if get_node_or_null("/root/AudioManager"):
-		var click_sfx = preload("res://Audio/SFX/click_buy_button.ogg")
-		AudioManager.play_sfx(click_sfx)
+	if plant_type == "peashooter":
+		if is_in_plantfood_sequence:
+			_fire_peashooter_plantfood()
+		else:
+			_spawn_pea_projectile()
+	elif plant_type == "cabbagepult":
+		if is_in_plantfood_sequence:
+			_fire_cabbagepult_plantfood()
+		else:
+			_spawn_cabbage_projectile(target_zombie_for_shot)
+	elif plant_type == "sunflower":
+		pass
+	else:
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/click_buy_button.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/click_buy_button.ogg"))
+
+func _spawn_pea_projectile() -> void:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return
+	var proj: Projectile = projectile_scene.instantiate()
+	var spawn_pos = global_position + Vector2(28.0, -18.0)
+	proj.setup_straight(row, spawn_pos, 20.0)
+	var proj_container = lawn.get_node_or_null("Projectiles")
+	if proj_container:
+		proj_container.add_child(proj)
+	else:
+		lawn.add_child(proj)
+
+func _spawn_cabbage_projectile(target: Node2D = null) -> void:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return
+	if target == null or not is_instance_valid(target) or target.is_queued_for_deletion():
+		target = _find_zombie_in_row()
+
+	var target_pos = (target.global_position + Vector2(0, -10)) if (target and is_instance_valid(target)) else Vector2(global_position.x + 600.0, global_position.y)
+	var proj: Projectile = projectile_scene.instantiate()
+	var spawn_pos = global_position + Vector2(10.0, -25.0)
+	proj.setup_lobbed(row, spawn_pos, target_pos, target, 40.0, false)
+	var proj_container = lawn.get_node_or_null("Projectiles")
+	if proj_container:
+		proj_container.add_child(proj)
+	else:
+		lawn.add_child(proj)
+
+func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zombie: Node2D = null, p_is_giant: bool = false) -> void:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return
+	var proj: Projectile = projectile_scene.instantiate()
+	var spawn_pos = global_position + Vector2(10.0, -25.0)
+	var dmg = 300.0 if p_is_giant else 40.0
+	proj.setup_lobbed(p_row, spawn_pos, p_target_pos, p_target_zombie, dmg, p_is_giant)
+	var proj_container = lawn.get_node_or_null("Projectiles")
+	if proj_container:
+		proj_container.add_child(proj)
+	else:
+		lawn.add_child(proj)
+
+func _fire_peashooter_plantfood() -> void:
+	for i in range(30):
+		get_tree().create_timer(i * 0.04).timeout.connect(func():
+			if is_instance_valid(self) and not is_queued_for_deletion():
+				_spawn_pea_projectile()
+		)
+
+func _fire_cabbagepult_plantfood() -> void:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return
+	var zombies_node = lawn.get_node_or_null("Zombies")
+	var targets: Array[Node2D] = []
+	if zombies_node:
+		for z in zombies_node.get_children():
+			if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
+				targets.append(z)
+
+	if targets.is_empty():
+		for i in range(5):
+			var r = i
+			var fake_target = Vector2(randf_range(1100.0, 1800.0), 300.0 + r * 130.0)
+			get_tree().create_timer(i * 0.08).timeout.connect(func():
+				if is_instance_valid(self) and not is_queued_for_deletion():
+					_spawn_cabbage_projectile_at(r, fake_target, null, true)
+			)
+	else:
+		var idx = 0
+		for tgt in targets:
+			var delay = idx * 0.08
+			var captured_tgt = tgt
+			var tgt_row = captured_tgt.row if "row" in captured_tgt else row
+			get_tree().create_timer(delay).timeout.connect(func():
+				if is_instance_valid(self) and not is_queued_for_deletion():
+					var landing_pos = captured_tgt.global_position if is_instance_valid(captured_tgt) else Vector2(1400.0, 500.0)
+					_spawn_cabbage_projectile_at(tgt_row, landing_pos, captured_tgt, true)
+			)
+			idx += 1
 
 func _on_use_special() -> void:
-	print("[%s] use_special pulsed at row %d, col %d!" % [display_name, row, col])
-	if get_node_or_null("/root/AudioManager"):
-		var match_sfx = preload("res://Audio/SFX/match.ogg")
-		AudioManager.play_sfx(match_sfx)
+	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/match.ogg"):
+		AudioManager.play_sfx(load("res://Audio/SFX/match.ogg"))
 
 ## Trigger normal attack / special action
 func play_attack() -> void:
@@ -288,26 +422,22 @@ func play_plantfood() -> void:
 		if plant_type == "sunflower":
 			for i in range(3):
 				get_tree().create_timer(0.3 * (i + 1)).timeout.connect(_spawn_sun_at_plant)
-		if get_node_or_null("/root/AudioManager"):
-			var pf_sfx = preload("res://Audio/SFX/plantfood.ogg")
-			AudioManager.play_sfx(pf_sfx)
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
 		sprite.play(plantfood_sequence[0], false)
 	else:
 		push_warning("[%s] No plantfood animation found" % display_name)
 
 func _input(event: InputEvent) -> void:
-	# Debug mode check: actions can only be forced when debug mode is ON
 	var lawn = get_tree().current_scene
 	var is_debug = lawn.get("debug_mode") if (lawn and "debug_mode" in lawn) else false
-	if not is_debug:
-		return
 	if lawn and "seed_bank" in lawn and lawn.seed_bank and lawn.seed_bank.selected_packet != null:
 		return
 
 	if event is InputEventMouseButton and event.pressed:
 		var mouse_pos = get_global_mouse_position()
 		if global_position.distance_to(mouse_pos) < 60.0:
-			if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.button_index == MOUSE_BUTTON_LEFT and is_debug:
 				play_attack()
 			elif event.button_index == MOUSE_BUTTON_MIDDLE:
 				play_plantfood()

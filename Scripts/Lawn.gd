@@ -4,6 +4,7 @@ extends Node2D
 @onready var grid: LawnGrid = $Grid
 @onready var background: Node2D = $Background
 @onready var plants_container: Node2D = $Plants
+@onready var projectiles_container: Node2D = $Projectiles
 @onready var suns_container: Node2D = $Suns
 @onready var zombies_container: Node2D = $Zombies
 @onready var seed_bank: SeedBank = $HUD/SeedBank

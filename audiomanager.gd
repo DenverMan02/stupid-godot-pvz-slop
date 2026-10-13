@@ -10,6 +10,7 @@ func _ready() -> void:
 	music_player = AudioStreamPlayer.new()
 	if AudioServer.get_bus_index("BGM") != -1:
 		music_player.bus = "BGM"
+	music_player.finished.connect(_on_music_finished)
 	add_child(music_player)
 
 	sfx_player = AudioStreamPlayer.new()
@@ -26,8 +27,17 @@ func play_music(stream: AudioStream) -> void:
 	if music_player.stream == stream and music_player.playing:
 		return
 
+	# Ensure stream loops indefinitely
+	if "loop" in stream:
+		stream.loop = true
+
 	music_player.stream = stream
 	music_player.play()
+
+
+func _on_music_finished() -> void:
+	if music_player.stream != null:
+		music_player.play()
 
 
 func stop_music() -> void:

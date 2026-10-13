@@ -52,7 +52,7 @@ position = Vector2(1194, 540)
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -460.0
+offset_left = -620.0
 offset_bottom = 120.0
 grow_horizontal = 0
 theme_override_constants/margin_top = 25
@@ -64,8 +64,8 @@ theme_override_constants/separation = 6
 
 [node name="CountLabel" type="Label" parent="HUD/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "PEASHOOTERS: 1"
+theme_override_font_sizes/font_size = 32
+text = "PLANTS: 1 | [1] Peashooter"
 horizontal_alignment = 2
 
 [node name="DebugLabel" type="Label" parent="HUD/MarginContainer/VBoxContainer"]

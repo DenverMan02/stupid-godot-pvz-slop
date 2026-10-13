@@ -33,6 +33,22 @@ func _ready() -> void:
 	if autoplay:
 		play(default_animation, true)
 
+func set_animation_source(data_path: String, tex_dir: String) -> void:
+	anim_data_path = data_path
+	textures_base_dir = tex_dir
+	_load_resources()
+
+func has_animation(anim_name: String) -> bool:
+	var anims = _anim_data.get("animations", {})
+	return anims.has(anim_name)
+
+func get_animation_names() -> Array[String]:
+	var anims = _anim_data.get("animations", {})
+	var names: Array[String] = []
+	for k in anims.keys():
+		names.append(str(k))
+	return names
+
 func _load_resources() -> void:
 	if anim_data_path.is_empty():
 		return
@@ -61,6 +77,18 @@ func _load_resources() -> void:
 	_loaded_textures.clear()
 	for rel_path in raw_textures:
 		var full_path = textures_base_dir.path_join(rel_path)
+		
+		# Fallback to alternate library/LIBRARY directory casing if not directly found
+		if not ResourceLoader.exists(full_path):
+			var alt_dir = textures_base_dir
+			if "library" in alt_dir:
+				alt_dir = alt_dir.replace("library", "LIBRARY")
+			elif "LIBRARY" in alt_dir:
+				alt_dir = alt_dir.replace("LIBRARY", "library")
+			var alt_path = alt_dir.path_join(rel_path)
+			if ResourceLoader.exists(alt_path):
+				full_path = alt_path
+
 		if not _texture_cache.has(full_path):
 			if ResourceLoader.exists(full_path):
 				_texture_cache[full_path] = load(full_path)

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c_plant_001"]
+
+[ext_resource type="Script" path="res://Scripts/Plant.gd" id="1_plant"]
+[ext_resource type="Script" path="res://Scripts/XFLSprite2D.gd" id="2_xfl_sprite"]
+
+[node name="Plant" type="Node2D"]
+script = ExtResource("1_plant")
+
+[node name="XFLSprite2D" type="Node2D" parent="."]
+script = ExtResource("2_xfl_sprite")

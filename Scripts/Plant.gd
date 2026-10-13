@@ -288,7 +288,7 @@ func _spawn_cabbage_projectile(target: Node2D = null) -> void:
 	if target == null or not is_instance_valid(target) or target.is_queued_for_deletion():
 		target = _find_zombie_in_row()
 
-	var target_pos = (target.global_position + Vector2(0, -10)) if (target and is_instance_valid(target)) else Vector2(global_position.x + 600.0, global_position.y)
+	var target_pos = (target.global_position + Vector2(-20.0, -10.0)) if (target and is_instance_valid(target)) else Vector2(global_position.x + 600.0, global_position.y)
 	var proj: Projectile = projectile_scene.instantiate()
 	var spawn_pos = global_position + Vector2(10.0, -25.0)
 	proj.setup_lobbed(row, spawn_pos, target_pos, target, 40.0, false)

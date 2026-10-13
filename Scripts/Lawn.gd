@@ -118,7 +118,7 @@ func _ready() -> void:
 			spr.position = Vector2(0.0, 34.0)
 		var shd = p.get_node_or_null("Shadow")
 		if shd:
-			shd.position = Vector2(0.0, 44.0)
+			shd.position = Vector2(0.0, 36.0)
 
 	_update_hud()
 

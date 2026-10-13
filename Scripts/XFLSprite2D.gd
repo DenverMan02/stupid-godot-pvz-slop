@@ -27,6 +27,7 @@ var _anim_data: Dictionary = {}
 var _loaded_textures: Array[Texture2D] = []
 var _frame_rate: float = 30.0
 var _frame_duration: float = 1.0 / 30.0
+var _accumulated_ground_delta: float = 0.0
 
 func _ready() -> void:
 	_load_resources()
@@ -108,11 +109,40 @@ func play(anim_name: String, should_loop: bool = true) -> void:
 	current_frame = 0
 	time_accumulator = 0.0
 	is_playing = true
+	_accumulated_ground_delta = 0.0
 	_check_frame_events(0)
 	queue_redraw()
 
 func stop() -> void:
 	is_playing = false
+
+func has_ground_track() -> bool:
+	var anims = _anim_data.get("animations", {})
+	var anim_info = anims.get(current_animation, {})
+	return anim_info.has("ground_track")
+
+func consume_ground_delta() -> float:
+	var d = _accumulated_ground_delta
+	_accumulated_ground_delta = 0.0
+	return d
+
+func _advance_ground_track(anim_info: Dictionary, from_f: int, to_f: int, total_f: int, did_loop: bool) -> void:
+	if not anim_info.has("ground_track"):
+		return
+	var track: Array = anim_info["ground_track"]
+	if track.is_empty():
+		return
+	if not did_loop:
+		if to_f < track.size() and from_f < track.size():
+			var d = float(track[to_f]) - float(track[from_f])
+			_accumulated_ground_delta += d
+	else:
+		var last_val = float(track[track.size() - 1])
+		var from_val = float(track[from_f]) if from_f < track.size() else last_val
+		var to_val = float(track[to_f]) if to_f < track.size() else 0.0
+		var step = float(track[1]) - float(track[0]) if track.size() > 1 else 0.0
+		var d = (last_val - from_val) + step + to_val
+		_accumulated_ground_delta += d
 
 func _process(delta: float) -> void:
 	if not is_playing:
@@ -130,17 +160,20 @@ func _process(delta: float) -> void:
 	# Advance 30 FPS timeline using time accumulator
 	while time_accumulator >= _frame_duration:
 		time_accumulator -= _frame_duration
+		var prev_frame = current_frame
 		var next_frame = current_frame + 1
 
 		if next_frame >= total_frames:
 			if loop:
 				current_frame = 0
+				_advance_ground_track(anim_info, prev_frame, 0, total_frames, true)
 				_check_frame_events(0)
 				frame_changed = true
 				anim_finished.emit(current_animation)
 				continue
 			else:
 				current_frame = total_frames - 1
+				_advance_ground_track(anim_info, prev_frame, current_frame, total_frames, false)
 				is_playing = false
 				_check_frame_events(current_frame)
 				frame_changed = true
@@ -149,6 +182,7 @@ func _process(delta: float) -> void:
 				break
 		else:
 			current_frame = next_frame
+			_advance_ground_track(anim_info, prev_frame, next_frame, total_frames, false)
 			_check_frame_events(current_frame)
 			frame_changed = true
 

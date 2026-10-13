@@ -56,6 +56,9 @@ def compile_plant_from_dir(plant_dir, output_path=None):
     if is_sun:
         pivot_x = 72.35
         pivot_y = 79.7
+    elif 'cabbage' in item_name and 'projectile' in item_name:
+        pivot_x = stage_w / 2.0
+        pivot_y = 184.5
     else:
         pivot_x = stage_w / 2.0
         pivot_y = 230.0
@@ -235,11 +238,36 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             eval_sym(sym_name, local_f, base_mat, draw_list, anim_name, is_root=True)
             frames_data.append(draw_list)
 
-        compiled_anims[anim_name] = {
+        ground_track = None
+        sym_root = get_sym(sym_name)
+        if sym_root is not None:
+            sym_tl = sym_root.find('.//xfl:DOMTimeline', ns)
+            if sym_tl is not None:
+                for layer in sym_tl.findall('.//xfl:DOMLayer', ns):
+                    inst = layer.find('.//xfl:DOMSymbolInstance', ns)
+                    if inst is not None and 'ground_swatch' in (inst.attrib.get('libraryItemName') or '').lower():
+                        frames = layer.findall('./xfl:frames/xfl:DOMFrame', ns)
+                        tx_by_frame = {}
+                        for f in frames:
+                            f_idx = int(f.attrib.get('index', 0))
+                            f_dur = int(f.attrib.get('duration', 1))
+                            mat = f.find('.//xfl:Matrix', ns)
+                            tx = float(mat.attrib.get('tx', 0.0)) if mat is not None else 0.0
+                            for i in range(f_idx, f_idx + f_dur):
+                                tx_by_frame[i] = tx
+                        if tx_by_frame:
+                            base_tx = tx_by_frame.get(0, 0.0)
+                            ground_track = [round(tx_by_frame.get(i, base_tx) - base_tx, 4) for i in range(dur)]
+                            break
+
+        anim_entry = {
             'frame_count': dur,
             'events': events_data,
             'frames': frames_data
         }
+        if ground_track is not None:
+            anim_entry['ground_track'] = ground_track
+        compiled_anims[anim_name] = anim_entry
 
     out_data = {
         'name': item_name,

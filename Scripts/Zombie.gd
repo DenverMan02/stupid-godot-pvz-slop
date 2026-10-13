@@ -9,7 +9,7 @@ enum State {
 
 @export var max_health: float = 200.0
 @export var health: float = 200.0
-@export var walk_speed: float = 23.0
+@export var walk_speed: float = 33.38
 @export var bite_damage: float = 100.0 # damage per second
 @export var row: int = 2
 @export var is_female: bool = false
@@ -64,9 +64,14 @@ func _process(delta: float) -> void:
 
 	match current_state:
 		State.WALK:
-			# 2x walk speed until entering the lawn (x <= 1788.7)
-			var cur_speed = (walk_speed * 2.0) if position.x > 1788.7 else walk_speed
-			position.x -= cur_speed * delta
+			if sprite and sprite.has_ground_track():
+				var g_delta = sprite.consume_ground_delta()
+				var mult = 2.0 if position.x > 1788.7 else 1.0
+				position.x -= g_delta * mult
+			else:
+				# 2x walk speed until entering the lawn (x <= 1788.7)
+				var cur_speed = (walk_speed * 2.0) if position.x > 1788.7 else walk_speed
+				position.x -= cur_speed * delta
 
 			var found = _find_plant_to_eat()
 			if found:

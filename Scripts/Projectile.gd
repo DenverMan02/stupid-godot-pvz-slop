@@ -94,18 +94,10 @@ func _process(delta: float) -> void:
 			lob_time += delta
 			var t = clamp(lob_time / lob_duration, 0.0, 1.0)
 
-			# Track target zombie position if still alive
-			if target_zombie and is_instance_valid(target_zombie) and not target_zombie.is_queued_for_deletion():
-				target_pos = target_zombie.global_position + Vector2(0, -10)
-
-			# Parabolic trajectory
+			# Pure parabolic arc trajectory
 			var cur_x = lerp(start_pos.x, target_pos.x, t)
 			var cur_y = lerp(start_pos.y, target_pos.y, t) - (4.0 * arc_height * t * (1.0 - t))
 			global_position = Vector2(cur_x, cur_y)
-
-			# Spin cabbage in flight
-			if sprite:
-				sprite.rotation += 12.0 * delta
 
 			if t >= 1.0:
 				_on_lobbed_land()
@@ -133,7 +125,7 @@ func _on_lobbed_land() -> void:
 
 	# If target zombie is at landing spot, hit it directly
 	if target_zombie and is_instance_valid(target_zombie) and not target_zombie.is_queued_for_deletion():
-		if target_zombie.health > 0.0:
+		if target_zombie.health > 0.0 and abs(global_position.x - target_zombie.global_position.x) < 65.0:
 			_hit_zombie(target_zombie)
 			return
 
@@ -145,7 +137,7 @@ func _on_lobbed_land() -> void:
 			for z in zombies_node.get_children():
 				if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion():
 					if z.row == row and z.health > 0.0:
-						if abs(global_position.x - z.global_position.x) < 55.0:
+						if abs(global_position.x - z.global_position.x) < 65.0:
 							_hit_zombie(z)
 							return
 

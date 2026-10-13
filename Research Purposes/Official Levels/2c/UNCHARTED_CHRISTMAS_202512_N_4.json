@@ -1,0 +1,622 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_CHRISTMAS]", 
+				"LevelNumber": 4, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_C", 
+				"Name": "[CHRISTMAS_NAME_04]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(SnowModernStage@LevelModules)", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunUsed@CurrentLevel)", 
+						"RTID(PlantsLost@CurrentLevel)", 
+						"RTID(SunReduced@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"SunUsed"
+			], 
+			"objclass": "StarChallengeSunUsedProps", 
+			"objdata": {
+				"MaximumSun": 2000
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsLost"
+			], 
+			"objclass": "StarChallengePlantsLostProps", 
+			"objdata": {
+				"MaximumPlantsLost": 25
+			}
+		}, 
+		{
+			"aliases": [
+				"SunReduced"
+			], 
+			"objclass": "StarChallengeSunReducedProps", 
+			"objdata": {
+				"sunModifier": 0.5
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 50, 
+						"StartingPoints": 0, 
+						"StartingWave": 2, 
+						"ZombiePool": [
+							"RTID(giftbox@ZombieTypes)", 
+							"RTID(giftbox_armor1@ZombieTypes)", 
+							"RTID(giftbox_armor2@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(pole_vaulting_feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(christmas_imp2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Row": "4", 
+						"Type": "RTID(christmas_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "2", 
+						"Type": "RTID(christmas_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "4", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "4", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "4", 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "4", 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(ladder_festival@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(ladder_festival@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(ladder_festival@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(christmas_camel_manyhump@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(christmas_camel_manyhump@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(ladder_festival@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(ladder_festival@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "1", 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(christmas_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(christmas_caketank@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "2", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "3", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "4", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Row": "5", 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 3, 
+						"Type": "RTID(figure_skating@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 3, 
+						"Type": "RTID(sled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(bobsled@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

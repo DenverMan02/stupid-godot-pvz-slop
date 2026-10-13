@@ -1,0 +1,134 @@
+{
+	"#comment": "Tutorial 2", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_HOUSE]", 
+				"FirstRewardParam": "wallnut", 
+				"FirstRewardType": "seed_packet", 
+				"ForceNextLevel": "tutorial3", 
+				"LevelNumber": 2, 
+				"LevelIndex": 2, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialPeashooterDeath@LevelModules)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[TUTORIAL_LEVEL_NAME]", 
+				"ReplayRewardParam": "endlevelreward", 
+				"ReplayRewardType": "collectable", 
+				"StageModule": "RTID(TutorialStage@LevelModules)", 
+				"SuppressVictoryScreen": true, 
+				"ShowZombies": [
+					"tutorial"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"FlagWaveInterval": 4, 
+				"LevelXMLFilename": "tutorial2.xml", 
+				"ResourceGroupNames": [
+					"SodRollGroup"
+				], 
+				"WaveCount": 4, 
+				"WaveSpendingPointIncrement": 10, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"peashooter", 
+					"sunflower"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"TutorialIntro"
+			], 
+			"objclass": "TutorialLevel2Properties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

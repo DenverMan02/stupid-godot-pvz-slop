@@ -1,0 +1,99 @@
+{
+	"#comment": "Skycity Zomboss", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_BOSSRACEEVENT]", 
+				"FirstRewardParam": "none", 
+				"FirstRewardType": "none", 
+				"ReplayRewardParam": "none", 
+				"ReplayRewardType": "none", 
+				"ForceNextLevel": "vacation_boss_beach", 
+				"IsBossFight": true, 
+				"CanSaveGameState": false, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossMechLastStandIntro@CurrentLevel)", 
+					"RTID(LastStandSeedBank@CurrentLevel)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(PurpleBattle@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SUMMER_PURPLE_LEVEL1]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(SkycityStage@LevelModules)", 
+				"RepeatPlayForceToWorldMap": true, 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)", 
+				"LoadDefaultMusic": false
+			}
+		}, 
+		{
+			"aliases": [
+				"PurpleBattle"
+			], 
+			"objclass": "BossKillTimeChallengeProperties", 
+			"objdata": {
+				"LevelIndex": 0, 
+				"Type": "purple"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechLastStandIntro"
+			], 
+			"objclass": "ZombossMechLastStandIntroProperties", 
+			"objdata": {
+				"PanEndOffset": 468, 
+				"PanLeftDuration": 1.5, 
+				"PanRightDuration": 1.5, 
+				"PanStartOffset": 78, 
+				"ResourceGroupNames": [], 
+				"StartingPlantfood": 2, 
+				"StartingSun": 3500
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [], 
+				"PlantBlackList": [
+					"blover", 
+					"hurrikale", 
+					"sapfling", 
+					"iceshroom", 
+					"empea", 
+					"bamboo", 
+					"agave", 
+					"jackfruit", 
+					"cottonyeti"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_skycity_vacation", 
+				"ZombossSpawnGridPosition": {
+					"mX": 7, 
+					"mY": 2
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}
+	], 
+	"version": 1
+}

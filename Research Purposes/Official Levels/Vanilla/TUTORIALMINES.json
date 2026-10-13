@@ -1,0 +1,200 @@
+{
+	"#comment": "Tutorial Mines (#4)", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_HOUSE]", 
+				"FirstRewardParam": "cabbagepult", 
+				"FirstRewardType": "unlock_plant", 
+				"ForceNextLevel": "tutorial4", 
+				"LevelNumber": 4, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)", 
+					"RTID(FastSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialPeashooterDeath@LevelModules)", 
+					"RTID(TutorialMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(FrozenPlantPlacement@CurrentLevel)", 
+					"RTID(SeedPacketHalfTimeModule@LevelModules)"
+				], 
+				"Name": "[TUTORIAL_LEVEL_NAME]", 
+				"ReplayRewardParam": "endlevelreward", 
+				"ReplayRewardType": "collectable", 
+				"ResourceGroupNames": [
+					"SodRollGroup"
+				], 
+				"StageModule": "RTID(TutorialStage@LevelModules)", 
+				"StartingSun": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "peashooter"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "sunflower"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "wallnut"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "potatomine"
+					}
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			], 
+			"objclass": "InitialPlantProperties", 
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"Level": "-1", 
+						"TypeName": "potatomine"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"Level": "-1", 
+						"TypeName": "potatomine"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"Level": "-1", 
+						"TypeName": "potatomine"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"TutorialIntro"
+			], 
+			"objclass": "TutorialLevelMinesProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 6, 
+				"MaxNextWaveHealthPercentage": 0.65, 
+				"MinNextWaveHealthPercentage": 0.5, 
+				"WaveCount": 6, 
+				"WaveSpendingPointIncrement": 10, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					]
+				], 
+				"ZombieCountdownFirstWaveSecs": 2
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

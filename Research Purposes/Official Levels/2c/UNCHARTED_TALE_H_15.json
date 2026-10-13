@@ -1,0 +1,132 @@
+{
+	"#comment": "hydra Zomboss", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_FOREST]", 
+				"FirstIntroNarrative": "HYDRA_INTRO_ZOMBOSS", 
+				"FirstOutroNarrative": "HYDRA_OUTRO_ZOMBOSS", 
+				"LevelNumber": 15, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossMechLastStandIntro@CurrentLevel)", 
+					"RTID(FairyTaleMowers@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(LastStandSeedBank@CurrentLevel)"
+				], 
+				"Name": "[FOREST_LEVEL_NAME_15_H]", 
+				"NormalPresentTable": "hydra_Zomboss", 
+				"ShinyPresentTable": "hydra_Zomboss", 
+				"ZombieMaxLevel": 3, 
+				"StageModule": "RTID(FairyTaleStage@LevelModules)", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_hydra_hard", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(KillZombiesInTime@CurrentLevel)", 
+						"RTID(PlantsSurvive@CurrentLevel)", 
+						"RTID(DefeatZombie@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"KillZombiesInTime"
+			], 
+			"objclass": "StarChallengeKillZombiesInTimeProps", 
+			"objdata": {
+				"ZombiesToKill": 10, 
+				"Time": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsSurvive"
+			], 
+			"objclass": "StarChallengePlantsSurviveProps", 
+			"objdata": {
+				"Count": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"DefeatZombie"
+			], 
+			"objclass": "PlantDefeatZombieChallengeProps", 
+			"objdata": {
+				"Description": "[KILL_DESC]", 
+				"NumZombiesToKill": 10, 
+				"PlantTypeName": "heathseeker"
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_STEAM_FINALE]", 
+				"DescriptiveName": "[STARCHALLENGE_STEAM_FINALE_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"goldbloom"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechLastStandIntro"
+			], 
+			"objclass": "ZombossMechLastStandIntroProperties", 
+			"objdata": {
+				"PanEndOffset": 468, 
+				"PanLeftDuration": 1.5, 
+				"PanRightDuration": 1.5, 
+				"PanStartOffset": 78, 
+				"ResourceGroupNames": [], 
+				"StartingPlantfood": 0, 
+				"StartingSun": 500
+			}
+		}
+	], 
+	"version": 1
+}

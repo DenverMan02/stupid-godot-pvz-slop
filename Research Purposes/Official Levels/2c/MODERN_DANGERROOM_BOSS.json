@@ -1,0 +1,85 @@
+{
+	"#comment": "Egypt Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "modern_dangerroom", 
+				"IsDangerRoom": true, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_MODERN_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(ModernStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)", 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ModernZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechPool": [
+					"zombossmech_modern_egypt", 
+					"zombossmech_modern_pirate", 
+					"zombossmech_modern_cowboy", 
+					"zombossmech_modern_future", 
+					"zombossmech_modern_dark"
+				], 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(ModernDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}
+	], 
+	"version": 1
+}

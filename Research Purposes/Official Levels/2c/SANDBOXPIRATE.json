@@ -1,0 +1,46 @@
+{
+	"#comment": "SandboxPirate", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "Pirate Sandbox Level", 
+				"LevelNumber": 42, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(PirateMowers@LevelModules)", 
+					"RTID(PiratePlanks@CurrentLevel)", 
+					"RTID(SandboxPirateSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "Pirate Sandbox", 
+				"StageModule": "RTID(PirateStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"PiratePlanks"
+			], 
+			"objclass": "PiratePlankProperties", 
+			"objdata": {
+				"PlankRows": [
+					0, 
+					4
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SandboxPirateSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}
+	], 
+	"version": 1
+}

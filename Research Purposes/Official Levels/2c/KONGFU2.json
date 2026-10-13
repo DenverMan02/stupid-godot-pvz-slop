@@ -1,0 +1,384 @@
+{
+	"#comment": "Kongfu Level 2 14/25", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"FirstRewardType": "piece_firegourd", 
+				"LevelIndex": 402, 
+				"LevelNumber": 2, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(FiregourdTutorial@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(Kongfu1Waves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Armrack@CurrentLevel)"
+				], 
+				"Name": "[KONGFU_LEVEL_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"ShowZombies": [
+					"kongfu_hammer", 
+					"kongfu_basic", 
+					"kongfu_basic_armor2", 
+					"kongfu_torch", 
+					"kongfu_basic_armor1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_CONVEYORBELT]", 
+				"DescriptiveName": "[EGYPT_CHALLENGE_ZERO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"FiregourdTutorial"
+			], 
+			"objclass": "FiregourdTutorialIntroProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"PlantFireGourd"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Kongfu1Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 10, 
+				"LevelXMLFilename": "egypt1.xml", 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 65, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}, 
+							{
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 6, 
+								"mY": 1, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 3, 
+								"type": "ArmrackFlag"
+							}
+						], 
+						"wave": 3
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 0, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 8, 
+								"mY": 2, 
+								"type": "ArmrackHammer"
+							}
+						], 
+						"wave": 5
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 3, 
+								"type": "ArmrackTorch"
+							}
+						], 
+						"wave": 7
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 2, 
+								"type": "ArmrackFlag"
+							}
+						], 
+						"wave": 8
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": []
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 6, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 8, 
+						"MaxPackets": 5
+					}, 
+					{
+						"Delay": 12, 
+						"MaxPackets": 7
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 6, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 3, 
+						"PlantType": "wallnut", 
+						"Weight": 30
+					}, 
+					{
+						"MaxCount": 10, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 2, 
+						"PlantType": "firegourd", 
+						"Weight": 40
+					}, 
+					{
+						"MaxCount": 10, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 2, 
+						"PlantType": "peashooter", 
+						"Weight": 40
+					}, 
+					{
+						"MaxCount": 10, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "cabbagepult", 
+						"Weight": 40
+					}, 
+					{
+						"MaxCount": 10, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "iceburg", 
+						"Weight": 20
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,89 @@
+{
+	"#comment": "Renai Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "modern_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(RenaiMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_RENAI_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(RenaiStage@LevelModules)", 
+				"StartingSun": 5000, 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(ModernDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(RenaiDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"RenaiDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 20, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(renai_armor1@ZombieTypes)", 
+					"RTID(renai_armor2@ZombieTypes)", 
+					"RTID(renai_perfumer@ZombieTypes)", 
+					"RTID(renai_ballet@ZombieTypes)", 
+					"RTID(renai_gliding@ZombieTypes)", 
+					"RTID(renai_gargantuar_danger@ZombieTypes)"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

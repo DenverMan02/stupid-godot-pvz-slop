@@ -1,0 +1,76 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 2, 
+				"Name": "[VASEBREAKER_FUTURE_LEVEL_NAME_2]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "future", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "future_armor1", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "future_armor2", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "mech_cone", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "electricpeashooter", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "tallnut", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "empea", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "cherry_bomb", 
+						"Count": 3
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

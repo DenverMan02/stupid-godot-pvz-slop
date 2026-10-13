@@ -1,0 +1,243 @@
+{
+	"#comment": "Level Of The Day Default", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Name": "[LTE_LEVEL_NAME_FEASTIVUS]", 
+				"LevelNumber": 6, 
+				"DraperPromo": "torchwood", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"StageModule": "RTID(FeastivusStage@LevelModules)", 
+				"StartingSun": 200
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.9, 
+				"MinNextWaveHealthPercentage": 0.8, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 6, 
+						"GridY": 0
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 3, 
+				"PointIncrementPerWave": 75, 
+				"StartingPoints": 25, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 3, 
+				"ZombiePool": [
+					"RTID(feastivus@ZombieTypes)", 
+					"RTID(feastivus_armor1@ZombieTypes)", 
+					"RTID(feastivus_armor2@ZombieTypes)", 
+					"RTID(pharaoh@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}
+	], 
+	"version": 1
+}

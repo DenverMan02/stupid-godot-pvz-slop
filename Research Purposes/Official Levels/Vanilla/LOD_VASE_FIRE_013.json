@@ -1,0 +1,118 @@
+{
+	"#comment": "Firebreaker 13", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"IsLevelOfTheDay": true, 
+				"IsVasebreaker": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@.)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"VaseGridItemType": "vase_firework", 
+				"MinColumnIndex": 1, 
+				"MaxColumnIndex": 8, 
+				"GridSquareExcludelist": [
+					{
+						"mX": 1, 
+						"mY": 1
+					}, 
+					{
+						"mX": 2, 
+						"mY": 1
+					}, 
+					{
+						"mX": 3, 
+						"mY": 1
+					}, 
+					{
+						"mX": 1, 
+						"mY": 3
+					}, 
+					{
+						"mX": 2, 
+						"mY": 3
+					}, 
+					{
+						"mX": 3, 
+						"mY": 3
+					}
+				], 
+				"Vases": [
+					{
+						"ZombieTypeName": "summer_basic", 
+						"Count": 7
+					}, 
+					{
+						"ZombieTypeName": "summer_armor1", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "summer_armor2", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "eighties_boombox", 
+						"Count": 4
+					}, 
+					{
+						"PlantTypeName": "phatbeet", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "garlic", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "stunion", 
+						"Count": 4
+					}, 
+					{
+						"PlantTypeName": "threepeater", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 4, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	], 
+	"version": 1
+}

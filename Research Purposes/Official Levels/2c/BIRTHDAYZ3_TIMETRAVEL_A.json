@@ -1,0 +1,131 @@
+{
+	"#comment": "Skycity Zomboss", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "meltdown", 
+				"Description": "[PLAYERS_TRIP_TO_SKYCITY]", 
+				"ForceToWorldMap": true, 
+				"LevelIndex": 925, 
+				"LevelNumber": 25, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossMechLastStandIntro@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(LastStandSeedBank@CurrentLevel)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SKYCITY_FINAL_LEVEL1]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(SkycityStage@LevelModules)", 
+				"RepeatPlayForceToWorldMap": true, 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)", 
+				"LoadDefaultMusic": false
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_SKYCITY_FINALE]", 
+				"DescriptiveName": "[STARCHALLENGE_KONGFU_FINALE_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechLastStandIntro"
+			], 
+			"objclass": "ZombossMechLastStandIntroProperties", 
+			"objdata": {
+				"PanEndOffset": 468, 
+				"PanLeftDuration": 1.5, 
+				"PanRightDuration": 1.5, 
+				"PanStartOffset": 78, 
+				"ResourceGroupNames": [], 
+				"StartingPlantfood": 0, 
+				"StartingSun": 2000
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [], 
+				"PlantBlackList": [
+					"blover", 
+					"hurrikale", 
+					"sapfling", 
+					"iceshroom", 
+					"empea", 
+					"bamboo", 
+					"agave", 
+					"jackfruit", 
+					"cottonyeti"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_skycity_TimeTravel_easy", 
+				"ZombossSpawnGridPosition": {
+					"mX": 7, 
+					"mY": 2
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"ManualStartup": true, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"Waves": []
+			}
+		}
+	], 
+	"version": 1
+}

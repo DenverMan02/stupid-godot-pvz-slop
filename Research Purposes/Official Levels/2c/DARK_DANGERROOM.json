@@ -1,0 +1,186 @@
+{
+	"#comment": "DarkAges Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "dark_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(DarkMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_DARKAGES_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(DarkStage@LevelModules)", 
+				"StartingSun": 5000, 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(DarkDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(DarkDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"GravestoneCount": 0, 
+				"SpawnColumnEnd": 0, 
+				"SpawnColumnStart": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"DarkDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(dark_armor1@ZombieTypes)", 
+					"RTID(dark_armor2@ZombieTypes)", 
+					"RTID(dark_armor3@ZombieTypes)", 
+					"RTID(dark_wizard@ZombieTypes)", 
+					"RTID(dark_juggler@ZombieTypes)", 
+					"RTID(dark_king@ZombieTypes)", 
+					"RTID(dark_imp_dragon@ZombieTypes)", 
+					"RTID(dark_gargantuar_danger@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"DarkGravestoneGenerator"
+			], 
+			"objclass": "DangerRoomGravestoneGenerator", 
+			"objdata": {
+				"MinGravestoneCount": 1, 
+				"BaseGravestoneCountPerLevel": 1, 
+				"MaxGeneratedGravestones": 20, 
+				"MinStartingGravestoneSpawnCol": 4, 
+				"MaxStartingGravestoneSpawnCol": 9, 
+				"MaxStartingGravestoneSpawnColOffsetPerLevel": -0.25, 
+				"MinEndingGravestoneSpawnCol": 9, 
+				"MaxEndingGravestoneSpawnCol": 9, 
+				"MaxEndingGravestoneSpawnColOffsetPerLevel": 0.0
+			}
+		}, 
+		{
+			"aliases": [
+				"DarkEventGenerator"
+			], 
+			"objclass": "DangerRoomDarkEventGenerator", 
+			"objdata": {
+				"#Comment": "All ranges are evaluated as a function of level (x = level)", 
+				"GravestoneSpawnEventsPerFlagWaveMin": {
+					"YIntercept": 0
+				}, 
+				"GravestoneSpawnEffectsPerFlagWaveMax": {
+					"SlopeCoefficient": 0.5, 
+					"UpperLimit": {
+						"Value": "3"
+					}
+				}, 
+				"GravestonesPerSpawnEventMin": {
+					"YIntercept": 1
+				}, 
+				"GravestonesPerSpawnEventMax": {
+					"SlopeCoefficient": 0.5, 
+					"UpperLimit": {
+						"Value": "10"
+					}
+				}, 
+				"BeneficialGravestonesPerSpawnEventMin": {
+					"YIntercept": 0
+				}, 
+				"BeneficialGravestonesPerSpawnEventMax": {
+					"YIntercept": 3
+				}, 
+				"ChanceThatBeneficialGravestoneIsPlantfoodNotSun": 0.15, 
+				"GravestoneSpawnColumnMin": {
+					"SlopeCoefficient": -0.2, 
+					"YIntercept": 7, 
+					"LowerLimit": {
+						"Value": "3"
+					}, 
+					"UpperLimit": {
+						"Value": "7"
+					}
+				}, 
+				"GravestoneSpawnColumnMax": {
+					"YIntercept": 9
+				}, 
+				"NecromancyEventsPerFlagWaveMin": {
+					"YIntercept": 0
+				}, 
+				"NecromancyEventsPerFlagWaveMax": {
+					"SlopeCoefficient": 0.2, 
+					"UpperLimit": {
+						"Value": "2"
+					}
+				}, 
+				"ZombiesPerNecromancyEventMin": {
+					"YIntercept": 1
+				}, 
+				"ZombiesPerNecromancyEventMax": {
+					"SlopeCoefficient": 0.5, 
+					"UpperLimit": {
+						"Value": "10"
+					}
+				}, 
+				"SpawnZombieType": "dark_imp"
+			}
+		}
+	], 
+	"version": 1
+}

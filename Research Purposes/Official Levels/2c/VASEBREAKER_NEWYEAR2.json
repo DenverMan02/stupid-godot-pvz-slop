@@ -1,0 +1,64 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"Name": "[VASEBREAKER_NEWYEAR_LEVEL_NAME_2]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(NewYearDaylightStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 4, 
+				"MaxColumnIndex": 7, 
+				"Vases": [
+					{
+						"ZombieTypeName": "fairy_tale", 
+						"Count": 8
+					}, 
+					{
+						"ZombieTypeName": "fairy_tale_armor2", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "fairy_tale_armed_gargantuar", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "bubblecoral", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "mangosteen", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "sweetpotato", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 2
+			}
+		}
+	]
+}

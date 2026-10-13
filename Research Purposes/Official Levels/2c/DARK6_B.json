@@ -1,0 +1,1081 @@
+{
+	"#comment": "Dark Prototype", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DARK]", 
+				"LevelIndex": 638, 
+				"LevelNumber": 6, 
+				"EnableAutoHard": false, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(TowerDefend@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[DARK_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(TheatreDarkStage@LevelModules)", 
+				"ShowZombies": [
+					"zombie_towerdefend_bucket", 
+					"zombie_towerdefend_jester", 
+					"zombie_towerdefend_gargantuar", 
+					"zombie_towerdefend_helmet", 
+					"zombie_towerdefend_normal", 
+					"zombie_towerdefend_knight", 
+					"zombie_towerdefend_wolf_fire", 
+					"zombie_towerdefend_wolf_imp"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"puffshroom", 
+					"peashooter", 
+					"splitpea", 
+					"snowpea"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_THREEPIGS]", 
+				"DescriptiveName": "[STARCHALLENGE_THREEPIGS_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"TowerDefend"
+			], 
+			"objclass": "TowerDefendProperties", 
+			"objdata": {
+				"HouseName": "house_2", 
+				"HousePopAnim": "POPANIM_TOWERDEFEND_HOUSE_PIG_2", 
+				"HitpointsPercentAddPerWave": 0.25, 
+				"BossSkills": [
+					"intro", 
+					"fire", 
+					"fire", 
+					"blow", 
+					"blow"
+				], 
+				"Trees": [
+					{
+						"Infos": [
+							{
+								"cost": 125, 
+								"launchtimepercent": 0.5, 
+								"name": "puffshroom"
+							}, 
+							{
+								"cost": 400, 
+								"launchtimepercent": 0.4, 
+								"name": "fumeshroom"
+							}, 
+							{
+								"cost": 0, 
+								"launchtimepercent": 0.4, 
+								"name": "laser_bean"
+							}
+						]
+					}, 
+					{
+						"Infos": [
+							{
+								"cost": 175, 
+								"launchtimepercent": 0.5, 
+								"name": "splitpea"
+							}, 
+							{
+								"cost": 325, 
+								"launchtimepercent": 0.4, 
+								"name": "bloomerang"
+							}, 
+							{
+								"cost": 0, 
+								"launchtimepercent": 0.6, 
+								"name": "starfruit"
+							}
+						]
+					}, 
+					{
+						"Infos": [
+							{
+								"cost": 200, 
+								"launchtimepercent": 0.5, 
+								"name": "peashooter"
+							}, 
+							{
+								"cost": 250, 
+								"launchtimepercent": 0.4, 
+								"name": "repeater"
+							}, 
+							{
+								"cost": 0, 
+								"launchtimepercent": 0.4, 
+								"name": "threepeater"
+							}
+						]
+					}, 
+					{
+						"Infos": [
+							{
+								"cost": 1400, 
+								"launchtimepercent": 0.5, 
+								"name": "snowpea"
+							}, 
+							{
+								"cost": 0, 
+								"launchtimepercent": 0.4, 
+								"name": "wintermelon"
+							}
+						]
+					}
+				], 
+				"Roads": [
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_LEFT"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_LEFT"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_LEFT"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_BOTOOM_RIGHT"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_RIGHT"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_LEFT"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_LEFT"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_BOTOOM_LEFT"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_LEFT"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_LEFT"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_BOTOOM_LEFT"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_CENTRE"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_TOP_RIGHT"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_LEFT"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"Img": "IMAGE_BACKGROUNDS_THEATRE_DARK_RUG_BOTOOM_RIGHT"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 5, 
+				"LevelXMLFilename": "future5.xml", 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 120, 
+				"WaveSpendingPoints": 100, 
+				"IgnoreFlagCarriers": true, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_jester@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_imp@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_jester@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_normal@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_wolf_fire@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_helmet@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 120, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_bucket@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_knight@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 150, 
+								"Row": "1", 
+								"Type": "RTID(zombie_towerdefend_gargantuar@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

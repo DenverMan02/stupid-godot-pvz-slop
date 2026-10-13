@@ -1,0 +1,258 @@
+{
+	"#comment": "Egypt 5", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]", 
+				"LevelIndex": 901, 
+				"LevelNumber": 5, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(EgyptMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[YETILEVEL_EASY]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"ShowZombies": [
+					"mummy_armor1", 
+					"yeti", 
+					"explorer", 
+					"mummy", 
+					"pharaoh", 
+					"ra"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 12, 
+				"LevelXMLFilename": "egypt3.xml", 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 55, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(ra@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(ra@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(ra@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(ra@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(yeti@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Event": {
+							"Count": 3, 
+							"Enabled": true, 
+							"TimeSpread": 300, 
+							"Waves": 3
+						}, 
+						"SpawnColEnd": 8, 
+						"SpawnColStart": 5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(ra@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(yeti@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(yeti@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(ra@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"primalpeashooter"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}
+	], 
+	"version": 1
+}

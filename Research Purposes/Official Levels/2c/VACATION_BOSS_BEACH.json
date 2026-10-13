@@ -1,0 +1,116 @@
+{
+	"#comment": "Beach Prototype", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_BOSSRACEEVENT]", 
+				"FirstRewardParam": "none", 
+				"FirstRewardType": "none", 
+				"ReplayRewardParam": "none", 
+				"ReplayRewardType": "none", 
+				"ForceNextLevel": "vacation_boss_eighties", 
+				"ForceToWorldMap": true, 
+				"CanSaveGameState": false, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(LilypadPlacement@CurrentLevel)", 
+					"RTID(Tide@CurrentLevel)", 
+					"RTID(PurpleBattle@CurrentLevel)"
+				], 
+				"Name": "[SUMMER_PURPLE_LEVEL2]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"PurpleBattle"
+			], 
+			"objclass": "BossKillTimeChallengeProperties", 
+			"objdata": {
+				"LevelIndex": 1, 
+				"Type": "purple"
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"LilypadPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"TypeName": "lilypad"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_beach_vacation", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [], 
+				"SelectionMethod": "preset"
+			}
+		}
+	], 
+	"version": 1
+}

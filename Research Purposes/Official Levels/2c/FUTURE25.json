@@ -1,0 +1,168 @@
+{
+	"#comment": "Future Prototype", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "drop_the_boss", 
+				"Description": "[PLAYERS_TRIP_TO_FUTURE]", 
+				"FirstIntroNarrative": "FUTURE_INTRO_ZOMBOSS", 
+				"FirstOutroNarrative": "FUTURE_OUTRO_ZOMBOSS", 
+				"ForceToWorldMap": true, 
+				"LevelNumber": 25, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossMechLastStandIntro@CurrentLevel)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[FUTURE_LAST]", 
+				"NormalPresentTable": "future_normal_01", 
+				"RepeatPlayForceToWorldMap": true, 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)", 
+				"StartingPlantfood": 3, 
+				"StartingSun": 4000, 
+				"LoadDefaultMusic": false
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"iceburg"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossMechType": "zombossmech_future", 
+				"ZombossDeathRow": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"ManualStartup": true, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechLastStandIntro"
+			], 
+			"objclass": "ZombossMechLastStandIntroProperties", 
+			"objdata": {
+				"StartingPlantfood": 0, 
+				"StartingSun": 3000
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			], 
+			"objclass": "PowerTileProperties", 
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 1, 
+							"mY": 0
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 0, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "beta", 
+						"Location": {
+							"mX": 0, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "beta", 
+						"Location": {
+							"mX": 2, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 2, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 1, 
+							"mY": 4
+						}, 
+						"PropagationDelay": 1.5
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,193 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ANNIVERSARY]", 
+				"LevelNumber": 3, 
+				"StartingSun": 520, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(pvz1CopycatsModule@CurrentLevel)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(CowboyRails@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[ANNIVERSARY_10TH_NAME_03]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"ShowZombies": [
+					"chicken_farmer", 
+					"prospector", 
+					"west_bull", 
+					"piano", 
+					"cowboy", 
+					"cowboy_armor1", 
+					"cowboy_armor2", 
+					"cowboy_gargantuar"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult1@CurrentLevel)", 
+					"RTID(Difficult2@CurrentLevel)", 
+					"RTID(Difficult3@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult1"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 1, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_1@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(specialist_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(supporter_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(plant_damage_reduced_difficulty_1@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"DefaultCollection": "RTID(zombie_12th_difficulty_2@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_attack_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(m_2@LevelModifierModuleCollection)", 
+					"RTID(sun_reduced_difficulty_2@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult3"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 3, 
+				"DefaultCollection": "RTID(zombie_12th_difficulty_3@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(cowboy_zombie@LevelModifierModuleCollection)", 
+					"RTID(z_speed_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 3
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"pvz1CopycatsModule"
+			], 
+			"objclass": "PVZ1CopycatsModuleProperties", 
+			"objdata": {
+				"ZombieWeight": 0, 
+				"SpawnPlantLevel": 5, 
+				"PlantBlackList": [
+					"forg", 
+					"powerlily", 
+					"squash", 
+					"jalapeno", 
+					"gravebuster", 
+					"imitater", 
+					"cherry_bomb", 
+					"empea", 
+					"powerplant", 
+					"coffeebean", 
+					"lilypad", 
+					"flowerpot", 
+					"heathseeker", 
+					"tanglekelp", 
+					"guacodile", 
+					"ghostpepper", 
+					"hurrikale", 
+					"olive", 
+					"cobcannon", 
+					"hotpotato", 
+					"goldleaf", 
+					"flattenedshroom", 
+					"goldbloom", 
+					"lavaguava", 
+					"jackfruit", 
+					"thymewarp", 
+					"intensivecarrot", 
+					"grapeshot", 
+					"escaperoot", 
+					"pumpkin", 
+					"powervine", 
+					"perfumeshroom", 
+					"kelpguard", 
+					"oxygenalgae", 
+					"seashroom"
+				], 
+				"ZombieWhiteList": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"minigame_imitater_sun", 
+					"minigame_imitater_melee1", 
+					"minigame_imitater_defense", 
+					"minigame_imitater_pitfall", 
+					"minigame_imitater_helper", 
+					"minigame_imitater_adc1", 
+					"minigame_imitater_adc1", 
+					"jalapeno"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossMechType": "zombossmech_cowboy_12th", 
+				"ZombossDeathRow": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}
+			}
+		}
+	], 
+	"version": 1
+}

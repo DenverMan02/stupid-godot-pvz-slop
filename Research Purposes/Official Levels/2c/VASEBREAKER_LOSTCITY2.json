@@ -1,0 +1,72 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 2", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 2, 
+				"Name": "[VASEBREAKER_LOSTCITY_LEVEL_NAME_2]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(LostCityStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "lostcity", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "lostcity_armor1", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "lostcity_crystalskull", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "lostcity_gargantuar", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "geraniifencer", 
+						"Count": 7
+					}, 
+					{
+						"PlantTypeName": "headbutterlettuce", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "primalpotatomine", 
+						"Count": 3
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "beach_dangerroom", 
+				"IsDangerRoom": true, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(BeachMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Tide@CurrentLevel)"
+				], 
+				"Name": "[DANGER_ROOM_BEACH_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)", 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_beach", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(EgyptDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower", 
+					"rhubarbarian"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}
+	], 
+	"version": 1
+}

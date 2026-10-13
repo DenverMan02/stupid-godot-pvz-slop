@@ -1,0 +1,444 @@
+{
+	"#comment": "Level Of The Day Default", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "torchwood", 
+				"LevelNumber": 27, 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(GoldTiles@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_BIRTHDAYZ]", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"StartingSun": 225
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "draftodil"
+					}
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTiles"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"TypeName": "flame_spreader_trap"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"TypeName": "flame_spreader_trap"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 1, 
+				"PointIncrementPerWave": 200, 
+				"StartingPoints": 250, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 2, 
+				"ZombiePool": [
+					"RTID(birthday@ZombieTypes)", 
+					"RTID(birthday_jetpack@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.9, 
+				"MinNextWaveHealthPercentage": 0.8, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2GraveSpawnEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(Wave5GraveSpawnEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave8GraveSpawnEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"Wave5GraveSpawnEvent0"
+			], 
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps", 
+			"objdata": {
+				"AdditionalPlantfood": "0", 
+				"GridTypes": [
+					"RTID(gravestone_dark@GridItemTypes)", 
+					"RTID(gravestoneSunOnDestruction@GridItemTypes)", 
+					"RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+				], 
+				"WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]", 
+				"ZombieSpawnWaitTime": "1", 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2GraveSpawnEvent0"
+			], 
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps", 
+			"objdata": {
+				"AdditionalPlantfood": "0", 
+				"GridTypes": [
+					"RTID(gravestone_dark@GridItemTypes)", 
+					"RTID(gravestoneSunOnDestruction@GridItemTypes)", 
+					"RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+				], 
+				"WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]", 
+				"ZombieSpawnWaitTime": "1", 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8GraveSpawnEvent0"
+			], 
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps", 
+			"objdata": {
+				"AdditionalPlantfood": "0", 
+				"GridTypes": [
+					"RTID(gravestone_dark@GridItemTypes)", 
+					"RTID(gravestoneSunOnDestruction@GridItemTypes)", 
+					"RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+				], 
+				"WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]", 
+				"ZombieSpawnWaitTime": "1", 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

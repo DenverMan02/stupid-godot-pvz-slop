@@ -1,0 +1,92 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_QIN]", 
+				"LevelNumber": 1, 
+				"IsDangerRoom": true, 
+				"IsArtifactDisabled": true, 
+				"IsBossFight": true, 
+				"DisablePeavine": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(MausoleumMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombossLastStand@CurrentLevel)", 
+					"RTID(TunnelDefendDefault0@LevelModules)", 
+					"RTID(PVZ2MausoleumModuleUnchartedMode@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(FinalStageTimeLimitedChallenge@LevelModules)"
+				], 
+				"Name": "[NOQIN_LEVEL_NAME_DANGERROOM]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(MausoleumOutro@LevelModules)", 
+				"StageModule": "RTID(UnchartedMausoleumBossStage@LevelModules)", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossLastStand"
+			], 
+			"objclass": "ZombossLastStandMinigameProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"PlantSeaderris", 
+					"ZombiePVZ1RobotZombossGroup", 
+					"PlantFlamelady", 
+					"FrostbiteIceBlockPlantGroup", 
+					"UI_MausoleumTunnel", 
+					"ZombossQinShiHuangGroup", 
+					"MausoleumAudio", 
+					"ZombossQinShiHuangAudio"
+				], 
+				"IsRandom": false, 
+				"BossMusic": true, 
+				"RandomType": [
+					"kongfu_zomboss_blade", 
+					"kongfu_zomboss_explosive", 
+					"kongfu_zomboss_qigong"
+				], 
+				"StartingPlantfood": 0, 
+				"StartingSun": 4000, 
+				"ZombossInitialGridCol": 6, 
+				"ZombossInitialGridRow": 2, 
+				"ZombossStartStageIndex": 0, 
+				"ReservedColumnCount": 3, 
+				"ZombossTypeName": "zomboss_qinshihuang", 
+				"SkipPlanting": true
+			}
+		}, 
+		{
+			"objclass": "MausoleumDangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"LevelDesigners": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "MausoleumSeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"powerlily"
+				], 
+				"SelectionMethod": "chooser", 
+				"SeedChooserType": "UIMausoleumSeedChooser", 
+				"SeedPacketType": "UIMausoleumSeedPacket"
+			}
+		}
+	], 
+	"version": 1
+}

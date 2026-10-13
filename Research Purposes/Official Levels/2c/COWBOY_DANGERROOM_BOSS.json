@@ -1,0 +1,110 @@
+{
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "cowboy_dangerroom", 
+				"IsDangerRoom": true, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(WestMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(CowboyRails@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_COWBOY_LEVEL_NAME]", 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)", 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_cowboy", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 1, 
+						"Row": 1
+					}, 
+					{
+						"Column": 3, 
+						"Row": 3
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(EgyptDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}
+	], 
+	"version": 1
+}

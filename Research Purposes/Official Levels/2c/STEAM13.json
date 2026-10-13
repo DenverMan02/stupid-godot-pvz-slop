@@ -1,0 +1,174 @@
+{
+	"#comment": "Cowboy Last Stand A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 13, 
+				"Description": "[PLAYERS_TRIP_TO_STEAM]", 
+				"FirstIntroNarrative": "STEAM_13_INTRO", 
+				"GameOverDialogShowBrain": false, 
+				"LevelIndex": 312, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(WhackAMoleIntro@CurrentLevel)", 
+					"RTID(WhackAMoleGame@CurrentLevel)"
+				], 
+				"Name": "[STEAM_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(SteamStage@LevelModules)", 
+				"VictoryModule": "RTID(WhackAMoleWinOutro@LevelModules)", 
+				"MusicType": "MiniGame_A", 
+				"ShowZombies": [
+					"steam_imp"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WhackAMoleGame"
+			], 
+			"objclass": "WhackAMoleModuleProperties", 
+			"objdata": {
+				"GameTime": 150, 
+				"RoundIndex": 0, 
+				"ZombieWinPositionX": -80, 
+				"CoinHammerLastTime": 20, 
+				"GemHammerLastTime": 20, 
+				"MinWinScore": 2000, 
+				"HardLevelMinWinScore": 4200, 
+				"OneScore": 10, 
+				"CoinHammerCost": 5000, 
+				"GemHammerCost": 50
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_CANNON_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_CANNON_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"WhackAMoleIntro"
+			], 
+			"objclass": "WhackAMoleIntroProperties", 
+			"objdata": {
+				"IsTutorial": true, 
+				"SetLocations": [
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"spawnZombieRate": 1, 
+						"spawnHamsterTime": 10.0
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.8, 
+						"spawnHamsterTime": 15.0
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6, 
+						"spawnHamsterTime": 2.0
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"spawnZombieRate": 1, 
+						"spawnHamsterTime": 5.0
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.5, 
+						"spawnHamsterTime": 40.0
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"spawnZombieRate": 1, 
+						"spawnHamsterTime": 30.0
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"spawnZombieRate": 1, 
+						"spawnHamsterTime": 20.0
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.8, 
+						"spawnHamsterTime": 33
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6, 
+						"spawnHamsterTime": 50
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"spawnZombieRate": 0.5, 
+						"spawnHamsterTime": 43
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.8, 
+						"spawnHamsterTime": 25
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"spawnZombieRate": 1, 
+						"spawnHamsterTime": 60.0
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"spawnZombieRate": 0.6, 
+						"spawnHamsterTime": 22.0
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.8, 
+						"spawnHamsterTime": 18.0
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"spawnZombieRate": 1, 
+						"spawnHamsterTime": 38.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

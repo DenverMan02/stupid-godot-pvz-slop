@@ -1,0 +1,764 @@
+{
+	"#comment": "Scoring Playtest - Right Gradient - No Quickstart", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "", 
+				"DisablePlantBoosts": true, 
+				"GridItemLevel": 1, 
+				"LevelNumber": 1, 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(FastSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(JoustZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(LevelScoring@CurrentLevel)", 
+					"RTID(ScoreTilesAndTraps@CurrentLevel)", 
+					"RTID(LastStand@CurrentLevel)", 
+					"RTID(LevelDifficultyScaling@CurrentLevel)", 
+					"RTID(SeedPacketHalfTimeModule@LevelModules)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(ZombieResistances@CurrentLevel)", 
+					"RTID(PerkActivator@CurrentLevel)"
+				], 
+				"Name": "", 
+				"NormalPresentTable": "dark_normal_01", 
+				"ShinyPresentTable": "dark_shiny_01", 
+				"StageModule": "RTID(JoustStage@LevelModules)", 
+				"LevelMutator": "RTID(LevelMutator@CurrentLevel)", 
+				"SuppressAccountUpgrades": true, 
+				"SuppressDynamicTutorial": true, 
+				"SuppressPlantfoodPurchase": true
+			}
+		}, 
+		{
+			"aliases": [
+				"PerkActivator"
+			], 
+			"objclass": "PerkHandlerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"ZombieResistances"
+			], 
+			"objclass": "ZombieResistancesModuleProperties", 
+			"objdata": {
+				"FamilyResistances": {
+					"global": [
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2, 
+							"DamageResistance": 2, 
+							"FamilyType": "enlightenmint"
+						}, 
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2, 
+							"DamageResistance": 2, 
+							"FamilyType": "bombardmint"
+						}, 
+						{
+							"#comment": "200% damage and condition", 
+							"ConditionResistance": 2, 
+							"DamageResistance": 2, 
+							"FamilyType": "enforcemint"
+						}
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ShowInStreetView": false, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_lostcity", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelMutator"
+			], 
+			"objclass": "LevelMutatorModuleProperties", 
+			"objdata": {
+				"MutatorTables": [
+					"RTID(LocalChallengeMutator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LocalChallengeMutator"
+			], 
+			"objclass": "LevelMutatorTableProps", 
+			"objdata": {
+				"Tables": [
+					{
+						"Level": 0, 
+						"Modules": [
+							"RTID(LevelTimer@CurrentLevel)"
+						], 
+						"ModuleType": "bonuschallenge"
+					}, 
+					{
+						"Level": 1, 
+						"Modules": [
+							"RTID(LevelTimer@CurrentLevel)"
+						], 
+						"ModuleType": "bonuschallenge"
+					}, 
+					{
+						"Level": 2, 
+						"Modules": [
+							"RTID(LevelTimer@CurrentLevel)"
+						], 
+						"ModuleType": "bonuschallenge"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelTimer"
+			], 
+			"objclass": "StarChallengeLevelTimerProperties", 
+			"objdata": {
+				"TimeLimit": 180
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"blover"
+				], 
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "enlightenmint"
+					}
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			], 
+			"objclass": "LevelDifficultyScalingModuleProperties", 
+			"objdata": {
+				"DifficultyRulesType": "DifficultyTestHighDecay"
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStand"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 3, 
+				"StartingSun": 1350, 
+				"PreSeedchooserFlow": "rift"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelScoring"
+			], 
+			"objclass": "LevelScoringModuleProperties", 
+			"objdata": {
+				"PlantBonusMultiplier": 0.1, 
+				"PlantBonuses": [], 
+				"ScoringRulesType": "ZombossBattlez", 
+				"StartingPlantfood": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"ScoreTilesAndTraps"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "flame_spreader_trap"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 1, 
+						"TypeName": "flame_spreader_trap"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "flame_spreader_trap"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"TypeName": "flame_spreader_trap"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "flame_spreader_trap"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 1, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "score_2x_tile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}, 
+					{
+						"MaxPoints": 1200, 
+						"PointIncrementPerWave": 50, 
+						"StartingPoints": 550, 
+						"StartingWave": 3, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": [
+							"RTID(lostcity_relichunter@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 100, 
+				"WaveCount": 100, 
+				"WaveSpendingPointIncrement": 200, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave10SunDropperEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)", 
+						"RTID(Wave10SunDropperEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)", 
+						"RTID(Wave10SunDropperEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave10SunDropperEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)", 
+						"RTID(Wave10SunDropperEvent0@CurrentLevel)"
+					]
+				], 
+				"WavesAlwaysRandomized": true
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"ForcedCondition": {
+					"Condition": "speedup4", 
+					"Duration": 2
+				}, 
+				"Zombies": [
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2SunDropperEvent0"
+			], 
+			"objclass": "SunDropperWaveActionProps", 
+			"objdata": {
+				"SunAmountToDrop": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4SunDropperEvent0"
+			], 
+			"objclass": "SunDropperWaveActionProps", 
+			"objdata": {
+				"SunAmountToDrop": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6SunDropperEvent0"
+			], 
+			"objclass": "SunDropperWaveActionProps", 
+			"objdata": {
+				"SunAmountToDrop": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8SunDropperEvent0"
+			], 
+			"objclass": "SunDropperWaveActionProps", 
+			"objdata": {
+				"SunAmountToDrop": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10SunDropperEvent0"
+			], 
+			"objclass": "SunDropperWaveActionProps", 
+			"objdata": {
+				"SunAmountToDrop": 100
+			}
+		}
+	], 
+	"version": 1
+}

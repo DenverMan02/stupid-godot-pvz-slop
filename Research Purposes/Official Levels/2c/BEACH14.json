@@ -1,0 +1,101 @@
+{
+	"#comment": "PvZ2 Vasebreaker", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_BEACH]", 
+				"LevelIndex": 714, 
+				"LevelNumber": 14, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(Tide@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[BEACH_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"ShowZombies": [
+					"beach", 
+					"beach_armor1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_VASEBREAKER]", 
+				"DescriptiveName": "[STARCHALLENGE_VASEBREAKER_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 1
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"PowerUpTutorial": "powerupvasebreakerreveal", 
+				"MinColumnIndex": 4, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "beach", 
+						"Count": 8
+					}, 
+					{
+						"ZombieTypeName": "beach_armor1", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "guacodile", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "broccoli", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "squash", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	], 
+	"version": 1
+}

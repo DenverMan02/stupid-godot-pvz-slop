@@ -1,0 +1,368 @@
+{
+	"#comment": "Level Of The Day Default", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "torchwood", 
+				"FirstIntroNarrative": "BIRTHDAYZ_LTE_2022_4", 
+				"LevelNumber": 11, 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)", 
+					"RTID(FrozenPlantPlacement@CurrentLevel)", 
+					"RTID(FrozenZombiePlacement@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_BIRTHDAYZ]", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"StartingSun": 200
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			], 
+			"objclass": "PowerTileProperties", 
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 4, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 4, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 0.25
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "stunion"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "blover"
+					}
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenZombiePlacement"
+			], 
+			"objclass": "InitialZombieProperties", 
+			"objdata": {
+				"InitialZombiePlacements": [
+					{
+						"Condition": "icecubed", 
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "iceage_troglobite"
+					}, 
+					{
+						"Condition": "icecubed", 
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "iceage_troglobite"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			], 
+			"objclass": "InitialPlantProperties", 
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"Level": "-1", 
+						"TypeName": "potatomine"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"Level": "-1", 
+						"TypeName": "snapdragon"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"Level": "-1", 
+						"TypeName": "primalpotatomine"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"Level": "-1", 
+						"TypeName": "potatomine"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"Level": "-1", 
+						"TypeName": "snapdragon"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"Level": "-1", 
+						"TypeName": "potatomine"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 2, 
+				"PlantfoodToSpawnCount": 3, 
+				"PointIncrementPerWave": 50, 
+				"StartingPoints": 25, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 4, 
+				"ZombiePool": [
+					"RTID(birthday@ZombieTypes)", 
+					"RTID(birthday_jetpack@ZombieTypes)", 
+					"RTID(birthday_troglobite@ZombieTypes)", 
+					"RTID(birthday_troglobite_1block@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.9, 
+				"MinNextWaveHealthPercentage": 0.8, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday_pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(birthday_troglobite_1block@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(birthday_troglobite_1block@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday_jetpack@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(birthday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(birthday_troglobite_1block@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(birthday_troglobite_1block@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

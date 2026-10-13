@@ -1,0 +1,111 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 3", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"Name": "[VASEBREAKER_EIGHTIES_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(EightiesStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "giftbox", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 1, 
+				"WaveCount": 1, 
+				"SuppressFlagZombie": true, 
+				"ZombieCountdownFirstWaveSecs": 0, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"NotificationEvents": [
+					"jam_rap"
+				], 
+				"AdditionalPlantfood": 0, 
+				"Zombies": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "eighties_breakdancer", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "eighties_mc", 
+						"Count": 6
+					}, 
+					{
+						"ZombieTypeName": "eighties_imp", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "stickybombrice", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "mangosteen", 
+						"Count": 4
+					}, 
+					{
+						"PlantTypeName": "pinkstarfruit", 
+						"Count": 4
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 4
+					}
+				], 
+				"NumColoredPlantVases": 2, 
+				"NumColoredZombieVases": 2
+			}
+		}
+	]
+}

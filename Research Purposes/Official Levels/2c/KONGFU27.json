@@ -1,0 +1,845 @@
+{
+	"#comment": "Kongfu Level 27 2/26 Normal but Hard", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"LevelIndex": 427, 
+				"LevelNumber": 27, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(KongFuMowers@LevelModules)", 
+					"RTID(Kongfu1Waves@CurrentLevel)", 
+					"RTID(KongfuSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Armrack@CurrentLevel)", 
+					"RTID(EnergyGrid@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(RandZombie@CurrentLevel)"
+				], 
+				"Name": "[KONGFU_LEVEL_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"challengeDropGroupId": "123", 
+				"ShowZombies": [
+					"kongfu_monk_torch", 
+					"kongfu_monk_blade", 
+					"kongfu_monk_imp", 
+					"kongfu_monk_nunchaku", 
+					"kongfu_monk_cone", 
+					"kongfu_monk_drink"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"RandZombie"
+			], 
+			"objclass": "RandZombieProperties", 
+			"objdata": {
+				"RandZombieList": [
+					{
+						"Type": "RTID(kongfu_basic@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}, 
+					{
+						"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+						"Level": 2, 
+						"FirstWave": 1, 
+						"LastWave": 21
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Kongfu1Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(kongfu_basic@ZombieTypes)", 
+						"Level": 2
+					}
+				], 
+				"FlagWaveInterval": 7, 
+				"LevelXMLFilename": "kongfu27.xml", 
+				"WaveCount": 21, 
+				"WaveSpendingPointIncrement": 110, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"WavePointStart": 120, 
+						"WavePointIncrement": 40, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"wave": 1, 
+						"itemList": [
+							{
+								"mX": 3, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 3, 
+								"mY": 3, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 1, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 3, 
+								"type": "ArmrackTorch"
+							}
+						]
+					}, 
+					{
+						"wave": 5, 
+						"itemList": [
+							{
+								"mX": 5, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 2, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 4, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackNunchaku"
+							}
+						]
+					}, 
+					{
+						"wave": 9, 
+						"itemList": [
+							{
+								"mX": 5, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 4, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 0, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 4, 
+								"type": "ArmrackBomb"
+							}
+						]
+					}, 
+					{
+						"wave": 12, 
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 2, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 4, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackNunchaku"
+							}
+						]
+					}, 
+					{
+						"wave": 14, 
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 2, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 4, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}
+						]
+					}, 
+					{
+						"wave": 17, 
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 2, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 4, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 0, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 4, 
+								"type": "ArmrackFlag"
+							}
+						]
+					}, 
+					{
+						"wave": 20, 
+						"itemList": [
+							{
+								"mX": 5, 
+								"mY": 0, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 1, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 3, 
+								"type": "ArmrackTorch"
+							}
+						]
+					}, 
+					{
+						"wave": 21, 
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 0, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 1, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 2, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 3, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 4, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 1, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 0, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 4, 
+								"type": "ArmrackTorch"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"wave": 1, 
+						"itemList": [
+							{
+								"mX": 2, 
+								"mY": 1
+							}, 
+							{
+								"mX": 2, 
+								"mY": 3
+							}
+						]
+					}, 
+					{
+						"wave": 6, 
+						"itemList": [
+							{
+								"mX": 1, 
+								"mY": 2
+							}, 
+							{
+								"mX": 3, 
+								"mY": 2
+							}
+						]
+					}, 
+					{
+						"wave": 13, 
+						"itemList": [
+							{
+								"mX": 3, 
+								"mY": 0
+							}, 
+							{
+								"mX": 3, 
+								"mY": 4
+							}
+						]
+					}, 
+					{
+						"wave": 18, 
+						"itemList": [
+							{
+								"mX": 0, 
+								"mY": 0
+							}, 
+							{
+								"mX": 0, 
+								"mY": 4
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantsLost@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					], 
+					[
+						"RTID(SunProduced@CurrentLevel)", 
+						"RTID(SimultaneousPlants@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					], 
+					[
+						"RTID(ZombieDistance@CurrentLevel)", 
+						"RTID(KillZombies@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"KillZombies"
+			], 
+			"objclass": "StarChallengeKillZombiesInTimeProps", 
+			"objdata": {
+				"Time": 10, 
+				"ZombiesToKill": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"SunProduced"
+			], 
+			"objclass": "StarChallengeSunProducedProps", 
+			"objdata": {
+				"TargetSun": 4200
+			}
+		}, 
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			], 
+			"objclass": "StarChallengeSimultaneousPlantsProps", 
+			"objdata": {
+				"MaximumPlants": 18
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsLost"
+			], 
+			"objclass": "StarChallengePlantsLostProps", 
+			"objdata": {
+				"MaximumPlantsLost": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombieDistance"
+			], 
+			"objclass": "StarChallengeZombieDistanceProps", 
+			"objdata": {
+				"TargetDistance": 4
+			}
+		}, 
+		{
+			"aliases": [
+				"NeedPlant"
+			], 
+			"objclass": "NeedPlantProperties", 
+			"objdata": {
+				"PlantTypes": [
+					"firegourd"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

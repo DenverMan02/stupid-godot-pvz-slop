@@ -1,0 +1,309 @@
+{
+	"#comment": "LOD 259 - Kiwi Beast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"FirstIntroNarrative": "EVENT_BEGHOULED_BEYOND_001_INTRO", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayIntro@LevelModules)", 
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(FrozenPlantPlacement@CurrentLevel)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			], 
+			"objclass": "InitialPlantProperties", 
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "kiwibeast"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "sunflower", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "puffshroom", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "stunion", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "gravebuster", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "kiwibeast", 
+						"Level": -1
+					}
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 4, 
+				"PointIncrementPerWave": 125, 
+				"StartingPoints": 0, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 3, 
+				"ZombiePool": [
+					"RTID(mummy@ZombieTypes)", 
+					"RTID(pharaoh@ZombieTypes)", 
+					"RTID(mummy_armor2@ZombieTypes)", 
+					"RTID(mummy_armor1@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.9, 
+				"MinNextWaveHealthPercentage": 0.8, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(tomb_raiser@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "gravestoneSunOnDestruction"
+					}
+				], 
+				"GravestoneCount": 7, 
+				"SpawnColumnEnd": 9, 
+				"SpawnColumnStart": 7
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

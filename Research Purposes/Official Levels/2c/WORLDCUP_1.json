@@ -1,0 +1,1329 @@
+{
+	"#comment": "pirate_armor2 Last Stand A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"LevelIndex": 312, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"ForceNextLevel": "WorldCup_2", 
+				"Modules": [
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(WorldCupSeedBank@CurrentLevel)", 
+					"RTID(WorldCupIntro@CurrentLevel)", 
+					"RTID(WorldcupRails@CurrentLevel)", 
+					"RTID(SoccerGame@CurrentLevel)"
+				], 
+				"NormalPresentTable": "pirate_armor2_normal_01", 
+				"ShinyPresentTable": "pirate_armor2_shiny_01", 
+				"StageModule": "RTID(SoccerStage@LevelModules)", 
+				"VictoryModule": "RTID(SoccerGameWinOutro@LevelModules)", 
+				"CanSaveGameState": false, 
+				"IsWorldCup": true, 
+				"MusicType": "MiniGame_A", 
+				"ShowZombies": [
+					"barrelroller", 
+					"pirate_armor1", 
+					"pirate", 
+					"pirate_armor2"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldcupRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_worldcup", 
+				"Railcarts": [
+					{
+						"Column": 1, 
+						"Row": 0
+					}, 
+					{
+						"Column": 1, 
+						"Row": 2
+					}, 
+					{
+						"Column": 1, 
+						"Row": 4
+					}, 
+					{
+						"Column": 2, 
+						"Row": 2
+					}, 
+					{
+						"Column": 3, 
+						"Row": 1
+					}, 
+					{
+						"Column": 3, 
+						"Row": 3
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 1, 
+						"RowEnd": 0, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 2, 
+						"RowStart": 2
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 4
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SoccerGame"
+			], 
+			"objclass": "SoccerGameModuleProperties", 
+			"objdata": {
+				"GameTime": 180, 
+				"PassTime": 10, 
+				"RoundIndex": 1, 
+				"ZombieWinPositionX": -80
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "SoccerWaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate_armor2_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(barrelroller@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 30, 
+				"LevelXMLFilename": "pirate_armor2_challenge_laststand_a.xml", 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 7, 
+				"WaveCount": 30, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 600, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(barrelroller@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pirate_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pirate@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldCupSeedBank"
+			], 
+			"objclass": "WorldCupSeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "worldcup"
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldCupIntro"
+			], 
+			"objclass": "WorldCupProperties", 
+			"objdata": {
+				"StartingPlantfood": 2, 
+				"IsTutorial": false
+			}
+		}
+	], 
+	"version": 1
+}

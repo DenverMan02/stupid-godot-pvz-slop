@@ -1,0 +1,830 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SPRINGFESTIVAL_2024]", 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(UnchartedModeSpringFestivalSeedBankChoose@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(UnchartedModeSpringFestivalModule@LevelModules)", 
+					"RTID(UnchartedBoostModuleProps@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(EventItemPlacement@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SPRINGFESTIVAL_2024_NAME_13]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(UnchartedArbordayStage@LevelModules)", 
+				"IsUnchartedModeDifficultyTipsShow": true, 
+				"ShowZombies": [
+					"zombie_snowpea", 
+					"modern_allstar", 
+					"explosion_proof", 
+					"dark_wizard", 
+					"fairy_tale_witch", 
+					"dark_archmage", 
+					"tutorial_armor1", 
+					"roman_gargantuar"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult4@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult4"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 4, 
+				"Collections": [
+					"RTID(spring_zombie_level_difficulty_4@LevelModifierModuleCollection)", 
+					"RTID(spring_zombie_speed_difficulty_4@LevelModifierModuleCollection)", 
+					"RTID(spring_sun_reduced_difficulty_4@LevelModifierModuleCollection)", 
+					"RTID(spring_artifact_times_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EventItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "zombie_changer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EventItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "zombie_changer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EventItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "zombie_changer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EventItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "zombie_changer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BlowZombie@CurrentLevel)", 
+						"RTID(SunUsed@CurrentLevel)", 
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BlowZombie"
+			], 
+			"objclass": "StarChallengeBlowZombieProps", 
+			"objdata": {
+				"Count": 15
+			}
+		}, 
+		{
+			"aliases": [
+				"SunUsed"
+			], 
+			"objclass": "StarChallengeSunUsedProps", 
+			"objdata": {
+				"MaximumSun": 4500
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			], 
+			"objclass": "StarChallengePlantFoodNonuseProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"powerlily", 
+					"escaperoot"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1TileEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Column": "6", 
+						"Level": 1, 
+						"Type": "RTID(IceYearMonster@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(dark_archmage@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1BrickEvent0"
+			], 
+			"objclass": "ZombiePotionActionProps", 
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 0
+						}, 
+						"Type": "bufftile_shield"
+					}, 
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 1
+						}, 
+						"Type": "bufftile_shield"
+					}, 
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 3
+						}, 
+						"Type": "bufftile_shield"
+					}, 
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 4
+						}, 
+						"Type": "bufftile_shield"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1TileEvent0"
+			], 
+			"objclass": "ZombieBoundTileActionProps", 
+			"objdata": {
+				"Tiles": [
+					{
+						"Location": {
+							"mX": 5, 
+							"mY": 0
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 5, 
+							"mY": 1
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 5, 
+							"mY": 3
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 5, 
+							"mY": 4
+						}, 
+						"Type": "zombie_bound_tile"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

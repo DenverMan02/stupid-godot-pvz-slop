@@ -1,0 +1,718 @@
+{
+	"#comment": "Anniversary 2026", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ANNIVERSARY]", 
+				"LevelNumber": 12, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelPowerups@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[ANNIVERSARY_10TH_NAME_12]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(DinoStage@LevelModules)", 
+				"ShowZombies": [
+					"dino", 
+					"dino_armor1", 
+					"dino_armor2", 
+					"dino_armor3", 
+					"dino_bully", 
+					"dino_flag", 
+					"dino_gargantuar", 
+					"dino_pushegg", 
+					"dino_pushptero", 
+					"dino_pushbronto", 
+					"dino_pushtyranno", 
+					"dino_pushzomshell", 
+					"dino_stealegg", 
+					"dino_stealptero", 
+					"dino_stealbronto", 
+					"dino_stealtyranno", 
+					"dino_stealzomshell", 
+					"dino_armor4", 
+					"dino_bully_veteran"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult1@CurrentLevel)", 
+					"RTID(Difficult2@CurrentLevel)", 
+					"RTID(Difficult3@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult1"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 1, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_1@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(specialist_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(supporter_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(plant_damage_reduced_difficulty_1@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_2@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_attack_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(anniversary_2026_12_speed_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(sun_reduced_difficulty_2@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult3"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 3, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_3@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_speed_difficulty_3@LevelModifierModuleCollection)", 
+					"RTID(zombie_level_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelPowerups"
+			], 
+			"objclass": "LevelPowerupModuleProperties", 
+			"objdata": {
+				"Powerups": [
+					{
+						"TypeName": "poweruppinchzombie", 
+						"FreeUseCount": 3
+					}, 
+					{
+						"TypeName": "powerupflickzombie", 
+						"FreeUseCount": 3
+					}, 
+					{
+						"TypeName": "powerupwizardfinger", 
+						"FreeUseCount": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 6, 
+				"WaveCount": 18, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_armor3@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_pushtyranno@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_stealtyranno@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_pushptero@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_pushbronto@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_pushbronto@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_stealbronto@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_stealbronto@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_stealegg@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_stealptero@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_stealzomshell@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_stealzomshell@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_pushtyranno@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_bully@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_stealegg@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_stealtyranno@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_bully_veteran@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_bully@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_bully_veteran@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor3@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor3@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dino_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(dino_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

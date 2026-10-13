@@ -1,0 +1,456 @@
+{
+	"#comment": "Renai 5", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_RENAI]", 
+				"GameOverDialogShowBrain": false, 
+				"FirstIntroNarrative": "RENAI_5_INTRO", 
+				"LevelNumber": 5, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(StatueMazeModule@CurrentLevel)"
+				], 
+				"Name": "[RENAI_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(RenaiStage@LevelModules)", 
+				"ShowZombies": [
+					"renai_worker", 
+					"renai_armor1"
+				]
+			}
+		}, 
+		{
+			"objclass": "StandardLevelIntroProperties", 
+			"aliases": [
+				"StandardIntro"
+			], 
+			"objdata": {
+				"PanStartOffset": 78, 
+				"PanEndOffset": 468, 
+				"PanRightDuration": 2.0, 
+				"PanLeftDuration": 2.5, 
+				"SkipShowingStreet": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"DescriptiveName": "[STARCHALLENGE_MAZE_STATUE_NAME]", 
+				"Description": "[STARCHALLENGE_MAZE_STATUE]"
+			}
+		}, 
+		{
+			"aliases": [
+				"StatueMazeModule"
+			], 
+			"objclass": "StatueMazeModuleProperties", 
+			"objdata": {
+				"SetInfos": [
+					{
+						"MatrixSize": 3, 
+						"DisplayTime": 5.0, 
+						"TargetNum": 4, 
+						"MatrixInfos": [
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 0
+					}, 
+					{
+						"MatrixSize": 4, 
+						"DisplayTime": 5.0, 
+						"TargetNum": 4, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 0
+					}, 
+					{
+						"MatrixSize": 4, 
+						"DisplayTime": 5.0, 
+						"TargetNum": 7, 
+						"MatrixInfos": [
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 0
+					}, 
+					{
+						"MatrixSize": 4, 
+						"DisplayTime": 5.0, 
+						"TargetNum": 5, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 0
+					}, 
+					{
+						"MatrixSize": 5, 
+						"DisplayTime": 6.0, 
+						"TargetNum": 5, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 0
+					}, 
+					{
+						"MatrixSize": 5, 
+						"DisplayTime": 6.0, 
+						"TargetNum": 9, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 0
+					}, 
+					{
+						"MatrixSize": 5, 
+						"DisplayTime": 6.0, 
+						"TargetNum": 14, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 2
+					}, 
+					{
+						"MatrixSize": 5, 
+						"DisplayTime": 6.0, 
+						"TargetNum": 11, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 2
+					}, 
+					{
+						"MatrixSize": 5, 
+						"DisplayTime": 5.0, 
+						"TargetNum": 13, 
+						"MatrixInfos": [
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 2
+					}, 
+					{
+						"MatrixSize": 5, 
+						"DisplayTime": 4.0, 
+						"TargetNum": 8, 
+						"MatrixInfos": [
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "c", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}, 
+							{
+								"Type": "ac", 
+								"WaitDuration": 2.5, 
+								"RotateTime": 2.0
+							}
+						], 
+						"BonusLife": 1
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

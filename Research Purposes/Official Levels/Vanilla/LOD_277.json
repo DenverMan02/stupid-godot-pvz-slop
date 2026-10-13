@@ -1,0 +1,210 @@
+{
+	"#comment": "LOD 277 - Beghouled - Kiwibeast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"SuppressSunSpawn": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 5, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "splitpea", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "laser_bean", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "tallnut", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "endurian", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [
+					"primalpeashooter", 
+					"electricblueberry", 
+					"melonpult", 
+					"wintermelon"
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 100, 
+				"InitialPlants": [
+					"kiwibeast", 
+					"peashooter", 
+					"lightningreed", 
+					"wallnut", 
+					"cabbagepult"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "peashooter", 
+						"UpgradedPlant": "splitpea"
+					}, 
+					{
+						"BasePlant": "lightningreed", 
+						"UpgradedPlant": "laser_bean"
+					}, 
+					{
+						"BasePlant": "laser_bean", 
+						"UpgradedPlant": "electricblueberry"
+					}, 
+					{
+						"BasePlant": "cabbagepult", 
+						"UpgradedPlant": "melonpult"
+					}, 
+					{
+						"BasePlant": "melonpult", 
+						"UpgradedPlant": "wintermelon"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "tallnut"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "endurian"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 50, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 75, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "cowboy"
+							}, 
+							{
+								"ZombieType": "poncho"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "cowboy"
+							}, 
+							{
+								"ZombieType": "cowboy_armor1"
+							}, 
+							{
+								"ZombieType": "prospector"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "cowboy"
+							}, 
+							{
+								"ZombieType": "cowboy_armor1"
+							}, 
+							{
+								"ZombieType": "chicken_farmer"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "cowboy"
+							}, 
+							{
+								"ZombieType": "prospector"
+							}, 
+							{
+								"ZombieType": "cowboy_armor_1"
+							}, 
+							{
+								"ZombieType": "chicken_farmer"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

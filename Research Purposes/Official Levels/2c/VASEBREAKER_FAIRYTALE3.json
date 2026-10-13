@@ -1,0 +1,73 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"Name": "[VASEBREAKER_FAIRYTALE_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(FairyTaleStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "giftbox", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 2, 
+				"MaxColumnIndex": 7, 
+				"Vases": [
+					{
+						"ZombieTypeName": "fairy_tale_flag", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "fairy_tale_armor1", 
+						"Count": 7
+					}, 
+					{
+						"ZombieTypeName": "fairy_tale_witch", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "fairy_tale_armed_gargantuar", 
+						"Count": 1
+					}, 
+					{
+						"PlantTypeName": "ents", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "hatmushroom", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "boomflower", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 3
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 2
+			}
+		}
+	]
+}

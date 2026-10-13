@@ -1,0 +1,459 @@
+{
+	"#comment": "Kongfu Level 6 13/25", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"FirstRewardParam": "turnip", 
+				"FirstRewardType": "unlock_plant", 
+				"LevelIndex": 406, 
+				"LevelNumber": 6, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialPeashooterDeath@LevelModules)", 
+					"RTID(KongFuMowers@LevelModules)", 
+					"RTID(Kongfu1Waves@CurrentLevel)", 
+					"RTID(KongfuSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Armrack@CurrentLevel)", 
+					"RTID(EnergyGrid@CurrentLevel)", 
+					"RTID(InitialPlant@CurrentLevel)"
+				], 
+				"Name": "[KONGFU_LEVEL_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"ShowZombies": [
+					"kongfu_qigong", 
+					"kongfu_hammer", 
+					"kongfu_torch", 
+					"kongfu_basic_armor1", 
+					"kongfu_basic", 
+					"kongfu_drink"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Kongfu1Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 6, 
+				"LevelXMLFilename": "egypt1.xml", 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 70, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_drink@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_drink@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_qigong@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_drink@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_hammer@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 3, 
+								"type": "ArmrackHammer"
+							}
+						], 
+						"wave": 7
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"itemList": [
+							{
+								"mX": 3, 
+								"mY": 1
+							}
+						], 
+						"wave": 2
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 3
+							}
+						], 
+						"wave": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SimultaneousPlants@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					], 
+					[
+						"RTID(DoNotPlantBeforeLine@CurrentLevel)", 
+						"RTID(SunProduced@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					], 
+					[
+						"RTID(ZombieDistance@CurrentLevel)", 
+						"RTID(SunUsed@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			], 
+			"objclass": "StarChallengeSimultaneousPlantsProps", 
+			"objdata": {
+				"MaximumPlants": 12
+			}
+		}, 
+		{
+			"aliases": [
+				"DoNotPlantBeforeLine"
+			], 
+			"objclass": "StarChallengePlantBeforeLineProps", 
+			"objdata": {
+				"CannotPlantBeforeColumn": 2
+			}
+		}, 
+		{
+			"aliases": [
+				"SunProduced"
+			], 
+			"objclass": "StarChallengeSunProducedProps", 
+			"objdata": {
+				"TargetSun": 2500
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombieDistance"
+			], 
+			"objclass": "StarChallengeZombieDistanceProps", 
+			"objdata": {
+				"TargetDistance": 4
+			}
+		}, 
+		{
+			"aliases": [
+				"SunUsed"
+			], 
+			"objclass": "StarChallengeSunUsedProps", 
+			"objdata": {
+				"MaximumSun": 1500
+			}
+		}, 
+		{
+			"aliases": [
+				"InitialPlant"
+			], 
+			"objclass": "InitialPlantEntryProperties", 
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"turnip"
+						]
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"peashooter"
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

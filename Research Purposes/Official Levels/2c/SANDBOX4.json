@@ -1,0 +1,55 @@
+{
+	"#comment": "Sandbox 4", 
+	"objects": [
+		{
+			"objdata": {
+				"Name": "Sandbox 4", 
+				"Description": "Sandbox 4 Description", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(Sandbox4Waves@CurrentLevel)", 
+					"RTID(Sandbox4SeedBank@CurrentLevel)", 
+					"RTID(Sandbox4Gravestones@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"ShowZombies": []
+			}, 
+			"objclass": "LevelDefinition"
+		}, 
+		{
+			"objdata": {
+				"LevelXMLFilename": "sandbox4.xml"
+			}, 
+			"aliases": [
+				"Sandbox4Waves"
+			], 
+			"objclass": "WaveGeneratorProperties"
+		}, 
+		{
+			"objdata": {
+				"SpawnColumnEnd": 8, 
+				"SpawnColumnStart": 3, 
+				"GravestoneCount": 12
+			}, 
+			"aliases": [
+				"Sandbox4Gravestones"
+			], 
+			"objclass": "GravestoneProperties"
+		}, 
+		{
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}, 
+			"aliases": [
+				"Sandbox4SeedBank"
+			], 
+			"objclass": "SeedBankProperties"
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,92 @@
+{
+	"#comment": "LOD 224 - Vasebreaker - Wasabi Whip", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "wasabiwhip", 
+				"IsLevelOfTheDay": true, 
+				"IsVasebreaker": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@.)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(DinoStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "dino_imp", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "dino", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "dino_armor1", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "dino_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "dino_bully", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "wasabiwhip", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "primalwallnut", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "primalpeashooter", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 4, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	], 
+	"version": 1
+}

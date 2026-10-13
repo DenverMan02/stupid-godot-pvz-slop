@@ -1,0 +1,741 @@
+{
+	"#comment": "Level Of The Day Test 3", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "none", 
+				"LevelNumber": 30, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ProtectThePlant@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_FEASTIVUS]", 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"StageModule": "RTID(FeastivusStage@LevelModules)", 
+				"StartingSun": 2000
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "boingsetta"
+					}
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 200, 
+				"StartingPoints": -200, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 3, 
+				"ZombiePool": [
+					"RTID(feastivus_armor1@ZombieTypes)", 
+					"RTID(feastivus_armor2@ZombieTypes)", 
+					"RTID(feastivus_poncho@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ProtectThePlant"
+			], 
+			"objclass": "ProtectThePlantChallengeProperties", 
+			"objdata": {
+				"MustProtectCount": 5, 
+				"Plants": [
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"PlantType": "iceburg"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"PlantType": "iceburg"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"PlantType": "iceburg"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"PlantType": "iceburg"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"PlantType": "iceburg"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(DoNotPlantBeforeLine@CurrentLevel)", 
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"DoNotPlantBeforeLine"
+			], 
+			"objclass": "MoldColonyChallengeProps", 
+			"objdata": {
+				"Locations": "RTID(Column1_To_Column4@BoardGridMaps)"
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_PROTECT_THE_PLANT]", 
+				"DescriptiveName": "[STARCHALLENGE_PROTECT_THE_PLANT_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 3, 
+				"MaxNextWaveHealthPercentage": 1, 
+				"MinNextWaveHealthPercentage": 0.9, 
+				"WaveCount": 9, 
+				"WaveSpendingPointIncrement": 200, 
+				"WaveSpendingPoints": 200, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)", 
+						"RTID(Wave3Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)", 
+						"RTID(Wave4Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(Wave5Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)", 
+						"RTID(Wave6Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)", 
+						"RTID(Wave7Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave8Event@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)", 
+						"RTID(Wave9Event@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 2, 
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"Wave2Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 6, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 4, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9Event"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 4, 
+				"ColumnStart": 3, 
+				"GroupSize": 5, 
+				"TimeBetweenGroups": 200, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(feastivus_imp@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

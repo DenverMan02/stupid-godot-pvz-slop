@@ -1,0 +1,676 @@
+{
+	"#comment": "Level Of The Day Test 3", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "none", 
+				"LevelNumber": 8, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(CowboyRails@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_SPRINGENING]", 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"StartingSun": 1100
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantExcludeList": [
+					"spearmint", 
+					"peppermint", 
+					"appeasemint", 
+					"concealmint", 
+					"filamint", 
+					"wintermint", 
+					"bombardmint", 
+					"armamint", 
+					"ailmint", 
+					"reinforcemint", 
+					"containmint", 
+					"enchantmint", 
+					"enchantmint", 
+					"enforcemint", 
+					"enlightenmint", 
+					"blover"
+				], 
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "spikeweed"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "magnetshroom"
+					}
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 100, 
+				"StartingPoints": 0, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 3, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 2
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 3, 
+				"MaxNextWaveHealthPercentage": 0.5, 
+				"MinNextWaveHealthPercentage": 0.4, 
+				"WaveCount": 9, 
+				"WaveSpendingPointIncrement": 0, 
+				"WaveSpendingPoints": 0, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cannon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cannon@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(pharaoh@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cannon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cannon@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(pharaoh@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Type": "RTID(cannon@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"ZombieSpawnPattern": "ZombieSpawnerPatternStaggered", 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_poncho@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(spring_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pharaoh@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(spring@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(spring_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,432 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MINIGAME]", 
+				"LevelNumber": 4, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(pvz1CopycatsModule@CurrentLevel)", 
+					"RTID(MiniGameCollectionModule@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[ACTIVITY_NEW_MINIGAME_COPYCAT]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(MiniGameCollectionOutro@LevelModules)", 
+				"StageModule": "RTID(TwisterStage@LevelModules)", 
+				"ShowZombies": [
+					"tutorial", 
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"disco_mech", 
+					"modern_allstar"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(KillZombiesInTime@CurrentLevel)", 
+						"RTID(SpendSunHoldout@CurrentLevel)", 
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"KillZombiesInTime"
+			], 
+			"objclass": "StarChallengeKillZombiesInTimeProps", 
+			"objdata": {
+				"ZombiesToKill": 12, 
+				"Time": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"SpendSunHoldout"
+			], 
+			"objclass": "StarChallengeSpendSunHoldoutProps", 
+			"objdata": {
+				"HoldoutSeconds": 10
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			], 
+			"objclass": "StarChallengePlantFoodNonuseProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"pvz1CopycatsModule"
+			], 
+			"objclass": "PVZ1CopycatsModuleProperties", 
+			"objdata": {
+				"ZombieWeight": 0.3, 
+				"PlantBlackList": [
+					"forg", 
+					"powerlily", 
+					"squash", 
+					"jalapeno", 
+					"gravebuster", 
+					"imitater", 
+					"cherry_bomb", 
+					"empea", 
+					"powerplant", 
+					"coffeebean", 
+					"lilypad", 
+					"flowerpot", 
+					"heathseeker", 
+					"tanglekelp", 
+					"guacodile", 
+					"ghostpepper", 
+					"hurrikale", 
+					"olive", 
+					"cobcannon", 
+					"hotpotato", 
+					"goldleaf", 
+					"flattenedshroom", 
+					"goldbloom", 
+					"lavaguava", 
+					"jackfruit", 
+					"thymewarp", 
+					"intensivecarrot", 
+					"grapeshot", 
+					"escaperoot", 
+					"pumpkin", 
+					"powervine", 
+					"perfumeshroom", 
+					"kelpguard", 
+					"oxygenalgae", 
+					"seashroom"
+				], 
+				"ZombieWhiteList": [
+					"tutorial", 
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"tutorial_flag", 
+					"tutorial_gargantuar", 
+					"tutorial_imp", 
+					"modern_balloon", 
+					"modern_allstar", 
+					"modern_superfanimp", 
+					"beghouled_newspaper", 
+					"newspaper_veteran", 
+					"modern_newspaper", 
+					"explosion_proof", 
+					"modern_solar_truck", 
+					"modern_miner"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"minigame_imitater", 
+					"minigame_imitater", 
+					"minigame_imitater", 
+					"minigame_imitater", 
+					"minigame_imitater", 
+					"jalapeno", 
+					"squash", 
+					"cherry_bomb"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"DescriptionName": "[PVZ1MODE_COPYCATS]", 
+				"Description": "[PVZ1MODE_COPYCATS_NORMAL_DESC]", 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

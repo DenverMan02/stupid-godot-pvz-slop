@@ -1,0 +1,189 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"Name": "[VASEBREAKER_BEACH_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "giftbox", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(LilypadPlacement@CurrentLevel)", 
+					"RTID(Tide@CurrentLevel)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 9
+			}
+		}, 
+		{
+			"aliases": [
+				"LilypadPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"TypeName": "lilypad"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "beach_fem", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "beach_fem_armor1", 
+						"Count": 6
+					}, 
+					{
+						"ZombieTypeName": "beach_fem_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "beach_gargantuar", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "beach_octopus", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "beach_imp", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "stickybombrice", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "matchflower", 
+						"Count": 1
+					}, 
+					{
+						"PlantTypeName": "tupistrastalker", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "pinkstarfruit", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "hocuscrocus", 
+						"Count": 1
+					}, 
+					{
+						"PlantTypeName": "horsebean", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 2, 
+				"NumColoredZombieVases": 4
+			}
+		}
+	]
+}

@@ -1,0 +1,386 @@
+{
+	"#comment": "LOD 236", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "pvzheroes_postlaunch", 
+				"FirstIntroNarrative": "HEROES_EVENT_002_INTRO", 
+				"IsLevelOfTheDay": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayIntro@LevelModules)", 
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(HeroesStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(ZombieDistance@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombieDistance"
+			], 
+			"objclass": "StarChallengeZombieDistanceProps", 
+			"objdata": {
+				"TargetDistance": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 5, 
+				"PointIncrementPerWave": 175, 
+				"StartingPoints": 300, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 3, 
+				"ZombiePool": [
+					"RTID(eighties_arcade@ZombieTypes)", 
+					"RTID(pharaoh@ZombieTypes)", 
+					"RTID(eighties_armor2@ZombieTypes)", 
+					"RTID(dark_wizard@ZombieTypes)", 
+					"RTID(eighties_armor1@ZombieTypes)", 
+					"RTID(iceage_dodo@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.9, 
+				"MinNextWaveHealthPercentage": 0.8, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1ModConveyor0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 3, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 6, 
+						"MaxPackets": 2
+					}, 
+					{
+						"Delay": 9, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 12, 
+						"MaxPackets": 8
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"PlantType": "iceburg", 
+						"Weight": 25
+					}, 
+					{
+						"MaxCount": 8, 
+						"MaxWeightFactor": 0.25, 
+						"MinCount": 2, 
+						"MinWeightFactor": 3, 
+						"PlantType": "peashooter", 
+						"Weight": 100
+					}, 
+					{
+						"PlantType": "repeater", 
+						"Weight": 50
+					}, 
+					{
+						"MaxCount": 1, 
+						"MaxCountCooldownSeconds": 25, 
+						"MaxWeightFactor": 1, 
+						"PlantType": "snowpea", 
+						"Weight": 100
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1ModConveyor0"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"MaxCount": 1, 
+						"MaxCountCooldownSeconds": 20, 
+						"MaxWeightFactor": 0, 
+						"Type": "RTID(powerlily@PlantTypes)", 
+						"Weight": 200
+					}
+				], 
+				"Remove": []
+			}
+		}
+	], 
+	"version": 1
+}

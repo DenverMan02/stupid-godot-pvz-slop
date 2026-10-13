@@ -1,0 +1,155 @@
+{
+	"#comment": "Eighties Zomboss", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "drop_the_mic", 
+				"Description": "[PLAYERS_TRIP_TO_EIGHTIES]", 
+				"FlickPowerupRightEdgeOffset": -160, 
+				"ForceToWorldMap": true, 
+				"LevelNumber": 25, 
+				"LoadDefaultMusic": false, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossMechLastStandIntro@CurrentLevel)", 
+					"RTID(Speakers@CurrentLevel)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(LastStandSeedBank@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[EIGHTIES_LAST1]", 
+				"NormalPresentTable": "eighties_normal_01", 
+				"RepeatPlayForceToWorldMap": true, 
+				"ShinyPresentTable": "eighties_shiny_01", 
+				"StageModule": "RTID(EightiesStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_eighties_TimeTravel_normal", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 4
+				}, 
+				"ZombossStageCount": 5, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechLastStandIntro"
+			], 
+			"objclass": "ZombossMechLastStandIntroProperties", 
+			"objdata": {
+				"PanEndOffset": 468, 
+				"PanLeftDuration": 1.5, 
+				"PanRightDuration": 1.5, 
+				"PanStartOffset": 78, 
+				"ResourceGroupNames": [], 
+				"StartingPlantfood": 2, 
+				"StartingSun": 2000, 
+				"ZombossPhaseCount": 5, 
+				"SkipShowingStreetBossBattle": true
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"Speakers"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "speaker_zomboss"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "speaker_zomboss"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "speaker_zomboss"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "speaker_zomboss"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "speaker_zomboss"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"ManualStartup": true, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"Waves": []
+			}
+		}
+	], 
+	"version": 1
+}

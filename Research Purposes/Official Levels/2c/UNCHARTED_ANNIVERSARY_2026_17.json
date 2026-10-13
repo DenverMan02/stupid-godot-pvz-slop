@@ -1,0 +1,998 @@
+{
+	"#comment": "Anniversary 2026", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ANNIVERSARY]", 
+				"LevelNumber": 17, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"IsArtifactDisabled": true, 
+				"StartingSun": 400, 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelPowerups@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[ANNIVERSARY_10TH_NAME_17]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(DeepseaStage@LevelModules)", 
+				"ShowZombies": [
+					"fat_dive", 
+					"priest", 
+					"lanternfish_rider", 
+					"poseidon_assistant", 
+					"cthulhu_jelly_fish", 
+					"atlantis_basic", 
+					"atlantis_flag", 
+					"atlantis_armor1", 
+					"atlantis_armor2", 
+					"atlantis_gargantuar", 
+					"atlantis_armor4"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult1@CurrentLevel)", 
+					"RTID(Difficult2@CurrentLevel)", 
+					"RTID(Difficult3@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult1"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 1, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_1@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(specialist_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(supporter_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(plant_damage_reduced_difficulty_1@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_2@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_attack_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(anniversary_2026_17_damage_reduced_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(sun_reduced_difficulty_2@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult3"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 3, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_3@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_speed_difficulty_3@LevelModifierModuleCollection)", 
+					"RTID(zombie_level_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelPowerups"
+			], 
+			"objclass": "LevelPowerupModuleProperties", 
+			"objdata": {
+				"Powerups": [
+					{
+						"TypeName": "poweruppinchzombie", 
+						"FreeUseCount": 3
+					}, 
+					{
+						"TypeName": "powerupflickzombie", 
+						"FreeUseCount": 3
+					}, 
+					{
+						"TypeName": "powerupwizardfinger", 
+						"FreeUseCount": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser", 
+				"PlantPriorList": [
+					"auqaweed", 
+					"kelpguard", 
+					"oxygenalgae", 
+					"seashroom", 
+					"seashooter", 
+					"seaderris"
+				], 
+				"PlantBlackList": [
+					"snapdragon", 
+					"jalapeno", 
+					"torchwood", 
+					"firegourd", 
+					"fireshroom", 
+					"firepeashooter", 
+					"pepperpult", 
+					"dragonfruit", 
+					"matchflower", 
+					"flamelady", 
+					"wasabiwhip", 
+					"hotdate", 
+					"inferno", 
+					"jackolantern", 
+					"gluttonydragon", 
+					"pyrevine", 
+					"twinshoneysuckle", 
+					"rheumnobile", 
+					"lavaguava", 
+					"pinecone", 
+					"sapfling", 
+					"primalpeashooter", 
+					"olivepit", 
+					"olive", 
+					"buttercup", 
+					"icelotus", 
+					"buduhboom", 
+					"bowlingbulb", 
+					"lemon", 
+					"winterrambutan", 
+					"chestnut", 
+					"turkeypult", 
+					"devilsflower", 
+					"maybee", 
+					"sunflower", 
+					"birthsunflower", 
+					"goldbloom", 
+					"happyleek", 
+					"twinsunflower", 
+					"primalsunflower", 
+					"paphiopedilum", 
+					"bamboo", 
+					"strawburst", 
+					"mulberry", 
+					"witchhazel", 
+					"coldsnapdragon", 
+					"grimrose", 
+					"sporeshroom", 
+					"guardshroom", 
+					"perfumeshroom", 
+					"wizardthorns", 
+					"cthulhuactinia", 
+					"beanchemist", 
+					"zoybeanpod", 
+					"springprincess", 
+					"ents", 
+					"hammerflower", 
+					"beercoconut", 
+					"nukelauncher", 
+					"stickybombrice", 
+					"bearberry", 
+					"snappea", 
+					"parsnip", 
+					"whitemelon", 
+					"escaperoot", 
+					"primalrafflesia", 
+					"grapeshot", 
+					"banana", 
+					"byttneriameteorhammer", 
+					"tupistrastalker", 
+					"kiwibeast", 
+					"agave", 
+					"greenturnip", 
+					"jackfruit", 
+					"pumpkinwitch", 
+					"eywa", 
+					"plantain", 
+					"doublesamara", 
+					"lilypad", 
+					"tristerixaphyllus", 
+					"chainsawburmannii", 
+					"meteorflower", 
+					"burdockbatter", 
+					"fishhookgrass", 
+					"headbutterlettuce", 
+					"gumnut", 
+					"eleocurling", 
+					"alarmsagittifolia", 
+					"boomflower", 
+					"shadowvanilla", 
+					"monotropa", 
+					"vanilla", 
+					"cottonyeti", 
+					"cracker", 
+					"waxgourd", 
+					"firecrackerflower", 
+					"rapeflower", 
+					"vamporcini", 
+					"applemortar", 
+					"dusklobber", 
+					"tanglekelp", 
+					"imppear", 
+					"carrotlauncher", 
+					"hollyknight", 
+					"missiletoe", 
+					"clawgloriosa", 
+					"springbean", 
+					"iceweed", 
+					"hurrikale", 
+					"oakshooter", 
+					"jewelrabbit", 
+					"mapleblade", 
+					"broccoli", 
+					"rhubarbarian", 
+					"lancerhoya", 
+					"spikeweed", 
+					"caulipower", 
+					"iceshroom", 
+					"spikerock", 
+					"egretflower", 
+					"mandrake", 
+					"sweetpotato", 
+					"magicshroom", 
+					"hypnoshroom", 
+					"dragonbruit", 
+					"icycurrant", 
+					"electriccurrant", 
+					"dragonroar", 
+					"actinostemma", 
+					"animnuts", 
+					"homingthistle", 
+					"umbrellaleaf", 
+					"duckpear", 
+					"sunflowerzombie", 
+					"glaciershroom"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 6, 
+				"WaveCount": 18, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)", 
+						"RTID(Wave6TideWaveEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)", 
+						"RTID(Wave12TideWaveEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)", 
+						"RTID(Wave18TideWaveEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Row": "3", 
+						"Type": "RTID(fat_dive@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_armor1@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Row": "3", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Row": "3", 
+						"Type": "RTID(poseidon_assistant@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_armor4@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(lanternfish_rider@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Row": "3", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_armor1@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_armor2@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Row": "3", 
+						"Type": "RTID(lanternfish_rider@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Row": "3", 
+						"Type": "RTID(fat_dive@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor2@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor4@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Row": "3", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor1@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(poseidon_assistant@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor4@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(poseidon_assistant@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor4@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(poseidon_assistant@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_armor1@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(fat_dive@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor1@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor4@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Direction": "left", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_basic@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(lanternfish_rider@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(priest@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(poseidon_assistant@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesFishWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Direction": "right", 
+						"Row": "3", 
+						"Type": "RTID(atlantis_flag@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Row": "3", 
+						"Type": "RTID(cthulhu_jelly_fish@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Row": "3", 
+						"Type": "RTID(atlantis_armor2@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(fat_dive@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Type": "RTID(atlantis_armor4@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Type": "RTID(poseidon_assistant@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Row": "1", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "left", 
+						"Row": "3", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Direction": "right", 
+						"Row": "5", 
+						"Type": "RTID(atlantis_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6TideWaveEvent0"
+			], 
+			"objclass": "TideWaveWaveActionProps", 
+			"objdata": {
+				"Type": "right", 
+				"Duration": 10.0, 
+				"SubmarineMovingDistance": 1, 
+				"SpeedUpDuration": 3.0, 
+				"SpeedUpIncreased": 2.0, 
+				"SubmarineMovingTime": 1.5, 
+				"ZombieMovingSpeed": 180.0
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12TideWaveEvent0"
+			], 
+			"objclass": "TideWaveWaveActionProps", 
+			"objdata": {
+				"Type": "left", 
+				"Duration": 10.0, 
+				"SubmarineMovingDistance": 1, 
+				"SpeedUpDuration": 3.0, 
+				"SpeedUpIncreased": 2.0, 
+				"SubmarineMovingTime": 1.5, 
+				"ZombieMovingSpeed": 180.0
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18TideWaveEvent0"
+			], 
+			"objclass": "TideWaveWaveActionProps", 
+			"objdata": {
+				"Type": "right", 
+				"Duration": 10.0, 
+				"SubmarineMovingDistance": 1, 
+				"SpeedUpDuration": 3.0, 
+				"SpeedUpIncreased": 2.0, 
+				"SubmarineMovingTime": 1.5, 
+				"ZombieMovingSpeed": 180.0
+			}
+		}
+	], 
+	"version": 1
+}

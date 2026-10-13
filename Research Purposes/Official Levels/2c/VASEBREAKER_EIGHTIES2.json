@@ -1,0 +1,110 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 2", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 2, 
+				"Name": "[VASEBREAKER_EIGHTIES_LEVEL_NAME_2]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(EightiesStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 1, 
+				"WaveCount": 1, 
+				"SuppressFlagZombie": true, 
+				"ZombieCountdownFirstWaveSecs": 0, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"NotificationEvents": [
+					"jam_pop"
+				], 
+				"AdditionalPlantfood": 0, 
+				"Zombies": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 2, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "eighties", 
+						"Count": 7
+					}, 
+					{
+						"ZombieTypeName": "eighties_gargantuar", 
+						"Count": 6
+					}, 
+					{
+						"ZombieTypeName": "eighties_arcade", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "turkeypult", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "splitpea", 
+						"Count": 7
+					}, 
+					{
+						"PlantTypeName": "pokra", 
+						"Count": 3
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 1
+			}
+		}
+	]
+}

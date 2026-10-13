@@ -1,0 +1,178 @@
+{
+	"#comment": "Tutorial 1", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_HOUSE]", 
+				"FirstRewardParam": "sunflower", 
+				"FirstRewardType": "seed_packet", 
+				"ForceNextLevel": "tutorial2", 
+				"LevelNumber": 1, 
+				"LevelIndex": 1, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialPeashooterDeath@LevelModules)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[TUTORIAL_LEVEL_NAME]", 
+				"ReplayRewardParam": "endlevelreward", 
+				"ReplayRewardType": "collectable", 
+				"StageModule": "RTID(TutorialStage@LevelModules)", 
+				"StartingSun": 150, 
+				"SuppressVictoryScreen": true, 
+				"ShowZombies": [
+					"tutorial"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"FlagWaveInterval": 3, 
+				"IgnoreFlagCarriers": true, 
+				"LevelXMLFilename": "tutorial1.xml", 
+				"ResourceGroupNames": [
+					"SodRollGroup", 
+					"PlantSunflower", 
+					"PlantWallnut", 
+					"PlantWallnutAudio", 
+					"PlantPotatomine", 
+					"PlantPotatomineAudio"
+				], 
+				"WaveCount": 3, 
+				"WaveSpendingPointIncrement": 10, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}
+				], 
+				"define_level": {
+					"define_wave": [
+						{
+							"set_override": true, 
+							"set_wave_number": 1, 
+							"spawn_zombie": [
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}
+							]
+						}, 
+						{
+							"set_override": true, 
+							"set_wave_number": 2, 
+							"spawn_zombie": [
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}, 
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}
+							]
+						}, 
+						{
+							"set_override": true, 
+							"set_wave_number": 3, 
+							"spawn_zombie": [
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}, 
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}, 
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}, 
+								{
+									"row": "3", 
+									"zombie_type": "tutorial"
+								}
+							]
+						}
+					], 
+					"set_flag_wave_interval": 3, 
+					"set_ignore_flag_carriers": true, 
+					"set_wave_count": 3, 
+					"set_wave_spending_point_increment": 10, 
+					"set_wave_spending_points": 100
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"peashooter"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"TutorialIntro"
+			], 
+			"objclass": "TutorialLevel1Properties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

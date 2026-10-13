@@ -1,0 +1,814 @@
+{
+	"#comment": "Skycity Challenge Besiege A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SKYCITY]", 
+				"LevelIndex": 837, 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(BesiegeIntro@CurrentLevel)", 
+					"RTID(Besiege@CurrentLevel)", 
+					"RTID(BesiegeSeedBank@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(BesiegeWaves@CurrentLevel)"
+				], 
+				"Name": "[CHALLENGE_BESIEGN_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(SkycityStage@LevelModules)", 
+				"ShowZombies": [
+					"skycity_battleplane", 
+					"skycity", 
+					"skycity_armor2", 
+					"skycity_electric", 
+					"skycity_armor1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"BesiegeIntro"
+			], 
+			"objclass": "BesiegeIntroProperties", 
+			"objdata": {
+				"BesiegeStage": 1
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_BESIEGN]", 
+				"DescriptiveName": "[STARCHALLENGE_BESIEGN_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"BesiegeSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"puffshroom", 
+					"threepeater", 
+					"snowpea", 
+					"BesiegeBox"
+				], 
+				"SelectionMethod": "preset", 
+				"GridItemMode": true
+			}
+		}, 
+		{
+			"aliases": [
+				"Besiege"
+			], 
+			"objclass": "BesiegeProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"SingleHandedGroup"
+				], 
+				"StartingSun": 300, 
+				"StartingPlantfood": 1, 
+				"HomeHP": 20, 
+				"HPIncrease": 0.4, 
+				"StartGrid": [
+					{
+						"X": 9, 
+						"Y": 5
+					}
+				], 
+				"TargetGrid": {
+					"X": 0, 
+					"Y": 5
+				}, 
+				"InitialBoxGrid": [
+					{
+						"X": 3, 
+						"Y": 2
+					}, 
+					{
+						"X": 3, 
+						"Y": 3
+					}, 
+					{
+						"X": 3, 
+						"Y": 4
+					}, 
+					{
+						"X": 5, 
+						"Y": 2
+					}, 
+					{
+						"X": 5, 
+						"Y": 4
+					}, 
+					{
+						"X": 6, 
+						"Y": 2
+					}, 
+					{
+						"X": 6, 
+						"Y": 4
+					}, 
+					{
+						"X": 7, 
+						"Y": 2
+					}, 
+					{
+						"X": 7, 
+						"Y": 4
+					}, 
+					{
+						"X": 8, 
+						"Y": 2
+					}, 
+					{
+						"X": 8, 
+						"Y": 4
+					}, 
+					{
+						"X": 9, 
+						"Y": 4
+					}
+				], 
+				"Trees": [
+					{
+						"Infos": [
+							{
+								"cost": 25, 
+								"launchtimepercent": 1, 
+								"name": "puffshroom"
+							}, 
+							{
+								"cost": 150, 
+								"launchtimepercent": 0.7, 
+								"name": "fumeshroom"
+							}, 
+							{
+								"cost": 300, 
+								"launchtimepercent": 0.6, 
+								"name": "laser_bean"
+							}
+						]
+					}, 
+					{
+						"Infos": [
+							{
+								"cost": 100, 
+								"launchtimepercent": 1, 
+								"name": "threepeater"
+							}, 
+							{
+								"cost": 175, 
+								"launchtimepercent": 0.8, 
+								"name": "xshot"
+							}, 
+							{
+								"cost": 250, 
+								"launchtimepercent": 0.6, 
+								"name": "starfruit"
+							}
+						]
+					}, 
+					{
+						"Infos": [
+							{
+								"cost": 50, 
+								"launchtimepercent": 1, 
+								"name": "snowpea"
+							}, 
+							{
+								"cost": 150, 
+								"launchtimepercent": 0.7, 
+								"name": "melonpult"
+							}, 
+							{
+								"cost": 400, 
+								"launchtimepercent": 0.4, 
+								"name": "wintermelon"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"BesiegeWaves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 0, 
+				"WaveSpendingPoints": 0, 
+				"IgnoreFlagCarriers": true, 
+				"Waves": [
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"SunDrop": 15, 
+								"ZombieRate": 5, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 15, 
+								"ZombieRate": 5, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 20, 
+								"ZombieRate": 5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 20, 
+								"ZombieRate": 5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 20, 
+								"ZombieRate": 5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 20, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 20, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 25, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 25, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 25, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 30, 
+								"ZombieRate": 4.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 40, 
+								"ZombieRate": 4.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 4.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 4.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 100, 
+								"ZombieRate": 2, 
+								"BesiegeHit": 2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_battleplane@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 35, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 40, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 40, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 4, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 40, 
+								"ZombieRate": 3.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 40, 
+								"ZombieRate": 3.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 3.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 3.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 45, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 55, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 55, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 3.5, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 50, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 65, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 65, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 55, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 55, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 3.2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"SunDrop": 55, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 55, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 70, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 70, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 70, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 65, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 65, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"ZombieRate": 1.9, 
+								"BesiegeHit": 2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_battleplane@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"WaitUntilAllZombiesDie": true, 
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 100, 
+						"WavePointIncrement": 120, 
+						"Zombies": [
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 60, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 65, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 65, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor1@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 70, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 70, 
+								"ZombieRate": 2.8, 
+								"Row": "5", 
+								"Type": "RTID(skycity_armor2@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 75, 
+								"ZombieRate": 3, 
+								"Row": "5", 
+								"Type": "RTID(skycity_electric@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"ZombieRate": 1.8, 
+								"BesiegeHit": 2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_battleplane@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"ZombieRate": 1.8, 
+								"BesiegeHit": 2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_battleplane@ZombieTypes)"
+							}, 
+							{
+								"SunDrop": 125, 
+								"ZombieRate": 1.8, 
+								"BesiegeHit": 2, 
+								"Row": "5", 
+								"Type": "RTID(skycity_battleplane@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

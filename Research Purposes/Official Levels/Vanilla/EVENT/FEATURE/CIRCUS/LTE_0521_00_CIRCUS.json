@@ -1,0 +1,416 @@
+{
+	"#comment": "Level Of The Day Test 2", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "none", 
+				"FirstIntroNarrative": "", 
+				"LevelNumber": 21, 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"SuppressPlantfoodPurchase": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_CIRCUS]", 
+				"StageModule": "RTID(CarnivalStage@LevelModules)", 
+				"StartingSun": 250, 
+				"SuppressPlantfoodPurchase": true
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 1, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 150, 
+				"StartingPoints": 25, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 9, 
+				"ZombiePool": [
+					"RTID(carnie@ZombieTypes)", 
+					"RTID(carnie_armor1@ZombieTypes)", 
+					"RTID(carnie_armor2@ZombieTypes)", 
+					"RTID(carnie_cannon@ZombieTypes)", 
+					"RTID(carnie_magician@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 6, 
+						"GridY": 0
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 0
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 1
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantExcludeList": [
+					"spearmint", 
+					"peppermint", 
+					"appeasemint", 
+					"concealmint", 
+					"filamint", 
+					"wintermint", 
+					"bombardmint", 
+					"armamint", 
+					"ailmint", 
+					"reinforcemint", 
+					"containmint", 
+					"enchantmint", 
+					"enchantmint", 
+					"enforcemint", 
+					"enlightenmint", 
+					"blover"
+				], 
+				"PresetPlantList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.9, 
+				"MinNextWaveHealthPercentage": 0.8, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2PortalsEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)", 
+						"RTID(Wave3PortalsEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)", 
+						"RTID(Wave4PortalsEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)", 
+						"RTID(Wave6PortalsEvent0@CurrentLevel)", 
+						"RTID(Wave6PortalsEvent1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave8PortalsEvent0@CurrentLevel)", 
+						"RTID(Wave8PortalsEvent1@CurrentLevel)", 
+						"RTID(Wave8PortalsEvent2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2PortalsEvent0"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 7, 
+				"PortalRow": 0, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3PortalsEvent0"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 7, 
+				"PortalRow": 4, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4PortalsEvent0"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 6, 
+				"PortalRow": 2, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6PortalsEvent0"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 5, 
+				"PortalRow": 1, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6PortalsEvent1"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 5, 
+				"PortalRow": 3, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8PortalsEvent0"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 4, 
+				"PortalRow": 0, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8PortalsEvent1"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 4, 
+				"PortalRow": 4, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8PortalsEvent2"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 6, 
+				"PortalRow": 1, 
+				"PortalType": "circus1", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}
+	], 
+	"version": 1
+}

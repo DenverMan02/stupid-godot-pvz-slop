@@ -1,0 +1,141 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_QIN]", 
+				"LevelNumber": 1, 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(QinGhostMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(TunnelDefend2Default0@LevelModules)", 
+					"RTID(PVZ2MausoleumModuleUnchartedMode@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(GridItemDangerRoomModule@CurrentLevel)"
+				], 
+				"Name": "[NOQIN_LEVEL_NAME_DANGERROOM]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"DisablePeavine": true, 
+				"IsArtifactDisabled": true, 
+				"StartingSun": 100, 
+				"VictoryModule": "RTID(MausoleumOutro@LevelModules)", 
+				"StageModule": "RTID(UnchartedMausoleumBossStage@LevelModules)", 
+				"ShowZombies": [
+					"mausoleum_basic", 
+					"mausoleum_flag", 
+					"mausoleum_armor1", 
+					"mausoleum_armor2", 
+					"mausoleum_gargantuar", 
+					"mausoleum_imp", 
+					"mausoleum_vendor", 
+					"mausoleum_piggy", 
+					"mausoleum_archer", 
+					"qin_shield_segment", 
+					"qin_jingke", 
+					"qin_taoist", 
+					"mausoleum_basic_ghost", 
+					"mausoleum_armor1_ghost", 
+					"mausoleum_armor2_ghost", 
+					"mausoleum_gargantuar_ghost", 
+					"qin_jingke_ghost", 
+					"mausoleum_archer_ghost", 
+					"mausoleum_drunkard_ghost", 
+					"mausoleum_drunkard", 
+					"qin_mystic_formation_defense", 
+					"qin_mystic_formation_summon"
+				]
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"GridItemDangerRoomModule"
+			], 
+			"objclass": "InitialGridItemDangerRoomModuleProperties", 
+			"objdata": {
+				"GridMinX": 5, 
+				"GridMaxX": 8, 
+				"GridItemNumber": 5, 
+				"TypeName": [
+					"enchantment_summon", 
+					"enchantment_defence"
+				]
+			}
+		}, 
+		{
+			"objclass": "MausoleumDangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"LevelDesigners": [
+					"RTID(EgyptDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EgyptDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(mausoleum_basic@ZombieTypes)", 
+					"RTID(mausoleum_armor1@ZombieTypes)", 
+					"RTID(mausoleum_armor2@ZombieTypes)", 
+					"RTID(mausoleum_gargantuar@ZombieTypes)", 
+					"RTID(mausoleum_imp@ZombieTypes)", 
+					"RTID(mausoleum_vendor@ZombieTypes)", 
+					"RTID(mausoleum_piggy@ZombieTypes)", 
+					"RTID(mausoleum_archer@ZombieTypes)", 
+					"RTID(qin_shield_segment@ZombieTypes)", 
+					"RTID(qin_jingke@ZombieTypes)", 
+					"RTID(qin_taoist@ZombieTypes)", 
+					"RTID(mausoleum_basic_ghost@ZombieTypes)", 
+					"RTID(mausoleum_armor1_ghost@ZombieTypes)", 
+					"RTID(mausoleum_armor2_ghost@ZombieTypes)", 
+					"RTID(mausoleum_gargantuar_ghost@ZombieTypes)", 
+					"RTID(qin_jingke_ghost@ZombieTypes)", 
+					"RTID(mausoleum_archer_ghost@ZombieTypes)", 
+					"RTID(mausoleum_drunkard_ghost@ZombieTypes)", 
+					"RTID(mausoleum_drunkard@ZombieTypes)", 
+					"RTID(qin_mystic_formation_defense@ZombieTypes)", 
+					"RTID(qin_mystic_formation_summon@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "MausoleumSeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"powerlily"
+				], 
+				"SelectionMethod": "chooser", 
+				"SeedChooserType": "UIMausoleumSeedChooser", 
+				"SeedPacketType": "UIMausoleumSeedPacket"
+			}
+		}
+	], 
+	"version": 1
+}

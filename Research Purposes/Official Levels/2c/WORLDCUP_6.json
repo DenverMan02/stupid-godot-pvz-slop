@@ -1,0 +1,1939 @@
+{
+	"#comment": "iceage Last Stand A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"LevelIndex": 312, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"ForceNextLevel": "WorldCup_7", 
+				"Modules": [
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(WorldCupSeedBank@CurrentLevel)", 
+					"RTID(WorldCupIntro@CurrentLevel)", 
+					"RTID(WorldcupRails@CurrentLevel)", 
+					"RTID(SoccerGame@CurrentLevel)"
+				], 
+				"NormalPresentTable": "iceage_normal_01", 
+				"ShinyPresentTable": "iceage_shiny_01", 
+				"StageModule": "RTID(SoccerStage@LevelModules)", 
+				"VictoryModule": "RTID(SoccerGameWinOutro@LevelModules)", 
+				"CanSaveGameState": false, 
+				"IsWorldCup": true, 
+				"MusicType": "MiniGame_A", 
+				"ShowZombies": [
+					"iceage_armor3", 
+					"iceage_armor1", 
+					"iceage_armor2", 
+					"iceage_troglobite", 
+					"iceage_weasel", 
+					"iceage"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldcupRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_worldcup", 
+				"Railcarts": [
+					{
+						"Column": 1, 
+						"Row": 0
+					}, 
+					{
+						"Column": 1, 
+						"Row": 4
+					}, 
+					{
+						"Column": 2, 
+						"Row": 0
+					}, 
+					{
+						"Column": 2, 
+						"Row": 4
+					}, 
+					{
+						"Column": 3, 
+						"Row": 0
+					}, 
+					{
+						"Column": 3, 
+						"Row": 4
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 2, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 0, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 2
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SoccerGame"
+			], 
+			"objclass": "SoccerGameModuleProperties", 
+			"objdata": {
+				"GameTime": 180, 
+				"PassTime": 7, 
+				"RoundIndex": 6, 
+				"ZombieWinPositionX": -80
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "SoccerWaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage_armor3@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(iceage_gargantuar@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 36, 
+				"LevelXMLFilename": "iceage_challenge_laststand_a.xml", 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 7, 
+				"WaveCount": 36, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 600, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_troglobite@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_weasel@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor1@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "5", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage_armor3@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "1", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "4", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "3", 
+								"Type": "RTID(iceage@ZombieTypes)"
+							}, 
+							{
+								"Level": 2, 
+								"Row": "2", 
+								"Type": "RTID(iceage_armor2@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldCupSeedBank"
+			], 
+			"objclass": "WorldCupSeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "worldcup"
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldCupIntro"
+			], 
+			"objclass": "WorldCupProperties", 
+			"objdata": {
+				"StartingPlantfood": 2, 
+				"IsTutorial": false
+			}
+		}
+	], 
+	"version": 1
+}

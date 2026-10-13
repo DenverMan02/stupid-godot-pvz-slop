@@ -1,0 +1,1127 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SOUDACHE]", 
+				"LevelNumber": 53, 
+				"IsArtifactDisabled": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@CurrentLevel)", 
+					"RTID(SouDaCheSeedBankModule@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SouDaCheLevelModule@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SouDaCheStabilityModule@CurrentLevel)", 
+					"RTID(SouDaCheDamageTextModule@CurrentLevel)", 
+					"RTID(SoudacheModule@LevelModules)", 
+					"RTID(SouDaCheGravestoneModuleD1_2_3@LevelModules)", 
+					"RTID(BondBufferModule@LevelModules)", 
+					"RTID(SoudacheTunnelDefendStage2@LevelModules)", 
+					"RTID(DefaultBoardTimer@LevelModules)"
+				], 
+				"Name": "[S15_MEMORY_LEVEL_NAME_001_H]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(SouDaCheOutro@LevelModules)", 
+				"StageModule": "RTID(SouDaCheStage@LevelModules)", 
+				"ShowZombies": [
+					"kongfu_basic", 
+					"kongfu_basic_armor1", 
+					"kongfu_basic_armor2", 
+					"kongfu_basic_armor4", 
+					"kongfu_gong", 
+					"kongfu_drink", 
+					"kongfu_hammer", 
+					"kongfu_torch", 
+					"kongfu_selfexplode", 
+					"kongfu_strong_bronze"
+				]
+			}
+		}, 
+		{
+			"objclass": "StandardLevelIntroProperties", 
+			"aliases": [
+				"StandardIntro"
+			], 
+			"objdata": {
+				"PanStartOffset": 78, 
+				"PanEndOffset": 468, 
+				"PanRightDuration": 2.0, 
+				"PanLeftDuration": 2.5, 
+				"SkipShowingStreet": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)", 
+						"RTID(SpendSunHoldout@CurrentLevel)", 
+						"RTID(KillZombiesInTime@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"SunProduced"
+			], 
+			"objclass": "StarChallengeSunProducedProps", 
+			"objdata": {
+				"TargetSun": 8000
+			}
+		}, 
+		{
+			"aliases": [
+				"SpendSunHoldout"
+			], 
+			"objclass": "StarChallengeSpendSunHoldoutProps", 
+			"objdata": {
+				"HoldoutSeconds": 12
+			}
+		}, 
+		{
+			"aliases": [
+				"KillZombiesInTime"
+			], 
+			"objclass": "StarChallengeKillZombiesInTimeProps", 
+			"objdata": {
+				"ZombiesToKill": 12, 
+				"Time": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"SouDaCheSeedBankModule"
+			], 
+			"objclass": "SouDaCheSeedBankModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"SouDaCheLevelModule"
+			], 
+			"objclass": "SouDaCheLevelModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 19, 
+				"SuppressFlagZombie": true, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"DescriptionName": "[PVZ1MODE_SANDSTORM]", 
+				"Description": "[PVZ1MODE_SANDSTORM_NORMAL_DESC]", 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave19@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_gong@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_strong_bronze@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_strong_bronze@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_drink@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_strong_bronze@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave19"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": 1, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 5, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_basic_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": 2, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}, 
+					{
+						"Row": 4, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 2, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Row": 3, 
+						"Level": 1, 
+						"Type": "RTID(soudache_d1_n12_weaselhoarder_elite@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SouDaCheOutro"
+			], 
+			"objclass": "SouDaCheOutroModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SouDaCheDamageTextModule"
+			], 
+			"objclass": "SouDaCheDamageTextModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SouDaCheStabilityModule"
+			], 
+			"objclass": "SouDaCheStabilityModuleProperties", 
+			"objdata": {
+				"ZombieWinPositionX": -80.0
+			}
+		}
+	], 
+	"version": 1
+}

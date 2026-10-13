@@ -1,0 +1,148 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_QIN]", 
+				"LevelNumber": 10, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossLastStand@CurrentLevel)", 
+					"RTID(PVZ2MausoleumModuleUnchartedMode@LevelModules)", 
+					"RTID(TunnelDefend2Default0@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(FinalStageTimeLimitedChallenge@LevelModules)"
+				], 
+				"Name": "[NOQIN_LEVEL_NAME_10_H]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"DisablePeavine": true, 
+				"StartingSun": 200, 
+				"VictoryModule": "RTID(MausoleumOutro@LevelModules)", 
+				"StageModule": "RTID(UnchartedMausoleumBoss2Stage@LevelModules)", 
+				"IsArtifactDisabled": true, 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossLastStand"
+			], 
+			"objclass": "ZombossLastStandMinigameProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"PlantSeaderris", 
+					"ZombiePVZ1RobotZombossGroup", 
+					"PlantFlamelady", 
+					"FrostbiteIceBlockPlantGroup", 
+					"UI_MausoleumTunnel", 
+					"ZombossQinShiHuangGroup", 
+					"MausoleumAudio", 
+					"ZombossQinShiHuangAudio"
+				], 
+				"IsRandom": false, 
+				"BossMusic": true, 
+				"StartingPlantfood": 3, 
+				"StartingSun": 0, 
+				"ZombossInitialGridCol": 6, 
+				"ZombossInitialGridRow": 2, 
+				"ZombossStartStageIndex": 0, 
+				"ReservedColumnCount": 3, 
+				"ZombossTypeName": "zomboss_qinshihuang_ghost", 
+				"SkipPlanting": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 3, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 3, 
+						"MaxPackets": 2
+					}, 
+					{
+						"Delay": 4, 
+						"MaxPackets": 6
+					}, 
+					{
+						"Delay": 6, 
+						"MaxPackets": 9
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 3, 
+						"PlantType": "exorcislily", 
+						"iLevel": 1, 
+						"Weight": 60
+					}, 
+					{
+						"MinCount": 5, 
+						"PlantType": "exorcislily", 
+						"iLevel": 1, 
+						"Weight": 60
+					}, 
+					{
+						"MaxCount": 1, 
+						"PlantType": "powerlily", 
+						"iLevel": 1, 
+						"Weight": 30
+					}, 
+					{
+						"MinCount": 5, 
+						"MinWeightFactor": 2, 
+						"PlantType": "laser_bean", 
+						"iLevel": 1, 
+						"Weight": 60
+					}, 
+					{
+						"MaxCount": 2, 
+						"PlantType": "glaciershroom", 
+						"iLevel": 1, 
+						"Weight": 50
+					}, 
+					{
+						"MinCount": 1, 
+						"PlantType": "uncharted_haystack", 
+						"iLevel": 1, 
+						"Weight": 70
+					}, 
+					{
+						"MaxCount": 3, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 1, 
+						"MinWeightFactor": 2, 
+						"PlantType": "gloombara", 
+						"iLevel": 1, 
+						"Weight": 50
+					}, 
+					{
+						"MaxCount": 3, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 1, 
+						"MinWeightFactor": 2, 
+						"PlantType": "jalapeno", 
+						"iLevel": 4, 
+						"Weight": 50
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

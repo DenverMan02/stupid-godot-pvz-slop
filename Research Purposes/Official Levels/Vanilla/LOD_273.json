@@ -1,0 +1,195 @@
+{
+	"#comment": "LOD 273 - Beghouled - Kiwibeast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 1, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "fumeshroom", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "repeater", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "firepeashooter", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [
+					"primalpeashooter", 
+					"threepeater", 
+					"phatbeet"
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 100, 
+				"InitialPlants": [
+					"kiwibeast", 
+					"spikeweed", 
+					"puffshroom", 
+					"peashooter"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "peashooter", 
+						"UpgradedPlant": "repeater"
+					}, 
+					{
+						"BasePlant": "peashooter", 
+						"UpgradedPlant": "firepeashooter"
+					}, 
+					{
+						"BasePlant": "repeater", 
+						"UpgradedPlant": "primalpeashooter"
+					}, 
+					{
+						"BasePlant": "puffshroom", 
+						"UpgradedPlant": "fumeshroom"
+					}, 
+					{
+						"BasePlant": "fumeshroom", 
+						"UpgradedPlant": "phatbeet"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 50, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 75, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_imp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_armor1"
+							}, 
+							{
+								"ZombieType": "future_jetpack"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_armor1"
+							}, 
+							{
+								"ZombieType": "modern_superfanimp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "future_armor1"
+							}, 
+							{
+								"ZombieType": "future_jetpack"
+							}, 
+							{
+								"ZombieType": "modern_superfanimp"
+							}, 
+							{
+								"ZombieType": "modern_newspaper"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

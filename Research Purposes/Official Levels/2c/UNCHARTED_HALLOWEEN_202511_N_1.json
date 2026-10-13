@@ -1,0 +1,321 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_HALLOWEEN]", 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[HALLOWEEN_LEVEL_NAME_01]", 
+				"FirstIntroNarrative": "HALLOWEEN_1_INTRO", 
+				"ReplayIntroNarrative": "HALLOWEEN_1_INTRO", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroPUMPKINHALLOWEEN1@LevelModules)", 
+				"StageModule": "RTID(HalloweenStage@LevelModules)", 
+				"ShowZombies": [
+					"dark_armor1", 
+					"halloween", 
+					"halloween_armor1", 
+					"halloween_armor2", 
+					"pirate", 
+					"fairy_tale_witch"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 4, 
+				"WaveCount": 8, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(wave1pumpkinhouse@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(wave5pumpkinhouse@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(halloween_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(pirate_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"wave1pumpkinhouse"
+			], 
+			"objclass": "PumpkinHouseActionProps", 
+			"objdata": {
+				"Tiles": [
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 1
+						}, 
+						"Type": "pumpkin_house"
+					}, 
+					{
+						"Location": {
+							"mX": 6, 
+							"mY": 3
+						}, 
+						"Type": "pumpkin_house"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"wave5pumpkinhouse"
+			], 
+			"objclass": "PumpkinHouseActionProps", 
+			"objdata": {
+				"Tiles": [
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 0
+						}, 
+						"Type": "pumpkin_house"
+					}, 
+					{
+						"Location": {
+							"mX": 5, 
+							"mY": 4
+						}, 
+						"Type": "pumpkin_house"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

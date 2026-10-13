@@ -1,0 +1,50 @@
+{
+	"#comment": "Future Prototype", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Name": "BROKEN! DO NOT USE!", 
+				"Description": "PROTOTYPE!", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(SpawninZombies@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(CowboySeedBank@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"objclass": "SimpleZombieSpawnerProperties", 
+			"aliases": [
+				"SpawninZombies"
+			], 
+			"objdata": {
+				"Stages": [
+					{
+						"Types": [
+							{
+								"ZombieType": "seagull"
+							}
+						], 
+						"SpawnDelay": 5.0
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "SeedBankProperties", 
+			"aliases": [
+				"CowboySeedBank"
+			], 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}
+	]
+}

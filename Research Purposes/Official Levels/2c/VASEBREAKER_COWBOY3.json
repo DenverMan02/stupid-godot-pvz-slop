@@ -1,0 +1,109 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"CompletionAchievement": "cowboy_vasebreaker_pack", 
+				"Name": "[VASEBREAKER_WEST_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "giftbox", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(CowboyRails@CurrentLevel)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 1
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 1, 
+				"MaxColumnIndex": 7, 
+				"Vases": [
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 1
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 6
+					}, 
+					{
+						"ZombieTypeName": "chicken", 
+						"Count": 4
+					}, 
+					{
+						"PlantTypeName": "spikerock", 
+						"Count": 5
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

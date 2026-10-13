@@ -1,0 +1,377 @@
+{
+	"#comment": "Kongfu Level Bronze Level 1 with conveyor belt 3/13", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"LevelIndex": 458, 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(BronzeDeadWinCon@LevelModules)", 
+					"RTID(Kongfu1Waves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(Armrack@CurrentLevel)", 
+					"RTID(EnergyGrid@CurrentLevel)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(Bronze@CurrentLevel)", 
+					"RTID(RandZombie@CurrentLevel)"
+				], 
+				"Name": "[CHALLENGE_BRONZE_B_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"ShowZombies": [
+					"kongfu_monk_basic", 
+					"kongfu_selfexplode", 
+					"kongfu_monk_cone", 
+					"kongfu_torch"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"RandZombie"
+			], 
+			"objclass": "RandZombieProperties", 
+			"objdata": {
+				"RandZombieList": [
+					{
+						"FirstWave": 1, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 3, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_monk_cone@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 5, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 7, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 4, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 6, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 8, 
+						"MaxPackets": 6
+					}, 
+					{
+						"Delay": 10, 
+						"MaxPackets": 8
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 2, 
+						"PlantType": "kernelpult", 
+						"Weight": 40
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 2, 
+						"PlantType": "tallnut", 
+						"Weight": 40
+					}, 
+					{
+						"MaxCount": 15, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 2, 
+						"PlantType": "lightningreed", 
+						"Weight": 40
+					}, 
+					{
+						"MaxCount": 10, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "snapdragon", 
+						"Weight": 50
+					}, 
+					{
+						"MaxCount": 2, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "squash", 
+						"Weight": 20
+					}, 
+					{
+						"MaxCount": 3, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "coconutcannon", 
+						"Weight": 20
+					}, 
+					{
+						"MaxCount": 1, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "jalapeno", 
+						"Weight": 10
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 30
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Kongfu1Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 5, 
+				"LevelXMLFilename": "pirate_challenge_laststand_a.xml", 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 200, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Bronze"
+			], 
+			"objclass": "BronzeProperties", 
+			"objdata": {
+				"data": [
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 2, 
+								"spawnTime": 70, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 0, 
+								"spawnTime": 140, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 4, 
+								"spawnTime": 140, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 1, 
+								"spawnTime": 210, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 3, 
+								"spawnTime": 210, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}
+				], 
+				"shakeOffset": 0.6
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": []
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": []
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_KONGFU_BRONZE]", 
+				"DescriptiveName": "[STARCHALLENGE_KONGFU_BRONZE_NAME]"
+			}
+		}
+	], 
+	"version": 1
+}

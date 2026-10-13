@@ -1,0 +1,427 @@
+{
+	"#comment": "Egypt Challenge LastStand C", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]", 
+				"FirstOutroNarrative": "EGYPT_CHALLENGE_LASTSTAND_C", 
+				"LevelIndex": 116, 
+				"LevelNumber": 3, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(EgyptMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(LastStandSeedBank@CurrentLevel)", 
+					"RTID(LastStand@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[CHALLENGE_LASTSTAND_C_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"ShowZombies": [
+					"mummy_armor2", 
+					"mummy_armor1", 
+					"pharaoh", 
+					"explorer"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 10, 
+				"LevelXMLFilename": "egypt_challenge_laststand_c.xml", 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 6, 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 800, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Event": {
+							"Count": 16, 
+							"Enabled": true, 
+							"TimeSpread": 8, 
+							"Waves": 8
+						}, 
+						"SpawnColEnd": 7, 
+						"SpawnColStart": 4, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnColEnd": 7, 
+						"SpawnColStart": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": true, 
+						"Event": {
+							"Count": 16, 
+							"Enabled": true, 
+							"TimeSpread": 600, 
+							"Waves": 8
+						}, 
+						"SpawnColEnd": 6, 
+						"SpawnColStart": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(explorer@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(pharaoh@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(mummy_armor2@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"GravestoneCount": 8, 
+				"SpawnColumnEnd": 9, 
+				"SpawnColumnStart": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"iceburg", 
+					"puffshroom", 
+					"gravebuster", 
+					"birthsunflower", 
+					"goldleaf", 
+					"imppear"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStand"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 3, 
+				"StartingSun": 3250
+			}
+		}
+	], 
+	"version": 1
+}

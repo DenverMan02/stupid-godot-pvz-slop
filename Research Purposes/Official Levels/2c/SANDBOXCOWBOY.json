@@ -1,0 +1,83 @@
+{
+	"#comment": "SandboxCowboy", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "Cowboy Sandbox Level", 
+				"LevelNumber": 42, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(WestMowers@LevelModules)", 
+					"RTID(CowboyRails@CurrentLevel)", 
+					"RTID(CowboySeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "Cowboy Sandbox", 
+				"StageModule": "RTID(WestStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 1
+					}, 
+					{
+						"Column": 1, 
+						"Row": 2
+					}, 
+					{
+						"Column": 2, 
+						"Row": 2
+					}, 
+					{
+						"Column": 3, 
+						"Row": 1
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 1
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 4, 
+						"RowStart": 2
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 2, 
+						"RowStart": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboySeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}
+	], 
+	"version": 1
+}

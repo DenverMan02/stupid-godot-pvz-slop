@@ -1,0 +1,364 @@
+{
+	"#comment": "Kongfu Level Bronze Level 1 with conveyor belt 3/13", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"LevelIndex": 419, 
+				"LevelNumber": 17, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(BronzeDeadWinCon@LevelModules)", 
+					"RTID(Kongfu1Waves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Armrack@CurrentLevel)", 
+					"RTID(EnergyGrid@CurrentLevel)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(Bronze@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(RandZombie@CurrentLevel)"
+				], 
+				"Name": "[KONGFU_LEVEL_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"ShowZombies": [
+					"kongfu_monk_basic", 
+					"kongfu_selfexplode", 
+					"kongfu_monk_cone", 
+					"kongfu_torch"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_CONVEYORBELT]", 
+				"DescriptiveName": "[EGYPT_CHALLENGE_ZERO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"RandZombie"
+			], 
+			"objclass": "RandZombieProperties", 
+			"objdata": {
+				"RandZombieList": [
+					{
+						"FirstWave": 1, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 3, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_monk_cone@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 5, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 7, 
+						"LastWave": 10, 
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 4, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 6, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 8, 
+						"MaxPackets": 6
+					}, 
+					{
+						"Delay": 10, 
+						"MaxPackets": 8
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 3, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "peach", 
+						"Weight": 10
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 1, 
+						"PlantType": "bonkchoy", 
+						"Weight": 10
+					}, 
+					{
+						"MaxCount": 15, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 2, 
+						"PlantType": "lightningreed", 
+						"Weight": 20
+					}, 
+					{
+						"MaxCount": 8, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "snapdragon", 
+						"Weight": 20
+					}, 
+					{
+						"MaxCount": 2, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "squash", 
+						"Weight": 5
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "spikerock", 
+						"Weight": 10
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "threepeater", 
+						"Weight": 10
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "bloomerang", 
+						"Weight": 20
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 30
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Kongfu1Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(kongfu_basic@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 4, 
+				"LevelXMLFilename": "pirate_challenge_laststand_a.xml", 
+				"WaveCount": 8, 
+				"WaveSpendingPointIncrement": 200, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(kongfu_torch@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Bronze"
+			], 
+			"objclass": "BronzeProperties", 
+			"objdata": {
+				"data": [
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 2, 
+								"spawnTime": 70, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 0, 
+								"spawnTime": 100, 
+								"type": "mage"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 4, 
+								"spawnTime": 130, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 1, 
+								"spawnTime": 160, 
+								"type": "mage"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 8, 
+								"mY": 3, 
+								"spawnTime": 190, 
+								"type": "agile"
+							}
+						], 
+						"wave": 1
+					}
+				], 
+				"shakeOffset": 0.6
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": []
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": []
+			}
+		}
+	], 
+	"version": 1
+}

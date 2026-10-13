@@ -1,0 +1,1676 @@
+{
+	"#comment": "Modern 8", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ZOMBIERUSH]", 
+				"FirstRewardType": "giftbox", 
+				"LevelNumber": 2, 
+				"StartingSun": 3000, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(ZombieRushModule@CurrentLevel)", 
+					"RTID(ZombieRushFever@LevelModules)", 
+					"RTID(ZombieRushCreditModulProps@CurrentLevel)", 
+					"RTID(FastSpeed@CurrentLevel)"
+				], 
+				"Name": "[ZOMBIERUSH_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(UnchartedNo42UniverseStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombieRushOutro@LevelModules)", 
+				"ShowZombies": [
+					"universe_uncharted_mini_gargantuar", 
+					"universe_uncharted_armor1", 
+					"universe_uncharted_armor2", 
+					"tutorial_flag", 
+					"universe_uncharted_kongfu_selfexplode", 
+					"universe_uncharted_prospector", 
+					"universe_uncharted_gargantuar_basic", 
+					"universe_uncharted_lostcity_jane", 
+					"universe_uncharted_lostcity_excavator", 
+					"universe_uncharted_chicken", 
+					"universe_uncharted_iceage_weasel", 
+					"universe_uncharted_allstar", 
+					"universe_uncharted_modern_newspaper", 
+					"universe_uncharted_ra", 
+					"universe_uncharted_doctor"
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieRushModuleProperties", 
+			"aliases": [
+				"ZombieRushModule"
+			], 
+			"objdata": {
+				"TimeCountDown": 90.0, 
+				"PlantBlackList": [
+					1003, 
+					1004, 
+					1007, 
+					1010, 
+					1012, 
+					1014, 
+					1015, 
+					1017, 
+					1018, 
+					1019, 
+					1020, 
+					1023, 
+					1024, 
+					1025, 
+					1026, 
+					1027, 
+					1028, 
+					1029, 
+					1030, 
+					1031, 
+					1032, 
+					1033, 
+					1034, 
+					1037, 
+					1038, 
+					1039, 
+					1040, 
+					1041, 
+					1042, 
+					1043, 
+					1044, 
+					1045, 
+					1047, 
+					1049, 
+					1051, 
+					1053, 
+					1054, 
+					1056, 
+					1057, 
+					1058, 
+					1059, 
+					1060, 
+					1061, 
+					1062, 
+					1063, 
+					1066, 
+					1070, 
+					1071, 
+					1072, 
+					1075, 
+					1076, 
+					1077, 
+					1079, 
+					1081, 
+					1082, 
+					1083, 
+					1084, 
+					1085, 
+					1086, 
+					1088, 
+					1089, 
+					1090, 
+					1092, 
+					1093, 
+					1094, 
+					1095, 
+					1097, 
+					1098, 
+					1099, 
+					111001, 
+					111003, 
+					111004, 
+					111006, 
+					111008, 
+					111009, 
+					111010, 
+					111011, 
+					111012, 
+					111013, 
+					111014, 
+					111015, 
+					111016, 
+					111017, 
+					111018, 
+					111019, 
+					111020, 
+					111021, 
+					111022, 
+					111023, 
+					111024, 
+					111025, 
+					111026, 
+					111027, 
+					111028, 
+					111029, 
+					111030, 
+					111031, 
+					111032, 
+					111033, 
+					111034, 
+					111037, 
+					111040, 
+					111043, 
+					111044, 
+					111045, 
+					111046, 
+					111047, 
+					111048, 
+					111051, 
+					111052, 
+					111056, 
+					111058, 
+					111060, 
+					111062, 
+					111064, 
+					111065, 
+					111067, 
+					111068, 
+					111069, 
+					111070, 
+					111071, 
+					111072, 
+					111073, 
+					111074, 
+					111076, 
+					111078, 
+					111084, 
+					111086, 
+					111087, 
+					111088, 
+					111089, 
+					111090, 
+					111091, 
+					200001, 
+					200002, 
+					200003, 
+					200004, 
+					200005, 
+					200006, 
+					200007, 
+					200008, 
+					200009, 
+					200010, 
+					200011, 
+					200012, 
+					200014, 
+					200015, 
+					200013, 
+					200016, 
+					200017, 
+					200018, 
+					200019, 
+					200020, 
+					200021, 
+					200022, 
+					200023, 
+					200024, 
+					200025, 
+					200026, 
+					200027, 
+					200028, 
+					200029, 
+					200030, 
+					200031, 
+					200032, 
+					200033, 
+					200034, 
+					200035, 
+					200036, 
+					200037, 
+					200038, 
+					200039, 
+					200040, 
+					200041, 
+					200042, 
+					200043, 
+					200044, 
+					200045, 
+					200046, 
+					200047, 
+					200049, 
+					200050, 
+					200051, 
+					200052, 
+					200053, 
+					200054, 
+					200055, 
+					200056, 
+					200060, 
+					200061, 
+					200062, 
+					200063, 
+					200066, 
+					200067, 
+					200068, 
+					200069, 
+					200070, 
+					200072, 
+					200075, 
+					200076, 
+					200077, 
+					200079, 
+					200080, 
+					200083, 
+					200084, 
+					200086, 
+					200087, 
+					200088, 
+					200089, 
+					200090, 
+					200091, 
+					200092, 
+					200093, 
+					200094, 
+					200095, 
+					200096, 
+					200097, 
+					200098, 
+					200099, 
+					200100, 
+					200101, 
+					200102, 
+					200126, 
+					200127, 
+					200128, 
+					200133, 
+					200134, 
+					200135, 
+					200136, 
+					200137, 
+					200138, 
+					200139, 
+					200140, 
+					200142, 
+					200143, 
+					200157, 
+					200159, 
+					200160, 
+					200161, 
+					200162, 
+					200163
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieRushCreditModuleProperties", 
+			"aliases": [
+				"ZombieRushCreditModulProps"
+			], 
+			"objdata": {
+				"CreditList": {
+					"universe_uncharted_mini_gargantuar": 100, 
+					"universe_uncharted_armor1": 200, 
+					"universe_uncharted_armor2": 300, 
+					"tutorial_flag": 100, 
+					"universe_uncharted_kongfu_selfexplode": 400, 
+					"universe_uncharted_prospector": 600, 
+					"universe_uncharted_gargantuar_basic": 1000, 
+					"universe_uncharted_lostcity_jane": 400, 
+					"universe_uncharted_lostcity_excavator": 400, 
+					"universe_uncharted_chicken": 800, 
+					"universe_uncharted_iceage_weasel": 800, 
+					"universe_uncharted_allstar": 800, 
+					"universe_uncharted_modern_newspaper": 600, 
+					"universe_uncharted_ra": 600, 
+					"universe_uncharted_doctor": 400
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"FastSpeed"
+			], 
+			"objclass": "ZombieMoveFastModuleProperties", 
+			"objdata": {
+				"StopColumn": 6, 
+				"SpeedUp": 3.0
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"SunProduced"
+			], 
+			"objclass": "StarChallengeSunProducedProps", 
+			"objdata": {
+				"TargetSun": 3000
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 500, 
+						"StartingPoints": 1000, 
+						"StartingWave": 1, 
+						"ZombiePool": [
+							"RTID(universe_uncharted_mini_gargantuar@ZombieTypes)", 
+							"RTID(universe_uncharted_armor1@ZombieTypes)", 
+							"RTID(universe_uncharted_armor2@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 30, 
+				"WaveSpendingPointIncrement": 150, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave19@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave20@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave21@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave22@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave23@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave24@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave25@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave26@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave27@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave28@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave29@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave30@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_mini_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave19"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave20"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_iceage_weasel@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave21"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave22"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave23"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave24"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_gargantuar_basic@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave25"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_ra@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave26"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave27"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave28"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_jane@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_lostcity_excavator@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave29"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_doctor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave30"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(universe_uncharted_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

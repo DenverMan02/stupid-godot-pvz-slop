@@ -1,0 +1,41 @@
+{
+	"#comment": "DaveCup test template - single battle level", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "DaveCup battle test level", 
+				"LevelNumber": 1, 
+				"LevelIndex": 2, 
+				"IsArtifactDisabled": true, 
+				"DisablePeavine": true, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DaveCupBattleFlow@CurrentLevel)", 
+					"RTID(DaveCupVictory@CurrentLevel)", 
+					"RTID(DaveCupConvergence@LevelModules)"
+				], 
+				"StageModule": "RTID(DaveCupStage@LevelModules)", 
+				"CanSaveGameState": false, 
+				"SuppressDynamicTutorial": true, 
+				"Name": "", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"DaveCupBattleFlow"
+			], 
+			"objclass": "DaveCupBattleModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"DaveCupVictory"
+			], 
+			"objclass": "DaveCupVictoryModuleProperties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

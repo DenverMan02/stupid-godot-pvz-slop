@@ -1,0 +1,367 @@
+{
+	"#comment": "Level Of The Day Test 2", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "none", 
+				"FirstIntroNarrative": "", 
+				"LevelNumber": 13, 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_CIRCUS]", 
+				"StageModule": "RTID(CarnivalStage@LevelModules)", 
+				"StartingSun": 250, 
+				"SuppressPlantfoodPurchase": true
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 2, 
+				"PlantfoodToSpawnCount": 2, 
+				"PointIncrementPerWave": 20, 
+				"StartingPoints": 0, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 5, 
+				"ZombiePool": [
+					"RTID(carnie@ZombieTypes)", 
+					"RTID(carnie_armor1@ZombieTypes)", 
+					"RTID(carnie_armor2@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"GravestoneCount": 5, 
+				"SpawnColumnEnd": 9, 
+				"SpawnColumnStart": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantExcludeList": [
+					"spearmint", 
+					"peppermint", 
+					"appeasemint", 
+					"concealmint", 
+					"filamint", 
+					"wintermint", 
+					"bombardmint", 
+					"armamint", 
+					"ailmint", 
+					"reinforcemint", 
+					"containmint", 
+					"enchantmint", 
+					"enchantmint", 
+					"enforcemint", 
+					"enlightenmint", 
+					"blover"
+				], 
+				"PresetPlantList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"MaxNextWaveHealthPercentage": 0.6, 
+				"MinNextWaveHealthPercentage": 0.5, 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(carnie_cannon@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(carnie_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(carnie_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(carnie@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(carnie_cannon@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(carnie_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,140 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 3", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"Name": "[VASEBREAKER_DARK_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(DarkStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "powerupgadget", 
+				"FirstRewardParam": "powerupvasebreakerbutter", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "gravestonePlantfoodOnDestruction"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"GridSquareBlacklist": [
+					{
+						"mX": 8, 
+						"mY": 0
+					}, 
+					{
+						"mX": 3, 
+						"mY": 1
+					}, 
+					{
+						"mX": 8, 
+						"mY": 2
+					}, 
+					{
+						"mX": 3, 
+						"mY": 3
+					}, 
+					{
+						"mX": 8, 
+						"mY": 4
+					}
+				], 
+				"Vases": [
+					{
+						"ZombieTypeName": "dark", 
+						"Count": 7
+					}, 
+					{
+						"ZombieTypeName": "dark_armor1", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "dark_king", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "dark_gargantuar", 
+						"Count": 1
+					}, 
+					{
+						"ZombieTypeName": "dark_armor2", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "headbutterlettuce", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "thundersnapdragon", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "bonkchoy", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "stickybombrice", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 0
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

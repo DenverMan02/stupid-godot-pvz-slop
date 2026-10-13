@@ -1,0 +1,196 @@
+{
+	"#comment": "LOD 276 - Beghouled - Kiwibeast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"SuppressSunSpawn": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 4, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(IceageStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "chardguard", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "coldsnapdragon", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "kernelpult", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [
+					"primalpeashooter", 
+					"endurian", 
+					"homingthistle"
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 100, 
+				"InitialPlants": [
+					"kiwibeast", 
+					"springbean", 
+					"snapdragon", 
+					"bloomerang"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "cabbagepult", 
+						"UpgradedPlant": "akee"
+					}, 
+					{
+						"BasePlant": "springbean", 
+						"UpgradedPlant": "chardguard"
+					}, 
+					{
+						"BasePlant": "chardguard", 
+						"UpgradedPlant": "primalpeashooter"
+					}, 
+					{
+						"BasePlant": "snapdragon", 
+						"UpgradedPlant": "coldsnapdragon"
+					}, 
+					{
+						"BasePlant": "bloomerang", 
+						"UpgradedPlant": "kernelpult"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 50, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 75, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "iceage"
+							}, 
+							{
+								"ZombieType": "iceage_imp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "iceage"
+							}, 
+							{
+								"ZombieType": "iceage_armor1"
+							}, 
+							{
+								"ZombieType": "troglobite"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "iceage"
+							}, 
+							{
+								"ZombieType": "iceage_armor1"
+							}, 
+							{
+								"ZombieType": "iceage_hunter"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "iceage"
+							}, 
+							{
+								"ZombieType": "iceage_troglobite"
+							}, 
+							{
+								"ZombieType": "iceage_armor_1"
+							}, 
+							{
+								"ZombieType": "iceage_weaselhorder"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

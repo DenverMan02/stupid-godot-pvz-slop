@@ -1,0 +1,661 @@
+{
+	"#comment": "easy_electricblueberry", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 2, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(PennyClassroom@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)"
+				], 
+				"Name": "[PENNY_CLASS_LEVEL2]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "PennyClassroomModuleProperties", 
+			"aliases": [
+				"PennyClassroom"
+			], 
+			"objdata": {
+				"PlantMap": {
+					"electricblueberry": 3, 
+					"primalsunflower": 3, 
+					"powerlily": 1
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"electricblueberry", 
+					"primalsunflower", 
+					"powerlily"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(Wave5SandstormEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)", 
+						"RTID(Wave10SandstormEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)", 
+						"RTID(Wave15SandstormEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 2, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 3, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 1, 
+						"Type": "RTID(tutorial_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_miner@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 2, 
+				"ColumnStart": 2, 
+				"GroupSize": 1, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 2, 
+				"ColumnStart": 2, 
+				"GroupSize": 1, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 2, 
+				"ColumnStart": 2, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

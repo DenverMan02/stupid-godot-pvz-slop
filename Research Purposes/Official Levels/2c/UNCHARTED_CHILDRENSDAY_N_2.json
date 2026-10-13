@@ -1,0 +1,532 @@
+{
+	"#comment": "Nightmare_Z", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_CHILDRENDAY]", 
+				"LevelNumber": 2, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(TunnelPlacement@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[CHILDRENDAY_LEVEL_NAME_02]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroGulliver@LevelModules)", 
+				"StageModule": "RTID(ChildrenDayStage@LevelModules)", 
+				"ShowZombies": [
+					"childrensday", 
+					"childrensday_armor1", 
+					"childrensday_armor2", 
+					"childrensday_flag", 
+					"children_toygun", 
+					"children_ballon", 
+					"children_toycar", 
+					"childrensday_gargantuar"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)", 
+						"RTID(PlantsSurvive@CurrentLevel)", 
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"SunProduced"
+			], 
+			"objclass": "StarChallengeSunProducedProps", 
+			"objdata": {
+				"TargetSun": 4000
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsSurvive"
+			], 
+			"objclass": "StarChallengePlantsSurviveProps", 
+			"objdata": {
+				"Count": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			], 
+			"objclass": "StarChallengePlantFoodNonuseProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"TunnelPlacement"
+			], 
+			"objclass": "InitialGridItemGulliverTunnelProperties", 
+			"objdata": {
+				"TunnelPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"Orientation": "GULLIVERTUNNEL_ORIENTATION_BIG_ON_RIGHT"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 6, 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_schoolbag@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(children_ballon@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_toycar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_toycar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_toycar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_toycar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_lollipops@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_toycar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(children_toycar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(childrensday_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

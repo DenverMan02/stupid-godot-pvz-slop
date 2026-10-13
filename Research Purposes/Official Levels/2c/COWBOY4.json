@@ -1,0 +1,582 @@
+{
+	"#comment": "Cowboy 5", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_WEST]", 
+				"FirstRewardParam": "chilibean", 
+				"FirstRewardType": "unlock_plant", 
+				"LevelNumber": 4, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(CowboyMinigame@CurrentLevel)", 
+					"RTID(CowboyRails@CurrentLevel)", 
+					"RTID(CowboyConveyor@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[WEST_LEVEL_NAME]", 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"SuppressDynamicTutorial": true, 
+				"ShowZombies": [
+					"piano", 
+					"cowboy_armor1", 
+					"cowboy_armor2", 
+					"prospector", 
+					"cowboy"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 0
+					}, 
+					{
+						"Column": 0, 
+						"Row": 3
+					}, 
+					{
+						"Column": 1, 
+						"Row": 1
+					}, 
+					{
+						"Column": 2, 
+						"Row": 0
+					}, 
+					{
+						"Column": 2, 
+						"Row": 3
+					}, 
+					{
+						"Column": 3, 
+						"Row": 4
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyMinigame"
+			], 
+			"objclass": "CowboyMinigameProperties", 
+			"objdata": {
+				"BeginString": "[COWBOY_MINIGAME_TUTORIAL_1]", 
+				"ShowTutorial": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_CORRAL_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_CORRAL_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyConveyor"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"InitialPlantList": [
+					{
+						"PlantType": "peashooter"
+					}
+				], 
+				"ManualPacketSpawning": true, 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 8, 
+				"SuppressFlagZombie": true, 
+				"WaveCount": 8, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)", 
+						"RTID(Wave3ModConveyor@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(Wave5ModConveyor@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave8ModConveyor@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3ModConveyor"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"MaxWeightFactor": 10, 
+						"MinWeightFactor": 0.1, 
+						"Type": "RTID(splitpea@PlantTypes)"
+					}
+				], 
+				"Remove": [
+					{
+						"Type": "RTID(peashooter@PlantTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5ModConveyor"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"MaxWeightFactor": 10, 
+						"MinWeightFactor": 0.1, 
+						"Type": "RTID(repeater@PlantTypes)"
+					}
+				], 
+				"Remove": [
+					{
+						"Type": "RTID(splitpea@PlantTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8ModConveyor"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"MaxWeightFactor": 10, 
+						"MinWeightFactor": 0.1, 
+						"Type": "RTID(threepeater@PlantTypes)"
+					}
+				], 
+				"Remove": [
+					{
+						"Type": "RTID(repeater@PlantTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"DynamicPlantfood": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					0, 
+					0
+				], 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(piano@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(prospector@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

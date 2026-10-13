@@ -1,0 +1,134 @@
+{
+	"#comment": "Eggbreaker Emery 2", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "eggbreaker", 
+				"IsLevelOfTheDay": true, 
+				"IsVasebreaker": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@.)", 
+					"RTID(FrozenPlantPlacement@CurrentLevel)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"VaseGridItemType": "vase_egg", 
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "spring", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "spring_armor1", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "spring_imp", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "spring_gargantuar", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "citron", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "stunion", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "firepeashooter", 
+						"Count": 7
+					}, 
+					{
+						"PlantTypeName": "cherry_bomb", 
+						"Count": 1
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			], 
+			"objclass": "InitialPlantProperties", 
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"Condition": "icecubed", 
+						"GridX": 0, 
+						"GridY": 0, 
+						"TypeName": "guacodile"
+					}, 
+					{
+						"Condition": "icecubed", 
+						"GridX": 0, 
+						"GridY": 1, 
+						"TypeName": "guacodile"
+					}, 
+					{
+						"Condition": "icecubed", 
+						"GridX": 0, 
+						"GridY": 2, 
+						"TypeName": "guacodile"
+					}, 
+					{
+						"Condition": "icecubed", 
+						"GridX": 0, 
+						"GridY": 3, 
+						"TypeName": "guacodile"
+					}, 
+					{
+						"Condition": "icecubed", 
+						"GridX": 0, 
+						"GridY": 4, 
+						"TypeName": "guacodile"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

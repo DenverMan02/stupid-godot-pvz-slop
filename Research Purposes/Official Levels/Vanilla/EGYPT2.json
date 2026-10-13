@@ -1,0 +1,241 @@
+{
+	"#comment": "Egypt 2", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]", 
+				"FirstIntroNarrative": "POWERUPS_TUTORIAL_INITIAL", 
+				"FirstRewardType": "mapgadget", 
+				"ForceToWorldMap": true, 
+				"GameFeaturesToUnlock": [
+					"feature_worldmap", 
+					"feature_powerup_wizardfinger", 
+					"feature_powerup_flick_zombie", 
+					"feature_powerup_pinch", 
+					"feature_powerup_snowball", 
+					"feature_powerup_flamethrower"
+				], 
+				"LevelNumber": 2, 
+				"ForceToWorldMap": true, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(PowerupsTutorial@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[EGYPT_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"RepeatPlayForceToWorldMap": false, 
+				"ReplayIntroNarrative": "POWERUPS_TUTORIAL_REPEAT", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"SuppressDynamicTutorial": true
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerupsTutorial"
+			], 
+			"objclass": "PowerupTutorialIntroProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_POWERUP_DEMO]", 
+				"DescriptiveName": "[STARCHALLENGE_POWERUP_DEMO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 3, 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 2, 
+				"WaveCount": 3, 
+				"WaveSpendingPointIncrement": 75, 
+				"WaveSpendingPoints": 150, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesFromGroundSpawnerProps", 
+			"objdata": {
+				"ColumnStart": 4, 
+				"ColumnEnd": 9, 
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesFromGroundSpawnerProps", 
+			"objdata": {
+				"ColumnStart": 4, 
+				"ColumnEnd": 9, 
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesFromGroundSpawnerProps", 
+			"objdata": {
+				"ColumnStart": 4, 
+				"ColumnEnd": 9, 
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

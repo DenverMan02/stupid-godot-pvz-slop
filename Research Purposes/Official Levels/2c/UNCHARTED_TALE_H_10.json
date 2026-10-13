@@ -1,0 +1,655 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_FOREST]", 
+				"LevelNumber": 10, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[FOREST_LEVEL_NAME_10_H]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutro3@LevelModules)", 
+				"StageModule": "RTID(FairyTaleStage@LevelModules)", 
+				"ShowZombies": [
+					"fairy_tale", 
+					"fairy_tale_armor1", 
+					"fairy_tale_armor2", 
+					"fairy_tale_gargantuar", 
+					"fairy_tale_armed_gargantuar", 
+					"fairy_tale_witch"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantsLost@CurrentLevel)", 
+						"RTID(PlantsSurvive@CurrentLevel)", 
+						"RTID(DefeatZombie@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsLost"
+			], 
+			"objclass": "StarChallengePlantsLostProps", 
+			"objdata": {
+				"MaximumPlantsLost": 15
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsSurvive"
+			], 
+			"objclass": "StarChallengePlantsSurviveProps", 
+			"objdata": {
+				"Count": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"DefeatZombie"
+			], 
+			"objclass": "PlantDefeatZombieChallengeProps", 
+			"objdata": {
+				"Description": "[KILL_DESC]", 
+				"NumZombiesToKill": 15, 
+				"PlantTypeName": "heathseeker"
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1MagicMirror@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2MagicMirror@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)", 
+						"RTID(Wave3MagicMirror@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)", 
+						"RTID(Wave4MagicMirror@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(Wave5MagicMirror@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave8FogEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)", 
+						"RTID(Wave15WindEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8FogEvent0"
+			], 
+			"objclass": "FairyTaleFogWaveActionProps", 
+			"objdata": {
+				"Range": {
+					"mX": 5, 
+					"mY": 0, 
+					"mWidth": 8, 
+					"mHeight": 5
+				}, 
+				"MovingTime": 3.0, 
+				"FogType": "fairy_tale_fog_lvl3"
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15WindEvent0"
+			], 
+			"objclass": "FairyTaleWindWaveActionProps", 
+			"objdata": {
+				"Duration": 5.0, 
+				"VelocityScale": 2.0
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1MagicMirror"
+			], 
+			"objclass": "WaveActionMagicMirrorTeleportationArrayProps", 
+			"objdata": {
+				"MagicMirrorTeleportationArrays": [
+					{
+						"Mirror1GridX": 7, 
+						"Mirror1GridY": 0, 
+						"Mirror2GridX": 2, 
+						"Mirror2GridY": 0, 
+						"MirrorExistDuration": 300
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2MagicMirror"
+			], 
+			"objclass": "WaveActionMagicMirrorTeleportationArrayProps", 
+			"objdata": {
+				"MagicMirrorTeleportationArrays": [
+					{
+						"Mirror1GridX": 7, 
+						"Mirror1GridY": 1, 
+						"Mirror2GridX": 1, 
+						"Mirror2GridY": 1, 
+						"MirrorExistDuration": 300
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3MagicMirror"
+			], 
+			"objclass": "WaveActionMagicMirrorTeleportationArrayProps", 
+			"objdata": {
+				"MagicMirrorTeleportationArrays": [
+					{
+						"Mirror1GridX": 6, 
+						"Mirror1GridY": 2, 
+						"Mirror2GridX": 2, 
+						"Mirror2GridY": 2, 
+						"MirrorExistDuration": 300
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4MagicMirror"
+			], 
+			"objclass": "WaveActionMagicMirrorTeleportationArrayProps", 
+			"objdata": {
+				"MagicMirrorTeleportationArrays": [
+					{
+						"Mirror1GridX": 7, 
+						"Mirror1GridY": 3, 
+						"Mirror2GridX": 1, 
+						"Mirror2GridY": 3, 
+						"MirrorExistDuration": 300
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5MagicMirror"
+			], 
+			"objclass": "WaveActionMagicMirrorTeleportationArrayProps", 
+			"objdata": {
+				"MagicMirrorTeleportationArrays": [
+					{
+						"Mirror1GridX": 7, 
+						"Mirror1GridY": 4, 
+						"Mirror2GridX": 2, 
+						"Mirror2GridY": 4, 
+						"MirrorExistDuration": 300
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

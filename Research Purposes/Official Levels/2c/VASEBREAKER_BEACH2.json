@@ -1,0 +1,112 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 2, 
+				"Name": "[VASEBREAKER_BEACH_LEVEL_NAME_2]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Tide@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 6
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 2, 
+				"MaxColumnIndex": 8, 
+				"GridSquareBlacklist": [
+					{
+						"mX": 2, 
+						"mY": 0
+					}, 
+					{
+						"mX": 4, 
+						"mY": 1
+					}, 
+					{
+						"mX": 3, 
+						"mY": 2
+					}, 
+					{
+						"mX": 4, 
+						"mY": 3
+					}, 
+					{
+						"mX": 2, 
+						"mY": 4
+					}
+				], 
+				"Vases": [
+					{
+						"ZombieTypeName": "beach_armor1", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "beach_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "beach_surfer", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "beach_gargantuar", 
+						"Count": 1
+					}, 
+					{
+						"ZombieTypeName": "beach_snorkel", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "beach_imp", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "clawgloriosa", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "coldsnapdragon", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "crownflower", 
+						"Count": 3
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 3
+					}
+				], 
+				"NumColoredPlantVases": 1, 
+				"NumColoredZombieVases": 3
+			}
+		}
+	]
+}

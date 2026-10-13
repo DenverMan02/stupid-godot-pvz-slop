@@ -1,0 +1,668 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_NEWYEAR]", 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[NEWYEAR_LEVEL_NAME_06]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutro6@LevelModules)", 
+				"StageModule": "RTID(NewYearNightStage@LevelModules)", 
+				"ShowZombies": [
+					"lny", 
+					"lny_armor1", 
+					"lny_armor2", 
+					"zombie_moneytree", 
+					"zombie_yearmonster", 
+					"modern_balloon", 
+					"poncho"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			], 
+			"objclass": "PowerTileProperties", 
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 3, 
+							"mY": 0
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 4, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 5, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 4, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 3, 
+							"mY": 4
+						}, 
+						"PropagationDelay": 0.25
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)", 
+						"RTID(Wave4KongMing@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)", 
+						"RTID(Wave9KongMing@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)", 
+						"RTID(Wave14KongMing@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 1, 
+						"Type": "RTID(zombie_yearmonster@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(modern_balloon@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(poncho@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4KongMing"
+			], 
+			"objclass": "WaveActionKongmingLanternProps", 
+			"objdata": {
+				"KongmingLanterns": [
+					{
+						"Row": 1
+					}, 
+					{
+						"Row": 3
+					}, 
+					{
+						"Row": 5
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9KongMing"
+			], 
+			"objclass": "WaveActionKongmingLanternProps", 
+			"objdata": {
+				"KongmingLanterns": [
+					{
+						"Row": 2
+					}, 
+					{
+						"Row": 3
+					}, 
+					{
+						"Row": 4
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14KongMing"
+			], 
+			"objclass": "WaveActionKongmingLanternProps", 
+			"objdata": {
+				"KongmingLanterns": [
+					{
+						"Row": 1
+					}, 
+					{
+						"Row": 3
+					}, 
+					{
+						"Row": 5
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

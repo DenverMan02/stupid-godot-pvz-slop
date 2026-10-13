@@ -1,0 +1,824 @@
+{
+	"#comment": "Lost City Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "lostcity_dangerroom", 
+				"IsDangerRoom": true, 
+				"LevelNumber": 666, 
+				"Loot": "RTID(DangerRoomLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(LostCityMowers@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[DANGER_ROOM_LOSTCITY_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(LostCityStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			], 
+			"objclass": "DangerRoomLevelIntroProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objclass": "DangerRoomModuleProperties", 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(LostcityDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(LostCityDangerRoomWaveGenerator@CurrentLevel)", 
+					"RTID(DangerRoomGoldTilePlacer@CurrentLevel)", 
+					"RTID(DangerRoomParachuteRainDesigner@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LostCityDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(lostcity_armor1@ZombieTypes)", 
+					"RTID(lostcity_armor2@ZombieTypes)", 
+					"RTID(lostcity_imp@ZombieTypes)", 
+					"RTID(lostcity_excavator@ZombieTypes)", 
+					"RTID(lostcity_jane@ZombieTypes)", 
+					"RTID(lostcity_bug@ZombieTypes)", 
+					"RTID(lostcity_bug_armor1@ZombieTypes)", 
+					"RTID(lostcity_bug_armor2@ZombieTypes)", 
+					"RTID(lostcity_impporter@ZombieTypes)", 
+					"RTID(lostcity_relichunter@ZombieTypes)", 
+					"RTID(lostcity_crystalskull@ZombieTypes)", 
+					"RTID(lostcity_gargantuar@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"DangerRoomParachuteRainDesigner"
+			], 
+			"objclass": "DangerRoomParachuteRainDesigner", 
+			"objdata": {
+				"BaseSpiderRainCount": 0, 
+				"MaxSpiderRainCount": 4, 
+				"BaseSpiderRainCountPerLevel": 0.2, 
+				"BaseSpiderRainZombieCount": 2, 
+				"MaxSpiderRainZombies": 6, 
+				"BaseSpiderRainZombiesCountPerLevel": 0.25, 
+				"BaseSpiderRainStartWave": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"DangerRoomGoldTilePlacer"
+			], 
+			"objclass": "GridItemPatternPlacer", 
+			"objdata": {
+				"//": "All properties are a function of level", 
+				"NumberOfTiles": {
+					"LowerBound": {
+						"SlopeCoefficient": 0.125, 
+						"YIntercept": 1.725, 
+						"LowerLimit": {
+							"Value": "2"
+						}, 
+						"UpperLimit": {
+							"Value": "8"
+						}
+					}, 
+					"UpperBound": {
+						"SlopeCoefficient": 0.25, 
+						"YIntercept": 2.0, 
+						"LowerLimit": {
+							"Value": "2"
+						}, 
+						"UpperLimit": {
+							"Value": "8"
+						}
+					}
+				}, 
+				"GridItemSpawnerPatterns": [
+					"RTID(GoldTilesPattern1@CurrentLevel)", 
+					"RTID(GoldTilesPattern2@CurrentLevel)", 
+					"RTID(GoldTilesPattern3@CurrentLevel)", 
+					"RTID(GoldTilesPattern4@CurrentLevel)", 
+					"RTID(GoldTilesPattern5@CurrentLevel)", 
+					"RTID(GoldTilesPattern6@CurrentLevel)", 
+					"RTID(GoldTilesPattern7@CurrentLevel)", 
+					"RTID(GoldTilesPattern8@CurrentLevel)", 
+					"RTID(GoldTilesPattern9@CurrentLevel)", 
+					"RTID(GoldTilesPattern10@CurrentLevel)", 
+					"RTID(GoldTilesPattern11@CurrentLevel)", 
+					"RTID(GoldTilesPattern12@CurrentLevel)", 
+					"RTID(GoldTilesPattern13@CurrentLevel)", 
+					"RTID(GoldTilesPattern14@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern1"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern2"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern3"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern4"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern5"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern6"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern7"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern8"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern9"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern10"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern11"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern12"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern13"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTilesPattern14"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "goldtile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

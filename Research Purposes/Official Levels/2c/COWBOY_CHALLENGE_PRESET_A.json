@@ -1,0 +1,703 @@
+{
+	"#comment": "Cowboy Preset A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_WEST]", 
+				"FirstIntroNarrative": "COWBOY_CHALLENGE_PRESET_A", 
+				"LevelIndex": 318, 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(WestMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(Rails@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[CHALLENGE_PRESET_A_NAME]", 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"ShowZombies": [
+					"poncho_plate", 
+					"cowboy", 
+					"poncho_no_plate", 
+					"poncho", 
+					"prospector", 
+					"cowboy_armor1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 10, 
+				"LevelXMLFilename": "cowboy_challenge_preset_a.xml", 
+				"WaveCount": 20, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_plate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_no_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_no_plate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_no_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_no_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_plate@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_no_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho_plate@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(poncho@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(prospector@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Rails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 3
+					}, 
+					{
+						"Column": 3, 
+						"Row": 2
+					}, 
+					{
+						"Column": 6, 
+						"Row": 1
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 3, 
+						"RowStart": 1
+					}, 
+					{
+						"Column": 6, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"sunflower", 
+					"splitpea", 
+					"chilibean", 
+					"wallnut", 
+					"lightningreed", 
+					"wintermelon"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_PRESET_PLANTS]", 
+				"DescriptiveName": "[STARCHALLENGE_PRESET_PLANTS_NAME]"
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,677 @@
+{
+	"#comment": "Dark Hypnoshroom MiniGame", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DARK]", 
+				"LevelIndex": 636, 
+				"LevelNumber": 3, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiePotions@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"Name": "[CHALLENGE_HYPNOSHROOM_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(DarkStage@LevelModules)", 
+				"ShowZombies": [
+					"dark_armor3", 
+					"dark_armor1", 
+					"dark_juggler", 
+					"dark", 
+					"dark_wizard", 
+					"dark_cavalry"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombiePotions"
+			], 
+			"objclass": "ZombiePotionModuleProperties", 
+			"objdata": {
+				"InitialPotionCount": 14, 
+				"MaxPotionCount": 24, 
+				"PotionSpawnTimer": {
+					"Max": 3, 
+					"Min": 2
+				}, 
+				"PotionTypes": [
+					"zombiepotion_speed"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 4, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 8, 
+						"MaxPackets": 2
+					}, 
+					{
+						"Delay": 14, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 18, 
+						"MaxPackets": 6
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 4, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 1, 
+						"PlantType": "hypnoshroom", 
+						"Weight": 32
+					}, 
+					{
+						"MaxCount": 2, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 1, 
+						"PlantType": "hypnoshroom", 
+						"Weight": 8, 
+						"iAvatar": 1
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_HYPNOSHROOM]", 
+				"DescriptiveName": "[STARCHALLENGE_HYPNOSHROOM_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"RandZombie"
+			], 
+			"objclass": "RandZombieProperties", 
+			"objdata": {
+				"RandZombieList": [
+					{
+						"FirstWave": 1, 
+						"LastWave": 14, 
+						"Type": "RTID(dark@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 14, 
+						"Type": "RTID(dark_armor1@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 14, 
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 4, 
+						"LastWave": 14, 
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 7, 
+						"LastWave": 14, 
+						"Type": "RTID(dark_wizard@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(dark_basic@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 7, 
+				"LevelXMLFilename": "dark5.xml", 
+				"WaveCount": 14, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 80, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_wizard@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_cavalry@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_wizard@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_cavalry@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_wizard@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_cavalry@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_wizard@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_wizard@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WavePointStart": 300, 
+						"WavePointIncrement": 150, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_juggler@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_cavalry@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_wizard@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor3@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(dark_cavalry@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

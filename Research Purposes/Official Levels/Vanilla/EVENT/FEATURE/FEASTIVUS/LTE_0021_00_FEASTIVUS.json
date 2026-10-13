@@ -1,0 +1,360 @@
+{
+	"#comment": "LoD Bonkchoy + Iceburg Lettuce", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"DraperPromo": "none", 
+				"LevelNumber": 7, 
+				"LevelPowerupSet": "LevelPowerupsDisabled", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelEscalationModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(ProtectThePlant@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				], 
+				"Name": "[LTE_LEVEL_NAME_FEASTIVUS]", 
+				"StageModule": "RTID(FeastivusStage@LevelModules)", 
+				"StartingSun": 50
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			], 
+			"objclass": "LevelEscalationModuleProperties", 
+			"objdata": {
+				"FlagCount": 3, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 225, 
+				"StartingPoints": 50, 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"WavesPerFlag": 3, 
+				"ZombiePool": [
+					"RTID(feastivus@ZombieTypes)", 
+					"RTID(feastivus@ZombieTypes)", 
+					"RTID(feastivus_poncho@ZombieTypes)", 
+					"RTID(lostcity_excavator@ZombieTypes)", 
+					"RTID(explorer@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_PROTECT_THE_PLANT]", 
+				"DescriptiveName": "[STARCHALLENGE_PROTECT_THE_PLANT_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"ProtectThePlant"
+			], 
+			"objclass": "ProtectThePlantChallengeProperties", 
+			"objdata": {
+				"MustProtectCount": 5, 
+				"Plants": [
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"PlantType": "bonkchoy"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"PlantType": "bonkchoy"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"PlantType": "bonkchoy"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"PlantType": "bonkchoy"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"PlantType": "bonkchoy"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"MaxNextWaveHealthPercentage": 0.7, 
+				"MinNextWaveHealthPercentage": 0.4, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)", 
+						"RTID(Wave4ParachuteRainEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)", 
+						"RTID(Wave7ParachuteRainEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)", 
+						"RTID(Wave9ParachuteRainEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(explorer@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_excavator@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_excavator@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(lostcity_excavator@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(feastivus_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"Wave4ParachuteRainEvent0"
+			], 
+			"objclass": "ParachuteRainZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 7, 
+				"ColumnStart": "4", 
+				"GroupSize": "2", 
+				"SpiderCount": 3, 
+				"SpiderZombieName": "lostcity_lostpilot", 
+				"TimeBeforeFullSpawn": "1", 
+				"TimeBetweenGroups": "0.2", 
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]", 
+				"ZombieFallTime": "1.5"
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7ParachuteRainEvent0"
+			], 
+			"objclass": "ParachuteRainZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 6, 
+				"ColumnStart": "4", 
+				"GroupSize": "2", 
+				"SpiderCount": "4", 
+				"SpiderZombieName": "lostcity_lostpilot", 
+				"TimeBeforeFullSpawn": "1", 
+				"TimeBetweenGroups": "0.2", 
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]", 
+				"ZombieFallTime": "1.5"
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9ParachuteRainEvent0"
+			], 
+			"objclass": "ParachuteRainZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 5, 
+				"ColumnStart": "3", 
+				"GroupSize": "2", 
+				"SpiderCount": "4", 
+				"SpiderZombieName": "lostcity_lostpilot", 
+				"TimeBeforeFullSpawn": "1", 
+				"TimeBetweenGroups": "0.2", 
+				"WaveStartMessage": "[WARNING_PARACHUTERAIN]", 
+				"ZombieFallTime": "1.5"
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,197 @@
+{
+	"#comment": "LOD 222 - Beghouled - Wasabi Whip", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]", 
+				"DraperPromo": "wasabiwhip", 
+				"IsLevelOfTheDay": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 2, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(IceageStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "repeater", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "xshot", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "chardguard", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "wasabiwhip", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [
+					"primalpeashooter"
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 100, 
+				"InitialPlants": [
+					"peashooter", 
+					"puffshroom", 
+					"wallnut", 
+					"bonkchoy"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "peashooter", 
+						"UpgradedPlant": "repeater"
+					}, 
+					{
+						"BasePlant": "repeater", 
+						"UpgradedPlant": "primalpeashooter"
+					}, 
+					{
+						"BasePlant": "puffshroom", 
+						"UpgradedPlant": "xshot"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "chardguard"
+					}, 
+					{
+						"BasePlant": "bonkchoy", 
+						"UpgradedPlant": "wasabiwhip"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 50, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 75, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "iceage"
+							}, 
+							{
+								"ZombieType": "iceage_imp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "iceage"
+							}, 
+							{
+								"ZombieType": "iceage_armor1"
+							}, 
+							{
+								"ZombieType": "iceage_weaselhoarder"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "iceage_imp"
+							}, 
+							{
+								"ZombieType": "iceage_armor1"
+							}, 
+							{
+								"ZombieType": "iceage_hunter"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "iceage_armor1"
+							}, 
+							{
+								"ZombieType": "iceage_armor2"
+							}, 
+							{
+								"ZombieType": "iceage_hunter"
+							}, 
+							{
+								"ZombieType": "iceage_troglobite_1block"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

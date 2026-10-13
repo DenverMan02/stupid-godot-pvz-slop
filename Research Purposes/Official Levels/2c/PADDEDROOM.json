@@ -1,0 +1,63 @@
+{
+	"#comment": "PaddedRoom - A level with no zombies, no plants, no nothing.", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Name": "Padded Room", 
+				"Description": "There is nothing here but tears.", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TestingSpawner@CurrentLevel)", 
+					"RTID(TestingSeedBank@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(PaddedRoomProps@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PaddedRoomProps"
+			], 
+			"objclass": "PaddedRoomProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"TestingSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "preset", 
+				"PresetPlantList": [
+					"lightningreed", 
+					"peashooter", 
+					"wallnut", 
+					"potatomine", 
+					"cherry_bomb", 
+					"empea"
+				]
+			}
+		}, 
+		{
+			"objclass": "SimpleZombieSpawnerProperties", 
+			"aliases": [
+				"TestingSpawner"
+			], 
+			"objdata": {
+				"Stages": [
+					{
+						"Types": [
+							{
+								"ZombieType": "pirate_captain"
+							}
+						], 
+						"SpawnDelay": 30.0
+					}
+				]
+			}
+		}
+	]
+}

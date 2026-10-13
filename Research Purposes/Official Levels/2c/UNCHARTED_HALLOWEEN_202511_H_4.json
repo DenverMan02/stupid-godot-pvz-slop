@@ -1,0 +1,552 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_HALLOWEEN]", 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(WitchModule@LevelModules)"
+				], 
+				"Name": "[HALLOWEEN_LEVEL_NAME_04_H]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroPUMPKINHALLOWEEN11@LevelModules)", 
+				"StageModule": "RTID(HalloweenStage@LevelModules)", 
+				"ShowZombies": [
+					"dark_juggler", 
+					"dino_eggshell", 
+					"halloween_armor2", 
+					"halloween_imp", 
+					"lostcity_doctor", 
+					"halloween_imp", 
+					"iceage_imp"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunUsed@CurrentLevel)", 
+						"RTID(PlantsLost@CurrentLevel)", 
+						"RTID(KillZombiesInTime@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"SunUsed"
+			], 
+			"objclass": "StarChallengeSunUsedProps", 
+			"objdata": {
+				"MaximumSun": 4000
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsLost"
+			], 
+			"objclass": "StarChallengePlantsLostProps", 
+			"objdata": {
+				"MaximumPlantsLost": 15
+			}
+		}, 
+		{
+			"aliases": [
+				"KillZombiesInTime"
+			], 
+			"objclass": "StarChallengeKillZombiesInTimeProps", 
+			"objdata": {
+				"ZombiesToKill": 6, 
+				"Time": 2
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 4, 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 4, 
+						"Type": "RTID(lostcity@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Level": 4, 
+						"Type": "RTID(iceage@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 4, 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(egypt_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(egypt_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(pirate_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dark_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(iceage_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(dino_eggshell@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(lostcity_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(ra@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(halloween_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dark_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(iceage_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(iceage_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(iceage_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(future_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(lostcity_doctor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(lostcity_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(beach_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Row": "3", 
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(beach_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(ra@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dino_eggshell@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(dark_imp_dragon@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(lostcity_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(beach_shell@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(halloween_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(halloween_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(beach_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(lostcity_doctor@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(eighties_imp@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 3, 
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 3, 
+						"Type": "RTID(lostcity_imp@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 3, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 3, 
+						"Type": "RTID(halloween_imp@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 3, 
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,92 @@
+{
+	"#comment": "Eggbreaker Emery 6", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"IsLevelOfTheDay": true, 
+				"IsVasebreaker": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@.)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"VaseGridItemType": "vase_firework", 
+				"MinColumnIndex": 1, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "summer_basic", 
+						"Count": 6
+					}, 
+					{
+						"ZombieTypeName": "summer_armor1", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "summer_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "iceage_armor3", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "lostcity_excavator", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "splitpea", 
+						"Count": 10
+					}, 
+					{
+						"PlantTypeName": "bonkchoy", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "stallia", 
+						"Count": 5
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 4, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,68 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"Name": "[VASEBREAKER_EGYPT_LEVEL_NAME_1]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "mummy_armor1", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "mummy_armor2", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "pharaoh", 
+						"Count": 4
+					}, 
+					{
+						"PlantTypeName": "convallariachemist", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "beercoconut", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "iceburg", 
+						"Count": 5
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

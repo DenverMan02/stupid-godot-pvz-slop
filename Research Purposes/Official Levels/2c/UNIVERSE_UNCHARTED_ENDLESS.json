@@ -1,0 +1,274 @@
+{
+	"#comment": "Modern 7", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_NO42]", 
+				"FirstRewardType": "giftbox", 
+				"LevelNumber": 7, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(UniverseUnchartedWaveModule@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(UnchartedModeNo42UniverseModule@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[NO42_LEVEL_NAME_MUGEN]", 
+				"MusicType": "MiniGame_B", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutro4@LevelModules)", 
+				"StageModule": "RTID(UnchartedNo42UniverseStage@LevelModules)", 
+				"ShowZombies": [
+					"tutorial", 
+					"modern_superfanimp", 
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"modern_newspaper"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"objclass": "UniverseUnchartedWaveModuleProperties", 
+			"aliases": [
+				"UniverseUnchartedWaveModule"
+			], 
+			"objdata": {
+				"LevelDesigners": [
+					"RTID(ModernUniverseUnchartedJitteredWaveGenerator@CurrentLevel)"
+				], 
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1, 
+						"HitPointsLevel": 1
+					}, 
+					{
+						"AttackLevel": 2, 
+						"HitPointsLevel": 2
+					}, 
+					{
+						"AttackLevel": 3, 
+						"HitPointsLevel": 3
+					}, 
+					{
+						"AttackLevel": 4, 
+						"HitPointsLevel": 4
+					}, 
+					{
+						"AttackLevel": 5, 
+						"HitPointsLevel": 5
+					}, 
+					{
+						"AttackLevel": 6, 
+						"HitPointsLevel": 6
+					}, 
+					{
+						"AttackLevel": 7, 
+						"HitPointsLevel": 7
+					}, 
+					{
+						"AttackLevel": 8, 
+						"HitPointsLevel": 8
+					}, 
+					{
+						"AttackLevel": 9, 
+						"HitPointsLevel": 9
+					}, 
+					{
+						"AttackLevel": 10, 
+						"HitPointsLevel": 10
+					}, 
+					{
+						"AttackLevel": 11, 
+						"HitPointsLevel": 11
+					}, 
+					{
+						"AttackLevel": 12, 
+						"HitPointsLevel": 12
+					}, 
+					{
+						"AttackLevel": 13, 
+						"HitPointsLevel": 13
+					}, 
+					{
+						"AttackLevel": 14, 
+						"HitPointsLevel": 14
+					}, 
+					{
+						"AttackLevel": 15, 
+						"HitPointsLevel": 15
+					}, 
+					{
+						"AttackLevel": 16, 
+						"HitPointsLevel": 16
+					}, 
+					{
+						"AttackLevel": 17, 
+						"HitPointsLevel": 17
+					}, 
+					{
+						"AttackLevel": 18, 
+						"HitPointsLevel": 18
+					}, 
+					{
+						"AttackLevel": 19, 
+						"HitPointsLevel": 19
+					}, 
+					{
+						"AttackLevel": 20, 
+						"HitPointsLevel": 20
+					}, 
+					{
+						"AttackLevel": 21, 
+						"HitPointsLevel": 21
+					}
+				], 
+				"NextWaveMaxUseTime": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"ModernUniverseUnchartedJitteredWaveGenerator"
+			], 
+			"objclass": "UniverseUnchartedJitteredWaveGenerator", 
+			"objdata": {
+				"ZombiePool": [
+					"RTID(universe_uncharted_gargantuar_basic@ZombieTypes)", 
+					"RTID(universe_uncharted_armor1@ZombieTypes)", 
+					"RTID(universe_uncharted_armor2@ZombieTypes)", 
+					"RTID(universe_uncharted_mini_gargantuar@ZombieTypes)", 
+					"RTID(universe_uncharted_doctor@ZombieTypes)", 
+					"RTID(universe_uncharted_kongfu_selfexplode@ZombieTypes)", 
+					"RTID(universe_uncharted_lostcity_excavator@ZombieTypes)", 
+					"RTID(universe_uncharted_lostcity_jane@ZombieTypes)", 
+					"RTID(universe_uncharted_ra@ZombieTypes)", 
+					"RTID(universe_uncharted_heian_akinndo@ZombieTypes)", 
+					"RTID(universe_uncharted_prospector@ZombieTypes)", 
+					"RTID(universe_uncharted_iceage_weasel@ZombieTypes)", 
+					"RTID(universe_uncharted_chicken@ZombieTypes)", 
+					"RTID(universe_uncharted_modern_newspaper@ZombieTypes)", 
+					"RTID(universe_uncharted_juggler@ZombieTypes)", 
+					"RTID(universe_uncharted_allstar@ZombieTypes)", 
+					"RTID(uncharted_qigong@ZombieTypes)", 
+					"RTID(uncharted_crystalskull@ZombieTypes)", 
+					"RTID(uncharted_miner@ZombieTypes)"
+				], 
+				"ZombiePoolConfigs": [
+					{
+						"MinWave": 1, 
+						"MaxWave": 2, 
+						"Level": 1, 
+						"Num": 1
+					}, 
+					{
+						"MinWave": 3, 
+						"MaxWave": 5, 
+						"Level": 2, 
+						"Num": 2
+					}, 
+					{
+						"MinWave": 6, 
+						"MaxWave": 10, 
+						"Level": 2, 
+						"Num": 3
+					}, 
+					{
+						"MinWave": 11, 
+						"MaxWave": 20, 
+						"Level": 3, 
+						"Num": 8
+					}, 
+					{
+						"MinWave": 21, 
+						"MaxWave": 25, 
+						"Level": 4, 
+						"Num": 10
+					}, 
+					{
+						"MinWave": 26, 
+						"MaxWave": 30, 
+						"Level": 5, 
+						"Num": 10
+					}, 
+					{
+						"MinWave": 31, 
+						"MaxWave": 35, 
+						"Level": 6, 
+						"Num": 10
+					}, 
+					{
+						"MinWave": 36, 
+						"MaxWave": 40, 
+						"Level": 7, 
+						"Num": 10
+					}, 
+					{
+						"MinWave": 41, 
+						"MaxWave": 45, 
+						"Level": 8, 
+						"Num": 15
+					}, 
+					{
+						"MinWave": 46, 
+						"MaxWave": 50, 
+						"Level": 9, 
+						"Num": 15
+					}, 
+					{
+						"MinWave": 51, 
+						"MaxWave": 60, 
+						"Level": 10, 
+						"Num": 15
+					}, 
+					{
+						"MinWave": 61, 
+						"MaxWave": 70, 
+						"Level": 10, 
+						"Num": 15
+					}, 
+					{
+						"MinWave": 71, 
+						"MaxWave": 80, 
+						"Level": 10, 
+						"Num": 20
+					}, 
+					{
+						"MinWave": 81, 
+						"MaxWave": 90, 
+						"Level": 10, 
+						"Num": 20
+					}, 
+					{
+						"MinWave": 91, 
+						"MaxWave": 100, 
+						"Level": 10, 
+						"Num": 25
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

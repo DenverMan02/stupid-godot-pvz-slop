@@ -1,0 +1,141 @@
+{
+	"#comment": "Iceage RiverCrossing2", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ICEAGE]", 
+				"GameOverDialogShowBrain": false, 
+				"LevelIndex": 835, 
+				"LevelNumber": 19, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(RiverCrossingIntro@CurrentLevel)", 
+					"RTID(RiverCrossing@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"Name": "[ICEAGE_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(IceageRiverCrossingStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"DescriptiveName": "[STARCHALLENGE_RIVERCROSSING_NAME]", 
+				"Description": "[STARCHALLENGE_RIVERCROSSING]"
+			}
+		}, 
+		{
+			"aliases": [
+				"RiverCrossingIntro"
+			], 
+			"objclass": "RiverCrossingIntroProperties", 
+			"objdata": {
+				"RiverCrossingStage": 3, 
+				"DisplayAdvices": [
+					"[WARNING_RIVERCROSSING_1]", 
+					"[WARNING_RIVERCROSSING_2]", 
+					"[WARNING_RIVERCROSSING_3]", 
+					"[RIVERCROSSING_TIP_DODORIDER_DIED]", 
+					"[RIVERCROSSING_TIP_MOVE_UP]", 
+					"[RIVERCROSSING_TIP_MOVE_RIGHT]", 
+					"[RIVERCROSSING_TIP_MOVE_DOWN]", 
+					"[RIVERCROSSING_TIP_LETS_PLAY]", 
+					"[RIVERCROSSING_TIP_DODORIDER_RUNOUT]", 
+					"[RIVERCROSSING_TIP_MOVE_LEFT]"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"RiverCrossing"
+			], 
+			"objclass": "RiverCrossingProperties", 
+			"objdata": {
+				"RetryTimes": 3, 
+				"CrossTarget": 4, 
+				"StarvingChompersCount": 0, 
+				"DodoRiderWalkingRate": 0.4, 
+				"DodoRiderFlyingRate": 0.3, 
+				"RiverEntities": [
+					{
+						"GridX": 1, 
+						"MovingTime": 5, 
+						"TypeName": "floatingIce", 
+						"Direction": "UP"
+					}, 
+					{
+						"GridX": 2, 
+						"MovingTime": 5, 
+						"TypeName": "floatingIce", 
+						"Direction": "DOWN"
+					}, 
+					{
+						"GridX": 3, 
+						"MovingTime": 5, 
+						"TypeName": "floatingIce", 
+						"Direction": "UP"
+					}, 
+					{
+						"GridX": 5, 
+						"MovingTime": 5.3, 
+						"TypeName": "skatingGuacodile", 
+						"Direction": "DOWN"
+					}, 
+					{
+						"GridX": 6, 
+						"MovingTime": 5.3, 
+						"TypeName": "skatingGuacodile", 
+						"Direction": "UP"
+					}, 
+					{
+						"GridX": 7, 
+						"MovingTime": 5.3, 
+						"TypeName": "skatingGuacodile", 
+						"Direction": "DOWN"
+					}
+				], 
+				"StarvingChomperPlacements": [
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"TypeName": "starvingChomper", 
+						"Wave": 0
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"TypeName": "starvingChomper", 
+						"Wave": 1
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"TypeName": "starvingChomper", 
+						"Wave": 0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

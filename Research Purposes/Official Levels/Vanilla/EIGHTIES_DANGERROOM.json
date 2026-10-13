@@ -1,0 +1,142 @@
+{
+	"#comment": "Eighties Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "eighties_dangerroom", 
+				"IsDangerRoom": true, 
+				"LevelNumber": 666, 
+				"Loot": "RTID(DangerRoomLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(EightiesMowers@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_EIGHTIES_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(EightiesStage@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(EightiesDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(EightiesDangerRoomWaveGenerator@CurrentLevel)", 
+					"RTID(JamDesigner@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			], 
+			"objclass": "DangerRoomLevelIntroProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantExcludeList": [], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true
+			}
+		}, 
+		{
+			"aliases": [
+				"JamDesigner"
+			], 
+			"objclass": "DangerRoomJamDesigner", 
+			"objdata": {
+				"LevelRange": {
+					"Min": 1, 
+					"Max": 15
+				}, 
+				"JamTypesMin": {
+					"Min": 2, 
+					"Max": 2
+				}, 
+				"JamTypesMax": {
+					"Min": 5, 
+					"Max": 5
+				}, 
+				"FirstJamWavesMin": {
+					"Min": 3, 
+					"Max": 4
+				}, 
+				"FirstJamWavesMax": {
+					"Min": 1, 
+					"Max": 2
+				}, 
+				"NextJamWavesMin": {
+					"Min": 4, 
+					"Max": 5
+				}, 
+				"NextJamWavesMax": {
+					"Min": 2, 
+					"Max": 3
+				}, 
+				"ZombieAddLevelRange": {
+					"Min": 1, 
+					"Max": 50
+				}, 
+				"JamZombiesToReplaceMin": {
+					"Min": 1, 
+					"Max": 2
+				}, 
+				"JamZombiesToReplaceMax": {
+					"Min": 5, 
+					"Max": 7
+				}, 
+				"LevelToIntroduceMetalJam": 7
+			}
+		}, 
+		{
+			"aliases": [
+				"EightiesDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(eighties@ZombieTypes)", 
+					"RTID(eighties_armor1@ZombieTypes)", 
+					"RTID(eighties_armor2@ZombieTypes)", 
+					"RTID(eighties_punk@ZombieTypes)", 
+					"RTID(eighties_mc@ZombieTypes)", 
+					"RTID(eighties_glitter@ZombieTypes)", 
+					"RTID(eighties_imp@ZombieTypes)", 
+					"RTID(eighties_gargantuar@ZombieTypes)", 
+					"RTID(eighties_breakdancer@ZombieTypes)", 
+					"RTID(eighties_arcade@ZombieTypes)", 
+					"RTID(eighties_boombox@ZombieTypes)"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

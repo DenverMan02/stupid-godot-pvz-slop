@@ -1,0 +1,74 @@
+{
+	"#comment": "hydra Zomboss", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_FOREST]", 
+				"FirstIntroNarrative": "HYDRA_INTRO_ZOMBOSS", 
+				"FirstOutroNarrative": "HYDRA_OUTRO_ZOMBOSS", 
+				"LevelNumber": 15, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossMechLastStandIntro@CurrentLevel)", 
+					"RTID(FairyTaleMowers@LevelModules)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(LastStandSeedBank@CurrentLevel)"
+				], 
+				"Name": "[FOREST_LEVEL_NAME_15]", 
+				"NormalPresentTable": "pirate_normal_01", 
+				"ShinyPresentTable": "pirate_shiny_01", 
+				"StageModule": "RTID(FairyTaleStage@LevelModules)", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_hydra_normal", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"goldbloom"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechLastStandIntro"
+			], 
+			"objclass": "ZombossMechLastStandIntroProperties", 
+			"objdata": {
+				"PanEndOffset": 468, 
+				"PanLeftDuration": 1.5, 
+				"PanRightDuration": 1.5, 
+				"PanStartOffset": 78, 
+				"ResourceGroupNames": [], 
+				"StartingPlantfood": 0, 
+				"StartingSun": 1000
+			}
+		}
+	], 
+	"version": 1
+}

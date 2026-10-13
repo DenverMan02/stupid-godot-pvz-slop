@@ -1,0 +1,45 @@
+{
+	"#comment": "SandboxEgypt", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "Egypt Sandbox Level", 
+				"LevelNumber": 42, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(SandboxEgyptGravestones@CurrentLevel)", 
+					"RTID(EgyptMowers@LevelModules)", 
+					"RTID(SandboxEgyptSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "Egypt Sandbox", 
+				"StageModule": "RTID(EgyptStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"SandboxEgyptGravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"GravestoneCount": 6, 
+				"SpawnColumnEnd": 9, 
+				"SpawnColumnStart": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"SandboxEgyptSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}
+	], 
+	"version": 1
+}

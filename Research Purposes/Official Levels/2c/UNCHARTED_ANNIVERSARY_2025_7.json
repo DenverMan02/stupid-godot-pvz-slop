@@ -1,0 +1,655 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ANNIVERSARY]", 
+				"LevelNumber": 7, 
+				"StartingSun": 520, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(pvz1CopycatsModule@CurrentLevel)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(LilypadPlacement@CurrentLevel)", 
+					"RTID(Tide@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[ANNIVERSARY_10TH_NAME_06]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"ShowZombies": [
+					"beach_octopus", 
+					"beach_shell", 
+					"beach_surfer", 
+					"beach", 
+					"beach_armor1", 
+					"beach_armor2", 
+					"beach_gargantuar"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult1@CurrentLevel)", 
+					"RTID(Difficult2@CurrentLevel)", 
+					"RTID(Difficult3@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult1"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 1, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_1@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(specialist_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(supporter_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(plant_damage_reduced_difficulty_1@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"DefaultCollection": "RTID(zombie_12th_difficulty_2@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_attack_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(m_2@LevelModifierModuleCollection)", 
+					"RTID(sun_reduced_difficulty_2@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult3"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 3, 
+				"DefaultCollection": "RTID(zombie_12th_difficulty_3@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(beach_zombie@LevelModifierModuleCollection)", 
+					"RTID(z_speed_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"pvz1CopycatsModule"
+			], 
+			"objclass": "PVZ1CopycatsModuleProperties", 
+			"objdata": {
+				"ZombieWeight": 0, 
+				"SpawnPlantLevel": 5, 
+				"PlantBlackList": [
+					"forg", 
+					"powerlily", 
+					"squash", 
+					"jalapeno", 
+					"gravebuster", 
+					"imitater", 
+					"cherry_bomb", 
+					"empea", 
+					"powerplant", 
+					"coffeebean", 
+					"lilypad", 
+					"flowerpot", 
+					"heathseeker", 
+					"tanglekelp", 
+					"guacodile", 
+					"ghostpepper", 
+					"hurrikale", 
+					"olive", 
+					"cobcannon", 
+					"hotpotato", 
+					"goldleaf", 
+					"flattenedshroom", 
+					"goldbloom", 
+					"lavaguava", 
+					"jackfruit", 
+					"thymewarp", 
+					"intensivecarrot", 
+					"grapeshot", 
+					"escaperoot", 
+					"pumpkin", 
+					"powervine", 
+					"perfumeshroom", 
+					"kelpguard", 
+					"oxygenalgae", 
+					"seashroom"
+				], 
+				"ZombieWhiteList": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"minigame_imitater_sun", 
+					"minigame_imitater_melee2", 
+					"minigame_imitater_defense", 
+					"minigame_imitater_pitfall", 
+					"minigame_imitater_helper", 
+					"minigame_imitater_adc2", 
+					"minigame_imitater_adc2", 
+					"lilypad"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 7
+			}
+		}, 
+		{
+			"aliases": [
+				"LilypadPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "lilypad"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "lilypad"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_beach_12th", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 1, 
+						"ZombiePool": []
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 100, 
+				"WaveCount": 100, 
+				"WaveSpendingPointIncrement": 75, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1LowTideEvent0@CurrentLevel)", 
+						"RTID(Wave1TidalChangeEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(beach_octopus@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1TidalChangeEvent0"
+			], 
+			"objclass": "TidalChangeWaveActionProps", 
+			"objdata": {
+				"TidalChange": {
+					"ChangeAmount": 5, 
+					"ChangeType": "absolute"
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1LowTideEvent0"
+			], 
+			"objclass": "BeachStageEventZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 6, 
+				"ColumnStart": 4, 
+				"GroupSize": "4", 
+				"TimeBeforeFullSpawn": "0.5", 
+				"TimeBetweenGroups": "0.25", 
+				"WaveStartMessage": "[WARNING_LOW_TIDE]", 
+				"ZombieCount": 5, 
+				"ZombieName": "beach_imp"
+			}
+		}
+	], 
+	"version": 1
+}

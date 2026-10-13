@@ -1,0 +1,204 @@
+{
+	"#comment": "Tutorial 1", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "off_the_green_ch", 
+				"Description": "[PLAYERS_HOUSE]", 
+				"FirstOutroNarrative": 1000450, 
+				"FirstRewardParam": "taco", 
+				"FirstRewardType": "collectable", 
+				"ForceNextLevel": "egypt1", 
+				"ForceWarpTunnel": true, 
+				"LevelNumber": 4, 
+				"LevelIndex": 4, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)", 
+					"RTID(FirstCoinTutorial@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialPeashooterDeath@LevelModules)", 
+					"RTID(FrontLawnMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[TUTORIAL_LEVEL_NAME]", 
+				"ReplayOutroNarrative": 1000450, 
+				"ReplayRewardParam": "taco", 
+				"ReplayRewardType": "collectable", 
+				"StageModule": "RTID(TutorialStage@LevelModules)", 
+				"StartingSun": 50, 
+				"SuppressVictoryScreen": true, 
+				"GameFeaturesToUnlock": [
+					"feature_coins", 
+					"feature_plantfood"
+				], 
+				"ShowZombies": [
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"tutorial"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"FlagWaveInterval": 8, 
+				"LevelXMLFilename": "tutorial4.xml", 
+				"ResourceGroupNames": [
+					"SodRollGroup"
+				], 
+				"WaveCount": 8, 
+				"WaveSpendingPointIncrement": 10, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"peashooter", 
+					"sunflower", 
+					"wallnut", 
+					"potatomine"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"TutorialIntro"
+			], 
+			"objclass": "TutorialLevel4Properties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"FirstCoinTutorial"
+			], 
+			"objclass": "PickupCollectableTutorialProperties", 
+			"objdata": {
+				"DropperZombieType": "tutorial_armor2", 
+				"LootType": "GoldCoin", 
+				"PickupAdvice": "[ADVICE_CLICK_COIN]", 
+				"PostPickupAdvice": "[ADVICE_COLLECT_COINS]"
+			}
+		}
+	], 
+	"version": 1
+}

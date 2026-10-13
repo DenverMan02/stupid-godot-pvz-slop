@@ -1,0 +1,452 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MINIGAME]", 
+				"LevelNumber": 4, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(MiniGameCollectionModule@LevelModules)", 
+					"RTID(NewBowlingBulbMinigame@CurrentLevel)"
+				], 
+				"MusicType": "", 
+				"Name": "[ACTIVITY_NEW_MINIGAME_BOWLING]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(MiniGameCollectionOutro@LevelModules)", 
+				"StageModule": "RTID(BowlingStage@LevelModules)", 
+				"ShowZombies": [
+					"bowling_tutorial", 
+					"bowling_tutorial_armor1", 
+					"bowling_tutorial_armor2", 
+					"bowling_lostcity_excavator", 
+					"bowling_modern_allstar", 
+					"bowling_future_jetpack_disco", 
+					"bowling_modern_newspaper", 
+					"bowling_disco_mech", 
+					"bowling_camel_onehump"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SaveMowers@CurrentLevel)", 
+						"RTID(SpendSunHoldout@CurrentLevel)", 
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"SaveMowers"
+			], 
+			"objclass": "StarChallengeSaveMowersProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SpendSunHoldout"
+			], 
+			"objclass": "StarChallengeSpendSunHoldoutProps", 
+			"objdata": {
+				"HoldoutSeconds": 60
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			], 
+			"objclass": "StarChallengePlantFoodNonuseProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 4, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 8, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 10, 
+						"MaxPackets": 8
+					}, 
+					{
+						"Delay": 12, 
+						"MaxPackets": 10
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"PlantType": "tool_projectile_wallnut", 
+						"Weight": 80
+					}, 
+					{
+						"PlantType": "tool_projectile_wallnut_big", 
+						"Weight": 20
+					}, 
+					{
+						"PlantType": "tool_projectile_wallnut_explode", 
+						"Weight": 20
+					}, 
+					{
+						"PlantType": "tool_projectile_wallnut_primeval", 
+						"Weight": 30
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 200
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewBowlingBulbMinigame"
+			], 
+			"objclass": "NewBowlingMinigameProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"DescriptionName": "[PVZ1MODE_BOWLING]", 
+				"Description": "[PVZ1MODE_BOWLING_NORMAL_DESC]", 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_camel_onehump@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_camel_onehump@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_disco_mech@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_camel_onehump@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_disco_mech@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_tutorial@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_disco_mech@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(bowling_lostcity_excavator@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_camel_onehump@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_modern_newspaper@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(bowling_tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

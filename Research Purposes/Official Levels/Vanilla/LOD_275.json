@@ -1,0 +1,203 @@
+{
+	"#comment": "LOD 275 - Beghouled - Kiwibeast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"SuppressSunSpawn": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 3, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(LostCityStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "tallnut", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "endurian", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "laser_bean", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "akee", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [
+					"electricblueberry", 
+					"primalwallnut"
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 100, 
+				"InitialPlants": [
+					"kiwibeast", 
+					"wallnut", 
+					"lightningreed", 
+					"cabbagepult"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "cabbagepult", 
+						"UpgradedPlant": "akee"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "tallnut"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "endurian"
+					}, 
+					{
+						"BasePlant": "tallnut", 
+						"UpgradedPlant": "primalwallnut"
+					}, 
+					{
+						"BasePlant": "lightningreed", 
+						"UpgradedPlant": "laser_bean"
+					}, 
+					{
+						"BasePlant": "laser_bean", 
+						"UpgradedPlant": "electricblueberry"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 50, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 75, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "lostcity"
+							}, 
+							{
+								"ZombieType": "lostcity_imp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "lostcity"
+							}, 
+							{
+								"ZombieType": "lostcity_armor1"
+							}, 
+							{
+								"ZombieType": "explorer"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "lostcity"
+							}, 
+							{
+								"ZombieType": "lostcity_armor1"
+							}, 
+							{
+								"ZombieType": "lostcity_jane"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "lostcity"
+							}, 
+							{
+								"ZombieType": "lostcity_jane"
+							}, 
+							{
+								"ZombieType": "lostcity_armor_1"
+							}, 
+							{
+								"ZombieType": "lostcity_crystalskull"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,98 @@
+{
+	"#comment": "BOSS EVENT LEGEND", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"LevelIndex": 909, 
+				"LevelNumber": 13, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(KongfuSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(EnergyGrid@CurrentLevel)", 
+					"RTID(ZombossLastStand@CurrentLevel)", 
+					"RTID(RocketZombieFlickModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[DEVILINVADE_HARD]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuBossStage@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "RocketZombieFlickModuleProperties", 
+			"aliases": [
+				"RocketZombieFlickModule"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"ZombossLastStand"
+			], 
+			"objclass": "ZombossLastStandMinigameProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"ZombieKongFuZombossExplosiveGroup"
+				], 
+				"BossMusic": true, 
+				"StartingPlantfood": 3, 
+				"StartingSun": 2500, 
+				"ZombossInitialGridCol": 6, 
+				"ZombossInitialGridRow": 3, 
+				"ZombossStartStageIndex": 6, 
+				"ZombossTypeName": "kongfu_zomboss_explosive"
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": []
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"primalpeashooter"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_DEVIL]", 
+				"DescriptiveName": "[DEVILINVADE_HARD]"
+			}
+		}
+	], 
+	"version": 1
+}

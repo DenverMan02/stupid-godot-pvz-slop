@@ -1,0 +1,143 @@
+{
+	"#comment": "Egypt Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "egypt_dangerroom", 
+				"IsDangerRoom": true, 
+				"LevelNumber": 666, 
+				"Loot": "RTID(DangerRoomLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(EgyptMowers@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_EGYPT_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(EgyptStage@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(EgyptDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(EgyptDangerRoomWaveGenerator@CurrentLevel)", 
+					"RTID(EgyptGravestoneGenerator@CurrentLevel)", 
+					"RTID(EgyptSandstormGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			], 
+			"objclass": "DangerRoomLevelIntroProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"GravestoneCount": 0, 
+				"SpawnColumnEnd": 0, 
+				"SpawnColumnStart": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantExcludeList": [], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true
+			}
+		}, 
+		{
+			"aliases": [
+				"EgyptDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(camel_onehump@ZombieTypes)", 
+					"RTID(explorer@ZombieTypes)", 
+					"RTID(mummy_armor1@ZombieTypes)", 
+					"RTID(mummy_armor2@ZombieTypes)", 
+					"RTID(pharaoh@ZombieTypes)", 
+					"RTID(ra@ZombieTypes)", 
+					"RTID(tomb_raiser@ZombieTypes)", 
+					"RTID(egypt_gargantuar@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EgyptGravestoneGenerator"
+			], 
+			"objclass": "DangerRoomGravestoneGenerator", 
+			"objdata": {
+				"MinGravestoneCount": 3, 
+				"BaseGravestoneCountPerLevel": 3.0, 
+				"MaxGeneratedGravestones": 30, 
+				"MinStartingGravestoneSpawnCol": 2, 
+				"MaxStartingGravestoneSpawnCol": 9, 
+				"MaxStartingGravestoneSpawnColOffsetPerLevel": -0.5, 
+				"MinEndingGravestoneSpawnCol": 9, 
+				"MaxEndingGravestoneSpawnCol": 9, 
+				"MaxEndingGravestoneSpawnColOffsetPerLevel": 0.0
+			}
+		}, 
+		{
+			"aliases": [
+				"EgyptSandstormGenerator"
+			], 
+			"objclass": "DangerRoomSandstormDesigner", 
+			"objdata": {
+				"BaseSandstormCount": 0, 
+				"BaseSandstormCountPerLevel": 0.5, 
+				"MinSandstormCountPerLevel": 0.2, 
+				"MaxSandstormsPerFlagWave": 2.0, 
+				"BaseSandstormZombiesCount": 1, 
+				"BaseSandstormZombiesCountPerLevel": 0.5, 
+				"MinSandstormZombiesCountPerLevel": 0.25, 
+				"MaxSandstormZombies": 10, 
+				"MinStartingSandstormSpawnCol": 2, 
+				"MaxStartingSandstormSpawnCol": 9, 
+				"MaxStartingSandstormSpawnColOffsetPerLevel": -0.3, 
+				"MinEndingSandstormSpawnCol": 5, 
+				"MaxEndingSandstormSpawnCol": 9, 
+				"MaxEndingSandstormSpawnColOffsetPerLevel": -0.1, 
+				"BaseSandstormStartWave": 5
+			}
+		}
+	], 
+	"version": 1
+}

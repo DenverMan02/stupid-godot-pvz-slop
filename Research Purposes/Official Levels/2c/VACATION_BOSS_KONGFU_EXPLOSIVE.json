@@ -1,0 +1,102 @@
+{
+	"#comment": "Kongfu Level 30 2/26 Boss 1 Final + Last Stand", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_BOSSRACEEVENT]", 
+				"FirstRewardParam": "none", 
+				"FirstRewardType": "none", 
+				"ReplayRewardParam": "none", 
+				"ReplayRewardType": "none", 
+				"ForceNextLevel": "vacation_boss_egypt", 
+				"LevelNumber": 1, 
+				"IsBossFight": true, 
+				"CanSaveGameState": false, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(KongfuSeedBank@CurrentLevel)", 
+					"RTID(LighteningBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RocketZombieFlickModule@CurrentLevel)", 
+					"RTID(ZombossLastStand@CurrentLevel)", 
+					"RTID(LightningRain@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SUMMER_ELECTRIC_LEVEL1]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(VacationKongfuBossStage2@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "RocketZombieFlickModuleProperties", 
+			"aliases": [
+				"RocketZombieFlickModule"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"LighteningBattle"
+			], 
+			"objclass": "BossKillTimeChallengeProperties", 
+			"objdata": {
+				"LevelIndex": 0, 
+				"Type": "lightning"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossLastStand"
+			], 
+			"objclass": "ZombossLastStandMinigameProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"ZombieKongFuZombossExplosiveGroup"
+				], 
+				"StartingPlantfood": 3, 
+				"StartingSun": 4000, 
+				"ZombossInitialGridCol": 6, 
+				"ZombossInitialGridRow": 3, 
+				"ZombossStartStageIndex": 0, 
+				"ZombossTypeName": "kongfu_zomboss_explosive_vacation"
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_KONGFU_FINALE]", 
+				"DescriptiveName": "[STARCHALLENGE_KONGFU_FINALE_NAME]"
+			}
+		}
+	], 
+	"version": 1
+}

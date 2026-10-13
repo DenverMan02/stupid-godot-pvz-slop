@@ -1,0 +1,124 @@
+{
+	"#comment": "Cowboy Last Stand A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"Description": "[PLAYERS_TRIP_TO_PIRATE_SHIP]", 
+				"GameOverDialogShowBrain": false, 
+				"LevelIndex": 312, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(WhackAMoleIntro@CurrentLevel)", 
+					"RTID(WhackAMoleGame@CurrentLevel)"
+				], 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(SteamStage@LevelModules)", 
+				"VictoryModule": "RTID(WhackAMoleWinOutro@LevelModules)", 
+				"MusicType": "MiniGame_A", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"WhackAMoleGame"
+			], 
+			"objclass": "WhackAMoleModuleProperties", 
+			"objdata": {
+				"GameTime": 60, 
+				"RoundIndex": 0, 
+				"ZombieWinPositionX": -80, 
+				"CoinHammerLastTime": 10, 
+				"GemHammerLastTime": 12, 
+				"MinWinScore": 5000, 
+				"OneScore": 500, 
+				"CoinHammerCost": 300, 
+				"GemHammerCost": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"WhackAMoleIntro"
+			], 
+			"objclass": "WhackAMoleIntroProperties", 
+			"objdata": {
+				"IsTutorial": true, 
+				"SetLocations": [
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"spawnZombieRate": 0.6
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"spawnZombieRate": 0.6
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

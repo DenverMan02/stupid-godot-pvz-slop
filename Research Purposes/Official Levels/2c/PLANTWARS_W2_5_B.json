@@ -1,0 +1,1340 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_PLANTWARS]", 
+				"FirstRewardType": "giftbox", 
+				"LevelNumber": 5, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ShovelPlantSpawnGraveStoneModule@LevelModules)", 
+					"RTID(PlantWarsZombiesDeadWinCon@LevelModules)", 
+					"RTID(PlantWarsSeedBank@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultPlantWarsZombieWinCondition@LevelModules)", 
+					"RTID(PlantWarsModule@CurrentLevel)", 
+					"RTID(warmist@CurrentLevel)", 
+					"RTID(PlantWarsCreditModuleProps@LevelModules)"
+				], 
+				"Name": "[PLANTWARS_LEVEL_NAME_W1_5_B]", 
+				"NormalPresentTable": "plantwars_w1_5_b", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"MusicType": "MiniGame_A", 
+				"VictoryModule": "RTID(PlantWarsOutro@LevelModules)", 
+				"StageModule": "RTID(PlantWarsStage@LevelModules)", 
+				"ShowZombies": [
+					"fairy_tale", 
+					"fairy_tale_armor1", 
+					"fairy_tale_armor2", 
+					"fairy_tale_flag", 
+					"fairy_tale_witch", 
+					"fairy_tale_gargantuar", 
+					"fairy_tale_imp", 
+					"modern_miner", 
+					"kongfu_hammer", 
+					"zombie_explodenut", 
+					"dark_wizard", 
+					"zombie_gatlingpea", 
+					"zombie_snowpea", 
+					"dark_juggler", 
+					"plantwars_mirror_queen_phase3"
+				], 
+				"ShowTitles": [
+					{
+						"ZombieList": [
+							"fairy_tale", 
+							"fairy_tale_armor1", 
+							"fairy_tale_armor2", 
+							"fairy_tale_flag", 
+							"fairy_tale_witch", 
+							"fairy_tale_gargantuar", 
+							"fairy_tale_imp", 
+							"modern_miner", 
+							"kongfu_hammer", 
+							"zombie_explodenut", 
+							"dark_wizard", 
+							"zombie_gatlingpea", 
+							"zombie_snowpea", 
+							"dark_juggler", 
+							"dark_wizard_elite"
+						], 
+						"BuffList": [
+							"ZTAttack1", 
+							"ZTSpeed1", 
+							"ZTShield1", 
+							"ZTCrystal1", 
+							"ZTGravity1", 
+							"ZTAntiControl1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"ZombieList": [
+							"fairy_tale", 
+							"fairy_tale_armor1", 
+							"fairy_tale_armor2", 
+							"fairy_tale_flag", 
+							"fairy_tale_witch", 
+							"fairy_tale_gargantuar", 
+							"fairy_tale_imp", 
+							"modern_miner", 
+							"kongfu_hammer", 
+							"zombie_explodenut", 
+							"dark_wizard", 
+							"zombie_gatlingpea", 
+							"zombie_snowpea", 
+							"dark_juggler", 
+							"plantwars_mirror_queen_phase3"
+						], 
+						"BuffList": [
+							"ZTAttack1", 
+							"ZTSpeed1", 
+							"ZTShield1", 
+							"ZTCrystal1", 
+							"ZTGravity1", 
+							"ZTAntiControl1", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantWarsModuleProperties", 
+			"aliases": [
+				"PlantWarsModule"
+			], 
+			"objdata": {
+				"TimeCountDown": 300.0
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 120, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1TileEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2SandstormEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)", 
+						"RTID(Wave3SandstormEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)", 
+						"RTID(Wave5SandstormEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)", 
+						"RTID(Wave7SandstormEvent0@CurrentLevel)", 
+						"RTID(Wave7PortalsEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)", 
+						"RTID(Wave8SandstormEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)", 
+						"RTID(Wave10SandstormEvent0@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal8", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal8", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(catapult@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal8", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(catapult@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal8", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_archmage@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_archmage@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(modern_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(modern_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal3", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal3", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_explodenut@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_explodenut@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(catapult@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(catapult@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(modern_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(modern_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_juggler@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_juggler@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_juggler@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_witch@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(fairy_tale_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal4", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_archmage@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(dark_archmage@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_explodenut@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_explodenut@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTCrystal10", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(fairy_tale_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTCrystal10", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1", 
+							"ZTShield3", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1TileEvent0"
+			], 
+			"objclass": "ZombieBoundTileActionProps", 
+			"objdata": {
+				"Tiles": [
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 0
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 1
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 2
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 3
+						}, 
+						"Type": "zombie_bound_tile"
+					}, 
+					{
+						"Location": {
+							"mX": 7, 
+							"mY": 4
+						}, 
+						"Type": "zombie_bound_tile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 8, 
+				"ColumnStart": 4, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_flag@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 8, 
+				"ColumnStart": 4, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 8, 
+				"ColumnStart": 4, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 8, 
+				"ColumnStart": 4, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTShield3"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 8, 
+				"ColumnStart": 4, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(dark_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(explorer@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(explorer@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3", 
+							"ZTSpeed1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10SandstormEvent0"
+			], 
+			"objclass": "StormZombieSpawnerProps", 
+			"objdata": {
+				"ColumnEnd": 8, 
+				"ColumnStart": 4, 
+				"GroupSize": 2, 
+				"TimeBetweenGroups": 3, 
+				"Waves": "", 
+				"Type": "sandstorm", 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield3"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7PortalsEvent0"
+			], 
+			"objclass": "SpawnModernPortalsWaveActionProps", 
+			"objdata": {
+				"PortalColumn": 8, 
+				"PortalRow": 2, 
+				"PortalType": "plantwars_mirror_queen_phase3", 
+				"SpawnEffectAnimID": "", 
+				"SpawnSoundID": ""
+			}
+		}
+	], 
+	"version": 1
+}

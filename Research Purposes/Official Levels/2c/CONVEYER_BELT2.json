@@ -1,0 +1,254 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SNOWNIGHT]", 
+				"LevelNumber": 2, 
+				"IsArtifactDisabled": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LastStand@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(PVZ2TrainingModule@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SNOWNIGHTSTAGE2_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(TrainingOutro@LevelModules)", 
+				"StageModule": "RTID(NewYearDaylightStage@LevelModules)", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser", 
+				"PlantBlackList": [
+					"powerplant", 
+					"imitater", 
+					"nekotail", 
+					"wintersweet"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStand"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 3, 
+				"StartingSun": 9999
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_TRAINING]", 
+				"DescriptiveName": "[TRAINING_CHALLENGE_ZERO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "SnowManProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 8, 
+							"y": 0
+						}
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 0, 
+							"y": 0
+						}
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 0, 
+							"y": 1
+						}
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 8, 
+							"y": 1
+						}
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 0, 
+							"y": 3
+						}
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 8, 
+							"y": 3
+						}
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 8, 
+							"y": 4
+						}
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "fat_weasel", 
+						"speed": 1.5, 
+						"cooldown": 5.0, 
+						"targetpos": {
+							"x": 0, 
+							"y": 4
+						}
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_worldcup", 
+				"Rails": [
+					{
+						"Column": 2, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}, 
+					{
+						"Column": 4, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}, 
+					{
+						"Column": 4, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 5, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 6, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 7, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 8, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PVZ2TrainingModule"
+			], 
+			"objclass": "PVZ2TrainingMinigameProperties", 
+			"objdata": {
+				"Leveltime": 30, 
+				"LevelType": 4, 
+				"SpawnCount": 5, 
+				"Railcarts": [
+					3, 
+					2, 
+					1, 
+					6
+				]
+			}
+		}
+	], 
+	"version": 1
+}

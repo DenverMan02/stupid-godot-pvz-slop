@@ -1,0 +1,762 @@
+{
+	"#comment": "Future Prototype Zombie Doctor A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_FUTURE]", 
+				"GameOverDialogTaskFailed": true, 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(EvilDaveTutorial@CurrentLevel)", 
+					"RTID(EvilDave3@CurrentLevel)", 
+					"RTID(Future3SeedBank@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(InitialPlant@CurrentLevel)"
+				], 
+				"Name": "[CHALLENGE_EVIL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"StartingSun": 250, 
+				"ShowZombies": [
+					"future_jetpack", 
+					"future_protector", 
+					"disco_mech", 
+					"football_mech", 
+					"future_gargantuar", 
+					"mech_cone"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"InitialPlant"
+			], 
+			"objclass": "InitialPlantEntryProperties", 
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"PlantTypes": [
+							"lightningreed", 
+							"melonpult"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"PlantTypes": [
+							"repeater"
+						]
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"PlantTypes": [
+							"wallnut", 
+							"turnip", 
+							"tallnut"
+						]
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"PlantTypes": [
+							"chilibean", 
+							"potatomine"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"PlantTypes": [
+							"repeater"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"PlantTypes": [
+							"repeater"
+						]
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"PlantTypes": [
+							"repeater"
+						]
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"PlantTypes": [
+							"tallnut"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"threepeater"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"threepeater"
+						]
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"threepeater"
+						]
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"springbean"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"PlantTypes": [
+							"potatomine", 
+							"chilibean"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"PlantTypes": [
+							"potatomine", 
+							"chilibean"
+						]
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"PlantTypes": [
+							"potatomine", 
+							"chilibean"
+						]
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"PlantTypes": [
+							"potatomine", 
+							"chilibean"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"PlantTypes": [
+							"melonpult"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"PlantTypes": [
+							"snowpea"
+						]
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"PlantTypes": [
+							"peach"
+						]
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"PlantTypes": [
+							"wallnut"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EvilDaveTutorial"
+			], 
+			"objclass": "IntroEvilDaveProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"EvilDave3"
+			], 
+			"objclass": "EvilDaveProperties", 
+			"objdata": {
+				"PlantDistance": 4
+			}
+		}, 
+		{
+			"aliases": [
+				"Future3SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"future", 
+					"future_armor1", 
+					"future_protector", 
+					"future_armor2"
+				], 
+				"SelectionMethod": "preset", 
+				"ZombieMode": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_EVIL]", 
+				"DescriptiveName": "[STARCHALLENGE_EVIL_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 10, 
+				"LevelXMLFilename": "future3.xml", 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 3, 
+				"WaveCount": 20, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(mech_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(mech_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(mech_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(mech_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(mech_cone@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

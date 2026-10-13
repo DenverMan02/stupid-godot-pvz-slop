@@ -1,0 +1,286 @@
+{
+	"#comment": "Tutorial 5", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "off_the_green", 
+				"Description": "[PLAYERS_HOUSE]", 
+				"FirstOutroNarrative": 1000450, 
+				"FirstRewardParam": "taco", 
+				"FirstRewardType": "collectable", 
+				"ForceNextLevel": "egypt1", 
+				"ForceWarpTunnel": true, 
+				"GameFeaturesToUnlock": [
+					"feature_coins"
+				], 
+				"LevelNumber": 5, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)", 
+					"RTID(FirstCoinTutorial@CurrentLevel)", 
+					"RTID(FastSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialPeashooterDeath@LevelModules)", 
+					"RTID(TutorialMowers@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedPacketHalfTimeModule@LevelModules)", 
+					"RTID(FrozenPlantPlacement@CurrentLevel)"
+				], 
+				"Name": "[TUTORIAL_LEVEL_NAME]", 
+				"ReplayOutroNarrative": 1000450, 
+				"ReplayRewardParam": "taco", 
+				"ReplayRewardType": "collectable", 
+				"VictoryModule": "RTID(VictoryOutroEndingInZombossNPC@LevelModules)", 
+				"ResourceGroupNames": [
+					"SodRollGroup"
+				], 
+				"StageModule": "RTID(TutorialStage@LevelModules)", 
+				"StartingSun": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			], 
+			"objclass": "InitialPlantProperties", 
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"Level": "-1", 
+						"TypeName": "wallnut"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"Level": "-1", 
+						"TypeName": "peashooter"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"Level": "-1", 
+						"TypeName": "wallnut"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"Level": "-1", 
+						"TypeName": "cabbagepult"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"Level": "-1", 
+						"TypeName": "wallnut"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"Level": "-1", 
+						"TypeName": "peashooter"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"Level": "-1", 
+						"TypeName": "wallnut"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"Level": "-1", 
+						"TypeName": "wallnut"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "peashooter"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "sunflower"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "wallnut"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "potatomine"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "cabbagepult"
+					}
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 4, 
+						"GridY": 1
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"TutorialIntro"
+			], 
+			"objclass": "TutorialLevel4Properties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"FirstCoinTutorial"
+			], 
+			"objclass": "PickupCollectableTutorialProperties", 
+			"objdata": {
+				"DropperZombieType": "tutorial_armor2", 
+				"LootType": "GoldCoin", 
+				"PickupAdvice": "[ADVICE_CLICK_COIN]", 
+				"PostPickupAdvice": "[ADVICE_COLLECT_COINS]"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 8, 
+				"MaxNextWaveHealthPercentage": 0.75, 
+				"MinNextWaveHealthPercentage": 0.6, 
+				"WaveCount": 8, 
+				"WaveSpendingPointIncrement": 10, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					]
+				], 
+				"ZombieCountdownFirstWaveSecs": 2
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

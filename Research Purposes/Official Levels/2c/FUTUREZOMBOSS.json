@@ -1,0 +1,246 @@
+{
+	"objects": [
+		{
+			"objdata": {
+				"Name": "Future Boss Battle", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(FutureMowers@LevelModules)", 
+					"RTID(SpawninZombies@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)", 
+					"RTID(ConveyorBelt@CurrentLevel)"
+				], 
+				"Description": "Future Boss Battle!"
+			}, 
+			"objclass": "LevelDefinition"
+		}, 
+		{
+			"objclass": "SimpleZombieSpawnerProperties", 
+			"aliases": [
+				"SpawninZombies"
+			], 
+			"objdata": {
+				"Stages": [
+					{
+						"Types": [
+							{
+								"ZombieType": "mech_cone", 
+								"Weight": 30
+							}, 
+							{
+								"ZombieType": "future_armor1", 
+								"Weight": 10
+							}
+						], 
+						"SpawnDelay": 5.0, 
+						"PlantFoodInterval": 5
+					}, 
+					{
+						"Types": [
+							{
+								"ZombieType": "future_armor1", 
+								"Weight": 30
+							}, 
+							{
+								"ZombieType": "future_armor2", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "future_jetpack", 
+								"Weight": 10
+							}, 
+							{
+								"ZombieType": "mech_cone", 
+								"Weight": 20
+							}
+						], 
+						"SpawnDelay": 4.5, 
+						"PlantFoodInterval": 5
+					}, 
+					{
+						"Types": [
+							{
+								"ZombieType": "future_armor1", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "future_armor2", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "future_jetpack", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "mech_cone", 
+								"Weight": 30
+							}, 
+							{
+								"ZombieType": "disco_mech", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "football_mech", 
+								"Weight": 40
+							}
+						], 
+						"SpawnDelay": 4.0, 
+						"PlantFoodInterval": 5
+					}, 
+					{
+						"Types": [
+							{
+								"ZombieType": "future_armor1", 
+								"Weight": 10
+							}, 
+							{
+								"ZombieType": "future_armor2", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "mech_cone", 
+								"Weight": 30
+							}, 
+							{
+								"ZombieType": "disco_mech", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "football_mech", 
+								"Weight": 40
+							}
+						], 
+						"SpawnDelay": 3.5, 
+						"PlantFoodInterval": 4
+					}, 
+					{
+						"Types": [
+							{
+								"ZombieType": "future_armor1", 
+								"Weight": 10
+							}, 
+							{
+								"ZombieType": "future_armor2", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "mech_cone", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "football_mech", 
+								"Weight": 20
+							}, 
+							{
+								"ZombieType": "disco_mech", 
+								"Weight": 10
+							}, 
+							{
+								"ZombieType": "future_gargantuar", 
+								"Weight": 40
+							}
+						], 
+						"SpawnDelay": 3.0, 
+						"PlantFoodInterval": 4
+					}
+				]
+			}
+		}, 
+		{
+			"objdata": {
+				"InitialPlantList": [
+					{
+						"Weight": 25, 
+						"PlantType": "tool_powertile_alpha", 
+						"MaxCount": 4, 
+						"MaxWeightFactor": 0.0
+					}, 
+					{
+						"Weight": 25, 
+						"PlantType": "tool_powertile_beta", 
+						"MaxCount": 4, 
+						"MaxWeightFactor": 0.0
+					}, 
+					{
+						"Weight": 25, 
+						"PlantType": "tool_powertile_gamma", 
+						"MaxCount": 4, 
+						"MaxWeightFactor": 0.0
+					}, 
+					{
+						"Weight": 15, 
+						"PlantType": "holonut", 
+						"MaxCount": 5
+					}, 
+					{
+						"Weight": 20, 
+						"PlantType": "laser_bean", 
+						"MinCount": 2
+					}, 
+					{
+						"Weight": 15, 
+						"PlantType": "starfruit", 
+						"MinCount": 2
+					}, 
+					{
+						"Weight": 15, 
+						"PlantType": "melonpult", 
+						"MinCount": 1
+					}, 
+					{
+						"Weight": 15, 
+						"PlantType": "bonkchoy"
+					}, 
+					{
+						"Weight": 15, 
+						"PlantType": "empea", 
+						"MaxCount": 4
+					}
+				], 
+				"DropDelayConditions": [
+					{
+						"MaxPackets": 0, 
+						"Delay": 7
+					}, 
+					{
+						"MaxPackets": 5, 
+						"Delay": 10
+					}, 
+					{
+						"MaxPackets": 7, 
+						"Delay": 12.5
+					}, 
+					{
+						"MaxPackets": 9, 
+						"Delay": 15
+					}
+				]
+			}, 
+			"objclass": "ConveyorSeedBankProperties", 
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"SpeedConditions": [
+				{
+					"MaxPackets": 0, 
+					"Speed": 100
+				}
+			]
+		}, 
+		{
+			"objdata": {
+				"LinkedTiles": []
+			}, 
+			"objclass": "PowerTileProperties", 
+			"aliases": [
+				"FutureLinkedTileGroups"
+			]
+		}
+	], 
+	"#comment": "Future Prototype", 
+	"version": 1
+}

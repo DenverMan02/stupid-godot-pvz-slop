@@ -1,0 +1,133 @@
+{
+	"objects": [
+		{
+			"objdata": {
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(SpawninZombies@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)", 
+					"RTID(FutureSeedBank@CurrentLevel)"
+				], 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Description": "PROTOTYPE!", 
+				"Name": "Linked Tiles", 
+				"ShowZombies": []
+			}, 
+			"objclass": "LevelDefinition"
+		}, 
+		{
+			"objdata": {
+				"LevelXMLFilename": "futureautospawn.xml"
+			}, 
+			"aliases": [
+				"SpawninZombies"
+			], 
+			"objclass": "WaveGeneratorProperties"
+		}, 
+		{
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}, 
+			"aliases": [
+				"FutureSeedBank"
+			], 
+			"objclass": "SeedBankProperties"
+		}, 
+		{
+			"objclass": "PowerTileProperties", 
+			"aliases": [
+				"FutureLinkedTileGroups"
+			], 
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Location": {
+							"mX": 0, 
+							"mY": 0
+						}, 
+						"Group": "alpha", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 1, 
+							"mY": 0
+						}, 
+						"Group": "alpha", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 0, 
+							"mY": 1
+						}, 
+						"Group": "beta", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 1, 
+							"mY": 1
+						}, 
+						"Group": "beta", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 0, 
+							"mY": 2
+						}, 
+						"Group": "gamma", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 1, 
+							"mY": 2
+						}, 
+						"Group": "gamma", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 0, 
+							"mY": 3
+						}, 
+						"Group": "delta", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 1, 
+							"mY": 3
+						}, 
+						"Group": "delta", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 0, 
+							"mY": 4
+						}, 
+						"Group": "epsilon", 
+						"PropagationDelay": 1.0
+					}, 
+					{
+						"Location": {
+							"mX": 1, 
+							"mY": 4
+						}, 
+						"Group": "epsilon", 
+						"PropagationDelay": 1.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1, 
+	"#comment": "Future Prototype"
+}

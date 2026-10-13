@@ -1,0 +1,1283 @@
+{
+	"#comment": "Kongfu Level 28 2/26 Time Gate test", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_KONGFU]", 
+				"LevelIndex": 428, 
+				"LevelNumber": 28, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(BlackHole@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(KongFuMowers@LevelModules)", 
+					"RTID(Kongfu1Waves@CurrentLevel)", 
+					"RTID(BlackHoleSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Armrack@CurrentLevel)", 
+					"RTID(EnergyGrid@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(RandZombie@CurrentLevel)"
+				], 
+				"Name": "[KONGFU_LEVEL_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"ShowZombies": [
+					"kongfu_monk_blade", 
+					"kongfu_monk_imp", 
+					"kongfu_monk_nunchaku", 
+					"kongfu_monk_basic", 
+					"kongfu_monk_torch", 
+					"kongfu_monk_drink"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"BlackHole"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 1, 
+				"StartingSun": 3250
+			}
+		}, 
+		{
+			"aliases": [
+				"BlackHoleSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"birthsunflower", 
+					"goldleaf", 
+					"iceburg", 
+					"sunshroom", 
+					"imppear"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"RandZombie"
+			], 
+			"objclass": "RandZombieProperties", 
+			"objdata": {
+				"RandZombieList": [
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_basic@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+						"Level": 2
+					}, 
+					{
+						"FirstWave": 1, 
+						"LastWave": 12, 
+						"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+						"Level": 2
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Kongfu1Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+						"Level": 2
+					}
+				], 
+				"FlagWaveInterval": 4, 
+				"LevelXMLFilename": "egypt1.xml", 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 250, 
+				"WaveSpendingPoints": 300, 
+				"Waves": [
+					{
+						"ColNumPlantIsDragged": 1, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 1, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 1, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 1, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 2, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 2, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 2, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 2, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 3, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 3, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 3, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}, 
+					{
+						"ColNumPlantIsDragged": 3, 
+						"DisableRandomSpawns": false, 
+						"WaitUntilAllZombiesDie": true, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(kongfu_basic_armor1@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_bucket@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(kongfu_monk_drink@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(kongfu_monk_cone@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_flag@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(kongfu_monk_basic@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_imp@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_blade@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_torch@ZombieTypes)", 
+								"Level": 2
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(kongfu_monk_nunchaku@ZombieTypes)", 
+								"Level": 2
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 1, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 3, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 0, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 4, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 3, 
+								"type": "ArmrackNunchaku"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 3, 
+								"mY": 1, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 4, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 0, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackHammer"
+							}
+						], 
+						"wave": 4
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 3, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 2, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 0, 
+								"type": "ArmrackHammer"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 4, 
+								"type": "ArmrackBomb"
+							}
+						], 
+						"wave": 6
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 4, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 1, 
+								"type": "ArmrackHammer"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 3, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 0, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 4, 
+								"type": "ArmrackNunchaku"
+							}
+						], 
+						"wave": 8
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 4, 
+								"mY": 0, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 1, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 4, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}, 
+							{
+								"mX": 8, 
+								"mY": 4, 
+								"type": "ArmrackBomb"
+							}
+						], 
+						"wave": 10
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 3, 
+								"mY": 3, 
+								"type": "ArmrackHammer"
+							}, 
+							{
+								"mX": 4, 
+								"mY": 4, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 0, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 1, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 5, 
+								"mY": 3, 
+								"type": "ArmrackNunchaku"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 0, 
+								"type": "ArmrackBomb"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}, 
+							{
+								"mX": 6, 
+								"mY": 3, 
+								"type": "ArmrackBlade"
+							}, 
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackBlade"
+							}
+						], 
+						"wave": 12
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EnergyGrid"
+			], 
+			"objclass": "EnergyGridProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"itemList": [
+							{
+								"mX": 2, 
+								"mY": 2
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 2, 
+								"mY": 4
+							}, 
+							{
+								"mX": 3, 
+								"mY": 0
+							}
+						], 
+						"wave": 5
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 6, 
+								"mY": 1
+							}, 
+							{
+								"mX": 6, 
+								"mY": 3
+							}
+						], 
+						"wave": 9
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					], 
+					[
+						"RTID(SimultaneousPlants@CurrentLevel)", 
+						"RTID(KillZombies@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					], 
+					[
+						"RTID(ZombieDistance@CurrentLevel)", 
+						"RTID(DoNotPlantBeforeLine@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_KONGFU_CONVEYOR_BELT]", 
+				"DescriptiveName": "[STARCHALLENGE_KONGFU_CONVEYOR_BELT_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			], 
+			"objclass": "StarChallengeSimultaneousPlantsProps", 
+			"objdata": {
+				"MaximumPlants": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"KillZombies"
+			], 
+			"objclass": "StarChallengeKillZombiesInTimeProps", 
+			"objdata": {
+				"Time": 10, 
+				"ZombiesToKill": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombieDistance"
+			], 
+			"objclass": "StarChallengeZombieDistanceProps", 
+			"objdata": {
+				"TargetDistance": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"DoNotPlantBeforeLine"
+			], 
+			"objclass": "StarChallengePlantBeforeLineProps", 
+			"objdata": {
+				"CannotPlantBeforeColumn": 2
+			}
+		}
+	], 
+	"version": 1
+}

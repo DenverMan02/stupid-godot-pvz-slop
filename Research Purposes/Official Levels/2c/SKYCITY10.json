@@ -1,0 +1,874 @@
+{
+	"#comment": "Skycity 10", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SKYCITY]", 
+				"GameOverDialogShowBrain": false, 
+				"LevelIndex": 910, 
+				"LevelNumber": 10, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(PooyanIntro@CurrentLevel)", 
+					"RTID(Pooyan@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(PooyanWaves@CurrentLevel)"
+				], 
+				"Name": "[SKYCITY_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"DisablePeavine": true, 
+				"StageModule": "RTID(SkycityPooyanStage@LevelModules)", 
+				"ShowZombies": [
+					"skycity_battleplane", 
+					"skycity", 
+					"skycity_electric", 
+					"skycity_armor1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PooyanIntro"
+			], 
+			"objclass": "PooyanIntroProperties", 
+			"objdata": {
+				"PooyanStage": 1
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_POOYAN]", 
+				"DescriptiveName": "[STARCHALLENGE_POOYAN_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Pooyan"
+			], 
+			"objclass": "PooyanProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"SingleHandedGroup"
+				], 
+				"TargetScore": 8000, 
+				"TargetWeight": 1, 
+				"BasicZombieScore": 100, 
+				"ElectricBasicZombieScore": 200, 
+				"GargantuarBasicZombieScore": 500, 
+				"BattlePlaneHP": 20000, 
+				"BattlePlaneScore": 1000, 
+				"BattlePlaneWeight": 1, 
+				"ShooterHP": 1000, 
+				"ShooterGroups": 4, 
+				"ShooterDatas": [
+					{
+						"Group": 0, 
+						"Attack": 80, 
+						"ShooterRate": 5, 
+						"NextScore": 2000, 
+						"pooyanShooterName": "peashooter"
+					}, 
+					{
+						"Group": 0, 
+						"Attack": 80, 
+						"ShooterRate": 5, 
+						"NextScore": 4000, 
+						"pooyanShooterName": "splitpea"
+					}, 
+					{
+						"Group": 0, 
+						"Attack": 60, 
+						"ShooterRate": 4, 
+						"NextScore": 6000, 
+						"pooyanShooterName": "repeater"
+					}, 
+					{
+						"Group": 0, 
+						"Attack": 120, 
+						"ShooterRate": 5, 
+						"NextScore": 999999, 
+						"pooyanShooterName": "threepeater"
+					}, 
+					{
+						"Group": 1, 
+						"Attack": 80, 
+						"ShooterRate": 4, 
+						"NextScore": 2100, 
+						"pooyanShooterName": "snowpea"
+					}, 
+					{
+						"Group": 1, 
+						"Attack": 90, 
+						"ShooterRate": 4, 
+						"NextScore": 4200, 
+						"pooyanShooterName": "firepeashooter"
+					}, 
+					{
+						"Group": 1, 
+						"Attack": 130, 
+						"ShooterRate": 15, 
+						"NextScore": 6300, 
+						"pooyanShooterName": "iceshroom"
+					}, 
+					{
+						"Group": 1, 
+						"Attack": 150, 
+						"ShooterRate": 15, 
+						"NextScore": 99999, 
+						"pooyanShooterName": "fireshroom"
+					}, 
+					{
+						"Group": 2, 
+						"Attack": 40, 
+						"ShooterRate": 3, 
+						"NextScore": 2200, 
+						"pooyanShooterName": "xshot"
+					}, 
+					{
+						"Group": 2, 
+						"Attack": 50, 
+						"ShooterRate": 6, 
+						"NextScore": 4400, 
+						"pooyanShooterName": "starfruit"
+					}, 
+					{
+						"Group": 2, 
+						"Attack": 170, 
+						"ShooterRate": 15, 
+						"NextScore": 6600, 
+						"pooyanShooterName": "oakshooter"
+					}, 
+					{
+						"Group": 2, 
+						"Attack": 200, 
+						"ShooterRate": 2, 
+						"NextScore": 99999, 
+						"pooyanShooterName": "coconutcannon"
+					}
+				], 
+				"BasicBarrageDatas": {
+					"IsPooyanTarget": true, 
+					"IsCycle": false, 
+					"StartRotation": 0, 
+					"EndRotation": 30, 
+					"BulletQuantity": 10, 
+					"Interval": 0, 
+					"NextInterval": 3, 
+					"BossbarrageType": "PooyanBossBarrageTrack"
+				}, 
+				"PositiveBarrageDatas": {
+					"IsPooyanTarget": true, 
+					"IsCycle": true, 
+					"StartRotation": 0, 
+					"EndRotation": 1080, 
+					"BulletQuantity": 3, 
+					"Interval": 0.3, 
+					"NextInterval": 1, 
+					"BossbarrageType": "ElectricPooyanPositive"
+				}, 
+				"NegativeBarrageDatas": {
+					"IsPooyanTarget": true, 
+					"IsCycle": true, 
+					"StartRotation": 0, 
+					"EndRotation": 1080, 
+					"BulletQuantity": 3, 
+					"Interval": 0.3, 
+					"NextInterval": 1, 
+					"BossbarrageType": "ElectricPooyanNegative"
+				}, 
+				"BattlePlaneBarrageDatas": [
+					{
+						"IsPooyanTarget": false, 
+						"IsCycle": false, 
+						"StartRotation": 0, 
+						"EndRotation": 360, 
+						"BulletQuantity": 30, 
+						"Interval": 0, 
+						"NextInterval": 1, 
+						"BossbarrageType": "PooyanBossBarrageSmall"
+					}, 
+					{
+						"IsPooyanTarget": false, 
+						"IsCycle": false, 
+						"StartRotation": 0, 
+						"EndRotation": 360, 
+						"BulletQuantity": 30, 
+						"Interval": 0, 
+						"NextInterval": 1, 
+						"BossbarrageType": "PooyanBossBarrageSmall"
+					}, 
+					{
+						"IsPooyanTarget": false, 
+						"IsCycle": false, 
+						"StartRotation": 360, 
+						"EndRotation": 0, 
+						"BulletQuantity": 30, 
+						"Interval": 0, 
+						"NextInterval": 1, 
+						"BossbarrageType": "PooyanBossBarrageSmall"
+					}, 
+					{
+						"IsPooyanTarget": false, 
+						"IsCycle": false, 
+						"StartRotation": 0, 
+						"EndRotation": 360, 
+						"BulletQuantity": 30, 
+						"Interval": 0, 
+						"NextInterval": 1, 
+						"BossbarrageType": "PooyanBossBarrageSmall"
+					}, 
+					{
+						"IsPooyanTarget": false, 
+						"IsCycle": false, 
+						"StartRotation": 360, 
+						"EndRotation": 0, 
+						"BulletQuantity": 30, 
+						"Interval": 0, 
+						"NextInterval": 3.5, 
+						"BossbarrageType": "PooyanBossBarrageSmall"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PooyanWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 20, 
+						"StartingPoints": 200, 
+						"StartingWave": 1, 
+						"ZombiePool": [
+							"RTID(skycity@ZombieTypes)", 
+							"RTID(skycity_armor1@ZombieTypes)", 
+							"RTID(skycity_armor2@ZombieTypes)"
+						], 
+						"ZombieLevel": [
+							1, 
+							1, 
+							1
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 20, 
+				"WaveCount": 20, 
+				"WaveSpendingPointIncrement": 20, 
+				"WaveSpendingPoints": 200, 
+				"ZombieCountdownFirstWaveSecs": 1, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave19@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave20@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity_electric@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity_electric@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity_electric@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity_electric@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave19"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity_electric@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave20"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+						"Level": 1
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

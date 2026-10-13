@@ -1,0 +1,121 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"Name": "[VASEBREAKER_WEST_LEVEL_NAME_1]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(CowboyRails@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 4, 
+						"Row": 1
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 4, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 2, 
+				"MaxColumnIndex": 8, 
+				"GridSquareBlacklist": [
+					{
+						"mX": 4, 
+						"mY": 0
+					}, 
+					{
+						"mX": 4, 
+						"mY": 1
+					}, 
+					{
+						"mX": 4, 
+						"mY": 2
+					}, 
+					{
+						"mX": 4, 
+						"mY": 3
+					}, 
+					{
+						"mX": 4, 
+						"mY": 4
+					}
+				], 
+				"Vases": [
+					{
+						"ZombieTypeName": "cowboy", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "cowboy_armor1", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "cowboy_armor2", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "cowboy_armor2", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "roman_ballista", 
+						"Count": 3
+					}, 
+					{
+						"ZombieTypeName": "roman_ballista", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "nekotail", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "sweetpotato", 
+						"Count": 3
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 3
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

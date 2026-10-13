@@ -1,0 +1,394 @@
+{
+	"#comment": "Ice Age Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "iceage_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(IceageMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(SliderPlacement@CurrentLevel)"
+				], 
+				"Name": "[DANGER_ROOM_ICEAGE_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(IceageStage@LevelModules)", 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"aliases": [
+				"SliderPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "slider_down"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "slider_up"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(IceageDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(IceageDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"IceageDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(iceage_armor1@ZombieTypes)", 
+					"RTID(iceage_armor2@ZombieTypes)", 
+					"RTID(iceage_armor3@ZombieTypes)", 
+					"RTID(iceage_hunter@ZombieTypes)", 
+					"RTID(iceage_imp@ZombieTypes)", 
+					"RTID(iceage_dodo@ZombieTypes)", 
+					"RTID(iceage_troglobite@ZombieTypes)", 
+					"RTID(iceage_weaselhoarder@ZombieTypes)", 
+					"RTID(iceage_gargantuar_danger@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SliderTileDesigner"
+			], 
+			"objclass": "DangerRoomSliderTileDesigner", 
+			"objdata": {
+				"SliderTileLayouts": [
+					{
+						"Layout": [
+							{
+								"GridX": 6, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 6, 
+								"GridY": 4, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 5, 
+								"GridY": 1, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 5, 
+								"GridY": 3, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 1, 
+								"GridY": 1, 
+								"TypeName": "slider_up"
+							}, 
+							{
+								"GridX": 3, 
+								"GridY": 2, 
+								"TypeName": "slider_up"
+							}, 
+							{
+								"GridX": 5, 
+								"GridY": 3, 
+								"TypeName": "slider_up"
+							}, 
+							{
+								"GridX": 7, 
+								"GridY": 4, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 4, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 4, 
+								"GridY": 4, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 5, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 7, 
+								"GridY": 1, 
+								"TypeName": "slider_up"
+							}, 
+							{
+								"GridX": 7, 
+								"GridY": 3, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 5, 
+								"GridY": 4, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 7, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 5, 
+								"GridY": 1, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 3, 
+								"GridY": 2, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 1, 
+								"GridY": 3, 
+								"TypeName": "slider_down"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 6, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 3, 
+								"GridY": 1, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 3, 
+								"GridY": 3, 
+								"TypeName": "slider_up"
+							}, 
+							{
+								"GridX": 6, 
+								"GridY": 4, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 5, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 5, 
+								"GridY": 4, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 6, 
+								"GridY": 1, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 6, 
+								"GridY": 3, 
+								"TypeName": "slider_up"
+							}
+						]
+					}, 
+					{
+						"Layout": [
+							{
+								"GridX": 6, 
+								"GridY": 0, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 5, 
+								"GridY": 1, 
+								"TypeName": "slider_down"
+							}, 
+							{
+								"GridX": 4, 
+								"GridY": 2, 
+								"TypeName": "slider_down"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FreezingWindDesigner"
+			], 
+			"objclass": "DangerRoomFreezingWindDesigner", 
+			"objdata": {
+				"LevelRange": {
+					"Min": 1, 
+					"Max": 30
+				}, 
+				"LaneCountMin": {
+					"Min": 1, 
+					"Max": 2
+				}, 
+				"LaneCountMax": {
+					"Min": 3, 
+					"Max": 5
+				}, 
+				"WavePercent": {
+					"Min": 15, 
+					"Max": 50
+				}, 
+				"DoubleBlastPercent": {
+					"Min": 0, 
+					"Max": 25
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"IceBlockDesigner"
+			], 
+			"objclass": "DangerRoomIceBlockDesigner", 
+			"objdata": {
+				"LevelRange": {
+					"Min": 1, 
+					"Max": 60
+				}, 
+				"PlantColumnMin": {
+					"Min": 0, 
+					"Max": 0
+				}, 
+				"PlantColumnMax": {
+					"Min": 2, 
+					"Max": 7
+				}, 
+				"ZombieColumnMin": {
+					"Min": 6, 
+					"Max": 1
+				}, 
+				"ZombieColumnMax": {
+					"Min": 8, 
+					"Max": 8
+				}, 
+				"BlocksMin": {
+					"Min": 0, 
+					"Max": 5
+				}, 
+				"BlocksMax": {
+					"Min": 3, 
+					"Max": 15
+				}, 
+				"PctGoodBlocks": {
+					"Min": 25, 
+					"Max": 5
+				}, 
+				"PlantTypeNames": [
+					"sunflower", 
+					"bonkchoy", 
+					"wallnut", 
+					"repeater", 
+					"chardguard", 
+					"xshot", 
+					"stunion", 
+					"cherry_bomb"
+				], 
+				"ZombieTypeNames": [
+					"iceage_armor1", 
+					"iceage_armor2", 
+					"iceage_armor3", 
+					"iceage_hunter", 
+					"iceage_imp", 
+					"iceage_dodo", 
+					"iceage_weaselhoarder"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

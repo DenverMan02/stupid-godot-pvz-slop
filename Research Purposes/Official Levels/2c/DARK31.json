@@ -1,0 +1,177 @@
+{
+	"#comment": "Egypt 5", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "king_nut_ch", 
+				"Description": "[PLAYERS_TRIP_TO_DARK]", 
+				"LevelIndex": 630, 
+				"LevelNumber": 30, 
+				"IsBossFight": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(DarkMowers@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ZombossMechBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[RNDBOSS_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(DarkStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_dark", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 1, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 2, 
+						"MaxPackets": 2
+					}, 
+					{
+						"Delay": 3, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 6, 
+						"MaxPackets": 8
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0.1, 
+						"MinCount": 1, 
+						"MinWeightFactor": 2, 
+						"PlantType": "puffshroom", 
+						"Weight": 15, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "hypnoshroom", 
+						"Weight": 5, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0.5, 
+						"MinCount": 1, 
+						"MinWeightFactor": 3, 
+						"PlantType": "fumeshroom", 
+						"Weight": 7, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0.1, 
+						"MinCount": 1, 
+						"MinWeightFactor": 2, 
+						"PlantType": "peanut", 
+						"Weight": 10, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 3, 
+						"MaxWeightFactor": 0.1, 
+						"MinCount": 0, 
+						"MinWeightFactor": 2, 
+						"PlantType": "magnetshroom", 
+						"Weight": 7, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 10, 
+						"MaxWeightFactor": 0.1, 
+						"PlantType": "oakshooter", 
+						"Weight": 10, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0.1, 
+						"PlantType": "iceshroom", 
+						"Weight": 10, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}, 
+					{
+						"MaxCount": 5, 
+						"MaxWeightFactor": 0.1, 
+						"PlantType": "fireshroom", 
+						"Weight": 10, 
+						"iLevel": 4, 
+						"iAvatar": 2
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_EGYPT_FINALE]", 
+				"DescriptiveName": "[STARCHALLENGE_EGYPT_FINALE_NAME]"
+			}
+		}
+	], 
+	"version": 1
+}

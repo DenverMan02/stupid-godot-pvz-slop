@@ -1,0 +1,819 @@
+{
+	"#comment": "Dark Oakshooter", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DARK]", 
+				"LevelIndex": 615, 
+				"LevelNumber": 15, 
+				"FirstRewardParam": "magnetshroom", 
+				"FirstRewardType": "unlock_plant", 
+				"GameOverDialogTaskFailed": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(OakTrainTutorial@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(OakTrain@CurrentLevel)"
+				], 
+				"Name": "[DARK_LEVEL_NAME]", 
+				"MusicType": "MiniGame_A", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(DarkStage@LevelModules)", 
+				"ShowZombies": [
+					"zombie_target_archmage", 
+					"zombie_target_wizard", 
+					"zombie_target_gargantuar"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"OakTrainTutorial"
+			], 
+			"objclass": "OakTrainIntroProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"OakTrain"
+			], 
+			"objclass": "OakTrainProperties", 
+			"objdata": {
+				"TotalLife": 1000, 
+				"ArrowScore": 100, 
+				"WizardScore": 300, 
+				"ArchmageScore": 500, 
+				"BossScore": 2000, 
+				"HealNum": 300, 
+				"ArrowPowerNum": 6, 
+				"ArrowMultipleNum": 4, 
+				"ArrowTrackNum": 3, 
+				"InitArrowsNum": [
+					12, 
+					10, 
+					5, 
+					0
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(zombie_target_arrow_blue@ZombieTypes)"
+					}
+				], 
+				"IsRiseFromGroundMode": true, 
+				"IgnoreFlagCarriers": true, 
+				"FlagWaveInterval": 20, 
+				"LevelXMLFilename": "future2.xml", 
+				"SpawnColEnd": 2, 
+				"SpawnColStart": 2, 
+				"WaveCount": 40, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_blue@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_yellow@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_bottle@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_blue@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_blue@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_yellow@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Rise_GridX": "3", 
+								"Rise_GridY": "1", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "2", 
+								"Rise_GridX": "3", 
+								"Rise_GridY": "2", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "3", 
+								"Rise_GridX": "3", 
+								"Rise_GridY": "3", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Rise_GridX": "4", 
+								"Rise_GridY": "1", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "2", 
+								"Rise_GridX": "4", 
+								"Rise_GridY": "2", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "3", 
+								"Rise_GridX": "4", 
+								"Rise_GridY": "3", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "0", 
+								"Rise_GridX": "5", 
+								"Rise_GridY": "1", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "2", 
+								"Rise_GridX": "5", 
+								"Rise_GridY": "2", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "4", 
+								"Rise_GridX": "5", 
+								"Rise_GridY": "3", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "0", 
+								"Rise_GridX": "6", 
+								"Rise_GridY": "1", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "2", 
+								"Rise_GridX": "6", 
+								"Rise_GridY": "2", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "4", 
+								"Rise_GridX": "6", 
+								"Rise_GridY": "3", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_blue@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_yellow@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_bottle@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 8, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_blue@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 15, 
+								"Type": "RTID(zombie_target_arrow_yellow@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_archmage@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 10, 
+								"Type": "RTID(zombie_target_arrow_yellow@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 30, 
+								"Type": "RTID(zombie_target_bottle@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 15, 
+								"Type": "RTID(zombie_target_arrow_yellow@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 10, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(zombie_target_wizard@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "3", 
+								"Rise_GridX": "7", 
+								"Rise_GridY": "3", 
+								"Type": "RTID(zombie_target_gargantuar@ZombieTypes)", 
+								"Level": 1
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 30, 
+								"Type": "RTID(zombie_target_bottle@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_OAKSHOOTER]", 
+				"DescriptiveName": "[DARKAGE]"
+			}
+		}
+	], 
+	"version": 1
+}

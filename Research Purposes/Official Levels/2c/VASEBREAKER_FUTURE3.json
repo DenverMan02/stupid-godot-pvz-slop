@@ -1,0 +1,73 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"Name": "[VASEBREAKER_FUTURE_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "giftbox", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 2, 
+				"MaxColumnIndex": 7, 
+				"Vases": [
+					{
+						"ZombieTypeName": "future_protector", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "future_armor1", 
+						"Count": 7
+					}, 
+					{
+						"ZombieTypeName": "football_mech", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "future_gargantuar", 
+						"Count": 1
+					}, 
+					{
+						"PlantTypeName": "empea", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "hammerflower", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "boomflower", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 3
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 2
+			}
+		}
+	]
+}

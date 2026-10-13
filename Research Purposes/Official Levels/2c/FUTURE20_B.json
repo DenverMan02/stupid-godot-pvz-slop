@@ -1,0 +1,1119 @@
+{
+	"#comment": "Future 20 SingleHanded_Hard", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_FUTURE]", 
+				"LevelNumber": 20, 
+				"EnableAutoHard": false, 
+				"GameOverDialogTaskFailed": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(SingleHandedTutorial@CurrentLevel)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SingleHanded@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(FutureRails@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[FUTURE_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"ShowZombies": [
+					"future_jetpack", 
+					"future_protector", 
+					"disco_mech", 
+					"future_jetpack_disco", 
+					"football_mech", 
+					"future_imp", 
+					"future_gargantuar", 
+					"mech_cone"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_SINGLE]", 
+				"DescriptiveName": "[STARCHALLENGE_SINGLE_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"SingleHandedTutorial"
+			], 
+			"objclass": "IntroSingleHandedProperties", 
+			"objdata": {
+				"WaveForStartRocket": 7
+			}
+		}, 
+		{
+			"aliases": [
+				"SingleHanded"
+			], 
+			"objclass": "SingleHandedProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"SingleHandedGroup"
+				], 
+				"InitWeapon": "kernelpult", 
+				"InitWeaponLaunchTimePercent": 0.4, 
+				"MissileCount": 2, 
+				"MissileInterval": 30, 
+				"RocketHitTime": 6, 
+				"RocketSpeed": 500, 
+				"TimeSpeed": 1.5, 
+				"ZombiesWalkSpeed": 0.7, 
+				"ZombiesHitpointsPercent": 0.1, 
+				"DropWeaponDatas": [
+					{
+						"weaponname": "laser_bean", 
+						"killnum": 30, 
+						"launchtimepercent": 0.5
+					}, 
+					{
+						"weaponname": "lightningreed", 
+						"killnum": 95, 
+						"launchtimepercent": 0.2
+					}, 
+					{
+						"weaponname": "starfruit", 
+						"killnum": 180, 
+						"launchtimepercent": 0.6
+					}, 
+					{
+						"weaponname": "snapdragon", 
+						"killnum": 230, 
+						"launchtimepercent": 0.4
+					}
+				], 
+				"SpecialWaveDatas": [
+					{
+						"wave": 5, 
+						"ZombiesWalkSpeed": 0.5, 
+						"ZombiesHitpointsPercent": 7, 
+						"ShowHealthBar": true
+					}, 
+					{
+						"wave": 10, 
+						"ZombiesWalkSpeed": 1, 
+						"ZombiesHitpointsPercent": 7, 
+						"ShowHealthBar": true
+					}, 
+					{
+						"wave": 15, 
+						"ZombiesWalkSpeed": 0.8, 
+						"ZombiesHitpointsPercent": 2, 
+						"ShowHealthBar": true
+					}, 
+					{
+						"wave": 20, 
+						"ZombiesWalkSpeed": 1, 
+						"ZombiesHitpointsPercent": 2, 
+						"ShowHealthBar": true
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_future", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 0
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(future@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 5, 
+				"LevelXMLFilename": "future3.xml", 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 3, 
+				"WaveCount": 20, 
+				"WaveSpendingPointIncrement": 500, 
+				"WaveSpendingPoints": 500, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(mech_cone@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_imp@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_imp@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_imp@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_imp@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack_disco@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(disco_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(football_mech@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_protector@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_jetpack@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(future_gargantuar@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

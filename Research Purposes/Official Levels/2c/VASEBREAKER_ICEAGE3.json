@@ -1,0 +1,88 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 3", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 3, 
+				"Name": "[VASEBREAKER_ICEAGE_LEVEL_NAME_3]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(IceageStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardType": "giftbox", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SliderPlacement@CurrentLevel)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"VictoryModule": "RTID(VaseBreakerVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"SliderPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"TypeName": "slider_down"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "slider_down"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "slider_up"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"TypeName": "slider_up"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 4, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "iceage_armor3", 
+						"Count": 10
+					}, 
+					{
+						"ZombieTypeName": "iceage_gargantuar", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "boomflower", 
+						"Count": 6
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 4
+					}
+				], 
+				"NumColoredPlantVases": 6, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

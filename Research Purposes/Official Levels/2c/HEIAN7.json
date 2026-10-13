@@ -1,0 +1,411 @@
+{
+	"#comment": "Heian 7", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_HEIAN]", 
+				"FirstIntroNarrative": "HEIAN_7_INTRO", 
+				"LevelNumber": 7, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(HeianMowers@LevelModules)", 
+					"RTID(EventItemPlacement@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[HEIAN_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(HeianStage@LevelModules)", 
+				"ShowZombies": [
+					"heian_worker", 
+					"heian_armor2", 
+					"heian_armor1", 
+					"heian_sushi"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EventItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "heian_box_levelup"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_CONVEYORBELT]", 
+				"DescriptiveName": "[EGYPT_CHALLENGE_ZERO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 7, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 9, 
+						"MaxPackets": 5
+					}, 
+					{
+						"Delay": 10, 
+						"MaxPackets": 7
+					}, 
+					{
+						"Delay": 14, 
+						"MaxPackets": 9
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 3, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "eggplantninja", 
+						"Weight": 15
+					}, 
+					{
+						"MaxCount": 1, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 1, 
+						"MinWeightFactor": 2, 
+						"PlantType": "primalpotatomine", 
+						"Weight": 15
+					}, 
+					{
+						"MaxCount": 15, 
+						"MaxWeightFactor": 0, 
+						"MinCount": 5, 
+						"MinWeightFactor": 3, 
+						"PlantType": "cypripedium", 
+						"Weight": 35
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": -40, 
+						"StartingPoints": -100, 
+						"StartingWave": 3, 
+						"ZombiePool": [
+							"RTID(heian_worker@ZombieTypes)", 
+							"RTID(heian_armor1@ZombieTypes)", 
+							"RTID(heian_armor2@ZombieTypes)"
+						]
+					}, 
+					{}, 
+					{
+						"PointIncrementPerWave": 60, 
+						"StartingPoints": 200, 
+						"StartingWave": 4, 
+						"ZombiePool": [
+							"RTID(heian_sushi@ZombieTypes)", 
+							"RTID(heian_armor2@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"LevelJam": "jam_pop", 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 200, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(heian_sushi@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(heian_sushi@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(heian_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(heian_sushi@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(heian_sushi@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(heian_sushi@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_sushi@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(heian_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,661 @@
+{
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MOON]", 
+				"FirstRewardType": "giftbox", 
+				"LevelNumber": 4, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(LunarTerminalModule@CurrentLevel)", 
+					"RTID(OrePlacement@CurrentLevel)", 
+					"RTID(ExampleLunarMineVeins@CurrentLevel)", 
+					"RTID(RadiationMeteorModule@CurrentLevel)", 
+					"RTID(MoonLifeSupportSystemModule@CurrentLevel)", 
+					"RTID(MoonExpertProps@CurrentLevel)"
+				], 
+				"Name": "[MOON_HARD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"IsArtifactDisabled": true, 
+				"StageModule": "RTID(MoonStage@LevelModules)", 
+				"ShowZombies": [
+					"moon", 
+					"moon_armor1", 
+					"moon_armor2", 
+					"zombie_cosmic_imp"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"cosmoss", 
+					"cosmicpea", 
+					"cosmicmushroom", 
+					"cosmicnut", 
+					"gravitree"
+				], 
+				"OverrideSeedSlotsCount": 7, 
+				"SelectionMethod": "chooser", 
+				"PlantPriorList": [
+					"cosmoss", 
+					"cosmicpea", 
+					"cosmicmushroom", 
+					"cosmicnut", 
+					"gravitree", 
+					"darkmatter_dragonfruit"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"MoonLifeSupportSystemModule"
+			], 
+			"objclass": "MoonLifeSupportSystemProperties", 
+			"objdata": {
+				"InitialCapacity": 10, 
+				"BufferOverloadRatio": 2, 
+				"ResourceGroupNames": [
+					"ZombieArchmageGroup", 
+					"LunarLifeSupport"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LunarTerminalModule"
+			], 
+			"objclass": "LunarTerminalModuleProperties", 
+			"objdata": {
+				"CollectorCooldown": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"OrePlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"TypeName": "cosmoss"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"TypeName": "cosmoss"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "lunar_mine_ore"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ExampleLunarMineVeins"
+			], 
+			"objclass": "LunarMineVeinModuleProperties", 
+			"objdata": {
+				"VeinPlacements": [
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"EmergenceWave": 5
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"RadiationMeteorModule"
+			], 
+			"objclass": "RadiationMeteorModuleProperties", 
+			"objdata": {
+				"ResourceGroupNames": [
+					"Radiation_meteorite_group"
+				], 
+				"WarningDuration": 5, 
+				"PollutionInterval": 5, 
+				"MiningDurationRequired": 5, 
+				"PowerRewardOnDestroy": 4, 
+				"SpawnSchedule": [
+					{
+						"Wave": 2, 
+						"GridX": 7, 
+						"GridY": 0
+					}, 
+					{
+						"Wave": 7, 
+						"GridX": 6, 
+						"GridY": 4
+					}, 
+					{
+						"Wave": 12, 
+						"GridX": 5, 
+						"GridY": 2
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)", 
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 24, 
+						"StartingPoints": 105, 
+						"StartingWave": 1, 
+						"ZombiePool": [
+							"RTID(moon@ZombieTypes)", 
+							"RTID(moon_armor1@ZombieTypes)", 
+							"RTID(moon_armor2@ZombieTypes)"
+						], 
+						"ZombieLevel": [
+							1, 
+							1, 
+							1
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				], 
+				"SuppressedDynamicZombieWaves": [
+					2, 
+					5, 
+					10, 
+					12
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon_armor2@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}, 
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}, 
+					{
+						"Type": "RTID(moon_armor2@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon_armor2@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "2"
+					}, 
+					{
+						"Type": "RTID(moon_armor1@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "4"
+					}, 
+					{
+						"Type": "RTID(moon_armor2@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "1"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "3"
+					}, 
+					{
+						"Type": "RTID(zombie_cosmic_imp@ZombieTypes)", 
+						"Level": 1, 
+						"Row": "5"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"MoonExpertProps"
+			], 
+			"objclass": "MoonExpertProperties", 
+			"objdata": {
+				"ZombieLevel": 1
+			}
+		}
+	], 
+	"version": 1
+}

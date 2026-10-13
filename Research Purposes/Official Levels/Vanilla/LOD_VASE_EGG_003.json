@@ -1,0 +1,109 @@
+{
+	"#comment": "Eggbreaker Emery 3", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "eggbreaker", 
+				"IsLevelOfTheDay": true, 
+				"IsVasebreaker": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@.)", 
+					"RTID(FrozenPlantPlacement@CurrentLevel)"
+				], 
+				"Name": "[LOD_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FrontLawnStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"VaseGridItemType": "vase_egg", 
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "spring", 
+						"Count": 7
+					}, 
+					{
+						"ZombieTypeName": "pharaoh", 
+						"Count": 1
+					}, 
+					{
+						"ZombieTypeName": "mech_cone", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "spring_armor1", 
+						"Count": 6
+					}, 
+					{
+						"PlantTypeName": "sweetpotato", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "spikerock", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "snapdragon", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "peapod", 
+						"Count": 5
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"FrozenPlantPlacement"
+			], 
+			"objclass": "InitialPlantProperties", 
+			"objdata": {
+				"InitialPlantPlacements": [
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "sweetpotato"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

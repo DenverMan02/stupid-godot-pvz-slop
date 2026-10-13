@@ -1,0 +1,164 @@
+{
+	"#comment": "SandboxFuture", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "Future Sandbox Level", 
+				"LevelNumber": 42, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(FutureMowers@LevelModules)", 
+					"RTID(FutureSeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)"
+				], 
+				"Name": "Future Sandbox", 
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			], 
+			"objclass": "PowerTileProperties", 
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "beta", 
+						"Location": {
+							"mX": 0, 
+							"mY": 0
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "beta", 
+						"Location": {
+							"mX": 1, 
+							"mY": 0
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "beta", 
+						"Location": {
+							"mX": 5, 
+							"mY": 0
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 0, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 1, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 5, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "gamma", 
+						"Location": {
+							"mX": 0, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "gamma", 
+						"Location": {
+							"mX": 1, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "gamma", 
+						"Location": {
+							"mX": 5, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 0, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 1, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 5, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "epsilon", 
+						"Location": {
+							"mX": 0, 
+							"mY": 4
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "epsilon", 
+						"Location": {
+							"mX": 1, 
+							"mY": 4
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "epsilon", 
+						"Location": {
+							"mX": 5, 
+							"mY": 4
+						}, 
+						"PropagationDelay": 1.5
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [], 
+				"SelectionMethod": "chooser"
+			}
+		}
+	], 
+	"version": 1
+}

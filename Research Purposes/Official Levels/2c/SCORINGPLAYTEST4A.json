@@ -1,0 +1,2351 @@
+{
+	"#comment": "Scoring Playtest - Right Gradient - No Quickstart", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_BATTLE]", 
+				"DisablePlantBoosts": true, 
+				"GridItemLevel": 1, 
+				"LevelNumber": 1, 
+				"IsJoust": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(WestMowers@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(LevelScoring@CurrentLevel)", 
+					"RTID(ScoreTiles@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(LastStand@CurrentLevel)", 
+					"RTID(JoustModule@CurrentLevel)", 
+					"RTID(JoustPointOfLoss@LevelModules)"
+				], 
+				"Name": "[BATTLE_LEVEL_NAME]", 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(JoustStage@LevelModules)", 
+				"SuppressAccountUpgrades": true, 
+				"SuppressDynamicTutorial": true, 
+				"SuppressPlantfoodPurchase": true, 
+				"VictoryModule": "RTID(JoustOutro@LevelModules)", 
+				"LossModule": "RTID(JoustOutro@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "LawnMowerProperties", 
+			"aliases": [
+				"WestMowers"
+			], 
+			"objdata": {
+				"ResourceGroupNames": [
+					"WestMowerGroup"
+				], 
+				"MowerEntryAnimDuration": 2.5, 
+				"MowerActivatedAudioEvent": "Play_Cowboy_Lawnmower", 
+				"MowerPopAnim": "POPANIM_MOWERS_MOWER_WILDWEST", 
+				"UnlimitedMowers": true
+			}
+		}, 
+		{
+			"aliases": [
+				"JoustModule"
+			], 
+			"objclass": "JoustGameModuleProperties", 
+			"objdata": {
+				"TimeLimit": 180
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelDifficultyScaling"
+			], 
+			"objclass": "LevelDifficultyScalingModuleProperties", 
+			"objdata": {
+				"DifficultyRulesType": "DifficultyTestHighDecay"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)", 
+						"RTID(ReachTheScore@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"ReachTheScore"
+			], 
+			"objclass": "StarChallengeTargetScoreProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_TARGET_SCORE]", 
+				"DescriptionFailure": "[STARCHALLENGE_TARGET_SCORE_FAILURE]", 
+				"DescriptiveName": "[STARCHALLENGE_TARGET_SCORE_NAME]", 
+				"TargetScore": 1000
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStand"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 3, 
+				"StartingSun": 750
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelScoring"
+			], 
+			"objclass": "LevelScoringModuleProperties", 
+			"objdata": {
+				"PlantBonusMultiplier": 0.1, 
+				"PlantBonuses": [], 
+				"ScoringRulesType": "NoMultiplier", 
+				"StartingPlantfood": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"ScoreTiles"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 1, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "score_5x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "score_3x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 1, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 3, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "score_2x_tile"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "score_2x_tile"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"hurrikale", 
+					"kiwifruit", 
+					"pinkstarfruit", 
+					"escaperoot", 
+					"lotusshooter", 
+					"goldbloom", 
+					"imppear"
+				], 
+				"SelectionMethod": "chooser", 
+				"OverrideSeedSlotsCount": 6
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": -40, 
+						"StartingPoints": -100, 
+						"StartingWave": 3, 
+						"ZombiePool": [
+							"RTID(cowboy@ZombieTypes)", 
+							"RTID(cowboy_armor1@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": -25, 
+						"StartingPoints": -100, 
+						"StartingWave": 4, 
+						"ZombiePool": [
+							"RTID(cowboy@ZombieTypes)", 
+							"RTID(cowboy_armor1@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": -10, 
+						"StartingPoints": -100, 
+						"StartingWave": 5, 
+						"ZombiePool": [
+							"RTID(cowboy@ZombieTypes)", 
+							"RTID(cowboy_armor1@ZombieTypes)"
+						]
+					}, 
+					{}, 
+					{
+						"PointIncrementPerWave": 20, 
+						"StartingPoints": 100, 
+						"StartingWave": 5, 
+						"ZombiePool": [
+							"RTID(cowboy@ZombieTypes)", 
+							"RTID(cowboy_armor1@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 40, 
+						"StartingPoints": 200, 
+						"StartingWave": 4, 
+						"ZombiePool": [
+							"RTID(cowboy_armor1@ZombieTypes)"
+						]
+					}, 
+					{
+						"PointIncrementPerWave": 60, 
+						"StartingPoints": 400, 
+						"StartingWave": 3, 
+						"ZombiePool": []
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 4, 
+				"WaveCount": 36, 
+				"WaveSpendingPointIncrement": 200, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave19@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave20@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave21@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave22@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave23@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave24@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave25@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave26@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave27@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave28@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave29@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave30@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave31@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave32@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave33@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave34@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave35@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave36@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 5, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave19"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave20"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave21"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave22"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave23"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave24"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave25"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave26"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave27"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 6, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave28"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave29"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave30"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave31"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave32"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave33"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave34"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave35"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave36"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 7, 
+						"Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

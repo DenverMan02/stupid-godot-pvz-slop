@@ -1,0 +1,31 @@
+{
+	"#comment": "DaveCup test template - prediction level", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "DaveCup prediction test level", 
+				"LevelNumber": 1, 
+				"LevelIndex": 1, 
+				"IsArtifactDisabled": true, 
+				"DisablePeavine": true, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(DaveCupPredictModule@CurrentLevel)"
+				], 
+				"StageModule": "RTID(DaveCupStage@LevelModules)", 
+				"CanSaveGameState": false, 
+				"SuppressDynamicTutorial": true, 
+				"Name": ""
+			}
+		}, 
+		{
+			"aliases": [
+				"DaveCupPredictModule"
+			], 
+			"objclass": "DaveCupPredictModuleProperties", 
+			"objdata": {}
+		}
+	], 
+	"version": 1
+}

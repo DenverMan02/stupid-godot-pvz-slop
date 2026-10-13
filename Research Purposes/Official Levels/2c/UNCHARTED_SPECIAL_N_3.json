@@ -1,0 +1,436 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SPECIAL]", 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(RunningSubwayMowers@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SPECIAL_LEVEL_NAME_03]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(RunningNormalStage@LevelModules)", 
+				"ShowZombies": [
+					"parkour", 
+					"parkour_armor1", 
+					"parkour_armor2", 
+					"modern_allstar", 
+					"parkour_imp", 
+					"west_bull"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 4, 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 1, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 1, 
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

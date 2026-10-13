@@ -1,0 +1,565 @@
+{
+	"#comment": "Cowboy Last Stand C", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_WEST]", 
+				"FirstOutroNarrative": "COWBOY_CHALLENGE_LASTSTAND_C", 
+				"LevelIndex": 314, 
+				"LevelNumber": 3, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(WestMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(Rails@CurrentLevel)", 
+					"RTID(LastStandSeedBank@CurrentLevel)", 
+					"RTID(LastStand@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[CHALLENGE_LASTSTAND_C_NAME]", 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"ShowZombies": [
+					"west_bull", 
+					"cowboy_armor1", 
+					"cowboy_armor2", 
+					"piano", 
+					"cowboy"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(cowboy_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(piano@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(poncho@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(prospector@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(west_bull@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 10, 
+				"LevelXMLFilename": "cowboy_challenge_laststand_c.xml", 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 600, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "4", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(piano@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(piano@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(piano@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(piano@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor2@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(cowboy_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(west_bull@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(piano@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Rails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 1
+					}, 
+					{
+						"Column": 1, 
+						"Row": 3
+					}, 
+					{
+						"Column": 5, 
+						"Row": 1
+					}, 
+					{
+						"Column": 6, 
+						"Row": 3
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 5, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 6, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"iceburg", 
+					"puffshroom", 
+					"gravebuster", 
+					"birthsunflower", 
+					"goldleaf", 
+					"imppear"
+				], 
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)", 
+						"RTID(SaveMowers@LevelModules)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStand"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 3, 
+				"StartingSun": 2500
+			}
+		}
+	], 
+	"version": 1
+}

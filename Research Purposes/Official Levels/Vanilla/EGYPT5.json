@@ -1,0 +1,329 @@
+{
+	"#comment": "Egypt 7", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]", 
+				"FirstOutroNarrative": "ICEBERG_UNLOCK", 
+				"FirstRewardParam": "iceburg", 
+				"FirstRewardType": "unlock_plant", 
+				"ForceToWorldMap": true, 
+				"LevelNumber": 5, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(PowerupPurchaseIntro@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(EgyptTutorialMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[EGYPT_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(EgyptStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerupPurchaseIntro"
+			], 
+			"objclass": "PowerupPurchaseIntroProperties", 
+			"objdata": {
+				"Narrative": "BUY_POWERUPS"
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 8, 
+						"GridY": 0
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "peashooter"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "sunflower"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "wallnut"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "potatomine"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "cabbagepult"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "bloomerang"
+					}
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerupPurchaseIntro"
+			], 
+			"objclass": "PowerupPurchaseIntroProperties", 
+			"objdata": {
+				"Narrative": "BUY_POWERUPS"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}, 
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 0, 
+						"ZombiePool": []
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 9, 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 7, 
+				"WaveCount": 9, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					]
+				], 
+				"ZombieCountdownFirstWaveSecs": 2
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"DynamicPlantfood": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					0
+				], 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(camel_twohump@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(explorer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"DynamicPlantfood": [
+					1, 
+					1, 
+					1, 
+					1, 
+					0, 
+					1, 
+					0
+				], 
+				"Zombies": [
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(explorer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(ra@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(camel_onehump@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(ra@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

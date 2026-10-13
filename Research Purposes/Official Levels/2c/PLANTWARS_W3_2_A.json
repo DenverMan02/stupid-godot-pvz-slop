@@ -1,0 +1,1359 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_PLANTWARS]", 
+				"FirstRewardType": "giftbox", 
+				"LevelNumber": 2, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(PlantWarsZombiesDeadWinCon@LevelModules)", 
+					"RTID(PlantWarsSeedBank@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultPlantWarsZombieWinCondition@LevelModules)", 
+					"RTID(PlantWarsModule@CurrentLevel)", 
+					"RTID(PlantWarsCreditModuleProps@LevelModules)"
+				], 
+				"Name": "[PLANTWARS_LEVEL_NAME_W3_2_A]", 
+				"NormalPresentTable": "plantwars_w3_2_a", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"MusicType": "MiniGame_B", 
+				"VictoryModule": "RTID(PlantWarsOutro@LevelModules)", 
+				"StageModule": "RTID(JourneyToTheWestStage@LevelModules)", 
+				"ShowZombies": [
+					"journey_to_the_west", 
+					"journey_to_the_west_armor1", 
+					"journey_to_the_west_armor2", 
+					"journey_to_the_west_flag", 
+					"journey_to_the_west_gargantuar", 
+					"journey_to_the_west_allstar", 
+					"kongfu_hammer", 
+					"journey_to_the_west_balloon", 
+					"journey_to_the_west_huangmei", 
+					"journey_to_the_west_red_boy", 
+					"journey_to_the_west_superfan", 
+					"journey_to_the_west_miner", 
+					"zombie_explodenut", 
+					"zombie_snowpea", 
+					"journey_to_the_west_trident", 
+					"zombie_gatlingpea", 
+					"journey_to_the_west_poncho", 
+					"journey_to_the_west_catapult", 
+					"kongfu_monk_drink", 
+					"kongfu_agile_bronze"
+				], 
+				"ShowTitles": [
+					{
+						"ZombieList": [
+							"journey_to_the_west", 
+							"journey_to_the_west_armor1", 
+							"journey_to_the_west_armor2", 
+							"journey_to_the_west_flag", 
+							"journey_to_the_west_gargantuar", 
+							"journey_to_the_west_allstar", 
+							"kongfu_hammer", 
+							"journey_to_the_west_balloon", 
+							"journey_to_the_west_huangmei", 
+							"journey_to_the_west_superfan", 
+							"journey_to_the_west_miner", 
+							"zombie_explodenut", 
+							"zombie_snowpea", 
+							"journey_to_the_west_trident", 
+							"zombie_gatlingpea"
+						], 
+						"BuffList": [
+							"ZTAttack1", 
+							"ZTSpeed1", 
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTAntiControl1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"ZombieList": [
+							"journey_to_the_west", 
+							"journey_to_the_west_armor1", 
+							"journey_to_the_west_armor2", 
+							"journey_to_the_west_flag", 
+							"journey_to_the_west_gargantuar", 
+							"kongfu_hammer", 
+							"journey_to_the_west_balloon", 
+							"journey_to_the_west_red_boy", 
+							"journey_to_the_west_superfan", 
+							"journey_to_the_west_miner", 
+							"zombie_explodenut", 
+							"zombie_snowpea", 
+							"journey_to_the_west_trident", 
+							"zombie_gatlingpea", 
+							"journey_to_the_west_poncho", 
+							"journey_to_the_west_catapult", 
+							"kongfu_monk_drink", 
+							"kongfu_agile_bronze"
+						], 
+						"BuffList": [
+							"ZTAttack1", 
+							"ZTSpeed1", 
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTAntiControl1", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantSuggestedTags"
+			], 
+			"objclass": "PlantSuggestedTagsModuleProps", 
+			"objdata": {
+				"SuggestedTags": [
+					[
+						"flame"
+					], 
+					[
+						"flame"
+					]
+				]
+			}
+		}, 
+		{
+			"objclass": "PlantWarsModuleProperties", 
+			"aliases": [
+				"PlantWarsModule"
+			], 
+			"objdata": {
+				"TimeCountDown": 300.0
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 120, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)", 
+						"RTID(Wave1BrickEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTImmuneControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTImmuneControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTImmuneControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_balloon@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1", 
+							"ZTShield1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_balloon@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1", 
+							"ZTShield1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_balloon@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1", 
+							"ZTShield1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Type": "RTID(journey_to_the_west_huangmei@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_miner@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(zombie_explodenut@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(zombie_explodenut@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTGravity1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield2", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield2", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTShield2", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTSpeed1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 3, 
+						"Type": "RTID(kongfu_hammer@ZombieTypes)", 
+						"Titles": [
+							"ZTAntiControl1", 
+							"ZTGravity1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_trident@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_flag@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor2@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1", 
+							"ZTSpeed1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAntiControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_armor1@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTAntiControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)", 
+						"Titles": [
+							"ZTShield1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)", 
+						"Titles": [
+							"ZTGravity1", 
+							"ZTImmuneControl1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west@ZombieTypes)", 
+						"Titles": [
+							"ZTShield2", 
+							"ZTSpeed1", 
+							"ZTAttack1"
+						]
+					}, 
+					{
+						"Level": 4, 
+						"Type": "RTID(journey_to_the_west_gargantuar@ZombieTypes)", 
+						"Titles": [
+							"ZTImmuneControl1"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1BrickEvent0"
+			], 
+			"objclass": "ZombiePotionActionProps", 
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 0
+						}, 
+						"Type": "bufftile_speed"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 1
+						}, 
+						"Type": "bufftile_speed"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 2
+						}, 
+						"Type": "bufftile_speed"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 3
+						}, 
+						"Type": "bufftile_speed"
+					}, 
+					{
+						"Location": {
+							"mX": 8, 
+							"mY": 4
+						}, 
+						"Type": "bufftile_speed"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

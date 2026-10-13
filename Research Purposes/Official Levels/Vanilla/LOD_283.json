@@ -1,0 +1,180 @@
+{
+	"#comment": "LOD 283 - Beghouled - Kiwibeast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"SuppressSunSpawn": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 11, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(DinoStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "primalpeashooter", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "primalwallnut", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "coldsnapdragon", 
+						"Level": -1
+					}
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 125, 
+				"InitialPlants": [
+					"peashooter", 
+					"kiwibeast", 
+					"wallnut", 
+					"snapdragon"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "peashooter", 
+						"UpgradedPlant": "primalpeashooter"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "primalwallnut"
+					}, 
+					{
+						"BasePlant": "snapdragon", 
+						"UpgradedPlant": "coldsnapdragon"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 60, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 100, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "dino"
+							}, 
+							{
+								"ZombieType": "dino_armor1"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "dino"
+							}, 
+							{
+								"ZombieType": "dino_imp"
+							}, 
+							{
+								"ZombieType": "dino_armor1"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "dino_imp"
+							}, 
+							{
+								"ZombieType": "dino_armor1"
+							}, 
+							{
+								"ZombieType": "dino"
+							}
+						], 
+						"SpawnDelay": 1.9
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "dino_imp"
+							}, 
+							{
+								"ZombieType": "dino_armor1"
+							}, 
+							{
+								"ZombieType": "dino_bully"
+							}
+						], 
+						"SpawnDelay": 1.8
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

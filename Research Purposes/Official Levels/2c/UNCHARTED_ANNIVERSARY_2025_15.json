@@ -1,0 +1,181 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ANNIVERSARY]", 
+				"LevelNumber": 15, 
+				"StartingSun": 9999, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(RenaiMowers@LevelModules)", 
+					"RTID(pvz1CopycatsModule@CurrentLevel)", 
+					"RTID(ZombossBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RenaiModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[ANNIVERSARY_10TH_NAME_14]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(RenaiStage@LevelModules)", 
+				"ShowZombies": [
+					"renai_ballet", 
+					"renai_perfumer", 
+					"renai_gliding", 
+					"renai_carver", 
+					"renai_worker", 
+					"renai_armor1", 
+					"renai_armor2", 
+					"renai_gargantuar"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult1@CurrentLevel)", 
+					"RTID(Difficult2@CurrentLevel)", 
+					"RTID(Difficult3@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"RenaiModule"
+			], 
+			"objclass": "RenaiZombossModuleProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"Difficult1"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 1, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_1@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(specialist_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(supporter_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(plant_damage_reduced_difficulty_1@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"DefaultCollection": "RTID(zombie_12th_difficulty_2@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_attack_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(m_2@LevelModifierModuleCollection)", 
+					"RTID(sun_reduced_difficulty_2@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult3"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 3, 
+				"DefaultCollection": "RTID(zombie_12th_difficulty_3@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(renai_zombie@LevelModifierModuleCollection)", 
+					"RTID(z_speed_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"pvz1CopycatsModule"
+			], 
+			"objclass": "PVZ1CopycatsModuleProperties", 
+			"objdata": {
+				"ZombieWeight": 0, 
+				"SpawnPlantLevel": 5, 
+				"PlantBlackList": [
+					"forg", 
+					"powerlily", 
+					"squash", 
+					"jalapeno", 
+					"gravebuster", 
+					"imitater", 
+					"cherry_bomb", 
+					"empea", 
+					"powerplant", 
+					"coffeebean", 
+					"lilypad", 
+					"flowerpot", 
+					"heathseeker", 
+					"tanglekelp", 
+					"guacodile", 
+					"ghostpepper", 
+					"hurrikale", 
+					"olive", 
+					"cobcannon", 
+					"hotpotato", 
+					"goldleaf", 
+					"flattenedshroom", 
+					"goldbloom", 
+					"lavaguava", 
+					"jackfruit", 
+					"thymewarp", 
+					"intensivecarrot", 
+					"grapeshot", 
+					"escaperoot", 
+					"pumpkin", 
+					"powervine", 
+					"perfumeshroom", 
+					"kelpguard", 
+					"oxygenalgae", 
+					"seashroom"
+				], 
+				"ZombieWhiteList": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					"minigame_imitater_sun", 
+					"minigame_imitater_sun", 
+					"minigame_imitater_melee4", 
+					"primalpeashooter", 
+					"electricpeashooter", 
+					"minigame_imitater_pitfall", 
+					"minigame_imitater_adc5", 
+					"aloes"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossDeathRow": 3, 
+				"ZombossMechType": "zombossmech_renai_12th", 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 4
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}
+	], 
+	"version": 1
+}

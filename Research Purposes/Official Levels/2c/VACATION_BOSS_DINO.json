@@ -1,0 +1,100 @@
+{
+	"#comment": "Dino Zomboss", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "meteor_right", 
+				"Description": "[PLAYERS_TRIP_TO_BOSSRACEEVENT]", 
+				"FirstRewardParam": "none", 
+				"FirstRewardType": "none", 
+				"ReplayRewardParam": "none", 
+				"ReplayRewardType": "none", 
+				"ForceNextLevel": "vacation_boss_robot", 
+				"ForceToWorldMap": true, 
+				"LevelNumber": 25, 
+				"LoadDefaultMusic": false, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombossIntro@LevelModules)", 
+					"RTID(KongfuBattle@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(LastStandSeedBank@CurrentLevel)", 
+					"RTID(ZombossMechBattle@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SUMMER_KONGFU_LEVEL2]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"RepeatPlayForceToWorldMap": true, 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(DinoStage@LevelModules)", 
+				"VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"ZombossMechBattle"
+			], 
+			"objclass": "ZombossBattleModuleProperties", 
+			"objdata": {
+				"ReservedColumnCount": 2, 
+				"ZombossMechType": "zombossmech_dino_vacation", 
+				"ZombossDeathRow": 3, 
+				"ZombossDeathColumn": 5, 
+				"ZombossSpawnGridPosition": {
+					"mX": 6, 
+					"mY": 3
+				}, 
+				"ZombossStageCount": 3, 
+				"ZombossStartStageIndex": 0
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuBattle"
+			], 
+			"objclass": "BossKillTimeChallengeProperties", 
+			"objdata": {
+				"LevelIndex": 1, 
+				"Type": "kongfu"
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStandSeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"iceburg"
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_DINO_FINALE]", 
+				"DescriptiveName": "[STARCHALLENGE_LOSTCITY_FINALE_NAME]"
+			}
+		}
+	], 
+	"version": 1
+}

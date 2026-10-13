@@ -1,0 +1,631 @@
+{
+	"#comment": "Nightmare_Z", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ZCORP]", 
+				"LevelNumber": 10, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(ZCorpMowers@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(PaperPlacement@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[ZCORP_LEVEL_NAME_10_N]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroZCORP10@LevelModules)", 
+				"StageModule": "RTID(ZCorpStage@LevelModules)", 
+				"ShowZombies": [
+					"zcorp", 
+					"zcorp_armor1", 
+					"zcorp_armor2", 
+					"zcorp_fem", 
+					"zcorp_fem_armor1", 
+					"zcorp_fem_armor2", 
+					"zcorp_gargantuar", 
+					"zcorp_imp", 
+					"zcorp_racer_chair", 
+					"zcorp_consultant", 
+					"zcorp_helpdesk", 
+					"general_zmech_phase1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PaperPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 1, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 2, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 3, 
+						"TypeName": "printer_small_paper"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"TypeName": "printer_small_paper"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantsSurvive@CurrentLevel)", 
+						"RTID(SunProduced@CurrentLevel)", 
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantsSurvive"
+			], 
+			"objclass": "StarChallengePlantsSurviveProps", 
+			"objdata": {
+				"Count": 15
+			}
+		}, 
+		{
+			"aliases": [
+				"SunProduced"
+			], 
+			"objclass": "StarChallengeSunProducedProps", 
+			"objdata": {
+				"TargetSun": 4000
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			], 
+			"objclass": "StarChallengePlantFoodNonuseProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 30, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(general_zmech_phase1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_consultant@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_racer_chair@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_armor1@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_consultant@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_consultant@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_armor2@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Level": 2, 
+						"Type": "RTID(zcorp_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

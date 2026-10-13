@@ -1,0 +1,78 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Name": "Speedy Lanes", 
+				"Description": "Speedy Lane Test!", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(ZombieSpawner@CurrentLevel)", 
+					"RTID(BasicSeedPackets@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(SpeedLaneChallenge@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"objclass": "SimpleZombieSpawnerProperties", 
+			"aliases": [
+				"ZombieSpawner"
+			], 
+			"objdata": {
+				"Stages": [
+					{
+						"Types": [
+							{
+								"ZombieType": "mummy"
+							}
+						], 
+						"SpawnDelay": 2
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "SeedBankProperties", 
+			"aliases": [
+				"FullSeedChooser"
+			], 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"objclass": "SpeedyLaneChallengeProperties", 
+			"aliases": [
+				"SpeedLaneChallenge"
+			], 
+			"objdata": {
+				"SpeedyLaneCount": 6, 
+				"SpeedyLaneSwitchDelay": 10.0, 
+				"SpeedyLaneIncreaseSpeedinessProbability": 0.9
+			}
+		}, 
+		{
+			"objclass": "SeedBankProperties", 
+			"aliases": [
+				"BasicSeedPackets"
+			], 
+			"objdata": {
+				"SelectionMethod": "preset", 
+				"PresetPlantList": [
+					"sunflower", 
+					"peashooter", 
+					"springbean", 
+					"snowpea", 
+					"cabbagepult", 
+					"cherry_bomb"
+				]
+			}
+		}
+	]
+}

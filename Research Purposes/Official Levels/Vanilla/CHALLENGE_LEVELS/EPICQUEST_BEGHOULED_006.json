@@ -1,0 +1,172 @@
+{
+	"#comment": "Beghouled - Epic Quest 005", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_EPIC_QUEST_BEGHOULED_BLITZ_001]", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 5, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[EPIC_QUEST_BEGHOULED_BLITZ_001_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FutureStage@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "primalpeashooter", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "holonut", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "coldsnapdragon", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 135, 
+				"InitialPlants": [
+					"peashooter", 
+					"wallnut", 
+					"snapdragon", 
+					"redstinger", 
+					"chomper"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "peashooter", 
+						"Level": -1, 
+						"UpgradedPlant": "primalpeashooter"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"Level": -1, 
+						"UpgradedPlant": "holonut"
+					}, 
+					{
+						"BasePlant": "snapdragon", 
+						"Level": -1, 
+						"UpgradedPlant": "coldsnapdragon"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 80, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 110, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_armor1"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_armor1"
+							}, 
+							{
+								"ZombieType": "future_armor2"
+							}
+						], 
+						"SpawnDelay": 4.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_jetpack"
+							}, 
+							{
+								"ZombieType": "future_armor2"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_jetpack"
+							}, 
+							{
+								"ZombieType": "future_armor2"
+							}, 
+							{
+								"ZombieType": "future_protector"
+							}, 
+							{
+								"ZombieType": "mech_cone"
+							}
+						], 
+						"SpawnDelay": 3.5
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

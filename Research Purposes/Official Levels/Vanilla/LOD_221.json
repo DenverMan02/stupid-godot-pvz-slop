@@ -1,0 +1,191 @@
+{
+	"#comment": "LOD 221 - Beghouled - Wasabi Whip", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]", 
+				"DraperPromo": "wasabiwhip", 
+				"IsLevelOfTheDay": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 1, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(DinoStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "akee", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "phatbeet", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "primalwallnut", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "wasabiwhip", 
+						"Level": -1
+					}
+				], 
+				"BeghouledUpgradeList": [], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 100, 
+				"InitialPlants": [
+					"cabbagepult", 
+					"bonkchoy", 
+					"wallnut", 
+					"fumeshroom"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "cabbagepult", 
+						"UpgradedPlant": "akee"
+					}, 
+					{
+						"BasePlant": "fumeshroom", 
+						"UpgradedPlant": "phatbeet"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "primalwallnut"
+					}, 
+					{
+						"BasePlant": "bonkchoy", 
+						"UpgradedPlant": "wasabiwhip"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 50, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 75, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "dino"
+							}, 
+							{
+								"ZombieType": "dino_imp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "dino"
+							}, 
+							{
+								"ZombieType": "dino_imp"
+							}, 
+							{
+								"ZombieType": "dino_armor1"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "dino"
+							}, 
+							{
+								"ZombieType": "dino_armor1"
+							}, 
+							{
+								"ZombieType": "dino_armor2"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "dino_armor1"
+							}, 
+							{
+								"ZombieType": "dino_armor2"
+							}, 
+							{
+								"ZombieType": "dino_armor3"
+							}, 
+							{
+								"ZombieType": "dino_bully"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

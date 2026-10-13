@@ -1,0 +1,984 @@
+{
+	"#comment": "DinosaurDanger 1", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_WEST]", 
+				"FirstRewardParam": "none", 
+				"FirstRewardType": "none", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DinosaurDanger@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(InitialPlant@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[DINOSAUR1_LEVEL_NAME]", 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(WestStage@LevelModules)", 
+				"ShowZombies": [
+					"cowboy_armor1", 
+					"cowboy_armor2", 
+					"cowboy"
+				], 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"aliases": [
+				"DinosaurDanger"
+			], 
+			"objclass": "DinosaurDangerProperties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"InitialPlant"
+			], 
+			"objclass": "InitialPlantEntryProperties", 
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 0, 
+						"GridY": 1, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 4, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 0, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 0, 
+						"GridY": 3, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"PlantTypes": [
+							"coconutcannon"
+						]
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"PlantTypes": [
+							"sweetpotato"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 4, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 9, 
+						"MaxPackets": 2
+					}, 
+					{
+						"Delay": 10, 
+						"MaxPackets": 4
+					}, 
+					{
+						"Delay": 12, 
+						"MaxPackets": 8
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"PlantType": "sweetpotato", 
+						"Weight": 50, 
+						"iLevel": 3
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"CowboyRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_cowboy", 
+				"Railcarts": [
+					{
+						"Column": 0, 
+						"Row": 1
+					}, 
+					{
+						"Column": 2, 
+						"Row": 2
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 0, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 3, 
+						"RowStart": 1
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 0, 
+						"StartingPoints": 0, 
+						"StartingWave": 3, 
+						"ZombiePool": [
+							"RTID(cowboy@ZombieTypes)", 
+							"RTID(cowboy_armor1@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 14, 
+				"WaveCount": 14, 
+				"WaveSpendingPointIncrement": 0, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2ModConveyor0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2ModConveyor0"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"Type": "RTID(powerlily@PlantTypes)", 
+						"Weight": 25
+					}
+				], 
+				"Remove": []
+			}
+		}
+	], 
+	"version": 1
+}

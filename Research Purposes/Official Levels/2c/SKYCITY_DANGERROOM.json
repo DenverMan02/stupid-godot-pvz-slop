@@ -1,0 +1,101 @@
+{
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "skycity_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				], 
+				"Name": "[DANGER_ROOM_SKYCITY_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(SkycityStage@LevelModules)", 
+				"StartingSun": 5000, 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(EgyptDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(SkycityDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"birthsunflower", 
+					"primalsunflower", 
+					"blover", 
+					"hurrikale", 
+					"imitater", 
+					"sapfling", 
+					"iceshroom", 
+					"empea", 
+					"bamboo", 
+					"agave", 
+					"jackfruit", 
+					"cottonyeti", 
+					"sarracenia", 
+					"rhubarbarian"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"SkycityDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(skycity_armor1@ZombieTypes)", 
+					"RTID(skycity_armor2@ZombieTypes)", 
+					"RTID(skycity_armor3@ZombieTypes)", 
+					"RTID(skycity_battleplane@ZombieTypes)", 
+					"RTID(skycity_gargantuar@ZombieTypes)", 
+					"RTID(skycity_twinsplane@ZombieTypes)", 
+					"RTID(skycity_electric@ZombieTypes)", 
+					"RTID(invisible_plane@ZombieTypes)", 
+					"RTID(air_missile_launcher@ZombieTypes)"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

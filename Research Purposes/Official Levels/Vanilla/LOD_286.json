@@ -1,0 +1,180 @@
+{
+	"#comment": "LOD 286 - Beghouled - Kiwibeast", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_LOD]", 
+				"DraperPromo": "kiwibeast", 
+				"IsLevelOfTheDay": true, 
+				"SuppressSunSpawn": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"LevelNumber": 14, 
+				"LevelPowerupSet": "LevelPowerupsBeghouled", 
+				"Modules": [
+					"RTID(LevelOfTheDayModule@CurrentLevel)", 
+					"RTID(BeghouledIntro@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RandomSpawner@CurrentLevel)", 
+					"RTID(BeghouledSeedBank@CurrentLevel)", 
+					"RTID(BeghouledArcade@LevelModules)", 
+					"RTID(BeghouledProps@.)"
+				], 
+				"MusicType": "MiniGame_B", 
+				"Name": "[MODE_NAME_BEGHOULED]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelOfTheDayModule"
+			], 
+			"objclass": "LevelOfTheDayModuleProperties", 
+			"objdata": {
+				"FlagCount": 0, 
+				"PlantfoodToSpawnCount": 0, 
+				"PointIncrementPerWave": 0, 
+				"StartingPoints": 0, 
+				"WavesPerFlag": 0, 
+				"ZombiePool": []
+			}
+		}, 
+		{
+			"objclass": "BeghouledSeedBankProperties", 
+			"aliases": [
+				"BeghouledSeedBank"
+			], 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"PlantType": "citron", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "holonut", 
+						"Level": -1
+					}, 
+					{
+						"PlantType": "melonpult", 
+						"Level": -1
+					}
+				], 
+				"SelectionMethod": "beghouled"
+			}
+		}, 
+		{
+			"objclass": "BeghouledPresetProperties", 
+			"aliases": [
+				"BeghouledProps"
+			], 
+			"objdata": {
+				"MatchesToWin": 125, 
+				"InitialPlants": [
+					"cabbagepult", 
+					"aloe", 
+					"wallnut", 
+					"kiwibeast"
+				], 
+				"UpgradeMap": [
+					{
+						"BasePlant": "cabbagepult", 
+						"UpgradedPlant": "melonpult"
+					}, 
+					{
+						"BasePlant": "cabbagepult", 
+						"UpgradedPlant": "citron"
+					}, 
+					{
+						"BasePlant": "wallnut", 
+						"UpgradedPlant": "holonut"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "BeghouledZombieSpawnerProperties", 
+			"aliases": [
+				"RandomSpawner"
+			], 
+			"objdata": {
+				"MatchCountsToStageAdvance": [
+					{
+						"MatchCount": 25, 
+						"StageNumber": 1
+					}, 
+					{
+						"MatchCount": 60, 
+						"StageNumber": 2
+					}, 
+					{
+						"MatchCount": 100, 
+						"StageNumber": 3
+					}
+				], 
+				"Stages": [
+					{
+						"#comment": "Stage 0", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_imp"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 1", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_jetpack"
+							}, 
+							{
+								"ZombieType": "future_armor1"
+							}
+						], 
+						"SpawnDelay": 2.0
+					}, 
+					{
+						"#comment": "Stage 2", 
+						"Types": [
+							{
+								"ZombieType": "future_imp"
+							}, 
+							{
+								"ZombieType": "future_armor1"
+							}, 
+							{
+								"ZombieType": "future_armor2"
+							}
+						], 
+						"SpawnDelay": 1.9
+					}, 
+					{
+						"#comment": "Stage 3", 
+						"Types": [
+							{
+								"ZombieType": "future"
+							}, 
+							{
+								"ZombieType": "future_armor2"
+							}, 
+							{
+								"ZombieType": "future_jetpack"
+							}
+						], 
+						"SpawnDelay": 1.8
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

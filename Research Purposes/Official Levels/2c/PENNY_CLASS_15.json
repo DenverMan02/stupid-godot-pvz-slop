@@ -1,0 +1,582 @@
+{
+	"#comment": "hard_squash", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 15, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(PennyClassroom@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)"
+				], 
+				"Name": "[PENNY_CLASS_LEVEL15]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(ModernStage@LevelModules)"
+			}
+		}, 
+		{
+			"objclass": "PennyClassroomModuleProperties", 
+			"aliases": [
+				"PennyClassroom"
+			], 
+			"objdata": {
+				"PlantMap": {
+					"squash": 4
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "GravestoneProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 8, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 8, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 0, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 1, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 2, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 3, 
+						"TypeName": "gravestone_dark"
+					}, 
+					{
+						"GridX": 1, 
+						"GridY": 4, 
+						"TypeName": "gravestone_dark"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 4, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 8, 
+						"MaxPackets": 3
+					}, 
+					{
+						"Delay": 16, 
+						"MaxPackets": 6
+					}, 
+					{
+						"Delay": 20, 
+						"MaxPackets": 9
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"MaxCount": 8, 
+						"MaxWeightFactor": 0, 
+						"PlantType": "squash", 
+						"Weight": 100
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 3, 
+				"WaveCount": 12, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Level": 2, 
+						"Type": "RTID(dark_cavalry@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Level": 2, 
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

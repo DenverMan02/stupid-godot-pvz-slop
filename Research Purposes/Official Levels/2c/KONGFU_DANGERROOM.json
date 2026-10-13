@@ -1,0 +1,150 @@
+{
+	"#comment": "Egypt Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "kongfu_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(KongFuMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(RocketZombieFlickModule@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Armrack@CurrentLevel)"
+				], 
+				"Name": "[DANGER_ROOM_KONGFU_LEVEL_NAME]", 
+				"NormalPresentTable": "kongfu_normal_01", 
+				"ShinyPresentTable": "kongfu_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"StartingSun": 5000, 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"objclass": "RocketZombieFlickModuleProperties", 
+			"aliases": [
+				"RocketZombieFlickModule"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(EgyptDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(KongfuDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"Armrack"
+			], 
+			"objclass": "ArmrackProperties", 
+			"objdata": {
+				"Overrides": [
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}
+						], 
+						"wave": 1
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 1, 
+								"type": "ArmrackFlag"
+							}
+						], 
+						"wave": 2
+					}, 
+					{
+						"itemList": [
+							{
+								"mX": 7, 
+								"mY": 2, 
+								"type": "ArmrackTorch"
+							}
+						], 
+						"wave": 7
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"KongfuDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(kongfu_basic_armor1@ZombieTypes)", 
+					"RTID(kongfu_basic_armor2@ZombieTypes)", 
+					"RTID(kongfu_qigong@ZombieTypes)", 
+					"RTID(kongfu_hammer@ZombieTypes)", 
+					"RTID(kongfu_monk_cone@ZombieTypes)", 
+					"RTID(kongfu_monk_bucket@ZombieTypes)", 
+					"RTID(kongfu_monk_basic@ZombieTypes)", 
+					"RTID(kongfu_torch@ZombieTypes)", 
+					"RTID(kongfu_basic_armor3@ZombieTypes)", 
+					"RTID(kongfu_drink@ZombieTypes)", 
+					"RTID(kongfu_strong_bronze@ZombieTypes)", 
+					"RTID(kongfu_magic_bronze@ZombieTypes)", 
+					"RTID(kongfu_agile_bronze@ZombieTypes)", 
+					"RTID(kongfu_monk_imp@ZombieTypes)", 
+					"RTID(kongfu_monk_drink@ZombieTypes)", 
+					"RTID(kongfu_monk_blade@ZombieTypes)", 
+					"RTID(kongfu_monk_torch@ZombieTypes)", 
+					"RTID(kongfu_monk_nunchaku@ZombieTypes)"
+				]
+			}
+		}
+	], 
+	"version": 1
+}

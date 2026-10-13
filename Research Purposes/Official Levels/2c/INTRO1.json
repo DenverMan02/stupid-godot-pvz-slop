@@ -1,0 +1,18 @@
+{
+	"#comment": "The intro we all know we want", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Name": "", 
+				"Description": "It Introduces!", 
+				"StageModule": "RTID(EgyptStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(IntroCinemaModule@LevelModules)"
+				]
+			}
+		}
+	]
+}

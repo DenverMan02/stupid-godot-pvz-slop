@@ -1,0 +1,115 @@
+{
+	"#comment": "PvZ2 Vasebreaker", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_BEACH]", 
+				"LevelIndex": 735, 
+				"LevelNumber": 20, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(Tide@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[BEACH_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"ShowZombies": [
+					"beach_shell", 
+					"beach", 
+					"beach_armor2", 
+					"beach_armor1"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_VASEBREAKER]", 
+				"DescriptiveName": "[STARCHALLENGE_VASEBREAKER_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 7
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"PowerUpTutorial": "powerupvasebreakermove", 
+				"MinColumnIndex": 4, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "beach", 
+						"Count": 6
+					}, 
+					{
+						"ZombieTypeName": "beach_armor1", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "beach_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "beach_shell", 
+						"Count": 1
+					}, 
+					{
+						"PlantTypeName": "wallnut", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "lemon", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "homingthistle", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "tanglekelp", 
+						"Count": 2
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	], 
+	"version": 1
+}

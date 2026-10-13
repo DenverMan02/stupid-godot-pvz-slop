@@ -1,0 +1,647 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SPRINGFESTIVAL_2024]", 
+				"LevelNumber": 1, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(UnchartedModeSpringFestivalModule@LevelModules)", 
+					"RTID(UnchartedModeSpringFestivalSeedBank@LevelModules)", 
+					"RTID(UnchartedBoostModuleProps@LevelModules)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SPRINGFESTIVAL_2024_NAME_06]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(UnchartedArbordayStage@LevelModules)", 
+				"ShowZombies": [
+					"zombie_snowpea", 
+					"zombie_gatlingpea", 
+					"renai_gliding", 
+					"renai_perfumer", 
+					"tutorial_imp", 
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"tutorial_gargantuar"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult2@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"Collections": [
+					"RTID(spring_zombie_level_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(spring_zombie_speed_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(spring_sun_reduced_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(spring_artifact_times_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BlowZombie@CurrentLevel)", 
+						"RTID(SunUsed@CurrentLevel)", 
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BlowZombie"
+			], 
+			"objclass": "StarChallengeBlowZombieProps", 
+			"objdata": {
+				"Count": 15
+			}
+		}, 
+		{
+			"aliases": [
+				"SunUsed"
+			], 
+			"objclass": "StarChallengeSunUsedProps", 
+			"objdata": {
+				"MaximumSun": 4500
+			}
+		}, 
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			], 
+			"objclass": "StarChallengePlantFoodNonuseProps", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"WaveCount": 15, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)", 
+						"RTID(Wave2AirbubbleEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)", 
+						"RTID(Wave6AirbubbleEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)", 
+						"RTID(Wave10AirbubbleEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)", 
+						"RTID(Wave14AirbubbleEvent0@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial_imp@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(zombie_snowpea@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2AirbubbleEvent0"
+			], 
+			"objclass": "ZombieAirbubbleActionProps", 
+			"objdata": {
+				"BubbleNumber": 3, 
+				"BubbleHealth": 400, 
+				"SpeedRangeMin": 0.5, 
+				"SpeedRangeMax": 2.5
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6AirbubbleEvent0"
+			], 
+			"objclass": "ZombieAirbubbleActionProps", 
+			"objdata": {
+				"BubbleNumber": 5, 
+				"BubbleHealth": 400, 
+				"SpeedRangeMin": 0.5, 
+				"SpeedRangeMax": 2.5
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10AirbubbleEvent0"
+			], 
+			"objclass": "ZombieAirbubbleActionProps", 
+			"objdata": {
+				"BubbleNumber": 7, 
+				"BubbleHealth": 400, 
+				"SpeedRangeMin": 0.5, 
+				"SpeedRangeMax": 2.5
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14AirbubbleEvent0"
+			], 
+			"objclass": "ZombieAirbubbleActionProps", 
+			"objdata": {
+				"BubbleNumber": 8, 
+				"BubbleHealth": 400, 
+				"SpeedRangeMin": 0.5, 
+				"SpeedRangeMax": 2.5
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,799 @@
+{
+	"#comment": "Anniversary 2026", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ANNIVERSARY]", 
+				"LevelNumber": 15, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(LevelPowerups@CurrentLevel)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(EventItemPlacement@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(RenaiModule@CurrentLevel)"
+				], 
+				"Name": "[ANNIVERSARY_10TH_NAME_15]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(PVZ2UnchartedModeOutroNoModes@LevelModules)", 
+				"StageModule": "RTID(RenaiStage@LevelModules)", 
+				"ShowZombies": [
+					"renai_gargantuar", 
+					"renai_worker", 
+					"renai_armor1", 
+					"renai_armor2", 
+					"renai_flag", 
+					"renai_perfumer", 
+					"renai_ballet", 
+					"renai_gliding", 
+					"renai_armor4"
+				], 
+				"LevelDifficulties": [
+					"RTID(Difficult1@CurrentLevel)", 
+					"RTID(Difficult2@CurrentLevel)", 
+					"RTID(Difficult3@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult1"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 1, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_1@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(specialist_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(supporter_plant_cost_difficulty_1@LevelModifierModuleCollection)", 
+					"RTID(plant_damage_reduced_difficulty_1@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult2"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 2, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_2@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_attack_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(anniversary_2026_15_speed_difficulty_2@LevelModifierModuleCollection)", 
+					"RTID(sun_reduced_difficulty_2@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Difficult3"
+			], 
+			"objclass": "LevelModifierDifficulty", 
+			"objdata": {
+				"Difficulty": 3, 
+				"DefaultCollection": "RTID(zombie_default_difficulty_3@LevelModifierModuleCollection)", 
+				"Collections": [
+					"RTID(z_speed_difficulty_3@LevelModifierModuleCollection)", 
+					"RTID(zombie_level_difficulty_3@LevelModifierModuleCollection)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"RenaiModule"
+			], 
+			"objclass": "RenaiModuleProperties", 
+			"objdata": {
+				"NightStartWaveNum": 8, 
+				"StatueInfos": [
+					{
+						"GridX": 3, 
+						"GridY": 0, 
+						"WaveNumber": 9, 
+						"TypeName": "renai_statue_zombie_armor2_half"
+					}, 
+					{
+						"GridX": 2, 
+						"GridY": 4, 
+						"WaveNumber": 9, 
+						"TypeName": "renai_statue_zombie_perfumer_half"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 4, 
+						"WaveNumber": 10, 
+						"TypeName": "renai_statue_zombie_armor2_half"
+					}
+				], 
+				"StatueNightInfos": [
+					{
+						"GridX": 2, 
+						"GridY": 0, 
+						"WaveNumber": 14, 
+						"TypeName": "renai_statue_zombie1"
+					}, 
+					{
+						"GridX": 3, 
+						"GridY": 2, 
+						"WaveNumber": 13, 
+						"TypeName": "renai_statue_zombie_armor1"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 4, 
+						"WaveNumber": 13, 
+						"TypeName": "renai_statue_zombie_armor1"
+					}, 
+					{
+						"GridX": 6, 
+						"GridY": 0, 
+						"WaveNumber": 15, 
+						"TypeName": "renai_statue_zombie_perfumer_half"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"EventItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "renai_roller"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "renai_roller"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 2, 
+						"TypeName": "renai_tile_right"
+					}, 
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"TypeName": "renai_tile_left"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 0, 
+						"TypeName": "renai_tile_left"
+					}, 
+					{
+						"GridX": 7, 
+						"GridY": 4, 
+						"TypeName": "renai_tile_left"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LevelPowerups"
+			], 
+			"objclass": "LevelPowerupModuleProperties", 
+			"objdata": {
+				"Powerups": [
+					{
+						"TypeName": "poweruppinchzombie", 
+						"FreeUseCount": 3
+					}, 
+					{
+						"TypeName": "powerupflickzombie", 
+						"FreeUseCount": 3
+					}, 
+					{
+						"TypeName": "powerupwizardfinger", 
+						"FreeUseCount": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 6, 
+				"WaveCount": 18, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave15@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave16@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave17@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave18@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_perfumer@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor2@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_ballet@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_ballet@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_ballet@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave15"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave16"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave17"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Type": "RTID(renai_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave18"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_flag@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(renai_armor4@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(renai_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

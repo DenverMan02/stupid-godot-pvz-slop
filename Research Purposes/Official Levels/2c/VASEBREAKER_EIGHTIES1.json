@@ -1,0 +1,114 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"Name": "[VASEBREAKER_EIGHTIES_LEVEL_NAME_1]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(EightiesStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 1, 
+				"WaveCount": 1, 
+				"SuppressFlagZombie": true, 
+				"ZombieCountdownFirstWaveSecs": 0, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"NotificationEvents": [
+					"jam_punk"
+				], 
+				"AdditionalPlantfood": 0, 
+				"Zombies": []
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "eighties", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "eighties_punk", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "eighties_gargantuar", 
+						"Count": 1
+					}, 
+					{
+						"ZombieTypeName": "eighties_armor1", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "eighties_armor2", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "cactus", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "hurrikale", 
+						"Count": 5
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 1
+			}
+		}
+	]
+}

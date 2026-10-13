@@ -1,0 +1,1081 @@
+{
+	"#comment": "Future Prototype", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_FUTURE]", 
+				"LevelIndex": 503, 
+				"LevelNumber": 3, 
+				"GameOverDialogTaskFailed": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(OakTrain@CurrentLevel)"
+				], 
+				"Name": "[FUTURE_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"StageModule": "RTID(DarkStage@LevelModules)", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"OakTrain"
+			], 
+			"objclass": "OakTrainProperties", 
+			"objdata": {
+				"MinScore": 10000, 
+				"TotalLife": 3, 
+				"NormalHeadScore": 100, 
+				"BossHeadScore": 500
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "WaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"Type": "RTID(zombie_target_normal@ZombieTypes)"
+					}
+				], 
+				"IsRiseFromGroundMode": true, 
+				"IgnoreFlagCarriers": true, 
+				"FlagWaveInterval": 35, 
+				"LevelXMLFilename": "future2.xml", 
+				"SpawnColEnd": 2, 
+				"SpawnColStart": 2, 
+				"WaveCount": 35, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 3, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 3, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 3, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 3, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Rise_GridX": 6, 
+								"Rise_GridY": 3, 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 4, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 2.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Rise_GridX": 3, 
+								"Rise_GridY": 3, 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Rise_GridX": 6, 
+								"Rise_GridY": 2, 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 3, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 2, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1.5, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_normal@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"WaveSpawnTime": 1, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_boss@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"TargetValidTime": 1.5, 
+								"Type": "RTID(zombie_target_dave@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_SINGLE]", 
+				"DescriptiveName": "[STARCHALLENGE_SINGLE_NAME]"
+			}
+		}
+	], 
+	"version": 1
+}

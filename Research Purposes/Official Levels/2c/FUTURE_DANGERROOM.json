@@ -1,0 +1,274 @@
+{
+	"#comment": "Future Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "future_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(FutureMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(FutureLinkedTileGroups@CurrentLevel)"
+				], 
+				"Name": "[DANGER_ROOM_FUTURE_LEVEL_NAME]", 
+				"NormalPresentTable": "future_normal_01", 
+				"ShinyPresentTable": "future_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(FutureStage@LevelModules)", 
+				"StartingSun": 5000, 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(FutureDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(FutureDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureLinkedTileGroups"
+			], 
+			"objclass": "PowerTileProperties", 
+			"objdata": {
+				"LinkedTiles": [
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 4, 
+							"mY": 1
+						}, 
+						"PropagationDelay": 0.25
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 0, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "delta", 
+						"Location": {
+							"mX": 1, 
+							"mY": 2
+						}, 
+						"PropagationDelay": 1.5
+					}, 
+					{
+						"Group": "alpha", 
+						"Location": {
+							"mX": 4, 
+							"mY": 3
+						}, 
+						"PropagationDelay": 0.25
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(mech_cone@ZombieTypes)", 
+					"RTID(future_protector@ZombieTypes)", 
+					"RTID(future_armor1@ZombieTypes)", 
+					"RTID(future_armor2@ZombieTypes)", 
+					"RTID(football_mech@ZombieTypes)", 
+					"RTID(disco_mech@ZombieTypes)", 
+					"RTID(future_jetpack@ZombieTypes)", 
+					"RTID(future_gargantuar_danger@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SpiderRainDesigner"
+			], 
+			"objclass": "DangerRoomSpiderRainDesigner", 
+			"objdata": {
+				"BaseSpiderRainCount": 0, 
+				"MaxSpiderRainCount": 4, 
+				"BaseSpiderRainCountPerLevel": 0.5, 
+				"BaseSpiderRainZombieCount": 3, 
+				"MaxSpiderRainZombies": 6, 
+				"BaseSpiderRainZombiesCountPerLevel": 0.4, 
+				"BaseSpiderRainStartWave": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerTileDesigner"
+			], 
+			"objclass": "DangerRoomPowerTileDesigner", 
+			"objdata": {
+				"PickByRowColumn": false, 
+				"BaseTileSetCount": 1, 
+				"BaseTileSetCountPerLevel": 0.3, 
+				"MaxTileSetCount": 3, 
+				"ColumnCount": 4, 
+				"TileSetLayouts": [
+					[
+						"11"
+					], 
+					[
+						"101"
+					], 
+					[
+						"10101"
+					], 
+					[
+						"1", 
+						"1"
+					], 
+					[
+						"1", 
+						"0", 
+						"1"
+					], 
+					[
+						"10", 
+						"01", 
+						"10"
+					], 
+					[
+						"01", 
+						"10", 
+						"01"
+					], 
+					[
+						"1", 
+						"1", 
+						"1"
+					], 
+					[
+						"1", 
+						"0", 
+						"0", 
+						"0", 
+						"1"
+					], 
+					[
+						"1", 
+						"0", 
+						"1", 
+						"0", 
+						"1"
+					], 
+					[
+						"10", 
+						"00", 
+						"01", 
+						"00", 
+						"10"
+					], 
+					[
+						"01", 
+						"00", 
+						"10", 
+						"00", 
+						"01"
+					], 
+					[
+						"01", 
+						"00", 
+						"10", 
+						"00", 
+						"01"
+					], 
+					[
+						"101", 
+						"000", 
+						"101"
+					], 
+					[
+						"101", 
+						"000", 
+						"101", 
+						"000", 
+						"000"
+					], 
+					[
+						"000", 
+						"000", 
+						"101", 
+						"000", 
+						"101"
+					], 
+					[
+						"001", 
+						"000", 
+						"100", 
+						"000", 
+						"001"
+					], 
+					[
+						"010", 
+						"101", 
+						"010"
+					], 
+					[
+						"00001", 
+						"00000", 
+						"00001", 
+						"00000", 
+						"00001"
+					], 
+					[
+						"01001", 
+						"01001"
+					]
+				]
+			}
+		}
+	], 
+	"version": 1
+}

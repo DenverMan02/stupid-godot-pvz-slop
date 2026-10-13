@@ -1,0 +1,72 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 1", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"Name": "[VASEBREAKER_RENAI_LEVEL_NAME_1]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(RenaiStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 4, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "renai_worker", 
+						"Count": 5
+					}, 
+					{
+						"ZombieTypeName": "renai_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "renai_gliding", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "sugarcane", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "renai_armor1", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "elaeocarpus", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "slingpea", 
+						"Count": 5
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

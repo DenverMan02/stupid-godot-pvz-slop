@@ -1,0 +1,1125 @@
+{
+	"#comment": "Cowboy Last Stand A", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 1, 
+				"LevelIndex": 312, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"ForceNextLevel": "WorldCup_1", 
+				"Modules": [
+					"RTID(ModernMowers@LevelModules)", 
+					"RTID(Waves@CurrentLevel)", 
+					"RTID(WorldCupSeedBank@CurrentLevel)", 
+					"RTID(WorldCupIntro@CurrentLevel)", 
+					"RTID(WorldcupRails@CurrentLevel)", 
+					"RTID(SoccerGame@CurrentLevel)"
+				], 
+				"NormalPresentTable": "cowboy_normal_01", 
+				"ShinyPresentTable": "cowboy_shiny_01", 
+				"StageModule": "RTID(SoccerStage@LevelModules)", 
+				"VictoryModule": "RTID(SoccerGameWinOutro@LevelModules)", 
+				"CanSaveGameState": false, 
+				"IsWorldCup": true, 
+				"MusicType": "MiniGame_A", 
+				"ShowZombies": [
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"tutorial"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldcupRails"
+			], 
+			"objclass": "RailcartProperties", 
+			"objdata": {
+				"RailcartType": "railcart_worldcup", 
+				"Railcarts": [
+					{
+						"Column": 1, 
+						"Row": 0
+					}, 
+					{
+						"Column": 1, 
+						"Row": 2
+					}, 
+					{
+						"Column": 1, 
+						"Row": 4
+					}, 
+					{
+						"Column": 2, 
+						"Row": 1
+					}, 
+					{
+						"Column": 2, 
+						"Row": 3
+					}, 
+					{
+						"Column": 3, 
+						"Row": 2
+					}
+				], 
+				"Rails": [
+					{
+						"Column": 1, 
+						"RowEnd": 0, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 2, 
+						"RowStart": 2
+					}, 
+					{
+						"Column": 1, 
+						"RowEnd": 4, 
+						"RowStart": 4
+					}, 
+					{
+						"Column": 3, 
+						"RowEnd": 4, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 1, 
+						"RowStart": 0
+					}, 
+					{
+						"Column": 2, 
+						"RowEnd": 4, 
+						"RowStart": 3
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SoccerGame"
+			], 
+			"objclass": "SoccerGameModuleProperties", 
+			"objdata": {
+				"GameTime": 180, 
+				"PassTime": 10, 
+				"RoundIndex": 0, 
+				"ZombieWinPositionX": -80
+			}
+		}, 
+		{
+			"aliases": [
+				"Waves"
+			], 
+			"objclass": "SoccerWaveGeneratorProperties", 
+			"objdata": {
+				"AddToZombiePool": [
+					{
+						"FirstWave": 1, 
+						"LastWave": 8, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 3, 
+						"LastWave": 12, 
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 5, 
+						"LastWave": 14, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 7, 
+						"LastWave": 20, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}, 
+					{
+						"FirstWave": 5, 
+						"LastWave": 23, 
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				], 
+				"FlagWaveInterval": 28, 
+				"LevelXMLFilename": "cowboy_challenge_laststand_a.xml", 
+				"SpawnColEnd": 9, 
+				"SpawnColStart": 7, 
+				"WaveCount": 28, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 600, 
+				"Waves": [
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": true, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": true, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"AddToZombiePool": [
+							{
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						], 
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"Zombies": [
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "5", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "4", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "3", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "2", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "1", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}
+						]
+					}, 
+					{
+						"DisableRandomSpawns": false, 
+						"SpawnPlantFoodCount": 0, 
+						"Zombies": [
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}, 
+							{
+								"Row": "?", 
+								"Type": "RTID(tutorial_armor1@ZombieTypes)"
+							}
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldCupSeedBank"
+			], 
+			"objclass": "WorldCupSeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "worldcup"
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]", 
+				"DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"WorldCupIntro"
+			], 
+			"objclass": "WorldCupProperties", 
+			"objdata": {
+				"StartingPlantfood": 2, 
+				"IsTutorial": true
+			}
+		}
+	], 
+	"version": 1
+}

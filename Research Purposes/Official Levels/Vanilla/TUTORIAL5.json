@@ -1,0 +1,109 @@
+{
+	"#comment": "Tutorial 5", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"CompletionAchievement": "off_the_green", 
+				"Description": "[PLAYERS_HOUSE]", 
+				"FirstOutroNarrative": 1000450, 
+				"FirstRewardParam": "taco", 
+				"FirstRewardType": "collectable", 
+				"ForceNextLevel": "egypt1", 
+				"ForceWarpTunnel": true, 
+				"GameFeaturesToUnlock": [
+					"feature_coins"
+				], 
+				"LevelNumber": 5, 
+				"Loot": "RTID(NoLoot@LevelModules)", 
+				"Modules": [
+					"RTID(TutorialIntro@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(TutorialMowers@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(SeedPacketHalfTimeModule@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)"
+				], 
+				"Name": "[TUTORIAL_LEVEL_NAME]", 
+				"ReplayOutroNarrative": 1000450, 
+				"ReplayRewardParam": "taco", 
+				"ReplayRewardType": "collectable", 
+				"ResourceGroupNames": [
+					"SodRollGroup"
+				], 
+				"StageModule": "RTID(TutorialStage@LevelModules)"
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PresetPlantList": [
+					{
+						"Level": -1, 
+						"PlantType": "peashooter"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "sunflower"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "wallnut"
+					}, 
+					{
+						"Level": -1, 
+						"PlantType": "potatomine"
+					}
+				], 
+				"SelectionMethod": "preset"
+			}
+		}, 
+		{
+			"aliases": [
+				"TutorialIntro"
+			], 
+			"objclass": "TutorialLevel4Properties", 
+			"objdata": {}
+		}, 
+		{
+			"aliases": [
+				"FirstCoinTutorial"
+			], 
+			"objclass": "PickupCollectableTutorialProperties", 
+			"objdata": {
+				"DropperZombieType": "tutorial_armor2", 
+				"LootType": "GoldCoin", 
+				"PickupAdvice": "[ADVICE_CLICK_COIN]", 
+				"PostPickupAdvice": "[ADVICE_COLLECT_COINS]"
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 0, 
+				"MaxNextWaveHealthPercentage": 0.65, 
+				"MinNextWaveHealthPercentage": 0.5, 
+				"WaveCount": 0, 
+				"WaveSpendingPointIncrement": 10, 
+				"WaveSpendingPoints": 100, 
+				"Waves": []
+			}
+		}
+	], 
+	"version": 1
+}

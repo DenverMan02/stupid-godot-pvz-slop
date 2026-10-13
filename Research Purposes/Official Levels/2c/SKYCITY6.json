@@ -1,0 +1,2801 @@
+{
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Name": "[SKYCITY_LEVEL_NAME]", 
+				"FirstRewardParam": "doublesamara", 
+				"FirstRewardType": "unlock_plant", 
+				"Description": "[PLAYERS_TRIP_TO_SKYCITY]", 
+				"MainObjective": "[SURVIVE_ZOMBIE_ATTACK]", 
+				"StartingSun": 50, 
+				"LevelNumber": 6, 
+				"LevelIndex": 906, 
+				"StageModule": "RTID(SkycityFishingStage@LevelModules)", 
+				"Modules": [
+					"RTID(Fishing@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)", 
+					"RTID(IntroFishing@CurrentLevel)"
+				], 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"challengeDropGroupId": "", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressVictoryScreen": false, 
+				"FirstRewardType": "collectable", 
+				"FirstRewardParam": "moneybag", 
+				"ReplayRewardType": "collectable", 
+				"ReplayRewardParam": "moneybag", 
+				"GameOverDialogShowBrain": false, 
+				"GameOverDialogTaskFailed": false, 
+				"FirstIntroNarrative": "", 
+				"ReplayIntroNarrative": "", 
+				"FirstOutroNarrative": "", 
+				"ReplayOutroNarrative": "", 
+				"ForceNextLevel": "", 
+				"ForceWarpTunnel": false, 
+				"IsDangerRoom": false, 
+				"CompletionAchievement": "", 
+				"GameFeaturesToUnlock": [], 
+				"MusicType": "MiniGame_lB", 
+				"ZombieWarningInfos": [], 
+				"ZombieMaxLevel": -1
+			}
+		}, 
+		{
+			"aliases": [
+				"IntroFishing"
+			], 
+			"objclass": "IntroFishingProperties", 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"ResourceGroupNames": [], 
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}, 
+			"aliases": [
+				"ChallengeModule"
+			]
+		}, 
+		{
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"ResourceGroupNames": [], 
+				"Description": "[STARCHALLENGE_FISH]", 
+				"DescriptiveName": "[STARCHALLENGE_FISH_NAME]"
+			}, 
+			"aliases": [
+				"BeatTheLevel"
+			]
+		}, 
+		{
+			"objclass": "FishingProperties", 
+			"objdata": {
+				"ResourceGroupNames": [], 
+				"InitScore": 3000, 
+				"MaxScore": 10000, 
+				"WaveNumMin": 2, 
+				"WaveNumMax": 4, 
+				"WaveRefreshTime": 4, 
+				"ZombieInitDatas": [
+					{
+						"Type": "RTID(skycity@ZombieTypes)", 
+						"Hitpoints": 300
+					}, 
+					{
+						"Type": "RTID(skycity_armor1@ZombieTypes)", 
+						"Hitpoints": 230
+					}, 
+					{
+						"Type": "RTID(skycity_armor2@ZombieTypes)", 
+						"Hitpoints": 100
+					}, 
+					{
+						"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+						"Hitpoints": 1500
+					}, 
+					{
+						"Type": "RTID(skycity_electric@ZombieTypes)", 
+						"Hitpoints": 900
+					}, 
+					{
+						"Type": "RTID(skycity_gargantuar@ZombieTypes)", 
+						"Hitpoints": 14400
+					}, 
+					{
+						"Type": "RTID(skycity_twinsplane@ZombieTypes)", 
+						"Hitpoints": 2400
+					}, 
+					{
+						"Type": "RTID(invisible_plane@ZombieTypes)", 
+						"Hitpoints": 4800
+					}
+				], 
+				"CannonProps": [
+					{
+						"CannonType": 1, 
+						"Energy": 25, 
+						"Damage": 300, 
+						"CoolDown": 0.2, 
+						"Visible": true
+					}, 
+					{
+						"CannonType": 2, 
+						"Energy": 125, 
+						"Damage": 400, 
+						"CoolDown": 1.0, 
+						"Visible": true
+					}, 
+					{
+						"CannonType": 3, 
+						"Energy": 250, 
+						"Damage": 425, 
+						"CoolDown": 0.3, 
+						"Visible": false
+					}
+				], 
+				"ZombieGroups": [
+					{
+						"GroupName": "group0", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group1", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 57, 
+									"y": -1
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group2", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 54
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group3", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 51, 
+									"y": -44
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 88, 
+									"y": 16
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group4", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 95, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 87
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 99, 
+									"y": 86
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group5", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": -60, 
+									"y": 59
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 67, 
+									"y": 61
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 6, 
+									"y": 110
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group6", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 86, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 84, 
+									"y": 47
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group7", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 52
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": -2, 
+									"y": 106
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 2, 
+									"y": -62
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group8", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 510, 
+									"y": -215
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 64, 
+									"y": -69
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 121, 
+									"y": -127
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": -182
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group9", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 40, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": -4, 
+									"y": -83
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": -84, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": -77, 
+									"y": 58
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 99
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 85, 
+									"y": 37
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity@ZombieTypes)", 
+								"Offset": {
+									"x": 76, 
+									"y": -43
+								}, 
+								"Scale": 0.6, 
+								"Score": 30, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group10", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group11", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 57, 
+									"y": -1
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group12", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 54
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group13", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 51, 
+									"y": -44
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 88, 
+									"y": 16
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group14", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 95, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 87
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 99, 
+									"y": 86
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group15", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": -60, 
+									"y": 59
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 67, 
+									"y": 61
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 6, 
+									"y": 110
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group16", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 86, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 84, 
+									"y": 47
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group17", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 52
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": -2, 
+									"y": 106
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 2, 
+									"y": -62
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group18", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 510, 
+									"y": -215
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 64, 
+									"y": -69
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 121, 
+									"y": -127
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": -182
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group19", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 40, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": -4, 
+									"y": -83
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": -84, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": -77, 
+									"y": 58
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 99
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 85, 
+									"y": 37
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor1@ZombieTypes)", 
+								"Offset": {
+									"x": 76, 
+									"y": -43
+								}, 
+								"Scale": 0.6, 
+								"Score": 40, 
+								"Speed": 1.2, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group20", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group21", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 57, 
+									"y": -1
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group22", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 54
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group23", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 51, 
+									"y": -44
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 88, 
+									"y": 16
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group24", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 95, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 87
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 99, 
+									"y": 86
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group25", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": -60, 
+									"y": 59
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 67, 
+									"y": 61
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 6, 
+									"y": 110
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group26", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 86, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 84, 
+									"y": 47
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group27", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 52
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": -2, 
+									"y": 106
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 2, 
+									"y": -62
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group28", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 510, 
+									"y": -215
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 64, 
+									"y": -69
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 121, 
+									"y": -127
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": -182
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group29", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 40, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": -4, 
+									"y": -83
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": -84, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": -77, 
+									"y": 58
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 99
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 85, 
+									"y": 37
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 76, 
+									"y": -43
+								}, 
+								"Scale": 0.6, 
+								"Score": 50, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group30", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group31", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 57, 
+									"y": -1
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group32", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 54
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group33", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 51, 
+									"y": -44
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 88, 
+									"y": 16
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group34", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 95, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 87
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 99, 
+									"y": 86
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group35", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": -60, 
+									"y": 59
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 67, 
+									"y": 61
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 6, 
+									"y": 110
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group36", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 86, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 84, 
+									"y": 47
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group37", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 52
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": -2, 
+									"y": 106
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 2, 
+									"y": -62
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group38", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 510, 
+									"y": -215
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 64, 
+									"y": -69
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 121, 
+									"y": -127
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_electric@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": -182
+								}, 
+								"Scale": 0.6, 
+								"Score": 70, 
+								"Speed": 1, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group40", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group41", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 57, 
+									"y": -1
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group42", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 54
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group43", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 100, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 51, 
+									"y": -44
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 88, 
+									"y": 16
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group44", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 95, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 3, 
+									"y": 87
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 99, 
+									"y": 86
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group45", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": -60, 
+									"y": 59
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 67, 
+									"y": 61
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 6, 
+									"y": 110
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group46", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 86, 
+									"y": -31
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 84, 
+									"y": 47
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": 4
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group47", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 52
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": -2, 
+									"y": 106
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 2, 
+									"y": -62
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group48", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 510, 
+									"y": -215
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 64, 
+									"y": -69
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 121, 
+									"y": -127
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_battleplane@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": -182
+								}, 
+								"Scale": 0.6, 
+								"Score": 60, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group50", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 400, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_twinsplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 300, 
+								"Speed": 0.6, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group52", 
+						"ActiveCondition": "Time", 
+						"ActiveValue": 45, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_twinsplane@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 300, 
+								"Speed": 0.6, 
+								"SpecialType": 2, 
+								"DisabledPathTypes": []
+							}
+						]
+					}, 
+					{
+						"GroupName": "group53", 
+						"ActiveCondition": "Weight", 
+						"ActiveValue": 60, 
+						"Zombies": [
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 0, 
+									"y": 0
+								}, 
+								"Scale": 0.6, 
+								"Score": 55, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 510, 
+									"y": -215
+								}, 
+								"Scale": 0.6, 
+								"Score": 55, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 64, 
+									"y": -69
+								}, 
+								"Scale": 0.6, 
+								"Score": 55, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 121, 
+									"y": -127
+								}, 
+								"Scale": 0.6, 
+								"Score": 55, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}, 
+							{
+								"Type": "RTID(skycity_armor2@ZombieTypes)", 
+								"Offset": {
+									"x": 173, 
+									"y": -182
+								}, 
+								"Scale": 0.6, 
+								"Score": 55, 
+								"Speed": 1.4, 
+								"SpecialType": 0, 
+								"DisabledPathTypes": []
+							}
+						]
+					}
+				], 
+				"Paths": [
+					{
+						"PathType": "path0", 
+						"PathPoints": [
+							{
+								"x": 0, 
+								"y": 0
+							}, 
+							{
+								"x": -104, 
+								"y": -68
+							}, 
+							{
+								"x": -199, 
+								"y": -106
+							}, 
+							{
+								"x": -315, 
+								"y": -82
+							}, 
+							{
+								"x": -405, 
+								"y": -36
+							}, 
+							{
+								"x": -528, 
+								"y": 0
+							}, 
+							{
+								"x": -636, 
+								"y": -36
+							}, 
+							{
+								"x": -697, 
+								"y": -104
+							}, 
+							{
+								"x": -748, 
+								"y": -181
+							}, 
+							{
+								"x": -793, 
+								"y": -273
+							}, 
+							{
+								"x": -816, 
+								"y": -376
+							}
+						]
+					}, 
+					{
+						"PathType": "path2", 
+						"PathPoints": [
+							{
+								"x": 0, 
+								"y": 0
+							}, 
+							{
+								"x": -47, 
+								"y": 81
+							}, 
+							{
+								"x": -111, 
+								"y": 160
+							}, 
+							{
+								"x": -224, 
+								"y": 174
+							}, 
+							{
+								"x": -365, 
+								"y": 78
+							}, 
+							{
+								"x": -430, 
+								"y": -26
+							}, 
+							{
+								"x": -505, 
+								"y": -142
+							}, 
+							{
+								"x": -635, 
+								"y": -208
+							}, 
+							{
+								"x": -787, 
+								"y": -206
+							}, 
+							{
+								"x": -902, 
+								"y": -158
+							}, 
+							{
+								"x": -1002, 
+								"y": -103
+							}
+						]
+					}, 
+					{
+						"PathType": "path3", 
+						"PathPoints": [
+							{
+								"x": 0, 
+								"y": 0
+							}, 
+							{
+								"x": -127, 
+								"y": 2
+							}, 
+							{
+								"x": -265, 
+								"y": 18
+							}, 
+							{
+								"x": -384, 
+								"y": 16
+							}, 
+							{
+								"x": -492, 
+								"y": -3
+							}, 
+							{
+								"x": -604, 
+								"y": -29
+							}, 
+							{
+								"x": -705, 
+								"y": -64
+							}, 
+							{
+								"x": -831, 
+								"y": -89
+							}, 
+							{
+								"x": -957, 
+								"y": -103
+							}
+						]
+					}, 
+					{
+						"PathType": "path4", 
+						"PathPoints": [
+							{
+								"x": 0, 
+								"y": 0
+							}, 
+							{
+								"x": -175, 
+								"y": -106
+							}, 
+							{
+								"x": -287, 
+								"y": -178
+							}, 
+							{
+								"x": -400, 
+								"y": -247
+							}, 
+							{
+								"x": -538, 
+								"y": -300
+							}, 
+							{
+								"x": -686, 
+								"y": -289
+							}, 
+							{
+								"x": -828, 
+								"y": -240
+							}, 
+							{
+								"x": -974, 
+								"y": -155
+							}
+						]
+					}, 
+					{
+						"PathType": "path5", 
+						"PathPoints": [
+							{
+								"x": 0, 
+								"y": 0
+							}, 
+							{
+								"x": -96, 
+								"y": -16
+							}, 
+							{
+								"x": -199, 
+								"y": 51
+							}, 
+							{
+								"x": -332, 
+								"y": 80
+							}, 
+							{
+								"x": -499, 
+								"y": 23
+							}, 
+							{
+								"x": -615, 
+								"y": -67
+							}, 
+							{
+								"x": -789, 
+								"y": -138
+							}, 
+							{
+								"x": -953, 
+								"y": -118
+							}
+						]
+					}
+				]
+			}, 
+			"aliases": [
+				"Fishing"
+			]
+		}
+	]
+}

@@ -1,0 +1,455 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_QIN]", 
+				"LevelNumber": 8, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(QinGhostMowers@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultSunDropper@LevelModules)", 
+					"RTID(TunnelDefend2Default0@LevelModules)", 
+					"RTID(PVZ2MausoleumModuleUnchartedMode@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(GridItemPlacement@CurrentLevel)"
+				], 
+				"Name": "[NOQIN_LEVEL_NAME_08]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"DisablePeavine": true, 
+				"VictoryModule": "RTID(MausoleumOutro@LevelModules)", 
+				"StageModule": "RTID(UnchartedMausoleum2Stage@LevelModules)", 
+				"IsArtifactDisabled": true, 
+				"ShowZombies": [
+					"mausoleum_armor2", 
+					"mausoleum_armor1", 
+					"mausoleum_basic", 
+					"mausoleum_vendor", 
+					"qin_shield_segment"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "MausoleumSeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser", 
+				"SeedChooserType": "UIMausoleumSeedChooser", 
+				"SeedPacketType": "UIMausoleumSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemPlacement"
+			], 
+			"objclass": "InitialGridItemProperties", 
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"TypeName": "enchantment_defence"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 2, 
+						"TypeName": "enchantment_defence"
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 3, 
+						"TypeName": "enchantment_defence"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 30, 
+						"StartingPoints": 100, 
+						"StartingWave": 3, 
+						"ZombiePool": [
+							"RTID(mausoleum_basic_ghost@ZombieTypes)", 
+							"RTID(mausoleum_armor1_ghost@ZombieTypes)", 
+							"RTID(mausoleum_armor2_ghost@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 7, 
+				"WaveCount": 14, 
+				"WaveSpendingPointIncrement": 50, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave11@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave12@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave13@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave14@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_basic_ghost@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_piggy@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(qin_mystic_formation_summon@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(qin_shield_pair@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(qin_jingke_ghost@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Type": "RTID(mausoleum_drunkard_ghost@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(mausoleum_drunkard_ghost@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_archer_ghost@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(qin_shield_segment@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_drunkard_ghost@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(qin_shield_pair@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave11"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(qin_shield_segment@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(qin_shield_segment@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(qin_shield_segment@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(qin_shield_segment@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave12"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(mausoleum_drunkard_ghost@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave13"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(qin_mystic_formation_summon@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(qin_shield_triad@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(qin_mystic_formation_defense@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(qin_shield_triad@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(qin_shield_triad@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave14"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(mausoleum_archer@ZombieTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

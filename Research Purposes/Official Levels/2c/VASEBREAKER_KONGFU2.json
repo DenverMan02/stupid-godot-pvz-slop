@@ -1,0 +1,80 @@
+{
+	"#comment": "PvZ2 Vasebreaker level 2", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"LevelNumber": 2, 
+				"Name": "[VASEBREAKER_KONGFU_LEVEL_NAME_2]", 
+				"IsVasebreaker": true, 
+				"LevelPowerupSet": "LevelPowerupsVasebreaker", 
+				"Description": "", 
+				"StageModule": "RTID(KongfuStage@LevelModules)", 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"FirstRewardParam": "moneybag", 
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)", 
+					"RTID(VaseBreakerFlow@LevelModules)", 
+					"RTID(VaseBreakerProps@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "VaseBreakerPresetProperties", 
+			"aliases": [
+				"VaseBreakerProps"
+			], 
+			"objdata": {
+				"MinColumnIndex": 3, 
+				"MaxColumnIndex": 8, 
+				"Vases": [
+					{
+						"ZombieTypeName": "kongfu_flag", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "kongfu_basic_armor1", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "kongfu_basic_armor2", 
+						"Count": 2
+					}, 
+					{
+						"ZombieTypeName": "kongfu_torch", 
+						"Count": 4
+					}, 
+					{
+						"ZombieTypeName": "kongfu_strong_bronze", 
+						"Count": 2
+					}, 
+					{
+						"PlantTypeName": "eywa", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "tigerstool", 
+						"Count": 5
+					}, 
+					{
+						"PlantTypeName": "hollyknight", 
+						"Count": 3
+					}, 
+					{
+						"PlantTypeName": "iceburg", 
+						"Count": 2
+					}, 
+					{
+						"CollectableTypeName": "plantfood", 
+						"Count": 1
+					}
+				], 
+				"NumColoredPlantVases": 3, 
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,461 @@
+{
+	"#comment": "ATLANTIS 1", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ATLANTIS]", 
+				"FirstIntroNarrative": "ATLANTIS_24_INTRO", 
+				"GameOverDialogShowBrain": false, 
+				"IsArtifactDisabled": true, 
+				"FirstRewardType": "giftbox", 
+				"LevelNumber": 24, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(AquariumModule@CurrentLevel)", 
+					"RTID(DeepSeaMiniGameEntity@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"Name": "[ATLANTIS_LEVEL_NAME]", 
+				"MusicType": "MiniGame_B", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(AquariumStage@LevelModules)", 
+				"ShowZombies": [
+					"priest", 
+					"atlantis_land_basic"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[ATLANTIS_AQUARIUM_DESCRIPTION]", 
+				"DescriptiveName": "[ATLANTIS_AQUARIUM]"
+			}
+		}, 
+		{
+			"aliases": [
+				"AquariumModule"
+			], 
+			"objclass": "AquariumModuleProperties", 
+			"objdata": {
+				"DefaultCoinDropSpeed": 50, 
+				"DefaultCoinNumber": 500, 
+				"SkillConfigList": [
+					{
+						"SkillType": "BrainQuality", 
+						"Icon": "IMAGE_MINIGAME_ATLANTIS_SKILL1", 
+						"MaxLevel": 2, 
+						"Cost": 200, 
+						"Description": "", 
+						"ShortDescription": ""
+					}, 
+					{
+						"SkillType": "BrainNumber", 
+						"Icon": "IMAGE_MINIGAME_ATLANTIS_SKILL2", 
+						"MaxLevel": 8, 
+						"Cost": 300, 
+						"Description": "", 
+						"ShortDescription": ""
+					}, 
+					{
+						"SkillType": "TouchAttack", 
+						"Icon": "IMAGE_MINIGAME_ATLANTIS_SKILL3", 
+						"MaxLevel": 2, 
+						"Cost": 300, 
+						"Description": "", 
+						"ShortDescription": ""
+					}, 
+					{
+						"SkillType": "ZombieUnlock", 
+						"Icon": "IMAGE_MINIGAME_ATLANTIS_SKILL4", 
+						"MaxLevel": 1, 
+						"Cost": 500, 
+						"Description": "", 
+						"ShortDescription": ""
+					}, 
+					{
+						"SkillType": "Sushi", 
+						"Icon": "IMAGE_MINIGAME_ATLANTIS_SKILL5", 
+						"MaxLevel": 1, 
+						"Cost": 250, 
+						"Description": "", 
+						"ShortDescription": ""
+					}, 
+					{
+						"SkillType": "Victory", 
+						"Icon": "IMAGE_MINIGAME_ATLANTIS_SKILL6", 
+						"MaxLevel": 3, 
+						"Cost": 1000, 
+						"Description": "", 
+						"ShortDescription": ""
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "DeepSeaMiniGameEntityModuleProperties", 
+			"aliases": [
+				"DeepSeaMiniGameEntity"
+			], 
+			"objdata": {
+				"ZombieDatas": [
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 125.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_ZOMBIE_ATLANTIS_BASIC", 
+						"Type": "normal", 
+						"ClassName": "DeepSeaMiniGameZombie", 
+						"BasicSpeed": 40.0, 
+						"ExtraSpeed": {
+							"Min": 0, 
+							"Max": 40.0
+						}, 
+						"BreakTime": {
+							"Min": 1.0, 
+							"Max": 3.0
+						}, 
+						"UpgradeRequiredCount": [
+							5, 
+							3, 
+							2
+						], 
+						"HungryDuration": [
+							{
+								"Min": 8.0, 
+								"Max": 12.0
+							}, 
+							{
+								"Min": 8.0, 
+								"Max": 10.0
+							}, 
+							{
+								"Min": 12.0, 
+								"Max": 12.0
+							}
+						], 
+						"Health": 300.0, 
+						"SpawnCollectableInterval": 10.0, 
+						"SpawnCollectableTypeName": [
+							"deepsea_coin_silver", 
+							"deepsea_coin_gold"
+						], 
+						"FoodTypeName": [
+							"brain", 
+							"sushi"
+						], 
+						"RushSpeed": 120.0
+					}, 
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 125.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_ZOMBIE_FAT_DIVE", 
+						"Type": "dive", 
+						"ClassName": "DeepSeaMiniGameZombieDive", 
+						"BasicSpeed": 40.0, 
+						"ExtraSpeed": {
+							"Min": 0, 
+							"Max": 30.0
+						}, 
+						"BreakTime": {
+							"Min": 6.0, 
+							"Max": 12.0
+						}, 
+						"HungryDuration": [
+							{
+								"Min": 8.0, 
+								"Max": 12.0
+							}, 
+							{
+								"Min": 8.0, 
+								"Max": 10.0
+							}, 
+							{
+								"Min": 12.0, 
+								"Max": 12.0
+							}
+						], 
+						"Health": 300.0, 
+						"SpawnCollectableInterval": 7.5, 
+						"SpawnCollectableTypeName": [
+							"deepsea_crab"
+						], 
+						"FoodTypeName": [
+							"brain"
+						], 
+						"RushSpeed": 120.0
+					}, 
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 125.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_ZOMBIE_PRIEST", 
+						"Type": "priest", 
+						"ClassName": "DeepSeaMiniGameZombiePriest", 
+						"BasicSpeed": 60.0, 
+						"ExtraSpeed": {
+							"Min": 0, 
+							"Max": 40.0
+						}, 
+						"BreakTime": {
+							"Min": 3.0, 
+							"Max": 6.0
+						}, 
+						"HungryDuration": [
+							{
+								"Min": 8.0, 
+								"Max": 12.0
+							}, 
+							{
+								"Min": 8.0, 
+								"Max": 10.0
+							}, 
+							{
+								"Min": 12.0, 
+								"Max": 12.0
+							}
+						], 
+						"Health": 300.0, 
+						"SpawnCollectableInterval": 10.0, 
+						"SpawnCollectableTypeName": [
+							"deepsea_pearl"
+						], 
+						"FoodTypeName": [
+							"deepsea_crab"
+						], 
+						"RushSpeed": 120.0
+					}, 
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 165.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_ZOMBIE_POSEIDON_ASSISTANT", 
+						"Type": "poseidon", 
+						"ClassName": "DeepSeaMiniGameZombiePoseidon", 
+						"BasicSpeed": 60.0, 
+						"ExtraSpeed": {
+							"Min": 0, 
+							"Max": 40.0
+						}, 
+						"BreakTime": {
+							"Min": 3.0, 
+							"Max": 6.0
+						}, 
+						"HungryDuration": [
+							{
+								"Min": 8.0, 
+								"Max": 12.0
+							}, 
+							{
+								"Min": 8.0, 
+								"Max": 10.0
+							}, 
+							{
+								"Min": 12.0, 
+								"Max": 12.0
+							}
+						], 
+						"Health": 300.0, 
+						"SpawnCollectableInterval": 10.0, 
+						"SpawnCollectableTypeName": [
+							"deepsea_gem"
+						], 
+						"RushSpeed": 120.0
+					}
+				], 
+				"FishDatas": [
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 125.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_FISH_JELLYFISH", 
+						"Type": "jelly", 
+						"ClassName": "DeepSeaMiniGameFish", 
+						"BasicSpeed": 50.0, 
+						"BreakTime": {
+							"Min": 3.0, 
+							"Max": 6.0
+						}, 
+						"Health": 1200.0, 
+						"Damage": 5.0
+					}, 
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 125.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_FISH_INKFISH", 
+						"Type": "ink", 
+						"ClassName": "DeepSeaMiniGameFish", 
+						"BasicSpeed": 80.0, 
+						"BreakTime": {
+							"Min": 6.0, 
+							"Max": 12.0
+						}, 
+						"Health": 1200.0, 
+						"Damage": 5.0
+					}, 
+					{
+						"ArtCenter": {
+							"x": 90.0, 
+							"y": 125.0
+						}, 
+						"PopAnimName": "POPANIM_EFFECTS_FISH_HERMITCRAB", 
+						"Type": "crab", 
+						"ClassName": "DeepSeaMiniGameFish", 
+						"BasicSpeed": 100.0, 
+						"BreakTime": {
+							"Min": 6.0, 
+							"Max": 12.0
+						}, 
+						"Health": 2000.0, 
+						"Damage": 5.0
+					}
+				], 
+				"FishSpawnStartDelay": 180.0, 
+				"FishSpawnInterval": 180.0, 
+				"FishSpawnIncreaseCount": 1
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "AquariumSeedBankProperties", 
+			"objdata": {
+				"PresetToolPackteList": [
+					"tool_aquarium_zombie1", 
+					"tool_aquarium_zombie3"
+				], 
+				"PlantBlackList": [
+					"snapdragon", 
+					"jalapeno", 
+					"torchwood", 
+					"firegourd", 
+					"fireshroom", 
+					"firepeashooter", 
+					"pepperpult", 
+					"dragonfruit", 
+					"matchflower", 
+					"flamelady", 
+					"wasabiwhip", 
+					"hotdate", 
+					"inferno", 
+					"jackolantern", 
+					"gluttonydragon", 
+					"pyrevine", 
+					"twinshoneysuckle", 
+					"rheumnobile", 
+					"lavaguava", 
+					"pinecone", 
+					"sapfling", 
+					"primalpeashooter", 
+					"olivepit", 
+					"olive", 
+					"buttercup", 
+					"icelotus", 
+					"buduhboom", 
+					"lemon", 
+					"chestnut", 
+					"turkeypult", 
+					"devilsflower", 
+					"maybee", 
+					"sunflower", 
+					"birthsunflower", 
+					"goldbloom", 
+					"happyleek", 
+					"twinsunflower", 
+					"primalsunflower", 
+					"perfumeshroom", 
+					"springprincess", 
+					"beercoconut", 
+					"stickybombrice", 
+					"bearberry", 
+					"parsnip", 
+					"primalrafflesia", 
+					"eywa", 
+					"plantain", 
+					"doublesamara", 
+					"lilypad", 
+					"tristerixaphyllus", 
+					"chainsawburmannii", 
+					"meteorflower", 
+					"burdockbatter", 
+					"fishhookgrass", 
+					"headbutterlettuce", 
+					"gumnut", 
+					"eleocurling", 
+					"alarmsagittifolia", 
+					"boomflower", 
+					"monotropa", 
+					"vanilla", 
+					"cottonyeti", 
+					"cracker", 
+					"rapeflower", 
+					"vamporcini", 
+					"tanglekelp", 
+					"clawgloriosa", 
+					"springbean", 
+					"hurrikale", 
+					"broccoli", 
+					"lancerhoya", 
+					"spikeweed", 
+					"caulipower", 
+					"iceshroom", 
+					"spikerock", 
+					"egretflower", 
+					"sweetpotato", 
+					"magicshroom", 
+					"hypnoshroom", 
+					"dragonbruit", 
+					"dragonroar", 
+					"paphiopedilum", 
+					"imppear", 
+					"iceweed", 
+					"cobcannon", 
+					"pumpkinwitch", 
+					"zoybeanpod", 
+					"chardguard", 
+					"wiregelsemium", 
+					"electricitea", 
+					"actinostemma", 
+					"animnuts", 
+					"homingthistle", 
+					"umbrellaleaf", 
+					"duckpear", 
+					"sunflowerzombie", 
+					"glaciershroom"
+				], 
+				"SelectionMethod": "aquarium"
+			}
+		}
+	], 
+	"version": 1
+}

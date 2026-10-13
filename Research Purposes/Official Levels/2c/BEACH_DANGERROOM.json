@@ -1,0 +1,330 @@
+{
+	"#comment": "Beach Danger Room", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]", 
+				"ForceNextLevel": "beach_dangerroom", 
+				"IsDangerRoom": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(DangerRoomModule@CurrentLevel)", 
+					"RTID(BeachMowers@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(Tide@CurrentLevel)"
+				], 
+				"Name": "[DANGER_ROOM_BEACH_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"SuppressAwardScreen": true, 
+				"StageModule": "RTID(BeachStage@LevelModules)", 
+				"StartingSun": 5000, 
+				"CanSaveGameState": false
+			}
+		}, 
+		{
+			"aliases": [
+				"Tide"
+			], 
+			"objclass": "TideProperties", 
+			"objdata": {
+				"StartingWaveLocation": 5.0
+			}
+		}, 
+		{
+			"objclass": "WaveManagerModuleProperties", 
+			"aliases": [
+				"NewWaves"
+			], 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "DangerRoomModuleProperties", 
+			"aliases": [
+				"DangerRoomModule"
+			], 
+			"objdata": {
+				"WorldSpecificProperties": "RTID(BeachDangerRoomProps@PropertySheets)", 
+				"LevelDesigners": [
+					"RTID(BeachDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower", 
+					"twinsunflower", 
+					"sunshroom", 
+					"imitater", 
+					"birthsunflower", 
+					"primalsunflower", 
+					"rhubarbarian"
+				], 
+				"SelectionMethod": "chooser", 
+				"AlwaysUseChooser": true, 
+				"SeedChooserType": "UIDangerRoomSeedChooser", 
+				"SeedPacketType": "UIDangerRoomSeedPacket"
+			}
+		}, 
+		{
+			"aliases": [
+				"BeachDangerRoomWaveGenerator"
+			], 
+			"objclass": "DangerRoomJitteredWaveGenerator", 
+			"objdata": {
+				"StartingPoints": 100, 
+				"BasePointIncrementPerWave": 30, 
+				"BasePointIncrementPerLevel": 5, 
+				"ZombiePool": [
+					"RTID(beach_armor1@ZombieTypes)", 
+					"RTID(beach_armor2@ZombieTypes)", 
+					"RTID(beach_fem_armor1@ZombieTypes)", 
+					"RTID(beach_fem_armor2@ZombieTypes)", 
+					"RTID(beach_snorkel@ZombieTypes)", 
+					"RTID(beach_surfer@ZombieTypes)", 
+					"RTID(beach_octopus@ZombieTypes)", 
+					"RTID(beach_fisherman@ZombieTypes)", 
+					"RTID(beach_gargantuar_danger@ZombieTypes)"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"BeachTideChanger"
+			], 
+			"objclass": "DangerRoomBeachTideChanger", 
+			"objdata": {
+				"//": "Tide Motion Limits", 
+				"StartingTideLevel": {
+					"LowerBound": {
+						"//": "Go from 3 to 2 at level 5", 
+						"SlopeCoefficient": -1, 
+						"YIntercept": 7, 
+						"LowerLimit": {
+							"Value": "2"
+						}, 
+						"UpperLimit": {
+							"Value": "3"
+						}
+					}, 
+					"UpperBound": {
+						"//": "Go from 3 to 4 at level 10", 
+						"SlopeCoefficient": 1, 
+						"YIntercept": -6, 
+						"LowerLimit": {
+							"Value": "3"
+						}, 
+						"UpperLimit": {
+							"Value": "4"
+						}
+					}
+				}, 
+				"FinalTideLevel": {
+					"LowerBound": {
+						"YIntercept": 3
+					}, 
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				}, 
+				"MinimumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 2
+					}, 
+					"UpperBound": {
+						"YIntercept": 2
+					}
+				}, 
+				"MaximumTideLevel": {
+					"LowerBound": {
+						"YIntercept": 4
+					}, 
+					"UpperBound": {
+						"//": "Start at 5. Go to 6 at level 20.  Go to 7 at level 40.", 
+						"SlopeCoefficient": 0.05, 
+						"YIntercept": 4.95, 
+						"LowerLimit": {
+							"Value": "5"
+						}, 
+						"UpperLimit": {
+							"Value": "7"
+						}
+					}
+				}, 
+				"MinimumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 1
+					}, 
+					"UpperBound": {
+						"YIntercept": 1
+					}
+				}, 
+				"MaximumTideDelta": {
+					"LowerBound": {
+						"YIntercept": 1
+					}, 
+					"UpperBound": {
+						"//": "Go from 1 to 4 between levels 10 and 40", 
+						"SlopeCoefficient": 0.1, 
+						"YIntercept": 0, 
+						"LowerLimit": {
+							"Value": "1"
+						}, 
+						"UpperLimit": {
+							"Value": "4"
+						}
+					}
+				}, 
+				"//": "Low Tide Event Design", 
+				"LowTideEventsPerFlagWave": {
+					"LowerBound": {
+						"//": "Zero for the first 30 levels, then min of one", 
+						"SlopeCoefficient": 0.1, 
+						"YIntercept": -2.0, 
+						"LowerLimit": {
+							"Value": "0"
+						}, 
+						"UpperLimit": {
+							"Value": "1"
+						}
+					}, 
+					"UpperBound": {
+						"//": "None for the first five levels, then gradual increase every ten levels to max two", 
+						"SlopeCoefficient": 0.1, 
+						"YIntercept": 0.5, 
+						"LowerLimit": {
+							"Value": "0"
+						}, 
+						"UpperLimit": {
+							"Value": "2"
+						}
+					}
+				}, 
+				"LowTideStartLevel": {
+					"LowerBound": {
+						"YIntercept": 4
+					}, 
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				}, 
+				"LowTideRecedeAmount": {
+					"LowerBound": {
+						"//": "Always at least 2 after level 35", 
+						"SlopeCoefficient": 1, 
+						"YIntercept": -33, 
+						"LowerLimit": {
+							"Value": "1"
+						}, 
+						"UpperLimit": {
+							"Value": "2"
+						}
+					}, 
+					"UpperBound": {
+						"//": "1 for the first ten levels, then increase every ten levels to max 4", 
+						"SlopeCoefficient": 0.1, 
+						"YIntercept": 0, 
+						"LowerLimit": {
+							"Value": "1"
+						}, 
+						"UpperLimit": {
+							"Value": "4"
+						}
+					}
+				}, 
+				"//": "Low Tide Zombie Design", 
+				"BasicLowTideZombieType": "beach_imp", 
+				"BasicLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"YIntercept": 3
+					}, 
+					"UpperBound": {
+						"//": "5 for the first 25 levels, then gradual increase every ten levels to max 10", 
+						"SlopeCoefficient": 0.1, 
+						"YIntercept": 3.5, 
+						"LowerLimit": {
+							"Value": "5"
+						}, 
+						"UpperLimit": {
+							"Value": "10"
+						}
+					}
+				}, 
+				"SpecialLowTideZombieTypes": [
+					"beach_armor1", 
+					"beach_armor2", 
+					"beach_fem_armor1", 
+					"beach_fem_armor2"
+				], 
+				"SpecialLowTideZombiesPerLowTideEvent": {
+					"LowerBound": {
+						"//": "Always at least 1 after level 15", 
+						"SlopeCoefficient": 1, 
+						"YIntercept": -14, 
+						"LowerLimit": {
+							"Value": "0"
+						}, 
+						"UpperLimit": {
+							"Value": "1"
+						}
+					}, 
+					"UpperBound": {
+						"//": "0 for the first 15 levels, then increase every 10 levels to 5", 
+						"SlopeCoefficient": 0.1, 
+						"YIntercept": -0.5, 
+						"LowerLimit": {
+							"Value": "0"
+						}, 
+						"UpperLimit": {
+							"Value": "5"
+						}
+					}
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BeachLilypadPlacer"
+			], 
+			"objclass": "DangerRoomBeachLilypadPlacer", 
+			"objdata": {
+				"//": "All properties are a function of level", 
+				"NumberOfLilypads": {
+					"LowerBound": {
+						"YIntercept": 3
+					}, 
+					"UpperBound": {
+						"YIntercept": 8
+					}
+				}, 
+				"MinimumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 0
+					}, 
+					"UpperBound": {
+						"YIntercept": 0
+					}
+				}, 
+				"MaximumLilypadColumn": {
+					"LowerBound": {
+						"YIntercept": 6
+					}, 
+					"UpperBound": {
+						"YIntercept": 7
+					}
+				}
+			}
+		}
+	], 
+	"version": 1
+}

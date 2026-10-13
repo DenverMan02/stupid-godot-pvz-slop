@@ -1,0 +1,157 @@
+{
+	"#comment": "Memory", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_SNOWNIGHT]", 
+				"LevelNumber": 3, 
+				"IsArtifactDisabled": true, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(LastStand@CurrentLevel)", 
+					"RTID(SeedBank@CurrentLevel)", 
+					"RTID(Gravestones@CurrentLevel)", 
+					"RTID(PVZ2TrainingModule@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"MusicType": "MiniGame_A", 
+				"Name": "[SNOWMODERNSTAGE1_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"VictoryModule": "RTID(TrainingOutro@LevelModules)", 
+				"StageModule": "RTID(UnchartedAnniversaryStage@LevelModules)", 
+				"ShowZombies": []
+			}
+		}, 
+		{
+			"aliases": [
+				"SeedBank"
+			], 
+			"objclass": "SeedBankProperties", 
+			"objdata": {
+				"SelectionMethod": "chooser", 
+				"PlantBlackList": [
+					"powerplant", 
+					"imitater"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"LastStand"
+			], 
+			"objclass": "LastStandMinigameProperties", 
+			"objdata": {
+				"StartingPlantfood": 3, 
+				"StartingSun": 9999
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_TRAINING]", 
+				"DescriptiveName": "[TRAINING_CHALLENGE_ZERO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"Gravestones"
+			], 
+			"objclass": "SnowManProperties", 
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 4, 
+						"GridY": 0, 
+						"speed": 0.4, 
+						"TypeName": "gingle_cake_tank", 
+						"targetpos": [
+							{
+								"x": 4, 
+								"y": 0
+							}, 
+							{
+								"x": 1, 
+								"y": 0
+							}, 
+							{
+								"x": 1, 
+								"y": 4
+							}, 
+							{
+								"x": 4, 
+								"y": 4
+							}
+						], 
+						"DamageOfSpawnEntitys": {
+							"20000": "1"
+						}
+					}, 
+					{
+						"GridX": 5, 
+						"GridY": 1, 
+						"speed": 0.5, 
+						"TypeName": "gingle_cake_tank", 
+						"targetpos": [
+							{
+								"x": 5, 
+								"y": 1
+							}, 
+							{
+								"x": 0, 
+								"y": 1
+							}, 
+							{
+								"x": 0, 
+								"y": 3
+							}, 
+							{
+								"x": 5, 
+								"y": 3
+							}
+						], 
+						"DamageOfSpawnEntitys": {
+							"20000": "1"
+						}
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"PVZ2TrainingModule"
+			], 
+			"objclass": "PVZ2TrainingMinigameProperties", 
+			"objdata": {
+				"Leveltime": 30, 
+				"LevelType": 1, 
+				"SpawnCount": 5, 
+				"Railcarts": [
+					3, 
+					2, 
+					1, 
+					6
+				]
+			}
+		}
+	], 
+	"version": 1
+}

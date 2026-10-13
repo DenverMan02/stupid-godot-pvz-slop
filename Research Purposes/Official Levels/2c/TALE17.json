@@ -1,0 +1,517 @@
+{
+	"#comment": "Modern 17", 
+	"objects": [
+		{
+			"objclass": "LevelDefinition", 
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_STEAM]", 
+				"LevelNumber": 17, 
+				"Loot": "RTID(DefaultLoot@LevelModules)", 
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)", 
+					"RTID(ZombiesDeadWinCon@LevelModules)", 
+					"RTID(SteamMowers@LevelModules)", 
+					"RTID(ConveyorBelt@CurrentLevel)", 
+					"RTID(DefaultZombieWinCondition@LevelModules)", 
+					"RTID(NewWaves@CurrentLevel)", 
+					"RTID(ChallengeModule@CurrentLevel)"
+				], 
+				"Name": "[STEAM_LEVEL_NAME]", 
+				"NormalPresentTable": "egypt_normal_01", 
+				"ShinyPresentTable": "egypt_shiny_01", 
+				"StageModule": "RTID(SteamStage@LevelModules)", 
+				"ShowZombies": [
+					"steam_worker", 
+					"steam_armor1", 
+					"steam_armor2", 
+					"steam_gentleman"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ChallengeModule"
+			], 
+			"objclass": "StarChallengeModuleProperties", 
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				], 
+				"ChallengesAlwaysAvailable": true
+			}
+		}, 
+		{
+			"aliases": [
+				"BeatTheLevel"
+			], 
+			"objclass": "StarChallengeBeatTheLevelProps", 
+			"objdata": {
+				"Description": "[STARCHALLENGE_CONVEYORBELT]", 
+				"DescriptiveName": "[EGYPT_CHALLENGE_ZERO_NAME]"
+			}
+		}, 
+		{
+			"aliases": [
+				"ConveyorBelt"
+			], 
+			"objclass": "ConveyorSeedBankProperties", 
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 7, 
+						"MaxPackets": 0
+					}, 
+					{
+						"Delay": 9, 
+						"MaxPackets": 5
+					}, 
+					{
+						"Delay": 10, 
+						"MaxPackets": 7
+					}, 
+					{
+						"Delay": 14, 
+						"MaxPackets": 9
+					}
+				], 
+				"InitialPlantList": [
+					{
+						"PlantType": "tuliptrumpeter", 
+						"Weight": 30
+					}, 
+					{
+						"PlantType": "lotusshooter", 
+						"Weight": 20
+					}
+				], 
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0, 
+						"Speed": 100
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NewWaves"
+			], 
+			"objclass": "WaveManagerModuleProperties", 
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 40, 
+						"StartingPoints": 100, 
+						"StartingWave": 3, 
+						"ZombiePool": [
+							"RTID(steam_worker@ZombieTypes)", 
+							"RTID(steam_armor1@ZombieTypes)", 
+							"RTID(steam_armor2@ZombieTypes)"
+						]
+					}, 
+					{}, 
+					{
+						"PointIncrementPerWave": 40, 
+						"StartingPoints": 200, 
+						"StartingWave": 4, 
+						"ZombiePool": [
+							"RTID(steam_armor1@ZombieTypes)", 
+							"RTID(steam_armor2@ZombieTypes)"
+						]
+					}
+				], 
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		}, 
+		{
+			"aliases": [
+				"WaveManagerProps"
+			], 
+			"objclass": "WaveManagerProperties", 
+			"objdata": {
+				"FlagWaveInterval": 5, 
+				"LevelJam": "jam_rap", 
+				"WaveCount": 10, 
+				"WaveSpendingPointIncrement": 100, 
+				"WaveSpendingPoints": 100, 
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave2@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave3@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave4@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave5@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave6@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave7@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave8@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave9@CurrentLevel)"
+					], 
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave1"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave3"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave5"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave6"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave7"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave8"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 1, 
+				"Zombies": [
+					{
+						"Row": "5", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_armor1@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave10"
+			], 
+			"objclass": "SpawnZombiesJitteredWaveActionProps", 
+			"objdata": {
+				"AdditionalPlantfood": 0, 
+				"Zombies": [
+					{
+						"Row": "3", 
+						"Type": "RTID(steam_gentleman@ZombieTypes)"
+					}, 
+					{
+						"Row": "4", 
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "2", 
+						"Type": "RTID(steam_armor2@ZombieTypes)"
+					}, 
+					{
+						"Row": "1", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Row": "5", 
+						"Type": "RTID(steam_worker@ZombieTypes)"
+					}, 
+					{
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave4ModConveyor0"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"MaxDelivered": 1, 
+						"Type": "RTID(intensivecarrot@PlantTypes)", 
+						"Weight": 20
+					}
+				], 
+				"Remove": []
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave2ModConveyor0"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [
+					{
+						"Type": "RTID(endurian@PlantTypes)", 
+						"Weight": 10
+					}
+				], 
+				"Remove": []
+			}
+		}, 
+		{
+			"aliases": [
+				"Wave9ModConveyor0"
+			], 
+			"objclass": "ModifyConveyorWaveActionProps", 
+			"objdata": {
+				"Add": [], 
+				"Remove": [
+					{
+						"Type": "RTID(endurian@PlantTypes)"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

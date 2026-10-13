@@ -1,10 +1,6 @@
 extends Control
 
-<<<<<<< HEAD
-@onready var prompt_label: Label
-=======
 @onready var prompt_label: Label = $PromptLabel
->>>>>>> 9d60b53cfdc47ed0e14730969255102ab92340e2
 var starting: bool = false
 
 func _ready() -> void:

@@ -1,8 +1,14 @@
 extends Node2D
 
+<<<<<<< HEAD
 @onready var camera: Camera2D
 @onready var grid: LawnGrid
 @onready var background: Node2D
+=======
+@onready var camera: Camera2D = $Camera2D
+@onready var grid: LawnGrid = $Grid
+@onready var background: Node2D = $Background
+>>>>>>> 9d60b53cfdc47ed0e14730969255102ab92340e2
 
 # Camera pan positions in 1080p space:
 # Right position: showing incoming zombies on the street

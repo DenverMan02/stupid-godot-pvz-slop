@@ -1,0 +1,30 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"UI_AlmanacButton": {
+			"compression": 3, 
+			"resource": [
+				{
+					"type": "Image", 
+					"id": "IMAGE_UI_HUD_ALMANACBUTTON_BUTTONS_HUD_ALMANAC_NORMAL", 
+					"path": "images/initial/UI/hud_almanacbutton/buttons_hud_almanac_normal.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_UI_HUD_ALMANACBUTTON_BUTTONS_HUD_ALMANAC_SELECTED", 
+					"path": "images/initial/UI/hud_almanacbutton/buttons_hud_almanac_selected.png"
+				}
+			]
+		}
+	}
+}

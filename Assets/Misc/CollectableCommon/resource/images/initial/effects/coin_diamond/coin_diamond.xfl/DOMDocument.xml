@@ -1,0 +1,62 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="200.000000" height="200.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/coin_diamond_201x207" href="media/coin_diamond_201x207.png"/>
+    <DOMBitmapItem name="media/coin_diamond_141x146" href="media/coin_diamond_141x146.png"/>
+    <DOMBitmapItem name="media/coin_diamond_131x136" href="media/coin_diamond_131x136.png"/>
+    <DOMBitmapItem name="media/coin_diamond_134x140" href="media/coin_diamond_134x140.png"/>
+    <DOMBitmapItem name="media/coin_diamond_134x140_2" href="media/coin_diamond_134x140_2.png"/>
+    <DOMBitmapItem name="media/coin_diamond_99x139" href="media/coin_diamond_99x139.png"/>
+    <DOMBitmapItem name="media/coin_diamond_18x18" href="media/coin_diamond_18x18.png"/>
+  </media>
+  <symbols>
+    <Include href="image/coin_diamond_201x207.xml"/>
+    <Include href="image/coin_diamond_141x146.xml"/>
+    <Include href="image/coin_diamond_131x136.xml"/>
+    <Include href="image/coin_diamond_134x140.xml"/>
+    <Include href="image/coin_diamond_134x140_2.xml"/>
+    <Include href="image/coin_diamond_99x139.xml"/>
+    <Include href="image/coin_diamond_18x18.xml"/>
+    <Include href="label/idle.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="45" name="idle" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="44">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="44">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="45">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/idle" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

@@ -1,0 +1,51 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"Credits": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "File", 
+					"id": "RESFILE_PROPERTIES_CREDITS", 
+					"path": "properties/credits.txt"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_CREDITS_SPACE_DEBRIS_CLOCK", 
+					"path": "images/initial/credits/space_debris_clock.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_CREDITS_SPACE_DEBRIS_HEAD_01", 
+					"path": "images/initial/credits/space_debris_head_01.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_CREDITS_SPACE_DEBRIS_HEAD_02", 
+					"path": "images/initial/credits/space_debris_head_02.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_CREDITS_SPACE_DEBRIS_HOURGLASS", 
+					"path": "images/initial/credits/space_debris_hourglass.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_CREDITS_SPACE_DEBRIS_PYRAMID", 
+					"path": "images/initial/credits/space_debris_pyramid.png"
+				}
+			]
+		}
+	}
+}

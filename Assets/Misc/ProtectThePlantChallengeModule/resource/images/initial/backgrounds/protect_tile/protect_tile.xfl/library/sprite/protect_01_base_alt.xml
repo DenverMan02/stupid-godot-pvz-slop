@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/protect_01_base_alt" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="protect_01_base_alt">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/protect_tile_133x157" loop="loop">
+                  <matrix>
+                    <Matrix/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/protect_01_shadow" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="1.02529907226562" tx="31.65" ty="51.05"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

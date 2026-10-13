@@ -1,0 +1,53 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/lunchbox_rear" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="lunchbox_rear">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/shadow2" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="-51.3" ty="44.5"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0.309803921568627"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/highlights" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="-53.25" ty="-10.55"/>
+                  </matrix>
+                  <color>
+                    <Color alphaMultiplier="0.309803921568627"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/lunchbox_special_122x114" loop="loop">
+                  <matrix>
+                    <Matrix/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

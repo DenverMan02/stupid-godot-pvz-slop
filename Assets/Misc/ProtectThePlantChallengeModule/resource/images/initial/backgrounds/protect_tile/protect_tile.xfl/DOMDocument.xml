@@ -1,0 +1,54 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="384.000000" height="456.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/protect_tile_131x155" href="media/protect_tile_131x155.png"/>
+    <DOMBitmapItem name="media/protect_tile_133x157" href="media/protect_tile_133x157.png"/>
+    <DOMBitmapItem name="media/protect_tile_112x125" href="media/protect_tile_112x125.png"/>
+  </media>
+  <symbols>
+    <Include href="image/protect_tile_131x155.xml"/>
+    <Include href="image/protect_tile_133x157.xml"/>
+    <Include href="image/protect_tile_112x125.xml"/>
+    <Include href="sprite/protect_01_shadow.xml"/>
+    <Include href="sprite/protect_01_base_alt.xml"/>
+    <Include href="sprite/protect_tile_01_stripes.xml"/>
+    <Include href="label/animation.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="1" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="1">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

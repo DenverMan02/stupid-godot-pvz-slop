@@ -1,0 +1,79 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="45.000000" height="45.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/coin_silver_127x188" href="media/coin_silver_127x188.png"/>
+    <DOMBitmapItem name="media/coin_silver_40x39" href="media/coin_silver_40x39.png"/>
+    <DOMBitmapItem name="media/coin_silver_98x95" href="media/coin_silver_98x95.png"/>
+    <DOMBitmapItem name="media/coin_silver_63x63" href="media/coin_silver_63x63.png"/>
+    <DOMBitmapItem name="media/coin_silver_59x59" href="media/coin_silver_59x59.png"/>
+    <DOMBitmapItem name="media/coin_silver_38x35" href="media/coin_silver_38x35.png"/>
+    <DOMBitmapItem name="media/coin_silver_84x69" href="media/coin_silver_84x69.png"/>
+    <DOMBitmapItem name="media/coin_silver_90x90" href="media/coin_silver_90x90.png"/>
+    <DOMBitmapItem name="media/coin_silver_90x90_2" href="media/coin_silver_90x90_2.png"/>
+    <DOMBitmapItem name="media/coin_silver_87x71" href="media/coin_silver_87x71.png"/>
+    <DOMBitmapItem name="media/coin_silver_23x97" href="media/coin_silver_23x97.png"/>
+  </media>
+  <symbols>
+    <Include href="image/coin_silver_127x188.xml"/>
+    <Include href="image/coin_silver_40x39.xml"/>
+    <Include href="image/coin_silver_98x95.xml"/>
+    <Include href="image/coin_silver_63x63.xml"/>
+    <Include href="image/coin_silver_59x59.xml"/>
+    <Include href="image/coin_silver_38x35.xml"/>
+    <Include href="image/coin_silver_84x69.xml"/>
+    <Include href="image/coin_silver_90x90.xml"/>
+    <Include href="image/coin_silver_90x90_2.xml"/>
+    <Include href="image/coin_silver_87x71.xml"/>
+    <Include href="image/coin_silver_23x97.xml"/>
+    <Include href="sprite/CoinGlow.xml"/>
+    <Include href="sprite/coin_black_gold.xml"/>
+    <Include href="sprite/dave_head.xml"/>
+    <Include href="sprite/coin_shading.xml"/>
+    <Include href="sprite/shine1.xml"/>
+    <Include href="sprite/shine2.xml"/>
+    <Include href="sprite/shine3.xml"/>
+    <Include href="sprite/shine4.xml"/>
+    <Include href="sprite/gold_coin_side.xml"/>
+    <Include href="label/animation.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="21" name="animation" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="20">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="21">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/animation" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

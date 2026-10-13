@@ -1,0 +1,41 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"CollectableCommon": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_COIN_GOLD", 
+					"path": "images/initial/effects/coin_gold/coin_gold.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_COIN_SILVER", 
+					"path": "images/initial/effects/coin_silver/coin_silver.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_COIN_DIAMOND", 
+					"path": "images/initial/effects/coin_diamond/coin_diamond.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_COIN_STACK", 
+					"path": "images/initial/effects/coin_stack/coin_stack.xfl"
+				}
+			]
+		}
+	}
+}

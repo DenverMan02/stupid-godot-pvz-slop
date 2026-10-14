@@ -14,9 +14,38 @@ class_name Plant
 @export var max_health: float = 300.0
 @export var health: float = 300.0
 
+# Wall-nut properties (4000 HP, 8000 HP armor)
+@export var wallnut_has_armor: bool = false
+@export var wallnut_armor_health: float = 0.0
+@export var wallnut_max_armor_health: float = 8000.0
+
+# Potato Mine state
+enum PotatoState {
+	UNARMED,
+	ARMING,
+	ARMED,
+	ATTACKING,
+	EXPLODED
+}
+var potato_state: PotatoState = PotatoState.UNARMED
+var arm_timer: float = 15.0
+var is_prearmed: bool = false
+var is_ignored_by_zombies: bool = false
+var potatomine_pf_spawns_left: int = 0
+
 var eaten_timer: float = 0.0
 
+func setup_prearmed() -> void:
+	is_prearmed = true
+	potato_state = PotatoState.ARMED
+	if sprite:
+		sprite.play("plantfood2", false)
+
 func take_damage(amount: float, is_bite: bool = false) -> void:
+	if plant_type == "wallnut":
+		_take_damage_wallnut(amount, is_bite)
+		return
+
 	health -= amount
 	if is_bite:
 		# When being eaten, always remain lighter on sprite
@@ -33,8 +62,60 @@ func take_damage(amount: float, is_bite: bool = false) -> void:
 	if health <= 0.0:
 		queue_free()
 
+func _take_damage_wallnut(amount: float, is_bite: bool) -> void:
+	if is_bite:
+		eaten_timer = 0.2
+		if sprite:
+			sprite.modulate = Color(1.5, 1.5, 1.5, 1.0)
+	else:
+		if sprite:
+			sprite.modulate = Color(3.0, 3.0, 3.0, 1.0)
+			var tw = create_tween()
+			tw.tween_property(sprite, "modulate", Color.WHITE, 0.08)
+
+	# 1. Armor absorbs damage first (8000 HP, 3 degrades)
+	if wallnut_has_armor and wallnut_armor_health > 0.0:
+		var dmg_to_armor = minf(wallnut_armor_health, amount)
+		var excess_dmg = amount - dmg_to_armor
+		wallnut_armor_health -= dmg_to_armor
+		if wallnut_armor_health > 0.0:
+			var stage = clamp(int((1.0 - (wallnut_armor_health / wallnut_max_armor_health)) * 3), 0, 2)
+			if sprite:
+				sprite.set_plantfood_armor(true, stage)
+		else:
+			wallnut_has_armor = false
+			wallnut_armor_health = 0.0
+			if sprite:
+				sprite.set_plantfood_armor(false, 0)
+		if excess_dmg > 0.0:
+			_apply_wallnut_body_damage(excess_dmg)
+	else:
+		_apply_wallnut_body_damage(amount)
+
+func _apply_wallnut_body_damage(amount: float) -> void:
+	health -= amount
+	if health <= 0.0:
+		queue_free()
+		return
+	_update_wallnut_degrade_anim()
+
+func _update_wallnut_degrade_anim() -> void:
+	if is_in_plantfood_sequence:
+		return
+	var target_anim = "idle"
+	if health > max_health * 0.75: # > 3000 HP
+		target_anim = "idle"
+	elif health > max_health * 0.50: # 2000 - 3000 HP
+		target_anim = "damage"
+	elif health > max_health * 0.25: # 1000 - 2000 HP
+		target_anim = "damage2"
+	else: # 0 - 1000 HP
+		target_anim = "damage3"
+
+	if sprite and sprite.current_animation != target_anim:
+		sprite.play(target_anim, true)
+
 ## Custom idle mappings for plants with oddly named idle animations or specific idle states
-## Wall-nut uses only "idle" so it does not cycle into its post-plantfood armored state
 const IDLE_MAP: Dictionary = {
 	"wallnut": ["idle"],
 }
@@ -90,6 +171,39 @@ func _process(delta: float) -> void:
 		else:
 			# Keep attack timer nearly primed so it reacts quickly when a zombie enters the lane
 			attack_timer = min(attack_timer, 0.2)
+
+	# Potato Mine arming & zombie trigger
+	elif plant_type == "potatomine" and not is_in_plantfood_sequence:
+		if potato_state == PotatoState.UNARMED:
+			arm_timer -= delta
+			if arm_timer <= 0.0:
+				potato_state = PotatoState.ARMING
+				if sprite:
+					sprite.play("recover", false)
+		elif potato_state == PotatoState.ARMED and not is_performing_action:
+			var target_z = _find_zombie_for_mine()
+			if target_z:
+				potato_state = PotatoState.ATTACKING
+				is_ignored_by_zombies = true
+				is_performing_action = true
+				if sprite:
+					sprite.play("attack", false)
+
+func _find_zombie_for_mine() -> Node2D:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return null
+	var zombies_node = lawn.get_node_or_null("Zombies")
+	if not zombies_node:
+		return null
+
+	for z in zombies_node.get_children():
+		if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
+			if z.row == row:
+				var dist_x = z.global_position.x - global_position.x
+				if dist_x >= -35.0 and dist_x <= 40.0:
+					return z
+	return null
 
 func _find_zombie_in_row() -> Node2D:
 	var lawn = get_tree().current_scene
@@ -148,8 +262,26 @@ func _ready() -> void:
 		sprite.anim_event.connect(_on_anim_event)
 		sprite.anim_finished.connect(_on_anim_finished)
 
-		_setup_idle_animations()
-		_play_current_idle()
+		if plant_type == "potatomine":
+			_setup_potatomine()
+		else:
+			_setup_idle_animations()
+			_play_current_idle()
+
+func _setup_potatomine() -> void:
+	idle_animations = ["idle", "idle2"]
+	current_idle_index = 0
+	if is_prearmed:
+		potato_state = PotatoState.ARMED
+		is_ignored_by_zombies = false
+		if sprite:
+			sprite.play("plantfood2", false)
+	else:
+		potato_state = PotatoState.UNARMED
+		is_ignored_by_zombies = false
+		arm_timer = 15.0
+		if sprite:
+			sprite.play("plant", false)
 
 func configure_plant(type_id: String, disp_name: String, anim_json: String, tex_dir: String, v_scale: float = 1.0, v_offset: Vector2 = Vector2.ZERO) -> void:
 	plant_type = type_id
@@ -216,11 +348,58 @@ func _play_current_idle() -> void:
 
 	is_performing_action = false
 	is_in_plantfood_sequence = false
+
+	if plant_type == "wallnut":
+		_update_wallnut_degrade_anim()
+		return
+
 	var anim_name = idle_animations[current_idle_index]
 	var should_loop = (idle_animations.size() == 1)
 	sprite.play(anim_name, should_loop)
 
 func _on_anim_finished(anim_name: String) -> void:
+	if plant_type == "potatomine":
+		if anim_name == "plant":
+			sprite.play("plant_idle", true)
+			return
+		elif anim_name == "recover":
+			potato_state = PotatoState.ARMED
+			is_ignored_by_zombies = false
+			_play_current_idle()
+			return
+		elif anim_name == "plantfood2":
+			potato_state = PotatoState.ARMED
+			is_ignored_by_zombies = false
+			_play_current_idle()
+			return
+		elif anim_name == "attack":
+			_explode_potatomine()
+			return
+		elif anim_name == "plantfood_on":
+			_trigger_potatomine_pf_spawn()
+			return
+		elif anim_name == "plantfood":
+			if potatomine_pf_spawns_left > 0:
+				_trigger_potatomine_pf_spawn()
+			else:
+				sprite.play("plantfood_off", false)
+			return
+		elif anim_name == "plantfood_off":
+			is_in_plantfood_sequence = false
+			is_performing_action = false
+			potato_state = PotatoState.ARMED
+			is_ignored_by_zombies = false
+			_play_current_idle()
+			return
+
+	if plant_type == "wallnut" and is_in_plantfood_sequence:
+		is_in_plantfood_sequence = false
+		is_performing_action = false
+		if sprite:
+			sprite.set_plantfood_armor(true, 0)
+			sprite.play("idle", true)
+		return
+
 	# 1. Advance through plant food sequence if active
 	if is_in_plantfood_sequence:
 		plantfood_sequence_index += 1
@@ -240,6 +419,86 @@ func _on_anim_finished(anim_name: String) -> void:
 	else:
 		# Finished an attack or single special animation -> resume idle
 		_play_current_idle()
+
+func _explode_potatomine() -> void:
+	if potato_state == PotatoState.EXPLODED:
+		return
+	potato_state = PotatoState.EXPLODED
+
+	var lawn = get_tree().current_scene
+	if lawn:
+		# 1. Spawn explosion animation (SPUDOW!)
+		var exp_node = Node2D.new()
+		exp_node.global_position = global_position + Vector2(0.0, 10.0)
+		exp_node.z_index = (row * 100) + 85
+		var exp_spr = XFLSprite2D.new()
+		exp_spr.anim_data_path = "res://Assets/Plants/potatomine_explosion.anim.json"
+		exp_spr.textures_base_dir = "res://Assets/Plants/potatomine_explosion.xfl/library/"
+		exp_spr.autoplay = false
+		exp_node.add_child(exp_spr)
+		lawn.add_child(exp_node)
+		exp_spr._load_resources()
+		exp_spr.play("animation", false)
+		exp_spr.anim_finished.connect(func(_a): exp_node.queue_free())
+		get_tree().create_timer(1.2).timeout.connect(func():
+			if is_instance_valid(exp_node):
+				exp_node.queue_free()
+		)
+
+		# 2. Damage zombies in range (1800 dmg)
+		var zombies_node = lawn.get_node_or_null("Zombies")
+		if zombies_node:
+			for z in zombies_node.get_children():
+				if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
+					if z.row == row and abs(z.global_position.x - global_position.x) <= 90.0:
+						if z.has_method("take_damage"):
+							z.take_damage(1800.0)
+
+		# 3. Play explosion SFX
+		if get_node_or_null("/root/AudioManager"):
+			var exp_sfx = "res://Audio/SFX/explosion.ogg"
+			if ResourceLoader.exists(exp_sfx):
+				AudioManager.play_sfx(load(exp_sfx))
+
+	queue_free()
+
+func _play_potatomine_plantfood() -> void:
+	is_performing_action = true
+	is_in_plantfood_sequence = true
+	potatomine_pf_spawns_left = 2
+	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
+		AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
+	sprite.play("plantfood_on", false)
+
+func _trigger_potatomine_pf_spawn() -> void:
+	potatomine_pf_spawns_left -= 1
+	sprite.play("plantfood", false)
+
+	# Launch potato mine projectile to a random tile
+	var lawn = get_tree().current_scene
+	if not lawn or not ("grid" in lawn) or not lawn.grid:
+		return
+	var grid = lawn.grid
+	var valid_cells: Array[Vector2i] = []
+	for r in range(grid.rows):
+		for c in range(grid.columns):
+			if not lawn.is_cell_occupied(c, r):
+				valid_cells.append(Vector2i(c, r))
+
+	if valid_cells.is_empty():
+		valid_cells.append(Vector2i(randi_range(0, grid.columns - 1), randi_range(0, grid.rows - 1)))
+
+	var target_c = valid_cells.pick_random()
+	var target_wpos = grid.cell_to_world(target_c.x, target_c.y)
+
+	var proj: Projectile = projectile_scene.instantiate()
+	var start_p = global_position + Vector2(0.0, -20.0)
+	proj.setup_potato_launch(start_p, target_wpos, target_c.x, target_c.y)
+	var proj_container = lawn.get_node_or_null("Projectiles")
+	if proj_container:
+		proj_container.add_child(proj)
+	else:
+		lawn.add_child(proj)
 
 ## Receives animation events pulsed from the XFL timeline
 func _on_anim_event(event_name: String) -> void:
@@ -379,6 +638,21 @@ func play_attack() -> void:
 ## Plays plantfood_on -> plantfood/plantfood_loop -> plantfood2/3 -> plantfood_off in order
 func play_plantfood() -> void:
 	if not sprite:
+		return
+
+	if plant_type == "potatomine":
+		_play_potatomine_plantfood()
+		return
+	elif plant_type == "wallnut":
+		health = max_health
+		wallnut_has_armor = true
+		wallnut_max_armor_health = 8000.0
+		wallnut_armor_health = 8000.0
+		is_performing_action = true
+		is_in_plantfood_sequence = true
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
+		sprite.play("plantfood_on", false)
 		return
 
 	plantfood_sequence.clear()

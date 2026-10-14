@@ -26,6 +26,10 @@ var time_accumulator: float = 0.0
 @export var has_armor_cone: bool = false
 @export var armor_cone_state: int = 0 # 0: norm, 1: dmg1, 2: dmg2
 @export var has_lost_arm: bool = false
+@export var armor_type: String = "none" # "none", "cone", "bucket", "brick"
+@export var armor_state: int = 0 # 0: norm, 1: dmg1, 2: dmg2
+@export var plantfood_armor_active: bool = false
+@export var plantfood_armor_stage: int = 0 # 0: armor_01, 1: armor_02, 2: armor_03
 
 var _anim_data: Dictionary = {}
 var _loaded_textures: Array[Texture2D] = []
@@ -202,9 +206,23 @@ func _check_frame_events(frame_idx: int) -> void:
 		var event_name = events_map[key]
 		anim_event.emit(event_name)
 
+func set_armor(p_armor_type: String, p_state: int = 0) -> void:
+	armor_type = p_armor_type
+	armor_state = p_state
+	has_armor_cone = (p_armor_type == "cone")
+	armor_cone_state = p_state
+	queue_redraw()
+
 func set_armor_cone(active: bool, state: int = 0) -> void:
 	has_armor_cone = active
 	armor_cone_state = state
+	armor_type = "cone" if active else "none"
+	armor_state = state
+	queue_redraw()
+
+func set_plantfood_armor(active: bool, stage: int = 0) -> void:
+	plantfood_armor_active = active
+	plantfood_armor_stage = stage
 	queue_redraw()
 
 func set_arm_lost(lost: bool) -> void:
@@ -214,15 +232,33 @@ func set_arm_lost(lost: bool) -> void:
 func _is_tag_visible(tag: int) -> bool:
 	match tag:
 		1: # Cone norm
-			return has_armor_cone and armor_cone_state == 0
+			return (armor_type == "cone" or has_armor_cone) and (armor_state == 0)
 		2: # Cone dmg 1
-			return has_armor_cone and armor_cone_state == 1
+			return (armor_type == "cone" or has_armor_cone) and (armor_state == 1)
 		3: # Cone dmg 2
-			return has_armor_cone and armor_cone_state == 2
+			return (armor_type == "cone" or has_armor_cone) and (armor_state == 2)
 		4: # Arm flesh
 			return not has_lost_arm and current_animation != "die"
 		5: # Arm bone stump
 			return has_lost_arm or current_animation == "die"
+		6: # Bucket norm
+			return armor_type == "bucket" and armor_state == 0
+		7: # Bucket dmg 1
+			return armor_type == "bucket" and armor_state == 1
+		8: # Bucket dmg 2
+			return armor_type == "bucket" and armor_state == 2
+		9: # Brick norm
+			return armor_type == "brick" and armor_state == 0
+		10: # Brick dmg 1
+			return armor_type == "brick" and armor_state == 1
+		11: # Brick dmg 2
+			return armor_type == "brick" and armor_state == 2
+		12: # Wallnut plantfood armor 1
+			return plantfood_armor_active and plantfood_armor_stage == 0
+		13: # Wallnut plantfood armor 2
+			return plantfood_armor_active and plantfood_armor_stage == 1
+		14: # Wallnut plantfood armor 3
+			return plantfood_armor_active and plantfood_armor_stage == 2
 		_:
 			return true
 

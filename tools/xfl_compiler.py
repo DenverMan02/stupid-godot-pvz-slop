@@ -87,7 +87,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
         return texture_map[path]
 
     COSTUME_KEYWORDS = ['custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff', 'monocle', 'tophat']
-    ZOMBIE_HIDE_KEYWORDS = ['butter', 'ink', 'ground_swatch', 'brick', 'bucket', '_particles']
+    ZOMBIE_HIDE_KEYWORDS = ['butter', 'ink', 'ground_swatch', '_particles']
 
     def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False, current_tag=0):
         lower_name = sym_name.lower()
@@ -97,7 +97,8 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             return
         if 'gatlingpea_helmet_screw' in lower_name:
             return
-        if not is_zombie and anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name or 'helmet' in lower_name):
+        is_wallnut = 'wallnut' in plant_dir.lower()
+        if not is_zombie and not is_wallnut and anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name or 'helmet' in lower_name):
             return
 
         tag_to_use = current_tag
@@ -112,6 +113,25 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                 tag_to_use = 5
             elif any(k in lower_name for k in ['zombie_arm_outer_upper', 'zombie_arm_outer_lower', 'zombie_hand_outer_']):
                 tag_to_use = 4
+            elif 'zombie_armor_bucket_norm' in lower_name:
+                tag_to_use = 6
+            elif 'zombie_armor_bucket_damage_01' in lower_name:
+                tag_to_use = 7
+            elif 'zombie_armor_bucket_damage_02' in lower_name:
+                tag_to_use = 8
+            elif 'zombie_armor_brick_norm' in lower_name:
+                tag_to_use = 9
+            elif 'zombie_armor_brick_damage_01' in lower_name:
+                tag_to_use = 10
+            elif 'zombie_armor_brick_damage_02' in lower_name:
+                tag_to_use = 11
+        elif is_wallnut:
+            if 'wallnut_plantfood_armor_01' in lower_name:
+                tag_to_use = 12
+            elif 'wallnut_plantfood_armor_02' in lower_name:
+                tag_to_use = 13
+            elif 'wallnut_plantfood_armor_03' in lower_name:
+                tag_to_use = 14
 
         dom = get_sym(sym_name)
         if dom is None:
@@ -142,7 +162,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                 continue
             if is_zombie and any(k in lname for k in ZOMBIE_HIDE_KEYWORDS):
                 continue
-            if not is_zombie and anim_name != 'plantfood' and 'armor' in lname:
+            if not is_zombie and not is_wallnut and anim_name != 'plantfood' and 'armor' in lname:
                 continue
 
             active_frame = None
@@ -171,7 +191,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                     img_name = el.attrib.get('libraryItemName', '')
                     if '8x8' in img_name and 'peashooter' in img_name:
                         continue
-                    if anim_name != 'plantfood' and any(arm in img_name for arm in ['120x139', '120x100', '110x51']):
+                    if not is_wallnut and anim_name != 'plantfood' and any(arm in img_name for arm in ['120x139', '120x100', '110x51']):
                         continue
                     if any(c in img_name for c in ['107x107', '49x35', '85x36', '70x72']):
                         continue
@@ -320,5 +340,6 @@ if __name__ == '__main__':
                         except Exception as e:
                             print(f"Error compiling {full}: {e}")
     else:
-        p_dir = f"Assets/Plants/{target}.xfl" if not target.endswith('.xfl') else target
-        compile_plant_from_dir(p_dir)
+        for target in sys.argv[1:]:
+            p_dir = f"Assets/Plants/{target}.xfl" if not target.endswith('.xfl') else target
+            compile_plant_from_dir(p_dir)

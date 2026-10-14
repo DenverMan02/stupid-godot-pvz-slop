@@ -13,6 +13,7 @@ enum Trajectory {
 @export var trajectory: Trajectory = Trajectory.STRAIGHT
 
 var target_zombie: Node2D = null
+var target_cell: Vector2i = Vector2i.ZERO
 var start_pos: Vector2 = Vector2.ZERO
 var target_pos: Vector2 = Vector2.ZERO
 var lob_time: float = 0.0
@@ -44,6 +45,11 @@ func _apply_sprite_config() -> void:
 		z_index = 650
 		sprite.set_animation_source("res://Assets/Projectiles/cabbagepult_plantfood_projectile.anim.json", "res://Assets/Projectiles/cabbagepult_plantfood_projectile.xfl/library/")
 		sprite.play("plantfood_cabbage", true)
+	elif projectile_type == "potato_pf":
+		sprite.scale = Vector2(0.85, 0.85)
+		z_index = 650
+		sprite.set_animation_source("res://Assets/Plants/potatomine.anim.json", "res://Assets/Plants/potatomine.xfl/library/")
+		sprite.play("plantfood3", true)
 
 func setup_straight(p_row: int, p_pos: Vector2, p_damage: float = 20.0) -> void:
 	trajectory = Trajectory.STRAIGHT
@@ -72,6 +78,20 @@ func setup_lobbed(p_row: int, p_start: Vector2, p_target: Vector2, p_target_zomb
 	if p_is_giant:
 		arc_height = clamp(dist * 0.45, 180.0, 360.0)
 
+	if is_node_ready():
+		_apply_sprite_config()
+
+func setup_potato_launch(p_start: Vector2, p_target: Vector2, p_col: int, p_row: int) -> void:
+	trajectory = Trajectory.LOBBED
+	projectile_type = "potato_pf"
+	row = p_row
+	target_cell = Vector2i(p_col, p_row)
+	global_position = p_start
+	start_pos = p_start
+	target_pos = p_target
+	lob_time = 0.0
+	lob_duration = 0.55 # Faster than cabbage
+	arc_height = 200.0
 	if is_node_ready():
 		_apply_sprite_config()
 
@@ -121,6 +141,10 @@ func _check_straight_collision() -> void:
 
 func _on_lobbed_land() -> void:
 	if has_hit:
+		return
+
+	if projectile_type == "potato_pf":
+		_on_potato_land()
 		return
 
 	# If target zombie is at landing spot, hit it directly
@@ -215,3 +239,21 @@ func _spawn_splat_effect() -> void:
 			if is_instance_valid(splat):
 				splat.queue_free()
 		)
+
+func _on_potato_land() -> void:
+	if has_hit:
+		return
+	has_hit = true
+	var lawn = get_tree().current_scene
+	if lawn and lawn.has_method("spawn_plant_at"):
+		var pot_idx = -1
+		if "PLANT_REGISTRY" in lawn:
+			for i in range(lawn.PLANT_REGISTRY.size()):
+				if lawn.PLANT_REGISTRY[i]["id"] == "potatomine":
+					pot_idx = i
+					break
+		if pot_idx != -1:
+			var spawned = lawn.spawn_plant_at(target_cell.x, target_cell.y, pot_idx)
+			if spawned and is_instance_valid(spawned) and spawned.has_method("setup_prearmed"):
+				spawned.setup_prearmed()
+	queue_free()

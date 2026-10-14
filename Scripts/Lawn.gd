@@ -97,6 +97,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 
 var level_started: bool = false
 var debug_mode: bool = false
+var anim_viewer_instance: Node = null
 var plant_count: int = 0
 var selected_plant_index: int = 0
 var sun_amount: int = 50
@@ -203,7 +204,14 @@ func _process(delta: float) -> void:
 	zombie_spawn_timer -= delta
 	if zombie_spawn_timer <= 0.0:
 		zombie_spawn_timer = randf_range(14.0, 20.0)
-		var armor_choice = "cone" if randf() < 0.35 else "none"
+		var r = randf()
+		var armor_choice = "none"
+		if r < 0.25:
+			armor_choice = "cone"
+		elif r < 0.40:
+			armor_choice = "bucket"
+		elif r < 0.50:
+			armor_choice = "brick"
 		spawn_zombie(-1, 2254.0, armor_choice)
 
 func _spawn_sky_sun() -> void:
@@ -232,11 +240,23 @@ func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0, armor: String = "n
 		row_idx = randi_range(0, grid.rows - 1)
 
 	var spawn_y = grid.cell_to_world(0, row_idx).y
-	var z_inst: Zombie = zombie_scene.instantiate()
+	var z_inst: Zombie = null
+	if armor == "bucket":
+		var b_scene = load("res://Scenes/BucketheadZombie.tscn")
+		if b_scene:
+			z_inst = b_scene.instantiate()
+	elif armor == "brick":
+		var k_scene = load("res://Scenes/BrickheadZombie.tscn")
+		if k_scene:
+			z_inst = k_scene.instantiate()
+
+	if not z_inst:
+		z_inst = zombie_scene.instantiate()
+		if armor != "none":
+			z_inst.setup_armor(armor)
+
 	z_inst.row = row_idx
 	z_inst.position = Vector2(start_x, spawn_y)
-	if armor != "none":
-		z_inst.setup_armor(armor)
 
 	# 50% chance to replace with fem variant
 	var is_fem = randf() < 0.5
@@ -253,7 +273,7 @@ func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0, armor: String = "n
 		zombies_container.add_child(z_inst)
 	else:
 		add_child(z_inst)
-	print("[Lawn] Spawned %s%szombie on row %d at x=%.1f" % [("conehead " if armor == "cone" else ""), ("female " if is_fem else ""), row_idx, start_x])
+	print("[Lawn] Spawned %s%szombie on row %d at x=%.1f" % [((armor + "head ") if armor != "none" else ""), ("female " if is_fem else ""), row_idx, start_x])
 
 func add_sun(val: int) -> void:
 	sun_amount += val
@@ -306,6 +326,26 @@ func _unhandled_input(event: InputEvent) -> void:
 			var spawn_x = mouse_pos.x if debug_mode else 2254.0
 			spawn_zombie(target_row, spawn_x, "cone")
 
+		# B key to spawn a buckethead zombie
+		elif event.keycode == KEY_B:
+			var mouse_pos = get_global_mouse_position()
+			var cell = grid.world_to_cell(mouse_pos)
+			var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
+			var spawn_x = mouse_pos.x if debug_mode else 2254.0
+			spawn_zombie(target_row, spawn_x, "bucket")
+
+		# K key to spawn a brickhead zombie
+		elif event.keycode == KEY_K:
+			var mouse_pos = get_global_mouse_position()
+			var cell = grid.world_to_cell(mouse_pos)
+			var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
+			var spawn_x = mouse_pos.x if debug_mode else 2254.0
+			spawn_zombie(target_row, spawn_x, "brick")
+
+		# A key during debug mode toggles animation viewer
+		elif event.keycode == KEY_A and debug_mode:
+			_toggle_animation_viewer()
+
 		# Number keys 1-8 to select active plant to spawn (debug feature)
 		elif event.keycode in [KEY_1, KEY_KP_1]:
 			_select_plant(0)
@@ -353,6 +393,17 @@ func _unhandled_input(event: InputEvent) -> void:
 			elif debug_mode and grid.is_valid_cell(cell.x, cell.y):
 				spawn_plant_at(cell.x, cell.y, selected_plant_index)
 
+func _toggle_animation_viewer() -> void:
+	if anim_viewer_instance and is_instance_valid(anim_viewer_instance):
+		anim_viewer_instance.close_viewer()
+		anim_viewer_instance = null
+	else:
+		var viewer_script = load("res://Scripts/AnimationViewer.gd")
+		if viewer_script:
+			anim_viewer_instance = viewer_script.new()
+			add_child(anim_viewer_instance)
+			anim_viewer_instance.closed.connect(func(): anim_viewer_instance = null)
+
 func _select_plant(index: int) -> void:
 	if index >= 0 and index < PLANT_REGISTRY.size():
 		selected_plant_index = index
@@ -362,7 +413,7 @@ func _select_plant(index: int) -> void:
 			var select_sfx = preload("res://Audio/SFX/select_plant.ogg")
 			AudioManager.play_sfx(select_sfx)
 
-func spawn_plant_at(col: int, row: int, plant_idx: int) -> void:
+func spawn_plant_at(col: int, row: int, plant_idx: int) -> Node2D:
 	var info = PLANT_REGISTRY[plant_idx]
 	var plant_pos = grid.cell_to_world(col, row)
 	var plant_node: Node2D
@@ -407,13 +458,15 @@ func spawn_plant_at(col: int, row: int, plant_idx: int) -> void:
 	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/planted.ogg"):
 		AudioManager.play_sfx(load("res://Audio/SFX/planted.ogg"))
 
+	return plant_node
+
 func _update_hud() -> void:
 	var selected_name = PLANT_REGISTRY[selected_plant_index]["name"]
 	if peashooter_count_label:
 		peashooter_count_label.text = "PLANTS: %d | [%d] %s" % [plant_count, selected_plant_index + 1, selected_name]
 	if debug_status_label:
 		if debug_mode:
-			debug_status_label.text = "[DEBUG ON] 1-8: Select | R-Click: Spawn | Z: Zombie | L-Click: Atk | M-Click: PlantFood"
+			debug_status_label.text = "[DEBUG ON] 1-8: Select | R-Click: Spawn | Z/C/B/K: Zombies | A: AnimViewer | L/M-Click"
 			debug_status_label.modulate = Color(0.4, 1.0, 0.4, 1.0)
 		else:
 			debug_status_label.text = "Press 'G' for Debug Mode"

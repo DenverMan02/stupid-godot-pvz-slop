@@ -30,15 +30,22 @@ var eat_sfx_timer: float = 0.0
 
 func setup_armor(p_armor_type: String) -> void:
 	armor_type = p_armor_type
-	if armor_type == "cone":
-		max_armor_health = 370.0
-		armor_health = 370.0
-		if sprite:
-			sprite.set_armor_cone(true, 0)
-	else:
-		armor_health = 0.0
-		if sprite:
-			sprite.set_armor_cone(false, 0)
+	match armor_type:
+		"cone":
+			max_armor_health = 370.0
+			armor_health = 370.0
+		"bucket":
+			max_armor_health = 1100.0
+			armor_health = 1100.0
+		"brick":
+			max_armor_health = 2200.0
+			armor_health = 2200.0
+		_:
+			armor_type = "none"
+			max_armor_health = 0.0
+			armor_health = 0.0
+	if sprite:
+		sprite.set_armor(armor_type, 0)
 
 func set_female_variant(val: bool) -> void:
 	is_female = val
@@ -49,7 +56,10 @@ func set_female_variant(val: bool) -> void:
 		sprite.textures_base_dir = tex_dir
 		if sprite.is_inside_tree():
 			sprite.set_animation_source(anim_json, tex_dir)
-			sprite.has_armor_cone = (armor_type == "cone" and armor_health > 0.0)
+			var cur_stage = 0
+			if max_armor_health > 0.0 and armor_health > 0.0:
+				cur_stage = clamp(int((1.0 - (armor_health / max_armor_health)) * 3), 0, 2)
+			sprite.set_armor(armor_type if armor_health > 0.0 else "none", cur_stage)
 			sprite.has_lost_arm = has_lost_arm
 			if sprite.is_playing:
 				sprite.play(sprite.current_animation, sprite.loop)
@@ -150,6 +160,8 @@ func _find_plant_to_eat() -> Node2D:
 
 	for plant in plants_node.get_children():
 		if plant.get("row") == row and is_instance_valid(plant) and not plant.is_queued_for_deletion() and plant.get("health") != null and plant.health > 0.0:
+			if plant.get("is_ignored_by_zombies") == true:
+				continue
 			var dist_x = global_position.x - plant.global_position.x
 			# Zombie attacks when within bite reach (dist_x between -10 and 35)
 			if dist_x >= -10.0 and dist_x <= 35.0:
@@ -172,6 +184,8 @@ func _set_state(new_state: State) -> void:
 		State.DIE:
 			if not has_lost_arm and sprite:
 				sprite.set_arm_lost(true)
+			# Drop head particle on death
+			drop_head()
 			if sprite:
 				sprite.play("die", false)
 			var tw = create_tween()
@@ -189,24 +203,21 @@ func take_damage(amount: float) -> void:
 		var tw = create_tween()
 		tw.tween_property(sprite, "modulate", Color.WHITE, 0.08)
 
-	# 1. Armor absorbs damage first (ConeDefault)
-	if armor_health > 0.0:
+	# 1. Armor absorbs damage first (Cone, Bucket, Brick)
+	if armor_health > 0.0 and armor_type != "none":
 		var dmg_to_armor = minf(armor_health, amount)
 		var excess_dmg = amount - dmg_to_armor
 		armor_health -= dmg_to_armor
 
-		# Official PvZ2 ArmorLayerHealth thresholds: [260.0, 130.0]
-		if armor_health > 260.0:
+		if armor_health > 0.0:
+			# Degradation health ranges based on 3 stages (full, dmg1, dmg2):
+			# 100% for full (stage 0), 66.6% for stage 1, 33.3% for stage 2
+			var num_stages = 3
+			var stage = clamp(int((1.0 - (armor_health / max_armor_health)) * num_stages), 0, num_stages - 1)
 			if sprite:
-				sprite.set_armor_cone(true, 0)
-		elif armor_health > 130.0:
-			if sprite:
-				sprite.set_armor_cone(true, 1)
-		elif armor_health > 0.0:
-			if sprite:
-				sprite.set_armor_cone(true, 2)
+				sprite.set_armor(armor_type, stage)
 		else:
-			# Armor destroyed! Drop cone
+			# Armor destroyed! Drop particle
 			drop_armor()
 			armor_health = 0.0
 
@@ -218,8 +229,8 @@ func take_damage(amount: float) -> void:
 func _apply_body_damage(amount: float) -> void:
 	health -= amount
 
-	# Official PvZ2 threshold: ArmDropFraction = 2/3 (health <= 126.66)
-	if not has_lost_arm and health <= max_health * (2.0 / 3.0):
+	# Arm particles dropped at half health specifically (health <= max_health * 0.5)
+	if not has_lost_arm and health <= max_health * 0.5:
 		drop_arm()
 
 	if health <= 0.0:
@@ -246,16 +257,37 @@ func drop_arm() -> void:
 	if target_parent:
 		target_parent.add_child(particle)
 
+func drop_head() -> void:
+	var tex_dir = sprite.textures_base_dir if sprite else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
+	var particle = ZombieParticle.new()
+	particle.setup_head(tex_dir, global_position.y, is_female)
+	# Neck offset relative to zombie root
+	particle.global_position = global_position + Vector2(-36.5, -200.0)
+	particle.z_index = z_index + 1
+
+	var target_parent = get_parent() if get_parent() else get_tree().current_scene
+	if target_parent:
+		target_parent.add_child(particle)
+
 func drop_armor() -> void:
 	if sprite:
-		sprite.set_armor_cone(false, 0)
+		sprite.set_armor("none", 0)
 
 	var tex_dir = sprite.textures_base_dir if sprite else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
 	var particle = ZombieParticle.new()
-	particle.setup_cone(tex_dir, global_position.y, 2)
-	# Head/cone offset relative to zombie root
+	match armor_type:
+		"cone":
+			particle.setup_cone(tex_dir, global_position.y, 2)
+		"bucket":
+			particle.setup_bucket(tex_dir, global_position.y, 2)
+		"brick":
+			particle.setup_brick(tex_dir, global_position.y, 2)
+		_:
+			return
+
+	# Head/armor offset relative to zombie root
 	particle.global_position = global_position + Vector2(-36.5, -215.0)
-	particle.z_index = z_index + 1
+	particle.z_index = z_index + 2
 
 	var target_parent = get_parent() if get_parent() else get_tree().current_scene
 	if target_parent:

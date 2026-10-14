@@ -243,9 +243,51 @@ func _spawn_splat_effect() -> void:
 func _on_potato_land() -> void:
 	if has_hit:
 		return
-	has_hit = true
+
 	var lawn = get_tree().current_scene
-	if lawn and lawn.has_method("spawn_plant_at"):
+	if not lawn:
+		has_hit = true
+		queue_free()
+		return
+
+	# If target cell is already occupied, bounce to another unoccupied tile or launch off-screen
+	if lawn.has_method("is_cell_occupied") and lawn.is_cell_occupied(target_cell.x, target_cell.y):
+		var grid = lawn.get("grid")
+		if grid and ("rows" in grid) and ("columns" in grid):
+			var unoccupied: Array[Vector2i] = []
+			for r in range(grid.rows):
+				for c in range(grid.columns):
+					if not lawn.is_cell_occupied(c, r):
+						unoccupied.append(Vector2i(c, r))
+
+			if not unoccupied.is_empty():
+				# Bounce off to another unoccupied cell!
+				var new_cell = unoccupied.pick_random()
+				start_pos = global_position
+				target_cell = new_cell
+				target_pos = grid.cell_to_world(new_cell.x, new_cell.y)
+				lob_time = 0.0
+				lob_duration = 0.55
+				arc_height = 120.0
+				return
+			else:
+				# Nowhere for it to go on lawn: launch off-screen to despawn
+				start_pos = global_position
+				target_pos = Vector2(global_position.x + 800.0, -300.0)
+				lob_time = 0.0
+				lob_duration = 0.7
+				arc_height = 200.0
+				target_cell = Vector2i(-999, -999)
+				return
+
+	# If targeted off-screen or out-of-bounds, just despawn
+	if target_cell.x < 0 or target_cell.y < 0:
+		has_hit = true
+		queue_free()
+		return
+
+	has_hit = true
+	if lawn.has_method("spawn_plant_at"):
 		var pot_idx = -1
 		if "PLANT_REGISTRY" in lawn:
 			for i in range(lawn.PLANT_REGISTRY.size()):

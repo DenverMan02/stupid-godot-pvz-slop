@@ -193,15 +193,23 @@ func _set_state(new_state: State) -> void:
 			tw.tween_property(self, "modulate:a", 0.0, 0.5)
 			tw.tween_callback(queue_free)
 
+var hurt_tween: Tween = null
+
+func _flash_hurt() -> void:
+	if not sprite:
+		return
+	if hurt_tween and hurt_tween.is_valid():
+		hurt_tween.kill()
+	sprite.modulate = Color(2.5, 2.5, 2.5, 1.0)
+	hurt_tween = create_tween()
+	hurt_tween.tween_property(sprite, "modulate", Color.WHITE, 0.08)
+
 func take_damage(amount: float) -> void:
 	if current_state == State.DIE:
 		return
 
-	# Flash white on hit
-	if sprite:
-		sprite.modulate = Color(3.0, 3.0, 3.0, 1.0)
-		var tw = create_tween()
-		tw.tween_property(sprite, "modulate", Color.WHITE, 0.08)
+	# Flash white on hit smoothly without tween overlap
+	_flash_hurt()
 
 	# 1. Armor absorbs damage first (Cone, Bucket, Brick)
 	if armor_health > 0.0 and armor_type != "none":
@@ -234,6 +242,10 @@ func _apply_body_damage(amount: float) -> void:
 		drop_arm()
 
 	if health <= 0.0:
+		if hurt_tween and hurt_tween.is_valid():
+			hurt_tween.kill()
+		if sprite:
+			sprite.modulate = Color.WHITE
 		if armor_health > 0.0:
 			drop_armor()
 			armor_health = 0.0
@@ -250,7 +262,7 @@ func drop_arm() -> void:
 	var particle = ZombieParticle.new()
 	particle.setup_arm(tex_dir, global_position.y)
 	# Shoulder socket offset relative to zombie root
-	particle.global_position = global_position + Vector2(4.0, -103.0)
+	particle.global_position = global_position + Vector2(5.0, -80.0)
 	particle.z_index = z_index + 1
 
 	var target_parent = get_parent() if get_parent() else get_tree().current_scene
@@ -262,7 +274,7 @@ func drop_head() -> void:
 	var particle = ZombieParticle.new()
 	particle.setup_head(tex_dir, global_position.y, is_female)
 	# Neck offset relative to zombie root
-	particle.global_position = global_position + Vector2(-36.5, -200.0)
+	particle.global_position = global_position + Vector2(-15.0, -45.0)
 	particle.z_index = z_index + 1
 
 	var target_parent = get_parent() if get_parent() else get_tree().current_scene
@@ -286,7 +298,7 @@ func drop_armor() -> void:
 			return
 
 	# Head/armor offset relative to zombie root
-	particle.global_position = global_position + Vector2(-36.5, -215.0)
+	particle.global_position = global_position + Vector2(-15.0, -65.0)
 	particle.z_index = z_index + 2
 
 	var target_parent = get_parent() if get_parent() else get_tree().current_scene

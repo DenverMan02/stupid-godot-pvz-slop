@@ -32,6 +32,7 @@ var arm_timer: float = 15.0
 var is_prearmed: bool = false
 var is_ignored_by_zombies: bool = false
 var potatomine_pf_spawns_left: int = 0
+var peashooter_pf_firing: bool = false
 
 var eaten_timer: float = 0.0
 
@@ -104,7 +105,14 @@ func _update_wallnut_degrade_anim() -> void:
 		return
 	var target_anim = "idle"
 	if health > max_health * 0.75: # > 3000 HP
-		target_anim = "idle"
+		# 1 in 50 chance to play water animation when healthy
+		if sprite and sprite.has_animation("water") and randi_range(1, 50) == 1:
+			sprite.play("water", false)
+			return
+		if idle_animations.size() > 1:
+			target_anim = idle_animations[current_idle_index]
+		else:
+			target_anim = "idle"
 	elif health > max_health * 0.50: # 2000 - 3000 HP
 		target_anim = "damage"
 	elif health > max_health * 0.25: # 1000 - 2000 HP
@@ -112,12 +120,13 @@ func _update_wallnut_degrade_anim() -> void:
 	else: # 0 - 1000 HP
 		target_anim = "damage3"
 
-	if sprite and sprite.current_animation != target_anim:
-		sprite.play(target_anim, true)
+	if sprite and (sprite.current_animation != target_anim or not sprite.is_playing):
+		var should_loop = (target_anim in ["damage", "damage2", "damage3"] or idle_animations.size() == 1)
+		sprite.play(target_anim, should_loop)
 
 ## Custom idle mappings for plants with oddly named idle animations or specific idle states
 const IDLE_MAP: Dictionary = {
-	"wallnut": ["idle"],
+	"wallnut": ["idle", "idle2"],
 }
 
 var idle_animations: Array[String] = []
@@ -353,13 +362,23 @@ func _play_current_idle() -> void:
 		_update_wallnut_degrade_anim()
 		return
 
+	# Potato Mine when unarmed MUST strictly stay in plant_idle
+	if plant_type == "potatomine" and potato_state == PotatoState.UNARMED:
+		sprite.play("plant_idle", true)
+		return
+
+	# 1 in 50 chance to play "water" animation (if available) whenever a new idle is attempted
+	if sprite.has_animation("water") and randi_range(1, 50) == 1:
+		sprite.play("water", false)
+		return
+
 	var anim_name = idle_animations[current_idle_index]
 	var should_loop = (idle_animations.size() == 1)
 	sprite.play(anim_name, should_loop)
 
 func _on_anim_finished(anim_name: String) -> void:
 	if plant_type == "potatomine":
-		if anim_name == "plant":
+		if anim_name == "plant" or (anim_name == "plant_idle" and potato_state == PotatoState.UNARMED):
 			sprite.play("plant_idle", true)
 			return
 		elif anim_name == "recover":
@@ -391,6 +410,10 @@ func _on_anim_finished(anim_name: String) -> void:
 			is_ignored_by_zombies = false
 			_play_current_idle()
 			return
+
+	if plant_type == "peashooter" and anim_name == "plantfood" and peashooter_pf_firing:
+		sprite.play("plantfood", false)
+		return
 
 	if plant_type == "wallnut" and is_in_plantfood_sequence:
 		is_in_plantfood_sequence = false
@@ -446,11 +469,13 @@ func _explode_potatomine() -> void:
 		)
 
 		# 2. Damage zombies in range (1800 dmg)
+		# Extended slightly more left to catch zombies eating a wallnut on the adjacent tile
 		var zombies_node = lawn.get_node_or_null("Zombies")
 		if zombies_node:
 			for z in zombies_node.get_children():
 				if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
-					if z.row == row and abs(z.global_position.x - global_position.x) <= 90.0:
+					var diff_x = z.global_position.x - global_position.x
+					if z.row == row and diff_x >= -145.0 and diff_x <= 110.0:
 						if z.has_method("take_damage"):
 							z.take_damage(1800.0)
 
@@ -485,15 +510,15 @@ func _trigger_potatomine_pf_spawn() -> void:
 			if not lawn.is_cell_occupied(c, r):
 				valid_cells.append(Vector2i(c, r))
 
-	if valid_cells.is_empty():
-		valid_cells.append(Vector2i(randi_range(0, grid.columns - 1), randi_range(0, grid.rows - 1)))
-
-	var target_c = valid_cells.pick_random()
-	var target_wpos = grid.cell_to_world(target_c.x, target_c.y)
-
-	var proj: Projectile = projectile_scene.instantiate()
 	var start_p = global_position + Vector2(0.0, -20.0)
-	proj.setup_potato_launch(start_p, target_wpos, target_c.x, target_c.y)
+	var proj: Projectile = projectile_scene.instantiate()
+
+	if valid_cells.is_empty():
+		proj.setup_potato_launch(start_p, Vector2(global_position.x + 800.0, -300.0), -999, -999)
+	else:
+		var target_c = valid_cells.pick_random()
+		var target_wpos = grid.cell_to_world(target_c.x, target_c.y)
+		proj.setup_potato_launch(start_p, target_wpos, target_c.x, target_c.y)
 	var proj_container = lawn.get_node_or_null("Projectiles")
 	if proj_container:
 		proj_container.add_child(proj)
@@ -572,11 +597,19 @@ func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zo
 		lawn.add_child(proj)
 
 func _fire_peashooter_plantfood() -> void:
-	for i in range(30):
-		get_tree().create_timer(i * 0.04).timeout.connect(func():
+	peashooter_pf_firing = true
+	var total_peas = 30
+	var interval = 0.04
+	for i in range(total_peas):
+		get_tree().create_timer(i * interval).timeout.connect(func():
 			if is_instance_valid(self) and not is_queued_for_deletion():
 				_spawn_pea_projectile()
 		)
+	get_tree().create_timer(total_peas * interval).timeout.connect(func():
+		if is_instance_valid(self) and not is_queued_for_deletion():
+			peashooter_pf_firing = false
+			_play_current_idle()
+	)
 
 func _fire_cabbagepult_plantfood() -> void:
 	var lawn = get_tree().current_scene
@@ -589,26 +622,17 @@ func _fire_cabbagepult_plantfood() -> void:
 			if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
 				targets.append(z)
 
+	# Summon all projectiles at once
 	if targets.is_empty():
 		for i in range(5):
 			var r = i
 			var fake_target = Vector2(randf_range(1100.0, 1800.0), 300.0 + r * 130.0)
-			get_tree().create_timer(i * 0.08).timeout.connect(func():
-				if is_instance_valid(self) and not is_queued_for_deletion():
-					_spawn_cabbage_projectile_at(r, fake_target, null, true)
-			)
+			_spawn_cabbage_projectile_at(r, fake_target, null, true)
 	else:
-		var idx = 0
 		for tgt in targets:
-			var delay = idx * 0.08
-			var captured_tgt = tgt
-			var tgt_row = captured_tgt.row if "row" in captured_tgt else row
-			get_tree().create_timer(delay).timeout.connect(func():
-				if is_instance_valid(self) and not is_queued_for_deletion():
-					var landing_pos = captured_tgt.global_position if is_instance_valid(captured_tgt) else Vector2(1400.0, 500.0)
-					_spawn_cabbage_projectile_at(tgt_row, landing_pos, captured_tgt, true)
-			)
-			idx += 1
+			var tgt_row = tgt.row if "row" in tgt else row
+			var landing_pos = tgt.global_position if is_instance_valid(tgt) else Vector2(1400.0, 500.0)
+			_spawn_cabbage_projectile_at(tgt_row, landing_pos, tgt, true)
 
 func _on_use_special() -> void:
 	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/match.ogg"):

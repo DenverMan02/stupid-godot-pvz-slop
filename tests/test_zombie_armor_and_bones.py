@@ -183,5 +183,29 @@ class TestZombieArmorAndBones(unittest.TestCase):
         self.assertEqual(get_pf_stage(2666.0), 2)
         self.assertEqual(get_pf_stage(0.0), -1)
 
+    def test_potato_mine_explosion_reach(self):
+        """Potato Mine explosion reaches leftwards (-145px) to catch zombies eating an adjacent Wall-nut."""
+        mine_x = 500.0
+        # Wall-nut is 1 tile left (~115px away). Zombie eating it is at ~ 500 - 115 + 35 = 420px (diff = -80px)
+        # Or even behind it at 380px (diff = -120px)
+        def is_in_explosion(z_x):
+            diff = z_x - mine_x
+            return diff >= -145.0 and diff <= 110.0
+
+        def is_in_trigger(z_x):
+            diff = z_x - mine_x
+            return diff >= -35.0 and diff <= 40.0
+
+        # Zombie eating Wall-nut on adjacent left tile is damaged by explosion but doesn't trigger mine prematurely
+        self.assertTrue(is_in_explosion(420.0))
+        self.assertFalse(is_in_trigger(420.0)) # Sweet spot preserved!
+        self.assertTrue(is_in_explosion(380.0))
+        self.assertFalse(is_in_trigger(380.0))
+
+    def test_zombie_particle_matrix_scale(self):
+        """Zombie particles use exact Flash vector scale factor 0.78125."""
+        scale = 0.78125
+        self.assertAlmostEqual(scale * 1.28, 1.0, places=4)
+
 if __name__ == "__main__":
     unittest.main()

@@ -35,8 +35,28 @@ var potatomine_pf_spawns_left: int = 0
 var peashooter_pf_firing: bool = false
 var peashooter_pf_peas_remaining: int = 0
 var peashooter_pf_timer: float = 0.0
+var plantfood_glow_material: ShaderMaterial = null
 
 var eaten_timer: float = 0.0
+
+func _set_plantfood_glow(enabled: bool) -> void:
+	if not sprite:
+		return
+	if enabled:
+		if plantfood_glow_material == null:
+			if ResourceLoader.exists("res://Shaders/plantfood_glow.gdshader"):
+				var shader_res = load("res://Shaders/plantfood_glow.gdshader")
+				plantfood_glow_material = ShaderMaterial.new()
+				plantfood_glow_material.shader = shader_res
+		if plantfood_glow_material:
+			plantfood_glow_material.set_shader_parameter("effect_enabled", true)
+			plantfood_glow_material.set_shader_parameter("params", Color(0.4, 1.0, 0.45, 0.65))
+			plantfood_glow_material.set_shader_parameter("intensity", 0.8)
+			sprite.material = plantfood_glow_material
+	else:
+		if sprite.material == plantfood_glow_material:
+			sprite.material = null
+
 
 func setup_prearmed() -> void:
 	is_prearmed = true
@@ -169,15 +189,22 @@ func _process(delta: float) -> void:
 			sunflower_timer = 24.0
 			_produce_sun()
 
-	# Peashooter plant food continuous firing
+	# Peashooter plant food continuous firing: 60 peas in 2 seconds
 	if plant_type == "peashooter" and peashooter_pf_firing:
 		peashooter_pf_timer -= delta
-		if peashooter_pf_timer <= 0.0:
-			peashooter_pf_timer = 0.04
+		while peashooter_pf_timer <= 0.0 and peashooter_pf_peas_remaining > 0:
+			peashooter_pf_timer += 2.0 / 60.0
 			_spawn_pea_projectile()
 			peashooter_pf_peas_remaining -= 1
-			if peashooter_pf_peas_remaining <= 0:
-				peashooter_pf_firing = false
+
+		if peashooter_pf_peas_remaining <= 0:
+			peashooter_pf_firing = false
+			if sprite and sprite.has_animation("plantfood_off"):
+				sprite.play("plantfood_off", false)
+			else:
+				is_in_plantfood_sequence = false
+				is_performing_action = false
+				_set_plantfood_glow(false)
 				_play_current_idle()
 
 	# Peashooter and Cabbage-pult lane targeting & attacking
@@ -417,18 +444,42 @@ func _on_anim_finished(anim_name: String) -> void:
 		elif anim_name == "plantfood_off":
 			is_in_plantfood_sequence = false
 			is_performing_action = false
+			_set_plantfood_glow(false)
 			potato_state = PotatoState.ARMED
 			is_ignored_by_zombies = false
 			_play_current_idle()
 			return
 
-	if plant_type == "peashooter" and anim_name == "plantfood" and peashooter_pf_firing:
-		sprite.play("plantfood", false)
-		return
+	if plant_type == "peashooter":
+		if anim_name == "plantfood_on":
+			if sprite:
+				sprite.play("plantfood", false)
+			return
+		elif anim_name == "plantfood":
+			if peashooter_pf_firing:
+				if sprite:
+					sprite.play("plantfood", false)
+				return
+			else:
+				if sprite and sprite.has_animation("plantfood_off"):
+					sprite.play("plantfood_off", false)
+				else:
+					is_in_plantfood_sequence = false
+					is_performing_action = false
+					_set_plantfood_glow(false)
+					_play_current_idle()
+				return
+		elif anim_name == "plantfood_off":
+			is_in_plantfood_sequence = false
+			is_performing_action = false
+			_set_plantfood_glow(false)
+			_play_current_idle()
+			return
 
 	if plant_type == "wallnut" and is_in_plantfood_sequence:
 		is_in_plantfood_sequence = false
 		is_performing_action = false
+		_set_plantfood_glow(false)
 		if sprite:
 			sprite.set_plantfood_armor(true, 0)
 			sprite.play("idle", true)
@@ -442,6 +493,8 @@ func _on_anim_finished(anim_name: String) -> void:
 			return
 		else:
 			is_in_plantfood_sequence = false
+			is_performing_action = false
+			_set_plantfood_glow(false)
 			_play_current_idle()
 			return
 
@@ -500,6 +553,7 @@ func _explode_potatomine() -> void:
 func _play_potatomine_plantfood() -> void:
 	is_performing_action = true
 	is_in_plantfood_sequence = true
+	_set_plantfood_glow(true)
 	potatomine_pf_spawns_left = 2
 	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
 		AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
@@ -548,7 +602,8 @@ func _on_anim_event(event_name: String) -> void:
 func _on_use_action() -> void:
 	if plant_type == "peashooter":
 		if is_in_plantfood_sequence:
-			_fire_peashooter_plantfood()
+			# Plant food rapid shooting is managed by timer in _process
+			pass
 		else:
 			_spawn_pea_projectile()
 	elif plant_type == "cabbagepult":
@@ -608,7 +663,7 @@ func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zo
 
 func _fire_peashooter_plantfood() -> void:
 	peashooter_pf_firing = true
-	peashooter_pf_peas_remaining = 30
+	peashooter_pf_peas_remaining = 60
 	peashooter_pf_timer = 0.0
 
 func _fire_cabbagepult_plantfood() -> void:
@@ -674,9 +729,22 @@ func play_plantfood() -> void:
 		wallnut_armor_health = 8000.0
 		is_performing_action = true
 		is_in_plantfood_sequence = true
+		_set_plantfood_glow(true)
 		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
 			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
 		sprite.play("plantfood_on", false)
+		return
+	elif plant_type == "peashooter":
+		is_performing_action = true
+		is_in_plantfood_sequence = true
+		_set_plantfood_glow(true)
+		_fire_peashooter_plantfood()
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
+		if sprite.has_animation("plantfood_on"):
+			sprite.play("plantfood_on", false)
+		else:
+			sprite.play("plantfood", false)
 		return
 
 	plantfood_sequence.clear()
@@ -717,6 +785,7 @@ func play_plantfood() -> void:
 	if not plantfood_sequence.is_empty():
 		is_performing_action = true
 		is_in_plantfood_sequence = true
+		_set_plantfood_glow(true)
 		if plant_type == "sunflower":
 			for i in range(3):
 				get_tree().create_timer(0.3 * (i + 1)).timeout.connect(_spawn_sun_at_plant)

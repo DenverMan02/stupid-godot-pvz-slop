@@ -118,6 +118,7 @@ var plant_food_count: int = 1
 const MAX_PLANT_FOOD: int = 3
 var is_plant_food_active: bool = false
 var plant_food_slots: Array[TextureRect] = []
+var pf_main_btn: TextureButton = null
 var floating_pf_icon: Sprite2D = null
 
 # Shovel System
@@ -183,7 +184,7 @@ func _setup_hud() -> void:
 	# 1. Plant Food Bank (bottom-left)
 	var pf_bank_ctrl = Control.new()
 	pf_bank_ctrl.name = "PlantFoodBank"
-	pf_bank_ctrl.position = Vector2(20.0, 930.0)
+	pf_bank_ctrl.position = Vector2(20.0, 940.0)
 	pf_bank_ctrl.custom_minimum_size = Vector2(268.0, 114.0)
 
 	var pf_bg = TextureRect.new()
@@ -193,33 +194,50 @@ func _setup_hud() -> void:
 	pf_bg.mouse_filter = Control.MOUSE_FILTER_PASS
 	pf_bank_ctrl.add_child(pf_bg)
 
-	var slot_offsets = [Vector2(110.0, 36.0), Vector2(162.0, 36.0), Vector2(214.0, 36.0)]
+	# Main round plant food button (displays green leaf when charges >= 1)
+	pf_main_btn = TextureButton.new()
+	pf_main_btn.name = "PlantFoodButton"
+	pf_main_btn.position = Vector2(24.0, 21.0)
+	pf_main_btn.custom_minimum_size = Vector2(68.0, 72.0)
+	pf_main_btn.size = Vector2(68.0, 72.0)
+	pf_main_btn.ignore_texture_size = true
+	pf_main_btn.stretch_mode = TextureButton.STRETCH_SCALE
+	pf_main_btn.texture_normal = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button.png")
+	pf_main_btn.texture_pressed = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button_down.png")
+	pf_main_btn.focus_mode = Control.FOCUS_NONE
+	pf_main_btn.pressed.connect(toggle_plant_food_armed)
+	pf_main_btn.visible = (plant_food_count >= 1)
+	pf_bank_ctrl.add_child(pf_main_btn)
+
+	# 3 small leaf slots for extra plant food charges (charge 2, charge 3, charge 4)
+	var slot_offsets = [Vector2(106.0, 36.0), Vector2(150.0, 35.0), Vector2(196.0, 33.0)]
 	plant_food_slots.clear()
 	for i in range(3):
 		var slot_tex = TextureRect.new()
 		slot_tex.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_filled_slot.png")
 		slot_tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		slot_tex.size = Vector2(34.0, 35.0)
+		slot_tex.size = Vector2(32.0, 33.0)
 		slot_tex.position = slot_offsets[i]
-		slot_tex.visible = (i < plant_food_count)
+		slot_tex.visible = (plant_food_count >= (i + 2))
 		slot_tex.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		pf_bank_ctrl.add_child(slot_tex)
 		plant_food_slots.append(slot_tex)
 
-	var pf_btn = Button.new()
-	pf_btn.flat = true
-	pf_btn.size = Vector2(268.0, 114.0)
-	pf_btn.focus_mode = Control.FOCUS_NONE
-	pf_btn.pressed.connect(toggle_plant_food_armed)
-	pf_bank_ctrl.add_child(pf_btn)
+	var pf_bg_click = Button.new()
+	pf_bg_click.flat = true
+	pf_bg_click.size = Vector2(268.0, 114.0)
+	pf_bg_click.focus_mode = Control.FOCUS_NONE
+	pf_bg_click.mouse_filter = Control.MOUSE_FILTER_PASS
+	pf_bg_click.pressed.connect(toggle_plant_food_armed)
+	pf_bank_ctrl.add_child(pf_bg_click)
 	hud.add_child(pf_bank_ctrl)
 
-	# 2. Shovel Button (next to Plant Food Bank)
+	# 2. Shovel Button (bottom-right corner, matching official PvZ2)
 	shovel_btn = TextureButton.new()
 	shovel_btn.name = "ShovelButton"
-	shovel_btn.position = Vector2(305.0, 940.0)
-	shovel_btn.custom_minimum_size = Vector2(98.0, 98.0)
-	shovel_btn.size = Vector2(98.0, 98.0)
+	shovel_btn.position = Vector2(1790.0, 950.0)
+	shovel_btn.custom_minimum_size = Vector2(105.0, 105.0)
+	shovel_btn.size = Vector2(105.0, 105.0)
 	shovel_btn.ignore_texture_size = true
 	shovel_btn.stretch_mode = TextureButton.STRETCH_SCALE
 	shovel_btn.texture_normal = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/shovel_button.png")
@@ -244,11 +262,12 @@ func _setup_hud() -> void:
 	floating_pf_icon.z_index = 200
 	hud.add_child(floating_pf_icon)
 
-	# 4. Wave Progress Meter (bottom-right)
+	# 4. Wave Progress Meter (Top-Center, matching official PvZ2)
 	var meter_ctrl = Control.new()
 	meter_ctrl.name = "WaveMeter"
-	meter_ctrl.position = Vector2(1380.0, 1010.0)
+	meter_ctrl.position = Vector2(728.0, 16.0)
 	meter_ctrl.custom_minimum_size = Vector2(464.0, 55.0)
+	meter_ctrl.size = Vector2(464.0, 55.0)
 
 	var meter_bg = TextureRect.new()
 	meter_bg.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter.png")
@@ -263,8 +282,9 @@ func _setup_hud() -> void:
 	meter_fill.patch_margin_right = 6
 	meter_fill.patch_margin_top = 4
 	meter_fill.patch_margin_bottom = 4
-	meter_fill.position = Vector2(400.0, 14.0)
-	meter_fill.size = Vector2(0.0, 26.0)
+	meter_fill.position = Vector2(420.0, 12.0)
+	meter_fill.size = Vector2(0.0, 31.0)
+	meter_fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(meter_fill)
 
 	# Flags (Wave 5 at 50%, Wave 10 at 100%)
@@ -272,7 +292,7 @@ func _setup_hud() -> void:
 	mid_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	mid_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	mid_flag_icon.size = Vector2(32.0, 26.0)
-	mid_flag_icon.position = Vector2(215.0, -8.0)
+	mid_flag_icon.position = Vector2(220.0, -8.0)
 	mid_flag_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(mid_flag_icon)
 
@@ -280,7 +300,7 @@ func _setup_hud() -> void:
 	final_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	final_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	final_flag_icon.size = Vector2(32.0, 26.0)
-	final_flag_icon.position = Vector2(30.0, -8.0)
+	final_flag_icon.position = Vector2(25.0, -8.0)
 	final_flag_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(final_flag_icon)
 
@@ -288,9 +308,28 @@ func _setup_hud() -> void:
 	zombie_head_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_zombiehead.png")
 	zombie_head_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	zombie_head_icon.size = Vector2(42.0, 45.0)
-	zombie_head_icon.position = Vector2(400.0, 5.0)
+	zombie_head_icon.position = Vector2(405.0, 5.0)
 	zombie_head_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(zombie_head_icon)
+
+	# Level Name Label centered directly below the progress meter
+	var level_name_lbl = Label.new()
+	level_name_lbl.name = "LevelNameLabel"
+	level_name_lbl.text = "Modern Day - Day 1"
+	level_name_lbl.position = Vector2(-20.0, 56.0)
+	level_name_lbl.size = Vector2(504.0, 32.0)
+	level_name_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	level_name_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
+	if ResourceLoader.exists(font_path):
+		var custom_font = load(font_path)
+		level_name_lbl.add_theme_font_override("font", custom_font)
+	level_name_lbl.add_theme_font_size_override("font_size", 24)
+	level_name_lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 0.95))
+	level_name_lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	level_name_lbl.add_theme_constant_override("outline_size", 4)
+	meter_ctrl.add_child(level_name_lbl)
+
 	hud.add_child(meter_ctrl)
 
 	# 5. Top-Right Controls: Turbo Button & Pause Button
@@ -586,13 +625,16 @@ func _drop_final_flag() -> void:
 
 func _update_wave_meter(progress: float) -> void:
 	var clamped_p = clampf(progress, 0.0, 1.0)
+	var start_x = 420.0
+	var end_x = 25.0
+	var head_x = lerpf(start_x, end_x, clamped_p)
 	if zombie_head_icon:
-		# Zombie head moves from right (400.0) to left (30.0)
-		zombie_head_icon.position.x = lerpf(400.0, 30.0, clamped_p)
+		zombie_head_icon.position.x = head_x - 15.0
 	if meter_fill:
-		var fill_w = 370.0 * clamped_p
-		meter_fill.size.x = fill_w
-		meter_fill.position.x = 400.0 - fill_w
+		var fill_w = start_x - head_x
+		meter_fill.position.x = head_x
+		meter_fill.size.x = maxf(fill_w, 0.0)
+		meter_fill.visible = (fill_w > 2.0)
 
 func _show_banner_message(msg: String, col: Color = Color.WHITE, duration: float = 2.5) -> void:
 	if not start_label:
@@ -717,9 +759,12 @@ func add_plant_food(amount: int = 1) -> void:
 	print("[Lawn] Plant food count: %d" % plant_food_count)
 
 func _update_plant_food_display() -> void:
+	if pf_main_btn:
+		pf_main_btn.visible = (plant_food_count >= 1)
+		pf_main_btn.modulate = Color(1.2, 1.2, 1.2, 1.0) if is_plant_food_active else Color.WHITE
 	for i in range(plant_food_slots.size()):
 		if plant_food_slots[i]:
-			plant_food_slots[i].visible = (i < plant_food_count)
+			plant_food_slots[i].visible = (plant_food_count >= (i + 2))
 
 func toggle_plant_food_armed() -> void:
 	if plant_food_count <= 0 and not is_plant_food_active and not debug_mode:
@@ -788,6 +833,10 @@ func toggle_turbo() -> void:
 	Engine.time_scale = 1.5 if is_turbo else 1.0
 	if turbo_btn:
 		turbo_btn.texture_normal = turbo_tex_selected if is_turbo else turbo_tex_normal
+	if get_node_or_null("/root/AudioManager"):
+		var sfx_path = "res://Audio/SFX/speed_up.ogg" if is_turbo else "res://Audio/SFX/speed_down.ogg"
+		if ResourceLoader.exists(sfx_path):
+			AudioManager.play_sfx(load(sfx_path))
 	print("[Lawn] Turbo speed: %s (time_scale=%.1f)" % [("1.5x" if is_turbo else "1.0x"), Engine.time_scale])
 
 # Pause System Methods

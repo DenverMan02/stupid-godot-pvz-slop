@@ -129,10 +129,56 @@ class TestGameplaySystems(unittest.TestCase):
         """Verify peashooter pf and sunflower sun do not use freed lambda captures."""
         with open("Scripts/Plant.gd", "r") as f:
             content = f.read()
-        # Peashooter pf should use process variables rather than 30 create_timer lambdas capturing self
         self.assertIn("var peashooter_pf_peas_remaining", content)
         self.assertIn("var peashooter_pf_timer", content)
         self.assertNotIn("get_tree().create_timer(i * interval).timeout.connect(func():", content)
 
+    def test_peashooter_plantfood_duration_and_count(self):
+        """Peashooter PF must fire strictly 60 peas in 2.0 seconds and return to normal."""
+        with open("Scripts/Plant.gd", "r") as f:
+            content = f.read()
+        self.assertIn("peashooter_pf_peas_remaining = 60", content)
+        self.assertIn("peashooter_pf_timer += 2.0 / 60.0", content)
+        self.assertIn("_set_plantfood_glow(false)", content)
+
+    def test_plantfood_bank_hud_layout(self):
+        """Plantfood bank button uses plantfood_button.png and lights up correctly."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            content = f.read()
+        self.assertIn("plantfood_button.png", content)
+        self.assertIn("plantfood_button_down.png", content)
+        self.assertIn("plant_food_count >= (i + 2)", content)
+
+    def test_shovel_and_progress_meter_positions(self):
+        """Shovel must be at bottom-right and wave progress meter at top-center with level label."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            content = f.read()
+        # Shovel at bottom-right
+        self.assertIn("Vector2(1790.0, 950.0)", content)
+        # Wave meter at top-center
+        self.assertIn("Vector2(728.0, 16.0)", content)
+        self.assertIn("Modern Day - Day 1", content)
+        self.assertIn("LevelNameLabel", content)
+
+    def test_turbo_audio_effects(self):
+        """Turbo toggle must play speed_up.ogg and speed_down.ogg."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            content = f.read()
+        self.assertIn("speed_up.ogg", content)
+        self.assertIn("speed_down.ogg", content)
+
+    def test_popfx_plantfood_glow_shader(self):
+        """Decoded PopFX plant food glow shader exists and is utilized."""
+        self.assertTrue(os.path.exists("Shaders/plantfood_glow.gdshader"))
+        with open("Shaders/plantfood_glow.gdshader", "r") as f:
+            content = f.read()
+        self.assertIn("colorize_overlay", content)
+        self.assertIn("effect_enabled", content)
+        with open("Scripts/Plant.gd", "r") as f:
+            plant_code = f.read()
+        self.assertIn("res://Shaders/plantfood_glow.gdshader", plant_code)
+        self.assertIn("func _set_plantfood_glow(", plant_code)
+
 if __name__ == "__main__":
     unittest.main()
+

@@ -33,6 +33,8 @@ var is_prearmed: bool = false
 var is_ignored_by_zombies: bool = false
 var potatomine_pf_spawns_left: int = 0
 var peashooter_pf_firing: bool = false
+var peashooter_pf_peas_remaining: int = 0
+var peashooter_pf_timer: float = 0.0
 
 var eaten_timer: float = 0.0
 
@@ -167,6 +169,17 @@ func _process(delta: float) -> void:
 			sunflower_timer = 24.0
 			_produce_sun()
 
+	# Peashooter plant food continuous firing
+	if plant_type == "peashooter" and peashooter_pf_firing:
+		peashooter_pf_timer -= delta
+		if peashooter_pf_timer <= 0.0:
+			peashooter_pf_timer = 0.04
+			_spawn_pea_projectile()
+			peashooter_pf_peas_remaining -= 1
+			if peashooter_pf_peas_remaining <= 0:
+				peashooter_pf_firing = false
+				_play_current_idle()
+
 	# Peashooter and Cabbage-pult lane targeting & attacking
 	elif (plant_type == "peashooter" or plant_type == "cabbagepult") and not is_performing_action and not is_in_plantfood_sequence:
 		var target = _find_zombie_in_row()
@@ -210,7 +223,7 @@ func _find_zombie_for_mine() -> Node2D:
 		if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
 			if z.row == row:
 				var dist_x = z.global_position.x - global_position.x
-				if dist_x >= -35.0 and dist_x <= 40.0:
+				if dist_x >= -45.0 and dist_x <= 70.0:
 					return z
 	return null
 
@@ -237,9 +250,7 @@ func _find_zombie_in_row() -> Node2D:
 
 func _produce_sun() -> void:
 	play_attack()
-	get_tree().create_timer(0.8).timeout.connect(func():
-		_spawn_sun_at_plant()
-	)
+	get_tree().create_timer(0.8).timeout.connect(Callable(self, "_spawn_sun_at_plant"))
 
 func _spawn_sun_at_plant() -> void:
 	var sun_inst: Sun = sun_scene.instantiate()
@@ -462,9 +473,8 @@ func _explode_potatomine() -> void:
 		lawn.add_child(exp_node)
 		exp_spr._load_resources()
 		exp_spr.play("animation", false)
-		exp_spr.anim_finished.connect(func(_a): exp_node.queue_free())
-		get_tree().create_timer(1.2).timeout.connect(func():
-			if is_instance_valid(exp_node):
+		exp_spr.anim_finished.connect(func(_a):
+			if is_instance_valid(exp_node) and not exp_node.is_queued_for_deletion():
 				exp_node.queue_free()
 		)
 
@@ -598,18 +608,8 @@ func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zo
 
 func _fire_peashooter_plantfood() -> void:
 	peashooter_pf_firing = true
-	var total_peas = 30
-	var interval = 0.04
-	for i in range(total_peas):
-		get_tree().create_timer(i * interval).timeout.connect(func():
-			if is_instance_valid(self) and not is_queued_for_deletion():
-				_spawn_pea_projectile()
-		)
-	get_tree().create_timer(total_peas * interval).timeout.connect(func():
-		if is_instance_valid(self) and not is_queued_for_deletion():
-			peashooter_pf_firing = false
-			_play_current_idle()
-	)
+	peashooter_pf_peas_remaining = 30
+	peashooter_pf_timer = 0.0
 
 func _fire_cabbagepult_plantfood() -> void:
 	var lawn = get_tree().current_scene

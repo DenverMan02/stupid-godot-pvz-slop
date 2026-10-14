@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c_plantfood_item_001"]
+
+[ext_resource type="Script" path="res://Scripts/PlantFoodItem.gd" id="1_pf_item"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_collect.png" id="2_pf_tex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pf"]
+radius = 42.0
+
+[node name="PlantFoodItem" type="Node2D"]
+z_index = 80
+script = ExtResource("1_pf_item")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("2_pf_tex")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_pf")

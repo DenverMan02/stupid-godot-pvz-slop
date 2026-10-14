@@ -215,9 +215,8 @@ func _spawn_splat_effect() -> void:
 
 		spr._load_resources()
 		spr.play("animation", false)
-		spr.anim_finished.connect(func(_a): splat.queue_free())
-		get_tree().create_timer(0.4).timeout.connect(func():
-			if is_instance_valid(splat):
+		spr.anim_finished.connect(func(_a):
+			if is_instance_valid(splat) and not splat.is_queued_for_deletion():
 				splat.queue_free()
 		)
 	elif projectile_type == "cabbage_giant":
@@ -234,9 +233,8 @@ func _spawn_splat_effect() -> void:
 
 		spr._load_resources()
 		spr.play("plantfood_cabbageExplode", false)
-		spr.anim_finished.connect(func(_a): splat.queue_free())
-		get_tree().create_timer(0.6).timeout.connect(func():
-			if is_instance_valid(splat):
+		spr.anim_finished.connect(func(_a):
+			if is_instance_valid(splat) and not splat.is_queued_for_deletion():
 				splat.queue_free()
 		)
 

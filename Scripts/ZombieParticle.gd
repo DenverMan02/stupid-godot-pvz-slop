@@ -104,6 +104,33 @@ func setup_brick(base_dir: String, p_ground_y: float, damage_stage: int = 2) -> 
 		_draw_entries.append([tex_brick, xform])
 	queue_redraw()
 
+func setup_head_from_sprite(render_data: Dictionary, p_ground_y: float) -> void:
+	particle_type = ParticleType.HEAD
+	ground_y = p_ground_y
+	velocity = Vector2(randf_range(-90.0, 30.0), randf_range(-310.0, -220.0))
+	angular_velocity = randf_range(-7.0, 7.0)
+
+	_draw_entries.clear()
+	var center = render_data.get("center", Vector2.ZERO)
+	var loaded_tex = render_data.get("loaded_textures", [])
+	var slices = render_data.get("slices", [])
+
+	for s in slices:
+		var tex_idx = int(s[0])
+		if tex_idx < loaded_tex.size():
+			var tex = loaded_tex[tex_idx]
+			if tex:
+				var a = float(s[1])
+				var b = float(s[2])
+				var c = float(s[3])
+				var d = float(s[4])
+				var tx = float(s[5]) - center.x
+				var ty = float(s[6]) - center.y
+				var xform = Transform2D(Vector2(a, b), Vector2(c, d), Vector2(tx, ty))
+				_draw_entries.append([tex, xform])
+
+	queue_redraw()
+
 func setup_head(base_dir: String, p_ground_y: float, is_female: bool = false) -> void:
 	particle_type = ParticleType.HEAD
 	ground_y = p_ground_y

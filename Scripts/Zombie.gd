@@ -15,11 +15,12 @@ enum State {
 @export var row: int = 2
 @export var is_female: bool = false
 
-# Armor configuration: ConeDefault BaseHealth = 370.0
 @export var armor_type: String = "none" # "none" or "cone"
 @export var armor_health: float = 0.0
 @export var max_armor_health: float = 370.0
 @export var has_lost_arm: bool = false
+@export var has_plant_food: bool = false
+@export var is_flag_zombie: bool = false
 
 var current_state: State = State.WALK
 var target_plant: Node2D = null
@@ -64,12 +65,33 @@ func set_female_variant(val: bool) -> void:
 			if sprite.is_playing:
 				sprite.play(sprite.current_animation, sprite.loop)
 
+func setup_plant_food(val: bool = true) -> void:
+	has_plant_food = val
+	if sprite:
+		sprite.modulate = Color(0.4, 1.8, 0.4, 1.0) if has_plant_food else Color.WHITE
+
+func setup_flag_variant() -> void:
+	is_flag_zombie = true
+	var anim_json = "res://Assets/Zombies/zombie_tutorialfem_flag.anim.json" if is_female else "res://Assets/Zombies/zombie_tutorial_flag.anim.json"
+	var tex_dir = "res://Assets/Zombies/zombie_tutorialfem_flag.xfl/library/" if is_female else "res://Assets/Zombies/zombie_tutorial_flag.xfl/library/"
+	if sprite:
+		sprite.anim_data_path = anim_json
+		sprite.textures_base_dir = tex_dir
+		if sprite.is_inside_tree():
+			sprite.set_animation_source(anim_json, tex_dir)
+			if sprite.is_playing:
+				sprite.play(sprite.current_animation, sprite.loop)
+
 func _ready() -> void:
 	health = max_health
 	if is_female:
 		set_female_variant(true)
+	if is_flag_zombie:
+		setup_flag_variant()
 	if armor_type != "none":
 		setup_armor(armor_type)
+	if has_plant_food:
+		setup_plant_food(true)
 	if sprite:
 		sprite.has_lost_arm = has_lost_arm
 		sprite.play("walk", true)
@@ -163,8 +185,8 @@ func _find_plant_to_eat() -> Node2D:
 			if plant.get("is_ignored_by_zombies") == true:
 				continue
 			var dist_x = global_position.x - plant.global_position.x
-			# Zombie attacks when within bite reach (dist_x between -10 and 35)
-			if dist_x >= -10.0 and dist_x <= 35.0:
+			# Regular plant hitboxes extend slightly more to the right (dist_x between -15 and 55)
+			if dist_x >= -15.0 and dist_x <= 55.0:
 				return plant
 	return null
 
@@ -182,6 +204,8 @@ func _set_state(new_state: State) -> void:
 			if sprite:
 				sprite.play("eat", true)
 		State.DIE:
+			if has_plant_food:
+				_drop_plant_food()
 			if not has_lost_arm and sprite:
 				sprite.set_arm_lost(true)
 			# Drop head particle on death
@@ -193,6 +217,19 @@ func _set_state(new_state: State) -> void:
 			tw.tween_property(self, "modulate:a", 0.0, 0.5)
 			tw.tween_callback(queue_free)
 
+func _drop_plant_food() -> void:
+	var pf_scene = load("res://Scenes/PlantFoodItem.tscn")
+	if pf_scene:
+		var pf_inst = pf_scene.instantiate()
+		pf_inst.position = global_position + Vector2(0.0, -40.0)
+		var lawn = get_tree().current_scene
+		if lawn:
+			var suns_container = lawn.get_node_or_null("Suns")
+			if suns_container:
+				suns_container.add_child(pf_inst)
+			else:
+				lawn.add_child(pf_inst)
+
 var hurt_tween: Tween = null
 
 func _flash_hurt() -> void:
@@ -201,8 +238,9 @@ func _flash_hurt() -> void:
 	if hurt_tween and hurt_tween.is_valid():
 		hurt_tween.kill()
 	sprite.modulate = Color(2.5, 2.5, 2.5, 1.0)
+	var normal_col = Color(0.4, 1.8, 0.4, 1.0) if has_plant_food else Color.WHITE
 	hurt_tween = create_tween()
-	hurt_tween.tween_property(sprite, "modulate", Color.WHITE, 0.08)
+	hurt_tween.tween_property(sprite, "modulate", normal_col, 0.08)
 
 func take_damage(amount: float) -> void:
 	if current_state == State.DIE:
@@ -270,13 +308,19 @@ func drop_arm() -> void:
 		target_parent.add_child(particle)
 
 func drop_head() -> void:
-	var tex_dir = sprite.textures_base_dir if sprite else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
+	var head_data = sprite.get_current_head_render_data() if sprite else {}
 	var particle = ZombieParticle.new()
-	particle.setup_head(tex_dir, global_position.y, is_female)
-	# Neck offset relative to zombie root
-	particle.global_position = global_position + Vector2(-15.0, -45.0)
-	particle.z_index = z_index + 1
 
+	if not head_data.is_empty():
+		var center = head_data.get("center", Vector2(-35.0, -135.0))
+		particle.setup_head_from_sprite(head_data, global_position.y)
+		particle.global_position = global_position + center
+	else:
+		var tex_dir = sprite.textures_base_dir if sprite else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
+		particle.setup_head(tex_dir, global_position.y, is_female)
+		particle.global_position = global_position + Vector2(-35.0, -135.0)
+
+	particle.z_index = z_index + 1
 	var target_parent = get_parent() if get_parent() else get_tree().current_scene
 	if target_parent:
 		target_parent.add_child(particle)

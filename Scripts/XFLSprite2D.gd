@@ -134,6 +134,52 @@ func consume_ground_delta() -> float:
 	_accumulated_ground_delta = 0.0
 	return d
 
+func get_current_head_render_data() -> Dictionary:
+	var anims = _anim_data.get("animations", {})
+	var anim_info = anims.get(current_animation, {})
+	var frames = anim_info.get("frames", [])
+	if current_frame >= frames.size() or frames.is_empty():
+		return {}
+
+	var f = frames[current_frame]
+	var head_slices: Array = []
+	var textures: Array = _anim_data.get("textures", [])
+	var head_keywords = ["skull", "jaw", "pupil", "hair", "82x69", "52x31", "7x7"]
+	var min_p = Vector2(999999.0, 999999.0)
+	var max_p = Vector2(-999999.0, -999999.0)
+
+	for slice_data in f:
+		var tex_idx = int(slice_data[0])
+		if tex_idx < textures.size():
+			var tex_name = str(textures[tex_idx]).to_lower()
+			var is_head = false
+			for kw in head_keywords:
+				if kw in tex_name:
+					is_head = true
+					break
+			if is_head:
+				var a = float(slice_data[1])
+				var b = float(slice_data[2])
+				var c = float(slice_data[3])
+				var d = float(slice_data[4])
+				var tx = float(slice_data[5])
+				var ty = float(slice_data[6])
+				min_p.x = min(min_p.x, tx)
+				min_p.y = min(min_p.y, ty)
+				max_p.x = max(max_p.x, tx)
+				max_p.y = max(max_p.y, ty)
+				head_slices.append([tex_idx, a, b, c, d, tx, ty])
+
+	if head_slices.is_empty():
+		return {}
+
+	var center = (min_p + max_p) * 0.5
+	return {
+		"slices": head_slices,
+		"center": center,
+		"loaded_textures": _loaded_textures
+	}
+
 func _advance_ground_track(anim_info: Dictionary, from_f: int, to_f: int, total_f: int, did_loop: bool) -> void:
 	if not anim_info.has("ground_track"):
 		return

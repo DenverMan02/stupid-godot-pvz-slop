@@ -41,23 +41,13 @@ var pf_vfx_node: Node2D = null
 var eaten_timer: float = 0.0
 
 func _set_plantfood_glow(enabled: bool) -> void:
+	# Plantfood plants do not glow green (that PopFX shader is exclusively for zombies carrying plant food).
+	# Plants only execute their native animations and visual effect beams.
 	if not sprite:
 		return
 	if enabled:
-		if plantfood_glow_material == null:
-			if ResourceLoader.exists("res://Shaders/plantfood_glow.gdshader"):
-				var shader_res = load("res://Shaders/plantfood_glow.gdshader")
-				plantfood_glow_material = ShaderMaterial.new()
-				plantfood_glow_material.shader = shader_res
-		if plantfood_glow_material:
-			plantfood_glow_material.set_shader_parameter("effect_enabled", true)
-			plantfood_glow_material.set_shader_parameter("params", Color(0.4, 1.0, 0.45, 0.65))
-			plantfood_glow_material.set_shader_parameter("intensity", 0.8)
-			sprite.material = plantfood_glow_material
 		_spawn_plantfood_vfx()
 	else:
-		if sprite.material == plantfood_glow_material:
-			sprite.material = null
 		_cleanup_plantfood_vfx()
 
 func _spawn_plantfood_vfx() -> void:
@@ -684,9 +674,15 @@ func _spawn_cabbage_projectile(target: Node2D = null) -> void:
 	else:
 		lawn.add_child(proj)
 
-func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zombie: Node2D = null, p_is_giant: bool = false) -> void:
+func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zombie: Node2D = null, p_is_giant: bool = false, p_delay: float = 0.0) -> void:
 	var lawn = get_tree().current_scene
 	if not lawn:
+		return
+	if p_delay > 0.0:
+		get_tree().create_timer(p_delay).timeout.connect(func():
+			if is_instance_valid(self) and not is_queued_for_deletion():
+				_spawn_cabbage_projectile_at(p_row, p_target_pos, p_target_zombie, p_is_giant, 0.0)
+		)
 		return
 	var proj: Projectile = projectile_scene.instantiate()
 	var spawn_pos = global_position + Vector2(10.0, -25.0)
@@ -714,17 +710,19 @@ func _fire_cabbagepult_plantfood() -> void:
 			if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
 				targets.append(z)
 
-	# Summon all projectiles at once
+	# Launch staggered projectile volley matching PvZ2 LaunchProjectileAt
 	if targets.is_empty():
 		for i in range(5):
 			var r = i
 			var fake_target = Vector2(randf_range(1100.0, 1800.0), 300.0 + r * 130.0)
-			_spawn_cabbage_projectile_at(r, fake_target, null, true)
+			_spawn_cabbage_projectile_at(r, fake_target, null, true, i * 0.04)
 	else:
+		var idx = 0
 		for tgt in targets:
 			var tgt_row = tgt.row if "row" in tgt else row
 			var landing_pos = tgt.global_position if is_instance_valid(tgt) else Vector2(1400.0, 500.0)
-			_spawn_cabbage_projectile_at(tgt_row, landing_pos, tgt, true)
+			_spawn_cabbage_projectile_at(tgt_row, landing_pos, tgt, true, (idx % 8) * 0.03)
+			idx += 1
 
 func _on_use_special() -> void:
 	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/match.ogg"):

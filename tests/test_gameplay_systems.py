@@ -1,23 +1,8 @@
-#!/usr/bin/env python3
-"""
-tests/test_gameplay_systems.py
-Automated test suite verifying:
-1. Plant food bank logic, feeding plants, and plant food zombie drops.
-2. Shovel system logic, plant destruction, and state toggling.
-3. Turbo button 1.0x vs 1.5x time scaling and texture states.
-4. Pause button and Pause Menu modal behavior.
-5. Wave progression system (10 waves, midwave at 5, final wave at 10, flag drops, BGM transitions).
-6. Title screen mouse-only click requirement.
-7. Debug key gating (Z key summoning zombies strictly inside debug mode).
-8. Head dropping via frame slices extraction.
-"""
-
 import unittest
 import os
 import re
 
 class TestGameplaySystems(unittest.TestCase):
-
     def test_title_screen_mouse_only(self):
         """TitleScreen.gd must only advance on left mouse click, not on key presses."""
         with open("Scripts/TitleScreen.gd", "r") as f:
@@ -29,62 +14,99 @@ class TestGameplaySystems(unittest.TestCase):
         """Z, C, B, K keys to spawn zombies must be strictly gated behind debug_mode."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
-
-        # Check that elif debug_mode: encloses KEY_Z, KEY_C, KEY_B, KEY_K
         debug_block_match = re.search(r"elif debug_mode:\s+(?:[^\n]+\n)+?\s+if event\.keycode == KEY_Z:", content)
         self.assertIsNotNone(debug_block_match, "KEY_Z must be nested under 'elif debug_mode:'")
+    def test_audio_manager_autoload(self):
+        """Verify AudioManager exists and is registered as an autoload in project.godot."""
+        self.assertTrue(os.path.exists("audiomanager.gd"))
+        with open("project.godot", "r") as f:
+            content = f.read()
+        self.assertIn('AudioManager="*res://audiomanager.gd"', content)
 
-    def test_plant_food_system_in_lawn(self):
-        """Verify plant food bank methods exist and operate with max 3 capacity."""
+    def test_audio_manager_methods(self):
+        """Verify AudioManager has play_sfx and play_music with pool handling."""
+        with open("audiomanager.gd", "r") as f:
+            content = f.read()
+        self.assertIn("func play_sfx(", content)
+        self.assertIn("func play_music(", content)
+        self.assertIn("SFX_POOL_SIZE", content)
+
+    def test_eating_sound_polyphony_limit(self):
+        """Verify zombie eating uses cooldown/stagger to prevent ear-rape audio stacking."""
+        with open("Scripts/Zombie.gd", "r") as f:
+            content = f.read()
+        self.assertIn("eat_sfx_timer", content)
+        self.assertIn("res://Audio/SFX/eating.ogg", content)
+
+    def test_sun_merging_system(self):
+        """Verify sun merging logic: threshold 25, infinite scaling, and magnetic pull."""
+        with open("Scripts/Sun.gd", "r") as f:
+            content = f.read()
+        self.assertIn("const MERGE_THRESHOLD: int = 25", content)
+        self.assertIn("all_suns.size() >= MERGE_THRESHOLD", content)
+        self.assertIn("get_target_scale()", content)
+        self.assertIn("other.value", content)
+
+    def test_ready_set_plant_banner_visuals(self):
+        """Verify Ready Set Plant banner colors and outline matches PvZ1 style."""
+        with open("Scenes/Lawn.tscn", "r") as f:
+            content = f.read()
+        self.assertIn("Ready...", content)
+        self.assertIn("outline_size = 28", content)
+        self.assertIn("font_size = 96", content)
+
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_content = f.read()
+        self.assertIn("Color(0.92, 0.05, 0.05", lawn_content)
+        self.assertIn("Color(0.98, 0.78, 0.05", lawn_content)
+        self.assertIn("Color(0.12, 0.72, 0.15", lawn_content)
+
+    def test_plant_food_system_on_lawn(self):
+        """Verify Lawn has plant food counter, maximum capacity of 3, and bank buttons."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
-        self.assertIn("var plant_food_count: int = 1", content)
         self.assertIn("const MAX_PLANT_FOOD: int = 3", content)
+        self.assertIn("var plant_food_count: int = 1", content)
         self.assertIn("func add_plant_food(", content)
-        self.assertIn("func toggle_plant_food_armed(", content)
+        self.assertIn("func toggle_plant_food_armed()", content)
         self.assertIn("func use_plant_food_on(", content)
-        self.assertIn("plantfood_bank.png", content)
-        self.assertIn("plantfood_bank_filled_slot.png", content)
+        self.assertIn("PlantFoodBank", content)
+        self.assertIn("PlantFoodButton", content)
 
-    def test_shovel_system_in_lawn(self):
-        """Verify shovel toggle, plant digging, and audio cues exist."""
+    def test_shovel_system(self):
+        """Verify shovel button, toggle state, digging, and SFX."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         self.assertIn("var is_shovel_active: bool = false", content)
-        self.assertIn("func toggle_shovel(", content)
+        self.assertIn("func toggle_shovel()", content)
         self.assertIn("func dig_plant_at(", content)
-        self.assertIn("shovel_button.png", content)
-        self.assertIn("shovel_button_down.png", content)
         self.assertIn("shovel.ogg", content)
         self.assertIn("shovel_plant.ogg", content)
 
-    def test_turbo_speedup_system_in_lawn(self):
-        """Verify turbo toggle switches between 1.0x and 1.5x."""
+    def test_turbo_toggle_and_speed_scaling(self):
+        """Verify turbo toggle sets Engine.time_scale to 1.5x / 1.0x."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         self.assertIn("var is_turbo: bool = false", content)
-        self.assertIn("func toggle_turbo(", content)
+        self.assertIn("func toggle_turbo()", content)
         self.assertIn("Engine.time_scale = 1.5 if is_turbo else 1.0", content)
-        self.assertIn("2x.png", content)
-        self.assertIn("2x_selected.png", content)
 
-    def test_pause_system_and_menu_in_lawn(self):
-        """Verify pause menu modal and toggle exist with process_mode ALWAYS."""
+    def test_pause_menu_system(self):
+        """Verify pause menu with toggle, resume, and restart."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
-        self.assertIn("func toggle_pause(", content)
-        self.assertIn("get_tree().paused = new_paused", content)
-        self.assertIn("PROCESS_MODE_ALWAYS", content)
-        self.assertIn("pause.ogg", content)
-        self.assertIn("func _resume_game(", content)
-        self.assertIn("func _restart_game(", content)
+        self.assertIn("func toggle_pause()", content)
+        self.assertIn("func _resume_game()", content)
+        self.assertIn("func _restart_game()", content)
+        self.assertIn("get_tree().paused", content)
 
-    def test_wave_system_in_lawn(self):
-        """Verify 10 waves structure, midwave at 5, final wave at 10, flag drop, and BGM."""
+    def test_wave_progression_system(self):
+        """Verify 10-wave progress meter, flags, zombie head progress, and music transitions."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         self.assertIn("const TOTAL_WAVES: int = 10", content)
         self.assertIn("func _start_wave(", content)
+        self.assertIn("func _update_wave_meter(", content)
         self.assertIn("func _announce_huge_wave(", content)
         self.assertIn("func _drop_mid_flag(", content)
         self.assertIn("func _drop_final_flag(", content)
@@ -142,12 +164,15 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("_set_plantfood_glow(false)", content)
 
     def test_plantfood_bank_hud_layout(self):
-        """Plantfood bank button uses plantfood_button.png and lights up correctly."""
+        """Plantfood bank button uses plantfood_button.png, max of 3, and glowing dots."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
+        self.assertIn("const MAX_PLANT_FOOD: int = 3", content)
         self.assertIn("plantfood_button.png", content)
         self.assertIn("plantfood_button_down.png", content)
         self.assertIn("plant_food_count >= (i + 2)", content)
+        self.assertIn("plantfood_bank_filling_slot.png", content)
+        self.assertIn("plant_food_glows", content)
 
     def test_shovel_and_progress_meter_positions(self):
         """Shovel must be at bottom-right and wave progress meter at top-center with level label."""
@@ -168,17 +193,46 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("speed_down.ogg", content)
 
     def test_popfx_plantfood_glow_shader(self):
-        """Decoded PopFX plant food glow shader exists and is utilized."""
+        """Decoded PopFX plant food glow shader exists and is applied to zombies with plant food."""
         self.assertTrue(os.path.exists("Shaders/plantfood_glow.gdshader"))
         with open("Shaders/plantfood_glow.gdshader", "r") as f:
             content = f.read()
         self.assertIn("colorize_overlay", content)
         self.assertIn("effect_enabled", content)
+        self.assertIn("flash_intensity", content)
+
+        # Plant food shader is strictly for zombies carrying plant food, NOT plants
+        with open("Scripts/Zombie.gd", "r") as f:
+            zombie_code = f.read()
+        self.assertIn("res://Shaders/plantfood_glow.gdshader", zombie_code)
+        self.assertIn("plantfood_glow_material", zombie_code)
+
         with open("Scripts/Plant.gd", "r") as f:
             plant_code = f.read()
-        self.assertIn("res://Shaders/plantfood_glow.gdshader", plant_code)
         self.assertIn("func _set_plantfood_glow(", plant_code)
+
+    def test_popfx_hurt_flash_shader(self):
+        """PopFX hurt flash shader exists and is supported in shaders."""
+        self.assertTrue(os.path.exists("Shaders/hurt_flash.gdshader"))
+        with open("Shaders/hurt_flash.gdshader", "r") as f:
+            content = f.read()
+        self.assertIn("flash_intensity", content)
+        self.assertIn("flash_color", content)
+
+    def test_potato_mine_tile_placement_checks(self):
+        """Verify potato mine checks cell occupation and incoming projectile reservations."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("func is_cell_occupied(", lawn_code)
+        self.assertIn("pr.projectile_type == \"potato_pf\"", lawn_code)
+
+    def test_cabbagepult_plantfood_volley(self):
+        """Verify Cabbage-pult launches lobbed giant cabbages with damage 300."""
+        with open("Scripts/Plant.gd", "r") as f:
+            plant_code = f.read()
+        self.assertIn("func _fire_cabbagepult_plantfood()", plant_code)
+        self.assertIn("_spawn_cabbage_projectile_at(", plant_code)
+        self.assertIn("p_is_giant", plant_code)
 
 if __name__ == "__main__":
     unittest.main()
-

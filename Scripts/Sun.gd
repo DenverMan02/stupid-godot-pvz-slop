@@ -8,6 +8,7 @@ signal collected(value: int)
 @export var auto_collect: bool = false
 
 const BASE_SCALE: float = 0.85
+const MERGE_THRESHOLD: int = 25
 
 var target_pos: Vector2 = Vector2.ZERO
 var is_falling: bool = false
@@ -78,7 +79,7 @@ func _process(delta: float) -> void:
 
 	# Sun merging: if >= 25 suns on screen, gravitate like a magnet within 150px and merge infinitely
 	var all_suns = get_tree().get_nodes_in_group("suns")
-	if all_suns.size() >= 25 and not is_falling:
+	if all_suns.size() >= MERGE_THRESHOLD and not is_falling:
 		for other in all_suns:
 			if other is Sun and other != self and is_instance_valid(other) and not other.is_collected and not other.is_falling:
 				var dist = global_position.distance_to(other.global_position)

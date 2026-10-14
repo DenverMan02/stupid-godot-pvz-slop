@@ -65,10 +65,31 @@ func set_female_variant(val: bool) -> void:
 			if sprite.is_playing:
 				sprite.play(sprite.current_animation, sprite.loop)
 
+var plantfood_glow_material: ShaderMaterial = null
+
 func setup_plant_food(val: bool = true) -> void:
 	has_plant_food = val
-	if sprite:
-		sprite.modulate = Color(0.4, 1.8, 0.4, 1.0) if has_plant_food else Color.WHITE
+	_update_plant_food_visuals()
+
+func _update_plant_food_visuals() -> void:
+	if not sprite:
+		return
+	if has_plant_food:
+		if plantfood_glow_material == null:
+			if ResourceLoader.exists("res://Shaders/plantfood_glow.gdshader"):
+				var shader_res = load("res://Shaders/plantfood_glow.gdshader")
+				plantfood_glow_material = ShaderMaterial.new()
+				plantfood_glow_material.shader = shader_res
+		if plantfood_glow_material:
+			plantfood_glow_material.set_shader_parameter("effect_enabled", true)
+			plantfood_glow_material.set_shader_parameter("params", Color(0.35, 1.0, 0.45, 0.65))
+			plantfood_glow_material.set_shader_parameter("intensity", 0.8)
+			sprite.material = plantfood_glow_material
+		sprite.modulate = Color.WHITE
+	else:
+		if sprite.material == plantfood_glow_material:
+			sprite.material = null
+		sprite.modulate = Color.WHITE
 
 func setup_flag_variant() -> void:
 	is_flag_zombie = true
@@ -218,6 +239,8 @@ func _set_state(new_state: State) -> void:
 			tw.tween_callback(queue_free)
 
 func _drop_plant_food() -> void:
+	has_plant_food = false
+	_update_plant_food_visuals()
 	var pf_scene = load("res://Scenes/PlantFoodItem.tscn")
 	if pf_scene:
 		var pf_inst = pf_scene.instantiate()
@@ -237,11 +260,19 @@ func _flash_hurt() -> void:
 		return
 	if hurt_tween and hurt_tween.is_valid():
 		hurt_tween.kill()
-	sprite.modulate = Color(2.5, 2.5, 2.5, 1.0)
-	var normal_col = Color(0.4, 1.8, 0.4, 1.0) if has_plant_food else Color.WHITE
-	hurt_tween = create_tween()
-	hurt_tween.tween_property(sprite, "modulate", normal_col, 0.08)
 
+	if sprite.material is ShaderMaterial:
+		var sm = sprite.material as ShaderMaterial
+		sm.set_shader_parameter("flash_intensity", 1.0)
+		hurt_tween = create_tween()
+		hurt_tween.tween_method(func(val: float):
+			if is_instance_valid(sm):
+				sm.set_shader_parameter("flash_intensity", val)
+		, 1.0, 0.0, 0.08)
+	else:
+		sprite.modulate = Color(2.5, 2.5, 2.5, 1.0)
+		hurt_tween = create_tween()
+		hurt_tween.tween_property(sprite, "modulate", Color.WHITE, 0.08)
 func take_damage(amount: float) -> void:
 	if current_state == State.DIE:
 		return

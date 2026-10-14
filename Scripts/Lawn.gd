@@ -118,6 +118,7 @@ var plant_food_count: int = 1
 const MAX_PLANT_FOOD: int = 3
 var is_plant_food_active: bool = false
 var plant_food_slots: Array[TextureRect] = []
+var plant_food_glows: Array[TextureRect] = []
 var pf_main_btn: TextureButton = null
 var floating_pf_icon: Sprite2D = null
 
@@ -217,17 +218,32 @@ func _setup_hud() -> void:
 	pf_main_btn.visible = (plant_food_count >= 1)
 	pf_bank_ctrl.add_child(pf_main_btn)
 
-	# 3 small leaf slots for extra plant food charges (aligned with sockets in plantfood_bank.png)
-	var slot_offsets = [Vector2(98.0, 41.0), Vector2(130.0, 41.0), Vector2(163.0, 41.0)]
+	# 2 small leaf slots for extra plant food charges (base MAX_PLANT_FOOD = 3)
+	var slot_offsets = [Vector2(98.0, 41.0), Vector2(130.0, 41.0)]
 	plant_food_slots.clear()
-	for i in range(3):
+	plant_food_glows.clear()
+	for i in range(MAX_PLANT_FOOD - 1):
 		var slot_tex = TextureRect.new()
+		slot_tex.name = "PlantFoodSlot_%d" % i
 		slot_tex.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_filled_slot.png")
 		slot_tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		slot_tex.size = Vector2(32.0, 33.0)
 		slot_tex.position = slot_offsets[i]
 		slot_tex.visible = (plant_food_count >= (i + 2))
 		slot_tex.mouse_filter = Control.MOUSE_FILTER_IGNORE
+
+		# Glowing dot effect around each filled slot
+		var glow_tex = TextureRect.new()
+		glow_tex.name = "GlowDot"
+		glow_tex.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_filling_slot.png")
+		glow_tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		glow_tex.size = Vector2(40.0, 40.0)
+		glow_tex.position = Vector2(-4.0, -3.5)
+		glow_tex.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		glow_tex.modulate = Color(1.2, 2.0, 1.2, 0.8)
+		slot_tex.add_child(glow_tex)
+		plant_food_glows.append(glow_tex)
+
 		pf_bank_ctrl.add_child(slot_tex)
 		plant_food_slots.append(slot_tex)
 
@@ -461,6 +477,7 @@ func _on_pan_finished() -> void:
 		# Set...
 		tw.tween_callback(func():
 			start_label.text = "Set..."
+			start_label.set("theme_override_colors/font_color", Color(0.98, 0.78, 0.05, 1.0))
 			start_label.scale = Vector2(0.65, 0.65)
 		)
 		tw.tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
@@ -468,6 +485,7 @@ func _on_pan_finished() -> void:
 		# PLANT!
 		tw.tween_callback(func():
 			start_label.text = "PLANT!"
+			start_label.set("theme_override_colors/font_color", Color(0.12, 0.72, 0.15, 1.0))
 			start_label.scale = Vector2(0.65, 0.65)
 		)
 		tw.tween_property(start_label, "scale", Vector2(1.3, 1.3), 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
@@ -491,6 +509,13 @@ func _on_gameplay_start() -> void:
 	_start_wave(1)
 
 func _process(delta: float) -> void:
+	# Pulsing glow animation for plant food glowing dots
+	if not plant_food_glows.is_empty():
+		var pulse = 0.65 + 0.35 * sin(Time.get_ticks_msec() * 0.007)
+		for g in plant_food_glows:
+			if is_instance_valid(g) and g.is_visible_in_tree():
+				g.modulate = Color(1.1 + 0.4 * pulse, 1.6 + 0.8 * pulse, 1.1 + 0.4 * pulse, 0.6 + 0.4 * pulse)
+
 	if not level_started or level_finished:
 		return
 
@@ -864,8 +889,14 @@ func _restart_game() -> void:
 
 func is_cell_occupied(col: int, row: int) -> bool:
 	for p in plants_container.get_children():
-		if p.get("col") == col and p.get("row") == row:
+		if p.get("col") == col and p.get("row") == row and not p.is_queued_for_deletion():
 			return true
+	var proj_container = get_node_or_null("Projectiles")
+	if proj_container:
+		for pr in proj_container.get_children():
+			if pr is Projectile and not pr.is_queued_for_deletion() and pr.projectile_type == "potato_pf":
+				if pr.target_cell == Vector2i(col, row):
+					return true
 	return false
 
 func _get_plant_at_cell(col: int, row: int) -> Node2D:

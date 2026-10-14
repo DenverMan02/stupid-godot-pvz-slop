@@ -203,7 +203,8 @@ func _process(delta: float) -> void:
 	zombie_spawn_timer -= delta
 	if zombie_spawn_timer <= 0.0:
 		zombie_spawn_timer = randf_range(14.0, 20.0)
-		spawn_zombie()
+		var armor_choice = "cone" if randf() < 0.35 else "none"
+		spawn_zombie(-1, 2254.0, armor_choice)
 
 func _spawn_sky_sun() -> void:
 	if not sun_scene:
@@ -224,7 +225,7 @@ func _spawn_sky_sun() -> void:
 		add_sun(val)
 	)
 
-func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0) -> void:
+func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0, armor: String = "none") -> void:
 	if not zombie_scene:
 		return
 	if row_idx < 0 or row_idx >= grid.rows:
@@ -234,6 +235,8 @@ func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0) -> void:
 	var z_inst: Zombie = zombie_scene.instantiate()
 	z_inst.row = row_idx
 	z_inst.position = Vector2(start_x, spawn_y)
+	if armor != "none":
+		z_inst.setup_armor(armor)
 
 	# 50% chance to replace with fem variant
 	var is_fem = randf() < 0.5
@@ -250,7 +253,7 @@ func spawn_zombie(row_idx: int = -1, start_x: float = 2254.0) -> void:
 		zombies_container.add_child(z_inst)
 	else:
 		add_child(z_inst)
-	print("[Lawn] Spawned %szombie on row %d at x=%.1f" % ["female " if is_fem else "", row_idx, start_x])
+	print("[Lawn] Spawned %s%szombie on row %d at x=%.1f" % [("conehead " if armor == "cone" else ""), ("female " if is_fem else ""), row_idx, start_x])
 
 func add_sun(val: int) -> void:
 	sun_amount += val
@@ -293,7 +296,15 @@ func _unhandled_input(event: InputEvent) -> void:
 			var cell = grid.world_to_cell(mouse_pos)
 			var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
 			var spawn_x = mouse_pos.x if debug_mode else 2254.0
-			spawn_zombie(target_row, spawn_x)
+			spawn_zombie(target_row, spawn_x, "none")
+
+		# C key to spawn a conehead zombie
+		elif event.keycode == KEY_C:
+			var mouse_pos = get_global_mouse_position()
+			var cell = grid.world_to_cell(mouse_pos)
+			var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
+			var spawn_x = mouse_pos.x if debug_mode else 2254.0
+			spawn_zombie(target_row, spawn_x, "cone")
 
 		# Number keys 1-8 to select active plant to spawn (debug feature)
 		elif event.keycode in [KEY_1, KEY_KP_1]:

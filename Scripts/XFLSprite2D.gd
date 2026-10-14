@@ -23,6 +23,10 @@ var loop: bool = true
 var current_frame: int = 0
 var time_accumulator: float = 0.0
 
+@export var has_armor_cone: bool = false
+@export var armor_cone_state: int = 0 # 0: norm, 1: dmg1, 2: dmg2
+@export var has_lost_arm: bool = false
+
 var _anim_data: Dictionary = {}
 var _loaded_textures: Array[Texture2D] = []
 var _frame_rate: float = 30.0
@@ -198,6 +202,30 @@ func _check_frame_events(frame_idx: int) -> void:
 		var event_name = events_map[key]
 		anim_event.emit(event_name)
 
+func set_armor_cone(active: bool, state: int = 0) -> void:
+	has_armor_cone = active
+	armor_cone_state = state
+	queue_redraw()
+
+func set_arm_lost(lost: bool) -> void:
+	has_lost_arm = lost
+	queue_redraw()
+
+func _is_tag_visible(tag: int) -> bool:
+	match tag:
+		1: # Cone norm
+			return has_armor_cone and armor_cone_state == 0
+		2: # Cone dmg 1
+			return has_armor_cone and armor_cone_state == 1
+		3: # Cone dmg 2
+			return has_armor_cone and armor_cone_state == 2
+		4: # Arm flesh
+			return not has_lost_arm and current_animation != "die"
+		5: # Arm bone stump
+			return has_lost_arm or current_animation == "die"
+		_:
+			return true
+
 func _draw() -> void:
 	var anims = _anim_data.get("animations", {})
 	var anim_info = anims.get(current_animation, {})
@@ -207,6 +235,11 @@ func _draw() -> void:
 
 	var slice_list = frames[current_frame]
 	for slice in slice_list:
+		if slice.size() > 7:
+			var tag = int(slice[7])
+			if not _is_tag_visible(tag):
+				continue
+
 		var tex_id = int(slice[0])
 		if tex_id < 0 or tex_id >= _loaded_textures.size():
 			continue

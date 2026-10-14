@@ -7,12 +7,19 @@ enum State {
 	DIE
 }
 
-@export var max_health: float = 200.0
-@export var health: float = 200.0
+# Official PvZ2 OBB stats: ZombieTutorialDefault Hitpoints = 190.0
+@export var max_health: float = 190.0
+@export var health: float = 190.0
 @export var walk_speed: float = 33.38
 @export var bite_damage: float = 100.0 # damage per second
 @export var row: int = 2
 @export var is_female: bool = false
+
+# Armor configuration: ConeDefault BaseHealth = 370.0
+@export var armor_type: String = "none" # "none" or "cone"
+@export var armor_health: float = 0.0
+@export var max_armor_health: float = 370.0
+@export var has_lost_arm: bool = false
 
 var current_state: State = State.WALK
 var target_plant: Node2D = null
@@ -20,6 +27,18 @@ var eat_sfx_timer: float = 0.0
 
 @onready var sprite: XFLSprite2D = $XFLSprite2D
 @onready var shadow: Sprite2D = $Shadow
+
+func setup_armor(p_armor_type: String) -> void:
+	armor_type = p_armor_type
+	if armor_type == "cone":
+		max_armor_health = 370.0
+		armor_health = 370.0
+		if sprite:
+			sprite.set_armor_cone(true, 0)
+	else:
+		armor_health = 0.0
+		if sprite:
+			sprite.set_armor_cone(false, 0)
 
 func set_female_variant(val: bool) -> void:
 	is_female = val
@@ -30,6 +49,8 @@ func set_female_variant(val: bool) -> void:
 		sprite.textures_base_dir = tex_dir
 		if sprite.is_inside_tree():
 			sprite.set_animation_source(anim_json, tex_dir)
+			sprite.has_armor_cone = (armor_type == "cone" and armor_health > 0.0)
+			sprite.has_lost_arm = has_lost_arm
 			if sprite.is_playing:
 				sprite.play(sprite.current_animation, sprite.loop)
 
@@ -37,7 +58,10 @@ func _ready() -> void:
 	health = max_health
 	if is_female:
 		set_female_variant(true)
+	if armor_type != "none":
+		setup_armor(armor_type)
 	if sprite:
+		sprite.has_lost_arm = has_lost_arm
 		sprite.play("walk", true)
 		sprite.anim_finished.connect(_on_anim_finished)
 
@@ -146,6 +170,8 @@ func _set_state(new_state: State) -> void:
 			if sprite:
 				sprite.play("eat", true)
 		State.DIE:
+			if not has_lost_arm and sprite:
+				sprite.set_arm_lost(true)
 			if sprite:
 				sprite.play("die", false)
 			var tw = create_tween()
@@ -156,7 +182,6 @@ func _set_state(new_state: State) -> void:
 func take_damage(amount: float) -> void:
 	if current_state == State.DIE:
 		return
-	health -= amount
 
 	# Flash white on hit
 	if sprite:
@@ -164,8 +189,77 @@ func take_damage(amount: float) -> void:
 		var tw = create_tween()
 		tw.tween_property(sprite, "modulate", Color.WHITE, 0.08)
 
+	# 1. Armor absorbs damage first (ConeDefault)
+	if armor_health > 0.0:
+		var dmg_to_armor = minf(armor_health, amount)
+		var excess_dmg = amount - dmg_to_armor
+		armor_health -= dmg_to_armor
+
+		# Official PvZ2 ArmorLayerHealth thresholds: [260.0, 130.0]
+		if armor_health > 260.0:
+			if sprite:
+				sprite.set_armor_cone(true, 0)
+		elif armor_health > 130.0:
+			if sprite:
+				sprite.set_armor_cone(true, 1)
+		elif armor_health > 0.0:
+			if sprite:
+				sprite.set_armor_cone(true, 2)
+		else:
+			# Armor destroyed! Drop cone
+			drop_armor()
+			armor_health = 0.0
+
+		if excess_dmg > 0.0:
+			_apply_body_damage(excess_dmg)
+	else:
+		_apply_body_damage(amount)
+
+func _apply_body_damage(amount: float) -> void:
+	health -= amount
+
+	# Official PvZ2 threshold: ArmDropFraction = 2/3 (health <= 126.66)
+	if not has_lost_arm and health <= max_health * (2.0 / 3.0):
+		drop_arm()
+
 	if health <= 0.0:
+		if armor_health > 0.0:
+			drop_armor()
+			armor_health = 0.0
 		_set_state(State.DIE)
+
+func drop_arm() -> void:
+	if has_lost_arm:
+		return
+	has_lost_arm = true
+	if sprite:
+		sprite.set_arm_lost(true)
+
+	var tex_dir = sprite.textures_base_dir if sprite else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
+	var particle = ZombieParticle.new()
+	particle.setup_arm(tex_dir, global_position.y)
+	# Shoulder socket offset relative to zombie root
+	particle.global_position = global_position + Vector2(4.0, -103.0)
+	particle.z_index = z_index + 1
+
+	var target_parent = get_parent() if get_parent() else get_tree().current_scene
+	if target_parent:
+		target_parent.add_child(particle)
+
+func drop_armor() -> void:
+	if sprite:
+		sprite.set_armor_cone(false, 0)
+
+	var tex_dir = sprite.textures_base_dir if sprite else "res://Assets/Zombies/zombie_tutorial.xfl/library/"
+	var particle = ZombieParticle.new()
+	particle.setup_cone(tex_dir, global_position.y, 2)
+	# Head/cone offset relative to zombie root
+	particle.global_position = global_position + Vector2(-36.5, -215.0)
+	particle.z_index = z_index + 1
+
+	var target_parent = get_parent() if get_parent() else get_tree().current_scene
+	if target_parent:
+		target_parent.add_child(particle)
 
 func _on_anim_finished(anim_name: String) -> void:
 	if anim_name == "die":

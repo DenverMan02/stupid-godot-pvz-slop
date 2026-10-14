@@ -87,9 +87,9 @@ def compile_plant_from_dir(plant_dir, output_path=None):
         return texture_map[path]
 
     COSTUME_KEYWORDS = ['custom', 'costume', 'halloween', 'valenbrainz', 'feastivus', 'springening', 'summernights', 'birthdayz', 'shades', 'sunglasses', 'earmuff', 'monocle', 'tophat']
-    ZOMBIE_HIDE_KEYWORDS = ['butter', 'ink', 'ground_swatch', 'brick', 'bucket', 'cone', 'zombie_arm_outer_upper_bone', '_particles']
+    ZOMBIE_HIDE_KEYWORDS = ['butter', 'ink', 'ground_swatch', 'brick', 'bucket', '_particles']
 
-    def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False):
+    def eval_sym(sym_name, frame_idx, parent_mat, draw_list, anim_name, is_root=False, current_tag=0):
         lower_name = sym_name.lower()
         if any(k in lower_name for k in COSTUME_KEYWORDS):
             return
@@ -97,8 +97,21 @@ def compile_plant_from_dir(plant_dir, output_path=None):
             return
         if 'gatlingpea_helmet_screw' in lower_name:
             return
-        if anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name or 'helmet' in lower_name):
+        if not is_zombie and anim_name != 'plantfood' and ('gatlingpea_' in lower_name or 'armor' in lower_name or 'helmet' in lower_name):
             return
+
+        tag_to_use = current_tag
+        if is_zombie:
+            if 'zombie_armor_cone_norm' in lower_name:
+                tag_to_use = 1
+            elif 'zombie_armor_cone_damage_01' in lower_name:
+                tag_to_use = 2
+            elif 'zombie_armor_cone_damage_02' in lower_name:
+                tag_to_use = 3
+            elif 'zombie_arm_outer_upper_bone' in lower_name:
+                tag_to_use = 5
+            elif any(k in lower_name for k in ['zombie_arm_outer_upper', 'zombie_arm_outer_lower', 'zombie_hand_outer_']):
+                tag_to_use = 4
 
         dom = get_sym(sym_name)
         if dom is None:
@@ -129,7 +142,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                 continue
             if is_zombie and any(k in lname for k in ZOMBIE_HIDE_KEYWORDS):
                 continue
-            if anim_name != 'plantfood' and 'armor' in lname:
+            if not is_zombie and anim_name != 'plantfood' and 'armor' in lname:
                 continue
 
             active_frame = None
@@ -165,7 +178,10 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                     t_id = get_tex_id(img_name)
                     local_m = parse_matrix_elem(el)
                     final_m = mult_matrix(parent_mat, local_m)
-                    draw_list.append([t_id] + [round(v, 4) for v in final_m])
+                    entry = [t_id] + [round(v, 4) for v in final_m]
+                    if tag_to_use != 0:
+                        entry.append(tag_to_use)
+                    draw_list.append(entry)
                 elif tag == 'DOMSymbolInstance':
                     sub_name = el.attrib.get('libraryItemName')
                     sub_first = int(el.attrib.get('firstFrame', 0))
@@ -173,7 +189,7 @@ def compile_plant_from_dir(plant_dir, output_path=None):
                     sub_f = sub_first if loop_type == 'single frame' else (sub_first + eval_f)
                     local_m = parse_matrix_elem(el)
                     final_m = mult_matrix(parent_mat, local_m)
-                    eval_sym(sub_name, sub_f, final_m, draw_list, anim_name, is_root=False)
+                    eval_sym(sub_name, sub_f, final_m, draw_list, anim_name, is_root=False, current_tag=tag_to_use)
 
     anim_defs = {}
     action_events = {}

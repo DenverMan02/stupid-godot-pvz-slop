@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="label/animation" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0" duration="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/pole_01" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="1.00021362304688" b="-0.0337066650390625" c="0.0426177978515625" d="0.99822998046875" tx="63.15" ty="214.6"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0" duration="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/pole_02" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.99835205078125" b="-0.0357208251953125" c="0.061279296875" d="0.999237060546875" tx="191.85" ty="205.15"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

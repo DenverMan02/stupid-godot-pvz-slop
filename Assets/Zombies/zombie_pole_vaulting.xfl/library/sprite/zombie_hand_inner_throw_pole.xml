@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/zombie_hand_inner_throw_pole" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="zombie_hand_inner_throw_pole">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_hand_inner4b_pole" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.965438842773438" b="-0.0327911376953125" c="0.0353546142578125" d="1.04161071777344" tx="0.3" ty="-0.35"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/Pole" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="-0.820114135742188" b="-0.6431884765625" c="0.6431884765625" d="-0.820114135742188" tx="99.85" ty="86.6"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_hand_inner_05_pole" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.965438842773438" b="-0.0327911376953125" c="0.0353546142578125" d="1.04161071777344" tx="0.3" ty="-0.35"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

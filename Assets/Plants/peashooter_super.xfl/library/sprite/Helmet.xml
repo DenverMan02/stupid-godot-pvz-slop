@@ -1,0 +1,41 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/Helmet" itemID="77acab09-ddc0496a" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="Helmet">
+      <layers>
+        <DOMLayer name="Layer 3" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/gatlingpea_helmet_front" symbolType="graphic" loop="loop" firstFrame="0">
+                  <matrix><Matrix a="0.894012" d="0.894012" tx="-41.4" ty="-43.1"/></matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/gatlingpea_helmet_strap" symbolType="graphic" loop="loop" firstFrame="0">
+                  <matrix><Matrix a="0.894012" d="0.894012" tx="-18.5" ty="25.9"/></matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/gatlingpea_helmet_strap_chin" symbolType="graphic" loop="loop" firstFrame="0">
+                  <matrix><Matrix a="0.894012" d="0.894012" tx="-24.25" ty="5.55"/></matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

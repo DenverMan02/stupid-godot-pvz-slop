@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/zombie_arms_outer_upper" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="zombie_arms_outer_upper">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_arm_outer_upper" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.998942186547508" b="-0.045983779049605" c="0.045983779049605" d="0.998942186547508" tx="-1.35" ty="0.45"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_arm_outer_upper_bone" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.998542354259564" b="-0.0539737598261096" c="0.0539737598261096" d="0.998542354259564" tx="-0.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

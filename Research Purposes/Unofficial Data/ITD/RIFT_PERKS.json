@@ -1,0 +1,2794 @@
+{
+	"#comment": "Insert new Perks here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "PennyPerkTrafficJamProperties", 
+			"aliases": [
+				"trafficjam"
+			], 
+			"objdata": {
+				"TypeName": "trafficjam", 
+				"ClassName": "PennyPerkTrafficJam", 
+				"Description": "[TRAFFIC_JAM_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_TRAFFICJAM", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"ZombieDelayLevels": [
+					1.5, 
+					2, 
+					2.5, 
+					3, 
+					3.5, 
+					4, 
+					4.5, 
+					5, 
+					5.5, 
+					6
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMoreScoreProperties", 
+			"aliases": [
+				"moarscore"
+			], 
+			"objdata": {
+				"TypeName": "moarscore", 
+				"ClassName": "PennyPerkMoreScore", 
+				"Description": "[MOAR_SCORE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MOARSCORE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"zomboss"
+				], 
+				"ScoreBonusPercentage": [
+					1.05, 
+					1.06, 
+					1.065, 
+					1.07, 
+					1.075, 
+					1.08, 
+					1.085, 
+					1.09, 
+					1.095, 
+					1.1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkSunBreakProperties", 
+			"aliases": [
+				"sunbreak"
+			], 
+			"objdata": {
+				"TypeName": "sunbreak", 
+				"ClassName": "PennyPerkSunBreak", 
+				"Description": "[SUN_BREAK_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_FASTERSUN", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"minigame"
+				], 
+				"LevelTypesWhereDisabled": [
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"NumberOfBursts": [
+					5, 
+					6, 
+					7, 
+					7, 
+					8, 
+					8, 
+					9, 
+					9, 
+					9, 
+					10
+				], 
+				"SunPerBurst": [
+					150, 
+					150, 
+					150, 
+					175, 
+					175, 
+					200, 
+					200, 
+					225, 
+					250, 
+					250
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkZombieInhibitorProperties", 
+			"aliases": [
+				"zombieinhibitorgargantuar"
+			], 
+			"objdata": {
+				"TypeName": "zombieinhibitorgargantuar", 
+				"ClassName": "PennyPerkZombieInhibitor", 
+				"Description": "[ZOMBIE_INHIBITOR_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_ZOMBIEINHIBITOR]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_INHIBITOR", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"LevelDescriptions": [
+					"[GARGANTUAR_INHIBITOR_DESCRIPTION]", 
+					"[GARGANTUAR_INHIBITOR_DESCRIPTION]", 
+					"[GARGANTUAR_INHIBITOR_DESCRIPTION]"
+				], 
+				"ZombiesToRemove": [
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieGargantuar"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieGargantuar"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieGargantuar"
+						]
+					}
+				], 
+				"ZombieTypeToSwapIn": "roman_armor2"
+			}
+		}, 
+		{
+			"objclass": "PennyPerkZombieInhibitorProperties", 
+			"aliases": [
+				"zombieinhibitorballista"
+			], 
+			"objdata": {
+				"TypeName": "zombieinhibitorballista", 
+				"ClassName": "PennyPerkZombieInhibitor", 
+				"Description": "[ZOMBIE_INHIBITOR_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_ZOMBIEINHIBITOR]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_INHIBITOR", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"LevelDescriptions": [
+					"[BALLISTA_INHIBITOR_DESCRIPTION]", 
+					"[BALLISTA_INHIBITOR_DESCRIPTION]", 
+					"[BALLISTA_INHIBITOR_DESCRIPTION]"
+				], 
+				"ZombiesToRemove": [
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieRomanBallista"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieRomanBallista"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieRomanBallista"
+						]
+					}
+				], 
+				"ZombieTypeToSwapIn": "cannon"
+			}
+		}, 
+		{
+			"objclass": "PennyPerkZombieInhibitorProperties", 
+			"aliases": [
+				"zombieinhibitorbirthdayz"
+			], 
+			"objdata": {
+				"TypeName": "zombieinhibitorbirthdayz", 
+				"ClassName": "PennyPerkZombieInhibitor", 
+				"Description": "[ZOMBIE_INHIBITOR_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_ZOMBIEINHIBITOR_BIRTHDAYZ]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_BIRTHDAY", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"LevelDescriptions": [
+					"[BIRTTHDAYZ_INHIBITOR_DESCRIPTION]"
+				], 
+				"ZombiesToRemove": [
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieBasic"
+						]
+					}
+				], 
+				"ZombieTypeToSwapIn": "birthday"
+			}
+		}, 
+		{
+			"objclass": "PennyPerkZombieInhibitorProperties", 
+			"aliases": [
+				"zombieinhibitorprospector"
+			], 
+			"objdata": {
+				"TypeName": "zombieinhibitorprospector", 
+				"ClassName": "PennyPerkZombieInhibitor", 
+				"Description": "[ZOMBIE_INHIBITOR_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_ZOMBIEINHIBITOR]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_INHIBITOR", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"LevelDescriptions": [
+					"[PROSPECTOR_INHIBITOR_DESCRIPTION]", 
+					"[PROSPECTOR_INHIBITOR_DESCRIPTION]", 
+					"[PROSPECTOR_INHIBITOR_DESCRIPTION]"
+				], 
+				"ZombiesToRemove": [
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieProspector"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieProspector"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieProspector"
+						]
+					}
+				], 
+				"ZombieTypeToSwapIn": "poncho"
+			}
+		}, 
+		{
+			"objclass": "PennyPerkZombieInhibitorProperties", 
+			"aliases": [
+				"zombieinhibitorhunter"
+			], 
+			"objdata": {
+				"TypeName": "zombieinhibitorhunter", 
+				"ClassName": "PennyPerkZombieInhibitor", 
+				"Description": "[ZOMBIE_INHIBITOR_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_ZOMBIEINHIBITOR]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_INHIBITOR", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"LevelDescriptions": [
+					"[HUNTER_INHIBITOR_DESCRIPTION]", 
+					"[HUNTER_INHIBITOR_DESCRIPTION]", 
+					"[HUNTER_INHIBITOR_DESCRIPTION]"
+				], 
+				"ZombiesToRemove": [
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieIceAgeHunter"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieIceAgeHunter"
+						]
+					}, 
+					{
+						"ListType": "includelist", 
+						"List": [
+							"ZombieIceAgeHunter"
+						]
+					}
+				], 
+				"ZombieTypeToSwapIn": "iceage_armor2"
+			}
+		}, 
+		{
+			"objclass": "PennyPerkBossBusterCannonProperties", 
+			"aliases": [
+				"bossbustercannon"
+			], 
+			"objdata": {
+				"TypeName": "bossbustercannon", 
+				"ClassName": "PennyPerkBossBusterCannon", 
+				"Description": "[BOSS_BUSTER_CANNON_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_BOSSBUSTERCANNON", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenStrikes": [
+					30, 
+					28, 
+					26, 
+					24, 
+					22, 
+					20, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"NumberOfHitsPerStrike": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				], 
+				"DamagePerHit": [
+					1250, 
+					1750, 
+					2250, 
+					2750, 
+					3250, 
+					3750, 
+					4250, 
+					4500, 
+					4750, 
+					5000
+				], 
+				"Projectile": "RTID(BossBusterDefault@ProjectileTypes)", 
+				"Resources": [
+					"PlantBanana"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionchill"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionchill", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_APPLYCHILL", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"ConditionDurations": [
+					5, 
+					6, 
+					6.5, 
+					7, 
+					7.5, 
+					8, 
+					8.5, 
+					9, 
+					9.5, 
+					10
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"chill"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionpoisoned"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionpoisoned", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_DAMAGE_CONDITION_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_POISON", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					45, 
+					40, 
+					37, 
+					34, 
+					32, 
+					30, 
+					28, 
+					27, 
+					26, 
+					25
+				], 
+				"ConditionDurations": [
+					3, 
+					4, 
+					5, 
+					6, 
+					7, 
+					8, 
+					9, 
+					10, 
+					11, 
+					12
+				], 
+				"ConditionDamageValues": [
+					100, 
+					100, 
+					100, 
+					100, 
+					100, 
+					100, 
+					100, 
+					100, 
+					100, 
+					100
+				], 
+				"ConditionsToApply": [
+					"poisoned"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionhypnotized"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionhypnotized", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION_HYPNOTIZED]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_HYPNOTIZE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"ConditionDurations": [
+					10, 
+					11, 
+					12, 
+					13, 
+					14, 
+					15, 
+					16, 
+					17, 
+					18, 
+					19
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"MinZombiesToAffect": [
+					3, 
+					3, 
+					4, 
+					4, 
+					5, 
+					5, 
+					6, 
+					6, 
+					7, 
+					7
+				], 
+				"MaxZombiesToAffect": [
+					3, 
+					3, 
+					4, 
+					4, 
+					5, 
+					5, 
+					6, 
+					6, 
+					7, 
+					7
+				], 
+				"ConditionsToApply": [
+					"hypnotized"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionstalled"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionstalled", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_APPLYSTALL", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16
+				], 
+				"ConditionDurations": [
+					3, 
+					3.5, 
+					4, 
+					4.5, 
+					5, 
+					5.5, 
+					6, 
+					6.5, 
+					7, 
+					7.5
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"stalled"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionsuncarrier50"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionsuncarrier50", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_SUNZOMBIES", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"zomboss"
+				], 
+				"LevelTypesWhereDisabled": [
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"TimesBetweenApplications": [
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16
+				], 
+				"ConditionDurations": [
+					5, 
+					6, 
+					6.5, 
+					7, 
+					7.5, 
+					8, 
+					8.5, 
+					9, 
+					9.5, 
+					10
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"suncarrier50"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionshrinking"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionshrinking", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION_SHRINKING]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_APPLYSHRINK", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"MinZombiesToAffect": [
+					3, 
+					4, 
+					5, 
+					6, 
+					7, 
+					8, 
+					9, 
+					10, 
+					11, 
+					12
+				], 
+				"MaxZombiesToAffect": [
+					3, 
+					4, 
+					5, 
+					6, 
+					7, 
+					8, 
+					9, 
+					10, 
+					11, 
+					12
+				], 
+				"ConditionDurations": [
+					3, 
+					3, 
+					3, 
+					3, 
+					3, 
+					3, 
+					3, 
+					3, 
+					3, 
+					3
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"shrinking"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionbutter"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionbutter", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_APPLYCHILL", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"ConditionDurations": [
+					5, 
+					6, 
+					6.5, 
+					7, 
+					7.5, 
+					8, 
+					8.5, 
+					9, 
+					9.5, 
+					10
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"butter"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionfreeze"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionfreeze", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_APPLYFREEZE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"ConditionDurations": [
+					5, 
+					6, 
+					6.5, 
+					7, 
+					7.5, 
+					8, 
+					8.5, 
+					9, 
+					9.5, 
+					10
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"freeze"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkApplyConditionProperties", 
+			"aliases": [
+				"applyconditionplantfood"
+			], 
+			"objdata": {
+				"TypeName": "applyconditionplantfood", 
+				"ClassName": "PennyPerkApplyCondition", 
+				"Description": "[APPLY_CONDITION_DESCRIPTION_PLANTFOOD]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_ZOMBIE_PLANTFOOD", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"ConditionDurations": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				], 
+				"MinZombiesToAffect": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2
+				], 
+				"MaxZombiesToAffect": [
+					1, 
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3
+				], 
+				"ConditionDamageValues": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"ConditionsToApply": [
+					"hasplantfood"
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"Description": "[MINE_IS_YOURS_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS", 
+				"PerkWarning": "[PERK_SELECTION_MINE_PLANTS_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 3, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "potatomine", 
+				"SortingMethod": "right", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_primalpotatomine"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_primalpotatomine", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"Description": "[MINE_IS_YOURS_PRIMALPOTATOMINE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS", 
+				"PerkWarning": "[PERK_SELECTION_MINE_PLANTS_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 3, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "primalpotatomine", 
+				"SortingMethod": "right", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_jalapeno"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_jalapeno", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_JALAPENO]", 
+				"Description": "[MINE_IS_YOURS_JALAPENO_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_JALAPENO", 
+				"PerkWarning": "[PERK_SELECTION_JALAPENO_PLANTS_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 1, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "jalapeno", 
+				"SortingMethod": "right", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_shinevine"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_shinevine", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_SHINEVINE]", 
+				"Description": "[MINE_IS_YOURS_SHINEVINE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_SHINEVINE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"zomboss"
+				], 
+				"LevelTypesWhereDisabled": [
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 6, 
+				"PlantTypeToSpawn": "shinevine", 
+				"SortingMethod": "left", 
+				"TimesBetweenApplications": [
+					35, 
+					32, 
+					30, 
+					30, 
+					29, 
+					28, 
+					28, 
+					27, 
+					26, 
+					25
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_goldbloom"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_goldbloom", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_GOLDBLOOM]", 
+				"Description": "[MINE_IS_YOURS_GOLDBLOOM_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_GOLDBLOOM", 
+				"PerkWarning": "[PERK_SELECTION_GOLDBLOOM_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"zomboss"
+				], 
+				"LevelTypesWhereDisabled": [
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "goldbloom", 
+				"SortingMethod": "left", 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					27, 
+					26, 
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_tumbleweed"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_tumbleweed", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_TUMBLEWEED]", 
+				"Description": "[MINE_IS_YOURS_TUMBLEWEED_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_TUMBLEWEED", 
+				"PerkWarning": "[PERK_SELECTION_TUMBLEWEED_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 1, 
+				"PlantTypeToSpawn": "tumbleweed", 
+				"SortingMethod": "left", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					21, 
+					21, 
+					20, 
+					19, 
+					18, 
+					18, 
+					17, 
+					15
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_hypnoshroom"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_hypnoshroom", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_HYPNOSHROOM]", 
+				"Description": "[MINE_IS_YOURS_HYPNOSHROOM_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_HYPNOSHROOM", 
+				"PerkWarning": "[PERK_SELECTION_HYPNOSHROOM_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 3, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "hypnoshroom", 
+				"SortingMethod": "right", 
+				"TimesBetweenApplications": [
+					30, 
+					29, 
+					28, 
+					28, 
+					27, 
+					26, 
+					26, 
+					25, 
+					23, 
+					20
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_chilibean"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_chilibean", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_CHILIBEAN]", 
+				"Description": "[MINE_IS_YOURS_CHILIBEAN_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_CHILIBEAN", 
+				"PerkWarning": "[PERK_SELECTION_CHILIBEAN_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 3, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "chilibean", 
+				"SortingMethod": "right", 
+				"TimesBetweenApplications": [
+					25, 
+					24, 
+					23, 
+					22, 
+					22, 
+					21, 
+					20, 
+					20, 
+					19, 
+					18
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkMineIsYoursProperties", 
+			"aliases": [
+				"mineisyours_squash"
+			], 
+			"objdata": {
+				"TypeName": "mineisyours_squash", 
+				"ClassName": "PennyPerkMineIsYours", 
+				"DisplayName": "[PERK_NAME_MINEISYOURS_SQUASH]", 
+				"Description": "[MINE_IS_YOURS_SQUASH_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_MINE_IS_YOURS_SQUASH", 
+				"PerkWarning": "[PERK_SELECTION_SQUASH_LOST_WARNING]", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 3, 
+				"MaxColumnToTarget": 8, 
+				"PlantTypeToSpawn": "squash", 
+				"SortingMethod": "right", 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					27, 
+					26, 
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkGridIsYoursProperties", 
+			"aliases": [
+				"gridisyours_boosttile"
+			], 
+			"objdata": {
+				"TypeName": "gridisyours_boosttile", 
+				"ClassName": "PennyPerkGridIsYours", 
+				"DisplayName": "[PERK_NAME_GRIDISYOURS_BOOSTTILE]", 
+				"Description": "[GRID_IS_YOURS_BOOSTTILE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_BOOST_TILE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 6, 
+				"GridTypeToSpawn": "boosttile", 
+				"SortingMethod": "left", 
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+				"SpawnEffectAnimToPlay": "animation", 
+				"SpawnEffectResourceGroup": "Tombstone_Dark_Effects", 
+				"GridBlockingTypes": [
+					"plant"
+				], 
+				"AllowBlockingTypesAsFallbackLocations": true, 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					27, 
+					26, 
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkGridIsYoursProperties", 
+			"aliases": [
+				"gridisyours_boosttile3"
+			], 
+			"objdata": {
+				"TypeName": "gridisyours_boosttile3", 
+				"ClassName": "PennyPerkGridIsYours", 
+				"DisplayName": "[PERK_NAME_GRIDISYOURS_BOOSTTILE3]", 
+				"Description": "[GRID_IS_YOURS_BOOSTTILE3_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_BOOST_TILE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 8, 
+				"GridTypeToSpawn": "boosttile3", 
+				"SortingMethod": "random", 
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+				"SpawnEffectAnimToPlay": "animation", 
+				"SpawnEffectResourceGroup": "Tombstone_Dark_Effects", 
+				"GridBlockingTypes": [
+					"plant"
+				], 
+				"AllowBlockingTypesAsFallbackLocations": true, 
+				"TimesBetweenApplications": [
+					45, 
+					40, 
+					37, 
+					34, 
+					32, 
+					30, 
+					28, 
+					27, 
+					26, 
+					25
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkGridIsYoursProperties", 
+			"aliases": [
+				"gridisyours_pftombstone"
+			], 
+			"objdata": {
+				"TypeName": "gridisyours_pftombstone", 
+				"ClassName": "PennyPerkGridIsYours", 
+				"DisplayName": "[PERK_NAME_GRIDISYOURS_PFTOMBSTONE]", 
+				"Description": "[GRID_IS_YOURS_PFTOMBSTONE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_PFTOMBSTONE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 3, 
+				"MaxColumnToTarget": 8, 
+				"GridTypeToSpawn": "gravestonePlantfoodOnDestruction", 
+				"SortingMethod": "right", 
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+				"SpawnEffectAnimToPlay": "animation", 
+				"SpawnEffectResourceGroup": "Tombstone_Dark_Effects", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkGridIsYoursProperties", 
+			"aliases": [
+				"gridisyours_linkedtiles"
+			], 
+			"objdata": {
+				"TypeName": "gridisyours_linkedtiles", 
+				"ClassName": "PennyPerkGridIsYours", 
+				"DisplayName": "[PERK_NAME_GRIDISYOURS_LINKEDTILE]", 
+				"Description": "[GRID_IS_YOURS_LINKEDTILE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_LINKED_TILE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 8, 
+				"GridTypeToSpawn": "powertile_alpha", 
+				"SortingMethod": "random", 
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+				"SpawnEffectAnimToPlay": "animation", 
+				"SpawnEffectResourceGroup": "Tombstone_Dark_Effects", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkGridIsYoursProperties", 
+			"aliases": [
+				"gridisyours_goldtile"
+			], 
+			"objdata": {
+				"TypeName": "gridisyours_goldtile", 
+				"ClassName": "PennyPerkGridIsYours", 
+				"DisplayName": "[PERK_NAME_GRIDISYOURS_GOLDTILE]", 
+				"Description": "[GRID_IS_YOURS_GOLDTILE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_GOLD_TILE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"MinColumnToTarget": 0, 
+				"MaxColumnToTarget": 8, 
+				"GridTypeToSpawn": "goldtile", 
+				"SortingMethod": "random", 
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+				"SpawnEffectAnimToPlay": "animation", 
+				"SpawnEffectResourceGroup": "Tombstone_Dark_Effects", 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					27, 
+					26, 
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"SpawnCount": [
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkShockwaveProperties", 
+			"aliases": [
+				"shockwave"
+			], 
+			"objdata": {
+				"TypeName": "shockwave", 
+				"ClassName": "PennyPerkShockwave", 
+				"Description": "[SHOCKWAVE_PERK_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_SHOCKWAVE]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_SHOCKWAVE", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					26, 
+					24, 
+					24, 
+					24, 
+					22, 
+					22, 
+					20, 
+					20
+				], 
+				"PushBackDistance": [
+					50, 
+					60, 
+					70, 
+					80, 
+					90, 
+					100, 
+					110, 
+					120, 
+					130, 
+					140
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkSunBankProperties", 
+			"aliases": [
+				"sunbank"
+			], 
+			"objdata": {
+				"TypeName": "sunbank", 
+				"ClassName": "PennyPerkSunBank", 
+				"Description": "[SUN_BANK_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_SUNBANK", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"minigame"
+				], 
+				"LevelTypesWhereDisabled": [
+					"conveyor", 
+					"arena_conveyor"
+				], 
+				"AdditionalStartingSun": [
+					100, 
+					150, 
+					200, 
+					250, 
+					300, 
+					350, 
+					400, 
+					450, 
+					500, 
+					550
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkPennyShieldProperties", 
+			"aliases": [
+				"pennyshield"
+			], 
+			"objdata": {
+				"TypeName": "pennyshield", 
+				"ClassName": "PennyPerkPennyShield", 
+				"Description": "[PENNY_SHIELD_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_SHIELD", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					45, 
+					40, 
+					37, 
+					34, 
+					32, 
+					30, 
+					28, 
+					27, 
+					26, 
+					25
+				], 
+				"ShieldHealth": [
+					4000, 
+					4500, 
+					5000, 
+					5500, 
+					6000, 
+					6500, 
+					7000, 
+					7500, 
+					8000, 
+					8500
+				], 
+				"NumberOfShields": [
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1, 
+					1
+				], 
+				"ShieldColumns": [
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					], 
+					[
+						4
+					]
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkPennyShieldProperties", 
+			"aliases": [
+				"pennyshieldmultiple"
+			], 
+			"objdata": {
+				"TypeName": "pennyshieldmultiple", 
+				"ClassName": "PennyPerkPennyShield", 
+				"DisplayName": "[PERK_NAME_PENNYSHIELDMULTIPLE]", 
+				"Description": "[PENNY_SHIELD_MULTIPLE_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_SHIELD", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					35, 
+					33, 
+					31, 
+					29, 
+					27, 
+					25, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"ShieldHealth": [
+					1500, 
+					1600, 
+					1700, 
+					1700, 
+					1800, 
+					1800, 
+					1900, 
+					1900, 
+					2000, 
+					2000
+				], 
+				"NumberOfShields": [
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					4, 
+					4, 
+					4, 
+					5
+				], 
+				"ShieldColumns": [
+					[
+						5, 
+						4
+					], 
+					[
+						5, 
+						4
+					], 
+					[
+						5, 
+						4
+					], 
+					[
+						5, 
+						4, 
+						3
+					], 
+					[
+						5, 
+						4, 
+						3
+					], 
+					[
+						5, 
+						4, 
+						3
+					], 
+					[
+						6, 
+						5, 
+						4, 
+						3
+					], 
+					[
+						6, 
+						5, 
+						4, 
+						3
+					], 
+					[
+						6, 
+						5, 
+						4, 
+						3
+					], 
+					[
+						7, 
+						6, 
+						5, 
+						4, 
+						3
+					]
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkQuickDeliveryProperties", 
+			"aliases": [
+				"quickdelivery"
+			], 
+			"objdata": {
+				"TypeName": "quickdelivery", 
+				"ClassName": "PennyPerkQuickDelivery", 
+				"Description": "[QUICK_DELIVERY_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_QUICK_DELIVER", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"none", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"normal", 
+					"laststand", 
+					"arena", 
+					"zomboss"
+				], 
+				"TimeReductionPercentage": [
+					15, 
+					20, 
+					25, 
+					30, 
+					35, 
+					40, 
+					45, 
+					50, 
+					55, 
+					60
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkRandomFlickProperties", 
+			"aliases": [
+				"flick"
+			], 
+			"objdata": {
+				"TypeName": "flick", 
+				"ClassName": "PennyPerkRandomFlick", 
+				"Description": "[FLICK_PERK_DESCRIPTION]", 
+				"DisplayName": "[PERK_NAME_FLICK]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_ANTIGRAV", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"conveyor", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [], 
+				"TimesBetweenApplications": [
+					20, 
+					18, 
+					17, 
+					16, 
+					15, 
+					14, 
+					13, 
+					12, 
+					11, 
+					10
+				], 
+				"NumberOfZombiesFlicked": [
+					1, 
+					1, 
+					1, 
+					2, 
+					2, 
+					2, 
+					3, 
+					3, 
+					3, 
+					3
+				], 
+				"TargetPriority": {
+					"Buckets": [
+						{
+							"ListType": "includelist", 
+							"List": [
+								"ZombieImp", 
+								"ZombieFutureImp", 
+								"ZombieIceAgeDodo", 
+								"ZombieModernSuperfanImp", 
+								"ZombieRomanImp", 
+								"ZombieBasic", 
+								"ZombiePirateCaptain", 
+								"ZombieRomanHealer", 
+								"ZombieExplorer", 
+								"ZombieProspector", 
+								"ZombieCamel", 
+								"ZombieCrystalSkull", 
+								"ZombieEightiesPunk", 
+								"ZombieEightiesGlitter", 
+								"ZombieBeachSurfer", 
+								"ZombieTombRaiser", 
+								"ZombieModernNewspaper", 
+								"ZombieRa", 
+								"ZombieSwashbuckler", 
+								"ZombiePoncho", 
+								"ZombieChickenFarmer", 
+								"ZombieWeaselHoarder", 
+								"ZombieDarkWizard", 
+								"ZombieBeachSnorkel", 
+								"ZombieIceAgeHunter", 
+								"ZombieLostCityBasic", 
+								"ZombieLostCityJane", 
+								"ZombieLostCityRelicHunter", 
+								"ZombieEightiesBasic", 
+								"ZombieEighties8BitBasic", 
+								"ZombieEightiesMC", 
+								"ZombieEightiesBreakDancer", 
+								"ZombieEightiesBoombox", 
+								"ZombieDinoBasic", 
+								"ZombieRomanShield", 
+								"ZombieRomanTopShield", 
+								"ZombieModernBalloon"
+							]
+						}, 
+						{
+							"ListType": "includelist", 
+							"List": [
+								"ZombieModernAllStar", 
+								"ZombieImpPorter", 
+								"ZombieFutureProtector", 
+								"ZombiePirateBarrelPusher", 
+								"ZombieIceAgeTroglobite", 
+								"ZombieEightiesArcade", 
+								"ZombieBeachOctopus", 
+								"ZombiePharaoh", 
+								"ZombieDinoBully", 
+								"ZombieDinoBullyVeteran", 
+								"ZombieRomanMedusa"
+							]
+						}, 
+						{
+							"ListType": "includelist", 
+							"List": [
+								"ZombieMechFootball", 
+								"ZombieBull", 
+								"ZombieBullVeteran", 
+								"ZombiePiano", 
+								"ZombieMech", 
+								"ZombieMechDisco", 
+								"ZombieBigHeadNewspaper", 
+								"ZombieBigHeadAllStar", 
+								"ZombieBigHeadSuperfan", 
+								"ZombieBigHeadBasic", 
+								"ZombieBigHeadImp", 
+								"ZombieBigHeadBarrelRoller"
+							]
+						}
+					]
+				}, 
+				"FlickVelocity": 100.0, 
+				"FlingHeight": 1000.0, 
+				"RotationVelocity": -100.0
+			}
+		}, 
+		{
+			"objclass": "PennyPerkUtilityBeltProperties", 
+			"aliases": [
+				"utilitybelt_cherrybomb"
+			], 
+			"objdata": {
+				"TypeName": "utilitybelt_cherrybomb", 
+				"ClassName": "PennyPerkUtilityBelt", 
+				"DisplayName": "[PERK_NAME_UTILITYBELT_CHERRYBOMB]", 
+				"Description": "[UTILITY_BELT_DESCRIPTION_CHERRYBOMB]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_UTILITYBELT", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"laststand", 
+					"normal", 
+					"arena", 
+					"zomboss"
+				], 
+				"AdditionalPlantType": "cherry_bomb", 
+				"TimesBetweenApplications": [
+					25, 
+					22, 
+					20, 
+					18, 
+					16, 
+					14, 
+					13, 
+					12, 
+					11, 
+					10
+				], 
+				"IsBoosted": [
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false"
+				], 
+				"PlantLevels": [
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkUtilityBeltProperties", 
+			"aliases": [
+				"utilitybelt_hypnoshroom"
+			], 
+			"objdata": {
+				"TypeName": "utilitybelt_hypnoshroom", 
+				"ClassName": "PennyPerkUtilityBelt", 
+				"DisplayName": "[PERK_NAME_UTILITYBELT_HYPNOSHROOM]", 
+				"Description": "[UTILITY_BELT_DESCRIPTION_HYPNOSHROOM]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_UTILITYBELT", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"laststand", 
+					"normal", 
+					"arena", 
+					"zomboss"
+				], 
+				"AdditionalPlantType": "hypnoshroom", 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					27, 
+					26, 
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"IsBoosted": [
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true"
+				], 
+				"PlantLevels": [
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkUtilityBeltProperties", 
+			"aliases": [
+				"utilitybelt_hurrikale"
+			], 
+			"objdata": {
+				"TypeName": "utilitybelt_hurrikale", 
+				"ClassName": "PennyPerkUtilityBelt", 
+				"DisplayName": "[PERK_NAME_UTILITYBELT_HURRIKALE]", 
+				"Description": "[UTILITY_BELT_DESCRIPTION_HURRIKALE]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_UTILITYBELT", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"laststand", 
+					"normal", 
+					"arena", 
+					"zomboss"
+				], 
+				"AdditionalPlantType": "hurrikale", 
+				"TimesBetweenApplications": [
+					25, 
+					23, 
+					22, 
+					21, 
+					20, 
+					19, 
+					18, 
+					17, 
+					16, 
+					15
+				], 
+				"IsBoosted": [
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false"
+				], 
+				"PlantLevels": [
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkUtilityBeltProperties", 
+			"aliases": [
+				"utilitybelt_icebloom"
+			], 
+			"objdata": {
+				"TypeName": "utilitybelt_icebloom", 
+				"ClassName": "PennyPerkUtilityBelt", 
+				"DisplayName": "[PERK_NAME_UTILITYBELT_ICEBLOOM]", 
+				"Description": "[UTILITY_BELT_DESCRIPTION_ICEBLOOM]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_UTILITYBELT", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"laststand", 
+					"normal", 
+					"arena", 
+					"zomboss"
+				], 
+				"AdditionalPlantType": "icebloom", 
+				"TimesBetweenApplications": [
+					25, 
+					22, 
+					20, 
+					18, 
+					16, 
+					14, 
+					13, 
+					12, 
+					11, 
+					10
+				], 
+				"IsBoosted": [
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false"
+				], 
+				"PlantLevels": [
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkUtilityBeltProperties", 
+			"aliases": [
+				"utilitybelt_puffball"
+			], 
+			"objdata": {
+				"TypeName": "utilitybelt_puffball", 
+				"ClassName": "PennyPerkUtilityBelt", 
+				"DisplayName": "[PERK_NAME_UTILITYBELT_PUFFBALL]", 
+				"Description": "[UTILITY_BELT_DESCRIPTION_PUFFBALL]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_UTILITYBELT", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"laststand", 
+					"normal", 
+					"arena", 
+					"zomboss"
+				], 
+				"AdditionalPlantType": "puffball", 
+				"TimesBetweenApplications": [
+					25, 
+					22, 
+					20, 
+					18, 
+					16, 
+					14, 
+					13, 
+					12, 
+					11, 
+					10
+				], 
+				"IsBoosted": [
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false", 
+					"false"
+				], 
+				"PlantLevels": [
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkUtilityBeltProperties", 
+			"aliases": [
+				"utilitybelt_imppear"
+			], 
+			"objdata": {
+				"TypeName": "utilitybelt_imppear", 
+				"ClassName": "PennyPerkUtilityBelt", 
+				"DisplayName": "[PERK_NAME_UTILITYBELT_IMPPEAR]", 
+				"Description": "[UTILITY_BELT_DESCRIPTION_IMPPEAR]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_UTILITYBELT", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"timed", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"laststand", 
+					"normal", 
+					"arena", 
+					"zomboss"
+				], 
+				"AdditionalPlantType": "imppear", 
+				"TimesBetweenApplications": [
+					30, 
+					28, 
+					27, 
+					26, 
+					25, 
+					24, 
+					23, 
+					22, 
+					21, 
+					20
+				], 
+				"IsBoosted": [
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true", 
+					"true"
+				], 
+				"PlantLevels": [
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1, 
+					-1
+				]
+			}
+		}, 
+		{
+			"objclass": "PennyPerkHeavyWateringProperties", 
+			"aliases": [
+				"heavywatering"
+			], 
+			"objdata": {
+				"TypeName": "heavywatering", 
+				"ClassName": "PennyPerkHeavyWatering", 
+				"DisplayName": "[PERK_NAME_HEAVY_WATERING]", 
+				"Description": "[HEAVY_WATERING_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_HEAVYWATERING", 
+				"LevelTypesWhereEnabled": [
+					"none", 
+					"normal", 
+					"timed", 
+					"laststand", 
+					"arena", 
+					"zomboss"
+				], 
+				"LevelTypesWhereDisabled": [
+					"conveyor", 
+					"minigame", 
+					"arena_conveyor"
+				], 
+				"PercentCooldownReductions": [
+					0.05, 
+					0.1, 
+					0.15, 
+					0.2, 
+					0.25, 
+					0.3, 
+					0.35, 
+					0.4, 
+					0.45, 
+					0.5
+				], 
+				"AffectedPlantFamilies": []
+			}
+		}, 
+		{
+			"objclass": "PennyPerkPlantHealingProperties", 
+			"aliases": [
+				"planthealing"
+			], 
+			"objdata": {
+				"TypeName": "planthealing", 
+				"ClassName": "PennyPerkPlantHealing", 
+				"DisplayName": "[PERK_NAME_PLANTHEALING]", 
+				"Description": "[PLANT_HEALING_DESCRIPTION]", 
+				"IconName": "IMAGE_UI_PERKS_RIFT_ICON_PLANTHEALING", 
+				"LevelTypesWhereEnabled": [
+					"conveyor", 
+					"normal", 
+					"timed", 
+					"minigame", 
+					"laststand", 
+					"arena", 
+					"zomboss", 
+					"arena_conveyor"
+				], 
+				"LevelTypesWhereDisabled": [
+					"none"
+				], 
+				"TimesBetweenApplications": [
+					15, 
+					14, 
+					13, 
+					13, 
+					12, 
+					12, 
+					11, 
+					11, 
+					11, 
+					10
+				], 
+				"PercentHealed": [
+					0.5, 
+					0.6, 
+					0.65, 
+					0.7, 
+					0.75, 
+					0.8, 
+					0.85, 
+					0.9, 
+					0.95, 
+					1.0
+				], 
+				"MaxPercentHealth": [
+					1.5, 
+					1.65, 
+					1.8, 
+					1.9, 
+					2.0, 
+					2.1, 
+					2.2, 
+					2.3, 
+					2.4, 
+					2.5
+				], 
+				"UnhealablePlants": {
+					"ListType": "includelist", 
+					"List": [
+						"explodeonut", 
+						"chilibean", 
+						"hypnoshroom", 
+						"sunbean", 
+						"stallia", 
+						"squash", 
+						"shadowshroom", 
+						"stunion", 
+						"explodeovine", 
+						"electricitea", 
+						"potatomine", 
+						"primalpotatomine", 
+						"lavaguava", 
+						"imppear"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,5528 @@
+{
+	"#comment": "All PropertySheet objects should go here", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "LibProperties", 
+			"aliases": [
+				"LibProps"
+			], 
+			"objdata": {
+				"#comment": "# Custom Snowie Lib Properties #", 
+				"VerticalScrollingEnabled": false, 
+				"RemoveMagicianImmunities": true, 
+				"RemoveHealerImmunities": true, 
+				"LawnZoom": 1.1, 
+				"LawnOffsetX": 0, 
+				"LawnOffsetY": 0, 
+				"ZombieVariantList": [
+					{
+						"TypeName": "tutorial", 
+						"Variants": [
+							{
+								"TypeName": "tutorial_fem", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "tutorial", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "tutorial_armor1", 
+						"Variants": [
+							{
+								"TypeName": "tutorial_fem_armor1", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "tutorial_armor1", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "tutorial_armor2", 
+						"Variants": [
+							{
+								"TypeName": "tutorial_fem_armor2", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "tutorial_armor2", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "tutorial_armor4", 
+						"Variants": [
+							{
+								"TypeName": "tutorial_fem_armor4", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "tutorial_armor4", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "mummy", 
+						"Variants": [
+							{
+								"TypeName": "mummy_fem", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "mummy", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "mummy_armor1", 
+						"Variants": [
+							{
+								"TypeName": "mummy_fem_armor1", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "mummy_armor1", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "mummy_armor2", 
+						"Variants": [
+							{
+								"TypeName": "mummy_fem_armor2", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "mummy_armor2", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "mummy_armor4", 
+						"Variants": [
+							{
+								"TypeName": "mummy_fem_armor4", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "mummy_armor4", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "pirate", 
+						"Variants": [
+							{
+								"TypeName": "pirate_fem", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "pirate", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "pirate_armor1", 
+						"Variants": [
+							{
+								"TypeName": "pirate_fem_armor1", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "pirate_armor1", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "pirate_armor2", 
+						"Variants": [
+							{
+								"TypeName": "pirate_fem_armor2", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "pirate_armor2", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "pirate_armor4", 
+						"Variants": [
+							{
+								"TypeName": "pirate_fem_armor4", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "pirate_armor4", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "cowboy", 
+						"Variants": [
+							{
+								"TypeName": "cowboy_fem", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "cowboy", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "cowboy_armor1", 
+						"Variants": [
+							{
+								"TypeName": "cowboy_fem_armor1", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "cowboy_armor1", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "cowboy_armor2", 
+						"Variants": [
+							{
+								"TypeName": "cowboy_fem_armor2", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "cowboy_armor2", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "cowboy_armor4", 
+						"Variants": [
+							{
+								"TypeName": "cowboy_fem_armor4", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "cowboy_armor4", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "cowboy_bandit", 
+						"Variants": [
+							{
+								"TypeName": "cowboy_bandit_bomb", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "cowboy_bandit_sun", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "tutorial_flag", 
+						"Variants": [
+							{
+								"TypeName": "tutorial_fem_flag", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "tutorial_flag", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "tutorial_flag_veteran", 
+						"Variants": [
+							{
+								"TypeName": "tutorial_fem_flag_veteran", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "tutorial_flag_veteran", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "pirate_flag", 
+						"Variants": [
+							{
+								"TypeName": "pirate_fem_flag", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "pirate_flag", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "pirate_flag_veteran", 
+						"Variants": [
+							{
+								"TypeName": "pirate_fem_flag_veteran", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "pirate_flag_veteran", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "spring", 
+						"Variants": [
+							{
+								"TypeName": "spring_fem", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "spring", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "spring_armor1", 
+						"Variants": [
+							{
+								"TypeName": "spring_fem_armor1", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "spring_armor1", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "spring_armor2", 
+						"Variants": [
+							{
+								"TypeName": "spring_fem_armor2", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "spring_armor2", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "zcorp", 
+						"Variants": [
+							{
+								"TypeName": "zcorp_fem", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "zcorp", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "zcorp_armor1", 
+						"Variants": [
+							{
+								"TypeName": "zcorp_fem_armor1", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "zcorp_armor1", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "zcorp_armor2", 
+						"Variants": [
+							{
+								"TypeName": "zcorp_fem_armor2", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "zcorp_armor2", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "modern_jetpack", 
+						"Variants": [
+							{
+								"TypeName": "modern_jetpack_blue", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "modern_jetpack", 
+								"Weight": 2
+							}
+						]
+					}, 
+					{
+						"TypeName": "modern_arcade", 
+						"Variants": [
+							{
+								"TypeName": "modern_arcade_alt", 
+								"Weight": 2
+							}, 
+							{
+								"TypeName": "modern_arcade", 
+								"Weight": 2
+							}
+						]
+					}
+				], 
+				"PlantTypeMap": [
+					{
+						"TypeName": "rhubarbarian", 
+						"TypeID": 188
+					}, 
+					{
+						"TypeName": "megagatling", 
+						"TypeID": 189
+					}, 
+					{
+						"TypeName": "ninjapple", 
+						"TypeID": 200
+					}, 
+					{
+						"TypeName": "sourshot", 
+						"TypeID": 201
+					}, 
+					{
+						"TypeName": "cypripedium", 
+						"TypeID": 202
+					}, 
+					{
+						"TypeName": "icelotus", 
+						"TypeID": 203
+					}, 
+					{
+						"TypeName": "blackeyedpea", 
+						"TypeID": 204
+					}, 
+					{
+						"TypeName": "dogwood", 
+						"TypeID": 205
+					}, 
+					{
+						"TypeName": "gatlingpea", 
+						"TypeID": 206
+					}, 
+					{
+						"TypeName": "burstberry", 
+						"TypeID": 207
+					}, 
+					{
+						"TypeName": "beeshooter", 
+						"TypeID": 208
+					}, 
+					{
+						"TypeName": "charcoalpeashooter", 
+						"TypeID": 209
+					}, 
+					{
+						"TypeName": "choco", 
+						"TypeID": 210
+					}, 
+					{
+						"TypeName": "coldslaw", 
+						"TypeID": 211
+					}, 
+					{
+						"TypeName": "aquapeashooter", 
+						"TypeID": 212
+					}, 
+					{
+						"TypeName": "garlicvine", 
+						"TypeID": 213
+					}, 
+					{
+						"TypeName": "icequeenpea", 
+						"TypeID": 214
+					}, 
+					{
+						"TypeName": "iceshroom", 
+						"TypeID": 215
+					}, 
+					{
+						"TypeName": "megapuff", 
+						"TypeID": 216
+					}, 
+					{
+						"TypeName": "cattail", 
+						"TypeID": 217
+					}, 
+					{
+						"TypeName": "scaredyshroom", 
+						"TypeID": 218
+					}, 
+					{
+						"TypeName": "sweetpeanz", 
+						"TypeID": 219
+					}, 
+					{
+						"TypeName": "popshroom", 
+						"TypeID": 220
+					}, 
+					{
+						"TypeName": "sweetpea", 
+						"TypeID": 221
+					}, 
+					{
+						"TypeName": "goldmagnet", 
+						"TypeID": 222
+					}, 
+					{
+						"TypeName": "deadsnapdragon", 
+						"TypeID": 223
+					}, 
+					{
+						"TypeName": "iceshroom_alt", 
+						"TypeID": 224
+					}, 
+					{
+						"TypeName": "pluckyclover", 
+						"TypeID": 225
+					}, 
+					{
+						"TypeName": "pickledpepper", 
+						"TypeID": 226
+					}, 
+					{
+						"TypeName": "pineneedler", 
+						"TypeID": 227
+					}, 
+					{
+						"TypeName": "nippycabbage", 
+						"TypeID": 228
+					}, 
+					{
+						"TypeName": "darktwinsunflower", 
+						"TypeID": 229
+					}, 
+					{
+						"TypeName": "seashroom", 
+						"TypeID": 230
+					}, 
+					{
+						"TypeName": "dendrobiumguard", 
+						"TypeID": 231
+					}, 
+					{
+						"TypeName": "tupistrastalker", 
+						"TypeID": 232
+					}, 
+					{
+						"TypeName": "stephania", 
+						"TypeID": 233
+					}, 
+					{
+						"TypeName": "cosmoss", 
+						"TypeID": 234
+					}, 
+					{
+						"TypeName": "pineclone", 
+						"TypeID": 235
+					}, 
+					{
+						"TypeName": "caramelcorn", 
+						"TypeID": 236
+					}, 
+					{
+						"TypeName": "lime", 
+						"TypeID": 237
+					}, 
+					{
+						"TypeName": "agave", 
+						"TypeID": 238
+					}, 
+					{
+						"TypeName": "threenut", 
+						"TypeID": 239
+					}, 
+					{
+						"TypeName": "clivia", 
+						"TypeID": 240
+					}, 
+					{
+						"TypeName": "hatmushroom", 
+						"TypeID": 241
+					}, 
+					{
+						"TypeName": "magicpeashooter", 
+						"TypeID": 242
+					}, 
+					{
+						"TypeName": "whitemelon", 
+						"TypeID": 243
+					}, 
+					{
+						"TypeName": "cobcannon", 
+						"TypeID": 244
+					}
+				], 
+				"ZombieTypeMap": [
+					{
+						"TypeName": "modern_jetpack", 
+						"TypeID": 441
+					}, 
+					{
+						"TypeName": "modern_superfanimp_veteran", 
+						"TypeID": 442
+					}, 
+					{
+						"TypeName": "modern_imp_scout_s", 
+						"TypeID": 443
+					}, 
+					{
+						"TypeName": "heian", 
+						"TypeID": 444
+					}, 
+					{
+						"TypeName": "heian_armor1", 
+						"TypeID": 445
+					}, 
+					{
+						"TypeName": "heian_armor2", 
+						"TypeID": 446
+					}, 
+					{
+						"TypeName": "heian_flag", 
+						"TypeID": 447
+					}, 
+					{
+						"TypeName": "heian_gargantuar", 
+						"TypeID": 448
+					}, 
+					{
+						"TypeName": "heian_ninja_imp", 
+						"TypeID": 449
+					}, 
+					{
+						"TypeName": "heian_sushi", 
+						"TypeID": 450
+					}, 
+					{
+						"TypeName": "heian_onmyoji", 
+						"TypeID": 451
+					}, 
+					{
+						"TypeName": "heian_onmyoji_veteran", 
+						"TypeID": 452
+					}, 
+					{
+						"TypeName": "heian_hanabi", 
+						"TypeID": 453
+					}, 
+					{
+						"TypeName": "yokai_ubagbi", 
+						"TypeID": 454
+					}, 
+					{
+						"TypeName": "desperado", 
+						"TypeID": 455
+					}, 
+					{
+						"TypeName": "roman_flag_veteran_wolf", 
+						"TypeID": 456
+					}, 
+					{
+						"TypeName": "tutorial_gargantuar_blue", 
+						"TypeID": 457
+					}, 
+					{
+						"TypeName": "tutorial_imp_chartreuse", 
+						"TypeID": 458
+					}, 
+					{
+						"TypeName": "beach_greaser_imp", 
+						"TypeID": 459
+					}, 
+					{
+						"TypeName": "beach_octopus_veteran", 
+						"TypeID": 460
+					}, 
+					{
+						"TypeName": "beach_surfer_veteran", 
+						"TypeID": 461
+					}, 
+					{
+						"TypeName": "beach_snorkel_fiend", 
+						"TypeID": 462
+					}, 
+					{
+						"TypeName": "beach_snorkel_veteran", 
+						"TypeID": 463
+					}, 
+					{
+						"TypeName": "west_scarecrow_farmer", 
+						"TypeID": 464
+					}, 
+					{
+						"TypeName": "west_crow", 
+						"TypeID": 465
+					}, 
+					{
+						"TypeName": "west_taco_champion", 
+						"TypeID": 466
+					}, 
+					{
+						"TypeName": "iceage_armor4", 
+						"TypeID": 467
+					}, 
+					{
+						"TypeName": "iceage_weaselhoarder_veteran", 
+						"TypeID": 468
+					}, 
+					{
+						"TypeName": "iceage_hunter_veteran", 
+						"TypeID": 469
+					}, 
+					{
+						"TypeName": "iceage_troglobite_veteran", 
+						"TypeID": 470
+					}, 
+					{
+						"TypeName": "iceage_flag_veteran", 
+						"TypeID": 471
+					}, 
+					{
+						"TypeName": "fat_weasel", 
+						"TypeID": 472
+					}, 
+					{
+						"TypeName": "iceage_weasel_elite_fat", 
+						"TypeID": 473
+					}, 
+					{
+						"TypeName": "iceage_icebreaker", 
+						"TypeID": 474
+					}, 
+					{
+						"TypeName": "lostcity_excavator_veteran", 
+						"TypeID": 475
+					}, 
+					{
+						"TypeName": "lostcity_jane_veteran", 
+						"TypeID": 476
+					}, 
+					{
+						"TypeName": "lostcity_armor4", 
+						"TypeID": 477
+					}, 
+					{
+						"TypeName": "lostcity_flag_veteran", 
+						"TypeID": 478
+					}, 
+					{
+						"TypeName": "lostcity_mumbahlord", 
+						"TypeID": 479
+					}, 
+					{
+						"TypeName": "dark_falseknight", 
+						"TypeID": 480
+					}, 
+					{
+						"TypeName": "dark_imp_dragon_veteran", 
+						"TypeID": 481
+					}, 
+					{
+						"TypeName": "dark_juggler_veteran", 
+						"TypeID": 482
+					}, 
+					{
+						"TypeName": "dark_alt", 
+						"TypeID": 483
+					}, 
+					{
+						"TypeName": "dark_king_veteran", 
+						"TypeID": 484
+					}, 
+					{
+						"TypeName": "egyptologist", 
+						"TypeID": 485
+					}, 
+					{
+						"TypeName": "egypt_tomb_imp", 
+						"TypeID": 486
+					}, 
+					{
+						"TypeName": "tomb_raiser_veteran", 
+						"TypeID": 487
+					}, 
+					{
+						"TypeName": "egypt_supervisor", 
+						"TypeID": 488
+					}, 
+					{
+						"TypeName": "barrelroller_veteran", 
+						"TypeID": 489
+					}, 
+					{
+						"TypeName": "pegleg_bomber", 
+						"TypeID": 490
+					}, 
+					{
+						"TypeName": "pirate_boomer", 
+						"TypeID": 491
+					}, 
+					{
+						"TypeName": "pirate_skeleton", 
+						"TypeID": 492
+					}, 
+					{
+						"TypeName": "pirate_buccaneer", 
+						"TypeID": 493
+					}, 
+					{
+						"TypeName": "pirate_bombthrower", 
+						"TypeID": 494
+					}, 
+					{
+						"TypeName": "pirate_frosty", 
+						"TypeID": 495
+					}, 
+					{
+						"TypeName": "pirate_conman", 
+						"TypeID": 495
+					}, 
+					{
+						"TypeName": "pirate_anchor", 
+						"TypeID": 496
+					}, 
+					{
+						"TypeName": "mech_pogo", 
+						"TypeID": 497
+					}, 
+					{
+						"TypeName": "future_robot_armor1", 
+						"TypeID": 498
+					}, 
+					{
+						"TypeName": "future_cat", 
+						"TypeID": 499
+					}, 
+					{
+						"TypeName": "future_portalspawner", 
+						"TypeID": 500
+					}, 
+					{
+						"TypeName": "heian_armor4", 
+						"TypeID": 501
+					}, 
+					{
+						"TypeName": "modern_ladder", 
+						"TypeID": 502
+					}, 
+					{
+						"TypeName": "modern_polevaulter", 
+						"TypeID": 503
+					}, 
+					{
+						"TypeName": "modern_screendoor", 
+						"TypeID": 504
+					}, 
+					{
+						"TypeName": "modern_screendoor_almanac", 
+						"TypeID": 505
+					}
+				], 
+				"GameFeatureMap": [
+					{
+						"TypeName": "snow_stargate_start", 
+						"TypeID": 123
+					}, 
+					{
+						"TypeName": "heian_stargate_start", 
+						"TypeID": 124
+					}
+				], 
+				"PianoList": [
+					"cowboy", 
+					"cowboy_armor1", 
+					"cowboy_armor2", 
+					"cowboy_armor4", 
+					"cowboy_gargantuar"
+				], 
+				"EntityConditionLayers": [
+					{
+						"EntityType": "Plant", 
+						"TypeName": "peashooter", 
+						"Condition": "shadowboosted", 
+						"Layers": [
+							"custom_holiday"
+						]
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "UpgradePlantsProps", 
+			"aliases": [
+				"UpgradePlants"
+			], 
+			"objdata": {
+				"UpgradeList": [
+					{
+						"PlantType": "cabbagepult", 
+						"UpgradeType": "coldslaw", 
+						"CostIncrease": 25
+					}, 
+					{
+						"PlantType": "bonkchoy", 
+						"UpgradeType": "nippycabbage", 
+						"CostIncrease": 50
+					}, 
+					{
+						"PlantType": "twinsunflower", 
+						"UpgradeType": "darktwinsunflower", 
+						"CostIncrease": 75
+					}, 
+					{
+						"PlantType": "kernelpult", 
+						"UpgradeType": "caramelcorn", 
+						"CostIncrease": 25
+					}, 
+					{
+						"PlantType": "gatlingpea", 
+						"UpgradeType": "megagatling", 
+						"CostIncrease": 75
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ExtraProperties", 
+			"aliases": [
+				"ExtraProps"
+			], 
+			"objdata": {
+				"PlantProps": [
+					{
+						"Type": "threenut_lob", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": false, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "clivia_heal", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": false, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "evilhurrikale", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": true, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "evilhurrikale_veteran", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": true, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "bloverkill", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": true, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "saisen_box_seedpacket", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": true, 
+						"CanPlantfood": true, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "saisen_box_seedpacket_sleep", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": false, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "saisen_box_sun", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": true, 
+						"CanPlantfood": true, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "saisen_box_sun_sleep", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": false, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}, 
+					{
+						"Type": "cypripedium_garlic", 
+						"CanSink": false, 
+						"CountsToPlantLoss": false, 
+						"CanShovel": false, 
+						"IsVisible": true, 
+						"CanPlantfood": false, 
+						"HasShadow": false
+					}
+				], 
+				"ZombieProps": [
+					{
+						"Type": "heian_hanabi_fire", 
+						"CountsToZombiesKilled": false, 
+						"CanBeAshed": false, 
+						"CanBeShocked": false
+					}, 
+					{
+						"Type": "heian_hanabi_fire_spawner", 
+						"CountsToZombiesKilled": false, 
+						"CanBeAshed": false, 
+						"IsVisible": false, 
+						"CanBeShocked": false
+					}, 
+					{
+						"Type": "heian_imp", 
+						"CountsToZombiesKilled": false, 
+						"CanBeAshed": false, 
+						"CanBeShocked": false
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "WaterProperties", 
+			"aliases": [
+				"WaterProps"
+			], 
+			"objdata": {
+				"BobbingEnabled": true, 
+				"UseWaterPlantSound": true, 
+				"UseWaterPlantEffect": false, 
+				"BobbingAmplitude": 1.25, 
+				"BobbingSpeed": 0.3
+			}
+		}, 
+		{
+			"objclass": "EffectObject_DamageOverTimeProps", 
+			"aliases": [
+				"WestNightFogEffectObject"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_WEST_NIGHT", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 136
+				}, 
+				"SpawnAnimations": [
+					"zombiehouse_idle"
+				], 
+				"RampUpAnimation": "zombiehouse_idle", 
+				"LoopingAnimation": "zombiehouse_idle", 
+				"RampDownAnimation": "zombiehouse_idle", 
+				"RampUpAudioEvent": "", 
+				"RampDownAudioEvent": "", 
+				"DamageArea": {
+					"mX": 99999, 
+					"mY": 99999, 
+					"mWidth": 60, 
+					"mHeight": 60
+				}, 
+				"DurationInSeconds": "infinity", 
+				"DamagePerSecond": 0, 
+				"LayerOverride": "RENDER_LAYER_FOG", 
+				"DamageTypeFlags": [
+					"no_flash"
+				]
+			}
+		}, 
+		{
+			"objclass": "SeedChooserPriorityList", 
+			"aliases": [
+				"SeedChooserPriorityProps"
+			], 
+			"objdata": {
+				"#comment": "Plants to keep at the top", 
+				"ClassicList": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"potatomine", 
+					"cabbagepult", 
+					"iceburg"
+				], 
+				"#comment": "Always attempts to show these next if possible", 
+				"FeatureList": [
+					"firepeashooter"
+				], 
+				"#comment": "First unpurchased promo plant is shown", 
+				"PromoList": [
+					"homingthistle", 
+					"sweetpotato", 
+					"sapfling", 
+					"hurrikale"
+				]
+			}
+		}, 
+		{
+			"objclass": "SeedChooserFamilyPriorityList", 
+			"aliases": [
+				"SeedChooserFamilyPriorityProps"
+			], 
+			"objdata": {
+				"#comment": "The Family priority order when sorting plants by Family.", 
+				"PrioritizedFamilyList": [
+					"Electric", 
+					"Sunny"
+				]
+			}
+		}, 
+		{
+			"objclass": "MiniGameMusicEnableList", 
+			"aliases": [
+				"MiniGameMusicEnableProps"
+			], 
+			"objdata": {
+				"EnabledMiniGameSuffixes": [
+					"Egypt", 
+					"Pirate", 
+					"WildWest", 
+					"Future", 
+					"DarkAges", 
+					"Beach", 
+					"IceAge", 
+					"LostCity", 
+					"Dino", 
+					"Modern"
+				], 
+				"EnabledMiniGameWorlds": [
+					"egypt", 
+					"pirate", 
+					"cowboy", 
+					"future", 
+					"dark", 
+					"beach", 
+					"iceage", 
+					"lostcity", 
+					"dino", 
+					"modern"
+				]
+			}
+		}, 
+		{
+			"objclass": "GamePropertySheet", 
+			"aliases": [
+				"DefaultGameProps"
+			], 
+			"objdata": {
+				"PlantTypeOrder": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"potatomine", 
+					"pineneedler", 
+					"chomper", 
+					"burstberry", 
+					"cabbagepult", 
+					"clivia", 
+					"iceburg", 
+					"gravebuster", 
+					"agave", 
+					"repeater", 
+					"coldslaw", 
+					"twinsunflower", 
+					"aquapeashooter", 
+					"torchwood", 
+					"kernelpult", 
+					"whitemelon", 
+					"threepeater", 
+					"spikeweed", 
+					"coconutcannon", 
+					"jalapeno"
+				], 
+				"ZombieAlmanacOrder": [
+					"tutorial", 
+					"tutorial_armor1", 
+					"tutorial_armor2", 
+					"tutorial_armor4", 
+					"tutorial_flag", 
+					"tutorial_flag_veteran", 
+					"tutorial_imp", 
+					"tutorial_gargantuar", 
+					"vase_gargantuar", 
+					"modern_polevaulter", 
+					"modern_screendoor_almanac", 
+					"mummy", 
+					"mummy_armor1", 
+					"mummy_armor2", 
+					"mummy_armor4", 
+					"mummy_flag", 
+					"mummy_flag_veteran", 
+					"ra", 
+					"camel_almanac", 
+					"explorer", 
+					"explorer_veteran", 
+					"egyptologist", 
+					"tomb_raiser", 
+					"tomb_raiser_veteran", 
+					"pharaoh", 
+					"cleopatra", 
+					"egypt_imp", 
+					"egypt_gargantuar", 
+					"zombossmech_egypt", 
+					"egypt_supervisor", 
+					"egypt_tomb_imp", 
+					"heian", 
+					"heian_armor1", 
+					"heian_armor2", 
+					"heian_armor4", 
+					"heian_flag", 
+					"heian_ninja_imp", 
+					"heian_hanabi", 
+					"heian_sushi", 
+					"heian_onmyoji", 
+					"heian_onmyoji_veteran", 
+					"yokai_ubagbi", 
+					"heian_gargantuar", 
+					"pirate", 
+					"pirate_armor1", 
+					"pirate_armor2", 
+					"pirate_armor4", 
+					"pirate_flag", 
+					"pirate_flag_veteran", 
+					"swashbuckler", 
+					"seagull", 
+					"pelican", 
+					"barrelroller", 
+					"barrelroller_veteran", 
+					"pirate_imp", 
+					"cannon", 
+					"pirate_captain", 
+					"pirate_captain_parrot", 
+					"pegleg_bomber", 
+					"pirate_anchor", 
+					"pirate_gargantuar", 
+					"zombossmech_pirate", 
+					"pirate_boomer", 
+					"pirate_skeleton", 
+					"pirate_buccaneer", 
+					"pirate_bombthrower", 
+					"pirate_frosty", 
+					"pirate_conman"
+				], 
+				"SproutFirstLevelThreshold": [
+					"egypt12", 
+					"pirate1", 
+					"cowboy1", 
+					"future1", 
+					"dark1", 
+					"beach1", 
+					"iceage1", 
+					"lostcity1", 
+					"eighties1", 
+					"dino1", 
+					"modern1"
+				], 
+				"StarsPerCostume": 20, 
+				"KeysPerCostume": 10, 
+				"CoinsPerKey": 1000, 
+				"LawnMowerPurchasePriceInCoins": 2000, 
+				"PowerTilePropagationAlpha": 1.0, 
+				"PowerTilePropagationDelay": 0.2, 
+				"PowerTilePropagationInitialDelay": 2.0, 
+				"ZombieVsZombieCrushingDamageScale": 0.05, 
+				"ZombieVsFriendlyZombieDamageScale": 0.9, 
+				"ZombieConditionsWhichInvincibleOverrides": [
+					"chill", 
+					"freeze", 
+					"stun", 
+					"butter", 
+					"haunted", 
+					"stalled", 
+					"poisoned", 
+					"contagiouspoison"
+				], 
+				"SeedSlotRentalCost": 2000
+			}
+		}, 
+		{
+			"objclass": "BoardPropertySheet", 
+			"aliases": [
+				"DefaultBoardProps"
+			], 
+			"objdata": {
+				"PlantTargetingXThreshold": 820, 
+				"MaxSunCurrency": 999900, 
+				"ZombieThreatLowAlert_TriggerPositionX": -9999999.0, 
+				"ZombieThreatHighAlert_TriggerPositionX": -999999.0, 
+				"ZombieThreatLowAlert_StarChallengeOffsetX": -999999.0, 
+				"ZombieThreatHighAlert_StarChallengeOffsetX": -999999.0, 
+				"ZombieThreatLowAlert_ProtectPlantOffsetX": -999999.0, 
+				"ZombieThreatHighAlert_ProtectPlantOffsetX": -999999.0, 
+				"CoinAlert_LowBalanceThreshold": 0, 
+				"RequiredSubsystems": [
+					"ZombieThreatAlertSubSystem"
+				], 
+				"ZombieTideMaxHeightPct": 0.3, 
+				"DefaultTideMaxHeightPct": 0.3, 
+				"MaxTideDropoffDistance": 40.0, 
+				"DynamicDifficultyMowerImmunity": [
+					5, 
+					5, 
+					5, 
+					5, 
+					4, 
+					3, 
+					2
+				], 
+				"DynamicDifficultyMowerCooldown": [
+					45, 
+					45, 
+					45, 
+					45, 
+					30, 
+					15, 
+					0
+				], 
+				"DangerRoomMowerImmunity": 3.0, 
+				"DangerRoomMowerCooldown": 20.0, 
+				"LastStandPlantExcludelist": [
+					"puffshroom", 
+					"iceburg", 
+					"gravebuster", 
+					"boingsetta"
+				], 
+				"PlantFrostExcludelist": [
+					"hotpotato", 
+					"pepperpult", 
+					"torchwood", 
+					"firepeashooter", 
+					"lavaguava", 
+					"jackolantern", 
+					"wasabiwhip", 
+					"coldsnapdragon", 
+					"missiletoe", 
+					"hotdate", 
+					"pyrevine", 
+					"inferno", 
+					"snapdragon", 
+					"iceweed"
+				], 
+				"ProtectThePlantAdditionalPlantingExcludelist": [
+					"powerplant", 
+					"lilypad"
+				], 
+				"PlantSmashAttackExcludelist": [
+					"pumpkin"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldMapPropertySheet", 
+			"aliases": [
+				"DefaultWorldMapProps"
+			], 
+			"objdata": {
+				"ParallaxSpeedLayerForeground4": 1.4, 
+				"ParallaxSpeedLayerForeground3": 1.3, 
+				"ParallaxSpeedLayerForeground2": 1.2, 
+				"ParallaxSpeedLayerForeground1": 1.1, 
+				"ParallaxSpeedLayer1": 0.9, 
+				"ParallaxSpeedLayer2": 0.8, 
+				"ParallaxSpeedLayer3": 0.7, 
+				"ParallaxSpeedLayer4": 0.6, 
+				"ParallaxSpeedLayer5": 0.5, 
+				"ParallaxSpeedLayer6": 0.4, 
+				"ParallaxSpeedLayer7": 0.3, 
+				"ParallaxSpeedLayer8": 0.2, 
+				"ParallaxSpeedLayer9": 0.1, 
+				"ParallaxSpeedLayer10": 0.0, 
+				"PathUnlockSpeed": 400.0, 
+				"SnapGrid": {
+					"x": 62.35, 
+					"y": 32.9
+				}, 
+				"EditorSafeZoneYStart": 124.0, 
+				"EditorSafeZoneYEnd": 460.0
+			}
+		}, 
+		{
+			"objclass": "TideEffectsProps", 
+			"aliases": [
+				"DefaultTideEffectProps"
+			], 
+			"objdata": {
+				"Effects": [
+					{
+						"x": 1, 
+						"y": 1
+					}, 
+					{
+						"x": 1, 
+						"y": 3
+					}, 
+					{
+						"x": 2, 
+						"y": 0
+					}, 
+					{
+						"x": 2, 
+						"y": 2
+					}, 
+					{
+						"x": 2, 
+						"y": 4
+					}, 
+					{
+						"x": 3, 
+						"y": 1
+					}, 
+					{
+						"x": 3, 
+						"y": 3
+					}, 
+					{
+						"x": 4, 
+						"y": 0
+					}, 
+					{
+						"x": 4, 
+						"y": 2
+					}, 
+					{
+						"x": 4, 
+						"y": 4
+					}, 
+					{
+						"x": 5, 
+						"y": 1
+					}, 
+					{
+						"x": 5, 
+						"y": 3
+					}, 
+					{
+						"x": 6, 
+						"y": 0
+					}, 
+					{
+						"x": 6, 
+						"y": 2
+					}, 
+					{
+						"x": 6, 
+						"y": 4
+					}, 
+					{
+						"x": 7, 
+						"y": 1
+					}, 
+					{
+						"x": 7, 
+						"y": 3
+					}, 
+					{
+						"x": 8, 
+						"y": 0
+					}, 
+					{
+						"x": 8, 
+						"y": 2
+					}, 
+					{
+						"x": 8, 
+						"y": 4
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "WaveManagerProperties", 
+			"aliases": [
+				"DefaultWaveManagerProperties"
+			], 
+			"objdata": {
+				"ZombieCountdownFirstWaveSecs": 12.0, 
+				"ZombieCountdownFirstWaveConveyorSecs": 5.0, 
+				"ZombieCountdownHugeWaveDelay": 5.0
+			}
+		}, 
+		{
+			"objclass": "PlayerProfileProperties", 
+			"aliases": [
+				"DefaultPlayerProfileProps"
+			], 
+			"objdata": {
+				"InitialPlantList": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"potatomine", 
+					"pineneedler", 
+					"chomper", 
+					"cabbagepult"
+				]
+			}
+		}, 
+		{
+			"objclass": "StoreTryPreviewPropertySheet", 
+			"aliases": [
+				"StoreTryPreviewProps"
+			], 
+			"objdata": {
+				"PreviewList": [
+					{
+						"ItemTypeName": "hurrikale", 
+						"LevelPreview": "challenge_levels/preview_plant_hurrikale"
+					}, 
+					{
+						"ItemTypeName": "homingthistle", 
+						"LevelPreview": "lod_053"
+					}, 
+					{
+						"ItemTypeName": "chomper", 
+						"LevelPreview": "lod_053"
+					}, 
+					{
+						"ItemTypeName": "peanut", 
+						"LevelPreview": "lod_053"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "CostumePropertySheet", 
+			"aliases": [
+				"CostumeProps"
+			], 
+			"objdata": {
+				"CostumeList": [
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "bloomerang", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Rasta"
+					}, 
+					{
+						"CostumeID": 2, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Champ belt"
+					}, 
+					{
+						"CostumeID": 3, 
+						"PlantTypeName": "cabbagepult", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Sweatband"
+					}, 
+					{
+						"CostumeID": 4, 
+						"PlantTypeName": "cherry_bomb", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Shades and hats"
+					}, 
+					{
+						"CostumeID": 5, 
+						"PlantTypeName": "coconutcannon", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Constructor's hat"
+					}, 
+					{
+						"CostumeID": 6, 
+						"PlantTypeName": "gravebuster", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Fez"
+					}, 
+					{
+						"CostumeID": 7, 
+						"PlantTypeName": "iceburg", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "fuzzy ear protectors"
+					}, 
+					{
+						"CostumeID": 8, 
+						"PlantTypeName": "jalapeno", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ranger's hat"
+					}, 
+					{
+						"CostumeID": 9, 
+						"PlantTypeName": "kernelpult", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Red bandana"
+					}, 
+					{
+						"CostumeID": 10, 
+						"PlantTypeName": "lightningreed", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Lamp shade"
+					}, 
+					{
+						"CostumeID": 11, 
+						"PlantTypeName": "melonpult", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Sailor's hat"
+					}, 
+					{
+						"CostumeID": 12, 
+						"PlantTypeName": "peapod", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Fedoras"
+					}, 
+					{
+						"CostumeID": 13, 
+						"PlantTypeName": "potatomine", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Mask"
+					}, 
+					{
+						"CostumeID": 14, 
+						"PlantTypeName": "powerlily", 
+						"LayerName": "custom_1", 
+						"FriendlyName": "Glasses"
+					}, 
+					{
+						"CostumeID": 15, 
+						"PlantTypeName": "repeater", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Viking helmet"
+					}, 
+					{
+						"CostumeID": 16, 
+						"PlantTypeName": "snowpea", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Pink winter hat"
+					}, 
+					{
+						"CostumeID": 17, 
+						"PlantTypeName": "snapdragon", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Fireman's helmet"
+					}, 
+					{
+						"CostumeID": 18, 
+						"PlantTypeName": "spikerock", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Shades"
+					}, 
+					{
+						"CostumeID": 19, 
+						"PlantTypeName": "spikeweed", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Disguise glasses"
+					}, 
+					{
+						"CostumeID": 20, 
+						"PlantTypeName": "splitpea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Angel & devil"
+					}, 
+					{
+						"CostumeID": 21, 
+						"PlantTypeName": "springbean", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Hawaiian dress"
+					}, 
+					{
+						"CostumeID": 22, 
+						"PlantTypeName": "squash", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Camo bandana"
+					}, 
+					{
+						"CostumeID": 23, 
+						"PlantTypeName": "twinsunflower", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Blue shades"
+					}, 
+					{
+						"CostumeID": 24, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Black moustache"
+					}, 
+					{
+						"CostumeID": 25, 
+						"PlantTypeName": "threepeater", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Pots"
+					}, 
+					{
+						"CostumeID": 26, 
+						"PlantTypeName": "torchwood", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Goggles"
+					}, 
+					{
+						"CostumeID": 27, 
+						"PlantTypeName": "wintermelon", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Blue winter hat"
+					}, 
+					{
+						"CostumeID": 28, 
+						"PlantTypeName": "chilibean", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Diaper"
+					}, 
+					{
+						"CostumeID": 29, 
+						"PlantTypeName": "citron", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Blender"
+					}, 
+					{
+						"CostumeID": 30, 
+						"PlantTypeName": "laser_bean", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Cape"
+					}, 
+					{
+						"CostumeID": 31, 
+						"PlantTypeName": "magnifyinggrass", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Turban"
+					}, 
+					{
+						"CostumeID": 32, 
+						"PlantTypeName": "holonut", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Ghost Trap"
+					}, 
+					{
+						"CostumeID": 33, 
+						"PlantTypeName": "empea", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Helmet"
+					}, 
+					{
+						"CostumeID": 34, 
+						"PlantTypeName": "blover", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Glasses"
+					}, 
+					{
+						"CostumeID": 35, 
+						"PlantTypeName": "starfruit", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Afro"
+					}, 
+					{
+						"CostumeID": 36, 
+						"PlantTypeName": "powerplant", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "BjornHorn"
+					}, 
+					{
+						"CostumeID": 37, 
+						"PlantTypeName": "sunshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Hockey Mask"
+					}, 
+					{
+						"CostumeID": 38, 
+						"PlantTypeName": "puffshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bull Horns"
+					}, 
+					{
+						"CostumeID": 39, 
+						"PlantTypeName": "hypnoshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Round Glasses"
+					}, 
+					{
+						"CostumeID": 40, 
+						"PlantTypeName": "fumeshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Thick Glasses"
+					}, 
+					{
+						"CostumeID": 41, 
+						"PlantTypeName": "sunbean", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Liberty Crown"
+					}, 
+					{
+						"CostumeID": 42, 
+						"PlantTypeName": "magnetshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Purple Cape"
+					}, 
+					{
+						"CostumeID": 43, 
+						"PlantTypeName": "peanut", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Inner Tube"
+					}, 
+					{
+						"CostumeID": 44, 
+						"PlantTypeName": "chomper", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Visor"
+					}, 
+					{
+						"CostumeID": 45, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Halloween Mummy Wrap"
+					}, 
+					{
+						"CostumeID": 46, 
+						"PlantTypeName": "kernelpult", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Halloween Clown"
+					}, 
+					{
+						"CostumeID": 47, 
+						"PlantTypeName": "repeater", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Halloween Vampire"
+					}, 
+					{
+						"CostumeID": 48, 
+						"PlantTypeName": "potatomine", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Googly Glasses"
+					}, 
+					{
+						"CostumeID": 49, 
+						"PlantTypeName": "potatomine", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top hat & monocle"
+					}, 
+					{
+						"CostumeID": 50, 
+						"PlantTypeName": "bloomerang", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Elf Hat"
+					}, 
+					{
+						"CostumeID": 51, 
+						"PlantTypeName": "bloomerang", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 52, 
+						"PlantTypeName": "cabbagepult", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "tiara"
+					}, 
+					{
+						"CostumeID": 53, 
+						"PlantTypeName": "cabbagepult", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "top hat & monocle"
+					}, 
+					{
+						"CostumeID": 54, 
+						"PlantTypeName": "iceburg", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "plaid ear protectors"
+					}, 
+					{
+						"CostumeID": 55, 
+						"PlantTypeName": "iceburg", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "peashooter ear protectors"
+					}, 
+					{
+						"CostumeID": 56, 
+						"PlantTypeName": "iceburg", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "top hat & monocle"
+					}, 
+					{
+						"CostumeID": 57, 
+						"PlantTypeName": "gravebuster", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Sombrero"
+					}, 
+					{
+						"CostumeID": 58, 
+						"PlantTypeName": "gravebuster", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 59, 
+						"PlantTypeName": "twinsunflower", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "raver shades"
+					}, 
+					{
+						"CostumeID": 60, 
+						"PlantTypeName": "twinsunflower", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "red sunglasses"
+					}, 
+					{
+						"CostumeID": 61, 
+						"PlantTypeName": "twinsunflower", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "top hat"
+					}, 
+					{
+						"CostumeID": 62, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Mummy Wraps"
+					}, 
+					{
+						"CostumeID": 63, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Wrestling Belt"
+					}, 
+					{
+						"CostumeID": 64, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Karate Belt"
+					}, 
+					{
+						"CostumeID": 65, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Bow Tie"
+					}, 
+					{
+						"CostumeID": 66, 
+						"PlantTypeName": "repeater", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Raccoon Hat"
+					}, 
+					{
+						"CostumeID": 67, 
+						"PlantTypeName": "repeater", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 68, 
+						"PlantTypeName": "snowpea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Winter Cap"
+					}, 
+					{
+						"CostumeID": 69, 
+						"PlantTypeName": "snowpea", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Trapper Hat"
+					}, 
+					{
+						"CostumeID": 70, 
+						"PlantTypeName": "snowpea", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 71, 
+						"PlantTypeName": "kernelpult", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "japanese bandana"
+					}, 
+					{
+						"CostumeID": 72, 
+						"PlantTypeName": "kernelpult", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "top hat & collars"
+					}, 
+					{
+						"CostumeID": 73, 
+						"PlantTypeName": "snapdragon", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Viking helm"
+					}, 
+					{
+						"CostumeID": 74, 
+						"PlantTypeName": "snapdragon", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Lincoln's hat"
+					}, 
+					{
+						"CostumeID": 75, 
+						"PlantTypeName": "powerlily", 
+						"LayerName": "custom_2", 
+						"FriendlyName": "Reading Glasses"
+					}, 
+					{
+						"CostumeID": 76, 
+						"PlantTypeName": "powerlily", 
+						"LayerName": "custom_3", 
+						"FriendlyName": "Monocle"
+					}, 
+					{
+						"CostumeID": 77, 
+						"PlantTypeName": "spikeweed", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "3D Glasses"
+					}, 
+					{
+						"CostumeID": 78, 
+						"PlantTypeName": "spikeweed", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Hypno Glasses"
+					}, 
+					{
+						"CostumeID": 79, 
+						"PlantTypeName": "spikeweed", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Monocle"
+					}, 
+					{
+						"CostumeID": 80, 
+						"PlantTypeName": "coconutcannon", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Pith Helmet"
+					}, 
+					{
+						"CostumeID": 81, 
+						"PlantTypeName": "coconutcannon", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 82, 
+						"PlantTypeName": "cherry_bomb", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "pink hats"
+					}, 
+					{
+						"CostumeID": 83, 
+						"PlantTypeName": "cherry_bomb", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "top hats and monocles"
+					}, 
+					{
+						"CostumeID": 84, 
+						"PlantTypeName": "springbean", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Pink Tutu"
+					}, 
+					{
+						"CostumeID": 85, 
+						"PlantTypeName": "springbean", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 86, 
+						"PlantTypeName": "spikerock", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Funky Glasses"
+					}, 
+					{
+						"CostumeID": 87, 
+						"PlantTypeName": "spikerock", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Monocle"
+					}, 
+					{
+						"CostumeID": 88, 
+						"PlantTypeName": "threepeater", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Party Hats"
+					}, 
+					{
+						"CostumeID": 89, 
+						"PlantTypeName": "threepeater", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hats"
+					}, 
+					{
+						"CostumeID": 90, 
+						"PlantTypeName": "squash", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Pink Headband"
+					}, 
+					{
+						"CostumeID": 91, 
+						"PlantTypeName": "squash", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 92, 
+						"PlantTypeName": "splitpea", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "cop & robber hats"
+					}, 
+					{
+						"CostumeID": 93, 
+						"PlantTypeName": "splitpea", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "orange & blue top hats"
+					}, 
+					{
+						"CostumeID": 94, 
+						"PlantTypeName": "chilibean", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "bib"
+					}, 
+					{
+						"CostumeID": 95, 
+						"PlantTypeName": "chilibean", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "bowtie"
+					}, 
+					{
+						"CostumeID": 96, 
+						"PlantTypeName": "torchwood", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Star Glasses"
+					}, 
+					{
+						"CostumeID": 97, 
+						"PlantTypeName": "torchwood", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Monocle"
+					}, 
+					{
+						"CostumeID": 99, 
+						"PlantTypeName": "lightningreed", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "bunny ears"
+					}, 
+					{
+						"CostumeID": 100, 
+						"PlantTypeName": "lightningreed", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "top hat"
+					}, 
+					{
+						"CostumeID": 101, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "biker stache"
+					}, 
+					{
+						"CostumeID": 102, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "DRP Beard"
+					}, 
+					{
+						"CostumeID": 103, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "thin mustache & bowtie"
+					}, 
+					{
+						"CostumeID": 104, 
+						"PlantTypeName": "melonpult", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 105, 
+						"PlantTypeName": "melonpult", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Baseball Hat"
+					}, 
+					{
+						"CostumeID": 106, 
+						"PlantTypeName": "wintermelon", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 107, 
+						"PlantTypeName": "wintermelon", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Winter Hat"
+					}, 
+					{
+						"CostumeID": 108, 
+						"PlantTypeName": "laser_bean", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Gold Necklace"
+					}, 
+					{
+						"CostumeID": 109, 
+						"PlantTypeName": "laser_bean", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Tux and Hat"
+					}, 
+					{
+						"CostumeID": 110, 
+						"PlantTypeName": "blover", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Glasses"
+					}, 
+					{
+						"CostumeID": 111, 
+						"PlantTypeName": "blover", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 112, 
+						"PlantTypeName": "citron", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Propeller Beanie"
+					}, 
+					{
+						"CostumeID": 113, 
+						"PlantTypeName": "citron", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Juice Carton"
+					}, 
+					{
+						"CostumeID": 114, 
+						"PlantTypeName": "empea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Frankenstein"
+					}, 
+					{
+						"CostumeID": 115, 
+						"PlantTypeName": "empea", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Bowtie"
+					}, 
+					{
+						"CostumeID": 116, 
+						"PlantTypeName": "starfruit", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Antennae"
+					}, 
+					{
+						"CostumeID": 117, 
+						"PlantTypeName": "holonut", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Toaster"
+					}, 
+					{
+						"CostumeID": 118, 
+						"PlantTypeName": "holonut", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 119, 
+						"PlantTypeName": "magnifyinggrass", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bow"
+					}, 
+					{
+						"CostumeID": 120, 
+						"PlantTypeName": "magnifyinggrass", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 121, 
+						"PlantTypeName": "powerplant", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Russian Hat"
+					}, 
+					{
+						"CostumeID": 122, 
+						"PlantTypeName": "powerplant", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Disguise Glasses"
+					}, 
+					{
+						"CostumeID": 123, 
+						"PlantTypeName": "powerplant", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 124, 
+						"PlantTypeName": "tanglekelp", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bandanna"
+					}, 
+					{
+						"CostumeID": 125, 
+						"PlantTypeName": "bowlingbulb", 
+						"LayerName": "custom_1", 
+						"FriendlyName": "Top Hats"
+					}, 
+					{
+						"CostumeID": 126, 
+						"PlantTypeName": "homingthistle", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Duckie"
+					}, 
+					{
+						"CostumeID": 127, 
+						"PlantTypeName": "guacodile", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Guac and Chips"
+					}, 
+					{
+						"CostumeID": 128, 
+						"PlantTypeName": "ghostpepper", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Purple Bow"
+					}, 
+					{
+						"CostumeID": 129, 
+						"PlantTypeName": "lilypad", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Pink Flower"
+					}, 
+					{
+						"CostumeID": 130, 
+						"PlantTypeName": "sweetpotato", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "bowtie"
+					}, 
+					{
+						"CostumeID": 131, 
+						"PlantTypeName": "sapfling", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "ornament"
+					}, 
+					{
+						"CostumeID": 132, 
+						"PlantTypeName": "banana", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "towel"
+					}, 
+					{
+						"CostumeID": 133, 
+						"PlantTypeName": "chardguard", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "vest"
+					}, 
+					{
+						"CostumeID": 134, 
+						"PlantTypeName": "chardguard", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "spikybelt"
+					}, 
+					{
+						"CostumeID": 135, 
+						"PlantTypeName": "hurrikale", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "foxtail"
+					}, 
+					{
+						"CostumeID": 136, 
+						"PlantTypeName": "hotpotato", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "cheese"
+					}, 
+					{
+						"CostumeID": 137, 
+						"PlantTypeName": "pepperpult", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "headband"
+					}, 
+					{
+						"CostumeID": 138, 
+						"PlantTypeName": "pepperpult", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": "heart_headband"
+					}, 
+					{
+						"CostumeID": 139, 
+						"PlantTypeName": "firepeashooter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "hotdog"
+					}, 
+					{
+						"CostumeID": 140, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "DRP Beard"
+					}, 
+					{
+						"CostumeID": 141, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Biker 'stache"
+					}, 
+					{
+						"CostumeID": 142, 
+						"PlantTypeName": "xshot", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Night Vision"
+					}, 
+					{
+						"CostumeID": 143, 
+						"PlantTypeName": "xshot", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Tiara"
+					}, 
+					{
+						"CostumeID": 144, 
+						"PlantTypeName": "stunion", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Radio"
+					}, 
+					{
+						"CostumeID": 145, 
+						"PlantTypeName": "stunion", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Straw Hat"
+					}, 
+					{
+						"CostumeID": 146, 
+						"PlantTypeName": "kernelpult", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Spring Bow"
+					}, 
+					{
+						"CostumeID": 147, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_06", 
+						"FriendlyName": "Flower Garland"
+					}, 
+					{
+						"CostumeID": 148, 
+						"PlantTypeName": "twinsunflower", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Bonnets"
+					}, 
+					{
+						"CostumeID": 149, 
+						"PlantTypeName": "snapdragon", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Bunny Ears"
+					}, 
+					{
+						"CostumeID": 150, 
+						"PlantTypeName": "dandelion", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Beardy Beard"
+					}, 
+					{
+						"CostumeID": 151, 
+						"PlantTypeName": "dandelion", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Elfin Ears"
+					}, 
+					{
+						"CostumeID": 152, 
+						"PlantTypeName": "kernelpult", 
+						"LayerName": "custom_06", 
+						"FriendlyName": "Birthday Noisemaker"
+					}, 
+					{
+						"CostumeID": 153, 
+						"PlantTypeName": "snapdragon", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Birthday Cupcake"
+					}, 
+					{
+						"CostumeID": 154, 
+						"PlantTypeName": "lightningreed", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Birthday Hat"
+					}, 
+					{
+						"CostumeID": 155, 
+						"PlantTypeName": "cabbagepult", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Birthday Hat"
+					}, 
+					{
+						"CostumeID": 156, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_07", 
+						"FriendlyName": "Birthday Hat"
+					}, 
+					{
+						"CostumeID": 157, 
+						"PlantTypeName": "lavaguava", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Lei"
+					}, 
+					{
+						"CostumeID": 158, 
+						"PlantTypeName": "lavaguava", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Headband"
+					}, 
+					{
+						"CostumeID": 159, 
+						"PlantTypeName": "toadstool", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Afro"
+					}, 
+					{
+						"CostumeID": 160, 
+						"PlantTypeName": "toadstool", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Purple Hat"
+					}, 
+					{
+						"CostumeID": 161, 
+						"PlantTypeName": "akee", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Helmet"
+					}, 
+					{
+						"CostumeID": 162, 
+						"PlantTypeName": "akee", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Bandana"
+					}, 
+					{
+						"CostumeID": 163, 
+						"PlantTypeName": "endurian", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Mawashi"
+					}, 
+					{
+						"CostumeID": 164, 
+						"PlantTypeName": "endurian", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Football Pads"
+					}, 
+					{
+						"CostumeID": 165, 
+						"PlantTypeName": "redstinger", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Robin Hood"
+					}, 
+					{
+						"CostumeID": 166, 
+						"PlantTypeName": "redstinger", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Boonie Hat"
+					}, 
+					{
+						"CostumeID": 167, 
+						"PlantTypeName": "goldleaf", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Sundae Topping"
+					}, 
+					{
+						"CostumeID": 168, 
+						"PlantTypeName": "goldleaf", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Golden Locks"
+					}, 
+					{
+						"CostumeID": 169, 
+						"PlantTypeName": "goldleaf", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Hairstyle 9001"
+					}, 
+					{
+						"CostumeID": 170, 
+						"PlantTypeName": "stallia", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Nighty Night Cap"
+					}, 
+					{
+						"CostumeID": 171, 
+						"PlantTypeName": "stallia", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Lion Costume"
+					}, 
+					{
+						"CostumeID": 172, 
+						"PlantTypeName": "lightningreed", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Bug Zapper"
+					}, 
+					{
+						"CostumeID": 173, 
+						"PlantTypeName": "pepperpult", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Soda Hat"
+					}, 
+					{
+						"CostumeID": 174, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Swimsuit"
+					}, 
+					{
+						"CostumeID": 175, 
+						"PlantTypeName": "wintermelon", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Personal Fan"
+					}, 
+					{
+						"CostumeID": 176, 
+						"PlantTypeName": "repeater", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Sun Hat"
+					}, 
+					{
+						"CostumeID": 177, 
+						"PlantTypeName": "cactus", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Workout Sweats"
+					}, 
+					{
+						"CostumeID": 178, 
+						"PlantTypeName": "cactus", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Denim Vest"
+					}, 
+					{
+						"CostumeID": 179, 
+						"PlantTypeName": "strawburst", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "mohawk"
+					}, 
+					{
+						"CostumeID": 180, 
+						"PlantTypeName": "strawburst", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "fedora"
+					}, 
+					{
+						"CostumeID": 181, 
+						"PlantTypeName": "thymewarp", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Golden Top Hat"
+					}, 
+					{
+						"CostumeID": 182, 
+						"PlantTypeName": "thymewarp", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Tubular Cap"
+					}, 
+					{
+						"CostumeID": 183, 
+						"PlantTypeName": "electricblueberry", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Light Bulb"
+					}, 
+					{
+						"CostumeID": 184, 
+						"PlantTypeName": "electricblueberry", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Outlet"
+					}, 
+					{
+						"CostumeID": 185, 
+						"PlantTypeName": "phatbeet", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Run P.V.Z."
+					}, 
+					{
+						"CostumeID": 186, 
+						"PlantTypeName": "phatbeet", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Radio Construction Helmet"
+					}, 
+					{
+						"CostumeID": 187, 
+						"PlantTypeName": "celerystalker", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Helm of Plantity +1."
+					}, 
+					{
+						"CostumeID": 188, 
+						"PlantTypeName": "celerystalker", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Boxing Helmet"
+					}, 
+					{
+						"CostumeID": 189, 
+						"PlantTypeName": "garlic", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Crop Farmer Hat"
+					}, 
+					{
+						"CostumeID": 190, 
+						"PlantTypeName": "garlic", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Rubber Glove"
+					}, 
+					{
+						"CostumeID": 191, 
+						"PlantTypeName": "sporeshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Paper Bag"
+					}, 
+					{
+						"CostumeID": 192, 
+						"PlantTypeName": "sporeshroom", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Origami Hat"
+					}, 
+					{
+						"CostumeID": 193, 
+						"PlantTypeName": "intensivecarrot", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Black Rimmed Glasses"
+					}, 
+					{
+						"CostumeID": 194, 
+						"PlantTypeName": "intensivecarrot", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Doc Head Mirror"
+					}, 
+					{
+						"CostumeID": 195, 
+						"PlantTypeName": "jackolantern", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Count Jackula"
+					}, 
+					{
+						"CostumeID": 196, 
+						"PlantTypeName": "jackolantern", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Fire Extinguisher"
+					}, 
+					{
+						"CostumeID": 197, 
+						"PlantTypeName": "grapeshot", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Umbrella"
+					}, 
+					{
+						"CostumeID": 198, 
+						"PlantTypeName": "grapeshot", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Balloons"
+					}, 
+					{
+						"CostumeID": 199, 
+						"PlantTypeName": "primalpeashooter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Hunter's Hat"
+					}, 
+					{
+						"CostumeID": 200, 
+						"PlantTypeName": "primalpeashooter", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Shower Cap"
+					}, 
+					{
+						"CostumeID": 201, 
+						"PlantTypeName": "primalwallnut", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Overalls"
+					}, 
+					{
+						"CostumeID": 202, 
+						"PlantTypeName": "primalwallnut", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Speed Swimmer"
+					}, 
+					{
+						"CostumeID": 203, 
+						"PlantTypeName": "perfumeshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Cupid's Arrow"
+					}, 
+					{
+						"CostumeID": 204, 
+						"PlantTypeName": "perfumeshroom", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Cool Guy Cap"
+					}, 
+					{
+						"CostumeID": 205, 
+						"PlantTypeName": "coldsnapdragon", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ice Cube"
+					}, 
+					{
+						"CostumeID": 206, 
+						"PlantTypeName": "coldsnapdragon", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Ice Cream Cone"
+					}, 
+					{
+						"CostumeID": 207, 
+						"PlantTypeName": "primalpotatomine", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Smart Specs"
+					}, 
+					{
+						"CostumeID": 208, 
+						"PlantTypeName": "primalpotatomine", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Police Tape"
+					}, 
+					{
+						"CostumeID": 209, 
+						"PlantTypeName": "primalsunflower", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Dino Hat"
+					}, 
+					{
+						"CostumeID": 210, 
+						"PlantTypeName": "primalsunflower", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Antlers"
+					}, 
+					{
+						"CostumeID": 211, 
+						"PlantTypeName": "shrinkingviolet", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ruby Glitter Shoes"
+					}, 
+					{
+						"CostumeID": 212, 
+						"PlantTypeName": "shrinkingviolet", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Snazzy Janes"
+					}, 
+					{
+						"CostumeID": 213, 
+						"PlantTypeName": "bloominghearts", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Headband - Flower"
+					}, 
+					{
+						"CostumeID": 214, 
+						"PlantTypeName": "bloominghearts", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Headband - Bow"
+					}, 
+					{
+						"CostumeID": 215, 
+						"PlantTypeName": "moonflower", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Magic Moon Wand"
+					}, 
+					{
+						"CostumeID": 216, 
+						"PlantTypeName": "nightshade", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Shades"
+					}, 
+					{
+						"CostumeID": 217, 
+						"PlantTypeName": "shadowshroom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Kitty Hat"
+					}, 
+					{
+						"CostumeID": 218, 
+						"PlantTypeName": "escaperoot", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Mining Helmet"
+					}, 
+					{
+						"CostumeID": 219, 
+						"PlantTypeName": "escaperoot", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Sheriff's Hat"
+					}, 
+					{
+						"CostumeID": 220, 
+						"PlantTypeName": "dusklobber", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Glam Hair"
+					}, 
+					{
+						"CostumeID": 221, 
+						"PlantTypeName": "dusklobber", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Stylish Newsboy Hat"
+					}, 
+					{
+						"CostumeID": 222, 
+						"PlantTypeName": "grimrose", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Conical Hat"
+					}, 
+					{
+						"CostumeID": 223, 
+						"PlantTypeName": "grimrose", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Wide Brimmed Hat"
+					}, 
+					{
+						"CostumeID": 224, 
+						"PlantTypeName": "goldbloom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Malcom"
+					}, 
+					{
+						"CostumeID": 225, 
+						"PlantTypeName": "goldbloom", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Gold Rimmed Shades"
+					}, 
+					{
+						"CostumeID": 226, 
+						"PlantTypeName": "electriccurrant", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Alligator Clips"
+					}, 
+					{
+						"CostumeID": 227, 
+						"PlantTypeName": "electriccurrant", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Blue Light Bulb"
+					}, 
+					{
+						"CostumeID": 228, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_08", 
+						"FriendlyName": "Time Twist - Prehistoric shirt and tie"
+					}, 
+					{
+						"CostumeID": 229, 
+						"PlantTypeName": "melonpult", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Time Twist - Red Antenna"
+					}, 
+					{
+						"CostumeID": 230, 
+						"PlantTypeName": "cabbagepult", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Time Twist - Triceratops horns"
+					}, 
+					{
+						"CostumeID": 231, 
+						"PlantTypeName": "wasabiwhip", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Blue Headband"
+					}, 
+					{
+						"CostumeID": 232, 
+						"PlantTypeName": "explodeonut", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Flames and Pipes"
+					}, 
+					{
+						"CostumeID": 233, 
+						"PlantTypeName": "aloe", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "LEAF pennant"
+					}, 
+					{
+						"CostumeID": 234, 
+						"PlantTypeName": "aloe", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "flower pennant"
+					}, 
+					{
+						"CostumeID": 235, 
+						"PlantTypeName": "kiwibeast", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Pink Pigtails"
+					}, 
+					{
+						"CostumeID": 236, 
+						"PlantTypeName": "kiwibeast", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Golden Crown"
+					}, 
+					{
+						"CostumeID": 237, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_09", 
+						"FriendlyName": "Grass Kunckles"
+					}, 
+					{
+						"CostumeID": 238, 
+						"PlantTypeName": "torchwood", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Captain Combustible"
+					}, 
+					{
+						"CostumeID": 239, 
+						"PlantTypeName": "fumeshroom", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Nightcap"
+					}, 
+					{
+						"CostumeID": 240, 
+						"PlantTypeName": "applemortar", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Camo Shorts"
+					}, 
+					{
+						"CostumeID": 241, 
+						"PlantTypeName": "bombegranate", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ear Protection"
+					}, 
+					{
+						"CostumeID": 242, 
+						"PlantTypeName": "bombegranate", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Pigtails"
+					}, 
+					{
+						"CostumeID": 243, 
+						"PlantTypeName": "missiletoe", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bow"
+					}, 
+					{
+						"CostumeID": 244, 
+						"PlantTypeName": "missiletoe", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Scarf"
+					}, 
+					{
+						"CostumeID": 245, 
+						"PlantTypeName": "parsnip", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Cat Ears"
+					}, 
+					{
+						"CostumeID": 246, 
+						"PlantTypeName": "parsnip", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Crab"
+					}, 
+					{
+						"CostumeID": 247, 
+						"PlantTypeName": "witchhazel", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Witch Hat"
+					}, 
+					{
+						"CostumeID": 248, 
+						"PlantTypeName": "witchhazel", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Nightcap"
+					}, 
+					{
+						"CostumeID": 249, 
+						"PlantTypeName": "hotdate", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Chocolate"
+					}, 
+					{
+						"CostumeID": 250, 
+						"PlantTypeName": "caulipower", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Graduate"
+					}, 
+					{
+						"CostumeID": 251, 
+						"PlantTypeName": "electricpeashooter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Neon Arrow"
+					}, 
+					{
+						"CostumeID": 252, 
+						"PlantTypeName": "solartomato", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Baseball Cap"
+					}, 
+					{
+						"CostumeID": 253, 
+						"PlantTypeName": "hollyknight", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Blue Ribbon"
+					}, 
+					{
+						"CostumeID": 254, 
+						"PlantTypeName": "shadowpeashooter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Sun Hat"
+					}, 
+					{
+						"CostumeID": 255, 
+						"PlantTypeName": "slingpea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Racing Trim"
+					}, 
+					{
+						"CostumeID": 256, 
+						"PlantTypeName": "poisonpeashooter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Hazmat Helmet"
+					}, 
+					{
+						"CostumeID": 257, 
+						"PlantTypeName": "snappea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bonnet"
+					}, 
+					{
+						"CostumeID": 258, 
+						"PlantTypeName": "zoybeanpod", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Skis"
+					}, 
+					{
+						"CostumeID": 259, 
+						"PlantTypeName": "electricitea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Cowboy Hat"
+					}, 
+					{
+						"CostumeID": 260, 
+						"PlantTypeName": "pokra", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bow"
+					}, 
+					{
+						"CostumeID": 261, 
+						"PlantTypeName": "imppear", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Mustache"
+					}, 
+					{
+						"CostumeID": 262, 
+						"PlantTypeName": "icebloom", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Glasses"
+					}, 
+					{
+						"CostumeID": 263, 
+						"PlantTypeName": "dartichoke", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bandana"
+					}, 
+					{
+						"CostumeID": 264, 
+						"PlantTypeName": "gumnut", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Clown Wigs"
+					}, 
+					{
+						"CostumeID": 265, 
+						"PlantTypeName": "puffshroom", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Cowboy Hat"
+					}, 
+					{
+						"CostumeID": 266, 
+						"PlantTypeName": "puffball", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Explorer Hat"
+					}, 
+					{
+						"CostumeID": 267, 
+						"PlantTypeName": "olivepit", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Neon Arrow"
+					}, 
+					{
+						"CostumeID": 268, 
+						"PlantTypeName": "turkeypult", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Visor"
+					}, 
+					{
+						"CostumeID": 269, 
+						"PlantTypeName": "headbutter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Punked Hair Leaf"
+					}, 
+					{
+						"CostumeID": 270, 
+						"PlantTypeName": "boingsetta", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Winter Red Bow"
+					}, 
+					{
+						"CostumeID": 271, 
+						"PlantTypeName": "stickybombrice", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Granny Glasses"
+					}, 
+					{
+						"CostumeID": 272, 
+						"PlantTypeName": "hocus", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 273, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Window Blinds Glasses"
+					}, 
+					{
+						"CostumeID": 274, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Round Glasses"
+					}, 
+					{
+						"CostumeID": 275, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Red Glasses"
+					}, 
+					{
+						"CostumeID": 276, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 277, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_halloween", 
+						"FriendlyName": "Witch Hat"
+					}, 
+					{
+						"CostumeID": 278, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_holiday", 
+						"FriendlyName": "Red Bow"
+					}, 
+					{
+						"CostumeID": 279, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_thingsandstuff", 
+						"FriendlyName": "Hero Solar Flare"
+					}, 
+					{
+						"CostumeID": 280, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": "Heart Glasses"
+					}, 
+					{
+						"CostumeID": 281, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Lucky Hat"
+					}, 
+					{
+						"CostumeID": 282, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Tiny Crown"
+					}, 
+					{
+						"CostumeID": 283, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Baseball Cap"
+					}, 
+					{
+						"CostumeID": 284, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Top Hat"
+					}, 
+					{
+						"CostumeID": 285, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_halloween", 
+						"FriendlyName": "Cowboy Costume"
+					}, 
+					{
+						"CostumeID": 286, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_holiday", 
+						"FriendlyName": "Earmuffs"
+					}, 
+					{
+						"CostumeID": 287, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_thingsandstuff", 
+						"FriendlyName": "Hero Green Shadow"
+					}, 
+					{
+						"CostumeID": 288, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": "Heart Headband"
+					}, 
+					{
+						"CostumeID": 289, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Blue Bowtie"
+					}, 
+					{
+						"CostumeID": 290, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Red Bowtie"
+					}, 
+					{
+						"CostumeID": 291, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Green Bowtie"
+					}, 
+					{
+						"CostumeID": 292, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Waiter Bib"
+					}, 
+					{
+						"CostumeID": 293, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_halloween", 
+						"FriendlyName": "Mummy Wrap"
+					}, 
+					{
+						"CostumeID": 294, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_holiday", 
+						"FriendlyName": "Warm Scarf"
+					}, 
+					{
+						"CostumeID": 295, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_thingsandstuff", 
+						"FriendlyName": "Hero WallKnight"
+					}, 
+					{
+						"CostumeID": 296, 
+						"PlantTypeName": "wallnut", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": "Red Heart Tie"
+					}, 
+					{
+						"CostumeID": 297, 
+						"PlantTypeName": "draftodil", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Bunny Slippers"
+					}, 
+					{
+						"CostumeID": 298, 
+						"PlantTypeName": "boomflower", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Party Hat"
+					}, 
+					{
+						"CostumeID": 299, 
+						"PlantTypeName": "inferno", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Gas Mask"
+					}, 
+					{
+						"CostumeID": 300, 
+						"PlantTypeName": "solarsage", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Carpet"
+					}, 
+					{
+						"CostumeID": 301, 
+						"PlantTypeName": "noctarine", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Sleep Mask"
+					}, 
+					{
+						"CostumeID": 302, 
+						"PlantTypeName": "heathseeker", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Hat"
+					}, 
+					{
+						"CostumeID": 303, 
+						"PlantTypeName": "iceweed", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ice Axe"
+					}, 
+					{
+						"CostumeID": 304, 
+						"PlantTypeName": "teleportatomine", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Goofy Face"
+					}, 
+					{
+						"CostumeID": 305, 
+						"PlantTypeName": "blockoli", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Aviators"
+					}, 
+					{
+						"CostumeID": 306, 
+						"PlantTypeName": "buttercup", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Pancakes"
+					}, 
+					{
+						"CostumeID": 307, 
+						"PlantTypeName": "bramblebush", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "selfie stick"
+					}, 
+					{
+						"CostumeID": 308, 
+						"PlantTypeName": "gatlingpea", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ear Piece"
+					}, 
+					{
+						"CostumeID": 309, 
+						"PlantTypeName": "gatlingpea", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Subway Surfers' Hat"
+					}, 
+					{
+						"CostumeID": 310, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Visor"
+					}, 
+					{
+						"CostumeID": 312, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Cat Ear Headset"
+					}, 
+					{
+						"CostumeID": 313, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "starglasses"
+					}, 
+					{
+						"CostumeID": 314, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "officer uniform"
+					}, 
+					{
+						"CostumeID": 315, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Raven (Teen Titans)"
+					}, 
+					{
+						"CostumeID": 316, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_06", 
+						"FriendlyName": "Witch Hat"
+					}, 
+					{
+						"CostumeID": 317, 
+						"PlantTypeName": "burstberry", 
+						"LayerName": "custom_07", 
+						"FriendlyName": "Bow Tie"
+					}, 
+					{
+						"CostumeID": 318, 
+						"CostumeType": "skin", 
+						"PlantTypeName": "burstberry", 
+						"PopAnimName": "POPANIM_PLANT_BURSTBERRY_SMURF", 
+						"OriginalResourceGroup": [
+							"PlantBurstBerry"
+						], 
+						"CostumeResourceGroup": [
+							"PlantBurstBerrySmurf"
+						], 
+						"FriendlyName": "Smurf"
+					}, 
+					{
+						"CostumeID": 319, 
+						"PlantTypeName": "coldslaw", 
+						"LayerName": "custom_01", 
+						"FriendlyName": "Ski Goggles"
+					}, 
+					{
+						"CostumeID": 320, 
+						"PlantTypeName": "coldslaw", 
+						"LayerName": "custom_02", 
+						"FriendlyName": "Nerd Glasses"
+					}, 
+					{
+						"CostumeID": 321, 
+						"PlantTypeName": "coldslaw", 
+						"LayerName": "custom_03", 
+						"FriendlyName": "Erm, what the fuck?"
+					}, 
+					{
+						"CostumeID": 322, 
+						"PlantTypeName": "coldslaw", 
+						"LayerName": "custom_04", 
+						"FriendlyName": "Scarf"
+					}, 
+					{
+						"CostumeID": 323, 
+						"PlantTypeName": "coldslaw", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Dr. Freeze"
+					}, 
+					{
+						"CostumeID": 342, 
+						"PlantTypeName": "dragoncane", 
+						"LayerName": "custom_01", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 343, 
+						"PlantTypeName": "dragoncane", 
+						"LayerName": "custom_02", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 370, 
+						"CostumeType": "skin", 
+						"PlantTypeName": "imitater", 
+						"PopAnimName": "POPANIM_PLANT_IMITATER_OG", 
+						"OriginalResourceGroup": [
+							"PlantImitater"
+						], 
+						"CostumeResourceGroup": [
+							"PlantImitater"
+						], 
+						"FriendlyName": "Original"
+					}, 
+					{
+						"CostumeID": 420, 
+						"CostumeType": "skin", 
+						"PlantTypeName": "gravebuster", 
+						"PopAnimName": "POPANIM_PLANT_GRAVEBUSTER", 
+						"OriginalResourceGroup": [
+							"PlantGraveBuster"
+						], 
+						"CostumeResourceGroup": [
+							"PlantGraveBuster"
+						], 
+						"FriendlyName": "Not-Nostalgic Grave Buster"
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "peapod", 
+						"LayerName": "custom_02", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "pepperpult", 
+						"LayerName": "custom_04", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 2, 
+						"PlantTypeName": "pepperpult", 
+						"LayerName": "custom_03", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_01", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 2, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_02", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 3, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_03", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 4, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_04", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 5, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_05", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 6, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_06", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 7, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_07", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 8, 
+						"PlantTypeName": "marigold", 
+						"LayerName": "custom_08", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "repeater", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "iceburg", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "bonkchoy", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "tallnut", 
+						"LayerName": "custom_valentines", 
+						"FriendlyName": ""
+					}, 
+					{
+						"CostumeID": 1, 
+						"PlantTypeName": "peashooter", 
+						"LayerName": "custom_oldhalloween", 
+						"FriendlyName": "Frankenstein Costume"
+					}, 
+					{
+						"CostumeID": 500, 
+						"CostumeType": "skin", 
+						"PlantTypeName": "chardguard", 
+						"PopAnimName": "POPANIM_PLANT_MONEYGUARD", 
+						"OriginalResourceGroup": [
+							"PlantChardGuard"
+						], 
+						"CostumeResourceGroup": [
+							"PlantMoneyGuard"
+						], 
+						"FriendlyName": "Money Guard"
+					}, 
+					{
+						"CostumeID": 501, 
+						"PlantTypeName": "sunflower", 
+						"LayerName": "custom_05", 
+						"FriendlyName": "Major Sweetie"
+					}, 
+					{
+						"CostumeID": 502, 
+						"CostumeType": "skin", 
+						"PlantTypeName": "bonkchoy", 
+						"PopAnimName": "POPANIM_PLANT_BONKCHOY1", 
+						"OriginalResourceGroup": [
+							"PlantBonkchoy"
+						], 
+						"CostumeResourceGroup": [
+							"PlantBonkchoy"
+						], 
+						"FriendlyName": "Infi-Mania"
+					}, 
+					{
+						"CostumeID": 503, 
+						"CostumeType": "skin", 
+						"PlantTypeName": "pickledpepper", 
+						"PopAnimName": "POPANIM_PLANT_PICKLEDJALAPENO", 
+						"OriginalResourceGroup": [
+							"PlantPickledJalapeno"
+						], 
+						"CostumeResourceGroup": [
+							"PlantPickledJalapeno"
+						], 
+						"FriendlyName": "Jalapeno Twin"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ComponentWarmingRadiusGlobalProperties", 
+			"aliases": [
+				"ComponentWarmingRadiusGlobalProperties"
+			], 
+			"objdata": {
+				"WarmableGridItems": {
+					"ListType": "includelist", 
+					"List": [
+						"planttarget_iceblock", 
+						"zombietarget_iceblock", 
+						"zomboss_iceage_glacier_block"
+					]
+				}, 
+				"StagesThatEnableWarming": [
+					"RTID(IceageStage@LevelModules)"
+				]
+			}
+		}, 
+		{
+			"objclass": "GeneratedGradientPropertySheet", 
+			"aliases": [
+				"DefaultGradient"
+			], 
+			"objdata": {
+				"Gradients": [
+					{
+						"Name": "Bright", 
+						"FirstTimeBase": 1, 
+						"FirstTimeAdd": 16, 
+						"PeakStartBase": 10, 
+						"PeakStartAdd": 70, 
+						"PeakDurationBase": 20, 
+						"PeakDurationAdd": 100, 
+						"TargetRatioBase": 0.45, 
+						"TargetRatioAdd": 0.65, 
+						"TargetVarMin": -0.35, 
+						"TargetVarMax": 0.15, 
+						"PeakRatioBase": 0.3, 
+						"PeakRatioAdd": 1.3, 
+						"PeakRatioVarMin": -0.35, 
+						"PeakRatioVarMax": 0.25, 
+						"MinSeed": 10000, 
+						"MaxSeed": 75000
+					}, 
+					{
+						"Name": "Deprecated", 
+						"FirstTimeBase": 20, 
+						"FirstTimeAdd": 20, 
+						"PeakStartBase": 60, 
+						"PeakStartAdd": 60, 
+						"PeakDurationBase": 30, 
+						"PeakDurationAdd": 60, 
+						"TargetRatioBase": 0.9, 
+						"TargetRatioAdd": 0, 
+						"TargetVarMin": -0.2, 
+						"TargetVarMax": 0.05, 
+						"PeakRatioBase": 1.2, 
+						"PeakRatioAdd": 0, 
+						"PeakRatioVarMin": -0.2, 
+						"PeakRatioVarMax": 0.2, 
+						"MinSeed": 500, 
+						"MaxSeed": 3000
+					}, 
+					{
+						"Name": "Dim", 
+						"FirstTimeBase": 20, 
+						"FirstTimeAdd": 20, 
+						"PeakStartBase": 30, 
+						"PeakStartAdd": 55, 
+						"PeakDurationBase": 20, 
+						"PeakDurationAdd": 30, 
+						"TargetRatioBase": 0.8, 
+						"TargetRatioAdd": 0, 
+						"TargetVarMin": -0.25, 
+						"TargetVarMax": 0.05, 
+						"PeakRatioBase": 1.2, 
+						"PeakRatioAdd": 0, 
+						"PeakRatioVarMin": -0.2, 
+						"PeakRatioVarMax": 0.2, 
+						"MinSeed": 500, 
+						"MaxSeed": 3000
+					}
+				]
+			}
+		}, 
+		{
+			"############ Dino Creature Types BEGIN #############": 0
+		}, 
+		{
+			"objclass": "DinosaurRaptorPropertySheet", 
+			"aliases": [
+				"DinoRaptor"
+			], 
+			"objdata": {
+				"Speed": 0.6, 
+				"HitRect": {
+					"mX": 10, 
+					"mY": 10, 
+					"mWidth": 32, 
+					"mHeight": 95
+				}, 
+				"AttackRect": {
+					"mX": -40, 
+					"mY": 0, 
+					"mWidth": 20, 
+					"mHeight": 50
+				}, 
+				"FlipAttackRect": {
+					"mX": 40, 
+					"mY": 0, 
+					"mWidth": 20, 
+					"mHeight": 50
+				}, 
+				"#comment": "ArtCenter's X value must be 98 to align the end of the flip anim with the start of the walk anim.", 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 125
+				}, 
+				"GroundTrackName": "ground_swatch", 
+				"SoundOnWalk": "", 
+				"SoundOnIdle": "", 
+				"ActivationGridX": 5, 
+				"MaxKicks": 5, 
+				"LeftMostKickGridX": 2, 
+				"TossTime": 0.5, 
+				"TossHeight": 130.0, 
+				"TossDistance": -200.0, 
+				"KickRectFudgeFactor": 40, 
+				"Timeout": 30, 
+				"ExitSpeedup": 4.0, 
+				"UnaffectedZombies": {
+					"ListType": "includelist", 
+					"List": [
+						"ZombieRomanBallista", 
+						"ZombiePirateCannon"
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "DinosaurStegosaurusPropertySheet", 
+			"aliases": [
+				"DinoStego"
+			], 
+			"objdata": {
+				"Speed": 0.5, 
+				"HitRect": {
+					"mX": 10, 
+					"mY": 10, 
+					"mWidth": 32, 
+					"mHeight": 95
+				}, 
+				"AttackRect": {
+					"mX": 15, 
+					"mY": 0, 
+					"mWidth": 20, 
+					"mHeight": 95
+				}, 
+				"ArtCenter": {
+					"x": 90, 
+					"y": 125
+				}, 
+				"GroundTrackName": "ground_swatch", 
+				"SoundOnWalk": "", 
+				"SoundOnIdle": "", 
+				"ActivationGridRangeStartX": 6.6, 
+				"ActivationGridRangeWidth": 1, 
+				"ActivationGridX": 7, 
+				"ZombieTailStaggerX": 20, 
+				"ZombieAnnoyingGridX": 8, 
+				"NumTimesToToss": 3, 
+				"NumZombiesToFling": 3, 
+				"TossReadyUpTime": 1.5, 
+				"TossTime": 0.5, 
+				"TossHeight": 130.0, 
+				"TossDistanceMin": 210.0, 
+				"TossDistanceMax": 240.0, 
+				"TailDamageRadius": 1, 
+				"TailSmashDamage": 3000, 
+				"TailAOEDamage": 200, 
+				"Timeout": 30, 
+				"ExitSpeedup": 1.0, 
+				"UnaffectedZombies": {
+					"ListType": "includelist", 
+					"List": [
+						"ZombieRomanBallista", 
+						"ZombiePirateCannon"
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "DinosaurPterodactylPropertySheet", 
+			"aliases": [
+				"DinoPtero"
+			], 
+			"objdata": {
+				"Speed": 0.5, 
+				"HitRect": {
+					"mX": 10, 
+					"mY": 10, 
+					"mWidth": 32, 
+					"mHeight": 95
+				}, 
+				"AttackRect": {
+					"mX": 15, 
+					"mY": 0, 
+					"mWidth": 200, 
+					"mHeight": 95
+				}, 
+				"ArtCenter": {
+					"x": 90, 
+					"y": 125
+				}, 
+				"GroundTrackName": "ground_swatch", 
+				"SoundOnWalk": "", 
+				"SoundOnIdle": "", 
+				"MovementSpeed": 145.0, 
+				"#//": "Boardspace", 
+				"MinimumX": 5, 
+				"#//": "Gridspace", 
+				"MaximumX": 8, 
+				"#//": "Gridspace", 
+				"GrabbingRangeError": 5.0, 
+				"#//": "Boardspace", 
+				"NumSecondsToCooldownAfterCarryingZombie": 5.0, 
+				"NumZombiesToCarry": 3, 
+				"ValidZombieTypes": {
+					"ListType": "includelist", 
+					"List": [
+						"dino", 
+						"dino_armor1", 
+						"dino_armor2", 
+						"dino_armor3", 
+						"dino_armor4", 
+						"dino_gargantuar", 
+						"dino_bully", 
+						"dino_bully_veteran"
+					]
+				}, 
+				"Timeout": 30, 
+				"ExitSpeedup": 1.0, 
+				"UnaffectedZombies": {
+					"ListType": "includelist", 
+					"List": [
+						"ZombieRomanBallista", 
+						"ZombiePirateCannon"
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "DinosaurAnkylosaurusPropertySheet", 
+			"aliases": [
+				"DinoAnkylo"
+			], 
+			"objdata": {
+				"Speed": 0.5, 
+				"HitRect": {
+					"mX": 10, 
+					"mY": 10, 
+					"mWidth": 32, 
+					"mHeight": 95
+				}, 
+				"AttackRect": {
+					"mX": 15, 
+					"mY": 0, 
+					"mWidth": 20, 
+					"mHeight": 60
+				}, 
+				"ArtCenter": {
+					"x": 135, 
+					"y": 148
+				}, 
+				"ShadowOffset": {
+					"x": 5, 
+					"y": 0.0, 
+					"z": 1.4
+				}, 
+				"GroundTrackName": "ground_swatch", 
+				"SoundOnWalk": "", 
+				"SoundOnIdle": "", 
+				"AttackRangeMinX": 2, 
+				"ActivationGridX": 7, 
+				"PauseBetweenAttacks": 5.0, 
+				"MaxZombiesToFling": 5, 
+				"MaxGridDistanceToFling": 5, 
+				"Timeout": 30, 
+				"ExitSpeedup": 1.0, 
+				"UnaffectedZombies": {
+					"ListType": "includelist", 
+					"List": [
+						"ZombieRomanBallista", 
+						"ZombiePirateCannon"
+					]
+				}
+			}
+		}, 
+		{
+			"objclass": "DinosaurTyrannosaurusPropertySheet", 
+			"aliases": [
+				"DinoTyrannosaurus"
+			], 
+			"objdata": {
+				"Speed": 0.6, 
+				"HitRect": {
+					"mX": 10, 
+					"mY": 10, 
+					"mWidth": 32, 
+					"mHeight": 95
+				}, 
+				"AttackRect": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 800, 
+					"mHeight": 95
+				}, 
+				"EatRect": {
+					"mX": 0, 
+					"mY": 0, 
+					"mWidth": 64, 
+					"mHeight": 95
+				}, 
+				"ArtCenter": {
+					"x": 90, 
+					"y": 135
+				}, 
+				"SoundOnWalk": "", 
+				"SoundOnIdle": "", 
+				"ActivationGridX": 7, 
+				"EatCooldown": 1, 
+				"EatGridX": 6, 
+				"MaxZombiesToEat": 5, 
+				"MaxTimesToRoar": 1, 
+				"RoarDelay": 3.0, 
+				"Cooldown": 2.0, 
+				"Timeout": 30, 
+				"ExitSpeedup": 1.0, 
+				"UnaffectedZombies": {
+					"ListType": "includelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"############ Dino Creature Types END #############": 0
+		}, 
+		{
+			"############ Effect Object Types BEGIN ############": 0
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectFrostWind"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_FROSTBITE_CHILL_WIND", 
+				"PopAnimRenderOffset": {
+					"x": 74, 
+					"y": 109
+				}, 
+				"SpawnAnimations": [
+					"animation"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectIceAgeZombossFrostWind"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_FROSTBITE_CHILL_WIND", 
+				"PopAnimRenderOffset": {
+					"x": 674, 
+					"y": 140
+				}, 
+				"SpawnAnimations": [
+					"animation"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObject_DamageOverTimeProps", 
+			"aliases": [
+				"EffectObjectTrapFire"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_ZOMBOSS_LOSTCITY_FIRE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 116
+				}, 
+				"SpawnAnimations": [
+					"idle"
+				], 
+				"RampUpAnimation": "idle", 
+				"LoopingAnimation": "idle2", 
+				"RampDownAnimation": "idle3", 
+				"RampUpAudioEvent": "Play_LostCity_Trap_Flame_Start", 
+				"RampDownAudioEvent": "Play_LostCity_Trap_Flame_Stop", 
+				"DamageArea": {
+					"mX": 80.0, 
+					"mY": 60.0, 
+					"mWidth": 60, 
+					"mHeight": 60
+				}, 
+				"DurationInSeconds": 2.0, 
+				"DamagePerSecond": 1200.0, 
+				"DamageTypeFlags": [
+					"fire", 
+					"ash_death", 
+					"hits_shield_and_body"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObject_StretchedScrollingImageProps", 
+			"aliases": [
+				"EffectObjectPlaneShadow"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_ZOMBOSS_LOSTCITY_AIR_STRIKE_SHADOW", 
+				"PopAnimRenderOffset": {
+					"x": 0, 
+					"y": 670
+				}, 
+				"SpawnAnimations": [
+					"animation"
+				], 
+				"ColorizeColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255, 
+					"mAlpha": 255
+				}, 
+				"DurationInSecondsToScroll": 4.0, 
+				"DistanceToScroll": 1000, 
+				"Scale": 1.0
+			}
+		}, 
+		{
+			"objclass": "EffectObject_StrawburstPlantfoodProps", 
+			"aliases": [
+				"EffectObjectStrawburstPlantfood"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_STRAWBURST_PLANTFOOD_PROJECTILE", 
+				"PopAnimRenderOffset": {
+					"x": -100.0, 
+					"y": 40.0
+				}, 
+				"SpawnAnimations": [
+					"animation"
+				], 
+				"DamageOnHit": 400
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectTargetPlant"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_PLANT_ESCAPEROOT", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 115.0
+				}, 
+				"SpawnAnimations": [
+					"wrap"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObject_BurrowAttackProps", 
+			"aliases": [
+				"EffectObjectBurrowAttack"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_PLANT_SNAPPEA", 
+				"SpawnAnimations": [
+					"idle"
+				], 
+				"LayerOverride": "RENDER_LAYER_CREATURE", 
+				"AttackSpawnOffset": {
+					"x": -50, 
+					"y": -20
+				}
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectTombstoneSpawn"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 115.0
+				}, 
+				"SpawnAnimations": [
+					"animation"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectLevelPlanting"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_PLANT_LEVEL_TIER_FX", 
+				"PopAnimRenderOffset": {
+					"x": 101, 
+					"y": 125
+				}, 
+				"SpawnAnimations": [
+					"animation"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectGenericExplosionFront"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_GENERIC_EXPLOSION_FRONT", 
+				"PopAnimRenderOffset": {
+					"x": 0, 
+					"y": -20
+				}, 
+				"SpawnAnimations": [
+					"animation", 
+					"animation2", 
+					"animation3"
+				], 
+				"Centered": true, 
+				"CenterInGrid": true, 
+				"PopAnimScaleX": 1.0, 
+				"PopAnimScaleY": 1.0, 
+				"ShakeBoard": {
+					"mX": 3, 
+					"mY": -4
+				}, 
+				"LayerOverride": "RENDER_LAYER_PARTICLE"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectPotatoMineExplosion"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_POTATOMINE_EXPLOSION", 
+				"PopAnimRenderOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"SpawnAnimations": [
+					"animation", 
+					"animation2", 
+					"animation3"
+				], 
+				"Centered": true, 
+				"CenterInGrid": true, 
+				"PopAnimScaleX": 1.0, 
+				"PopAnimScaleY": 1.0, 
+				"ShakeBoard": {
+					"mX": 3, 
+					"mY": 4
+				}, 
+				"LayerOverride": "RENDER_LAYER_PARTICLE"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectPrimalPotatoMineExplosion"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_PRIMAL_POTATOMINE_EXPLOSION", 
+				"PopAnimRenderOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"SpawnAnimations": [
+					"animation", 
+					"animation2", 
+					"animation3"
+				], 
+				"Centered": true, 
+				"CenterInGrid": true, 
+				"PopAnimScaleX": 1.0, 
+				"PopAnimScaleY": 1.0, 
+				"ShakeBoard": {
+					"mX": 3, 
+					"mY": 4
+				}, 
+				"LayerOverride": "RENDER_LAYER_PARTICLE"
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectSolarTomatoMainExplosion"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_SOLAR_TOMATO_EFFECT", 
+				"SpawnAnimations": [
+					"animation_t1", 
+					"animation_t2", 
+					"animation_t3"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectSolarTomatoAOEExplosion"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_SOLAR_TOMATO_MINOR_EFFECT", 
+				"SpawnAnimations": [
+					"animation"
+				]
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectPuffballConfetti"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_PUFFBALL_EXPLOSION_CONFETTI", 
+				"SpawnAnimations": [
+					"animation", 
+					"animation_2", 
+					"animation_3"
+				], 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 120
+				}
+			}
+		}, 
+		{
+			"objclass": "EffectObjectAnimSequencePropertySheet", 
+			"aliases": [
+				"EffectObjectMurkadamiaTentacles"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_MURKADAMIA_EFFECT", 
+				"IntroAnimSequence": [
+					[
+						"animation"
+					], 
+					[
+						"animation"
+					], 
+					[
+						"animation"
+					]
+				], 
+				"LoopAnim": [
+					"animation2", 
+					"animation2", 
+					"animation2"
+				], 
+				"OutroAnimSequence": [
+					[
+						"animation3"
+					], 
+					[
+						"animation3"
+					], 
+					[
+						"animation3"
+					]
+				], 
+				"PopAnimRenderOffset": {
+					"x": 0, 
+					"y": 0
+				}
+			}
+		}, 
+		{
+			"objclass": "EffectObjectPropertySheet", 
+			"aliases": [
+				"EffectObjectTeleportatoMineExplosion"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_TELEPORTATO_EXPLOSION", 
+				"PopAnimRenderOffset": {
+					"x": 0, 
+					"y": 0
+				}, 
+				"SpawnAnimations": [
+					"animation", 
+					"animation2", 
+					"animation3"
+				], 
+				"Centered": true, 
+				"CenterInGrid": true, 
+				"PopAnimScaleX": 1.0, 
+				"PopAnimScaleY": 1.0, 
+				"ShakeBoard": {
+					"mX": 3, 
+					"mY": 4
+				}, 
+				"LayerOverride": "RENDER_LAYER_PARTICLE"
+			}
+		}, 
+		{
+			"############ Effect Object Types END ############": 0
+		}, 
+		{
+			"comment": "Compromise to match up anim IDs used in SpawnGravestonesWaveActionProps instead of reworking all levels or adding all effects to all stage types", 
+			"objclass": "SpawnEffectAnimIDResourceGroup", 
+			"aliases": [
+				"SpawnEffectAnimIDResourceGroup"
+			], 
+			"objdata": {
+				"GroupsForAnims": [
+					{
+						"Anim": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT", 
+						"ResourceGroup": "Dirt_Spawn_Dirt"
+					}, 
+					{
+						"Anim": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT", 
+						"ResourceGroup": "Tombstone_Dark_Effects"
+					}, 
+					{
+						"Anim": "POPANIM_EFFECTS_DIRT_SPAWN_GRASS", 
+						"ResourceGroup": "Dirt_Spawn_Grass"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "TreasureYetiSchedulingProps", 
+			"aliases": [
+				"TreasureYetiSchedule"
+			], 
+			"objdata": {
+				"MinimumMinutesBetweenYetis": 720, 
+				"MaximumMinutesBetweenYetis": 1440, 
+				"MinimumMinutesBetweenYetisOnRetry": 360, 
+				"MaximumMinutesBetweenYetisOnRetry": 720, 
+				"MinimumMinutesBeforeYeti": 1440, 
+				"LatestYetiIntroLevel": "egypt9", 
+				"SoonestYetiIntroLevel": "egypt7"
+			}
+		}, 
+		{
+			"objclass": "TreasureYetiExcludelistProps", 
+			"aliases": [
+				"TreasureYetiExcludelist"
+			], 
+			"objdata": {
+				"LevelExcludelist": [
+					"tutorial1", 
+					"tutorial2", 
+					"tutorial3", 
+					"tutorial4", 
+					"egypt5", 
+					"egypt7", 
+					"egypt16", 
+					"egypt23", 
+					"egypt25", 
+					"egypt35", 
+					"egypt_dangerroom", 
+					"pirate3", 
+					"pirate11", 
+					"pirate20", 
+					"pirate22", 
+					"pirate25", 
+					"pirate35", 
+					"pirate_dangerroom", 
+					"cowboy4", 
+					"cowboy12", 
+					"cowboy20", 
+					"cowboy25", 
+					"cowboy35", 
+					"cowboy_dangerroom", 
+					"future25", 
+					"future_dangerroom", 
+					"future35", 
+					"dark20", 
+					"dark_dangerroom", 
+					"beach32", 
+					"beach_dangerroom", 
+					"iceage_dangerroom", 
+					"iceage30", 
+					"lostcity_dangerroom", 
+					"lostcity32", 
+					"eighties_dangerroom", 
+					"eighties32", 
+					"dino_dangerroom", 
+					"dino32", 
+					"dino42", 
+					"modern8", 
+					"modern13", 
+					"modern_dangerroom", 
+					"modern22", 
+					"modern27", 
+					"modern32", 
+					"modern33", 
+					"modern34", 
+					"modern44"
+				]
+			}
+		}, 
+		{
+			"objclass": "ZenGardenPropertySheet", 
+			"aliases": [
+				"ZenGardenProps"
+			], 
+			"objdata": {
+				"BackgroundImageID": "IMAGE_BACKGROUNDS_ZEN_GARDEN", 
+				"PlantGrowDurationInSeconds": 9000, 
+				"NormalPlantCoinRewardAmount": 50, 
+				"TreasurePlantSpawnRate": 6, 
+				"Guarantees one treasure plant per this number of non-treasure plants": 0, 
+				"GrowingSpeedupCalcMultiplyFactor": 2, 
+				"GrowingSpeedupCalcAddFactor": 1.7413, 
+				"GrowingSpeedupCalcMaxTimeSeconds": 28800, 
+				"PotCosts": {
+					"GemCostDefault": 5
+				}, 
+				"Pots": [
+					{
+						"PositionKey": 0, 
+						"Position": {
+							"mX": -334, 
+							"mY": -140
+						}, 
+						"UnlockIndex": 0
+					}, 
+					{
+						"PositionKey": 1, 
+						"Position": {
+							"mX": -334, 
+							"mY": -21
+						}, 
+						"UnlockIndex": 100
+					}, 
+					{
+						"PositionKey": 100, 
+						"Position": {
+							"mX": -334, 
+							"mY": 101
+						}, 
+						"UnlockIndex": 1
+					}, 
+					{
+						"PositionKey": 101, 
+						"Position": {
+							"mX": -334, 
+							"mY": 221
+						}, 
+						"UnlockIndex": 101
+					}, 
+					{
+						"PositionKey": 200, 
+						"Position": {
+							"mX": -224, 
+							"mY": -140
+						}, 
+						"UnlockIndex": 2
+					}, 
+					{
+						"PositionKey": 300, 
+						"Position": {
+							"mX": -224, 
+							"mY": -21
+						}, 
+						"UnlockIndex": 3
+					}, 
+					{
+						"PositionKey": 303, 
+						"Position": {
+							"mX": -224, 
+							"mY": 101
+						}, 
+						"UnlockIndex": 204
+					}, 
+					{
+						"PositionKey": 304, 
+						"Position": {
+							"mX": -224, 
+							"mY": 221
+						}, 
+						"UnlockIndex": 205
+					}, 
+					{
+						"PositionKey": 201, 
+						"Position": {
+							"mX": -114, 
+							"mY": -140
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 102
+					}, 
+					{
+						"PositionKey": 301, 
+						"Position": {
+							"mX": -114, 
+							"mY": -21
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 103
+					}, 
+					{
+						"PositionKey": 2, 
+						"Position": {
+							"mX": -114, 
+							"mY": 101
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 200
+					}, 
+					{
+						"PositionKey": 102, 
+						"Position": {
+							"mX": -114, 
+							"mY": 221
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 201
+					}, 
+					{
+						"PositionKey": 202, 
+						"Position": {
+							"mX": -4, 
+							"mY": -140
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 202
+					}, 
+					{
+						"PositionKey": 302, 
+						"Position": {
+							"mX": -4, 
+							"mY": -21
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 203
+					}, 
+					{
+						"PositionKey": 305, 
+						"Position": {
+							"mX": -4, 
+							"mY": 101
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 206
+					}, 
+					{
+						"PositionKey": 306, 
+						"Position": {
+							"mX": -4, 
+							"mY": 221
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 207
+					}, 
+					{
+						"PositionKey": 307, 
+						"Position": {
+							"mX": 106, 
+							"mY": -140
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 208
+					}, 
+					{
+						"PositionKey": 308, 
+						"Position": {
+							"mX": 106, 
+							"mY": -21
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 209
+					}, 
+					{
+						"PositionKey": 309, 
+						"Position": {
+							"mX": 106, 
+							"mY": 101
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 210
+					}, 
+					{
+						"PositionKey": 310, 
+						"Position": {
+							"mX": 106, 
+							"mY": 221
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 211
+					}, 
+					{
+						"PositionKey": 311, 
+						"Position": {
+							"mX": 216, 
+							"mY": -140
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 212
+					}, 
+					{
+						"PositionKey": 312, 
+						"Position": {
+							"mX": 216, 
+							"mY": -21
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 213
+					}, 
+					{
+						"PositionKey": 313, 
+						"Position": {
+							"mX": 216, 
+							"mY": 101
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 214
+					}, 
+					{
+						"PositionKey": 314, 
+						"Position": {
+							"mX": 216, 
+							"mY": 221
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 215
+					}, 
+					{
+						"PositionKey": 315, 
+						"Position": {
+							"mX": 326, 
+							"mY": -140
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 216
+					}, 
+					{
+						"PositionKey": 316, 
+						"Position": {
+							"mX": 326, 
+							"mY": -21
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 217
+					}, 
+					{
+						"PositionKey": 317, 
+						"Position": {
+							"mX": 326, 
+							"mY": 101
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 218
+					}, 
+					{
+						"PositionKey": 318, 
+						"Position": {
+							"mX": 326, 
+							"mY": 221
+						}, 
+						"IsLocked": true, 
+						"UnlockIndex": 219
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "ZenGardenPlantSlotProps", 
+			"aliases": [
+				"ZenGardenPlantSlotProps"
+			], 
+			"objdata": {
+				"EffectsOffset": {
+					"x": -27, 
+					"y": -65
+				}, 
+				"WateringEffectID": "POPANIM_ZEN_GARDEN_ZENGARDEN_WATER_POURING", 
+				"SproutRevealEffectID": "POPANIM_ZEN_GARDEN_ZENGARDEN_SPROUT_REVEAL", 
+				"BoostEffectID": "POPANIM_ZEN_GARDEN_BOOSTEFFECT", 
+				"BoostEffectOffset": {
+					"x": -70, 
+					"y": -70
+				}, 
+				"RemoveEffectID": "POPANIM_ZEN_GARDEN_PLANT_POOF", 
+				"RemoveEffectOffset": {
+					"x": -100, 
+					"y": -100
+				}, 
+				"WaterIndicatorID": "POPANIM_ZEN_GARDEN_WATER_DROPLET", 
+				"WaterIndicatorOffset": {
+					"x": 10, 
+					"y": -90
+				}
+			}
+		}, 
+		{
+			"objclass": "ZenGardenFloatingTextProps", 
+			"aliases": [
+				"ZenGardenFloatingTextProps"
+			], 
+			"objdata": {
+				"InitialVelocity": -50, 
+				"Duration": 2
+			}
+		}, 
+		{
+			"############ Zen Garden Bee Data START ############": 0
+		}, 
+		{
+			"objclass": "ZenGardenBeePropertySheet", 
+			"aliases": [
+				"BeeProps"
+			], 
+			"objdata": {
+				"AnimRigClass": "PopAnimRig_ZenGardenBee", 
+				"PopAnim": "POPANIM_ZEN_GARDEN_BEE", 
+				"NextBeeTimeMinSeconds": 900, 
+				"NextBeeTimeMaxSeconds": 900, 
+				"BeeReadyTimeoutSeconds": 5.0, 
+				"BeeVelocity": 70, 
+				"BeeMovingToPlantVelocity": 250, 
+				"BeeRestSpot": {
+					"x": 255, 
+					"y": -180
+				}, 
+				"BeeWanderRange": {
+					"mX": -265, 
+					"mY": -175, 
+					"mWidth": 535, 
+					"mHeight": 35
+				}, 
+				"BeeEffects": [
+					{
+						"Weight": "80", 
+						"PercentBonus": "10", 
+						"IsCriticalHit": false
+					}, 
+					{
+						"Weight": "15", 
+						"PercentBonus": "20", 
+						"IsCriticalHit": false
+					}, 
+					{
+						"Weight": "3", 
+						"PercentBonus": "33", 
+						"IsCriticalHit": false
+					}, 
+					{
+						"Weight": "2", 
+						"PercentBonus": "50", 
+						"IsCriticalHit": true
+					}
+				]
+			}
+		}, 
+		{
+			"############ Zen Garden Bee Data END ############": 0
+		}, 
+		{
+			"############ Danger Room Data START ############": 0
+		}, 
+		{
+			"objclass": "DangerRoomPropertySheet", 
+			"aliases": [
+				"DefaultDangerRoomProps"
+			], 
+			"objdata": {
+				"FlagWaveSetupList": [
+					{
+						"MinLevel": 1, 
+						"FlagCount": 1, 
+						"MinWavesPerFlag": 8.0, 
+						"MaxWavesPerFlag": 10.0
+					}, 
+					{
+						"MinLevel": 3, 
+						"FlagCount": 2, 
+						"MinWavesPerFlag": 6.0, 
+						"MaxWavesPerFlag": 8.0
+					}, 
+					{
+						"MinLevel": 5, 
+						"FlagCount": 3, 
+						"MinWavesPerFlag": 4.0, 
+						"MaxWavesPerFlag": 6.0
+					}, 
+					{
+						"MinLevel": 10, 
+						"FlagCount": 4, 
+						"MinWavesPerFlag": 4.0, 
+						"MaxWavesPerFlag": 6.0
+					}
+				], 
+				"PlantfoodSetupList": [
+					{
+						"MinLevel": 1, 
+						"MinPlantfoodPerFlagWave": 2, 
+						"MaxPlantfoodPerFlagWave": 4
+					}, 
+					{
+						"MinLevel": 10, 
+						"MinPlantfoodPerFlagWave": 2, 
+						"MaxPlantfoodPerFlagWave": 3
+					}, 
+					{
+						"MinLevel": 15, 
+						"MinPlantfoodPerFlagWave": 1, 
+						"MaxPlantfoodPerFlagWave": 2
+					}, 
+					{
+						"MinLevel": 20, 
+						"MinPlantfoodPerFlagWave": 1, 
+						"MaxPlantfoodPerFlagWave": 1
+					}
+				], 
+				"AssignMinPlantfoodPerFlagWave": 0, 
+				"LevelsPerCheckpoint": 3, 
+				"MaxPlantfoodPurchases": 1, 
+				"MaxPowerupPurchases": 1, 
+				"StartingLives": 3, 
+				"ExtraCardCost": 2000, 
+				"RewardSmallMowerWeight": 275, 
+				"RewardSmallSunWeight": 200, 
+				"RewardSmallPlantfoodWeight": 200, 
+				"RewardPowerupWizardFingerWeight": 200, 
+				"RewardPowerupFlickWeight": 200, 
+				"RewardPowerupSnowballWeight": 200, 
+				"RewardPowerupFlamethrowerWeight": 200, 
+				"CashOutRanks": [
+					100, 
+					300, 
+					600, 
+					1000, 
+					1500, 
+					2100, 
+					2800, 
+					3600, 
+					4500, 
+					5500
+				], 
+				"CashOutPerLevelAfterMax": 1000
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"EgyptDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"bloomerang"
+				], 
+				"ExcludeList": [
+					"blover", 
+					"empea", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"KongfuDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"potatomine", 
+					"tallnut"
+				], 
+				"ExcludeList": [
+					"blover", 
+					"empea", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"HeianDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunshroom", 
+					"puffshroom", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"empea", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"PirateDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"empea", 
+					"gravebuster", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"CowboyDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"empea", 
+					"gravebuster", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"FutureDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"gravebuster", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"DarkDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunshroom", 
+					"puffshroom", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"BeachDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"lilypad"
+				], 
+				"ExcludeList": [
+					"blover", 
+					"empea", 
+					"gravebuster", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"TutorialDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				], 
+				"ExcludeList": []
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"IceageDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"hotpotato"
+				], 
+				"ExcludeList": [
+					"blover", 
+					"empea", 
+					"gravebuster", 
+					"lilypad", 
+					"tanglekelp", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"LostcityDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"cabbagepult", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"gravebuster", 
+					"empea", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"EightiesDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut"
+				], 
+				"ExcludeList": [
+					"gravebuster", 
+					"empea", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato", 
+					"perfumeshroom"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"DinoDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"primalsunflower", 
+					"primalpeashooter", 
+					"primalwallnut", 
+					"perfumeshroom"
+				], 
+				"ExcludeList": [
+					"gravebuster", 
+					"empea", 
+					"tanglekelp", 
+					"lilypad", 
+					"hotpotato"
+				]
+			}
+		}, 
+		{
+			"objclass": "WorldSpecificDangerRoomProperties", 
+			"aliases": [
+				"ModernDangerRoomProps"
+			], 
+			"objdata": {
+				"StartingPlants": [
+					"sunflower", 
+					"peashooter", 
+					"wallnut", 
+					"cabbagepult", 
+					"lilypad", 
+					"moonflower", 
+					"nightshade", 
+					"shadowshroom"
+				], 
+				"ExcludeList": []
+			}
+		}, 
+		{
+			"############ Danger Room Data END ############": 0
+		}, 
+		{
+			"############ Level Powerup Set START ############": 0
+		}, 
+		{
+			"objclass": "LevelPowerupSet", 
+			"aliases": [
+				"LevelPowerupsDefault"
+			], 
+			"objdata": {
+				"Powerups": [
+					"powerupsnowball", 
+					"powerupflickzombie", 
+					"powerupwizardfinger"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelPowerupSet", 
+			"aliases": [
+				"LevelPowerupsUnlimited"
+			], 
+			"objdata": {
+				"UnlimitedUse": "true", 
+				"Powerups": [
+					"powerupsnowball", 
+					"powerupflickzombie", 
+					"powerupwizardfinger"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelPowerupSet", 
+			"aliases": [
+				"LevelPowerupsFlameThrower"
+			], 
+			"objdata": {
+				"Powerups": [
+					"powerupflamethrower", 
+					"powerupflickzombie", 
+					"powerupwizardfinger"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelPowerupSet", 
+			"aliases": [
+				"LevelPowerupsVasebreaker"
+			], 
+			"objdata": {
+				"Powerups": [
+					"powerupvasebreakerbutter", 
+					"powerupvasebreakermove", 
+					"powerupvasebreakerreveal"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelPowerupSet", 
+			"aliases": [
+				"LevelPowerupsBeghouled"
+			], 
+			"objdata": {
+				"Powerups": [
+					"powerupbeghouledshuffle", 
+					"powerupbeghouledshovel", 
+					"powerupbeghouledwizardfinger"
+				]
+			}
+		}, 
+		{
+			"objclass": "LevelPowerupSet", 
+			"aliases": [
+				"LevelPowerupsDisabled"
+			], 
+			"objdata": {
+				"Powerups": []
+			}
+		}, 
+		{
+			"############ Level Powerup Set END ############": 0
+		}, 
+		{
+			"############ Zombie Spawner Pattern START ############": 0
+		}, 
+		{
+			"objclass": "ZombieSpawnerPattern", 
+			"aliases": [
+				"ZombieSpawnerPatternStaggered"
+			], 
+			"objdata": {
+				"RowStartOffset": [
+					160, 
+					0, 
+					160, 
+					0, 
+					160
+				], 
+				"RowBetweenOffset": [
+					160, 
+					160, 
+					160, 
+					160, 
+					160
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombieSpawnerPattern", 
+			"aliases": [
+				"ZombieSpawnerPatternDelta"
+			], 
+			"objdata": {
+				"RowStartOffset": [
+					320, 
+					160, 
+					0, 
+					160, 
+					320
+				], 
+				"RowBetweenOffset": [
+					80, 
+					80, 
+					80, 
+					80, 
+					80
+				]
+			}
+		}, 
+		{
+			"############ Zombie Spawner Pattern END ############": 0
+		}, 
+		{
+			"############ Zen Garden Plant Boosts START ############": 0
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostBountyHunter"
+			], 
+			"objdata": {
+				"Type": "bounty_hunter", 
+				"Name": "[BOOST_TITLE_BOUNTY_HUNTER]", 
+				"Description": "[BOOST_COMBAT_BOUNTY_HUNTER]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_BOUNTY_HUNTER"
+			}
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostFirstStrike"
+			], 
+			"objdata": {
+				"Type": "first_strike", 
+				"Name": "[BOOST_TITLE_FIRST_STRIKE]", 
+				"Description": "[BOOST_COMBAT_FIRST_STRIKE]", 
+				"DetailDescription": "[BOOST_DETAIL_FIRST_STRIKE]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_FIRST_STRIKE"
+			}
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostExtraToughness"
+			], 
+			"objdata": {
+				"Type": "extra_toughness", 
+				"Name": "[BOOST_TITLE_EXTRA_TOUGH]", 
+				"Description": "[BOOST_COMBAT_EXTRA_TOUGH]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_EXTRA_TOUGHNESS"
+			}
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostRapidFire"
+			], 
+			"objdata": {
+				"Type": "rapid_fire", 
+				"Name": "[BOOST_TITLE_RAPID_FIRE]", 
+				"Description": "[BOOST_COMBAT_RAPID_FIRE]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_RAPID_FIRE"
+			}
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostSunDiscount"
+			], 
+			"objdata": {
+				"Type": "sun_discount", 
+				"Name": "[BOOST_TITLE_SUN_DISCOUNT]", 
+				"Description": "[BOOST_COMBAT_SUN_DISCOUNT]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_SUN_DISCOUNT"
+			}
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostFastRecharge"
+			], 
+			"objdata": {
+				"Type": "fast_recharge", 
+				"Name": "[BOOST_TITLE_FAST_RECHARGE]", 
+				"Description": "[BOOST_COMBAT_FAST_RECHARGE]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_FAST_RECHARGE"
+			}
+		}, 
+		{
+			"objclass": "PlantBoostPropertySheet", 
+			"aliases": [
+				"BoostShovelBomb"
+			], 
+			"objdata": {
+				"Type": "shovel_bomb", 
+				"Name": "[BOOST_TITLE_SHOVEL_BOMB]", 
+				"Description": "[BOOST_COMBAT_SHOVEL_BOMB]", 
+				"HarvestImage": "IMAGE_ZEN_GARDEN_BOOSTS_BOOST_SHOVEL_BOMB"
+			}
+		}, 
+		{
+			"############ Zen Garden Plant Boosts END ############": 0
+		}, 
+		{
+			"############ Zombie Conditions BEGIN ############": 0
+		}, 
+		{
+			"objclass": "ZombieSpeedConditionsMap", 
+			"aliases": [
+				"ZombieSpeedConditionsMapDefault"
+			], 
+			"objdata": {
+				"Groups": [
+					[
+						{
+							"Condition": "hungered", 
+							"Value": 2.25
+						}, 
+						{
+							"Condition": "speedup1", 
+							"Value": 1.25
+						}, 
+						{
+							"Condition": "speedup2", 
+							"Value": 1.5
+						}, 
+						{
+							"Condition": "potionspeed1", 
+							"Value": 1.5
+						}, 
+						{
+							"Condition": "terrified", 
+							"Value": 5.0
+						}, 
+						{
+							"Condition": "speedup3", 
+							"Value": 2.0
+						}, 
+						{
+							"Condition": "potionspeed2", 
+							"Value": 2.0
+						}, 
+						{
+							"Condition": "speedup4", 
+							"Value": 2.5
+						}, 
+						{
+							"Condition": "potionspeed3", 
+							"Value": 2.5
+						}, 
+						{
+							"Condition": "potionsuper1", 
+							"Value": 1.5
+						}, 
+						{
+							"Condition": "potionsuper2", 
+							"Value": 2.0
+						}, 
+						{
+							"Condition": "potionsuper3", 
+							"Value": 2.5
+						}
+					], 
+					[
+						{
+							"Condition": "speeddown1", 
+							"Value": 0.8
+						}, 
+						{
+							"Condition": "speeddown2", 
+							"Value": 0.67
+						}, 
+						{
+							"Condition": "speeddown3", 
+							"Value": 0.5
+						}, 
+						{
+							"Condition": "speeddown4", 
+							"Value": 0.4
+						}
+					], 
+					[
+						{
+							"Condition": "chilled", 
+							"Value": 0.5
+						}, 
+						{
+							"Condition": "sapped", 
+							"Value": 0.5
+						}, 
+						{
+							"Condition": "stalled", 
+							"Value": 0.65
+						}
+					]
+				]
+			}
+		}, 
+		{
+			"############ Zombie Conditions END ############": 0
+		}
+	]
+}

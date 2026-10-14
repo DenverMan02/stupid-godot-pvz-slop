@@ -1,0 +1,6132 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"GridItemDefault"
+			], 
+			"objclass": "GridItemPropertySheet", 
+			"objdata": {}
+		}, 
+		{
+			"objclass": "GridItemType", 
+			"aliases": [
+				"gravestone_egypt_tomb_imp"
+			], 
+			"objdata": {
+				"TypeName": "gravestone_egypt_tomb_imp", 
+				"GridItemClass": "GridItemEightiesArcadeCabinet", 
+				"ResourceGroups": [
+					"Egypt_Gravestone"
+				], 
+				"Properties": "RTID(GridItemEgyptGravestoneTEMPDefault@GridItemProps)"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneNightDefault"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_EGYPT_HIEROGLYPH_NIGHT_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH_NIGHT", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemMoonsoilDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 2000000000, 
+				"PopAnim": "POPANIM_EFFECTS_SAPFLING_SAP", 
+				"PopAnimRenderOffset": {
+					"x": 99999, 
+					"y": 99999
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"cosmoss", 
+						"pineclone"
+					], 
+					"ListType": "includelist"
+				}, 
+				"SapTime": 0.5, 
+				"ZombieExcludelist": [], 
+				"//": "Cannot spawn (excluded)items in the list on top of current grid item(sap)", 
+				"//": "Excluding these items in the list, all other griditems can override(washoff) sap", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsOverride": {
+					"ListType": "includelist", 
+					"List": [
+						"premoss", 
+						"moss"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"CavalryGunDefault"
+			], 
+			"objclass": "GridItemSurfboardProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"CanBeEatenByGravebusterAtLevel": 3, 
+				"CanBeMowed": false, 
+				"PopAnimRigClass": "SurfboardAnimRig", 
+				"PopAnim": "POPANIM_EFFECTS_CAVALRYGUN", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRiotPoliceCorrectionDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "tall", 
+				"Lifetime": 1e-05, 
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_EXPLOSIONPROOF_SMOKE", 
+				"PopAnimRenderOffset": {
+					"x": 98, 
+					"y": 120
+				}, 
+				"SapTime": 0, 
+				"ZombieExcludelist": [], 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Wizard"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_ZOMBIE_TELEPORTWIZARD_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 105, 
+					"y": 115
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "dark", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_wizard"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_armor1"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemScorchedWizardEarthDefault"
+			], 
+			"objclass": "GridItemLavaProps", 
+			"objdata": {
+				"# Note that there will be some delay before zombies get to the lava": 0, 
+				"# due to the explosion damage of the plant's initial blast": 0, 
+				"DamagePerSecond": 0, 
+				"Height": "ground", 
+				"Lifetime": 25, 
+				"ArtScale": 0.0, 
+				"PopAnim": "POPANIM_EFFECTS_WIZARD_EARTH_TILE", 
+				"PopAnimRenderOffset": {
+					"x": 95, 
+					"y": 125
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "DamagePerSecond"
+					}
+				], 
+				"WarmingRadius": {
+					"GridItemDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"fire"
+						]
+					}, 
+					"PlantDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"thaw_whole_stage"
+						]
+					}, 
+					"PopAnimEffectName": "POPANIM_EFFECTS_FROSTBITE_HEAT_PLANT", 
+					"PulseCooldown": 99999999999, 
+					"PulseInitialDelay": 99999999.5, 
+					"PulsePropagationTime": 1, 
+					"RadiusInGridSquareWidths": 1.5
+				}, 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": [
+						"sap", 
+						"plantfoodsap"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"UnsoddedDefault"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_CRATER", 
+				"PopAnimRenderOffset": {
+					"x": 99999, 
+					"y": 99999
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGAnchorHalloween"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 85, 
+					"y": 100
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_ANCHOR_HALLOWEEN_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_ANCHOR_HALLOWEEN_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemCraterWidescreenDefault"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_WIDESCREEN_FOG", 
+				"PopAnimRenderOffset": {
+					"x": 104, 
+					"y": 125
+				}, 
+				"PopAnimRenderScale": {
+					"x": 1, 
+					"y": 1
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemEgyptGravestoneTEMPDefault"
+			], 
+			"objclass": "GridItemEightiesArcadeCabinetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_EGYPT_HIEROGLYPH_DAMAGE", 
+				"CanBeMowed": false, 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"gravestone_egypt_damge0"
+							], 
+							"StartAtHealthPercent": 0.99
+						}, 
+						{
+							"Layers": [
+								"gravestone_egypt_damge1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"gravestone_egypt_damge2"
+							], 
+							"StartAtHealthPercent": 0.5
+						}, 
+						{
+							"Layers": [
+								"gravestone_egypt_damge3"
+							], 
+							"StartAtHealthPercent": 0.25
+						}, 
+						{
+							"Layers": [
+								"gravestone_egypt_damge4"
+							], 
+							"StartAtHealthPercent": 0.0
+						}
+					]
+				}, 
+				"Hitpoints": 1400, 
+				"Height": "ground", 
+				"InitialPause": {
+					"Max": 3, 
+					"Min": 1
+				}, 
+				"PopAnimRenderScale": {
+					"x": 1.2, 
+					"y": 1.3
+				}, 
+				"JamStyle": "jam_8bit", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ARCADE_MACHINE", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH_TEMP", 
+				"PopAnimDeathAnim": "damage4", 
+				"PopAnimRenderOffset": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnimRigClass": "GridItemEightiesArcadeCabinetAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"TimeAfterZombieCreationWhereCabinetDoesNotMove": 3, 
+				"TimeBetweenSpawns": {
+					"Max": 12, 
+					"Min": 10
+				}, 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 60, 
+						"ZombieTypeName": "mummy"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemBurstBerryPuddleDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 15, 
+				"PopAnim": "POPANIM_EFFECTS_BURSTBERRY_SLOWDOWN_PUDDLE", 
+				"PopAnimRenderOffset": {
+					"x": 88, 
+					"y": 118
+				}, 
+				"SapTime": 0, 
+				"ZombieExcludelist": [], 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"RailcartGlobalProperties"
+			], 
+			"objclass": "GridItemRailcartGlobalProperties", 
+			"objdata": {
+				"//": "A stationary griditem will not move with the cart, but neither will it prevent cart movement.", 
+				"Height": "low", 
+				"StationaryGridItems": {
+					"List": [
+						"holoshield", 
+						"sap", 
+						"plantfoodsap", 
+						"wisp", 
+						"poison_tile", 
+						"oil", 
+						"butter"
+					], 
+					"ListType": "includelist"
+				}, 
+				"StationaryPlantfoodedPlants": {
+					"List": [
+						"dartichoke", 
+						"laser_bean", 
+						"spikeweed", 
+						"spikerock", 
+						"squash", 
+						"firepeashooter", 
+						"redstinger", 
+						"phatbeet", 
+						"garlic", 
+						"snapdragon", 
+						"coldsnapdragon", 
+						"aloe", 
+						"kiwibeast", 
+						"witchhazel", 
+						"pyrevine", 
+						"ultomato"
+					], 
+					"ListType": "includelist"
+				}, 
+				"StationaryPlants": {
+					"List": [
+						"jalapeno", 
+						"powerplant", 
+						"hurrikale", 
+						"goldleaf", 
+						"intensivecarrot", 
+						"imitater"
+					], 
+					"ListType": "includelist"
+				}, 
+				"#comment": "ImmovablePlants: Plants which cannot be moved along with Railcart (when railcart is moved)", 
+				"ImmovablePlants": {
+					"List": [
+						"noctarinecloud"
+					], 
+					"ListType": "includelist"
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemModernArcadeCabinet"
+			], 
+			"objclass": "GridItemEightiesArcadeCabinetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_80S_ARCADE_CABINET_BREAK", 
+				"CanBeMowed": true, 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"arcade_cabinet_damage0", 
+								"arcade_cabinet_active_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage1", 
+								"arcade_cabinet_active_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage2", 
+								"arcade_cabinet_active_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage3", 
+								"arcade_cabinet_active_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage4", 
+								"arcade_cabinet_active_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage5", 
+								"arcade_cabinet_active_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"Hitpoints": 1000, 
+				"Height": "ground", 
+				"InitialPause": {
+					"Max": 3, 
+					"Min": 1
+				}, 
+				"JamStyle": "jam_8bit", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ARCADE_MACHINE", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_80S_ARCADE_CABINET", 
+				"PopAnimDeathAnim": "death", 
+				"PopAnimRenderOffset": {
+					"x": 105, 
+					"y": 115
+				}, 
+				"PopAnimRigClass": "GridItemEightiesArcadeCabinetAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"TimeAfterZombieCreationWhereCabinetDoesNotMove": 2, 
+				"TimeBetweenSpawns": {
+					"Max": 12, 
+					"Min": 10
+				}, 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 60, 
+						"ZombieTypeName": "tutorial"
+					}, 
+					{
+						"Weight": 30, 
+						"ZombieTypeName": "tutorial_armor1"
+					}, 
+					{
+						"Weight": 10, 
+						"ZombieTypeName": "tutorial_armor2"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"NightPlank"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_PLANK_NIGHT_PLANK_SHADOW2", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "a", 
+				"BoostLimit": 0, 
+				"BoostAnimDurationSeconds": "infinity", 
+				"TileColor": {
+					"mAlpha": 251, 
+					"mBlue": 63, 
+					"mGreen": 171, 
+					"mRed": 225
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"NightPlank2"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_PLANK_NIGHT_PLANK_SHADOW", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "d", 
+				"BoostLimit": 0, 
+				"BoostAnimDurationSeconds": "infinity", 
+				"TileColor": {
+					"mAlpha": 248, 
+					"mBlue": 63, 
+					"mGreen": 171, 
+					"mRed": 225
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"NightPlankShadow"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_PLANK_NIGHT_PLANK2", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "f", 
+				"BoostLimit": 0, 
+				"BoostAnimDurationSeconds": "infinity", 
+				"TileColor": {
+					"mAlpha": 246, 
+					"mBlue": 63, 
+					"mGreen": 171, 
+					"mRed": 225
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"NightPlankShadow2"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_PLANK_NIGHT_PLANK", 
+				"BoostLimit": 0, 
+				"BoostAnimDurationSeconds": "infinity", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "i", 
+				"TileColor": {
+					"mAlpha": 243, 
+					"mBlue": 63, 
+					"mGreen": 171, 
+					"mRed": 225
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGAnchorPirate"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 110
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_ANCHOR_PIRATE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_ANCHOR_PIRATE_GRAVESTONE", 
+				"PopAnimRenderScale": {
+					"x": 0.85, 
+					"y": 0.8
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes UP", 
+			"aliases": [
+				"DynamicEffectsFutureNights"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "up", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_FUTURE_NIGHT_LIGHT", 
+				"PopAnimRenderOffset": {
+					"x": 69, 
+					"y": 101
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": []
+			}
+		}, 
+		{
+			"aliases": [
+				"WestNightFogTrapProps"
+			], 
+			"objclass": "GridItemGridRegionAreaOfEffectTrapProps", 
+			"objdata": {
+				"ColumnRadius": 0, 
+				"EffectObjectName": "effectobject_westnightfog", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_FIRETILE", 
+				"PopAnimRenderOffset": {
+					"x": 99999, 
+					"y": 99999
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"RowRadius": 0, 
+				"TileBaseAnimation": "firetile", 
+				"TimeBetweenDamageEffectSpawnsInSeconds": 0.16, 
+				"TimeBetweenTriggersInSeconds": 999999, 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -60
+				}, 
+				"TriggeringEntityTypes": [
+					"griditem"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_FutureBasic"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "future", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"FutureCloneProps"
+			], 
+			"objclass": "GridItemProjectileTrapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_LINKTILE_06", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "excludelist"
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"PositioningFlags": [], 
+				"ProjectileFireOriginOffset": {
+					"x": 0, 
+					"y": 0, 
+					"z": 10
+				}, 
+				"ProjectileTypeToSpawn": "RTID(FutureCloneProjectile@ProjectileTypes)", 
+				"TileBaseAnimation": "bouldertile", 
+				"TimeBetweenTriggersInSeconds": 5.0, 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -60
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRailcartTutorial"
+			], 
+			"objclass": "GridItemRailcartPropertySheet", 
+			"objdata": {
+				"GlobalProperties": "RTID(RailcartGlobalProperties@.)", 
+				"Height": "low", 
+				"ImagePrefix": "IMAGE_RAILCART_FRONTLAWN"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRailcartEgyptDefault"
+			], 
+			"objclass": "GridItemRailcartPropertySheet", 
+			"objdata": {
+				"GlobalProperties": "RTID(RailcartGlobalProperties@.)", 
+				"Height": "low", 
+				"ImagePrefix": "IMAGE_RAILCART_EGYPT"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRailcartPirateDefault"
+			], 
+			"objclass": "GridItemRailcartPropertySheet", 
+			"objdata": {
+				"GlobalProperties": "RTID(RailcartGlobalProperties@.)", 
+				"Height": "low", 
+				"ImagePrefix": "IMAGE_RAILCART_PIRATE"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRailcartCowboyDefault"
+			], 
+			"objclass": "GridItemRailcartPropertySheet", 
+			"objdata": {
+				"GlobalProperties": "RTID(RailcartGlobalProperties@.)", 
+				"Height": "low", 
+				"ImagePrefix": "IMAGE_RAILCART_COWBOY"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRailcartFutureDefault"
+			], 
+			"objclass": "GridItemRailcartPropertySheet", 
+			"objdata": {
+				"GlobalProperties": "RTID(RailcartGlobalProperties@.)", 
+				"Height": "low", 
+				"ImagePrefix": "IMAGE_RAILCART_FUTURE"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemLostCityMumbahlordCrater"
+			], 
+			"objclass": "GridItemLavaProps", 
+			"objdata": {
+				"DamagePerSecond": 0, 
+				"Height": "ground", 
+				"Lifetime": 12, 
+				"PopAnim": "POPANIM_EFFECTS_SCORCHED_EARTH_TILE_2", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 125
+				}, 
+				"WarmingRadius": {
+					"GridItemDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"fire"
+						]
+					}, 
+					"PlantDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"thaw_whole_stage"
+						]
+					}, 
+					"PopAnimEffectName": "POPANIM_EFFECTS_FROSTBITE_HEAT_PLANT", 
+					"PulseCooldown": 99999, 
+					"PulseInitialDelay": 99999, 
+					"PulsePropagationTime": 99999, 
+					"RadiusInGridSquareWidths": 0
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"hotpotato", 
+						"ghostpepper", 
+						"tumbleweed"
+					], 
+					"ListType": "includelist"
+				}, 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneTutorial"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_TUTORIAL_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_TUTORIAL_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneDefault"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_EGYPT_HIEROGLYPH_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneBattlez"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 30000, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_PLANTFOOD", 
+				"PopAnimRenderScale": {
+					"x": 1.2, 
+					"y": 1.3
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"rainingseeds0"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "", 
+				"BreakEffectSound": "", 
+				"DamageStateCount": 1, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 12, 
+				"PopAnim": "POPANIM_RAININGSEEDS_0", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneBattlezSun"
+			], 
+			"objclass": "GridItemGravestoneSunOnDestructionPropertySheet", 
+			"objdata": {
+				"AmountToSpawn": 500, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 10000, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_SUN", 
+				"PopAnimRenderScale": {
+					"x": 1.2, 
+					"y": 1.3
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestonePirate"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_PIRATE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_PIRATE_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneCowboy"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_COWBOY_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_COWBOY_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneFuture"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_FUTURE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_GRAVESTONES_FUTURE_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemWeaponStand_Helmet"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 72, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_ARMRACK_ARMRACK_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_ARMRACK_ARMRACK_KONGFU_HELMET", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemWeaponStand_Torch"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 72, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_ARMRACK_ARMRACK_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_ARMRACK_ARMRACK_KONGFU_TORCH", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemWeaponStand_Bomb"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 72, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_ARMRACK_ARMRACK_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_ARMRACK_ARMRACK_KONGFU_BOMB", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemHeianBoxSpawer"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_FUTURE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_EFFECTS_HEIAN_BOX_SEEDPACKET_DANGERROOM", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSushi"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "", 
+				"BreakEffectSound": "", 
+				"DamageStateCount": 0, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 5, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_HEIAN_SUSHI_SUSHI", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemPuddleDefault"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_DEEP_PUDDLE_TILE", 
+				"HitRectOffsetWidth": 40, 
+				"PopAnimRenderOffset": {
+					"x": 99, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneSunOnDestruction"
+			], 
+			"objclass": "GridItemGravestoneSunOnDestructionPropertySheet", 
+			"objdata": {
+				"AmountToSpawn": 100, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_SUN", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestoneSunOnDestructionPropertySheet", 
+			"aliases": [
+				"GridItemGravestoneMysterySunOnDestruction"
+			], 
+			"objdata": {
+				"Hitpoints": 700, 
+				"HitRectOffsetX": 15, 
+				"HitRectOffsetWidth": -30, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_MYSTERY", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"AmountToSpawn": 100
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneZombieOnDestruction"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_NOOP"
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestonePropertySheet", 
+			"aliases": [
+				"GridItemGravestoneMysteryZombieOnDestruction"
+			], 
+			"objdata": {
+				"Hitpoints": 700, 
+				"HitRectOffsetX": 15, 
+				"HitRectOffsetWidth": -30, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_MYSTERY", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner"
+			], 
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"CanBeEatenByGravebuster": false, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1000, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MaxSelfDestructWaitSeconds": 69, 
+				"MaxSpawnWaitSeconds": 10, 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MinSelfDestructWaitSeconds": 69, 
+				"MinSpawnWaitSeconds": 10, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_TIMESPAWN"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner_Cone"
+			], 
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"CanBeEatenByGravebuster": false, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1200, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MaxSelfDestructWaitSeconds": 94, 
+				"MaxSpawnWaitSeconds": 15, 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MinSelfDestructWaitSeconds": 94, 
+				"MinSpawnWaitSeconds": 15, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_TIMESPAWN"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner_Bucket"
+			], 
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"CanBeEatenByGravebuster": false, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1400, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MaxSelfDestructWaitSeconds": 119, 
+				"MaxSpawnWaitSeconds": 20, 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MinSelfDestructWaitSeconds": 119, 
+				"MinSpawnWaitSeconds": 20, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_TIMESPAWN"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneShortcut"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_SHORTCUT"
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner_Wide"
+			], 
+			"objdata": {
+				"Hitpoints": 1000, 
+				"HitRectOffsetX": 0, 
+				"HitRectOffsetWidth": 0, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_GRAVESTONE_SPAWNER", 
+				"PopAnimRigClass": "GravestoneAnimRig_ZombieTimeSpawner", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MinSpawnWaitSeconds": 10, 
+				"MaxSpawnWaitSeconds": 10, 
+				"MinSelfDestructWaitSeconds": 69, 
+				"MaxSelfDestructWaitSeconds": 69, 
+				"CanBeEatenByGravebuster": false, 
+				"GridExtents": {
+					"mX": 2, 
+					"mY": 1
+				}, 
+				"DamageStateCount": 3
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner_WideCone"
+			], 
+			"objdata": {
+				"Hitpoints": 1200, 
+				"HitRectOffsetX": 0, 
+				"HitRectOffsetWidth": 0, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_GRAVESTONE_SPAWNER", 
+				"PopAnimRigClass": "GravestoneAnimRig_ZombieTimeSpawner", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MinSpawnWaitSeconds": 15, 
+				"MaxSpawnWaitSeconds": 15, 
+				"MinSelfDestructWaitSeconds": 94, 
+				"MaxSelfDestructWaitSeconds": 94, 
+				"CanBeEatenByGravebuster": false, 
+				"GridExtents": {
+					"mX": 2, 
+					"mY": 1
+				}, 
+				"DamageStateCount": 3
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner_WideBucket"
+			], 
+			"objdata": {
+				"Hitpoints": 1400, 
+				"HitRectOffsetX": 0, 
+				"HitRectOffsetWidth": 0, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_GRAVESTONE_SPAWNER", 
+				"PopAnimRigClass": "GravestoneAnimRig_ZombieTimeSpawner", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MinSpawnWaitSeconds": 20, 
+				"MaxSpawnWaitSeconds": 20, 
+				"MinSelfDestructWaitSeconds": 119, 
+				"MaxSelfDestructWaitSeconds": 119, 
+				"CanBeEatenByGravebuster": false, 
+				"GridExtents": {
+					"mX": 2, 
+					"mY": 1
+				}, 
+				"DamageStateCount": 3
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestoneZombieTimeSpawnerPropertySheet", 
+			"aliases": [
+				"GridItemGravestoneZombieTimeSpawner_WideImp"
+			], 
+			"objdata": {
+				"Hitpoints": 1000, 
+				"HitRectOffsetX": 0, 
+				"HitRectOffsetWidth": 0, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_GRAVESTONE_SPAWNER", 
+				"PopAnimRigClass": "GravestoneAnimRig_ZombieTimeSpawner", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"MinInitialSpawnWaitSeconds": 20, 
+				"MaxInitialSpawnWaitSeconds": 20, 
+				"MinSpawnWaitSeconds": 10, 
+				"MaxSpawnWaitSeconds": 10, 
+				"MinSelfDestructWaitSeconds": 69, 
+				"MaxSelfDestructWaitSeconds": 69, 
+				"CanBeEatenByGravebuster": false, 
+				"GridExtents": {
+					"mX": 2, 
+					"mY": 1
+				}, 
+				"ZombieTypeName": "dark_imp", 
+				"DamageStateCount": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestonePlantfoodOnDestruction"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_PLANTFOOD", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"objclass": "GridItemGravestonePlantOnDestructionPropertySheet", 
+			"aliases": [
+				"GridItemGravestonePeashooterOnDestruction"
+			], 
+			"objdata": {
+				"Hitpoints": 700, 
+				"HitRectOffsetX": 15, 
+				"HitRectOffsetWidth": -30, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_GIFT", 
+				"DamageStateCount": 5, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"PlantTypeToSpawn": "peashooter"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneDarkDefault"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DARK_BASE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_NOOP", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneBeach"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_BEACH_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_GRAVESTONES_BEACH_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneDino"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_DINO_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_GRAVESTONES_DINO_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneIceage"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_ICEAGE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_GRAVESTONES_ICEAGE_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneEighties"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_EIGHTIES_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_GRAVESTONES_EIGHTIES_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemGravestoneLostcity"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_LOSTCITY_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_GRAVESTONES_LOSTCITY_GRAVESTONE", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"HoloShieldDefault"
+			], 
+			"objclass": "GridItemBreakableTargetProps", 
+			"objdata": {
+				"Height": "tall", 
+				"HitRectOffsetWidth": -33, 
+				"HitRectOffsetX": 50, 
+				"Hitpoints": 10000, 
+				"PopAnim": "POPANIM_EFFECTS_INFINUT_PLANTFOOD_SHIELD", 
+				"PopAnimIdleAnim": "plantfood_shieldIdle", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 120
+				}, 
+				"PopAnimSpawnAnim": "plantfood_shieldON", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"MoonFlowerShieldDefault"
+			], 
+			"objclass": "GridItemBreakableTargetProps", 
+			"objdata": {
+				"Height": "tall", 
+				"HitRectOffsetWidth": 45, 
+				"HitRectOffsetX": -25, 
+				"Hitpoints": 1000, 
+				"PopAnim": "POPANIM_EFFECTS_MOONFLOWER_PF_SHIELD", 
+				"PopAnimIdleAnim": "plantfood_shieldIdle", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 120
+				}, 
+				"PopAnimSpawnAnim": "plantfood_shieldON", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"ProtectorShieldDefault"
+			], 
+			"objclass": "GridItemProtectorShieldProps", 
+			"objdata": {
+				"SoundOnActivate": "Play_Zomb_Future_Shield_Activate", 
+				"SoundOnDeactivate": "Play_Zomb_Future_Shield_Deactivate", 
+				"SoundOnHit": "Play_Zomb_Future_Shield_Impact"
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTile"
+			], 
+			"objclass": "GridItemGoldTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_GOLDTILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"SunGrantedOnFirstPlant": 50, 
+				"SunGrantedPerPlant": 50, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}, 
+				"TimeBetweenPlantSpawnedSunDrops": 36
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTileLevel"
+			], 
+			"objclass": "GridItemGoldTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_GOLDTILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"SunGrantedOnFirstPlant": 50, 
+				"SunGrantedPerPlant": 50, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}, 
+				"TimeBetweenPlantSpawnedSunDrops": 20
+			}
+		}, 
+		{
+			"aliases": [
+				"GoldTileNoSun"
+			], 
+			"objclass": "GridItemGoldTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_GOLDTILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"SunGrantedOnFirstPlant": 0, 
+				"SunGrantedPerPlant": 0, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}, 
+				"TimeBetweenPlantSpawnedSunDrops": 999999999
+			}
+		}, 
+		{
+			"aliases": [
+				"BoostTile"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_TILE_PLANTFOOD", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"BoostAnimDurationSeconds": 1.5, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BoostTile3"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_TILE_PLANTFOOD", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"BoostLimit": 3, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BoostTile5"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_TILE_PLANTFOOD", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"BoostLimit": 5, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BoostTile10"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_TILE_PLANTFOOD", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"BoostLimit": 10, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BoostTile1000"
+			], 
+			"objclass": "GridItemBoostTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_TILE_PLANTFOOD", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"BoostLimit": 1000, 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemScoreDoubler"
+			], 
+			"objclass": "GridItemScoreTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"ScoreMultiplier": 2
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemScoreTripler"
+			], 
+			"objclass": "GridItemScoreTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"ScoreMultiplier": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemScoreQuintupler"
+			], 
+			"objclass": "GridItemScoreTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"ScoreMultiplier": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerTileAlpha"
+			], 
+			"objclass": "GridItemPowerTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_LINKTILE_01", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "alpha", 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 81, 
+					"mGreen": 230, 
+					"mRed": 175
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerTileBeta"
+			], 
+			"objclass": "GridItemPowerTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_LINKTILE_02", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "beta", 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 113, 
+					"mGreen": 62, 
+					"mRed": 216
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerTileDelta"
+			], 
+			"objclass": "GridItemPowerTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_LINKTILE_03", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "gamma", 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 63, 
+					"mGreen": 171, 
+					"mRed": 225
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerTileGamma"
+			], 
+			"objclass": "GridItemPowerTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_LINKTILE_04", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "delta", 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 164, 
+					"mGreen": 216, 
+					"mRed": 61
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"PowerTileEpsilon"
+			], 
+			"objclass": "GridItemPowerTileProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_LINKTILE_05", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_LinkedTile", 
+				"TileClass": "epsilon", 
+				"TileColor": {
+					"mAlpha": 255, 
+					"mBlue": 218, 
+					"mGreen": 76, 
+					"mRed": 176
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemLilyPadDefault"
+			], 
+			"objclass": "GridItemLilyPadProps", 
+			"objdata": {
+				"Height": "low", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 10, 
+				"Hitpoints": 300, 
+				"PlantsWhichCannotBePlantedOnLilypads": {
+					"List": [
+						"potatomine", 
+						"cactus", 
+						"celerystalker", 
+						"primalpotatomine", 
+						"escaperoot", 
+						"snappea", 
+						"olivepit", 
+						"teleportatomine"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_PLANT_LILYPAD", 
+				"PopAnimRenderOffset": {
+					"x": 98, 
+					"y": 122
+				}, 
+				"PopAnimRigClass": "GridItemAnimRig_LilyPad", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSapDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 7, 
+				"PopAnim": "POPANIM_EFFECTS_SAPFLING_SAP", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"SapTime": 0.5, 
+				"ZombieExcludelist": [
+					"future_jetpack", 
+					"future_jetpack_disco", 
+					"pirate_captain_parrot", 
+					"seagull", 
+					"cannon", 
+					"general_zmech_phase1", 
+					"general_zmech_phase2", 
+					"general_zmech_phase3", 
+					"general_caesar_phase1", 
+					"general_caesar_phase2", 
+					"general_caesar_phase3"
+				], 
+				"//": "Cannot spawn (excluded)items in the list on top of current grid item(sap)", 
+				"//": "Excluding these items in the list, all other griditems can override(washoff) sap", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSapDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 7, 
+				"PopAnim": "POPANIM_EFFECTS_SAPFLING_SAP", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"SapTime": 0, 
+				"ZombieExcludelist": [], 
+				"//": "Cannot spawn (excluded)items in the list on top of current grid item(sap)", 
+				"//": "Excluding these items in the list, all other griditems can override(washoff) sap", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemIceLotusDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 6, 
+				"PopAnim": "POPANIM_EFFECTS_ICELOTUS_HIT", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"SapTime": 0, 
+				"ZombieExcludelist": [
+					"future_jetpack", 
+					"future_jetpack_disco", 
+					"pirate_captain_parrot", 
+					"seagull", 
+					"cannon", 
+					"general_zmech_phase1", 
+					"general_zmech_phase2", 
+					"general_zmech_phase3", 
+					"general_caesar_phase1", 
+					"general_caesar_phase2", 
+					"general_caesar_phase3"
+				], 
+				"//": "Cannot spawn (excluded)items in the list on top of current grid item(sap)", 
+				"//": "Excluding these items in the list, all other griditems can override(washoff) sap", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": [
+						"moonsoil"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemAcidDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 30, 
+				"PopAnim": "POPANIM_PLANT_BITTERLIME_ACID", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"SapTime": 0.0, 
+				"ZombieExcludelist": [
+					"future_jetpack", 
+					"future_jetpack_disco", 
+					"pirate_captain_parrot", 
+					"seagull", 
+					"general_zmech_phase1", 
+					"general_zmech_phase2", 
+					"general_zmech_phase3", 
+					"general_caesar_phase1", 
+					"general_caesar_phase2", 
+					"general_caesar_phase3"
+				], 
+				"//": "Cannot spawn (excluded)items in the list on top of current grid item(sap)", 
+				"//": "Excluding these items in the list, all other griditems can override(washoff) sap", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemPlantfoodIceLotusDefault"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 15, 
+				"PopAnim": "POPANIM_EFFECTS_ICELOTUS_HIT", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"SapTime": 0, 
+				"ZombieExcludelist": [
+					"future_jetpack", 
+					"future_jetpack_disco", 
+					"pirate_captain_parrot", 
+					"seagull", 
+					"general_zmech_phase1", 
+					"general_zmech_phase2", 
+					"general_zmech_phase3", 
+					"general_caesar_phase1", 
+					"general_caesar_phase2", 
+					"general_caesar_phase3"
+				], 
+				"//": "Cannot spawn (excluded)items in the list on top of current grid item(sap)", 
+				"//": "Excluding these items in the list, all other griditems can override(washoff) sap", 
+				"//": "Populate with aliases from GridItemTypes.json.", 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": [
+						"moonsoil"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSapPlantfood"
+			], 
+			"objclass": "GridItemSapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 15, 
+				"PopAnim": "POPANIM_EFFECTS_SAPFLING_SAP", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"SapTime": 0.2, 
+				"ZombieExcludelist": [
+					"future_jetpack", 
+					"future_jetpack_disco", 
+					"pirate_captain_parrot", 
+					"seagull", 
+					"cannon", 
+					"general_zmech_phase1", 
+					"general_zmech_phase2", 
+					"general_zmech_phase3", 
+					"general_caesar_phase1", 
+					"general_caesar_phase2", 
+					"general_caesar_phase3"
+				], 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": []
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemLavaDefault"
+			], 
+			"objclass": "GridItemLavaProps", 
+			"objdata": {
+				"# Note that there will be some delay before zombies get to the lava": 0, 
+				"# due to the explosion damage of the plant's initial blast": 0, 
+				"DamagePerSecond": 100, 
+				"Height": "ground", 
+				"Lifetime": 12, 
+				"PopAnim": "POPANIM_EFFECTS_LAVAGUAVA_LAVA", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 130
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "DamagePerSecond"
+					}
+				], 
+				"WarmingRadius": {
+					"GridItemDamageProps": {
+						"BaseDamage": 200, 
+						"DamageFlags": [
+							"fire"
+						]
+					}, 
+					"PlantDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"thaw_whole_stage"
+						]
+					}, 
+					"PopAnimEffectName": "POPANIM_EFFECTS_FROSTBITE_HEAT_PLANT", 
+					"PulseCooldown": 6, 
+					"PulseInitialDelay": 0.5, 
+					"PulsePropagationTime": 1, 
+					"RadiusInGridSquareWidths": 1.5
+				}, 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": [
+						"sap", 
+						"plantfoodsap"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemWispDefault"
+			], 
+			"objclass": "GridItemWispProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 5, 
+				"PopAnim": "POPANIM_EFFECTS_JACKOLANTERN_WISP", 
+				"PopAnimRenderOffset": {
+					"x": 100, 
+					"y": 130
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemVaseDefault"
+			], 
+			"objclass": "GridItemVaseProps", 
+			"objdata": {
+				"HitRectOffsetWidth": -10, 
+				"HitRectOffsetX": 2, 
+				"PopAnimGargantuar": "POPANIM_VASEBREAKER_VASE_GARGANTUAR", 
+				"PopAnimNormal": "POPANIM_VASEBREAKER_VASE_BROWN", 
+				"PopAnimPlant": "POPANIM_VASEBREAKER_VASE_GREEN"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemVaseEgg"
+			], 
+			"objclass": "GridItemVaseProps", 
+			"objdata": {
+				"HitRectOffsetWidth": -10, 
+				"HitRectOffsetX": 2, 
+				"PopAnimGargantuar": "POPANIM_EGGBREAKER_VASE_EGG_GARGANTUAR", 
+				"PopAnimNormal": "POPANIM_EGGBREAKER_VASE_EGG_BROWN", 
+				"PopAnimPlant": "POPANIM_EGGBREAKER_VASE_EGG_GREEN"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemVaseFirework"
+			], 
+			"objclass": "GridItemVaseProps", 
+			"objdata": {
+				"HitRectOffsetWidth": -10, 
+				"HitRectOffsetX": 2, 
+				"PopAnimGargantuar": "POPANIM_FIREBREAKER_VASE_GARGANTUAR_FIREWORKS", 
+				"PopAnimNormal": "POPANIM_FIREBREAKER_VASE_BROWN_FIREWORKS", 
+				"PopAnimPlant": "POPANIM_FIREBREAKER_VASE_GREEN_FIREWORKS"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSurfboardDefault"
+			], 
+			"objclass": "GridItemSurfboardProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_SURF_BOARD_PARTICLES", 
+				"CanBeEatenByGravebusterAtLevel": 3, 
+				"CanBeMowed": true, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 700, 
+				"PopAnim": "POPANIM_EFFECTS_SURF_BOARD", 
+				"PopAnimRigClass": "SurfboardAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTentDefault"
+			], 
+			"objclass": "GridItemTentProps", 
+			"objdata": {
+				"#comment": "We can only use Lost City basics here because of the extra coming-out-of-tent animation", 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 122
+				}, 
+				"CanBeEatenByGravebusterAtLevel": 8, 
+				"CanBeMowed": true, 
+				"DamageStateCount": 6, 
+				"HitRectOffsetWidth": -20, 
+				"HitRectOffsetX": 10, 
+				"Hitpoints": 700, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_EFFECTS_LOSTCITY_PACK_TENT", 
+				"PopAnimRigClass": "TentAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"TimeBetweenSpawns": {
+					"Max": 12, 
+					"Min": 10
+				}, 
+				"ZombieSpawnPointOffset": -80, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 60, 
+						"ZombieTypeName": "lostcity"
+					}, 
+					{
+						"Weight": 30, 
+						"ZombieTypeName": "lostcity_armor1"
+					}, 
+					{
+						"Weight": 10, 
+						"ZombieTypeName": "lostcity_armor2"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemBackpackDefault"
+			], 
+			"objclass": "GridItemBackpackProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"CanBeEatenByGravebusterAtLevel": 8, 
+				"CanBeMowed": true, 
+				"DamageStateCount": 6, 
+				"Hitpoints": 500, 
+				"HitRectOffsetWidth": -20, 
+				"HitRectOffsetX": 10, 
+				"IsAnimated": true, 
+				"PopAnim": "POPANIM_EFFECTS_LOSTCITY_PACK_BACKPACK", 
+				"PopAnimRigClass": "BackpackAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSpeakerDefault"
+			], 
+			"objclass": "GridItemSpeakerProps", 
+			"objdata": {
+				"CanBeMowed": true, 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"speaker_damage0_idle", 
+								"speaker_damage0", 
+								"speaker_blast_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"speaker_damage1_idle", 
+								"speaker_damage1", 
+								"speaker_blast_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"speaker_damage2_idle", 
+								"speaker_damage2", 
+								"speaker_blast_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"speaker_damage3_idle", 
+								"speaker_damage3", 
+								"speaker_blast_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"speaker_damage4_idle", 
+								"speaker_damage4", 
+								"speaker_blast_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"speaker_damage5_idle", 
+								"speaker_damage5", 
+								"speaker_blast_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"Hitpoints": 500, 
+				"PopAnim": "POPANIM_EFFECTS_80S_SPEAKER", 
+				"PopAnimRenderOffset": {
+					"x": 97, 
+					"y": 123
+				}, 
+				"PopAnimRigClass": "PopAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}, 
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "SonicDamageAmount"
+					}
+				], 
+				"SonicDamageAmount": 10
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemSpeakerZombossDefault"
+			], 
+			"objclass": "GridItemSpeakerZombossProps", 
+			"objdata": {
+				"CanBeMowed": true, 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"speaker_damage0_idle", 
+								"speaker_damage0", 
+								"speaker_blast_damage0", 
+								"speaker_flash_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"speaker_damage1_idle", 
+								"speaker_damage1", 
+								"speaker_blast_damage1", 
+								"speaker_flash_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"speaker_damage2_idle", 
+								"speaker_damage2", 
+								"speaker_blast_damage2", 
+								"speaker_flash_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"speaker_damage3_idle", 
+								"speaker_damage3", 
+								"speaker_blast_damage3", 
+								"speaker_flash_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"speaker_damage4_idle", 
+								"speaker_damage4", 
+								"speaker_blast_damage4", 
+								"speaker_flash_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"speaker_damage5_idle", 
+								"speaker_damage5", 
+								"speaker_blast_damage5", 
+								"speaker_flash_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"Hitpoints": 500, 
+				"PopAnim": "POPANIM_EFFECTS_80S_SPEAKER", 
+				"PopAnimRenderOffset": {
+					"x": 97, 
+					"y": 123
+				}, 
+				"PopAnimRigClass": "PopAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}, 
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "SonicDamageAmount"
+					}
+				], 
+				"ShockWaveSpawnOffset": {
+					"x": 0, 
+					"y": -20
+				}, 
+				"SonicDamageAmount": 10
+			}
+		}, 
+		{
+			"#comment": "Dummy target for accepting hits from plant projectiles - reduces processing time for plants that become hit targets", 
+			"aliases": [
+				"GridItemPlantConditionTarget_Squid"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"CanBeMowed": true, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 400, 
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_OCTOPUS_PROJECTILE", 
+				"PopAnimDeathAnim": "die", 
+				"PopAnimIdleAnim": "animation3", 
+				"PopAnimRenderOffset": {
+					"x": 99, 
+					"y": 115
+				}, 
+				"PopAnimSpawnAnim": "animation2", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Dummy target for accepting hits from plant projectiles - reduces processing time for plants that become hit targets", 
+			"aliases": [
+				"GridItemPlantConditionTarget_Sauce"
+			], 
+			"objclass": "SaucedPlantConditionTargetProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 300, 
+				"EvaporateTimeSeconds": 8, 
+				"PopAnim": "POPANIM_EFFECTS_SALAD_CONVERSION_EFFECT", 
+				"PopAnimDeathAnim": "animation3", 
+				"PopAnimIdleAnim": "animation2", 
+				"PopAnimRenderOffset": {
+					"x": 99, 
+					"y": 115
+				}, 
+				"PopAnimSpawnAnim": "animation", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Dummy target for accepting hits from plant projectiles - reduces processing time for plants that become hit targets", 
+			"aliases": [
+				"GridItemPlantConditionTarget_Icecube"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PARTICLES", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"ice_block_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"Hitpoints": 600, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"LinkedLayerOffset": -4, 
+				"LinkedOffset": {
+					"x": -10, 
+					"y": 15, 
+					"z": 20
+				}, 
+				"LinkedPopAnim": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PLANT_BEHIND", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS", 
+					"List": [
+						"hotpotato"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PLANT", 
+				"PopAnimIdleAnim": "freeze_idle", 
+				"PopAnimRenderOffset": {
+					"x": 105, 
+					"y": 115
+				}, 
+				"PopAnimSpawnAnim": "freeze_start", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Dummy target for accepting hits from plant projectiles", 
+			"aliases": [
+				"GridItemZombieConditionTarget_Icecube"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PARTICLES", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"ice_block_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 600, 
+				"LinkedLayerOffset": -4, 
+				"LinkedOffset": {
+					"x": 0, 
+					"y": 2, 
+					"z": 20
+				}, 
+				"LinkedPopAnim": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_ZOMBIE_BEHIND", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS", 
+					"List": [
+						"hotpotato"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_ZOMBIE", 
+				"PopAnimIdleAnim": "freeze_idle", 
+				"PopAnimRenderOffset": {
+					"x": 99, 
+					"y": 115
+				}, 
+				"PopAnimSpawnAnim": "freeze_start", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Dummy target for accepting hits from plant projectiles", 
+			"aliases": [
+				"GridItemZombieConditionTarget_Birthday_Present"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PARTICLES", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"ice_block_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"ice_block_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 600, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS", 
+					"List": [
+						"hotpotato"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_FROSTBITE_BIRTHDAY_PRESENT_ZOMBIE", 
+				"PopAnimIdleAnim": "freeze_idle", 
+				"PopAnimRenderOffset": {
+					"x": 99, 
+					"y": 115
+				}, 
+				"PopAnimSpawnAnim": "freeze_start", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Dummy target for accepting hits from plant projectiles", 
+			"aliases": [
+				"GridItemZombieConditionTarget_Stoneblock"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_ZOMBIE_ARMOR_STATUE_EFFECT", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"zombie_armor_statue_norm"
+							], 
+							"StartAtHealthPercent": 0.8
+						}, 
+						{
+							"Layers": [
+								"zombie_armor_statue_damage_01"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"zombie_armor_statue_damage_02"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"zombie_armor_statue_damage_03"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"zombie_armor_statue_damage_04"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1000, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_ARMOR_STATUE_FULL", 
+				"PopAnimIdleAnim": "animation", 
+				"PopAnimRenderOffset": {
+					"x": 90, 
+					"y": 130
+				}, 
+				"PopAnimSpawnAnim": "animation", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Glacier block for IceAge Zomboss", 
+			"aliases": [
+				"ZombossIceAgeGlacierBlock"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PARTICLES", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"glacier_block_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 600, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS", 
+					"List": [
+						"hotpotato"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_ZOMBOSS_GLACIER_BLOCK", 
+				"PopAnimIdleAnim": "idle", 
+				"PopAnimRenderOffset": {
+					"x": 89, 
+					"y": 125
+				}, 
+				"PopAnimSpawnAnim": "idle", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Glacier block for IceAge Zomboss Battlez", 
+			"aliases": [
+				"ZombossIceAgeGlacierBlockBattlez"
+			], 
+			"objclass": "GridItemBoardEntityConditionTargetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_PARTICLES", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"glacier_block_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"glacier_block_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1200, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS", 
+					"List": [
+						"hotpotato"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_ZOMBOSS_GLACIER_BLOCK", 
+				"PopAnimIdleAnim": "idle", 
+				"PopAnimRenderOffset": {
+					"x": 89, 
+					"y": 125
+				}, 
+				"PopAnimSpawnAnim": "idle", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"#comment": "Falling trap that falls on the top grid square forward!", 
+			"aliases": [
+				"BoulderFallingForwardTrapProps"
+			], 
+			"objclass": "GridItemProjectileTrapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_BOULDERTILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"PositioningFlags": [
+					"lockx"
+				], 
+				"ProjectileFireOriginOffset": {
+					"x": 32, 
+					"y": 190, 
+					"z": 300
+				}, 
+				"ProjectileTypeToSpawn": "RTID(BoulderFallingForward@ProjectileTypes)", 
+				"TileBaseAnimation": "bouldertile", 
+				"TimeBetweenTriggersInSeconds": 7.5, 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -60
+				}, 
+				"TriggeringEntityTypes": [
+					"plant", 
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Zomboss variant - Falling trap that falls on the top grid square forward!", 
+			"aliases": [
+				"ZombossBoulderFallingForwardTrapProps"
+			], 
+			"objclass": "GridItemProjectileTrapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_BOULDERTILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"PositioningFlags": [
+					"lockx"
+				], 
+				"ProjectileFireOriginOffset": {
+					"x": 32, 
+					"y": 190, 
+					"z": 300
+				}, 
+				"ProjectileTypeToSpawn": "RTID(BoulderFallingForward@ProjectileTypes)", 
+				"TileBaseAnimation": "bouldertile", 
+				"TimeBetweenTriggersInSeconds": 30, 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -60
+				}, 
+				"TriggeringEntityTypes": [
+					"plant", 
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Flame spreading trap that spreads fire over a single row!", 
+			"aliases": [
+				"FlameSpreaderTrapProps"
+			], 
+			"objclass": "GridItemGridRegionAreaOfEffectTrapProps", 
+			"objdata": {
+				"ColumnRadius": 10, 
+				"EffectObjectName": "effectobject_trapfire", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_BACKGROUNDS_FIRETILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 139
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"RowRadius": 0, 
+				"TileBaseAnimation": "firetile", 
+				"TimeBetweenDamageEffectSpawnsInSeconds": 0.16, 
+				"TimeBetweenTriggersInSeconds": 6, 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -60
+				}, 
+				"TriggeringEntityTypes": [
+					"plant", 
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes UP", 
+			"aliases": [
+				"GridItemSliderTile_Up"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "up", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_UP", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 144
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes DOWN", 
+			"aliases": [
+				"GridItemSliderTile_Down"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "down", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_DOWN", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 144
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes UP", 
+			"aliases": [
+				"UpDefault"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "up", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_UP", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes UP", 
+			"aliases": [
+				"UpDefault2"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "up", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_UP", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 15, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes UP", 
+			"aliases": [
+				"UpDefault3"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "up", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_UP", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 10, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes DOWN", 
+			"aliases": [
+				"DownDefault"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "down", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_DOWN", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes DOWN", 
+			"aliases": [
+				"DownDefault2"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "down", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_DOWN", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 15, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes DOWN", 
+			"aliases": [
+				"DownDefault3"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "down", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_DOWN", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 10, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes UP", 
+			"aliases": [
+				"GridItemSliderTile_Up_Modern"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "up", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_MODERN_UP", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 137
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "Slider that goes DOWN", 
+			"aliases": [
+				"GridItemSliderTile_Down_Modern"
+			], 
+			"objclass": "GridItemSliderTileProps", 
+			"objdata": {
+				"Direction": "down", 
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_MODERN_DOWN", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 137
+				}, 
+				"PopAnimRigClass": "GridItemSliderTileAnimRig", 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie"
+				]
+			}
+		}, 
+		{
+			"#comment": "WhackAZombie Puddle", 
+			"aliases": [
+				"GridItemWhackPuddle"
+			], 
+			"objclass": "GridItemAnimationProps", 
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_TILESLIDER_ICEAGE_DOWN", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 144
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemCraterDefault"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_CRATER", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Rock01Default"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_01", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Rock02Default"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_02", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Rock03Default"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_03", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Rock04Default"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_04", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Rock05Default"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_05", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"#comment": "Falling trap that falls on the top grid square forward!", 
+			"aliases": [
+				"PreMossDefault"
+			], 
+			"objclass": "GridItemProjectileTrapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_COSMOSS_EFFECT", 
+				"PopAnimRenderOffset": {
+					"x": 101, 
+					"y": 121
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"cosmoss"
+					], 
+					"ListType": "excludelist"
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"PositioningFlags": [], 
+				"ProjectileFireOriginOffset": {
+					"x": 99999, 
+					"y": 99999, 
+					"z": 0
+				}, 
+				"ProjectileTypeToSpawn": "RTID(BoulderFallingForward@ProjectileTypes)", 
+				"TileBaseAnimation": "start", 
+				"TimeBetweenTriggersInSeconds": 9999.5, 
+				"TriggerRect": {
+					"mHeight": 1, 
+					"mWidth": 1, 
+					"mX": 99999, 
+					"mY": 99999
+				}, 
+				"TriggeringEntityTypes": []
+			}
+		}, 
+		{
+			"#comment": "Falling trap that falls on the top grid square forward!", 
+			"aliases": [
+				"MossDefault"
+			], 
+			"objclass": "GridItemProjectileTrapProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_COSMOSS_EFFECT", 
+				"PopAnimRenderOffset": {
+					"x": 101, 
+					"y": 121
+				}, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"cosmoss"
+					], 
+					"ListType": "excludelist"
+				}, 
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile", 
+				"PositioningFlags": [], 
+				"ProjectileFireOriginOffset": {
+					"x": 99999, 
+					"y": 99999, 
+					"z": 0
+				}, 
+				"ProjectileTypeToSpawn": "RTID(BoulderFallingForward@ProjectileTypes)", 
+				"TileBaseAnimation": "mossing", 
+				"TimeBetweenTriggersInSeconds": 9999.5, 
+				"TriggerRect": {
+					"mHeight": 1, 
+					"mWidth": 1, 
+					"mX": 99999, 
+					"mY": 99999
+				}, 
+				"TriggeringEntityTypes": []
+			}
+		}, 
+		{
+			"aliases": [
+				"PathDefault"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"wallnut", 
+						"tallnut", 
+						"potatomine", 
+						"iceburg", 
+						"torchwood", 
+						"bitterlime", 
+						"gravebuster", 
+						"springbean", 
+						"spikeweed", 
+						"spikerock", 
+						"iceweed", 
+						"popshroom", 
+						"cherrybomb", 
+						"lavaguava"
+					], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_05", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"NoPathDefault"
+			], 
+			"objclass": "GridItemCraterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"wallnut", 
+						"tallnut", 
+						"potatomine", 
+						"iceburg", 
+						"torchwood", 
+						"bitterlime", 
+						"gravebuster", 
+						"springbean", 
+						"spikeweed", 
+						"spikerock", 
+						"iceweed", 
+						"popshroom", 
+						"cherrybomb"
+					], 
+					"ListType": "excludelist"
+				}, 
+				"PopAnim": "POPANIM_GRIDITEM_ROCK_05", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemCraterTimed"
+			], 
+			"objclass": "GridItemCraterTimedProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 5, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_SCORCHED_EARTH_TILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemCobCrater"
+			], 
+			"objclass": "GridItemCraterTimedProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 1.5, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_SCORCHED_EARTH_TILE", 
+				"PopAnimRenderOffset": {
+					"x": -99999, 
+					"y": -99999
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"JumperSlop"
+			], 
+			"objclass": "GridItemCraterTimedProps", 
+			"objdata": {
+				"Height": "ground", 
+				"Lifetime": 0.1, 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_SCORCHED_EARTH_TILE", 
+				"PopAnimRenderOffset": {
+					"x": 9999, 
+					"y": 9999
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemEightiesArcadeCabinet"
+			], 
+			"objclass": "GridItemEightiesArcadeCabinetProps", 
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_80S_ARCADE_CABINET_BREAK", 
+				"CanBeMowed": true, 
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"arcade_cabinet_damage0", 
+								"arcade_cabinet_active_damage0"
+							], 
+							"StartAtHealthPercent": 0.9
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage1", 
+								"arcade_cabinet_active_damage1"
+							], 
+							"StartAtHealthPercent": 0.75
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage2", 
+								"arcade_cabinet_active_damage2"
+							], 
+							"StartAtHealthPercent": 0.6
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage3", 
+								"arcade_cabinet_active_damage3"
+							], 
+							"StartAtHealthPercent": 0.4
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage4", 
+								"arcade_cabinet_active_damage4"
+							], 
+							"StartAtHealthPercent": 0.2
+						}, 
+						{
+							"Layers": [
+								"arcade_cabinet_damage5", 
+								"arcade_cabinet_active_damage5"
+							], 
+							"StartAtHealthPercent": 0
+						}
+					]
+				}, 
+				"Hitpoints": 600, 
+				"Height": "ground", 
+				"InitialPause": {
+					"Max": 3, 
+					"Min": 1
+				}, 
+				"JamStyle": "jam_8bit", 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ARCADE_MACHINE", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"PopAnim": "POPANIM_EFFECTS_80S_ARCADE_CABINET", 
+				"PopAnimDeathAnim": "death", 
+				"PopAnimRenderOffset": {
+					"x": 105, 
+					"y": 115
+				}, 
+				"PopAnimRigClass": "GridItemEightiesArcadeCabinetAnimRig", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"TimeAfterZombieCreationWhereCabinetDoesNotMove": 2, 
+				"TimeBetweenSpawns": {
+					"Max": 12, 
+					"Min": 10
+				}, 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 60, 
+						"ZombieTypeName": "eighties_8bit"
+					}, 
+					{
+						"Weight": 30, 
+						"ZombieTypeName": "eighties_8bit_armor1"
+					}, 
+					{
+						"Weight": 10, 
+						"ZombieTypeName": "eighties_8bit_armor2"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Circus1"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "modern", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "carnie_stiltwalker"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "carnie_armor1"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "carnie_armor2"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "carnie"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Rome"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "rift1a", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 0.75, 
+						"ZombieTypeName": "roman"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "roman_shield_triad"
+					}, 
+					{
+						"Weight": 0.35, 
+						"ZombieTypeName": "roman_armor3"
+					}, 
+					{
+						"Weight": 0.25, 
+						"ZombieTypeName": "roman_healer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Chicken"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "west", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "chicken_battlez"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Eighties"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "eighties", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_mc"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_mc"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_breakdancer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Dino"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "dino", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_imp"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_imp"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_bully"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_LostCity"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "lostcity", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_jane"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_excavator"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_excavator"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_IceAge"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "iceage", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "iceage_weaselhoarder"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "iceage_hunter"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Beach"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "beach", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_surfer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_surfer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_octopus"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Dark"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 105, 
+					"y": 115
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "dark", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_juggler"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_juggler"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_juggler"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Future"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "future", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future_protector"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "mech_cone"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "football_mech"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Future_2"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "future", 
+				"ZombieSpawnMethod": "NonRandomInOrder", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future_jetpack"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future_armor1"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "mech_cone"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_West"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "west", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "prospector"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "poncho_plate"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "piano"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Pirate"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"TimeBetweenSpawns": {
+					"Max": 12, 
+					"Min": 10
+				}, 
+				"World": "pirate", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "pirate_captain"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "seagull"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "seagull"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "barrelroller"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Egypt"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "egypt", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "ra"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "tomb_raiser"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "tomb_raiser"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "pharaoh"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Egypt_2"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "egypt", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "explorer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "explorer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "explorer"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_Modern"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL_SET2", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "egypt", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 0.8, 
+						"ZombieTypeName": "modern_allstar"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "modern_newspaper"
+					}, 
+					{
+						"Weight": 0.9, 
+						"ZombieTypeName": "tutorial_armor4"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "modern_balloon"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Henai"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL_SET2", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "pirate", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "heian_onmyoji"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "heian_sushi"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "heian_onmyoji"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "heian_sushi"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Modern"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL_SET2", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "egypt", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "modern_superfanimp"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "modern_allstar"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "modern_allstar"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "modern_newspaper"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Egypt"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "egypt", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "ra"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "explorer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "explorer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "pharaoh"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Pirate"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "pirate", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "seagull"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "pirate_captain"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "pirate_captain"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "barrelroller"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_West"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "west", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "poncho"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "chicken_farmer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "poncho"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "piano"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Future"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "future", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future_jetpack"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future_protector"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "future_jetpack"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "mech_cone"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Dark"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 105, 
+					"y": 115
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "dark", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_juggler"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_wizard"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_juggler"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dark_armor3"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Beach"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "beach", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_snorkel"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_surfer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_surfer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "beach_octopus"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_IceAge"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "iceage", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "iceage_dodo"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "iceage_weaselhoarder"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "iceage_dodo"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "iceage_armor3"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_LostCity"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "lostcity", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_bug"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_excavator"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_bug"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "lostcity_crystalskull"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Eighties"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "eighties", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_8bit_armor1"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_boombox"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_8bit_armor2"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_boombox"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Eighties_2"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "eighties", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_imp"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_punk"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_punk"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_imp"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Eighties_3"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "eighties", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_breakdancer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_mc"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_breakdancer"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_mc"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Eighties_4"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "eighties", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_glitter"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_glitter"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_glitter"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "eighties_boombox"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemZombiePortal_DangerRoom_Dino"
+			], 
+			"objclass": "GridItemZombiePortalProps", 
+			"objdata": {
+				"CanBeMowed": false, 
+				"CloseAnimation": "end", 
+				"Height": "ground", 
+				"Hitpoints": 600, 
+				"PopAnim": "POPANIM_EFFECTS_MODERN_PORTAL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig", 
+				"SpawnAnimation": "spawn", 
+				"World": "dino", 
+				"ZombieSpawnMethod": "NonRandomShuffled", 
+				"ZombieSpawnPointOffset": -20, 
+				"ZombieTypesToSpawn": [
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_imp"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_bully"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_imp"
+					}, 
+					{
+						"Weight": 1, 
+						"ZombieTypeName": "dino_armor3"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemDusklobberFlowerDefault"
+			], 
+			"objclass": "GridItemDusklobberFlowerProps", 
+			"objdata": {
+				"BombProjectile": "DusklobberPlantfoodSecondary", 
+				"Height": "ground", 
+				"Lifetime": 5, 
+				"PopAnim": "POPANIM_EFFECTS_DUSKLOBBER_PROJECTILE_PF", 
+				"PopAnimRenderOffset": {
+					"x": 93, 
+					"y": 115
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemBombegranateSeedsDefault"
+			], 
+			"objclass": "GridItemBombegranateSeedsProps", 
+			"objdata": {
+				"Height": "low", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 10, 
+				"Hitpoints": 300, 
+				"PopAnim": "POPANIM_PLANT_BOMBEGRANATE", 
+				"PopAnimRenderOffset": {
+					"x": 98, 
+					"y": 122
+				}, 
+				"PopAnimRigClass": "GridItemAnimRig_BombegranateSeeds", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"TriggerRect": {
+					"mHeight": 60, 
+					"mWidth": 30, 
+					"mX": -15, 
+					"mY": -40
+				}, 
+				"TriggeringEntityTypes": [
+					"zombie", 
+					"griditem"
+				]
+			}
+		}, 
+		{
+			"objclass": "ZombiePotionProps", 
+			"aliases": [
+				"ZombiePotionSpeedDefault"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_MINIGAME_POTION_SPEED", 
+				"PopAnimEffect": "POPANIM_EFFECTS_SPEED_POTION_POOF_EFFECT", 
+				"PopAnimDestroyed": "POPANIM_EFFECTS_SPEED_POTION_DESTROYED_EFFECT", 
+				"HitRectOffsetX": 10, 
+				"HitRectOffsetWidth": -30, 
+				"Hitpoints": 50.0, 
+				"Height": "low", 
+				"EffectStacks": [
+					"potionspeed1", 
+					"potionspeed2", 
+					"potionspeed3"
+				], 
+				"EffectSound": "Play_Plant_EvilShroom_Speed", 
+				"DestroyedSound": "Play_Plant_Potion_Crushed_Glass_Any", 
+				"DestroyedSoundGargantuar": "Play_Plant_Potion_Crushed_Glass"
+			}
+		}, 
+		{
+			"objclass": "ZombiePotionProps", 
+			"aliases": [
+				"ZombiePotionToughnessDefault"
+			], 
+			"objdata": {
+				"PopAnim": "POPANIM_MINIGAME_POTION_POWER", 
+				"PopAnimEffect": "POPANIM_EFFECTS_POWER_POTION_POOF_EFFECT", 
+				"PopAnimDestroyed": "POPANIM_EFFECTS_POWER_POTION_DESTROYED_EFFECT", 
+				"HitRectOffsetX": 10, 
+				"HitRectOffsetWidth": -30, 
+				"Hitpoints": 50.0, 
+				"Height": "low", 
+				"EffectStacks": [
+					"potiontoughness1", 
+					"potiontoughness2", 
+					"potiontoughness3"
+				], 
+				"EffectSound": "Play_Plant_EvilShroom_Toughness", 
+				"DestroyedSound": "Play_Plant_Potion_Crushed_Glass_Any", 
+				"DestroyedSoundGargantuar": "Play_Plant_Potion_Crushed_Glass"
+			}
+		}, 
+		{
+			"aliases": [
+				"PoisonGridItemDefault"
+			], 
+			"objclass": "PoisonGridItemProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_GOOPEASHOOTER_PLANTFOOD_TILE", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 141.5
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestDamageObject"
+			], 
+			"objclass": "GridItemDestroyableProps", 
+			"objdata": {
+				"CanBeEatenByGravebuster": false, 
+				"CanBeMowed": false, 
+				"Hitpoints": 500, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_ICEAGE_GRAVESTONE", 
+				"PopAnimRigClass": "GridItemDestroyableAnimRig", 
+				"OverrideUndamagedLayer": "undamaged", 
+				"DamageLayerRoot": "damage", 
+				"IsAnimated": true, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_ICEAGE_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestDamageObject2"
+			], 
+			"objclass": "GridItemDestroyableProps", 
+			"objdata": {
+				"CanBeEatenByGravebuster": true, 
+				"CanBeMowed": false, 
+				"Hitpoints": 500, 
+				"GridExtents": {
+					"mX": 2, 
+					"mY": 1
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"PopAnim": "POPANIM_EFFECTS_FROSTBITE_ICE_BLOCK_ZOMBIE", 
+				"PopAnimRigClass": "GridItemDestroyableAnimRig", 
+				"DamageLayerRoot": "ice_block_damage", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"IsAnimated": false, 
+				"DamageStateCount": 6, 
+				"HitRectOffsetWidth": 0, 
+				"HitRectOffsetX": 5, 
+				"ArtCenter": {
+					"x": 99, 
+					"y": 113
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestDamageObject3"
+			], 
+			"objclass": "GridItemDestroyableProps", 
+			"objdata": {
+				"CanBeEatenByGravebuster": false, 
+				"CanBeMowed": false, 
+				"Hitpoints": 500, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_LOSTCITY_GRAVESTONE", 
+				"PopAnimRigClass": "GridItemDestroyableAnimRig", 
+				"OverrideUndamagedLayer": "undamaged", 
+				"DamageLayerRoot": "damage", 
+				"IsAnimated": true, 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_LOSTCITY_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble"
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestAttacker"
+			], 
+			"objclass": "GridItemEntityTargetingProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1000, 
+				"Actions": [
+					{
+						"Type": "damage", 
+						"TargetArea": "rect", 
+						"EntitiesToAffect": [
+							"plant", 
+							"zombie", 
+							"griditem"
+						], 
+						"Damage": 100.0, 
+						"SecondsBetweenEffects": 1.0, 
+						"RangeInGridSquares": 3
+					}
+				], 
+				"Teams": [
+					"everything"
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_TUTORIAL_GRAVESTONE", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestHealer"
+			], 
+			"objclass": "GridItemEntityTargetingProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 300, 
+				"Actions": [
+					{
+						"Type": "healing", 
+						"TargetArea": "lane", 
+						"TeamsToAffect": [
+							"zombies"
+						], 
+						"EntitiesToAffect": [
+							"zombie"
+						], 
+						"Damage": 100.0, 
+						"SecondsBetweenEffects": 2.0, 
+						"RangeInGridSquares": 10.5
+					}
+				], 
+				"Teams": [
+					"zombies"
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestChiller"
+			], 
+			"objclass": "GridItemEntityTargetingProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1000, 
+				"Actions": [
+					{
+						"Type": "damage", 
+						"TargetArea": "board", 
+						"TeamsToAffect": [
+							"zombies"
+						], 
+						"EntitiesToAffect": [
+							"zombie"
+						], 
+						"SecondsBetweenEffects": 1.0, 
+						"RangeInGridSquares": 1.5, 
+						"ZConditions": [
+							{
+								"Condition": "chill", 
+								"Duration": {
+									"Min": 1.0, 
+									"Max": 1.0
+								}
+							}
+						]
+					}
+				], 
+				"Teams": [
+					"plants"
+				], 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS", 
+					"List": [
+						"cosmoss"
+					], 
+					"ListType": "excludelist"
+				}, 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_PLANTFOOD", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemFogBuff1"
+			], 
+			"objclass": "GridItemEntityTargetingProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 200
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 2000000000, 
+				"Actions": [
+					{
+						"Type": "damage", 
+						"TargetArea": "board", 
+						"TeamsToAffect": [
+							"zombies"
+						], 
+						"EntitiesToAffect": [
+							"zombie"
+						], 
+						"SecondsBetweenEffects": 1.0, 
+						"RangeInGridSquares": 1.5, 
+						"ZConditions": [
+							{
+								"Condition": "potiontoughness1", 
+								"Duration": {
+									"Min": 2000000.0, 
+									"Max": 2000000.0
+								}
+							}
+						]
+					}
+				], 
+				"Teams": [
+					"plants"
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_PLANTFOOD", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestPlanthealZombiekill"
+			], 
+			"objclass": "GridItemEntityTargetingProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1000, 
+				"Actions": [
+					{
+						"Type": "damage", 
+						"TargetArea": "circle", 
+						"TeamsToAffect": [
+							"zombies"
+						], 
+						"EntitiesToAffect": [
+							"zombie"
+						], 
+						"Damage": 10.0, 
+						"SecondsBetweenEffects": 1.0, 
+						"RangeInGridSquares": 1.5
+					}, 
+					{
+						"Type": "healing", 
+						"TargetArea": "circle", 
+						"TeamsToAffect": [
+							"plants"
+						], 
+						"EntitiesToAffect": [
+							"plant"
+						], 
+						"Damage": 10.0, 
+						"SecondsBetweenEffects": 0.33, 
+						"RangeInGridSquares": 1.5
+					}
+				], 
+				"Teams": [
+					"plants"
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_DARK_PLANTFOOD", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemTestFriendlyZombieAttacker"
+			], 
+			"objclass": "GridItemEntityTargetingProps", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 1000, 
+				"Actions": [
+					{
+						"Type": "damage", 
+						"TargetArea": "circle", 
+						"TeamsToAffect": [
+							"plants"
+						], 
+						"EntitiesToAffect": [
+							"zombie"
+						], 
+						"Damage": 100.0, 
+						"SecondsBetweenEffects": 1.0, 
+						"RangeInGridSquares": 1.5
+					}
+				], 
+				"Teams": [
+					"everything"
+				], 
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemRomanHealerStaff"
+			], 
+			"objclass": "GridItemHealerStaffProps", 
+			"objdata": {
+				"PopAnimRenderOffset": {
+					"x": 98, 
+					"y": 127
+				}, 
+				"UnhealableZombies": {
+					"ListType": "excludelist", 
+					"List": [
+						"cannon", 
+						"roman_ballista", 
+						"dark_king", 
+						"beach_fisherman", 
+						"pirate_barrel", 
+						"joustyeti", 
+						"mech_cone", 
+						"future_gargantuar", 
+						"football_mech", 
+						"disco_mech", 
+						"west_bull", 
+						"west_bull_veteran", 
+						"caketank", 
+						"future_protector", 
+						"future_protector_veteran", 
+						"future_imp"
+					]
+				}, 
+				"Height": "tall", 
+				"HitRectOffsetWidth": -30, 
+				"HitRectOffsetX": 15, 
+				"Hitpoints": 350, 
+				"CanBeMowed": true, 
+				"Actions": [
+					{
+						"Type": "healing", 
+						"ActionAnimationName": "heal", 
+						"HitPopAnim": "POPANIM_EFFECTS_ZOMBIE_ROMAN_HEALER_EFFECT", 
+						"HitAnimStartName": "start", 
+						"HitAnimLoopName": "idle", 
+						"HitAnimLoopTime": 0.75, 
+						"HitAnimEndName": "end", 
+						"HitAffectOffset": {
+							"mX": 0, 
+							"mY": -20
+						}, 
+						"TeamsToAffect": [
+							"zombies"
+						], 
+						"EntitiesToAffect": [
+							"zombie"
+						], 
+						"TargetArea": "circle", 
+						"Damage": 25.0, 
+						"SecondsBetweenEffects": 1.0, 
+						"RangeInGridSquares": 1.25
+					}
+				], 
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_HEALER_STAFF", 
+					"List": [], 
+					"ListType": "includelist"
+				}, 
+				"Teams": [
+					"zombies"
+				], 
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_HEALER_STAFF", 
+				"PopAnimDeathAnim": "power_up", 
+				"PopAnimRigClass": "HealerStaffAnimRig", 
+				"Regenerates": false, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemOilDefault"
+			], 
+			"objclass": "GridItemOilProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_OLIVEPIT_OIL", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"OilTime": 0.2, 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": [
+						"sap", 
+						"plantfoodsap"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemButterDefault"
+			], 
+			"objclass": "GridItemButterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_BUTTERCUP_BUTTER", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"ParentPlantType": "buttercup", 
+				"ZConditions": [
+					{
+						"Condition": "butter", 
+						"Duration": {
+							"Min": 1, 
+							"Max": 1
+						}
+					}
+				], 
+				"ZombiesExcludeList": {
+					"ListType": "excludelist", 
+					"List": [
+						"ZombieZombossMech", 
+						"ZombieGeneralBase", 
+						"ZombieModernBalloon", 
+						"ZombieStatue", 
+						"ZombiePirateBarrel"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemButterPlantfood"
+			], 
+			"objclass": "GridItemButterProps", 
+			"objdata": {
+				"Height": "ground", 
+				"PopAnim": "POPANIM_EFFECTS_BUTTERCUP_BUTTER", 
+				"PopAnimRenderOffset": {
+					"x": 96, 
+					"y": 125
+				}, 
+				"ZConditions": [
+					{
+						"Condition": "butter", 
+						"Duration": {
+							"Min": 5, 
+							"Max": 5
+						}
+					}
+				], 
+				"ZombiesExcludeList": {
+					"ListType": "excludelist", 
+					"List": [
+						"ZombieZombossMech", 
+						"ZombieModernBalloon", 
+						"ZombieStatue", 
+						"ZombiePirateBarrel"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"GridItemScorchedEarthDefault"
+			], 
+			"objclass": "GridItemLavaProps", 
+			"objdata": {
+				"# Note that there will be some delay before zombies get to the lava": 0, 
+				"# due to the explosion damage of the plant's initial blast": 0, 
+				"DamagePerSecond": 0, 
+				"Height": "ground", 
+				"Lifetime": 25, 
+				"ArtScale": 0.0, 
+				"PopAnim": "POPANIM_EFFECTS_SCORCHED_EARTH_TILE_2", 
+				"PopAnimRenderOffset": {
+					"x": 95, 
+					"y": 125
+				}, 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "DamagePerSecond"
+					}
+				], 
+				"WarmingRadius": {
+					"GridItemDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"fire"
+						]
+					}, 
+					"PlantDamageProps": {
+						"BaseDamage": 0, 
+						"DamageFlags": [
+							"thaw_whole_stage"
+						]
+					}, 
+					"PopAnimEffectName": "POPANIM_EFFECTS_FROSTBITE_HEAT_PLANT", 
+					"PulseCooldown": 99999999999, 
+					"PulseInitialDelay": 99999999.5, 
+					"PulsePropagationTime": 1, 
+					"RadiusInGridSquareWidths": 1.5
+				}, 
+				"GridItemsOverride": {
+					"ListType": "excludelist", 
+					"List": [
+						"sap", 
+						"plantfoodsap"
+					]
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BlankGridDefault"
+			], 
+			"objclass": "GridItemGravestonePropertySheet", 
+			"objdata": {
+				"ArtCenter": {
+					"x": 900000, 
+					"y": 900
+				}, 
+				"BreakEffect": "POPANIM_EFFECTS_TOMBSTONE_EGYPT_HIEROGLYPH_DAMAGE", 
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble", 
+				"DamageStateCount": 5, 
+				"HitRectOffsetWidth": -3000000, 
+				"HitRectOffsetX": 90000000, 
+				"Hitpoints": 1, 
+				"PopAnim": "POPANIM_GRAVESTONES_EGYPT_HIEROGLYPH", 
+				"ScaledProps": [
+					{
+						"Arg1": 1.3, 
+						"Arg2": 0.05, 
+						"Formula": "standard", 
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

@@ -1,0 +1,211 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"MainMarketSchedule"
+			], 
+			"objclass": "MarketScheduleProps", 
+			"objdata": {
+				"MarketScheduleEntries": [
+					{
+						"EndDateTime": 0, 
+						"Name": "Currency quick store for sale, always!", 
+						"ScheduledProducts": [
+							{
+								"Comment": "5000 Coins offer", 
+								"Category": "QuickCoins", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SmartKey": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": [
+									"mostpopular"
+								], 
+								"Sku": [
+									"currency.coin.5000", 
+									"currency.coin.5000"
+								]
+							}
+						], 
+						"StartDateTime": 0
+					}, 
+					{
+						"EndDateTime": 0, 
+						"RandomFallbackPicking": false, 
+						"RandomPersist": false, 
+						"RandomPersistVersion": -1, 
+						"Name": "Tutorial", 
+						"RandomPulls": 0, 
+						"RandomSeed": 1058905535, 
+						"RepeatStyle": "none", 
+						"ScheduledProducts": [
+							{
+								"Comment": "Pinata Egypt Tutorial", 
+								"Category": "Tutorial", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SmartKey": "", 
+								"SoftCurrency": "gems", 
+								"SoftCost": 75, 
+								"MaxPurchase": 0, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": [
+									"tutorial"
+								], 
+								"Sku": [
+									"com.popcap.pvz2.pinata.egypt.consume.tutorial", 
+									"com.popcap.pvz2.android.pinata.egypt.consume.tutorial"
+								]
+							}
+						], 
+						"StartDateTime": 0
+					}, 
+					{
+						"EndDateTime": 0, 
+						"Name": "Plants for sale, always!", 
+						"ScheduledProducts": [
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"plant.gatlingpea", 
+									"plant.gatlingpea"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"plant.powerlily", 
+									"plant.powerlily"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"plant.imitater", 
+									"plant.imitater"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"plant.megagatling", 
+									"plant.megagatling"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"plant.nippycabbage", 
+									"plant.nippycabbage"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"plant.darktwin", 
+									"plant.darktwin"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"bundle.heian", 
+									"bundle.heian"
+								]
+							}, 
+							{
+								"Category": "Plants1", 
+								"Priority": "", 
+								"ABTest": "", 
+								"PromotionGroup": "", 
+								"AdditionalSegment": "", 
+								"SoftCurrency": "", 
+								"SoftCost": -1, 
+								"MaxPurchase": -1, 
+								"SoftCostPerPurchase": -1, 
+								"Visuals": "RTID(0)", 
+								"Sku": [
+									"bundle.pirate", 
+									"bundle.pirate"
+								]
+							}
+						], 
+						"StartDateTime": 0
+					}
+				], 
+				"SegmentFilter": "All"
+			}
+		}
+	], 
+	"version": 1
+}

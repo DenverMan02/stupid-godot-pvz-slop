@@ -1,0 +1,7859 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"LevelGen"
+			], 
+			"objclass": "LevelGenData", 
+			"objdata": {
+				"Config": {
+					"DelayBeforeHugeWave": 7.5, 
+					"MaxNextWaveHealthPercent": 0.6, 
+					"MinNextWaveHealthPercent": 0.5, 
+					"PlantFoodPreHugeWaveWeight": 2, 
+					"StrengthWeightScalar": 2.5, 
+					"TimeToFirstWave": 15, 
+					"TimeToFirstWaveConveyor": 5
+				}, 
+				"WorldConfigs": {
+					"beach": {
+						"World": "beach", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "BeachStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"BeachMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [
+							"tide"
+						], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"circus": {
+						"World": "circus", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "CarnivalStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 0, 
+						"ObstacleGroupIds": [
+							"obs_railcarts", 
+							"obs_kiddiepools", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"cowboy": {
+						"World": "cowboy", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "WestStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"WestMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"CowboyLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_railcarts", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"cowboynight": {
+						"World": "cowboynight", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "WestNightsStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"WestMowers", 
+							"WestNightFogEffect", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"CowboyLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_railcarts", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"dark": {
+						"World": "dark", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "DarkStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"DarkMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DarkLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"gravestone_event"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_gravestones", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"dino": {
+						"World": "dino", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "DinoStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"DinoMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DinoLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"dinos"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"dinonight": {
+						"World": "dinonight", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "DinoStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"DinoMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DinoLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"dinos"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"egypt": {
+						"World": "egypt", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "EgyptStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"EgyptMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"EgyptLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"sandstorm"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_gravestones", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"egyptnight": {
+						"World": "egyptnight", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "EgyptNightNZStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"EgyptMowers", 
+							"Night", 
+							"StandardIntro", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"EgyptLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"sandstorm"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_gravestones", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"heian": {
+						"World": "heian", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "HeianStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"HeianMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"HeianLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 0, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"heiannight": {
+						"World": "heiannight", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "HeianStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"HeianMowers", 
+							"StandardIntro", 
+							"Night", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"HeianLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 0, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"eighties": {
+						"World": "eighties", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "EightiesStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [
+							"jams"
+						], 
+						"AdditionalEventGroupIds": [], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"future": {
+						"World": "future", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "FutureStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"FutureMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"FutureLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"spiderrain"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_powertiles", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"futurenight": {
+						"World": "futurenight", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "FutureNightStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"FutureMowers", 
+							"FutureNightsDynamicEffects", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"FutureLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"spiderrain"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_powertiles", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"iceage": {
+						"World": "iceage", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "IceageStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"freezingwind"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_planticeblocks", 
+							"obs_zombieiceblocks", 
+							"obs_icefloes", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 3
+					}, 
+					"lostcity": {
+						"World": "lostcity", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "LostCityStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"parachuterain"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_goldtiles", 
+							"obs_traps", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"modern": {
+						"World": "modern", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "ModernStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"ModernLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [], 
+						"AdditionalEventGroupIds": [
+							"portals", 
+							"sandstorm", 
+							"raidingparty", 
+							"dinos", 
+							"spiderrain", 
+							"parachuterain", 
+							"freezingwind", 
+							"jams"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 3, 
+						"ObstacleGroupIds": [
+							"obs_gravestones", 
+							"obs_railcarts", 
+							"obs_powertiles", 
+							"obs_goldtiles", 
+							"obs_traps", 
+							"obs_planticeblocks", 
+							"obs_zombieiceblocks", 
+							"obs_kiddiepools", 
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 3
+					}, 
+					"pirate": {
+						"World": "pirate", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "PirateStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"PirateMowers", 
+							"StandardIntro", 
+							"DefaultSunDropper", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"PirateLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [
+							"planks"
+						], 
+						"AdditionalEventGroupIds": [
+							"raidingparty"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}, 
+					"piratenight": {
+						"World": "piratenight", 
+						"GameMode": "SeedChooser", 
+						"StageModule": "PirateNightStage", 
+						"LootModule": "DefaultLoot", 
+						"DefaultModules": [
+							"WidescreenFix", 
+							"Night", 
+							"PirateMowers", 
+							"StandardIntro", 
+							"ZombiesDeadWinCon", 
+							"DefaultZombieWinCondition", 
+							"LevelGenChallengeModule", 
+							"PirateLevelGenFlagRandomizer", 
+							"DefaultSeedBank"
+						], 
+						"RequiredEventGroupIds": [
+							"planks"
+						], 
+						"AdditionalEventGroupIds": [
+							"raidingparty"
+						], 
+						"MinEventCount": 0, 
+						"MaxEventCount": 1, 
+						"ObstacleGroupIds": [
+							"obs_protectplants", 
+							"obs_zombieline", 
+							"obs_mold"
+						], 
+						"MinObstacleCount": 0, 
+						"MaxObstacleCount": 2
+					}
+				}, 
+				"WaveData": {
+					"3wave01a": {
+						"UID": "3wave01a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wave01b": {
+						"UID": "3wave01b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wave01c": {
+						"UID": "3wave01c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wave01d": {
+						"UID": "3wave01d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wave01e": {
+						"UID": "3wave01e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wave02a": {
+						"UID": "3wave02a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wave02b": {
+						"UID": "3wave02b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wave02c": {
+						"UID": "3wave02c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wave02d": {
+						"UID": "3wave02d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wave02e": {
+						"UID": "3wave02e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wave03a": {
+						"UID": "3wave03a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wave03b": {
+						"UID": "3wave03b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wave03c": {
+						"UID": "3wave03c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wave03d": {
+						"UID": "3wave03d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wave03e": {
+						"UID": "3wave03e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wave04a": {
+						"UID": "3wave04a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"3wave04b": {
+						"UID": "3wave04b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"3wave04c": {
+						"UID": "3wave04c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"3wave04d": {
+						"UID": "3wave04d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"3wave04e": {
+						"UID": "3wave04e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"3wavebasic01": {
+						"UID": "3wavebasic01", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wavebasic02": {
+						"UID": "3wavebasic02", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wavebasic03": {
+						"UID": "3wavebasic03", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wavebasic04": {
+						"UID": "3wavebasic04", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"3wavespecial01": {
+						"UID": "3wavespecial01", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							1650
+						]
+					}, 
+					"3wavespecial02": {
+						"UID": "3wavespecial02", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							1750
+						]
+					}, 
+					"3wavespecial03": {
+						"UID": "3wavespecial03", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							450, 
+							1500
+						]
+					}, 
+					"3wavespecial04": {
+						"UID": "3wavespecial04", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 0, 
+						"PlantFoodMax": 1, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							200, 
+							1950
+						]
+					}, 
+					"4wave01a": {
+						"UID": "4wave01a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wave01b": {
+						"UID": "4wave01b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wave01c": {
+						"UID": "4wave01c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wave01d": {
+						"UID": "4wave01d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wave01e": {
+						"UID": "4wave01e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wave02a": {
+						"UID": "4wave02a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wave02b": {
+						"UID": "4wave02b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wave02c": {
+						"UID": "4wave02c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wave02d": {
+						"UID": "4wave02d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wave02e": {
+						"UID": "4wave02e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wave03a": {
+						"UID": "4wave03a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wave03b": {
+						"UID": "4wave03b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wave03c": {
+						"UID": "4wave03c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wave03d": {
+						"UID": "4wave03d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wave03e": {
+						"UID": "4wave03e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wave04a": {
+						"UID": "4wave04a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wave04b": {
+						"UID": "4wave04b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wave04c": {
+						"UID": "4wave04c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wave04d": {
+						"UID": "4wave04d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wave04e": {
+						"UID": "4wave04e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wave05a": {
+						"UID": "4wave05a", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"4wave05b": {
+						"UID": "4wave05b", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"4wave05c": {
+						"UID": "4wave05c", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"4wave05d": {
+						"UID": "4wave05d", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"4wave05e": {
+						"UID": "4wave05e", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"4wavebasic01": {
+						"UID": "4wavebasic01", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wavebasic02": {
+						"UID": "4wavebasic02", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wavebasic03": {
+						"UID": "4wavebasic03", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wavebasic04": {
+						"UID": "4wavebasic04", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wavebasic05": {
+						"UID": "4wavebasic05", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"4wavespecial01": {
+						"UID": "4wavespecial01", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							750, 
+							500, 
+							2000
+						]
+					}, 
+					"4wavespecial02": {
+						"UID": "4wavespecial02", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							300, 
+							1000, 
+							500, 
+							1500
+						]
+					}, 
+					"4wavespecial03": {
+						"UID": "4wavespecial03", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							400, 
+							700, 
+							2000
+						]
+					}, 
+					"4wavespecial04": {
+						"UID": "4wavespecial04", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							800, 
+							500, 
+							1800
+						]
+					}, 
+					"4wavespecial05": {
+						"UID": "4wavespecial05", 
+						"Weight": 0, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 2, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							300, 
+							500, 
+							2500
+						]
+					}, 
+					"5wave01a": {
+						"UID": "5wave01a", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wave01b": {
+						"UID": "5wave01b", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wave01c": {
+						"UID": "5wave01c", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wave01d": {
+						"UID": "5wave01d", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wave01e": {
+						"UID": "5wave01e", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wave02a": {
+						"UID": "5wave02a", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wave02b": {
+						"UID": "5wave02b", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wave02c": {
+						"UID": "5wave02c", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wave02d": {
+						"UID": "5wave02d", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wave02e": {
+						"UID": "5wave02e", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wave03a": {
+						"UID": "5wave03a", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wave03b": {
+						"UID": "5wave03b", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wave03c": {
+						"UID": "5wave03c", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wave03d": {
+						"UID": "5wave03d", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wave03e": {
+						"UID": "5wave03e", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wave04a": {
+						"UID": "5wave04a", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wave04b": {
+						"UID": "5wave04b", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wave04c": {
+						"UID": "5wave04c", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wave04d": {
+						"UID": "5wave04d", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wave04e": {
+						"UID": "5wave04e", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wave05a": {
+						"UID": "5wave05a", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"5wave05b": {
+						"UID": "5wave05b", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"5wave05c": {
+						"UID": "5wave05c", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"5wave05d": {
+						"UID": "5wave05d", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"5wave05e": {
+						"UID": "5wave05e", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"5wavebasic01": {
+						"UID": "5wavebasic01", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wavebasic02": {
+						"UID": "5wavebasic02", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wavebasic03": {
+						"UID": "5wavebasic03", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wavebasic04": {
+						"UID": "5wavebasic04", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wavebasic05": {
+						"UID": "5wavebasic05", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"5wavespecial01": {
+						"UID": "5wavespecial01", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1
+						], 
+						"Waves": [
+							200, 
+							1125, 
+							700, 
+							1100, 
+							2300
+						]
+					}, 
+					"5wavespecial02": {
+						"UID": "5wavespecial02", 
+						"Weight": 150, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							100, 
+							400, 
+							700, 
+							1000, 
+							3250
+						]
+					}, 
+					"5wavespecial03": {
+						"UID": "5wavespecial03", 
+						"Weight": 150, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							200, 
+							450, 
+							700, 
+							950, 
+							3100
+						]
+					}, 
+					"5wavespecial04": {
+						"UID": "5wavespecial04", 
+						"Weight": 150, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [], 
+						"Waves": [
+							300, 
+							500, 
+							700, 
+							900, 
+							3000
+						]
+					}, 
+					"5wavespecial05": {
+						"UID": "5wavespecial05", 
+						"Weight": 150, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							200, 
+							400, 
+							1500, 
+							800, 
+							2500
+						]
+					}, 
+					"6wave01a": {
+						"UID": "6wave01a", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wave01b": {
+						"UID": "6wave01b", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wave01c": {
+						"UID": "6wave01c", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wave01d": {
+						"UID": "6wave01d", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wave01e": {
+						"UID": "6wave01e", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wave02a": {
+						"UID": "6wave02a", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wave02b": {
+						"UID": "6wave02b", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wave02c": {
+						"UID": "6wave02c", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wave02d": {
+						"UID": "6wave02d", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wave02e": {
+						"UID": "6wave02e", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wave03a": {
+						"UID": "6wave03a", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wave03b": {
+						"UID": "6wave03b", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wave03c": {
+						"UID": "6wave03c", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wave03d": {
+						"UID": "6wave03d", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wave03e": {
+						"UID": "6wave03e", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wave04a": {
+						"UID": "6wave04a", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 5, 
+						"KeywordLimits": {
+							"special": 3, 
+							"standard": 3
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}, 
+					"6wave04b": {
+						"UID": "6wave04b", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}, 
+					"6wave04c": {
+						"UID": "6wave04c", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 7, 
+						"KeywordLimits": {
+							"special": 4, 
+							"standard": 4
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}, 
+					"6wave04d": {
+						"UID": "6wave04d", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 8, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}, 
+					"6wave04e": {
+						"UID": "6wave04e", 
+						"Weight": 250, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 9, 
+						"KeywordLimits": {
+							"special": 5, 
+							"standard": 5
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}, 
+					"6wavebasic01": {
+						"UID": "6wavebasic01", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wavebasic02": {
+						"UID": "6wavebasic02", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wavebasic03": {
+						"UID": "6wavebasic03", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wavebasic04": {
+						"UID": "6wavebasic04", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"special": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}, 
+					"6wavespecial01": {
+						"UID": "6wavespecial01", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							300, 
+							500, 
+							1750, 
+							900, 
+							1100, 
+							3250
+						]
+					}, 
+					"6wavespecial02": {
+						"UID": "6wavespecial02", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							100, 
+							875, 
+							500, 
+							2125, 
+							900, 
+							3375
+						]
+					}, 
+					"6wavespecial03": {
+						"UID": "6wavespecial03", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							1, 
+							3
+						], 
+						"Waves": [
+							200, 
+							1000, 
+							600, 
+							2000, 
+							1000, 
+							3000
+						]
+					}, 
+					"6wavespecial04": {
+						"UID": "6wavespecial04", 
+						"Weight": 200, 
+						"StrengthMin": 0.1, 
+						"StrengthMax": 1, 
+						"MaxZombieTypes": 6, 
+						"KeywordLimits": {
+							"standard": 0
+						}, 
+						"PlantFoodMin": 1, 
+						"PlantFoodMax": 3, 
+						"HugeWaves": [
+							2
+						], 
+						"Waves": [
+							100, 
+							375, 
+							1625, 
+							925, 
+							1200, 
+							3600
+						]
+					}
+				}, 
+				"ZombieData": {
+					"barrelroller": {
+						"ZombieTypeID": "barrelroller", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"heavy", 
+							"crusher", 
+							"spawner"
+						]
+					}, 
+					"beach": {
+						"ZombieTypeID": "beach", 
+						"Weight": 50, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"beach_armor1": {
+						"ZombieTypeID": "beach_armor1", 
+						"Weight": 37, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"beach_armor2": {
+						"ZombieTypeID": "beach_armor2", 
+						"Weight": 37, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"beach_fem": {
+						"ZombieTypeID": "beach_fem", 
+						"Weight": 50, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"beach_fem_armor1": {
+						"ZombieTypeID": "beach_fem_armor1", 
+						"Weight": 37, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"beach_fem_armor2": {
+						"ZombieTypeID": "beach_fem_armor2", 
+						"Weight": 37, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"beach_fisherman": {
+						"ZombieTypeID": "beach_fisherman", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"beach"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"stationary"
+						]
+					}, 
+					"beach_gargantuar": {
+						"ZombieTypeID": "beach_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"beach_imp": {
+						"ZombieTypeID": "beach_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"beach_octopus": {
+						"ZombieTypeID": "beach_octopus", 
+						"Weight": 50, 
+						"Strength": 0.9, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"heavy", 
+							"stunner"
+						]
+					}, 
+					"beach_snorkel": {
+						"ZombieTypeID": "beach_snorkel", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"beach"
+						], 
+						"Keywords": [
+							"special", 
+							"sneaky"
+						]
+					}, 
+					"beach_surfer": {
+						"ZombieTypeID": "beach_surfer", 
+						"Weight": 50, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"beach", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"crusher"
+						]
+					}, 
+					"camel_manyhump": {
+						"ZombieTypeID": "camel_manyhump", 
+						"Weight": 20, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc"
+						]
+					}, 
+					"camel_onehump": {
+						"ZombieTypeID": "camel_onehump", 
+						"Weight": 20, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc"
+						]
+					}, 
+					"camel_twohump": {
+						"ZombieTypeID": "camel_twohump", 
+						"Weight": 20, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc"
+						]
+					}, 
+					"cannon": {
+						"ZombieTypeID": "cannon", 
+						"Weight": 40, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"spawner", 
+							"stationary"
+						]
+					}, 
+					"carnie": {
+						"ZombieTypeID": "carnie", 
+						"Weight": 50, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"carnie_armor1": {
+						"ZombieTypeID": "carnie_armor1", 
+						"Weight": 37, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"carnie_armor2": {
+						"ZombieTypeID": "carnie_armor2", 
+						"Weight": 37, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"carnie_armor4": {
+						"ZombieTypeID": "carnie_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"carnie_cannon": {
+						"ZombieTypeID": "carnie_cannon", 
+						"Weight": 40, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"spawner", 
+							"stationary"
+						]
+					}, 
+					"carnie_firebreather": {
+						"ZombieTypeID": "carnie_firebreather", 
+						"Weight": 25, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"crusher"
+						]
+					}, 
+					"carnie_gargantuar": {
+						"ZombieTypeID": "carnie_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"carnie_imp": {
+						"ZombieTypeID": "carnie_imp", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"carnie_imp_twins": {
+						"ZombieTypeID": "carnie_imp_twins", 
+						"Weight": 40, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"imp", 
+							"spawner"
+						]
+					}, 
+					"carnie_magician": {
+						"ZombieTypeID": "carnie_magician", 
+						"Weight": 40, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"spawner"
+						]
+					}, 
+					"carnie_stiltwalker": {
+						"ZombieTypeID": "carnie_stiltwalker", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"circus", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"chicken_farmer": {
+						"ZombieTypeID": "chicken_farmer", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"spawner", 
+							"swarmer"
+						]
+					}, 
+					"cowboy": {
+						"ZombieTypeID": "cowboy", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"cowboy_armor1": {
+						"ZombieTypeID": "cowboy_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"cowboy_armor2": {
+						"ZombieTypeID": "cowboy_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"cowboy_armor4": {
+						"ZombieTypeID": "cowboy_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"cowboy_gargantuar": {
+						"ZombieTypeID": "cowboy_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"dark": {
+						"ZombieTypeID": "dark", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"dark_armor1": {
+						"ZombieTypeID": "dark_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"dark_armor2": {
+						"ZombieTypeID": "dark_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"dark_armor3": {
+						"ZombieTypeID": "dark_armor3", 
+						"Weight": 65, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor3", 
+							"heavy"
+						]
+					}, 
+					"dark_armor4": {
+						"ZombieTypeID": "dark_armor4", 
+						"Weight": 35, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"dark_gargantuar": {
+						"ZombieTypeID": "dark_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"dark_imp": {
+						"ZombieTypeID": "dark_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"dark_imp_dragon": {
+						"ZombieTypeID": "dark_imp_dragon", 
+						"Weight": 40, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"imp"
+						]
+					}, 
+					"dark_juggler": {
+						"ZombieTypeID": "dark_juggler", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"defender"
+						]
+					}, 
+					"dark_king": {
+						"ZombieTypeID": "dark_king", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"stationary", 
+							"spawner"
+						]
+					}, 
+					"dark_wizard": {
+						"ZombieTypeID": "dark_wizard", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"stunner"
+						]
+					}, 
+					"dark_wizard_veteran": {
+						"ZombieTypeID": "dark_wizard_veteran", 
+						"Weight": 25, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"dark", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"stunner", 
+							"heavy"
+						]
+					}, 
+					"dino": {
+						"ZombieTypeID": "dino", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"dino_armor1": {
+						"ZombieTypeID": "dino_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"dino_armor2": {
+						"ZombieTypeID": "dino_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"dino_armor3": {
+						"ZombieTypeID": "dino_armor3", 
+						"Weight": 65, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor3", 
+							"heavy"
+						]
+					}, 
+					"dino_armor4": {
+						"ZombieTypeID": "dino_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"dino_bully": {
+						"ZombieTypeID": "dino_bully", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"heavy"
+						]
+					}, 
+					"dino_bully_veteran": {
+						"ZombieTypeID": "dino_bully_veteran", 
+						"Weight": 25, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"dino_gargantuar": {
+						"ZombieTypeID": "dino_gargantuar", 
+						"Weight": 65, 
+						"Strength": 1, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"dino_imp": {
+						"ZombieTypeID": "dino_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"dino", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"disco_mech": {
+						"ZombieTypeID": "disco_mech", 
+						"Weight": 50, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"mech", 
+							"heavy", 
+							"spawner"
+						]
+					}, 
+					"egypt_gargantuar": {
+						"ZombieTypeID": "egypt_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"egypt_imp": {
+						"ZombieTypeID": "egypt_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"eighties": {
+						"ZombieTypeID": "eighties", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"eighties_arcade": {
+						"ZombieTypeID": "eighties_arcade", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"pusher", 
+							"spawner"
+						]
+					}, 
+					"eighties_armor1": {
+						"ZombieTypeID": "eighties_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"eighties_armor2": {
+						"ZombieTypeID": "eighties_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"eighties_boombox": {
+						"ZombieTypeID": "eighties_boombox", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"stunner"
+						]
+					}, 
+					"eighties_breakdancer": {
+						"ZombieTypeID": "eighties_breakdancer", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"kicker"
+						]
+					}, 
+					"eighties_gargantuar": {
+						"ZombieTypeID": "eighties_gargantuar", 
+						"Weight": 65, 
+						"Strength": 1, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher", 
+							"ranged"
+						]
+					}, 
+					"eighties_glitter": {
+						"ZombieTypeID": "eighties_glitter", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"defender", 
+							"crusher"
+						]
+					}, 
+					"eighties_imp": {
+						"ZombieTypeID": "eighties_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"eighties_mc": {
+						"ZombieTypeID": "eighties_mc", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"crusher"
+						]
+					}, 
+					"eighties_punk": {
+						"ZombieTypeID": "eighties_punk", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"eighties", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"digger"
+						]
+					}, 
+					"explorer": {
+						"ZombieTypeID": "explorer", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"crusher"
+						]
+					}, 
+					"explorer_veteran": {
+						"ZombieTypeID": "explorer_veteran", 
+						"Weight": 25, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"crusher"
+						]
+					}, 
+					"football_mech": {
+						"ZombieTypeID": "football_mech", 
+						"Weight": 50, 
+						"Strength": 0.9, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"mech", 
+							"heavy", 
+							"digger"
+						]
+					}, 
+					"foodfight": {
+						"ZombieTypeID": "foodfight", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"lte_foodfight_easy", 
+							"lte_foodfight_med", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"foodfight_armor1": {
+						"ZombieTypeID": "foodfight_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"lte_foodfight_easy", 
+							"lte_foodfight_med", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"foodfight_armor2": {
+						"ZombieTypeID": "foodfight_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"lte_foodfight_easy", 
+							"lte_foodfight_med", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"foodfight_chefster": {
+						"ZombieTypeID": "foodfight_chefster", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"lte_foodfight_med", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"defender"
+						]
+					}, 
+					"foodfight_gobbler_king": {
+						"ZombieTypeID": "foodfight_gobbler_king", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"lte_foodfight_med", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"spawner", 
+							"swarmer"
+						]
+					}, 
+					"future": {
+						"ZombieTypeID": "future", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"future_armor1": {
+						"ZombieTypeID": "future_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"future_armor2": {
+						"ZombieTypeID": "future_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"future_armor4": {
+						"ZombieTypeID": "future_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"future_gargantuar": {
+						"ZombieTypeID": "future_gargantuar", 
+						"Weight": 65, 
+						"Strength": 1, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher", 
+							"ranged", 
+							"mech"
+						]
+					}, 
+					"future_imp": {
+						"ZombieTypeID": "future_imp", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"future_jetpack": {
+						"ZombieTypeID": "future_jetpack", 
+						"Weight": 50, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"future_jetpack_veteran": {
+						"ZombieTypeID": "future_jetpack_veteran", 
+						"Weight": 25, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"future_protector": {
+						"ZombieTypeID": "future_protector", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"mech", 
+							"defender"
+						]
+					}, 
+					"iceage": {
+						"ZombieTypeID": "iceage", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"iceage_armor1": {
+						"ZombieTypeID": "iceage_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"iceage_armor2": {
+						"ZombieTypeID": "iceage_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"iceage_armor3": {
+						"ZombieTypeID": "iceage_armor3", 
+						"Weight": 65, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"iceage", 
+							"modern", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor3", 
+							"heavy"
+						]
+					}, 
+					"iceage_dodo": {
+						"ZombieTypeID": "iceage_dodo", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"iceage_gargantuar": {
+						"ZombieTypeID": "iceage_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.9, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"iceage_hunter": {
+						"ZombieTypeID": "iceage_hunter", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"iceage_imp": {
+						"ZombieTypeID": "iceage_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"iceage_troglobite": {
+						"ZombieTypeID": "iceage_troglobite", 
+						"Weight": 20, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"pusher"
+						]
+					}, 
+					"iceage_troglobite_1block": {
+						"ZombieTypeID": "iceage_troglobite_1block", 
+						"Weight": 20, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"pusher"
+						]
+					}, 
+					"iceage_troglobite_2block": {
+						"ZombieTypeID": "iceage_troglobite_2block", 
+						"Weight": 20, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"pusher"
+						]
+					}, 
+					"iceage_weaselhoarder": {
+						"ZombieTypeID": "iceage_weaselhoarder", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"iceage", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"spawner", 
+							"swarmer"
+						]
+					}, 
+					"lostcity": {
+						"ZombieTypeID": "lostcity", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"lostcity_armor1": {
+						"ZombieTypeID": "lostcity_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"lostcity_armor2": {
+						"ZombieTypeID": "lostcity_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"lostcity_bug": {
+						"ZombieTypeID": "lostcity_bug", 
+						"Weight": 20, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"lostcity_bug_armor1": {
+						"ZombieTypeID": "lostcity_bug_armor1", 
+						"Weight": 20, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"lostcity_bug_armor2": {
+						"ZombieTypeID": "lostcity_bug_armor2", 
+						"Weight": 20, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying", 
+							"heavy"
+						]
+					}, 
+					"lostcity_crystalskull": {
+						"ZombieTypeID": "lostcity_crystalskull", 
+						"Weight": 50, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"lostcity", 
+							"modern", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"lostcity_excavator": {
+						"ZombieTypeID": "lostcity_excavator", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"defender", 
+							"digger"
+						]
+					}, 
+					"lostcity_gargantuar": {
+						"ZombieTypeID": "lostcity_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"lostcity_imp": {
+						"ZombieTypeID": "lostcity_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"lostcity_impporter": {
+						"ZombieTypeID": "lostcity_impporter", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"spawner", 
+							"imp"
+						]
+					}, 
+					"lostcity_jane": {
+						"ZombieTypeID": "lostcity_jane", 
+						"Weight": 50, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"lostcity", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"defender"
+						]
+					}, 
+					"lostcity_relichunter": {
+						"ZombieTypeID": "lostcity_relichunter", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"lostcity", 
+							"modern", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"jumper"
+						]
+					}, 
+					"mech_cone": {
+						"ZombieTypeID": "mech_cone", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"future", 
+							"futurenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"mech", 
+							"heavy"
+						]
+					}, 
+					"modern_allstar": {
+						"ZombieTypeID": "modern_allstar", 
+						"Weight": 50, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"modern_balloon": {
+						"ZombieTypeID": "modern_balloon", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"flying"
+						]
+					}, 
+					"modern_newspaper": {
+						"ZombieTypeID": "modern_newspaper", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"modern", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"heavy"
+						]
+					}, 
+					"modern_superfanimp": {
+						"ZombieTypeID": "modern_superfanimp", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"modern", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"imp"
+						]
+					}, 
+					"mummy": {
+						"ZombieTypeID": "mummy", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"mummy_armor1": {
+						"ZombieTypeID": "mummy_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"mummy_armor2": {
+						"ZombieTypeID": "mummy_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"mummy_armor4": {
+						"ZombieTypeID": "mummy_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"heian": {
+						"ZombieTypeID": "heian", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"heian_armor1": {
+						"ZombieTypeID": "heian_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"heian_armor2": {
+						"ZombieTypeID": "heian_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"heian_armor4": {
+						"ZombieTypeID": "heian_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"heian_gargantuar": {
+						"ZombieTypeID": "heian_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"heian_ninja_imp": {
+						"ZombieTypeID": "heian_ninja_imp", 
+						"Weight": 50, 
+						"Strength": 0.25, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"imp", 
+							"ranged"
+						]
+					}, 
+					"heian_onmyoji": {
+						"ZombieTypeID": "heian_onmyoji", 
+						"Weight": 35, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"heian_onmyoji_veteran": {
+						"ZombieTypeID": "heian_onmyoji_veteran", 
+						"Weight": 20, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"heavy"
+						]
+					}, 
+					"heian_hanabi": {
+						"ZombieTypeID": "heian_hanabi", 
+						"Weight": 45, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"crusher"
+						]
+					}, 
+					"yokai_ubagbi": {
+						"ZombieTypeID": "yokai_ubagbi", 
+						"Weight": 25, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"heian", 
+							"heiannight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"flying", 
+							"crusher"
+						]
+					}, 
+					"newspaper_veteran": {
+						"ZombieTypeID": "newspaper_veteran", 
+						"Weight": 25, 
+						"Strength": 0.9, 
+						"Worlds": [
+							"modern", 
+							"lte_foodfight_hard"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"heavy"
+						]
+					}, 
+					"pelican": {
+						"ZombieTypeID": "pelican", 
+						"Weight": 25, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"flying", 
+							"fast"
+						]
+					}, 
+					"pharaoh": {
+						"ZombieTypeID": "pharaoh", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc", 
+							"heavy"
+						]
+					}, 
+					"cleopatra": {
+						"ZombieTypeID": "cleopatra", 
+						"Weight": 35, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"heavy", 
+							"spawner"
+						]
+					}, 
+					"piano": {
+						"ZombieTypeID": "piano", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"pirate": {
+						"ZombieTypeID": "pirate", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"pirate_armor1": {
+						"ZombieTypeID": "pirate_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"pirate_armor2": {
+						"ZombieTypeID": "pirate_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"pirate_armor4": {
+						"ZombieTypeID": "pirate_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"pirate_captain": {
+						"ZombieTypeID": "pirate_captain", 
+						"Weight": 50, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"pirate_gargantuar": {
+						"ZombieTypeID": "pirate_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"pirate_imp": {
+						"ZombieTypeID": "pirate_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"poncho": {
+						"ZombieTypeID": "poncho", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc", 
+							"heavy"
+						]
+					}, 
+					"poncho_no_plate": {
+						"ZombieTypeID": "poncho_no_plate", 
+						"Weight": 10, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc"
+						]
+					}, 
+					"poncho_plate": {
+						"ZombieTypeID": "poncho_plate", 
+						"Weight": 10, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc", 
+							"heavy"
+						]
+					}, 
+					"prospector": {
+						"ZombieTypeID": "prospector", 
+						"Weight": 50, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"jumper"
+						]
+					}, 
+					"ra": {
+						"ZombieTypeID": "ra", 
+						"Weight": 50, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"roman": {
+						"ZombieTypeID": "roman", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"roman_armor1": {
+						"ZombieTypeID": "roman_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"roman_armor2": {
+						"ZombieTypeID": "roman_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"roman_armor3": {
+						"ZombieTypeID": "roman_armor3", 
+						"Weight": 65, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor3", 
+							"heavy"
+						]
+					}, 
+					"roman_armor4": {
+						"ZombieTypeID": "roman_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"roman_ballista": {
+						"ZombieTypeID": "roman_ballista", 
+						"Weight": 15, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"spawner", 
+							"stationary"
+						]
+					}, 
+					"roman_gargantuar": {
+						"ZombieTypeID": "roman_gargantuar", 
+						"Weight": 65, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"roman_healer": {
+						"ZombieTypeID": "roman_healer", 
+						"Weight": 25, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"roman_imp": {
+						"ZombieTypeID": "roman_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"roman_medusa": {
+						"ZombieTypeID": "roman_medusa", 
+						"Weight": 20, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"pusher"
+						]
+					}, 
+					"roman_shield_pair": {
+						"ZombieTypeID": "roman_shield_pair", 
+						"Weight": 20, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc"
+						]
+					}, 
+					"roman_shield_triad": {
+						"ZombieTypeID": "roman_shield_triad", 
+						"Weight": 20, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"armormisc"
+						]
+					}, 
+					"seagull": {
+						"ZombieTypeID": "seagull", 
+						"Weight": 50, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"flying", 
+							"fast"
+						]
+					}, 
+					"swashbuckler": {
+						"ZombieTypeID": "swashbuckler", 
+						"Weight": 50, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"pirate", 
+							"piratenight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"jumper"
+						]
+					}, 
+					"tomb_raiser": {
+						"ZombieTypeID": "tomb_raiser", 
+						"Weight": 50, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged"
+						]
+					}, 
+					"tomb_raiser_veteran": {
+						"ZombieTypeID": "tomb_raiser_veteran", 
+						"Weight": 25, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"heavy", 
+							"ranged"
+						]
+					}, 
+					"egyptologist": {
+						"ZombieTypeID": "egyptologist", 
+						"Weight": 40, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"ranged"
+						]
+					}, 
+					"egypt_supervisor": {
+						"ZombieTypeID": "egypt_supervisor", 
+						"Weight": 30, 
+						"Strength": 0.3, 
+						"Worlds": [
+							"egypt", 
+							"egyptnight", 
+							"modern", 
+							"modernnight"
+						], 
+						"Keywords": [
+							"special", 
+							"ranged", 
+							"spawner"
+						]
+					}, 
+					"tutorial": {
+						"ZombieTypeID": "tutorial", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"tutorial_armor1": {
+						"ZombieTypeID": "tutorial_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"tutorial_armor2": {
+						"ZombieTypeID": "tutorial_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"tutorial_armor4": {
+						"ZombieTypeID": "tutorial_armor4", 
+						"Weight": 35, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor4", 
+							"heavy"
+						]
+					}, 
+					"tutorial_imp": {
+						"ZombieTypeID": "tutorial_imp", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"west_bull": {
+						"ZombieTypeID": "west_bull", 
+						"Weight": 50, 
+						"Strength": 0.6, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"heavy"
+						]
+					}, 
+					"west_bull_veteran": {
+						"ZombieTypeID": "west_bull_veteran", 
+						"Weight": 25, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"west_bullrider": {
+						"ZombieTypeID": "west_bullrider", 
+						"Weight": 75, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"cowboy", 
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"zcorp": {
+						"ZombieTypeID": "zcorp", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"zcorp_armor1": {
+						"ZombieTypeID": "zcorp_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"zcorp_armor2": {
+						"ZombieTypeID": "zcorp_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"zcorp_consultant": {
+						"ZombieTypeID": "zcorp_consultant", 
+						"Weight": 50, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"kicker"
+						]
+					}, 
+					"zcorp_fem": {
+						"ZombieTypeID": "zcorp_fem", 
+						"Weight": 100, 
+						"Strength": 0.1, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor0"
+						]
+					}, 
+					"zcorp_fem_armor1": {
+						"ZombieTypeID": "zcorp_fem_armor1", 
+						"Weight": 75, 
+						"Strength": 0.2, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor1"
+						]
+					}, 
+					"zcorp_fem_armor2": {
+						"ZombieTypeID": "zcorp_fem_armor2", 
+						"Weight": 75, 
+						"Strength": 0.4, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"basic", 
+							"armor2", 
+							"heavy"
+						]
+					}, 
+					"zcorp_gargantuar": {
+						"ZombieTypeID": "zcorp_gargantuar", 
+						"Weight": 20, 
+						"Strength": 0.7, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"gargantuar", 
+							"heavy", 
+							"crusher"
+						]
+					}, 
+					"zcorp_imp": {
+						"ZombieTypeID": "zcorp_imp", 
+						"Weight": 75, 
+						"Strength": 0.5, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"standard", 
+							"imp"
+						]
+					}, 
+					"zcorp_racer_chair": {
+						"ZombieTypeID": "zcorp_racer_chair", 
+						"Weight": 25, 
+						"Strength": 0.8, 
+						"Worlds": [
+							"modern"
+						], 
+						"Keywords": [
+							"special", 
+							"fast", 
+							"heavy", 
+							"crusher"
+						]
+					}
+				}, 
+				"EventGroupData": {
+					"dinos": {
+						"EventGroupID": "dinos", 
+						"EventData": {
+							"dinos": {
+								"EventID": "dinos", 
+								"PropertySheet": "LevelGenDinos", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"freezingwind": {
+						"EventGroupID": "freezingwind", 
+						"EventData": {
+							"freezingwind_1to5lanes_30": {
+								"EventID": "freezingwind_1to5lanes_30", 
+								"PropertySheet": "LevelGenFreezingWind", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"freezingwind_1to5lanes_45": {
+								"EventID": "freezingwind_1to5lanes_45", 
+								"PropertySheet": "LevelGenFreezingWind", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 400
+							}, 
+							"freezingwind_1to5lanes_50": {
+								"EventID": "freezingwind_1to5lanes_50", 
+								"PropertySheet": "LevelGenFreezingWind", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 800
+							}, 
+							"freezingwind_1to5lanes_55": {
+								"EventID": "freezingwind_1to5lanes_55", 
+								"PropertySheet": "LevelGenFreezingWind", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 400
+							}, 
+							"freezingwind_1to5lanes_70": {
+								"EventID": "freezingwind_1to5lanes_70", 
+								"PropertySheet": "LevelGenFreezingWind", 
+								"EventLevel": 9, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"freezingwind_2to4lanes_30": {
+								"EventID": "freezingwind_2to4lanes_30", 
+								"PropertySheet": "LevelGenFreezingWind_2to4Lanes", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 200
+							}, 
+							"freezingwind_2to4lanes_45": {
+								"EventID": "freezingwind_2to4lanes_45", 
+								"PropertySheet": "LevelGenFreezingWind_2to4Lanes", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 600
+							}, 
+							"freezingwind_2to4lanes_50": {
+								"EventID": "freezingwind_2to4lanes_50", 
+								"PropertySheet": "LevelGenFreezingWind_2to4Lanes", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"freezingwind_2to4lanes_55": {
+								"EventID": "freezingwind_2to4lanes_55", 
+								"PropertySheet": "LevelGenFreezingWind_2to4Lanes", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 600
+							}, 
+							"freezingwind_2to4lanes_70": {
+								"EventID": "freezingwind_2to4lanes_70", 
+								"PropertySheet": "LevelGenFreezingWind_2to4Lanes", 
+								"EventLevel": 9, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 200
+							}, 
+							"freezingwind_3lanes_30": {
+								"EventID": "freezingwind_3lanes_30", 
+								"PropertySheet": "LevelGenFreezingWind_3Lanes", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 200
+							}, 
+							"freezingwind_3lanes_45": {
+								"EventID": "freezingwind_3lanes_45", 
+								"PropertySheet": "LevelGenFreezingWind_3Lanes", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 600
+							}, 
+							"freezingwind_3lanes_50": {
+								"EventID": "freezingwind_3lanes_50", 
+								"PropertySheet": "LevelGenFreezingWind_3Lanes", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"freezingwind_3lanes_55": {
+								"EventID": "freezingwind_3lanes_55", 
+								"PropertySheet": "LevelGenFreezingWind_3Lanes", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 600
+							}, 
+							"freezingwind_3lanes_70": {
+								"EventID": "freezingwind_3lanes_70", 
+								"PropertySheet": "LevelGenFreezingWind_3Lanes", 
+								"EventLevel": 9, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 200
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"gravestone_event": {
+						"EventGroupID": "gravestone_event", 
+						"EventData": {
+							"gravestone_event": {
+								"EventID": "gravestone_event", 
+								"PropertySheet": "LevelGenGravestoneEvent", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"jams": {
+						"EventGroupID": "jams", 
+						"EventData": {
+							"jams": {
+								"EventID": "jams", 
+								"PropertySheet": "LevelGenJams", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"obs_goldtiles": {
+						"EventGroupID": "obs_goldtiles", 
+						"EventData": {
+							"obs_goldtiles": {
+								"EventID": "obs_goldtiles", 
+								"PropertySheet": "LevelGenGoldTiles", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 40, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_gravestones": {
+						"EventGroupID": "obs_gravestones", 
+						"EventData": {
+							"obs_gravestones_x14": {
+								"EventID": "obs_gravestones_x14", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 14, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 25
+							}, 
+							"obs_gravestones_x20": {
+								"EventID": "obs_gravestones_x20", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 20, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 10
+							}, 
+							"obs_gravestones_x3": {
+								"EventID": "obs_gravestones_x3", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 800
+							}, 
+							"obs_gravestones_x4": {
+								"EventID": "obs_gravestones_x4", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 1000
+							}, 
+							"obs_gravestones_x5": {
+								"EventID": "obs_gravestones_x5", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 1000
+							}, 
+							"obs_gravestones_x6": {
+								"EventID": "obs_gravestones_x6", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 800
+							}, 
+							"obs_gravestones_x7": {
+								"EventID": "obs_gravestones_x7", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 7, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 600
+							}, 
+							"obs_gravestones_x8": {
+								"EventID": "obs_gravestones_x8", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 400
+							}, 
+							"obs_gravestones_x9": {
+								"EventID": "obs_gravestones_x9", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 9, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 200
+							}, 
+							"obx_gravestones_x10": {
+								"EventID": "obx_gravestones_x10", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 100
+							}, 
+							"obx_gravestones_x12": {
+								"EventID": "obx_gravestones_x12", 
+								"PropertySheet": "LevelGenGravestones", 
+								"EventLevel": 12, 
+								"Prerequisite": "", 
+								"Priority": 20, 
+								"Weight": 50
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_icefloes": {
+						"EventGroupID": "obs_icefloes", 
+						"EventData": {
+							"obs_icefloes": {
+								"EventID": "obs_icefloes", 
+								"PropertySheet": "LevelGenIceFloes", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 75, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_kiddiepools": {
+						"EventGroupID": "obs_kiddiepools", 
+						"EventData": {
+							"obs_kiddiepools": {
+								"EventID": "obs_kiddiepools", 
+								"PropertySheet": "LevelGenKiddiePools", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 70, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_mold": {
+						"EventGroupID": "obs_mold", 
+						"EventData": {
+							"obs_mold": {
+								"EventID": "obs_mold", 
+								"PropertySheet": "LevelGenMoldChallenge", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 30, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_planticeblocks": {
+						"EventGroupID": "obs_planticeblocks", 
+						"EventData": {
+							"obs_planticeblocks": {
+								"EventID": "obs_planticeblocks", 
+								"PropertySheet": "LevelGenPlantIceBlocks", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 60, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_powertiles": {
+						"EventGroupID": "obs_powertiles", 
+						"EventData": {
+							"obs_powertiles": {
+								"EventID": "obs_powertiles", 
+								"PropertySheet": "LevelGenPowerTiles", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 50, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_protectplants": {
+						"EventGroupID": "obs_protectplants", 
+						"EventData": {
+							"obs_protectplants": {
+								"EventID": "obs_protectplants", 
+								"PropertySheet": "LevelGenProtectThePlantsChallenge", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 95, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_railcarts": {
+						"EventGroupID": "obs_railcarts", 
+						"EventData": {
+							"obs_railcarts": {
+								"EventID": "obs_railcarts", 
+								"PropertySheet": "LevelGenRailcarts", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 100, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_traps": {
+						"EventGroupID": "obs_traps", 
+						"EventData": {
+							"obs_traps": {
+								"EventID": "obs_traps", 
+								"PropertySheet": "LevelGenTraps", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 80, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_zombieiceblocks": {
+						"EventGroupID": "obs_zombieiceblocks", 
+						"EventData": {
+							"obs_zombieiceblocks": {
+								"EventID": "obs_zombieiceblocks", 
+								"PropertySheet": "LevelGenZombieIceBlocks", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 65, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"obs_zombieline": {
+						"EventGroupID": "obs_zombieline", 
+						"EventData": {
+							"obs_zombieline": {
+								"EventID": "obs_zombieline", 
+								"PropertySheet": "LevelGenZombieDistanceChallenge", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 90, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": true
+					}, 
+					"parachuterain": {
+						"EventGroupID": "parachuterain", 
+						"EventData": {
+							"parachuterain_1wave_x10": {
+								"EventID": "parachuterain_1wave_x10", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"parachuterain_1wave_x2": {
+								"EventID": "parachuterain_1wave_x2", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_1wave_x3": {
+								"EventID": "parachuterain_1wave_x3", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_1wave_x4": {
+								"EventID": "parachuterain_1wave_x4", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_1wave_x5": {
+								"EventID": "parachuterain_1wave_x5", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"parachuterain_1wave_x6": {
+								"EventID": "parachuterain_1wave_x6", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"parachuterain_1wave_x8": {
+								"EventID": "parachuterain_1wave_x8", 
+								"PropertySheet": "LevelGenParachuteRain_1Wave", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"parachuterain_2waves_x10": {
+								"EventID": "parachuterain_2waves_x10", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"parachuterain_2waves_x2": {
+								"EventID": "parachuterain_2waves_x2", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_2waves_x3": {
+								"EventID": "parachuterain_2waves_x3", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_2waves_x4": {
+								"EventID": "parachuterain_2waves_x4", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_2waves_x5": {
+								"EventID": "parachuterain_2waves_x5", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"parachuterain_2waves_x6": {
+								"EventID": "parachuterain_2waves_x6", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"parachuterain_2waves_x8": {
+								"EventID": "parachuterain_2waves_x8", 
+								"PropertySheet": "LevelGenParachuteRain_2Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"parachuterain_3waves_x10": {
+								"EventID": "parachuterain_3waves_x10", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"parachuterain_3waves_x2": {
+								"EventID": "parachuterain_3waves_x2", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_3waves_x3": {
+								"EventID": "parachuterain_3waves_x3", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_3waves_x4": {
+								"EventID": "parachuterain_3waves_x4", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"parachuterain_3waves_x5": {
+								"EventID": "parachuterain_3waves_x5", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"parachuterain_3waves_x6": {
+								"EventID": "parachuterain_3waves_x6", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"parachuterain_3waves_x8": {
+								"EventID": "parachuterain_3waves_x8", 
+								"PropertySheet": "LevelGenParachuteRain_3Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"parachuterain_4waves_x10": {
+								"EventID": "parachuterain_4waves_x10", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 25
+							}, 
+							"parachuterain_4waves_x2": {
+								"EventID": "parachuterain_4waves_x2", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"parachuterain_4waves_x3": {
+								"EventID": "parachuterain_4waves_x3", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"parachuterain_4waves_x4": {
+								"EventID": "parachuterain_4waves_x4", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"parachuterain_4waves_x5": {
+								"EventID": "parachuterain_4waves_x5", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"parachuterain_4waves_x6": {
+								"EventID": "parachuterain_4waves_x6", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"parachuterain_4waves_x8": {
+								"EventID": "parachuterain_4waves_x8", 
+								"PropertySheet": "LevelGenParachuteRain_4Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"parachuterain_5waves_x10": {
+								"EventID": "parachuterain_5waves_x10", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"parachuterain_5waves_x2": {
+								"EventID": "parachuterain_5waves_x2", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"parachuterain_5waves_x3": {
+								"EventID": "parachuterain_5waves_x3", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"parachuterain_5waves_x4": {
+								"EventID": "parachuterain_5waves_x4", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"parachuterain_5waves_x5": {
+								"EventID": "parachuterain_5waves_x5", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"parachuterain_5waves_x6": {
+								"EventID": "parachuterain_5waves_x6", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"parachuterain_5waves_x8": {
+								"EventID": "parachuterain_5waves_x8", 
+								"PropertySheet": "LevelGenParachuteRain_5Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 25
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"planks": {
+						"EventGroupID": "planks", 
+						"EventData": {
+							"planks_2to3": {
+								"EventID": "planks_2to3", 
+								"PropertySheet": "LevelGenPlanks_2to3", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 5
+							}, 
+							"planks_2to5": {
+								"EventID": "planks_2to5", 
+								"PropertySheet": "LevelGenPlanks_2to5", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 3
+							}, 
+							"planks_all": {
+								"EventID": "planks_all", 
+								"PropertySheet": "LevelGenPlanks", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"portals": {
+						"EventGroupID": "portals", 
+						"EventData": {
+							"portals": {
+								"EventID": "portals", 
+								"PropertySheet": "LevelGenPortals", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"raidingparty": {
+						"EventGroupID": "raidingparty", 
+						"EventData": {
+							"raidingparty_1wave_x10": {
+								"EventID": "raidingparty_1wave_x10", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"raidingparty_1wave_x2": {
+								"EventID": "raidingparty_1wave_x2", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"raidingparty_1wave_x3": {
+								"EventID": "raidingparty_1wave_x3", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"raidingparty_1wave_x4": {
+								"EventID": "raidingparty_1wave_x4", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"raidingparty_1wave_x5": {
+								"EventID": "raidingparty_1wave_x5", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"raidingparty_1wave_x6": {
+								"EventID": "raidingparty_1wave_x6", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"raidingparty_1wave_x8": {
+								"EventID": "raidingparty_1wave_x8", 
+								"PropertySheet": "LevelGenRaidingParty_1Wave", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"raidingparty_2waves_x10": {
+								"EventID": "raidingparty_2waves_x10", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"raidingparty_2waves_x2": {
+								"EventID": "raidingparty_2waves_x2", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"raidingparty_2waves_x3": {
+								"EventID": "raidingparty_2waves_x3", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"raidingparty_2waves_x4": {
+								"EventID": "raidingparty_2waves_x4", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"raidingparty_2waves_x5": {
+								"EventID": "raidingparty_2waves_x5", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"raidingparty_2waves_x6": {
+								"EventID": "raidingparty_2waves_x6", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"raidingparty_2waves_x8": {
+								"EventID": "raidingparty_2waves_x8", 
+								"PropertySheet": "LevelGenRaidingParty_2Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"raidingparty_3waves_x10": {
+								"EventID": "raidingparty_3waves_x10", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"raidingparty_3waves_x2": {
+								"EventID": "raidingparty_3waves_x2", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"raidingparty_3waves_x3": {
+								"EventID": "raidingparty_3waves_x3", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"raidingparty_3waves_x4": {
+								"EventID": "raidingparty_3waves_x4", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"raidingparty_3waves_x5": {
+								"EventID": "raidingparty_3waves_x5", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"raidingparty_3waves_x6": {
+								"EventID": "raidingparty_3waves_x6", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"raidingparty_3waves_x8": {
+								"EventID": "raidingparty_3waves_x8", 
+								"PropertySheet": "LevelGenRaidingParty_3Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"raidingparty_4waves_x10": {
+								"EventID": "raidingparty_4waves_x10", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"raidingparty_4waves_x2": {
+								"EventID": "raidingparty_4waves_x2", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"raidingparty_4waves_x3": {
+								"EventID": "raidingparty_4waves_x3", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"raidingparty_4waves_x4": {
+								"EventID": "raidingparty_4waves_x4", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"raidingparty_4waves_x5": {
+								"EventID": "raidingparty_4waves_x5", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"raidingparty_4waves_x6": {
+								"EventID": "raidingparty_4waves_x6", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"raidingparty_4waves_x8": {
+								"EventID": "raidingparty_4waves_x8", 
+								"PropertySheet": "LevelGenRaidingParty_4Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"sandstorm": {
+						"EventGroupID": "sandstorm", 
+						"EventData": {
+							"sandstorm_1Wave_x1": {
+								"EventID": "sandstorm_1Wave_x1", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_1Wave_x10": {
+								"EventID": "sandstorm_1Wave_x10", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_1Wave_x2": {
+								"EventID": "sandstorm_1Wave_x2", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_1Wave_x3": {
+								"EventID": "sandstorm_1Wave_x3", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_1Wave_x4": {
+								"EventID": "sandstorm_1Wave_x4", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_1Wave_x5": {
+								"EventID": "sandstorm_1Wave_x5", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_1Wave_x6": {
+								"EventID": "sandstorm_1Wave_x6", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_1Wave_x8": {
+								"EventID": "sandstorm_1Wave_x8", 
+								"PropertySheet": "LevelGenSandstorm_1Wave", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_2Waves_x1": {
+								"EventID": "sandstorm_2Waves_x1", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_2Waves_x10": {
+								"EventID": "sandstorm_2Waves_x10", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_2Waves_x2": {
+								"EventID": "sandstorm_2Waves_x2", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_2Waves_x3": {
+								"EventID": "sandstorm_2Waves_x3", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_2Waves_x4": {
+								"EventID": "sandstorm_2Waves_x4", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_2Waves_x5": {
+								"EventID": "sandstorm_2Waves_x5", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_2Waves_x6": {
+								"EventID": "sandstorm_2Waves_x6", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_2Waves_x8": {
+								"EventID": "sandstorm_2Waves_x8", 
+								"PropertySheet": "LevelGenSandstorm_2Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_3Waves_x1": {
+								"EventID": "sandstorm_3Waves_x1", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_3Waves_x10": {
+								"EventID": "sandstorm_3Waves_x10", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_3Waves_x2": {
+								"EventID": "sandstorm_3Waves_x2", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_3Waves_x3": {
+								"EventID": "sandstorm_3Waves_x3", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_3Waves_x4": {
+								"EventID": "sandstorm_3Waves_x4", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_3Waves_x5": {
+								"EventID": "sandstorm_3Waves_x5", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_3Waves_x6": {
+								"EventID": "sandstorm_3Waves_x6", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_3Waves_x8": {
+								"EventID": "sandstorm_3Waves_x8", 
+								"PropertySheet": "LevelGenSandstorm_3Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_4Waves_x1": {
+								"EventID": "sandstorm_4Waves_x1", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_4Waves_x10": {
+								"EventID": "sandstorm_4Waves_x10", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_4Waves_x2": {
+								"EventID": "sandstorm_4Waves_x2", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_4Waves_x3": {
+								"EventID": "sandstorm_4Waves_x3", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_4Waves_x4": {
+								"EventID": "sandstorm_4Waves_x4", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_4Waves_x5": {
+								"EventID": "sandstorm_4Waves_x5", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_4Waves_x6": {
+								"EventID": "sandstorm_4Waves_x6", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_4Waves_x8": {
+								"EventID": "sandstorm_4Waves_x8", 
+								"PropertySheet": "LevelGenSandstorm_4Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_5Waves_x1": {
+								"EventID": "sandstorm_5Waves_x1", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_5Waves_x10": {
+								"EventID": "sandstorm_5Waves_x10", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_5Waves_x2": {
+								"EventID": "sandstorm_5Waves_x2", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_5Waves_x3": {
+								"EventID": "sandstorm_5Waves_x3", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_5Waves_x4": {
+								"EventID": "sandstorm_5Waves_x4", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_5Waves_x5": {
+								"EventID": "sandstorm_5Waves_x5", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_5Waves_x6": {
+								"EventID": "sandstorm_5Waves_x6", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_5Waves_x8": {
+								"EventID": "sandstorm_5Waves_x8", 
+								"PropertySheet": "LevelGenSandstorm_5Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_6Waves_x1": {
+								"EventID": "sandstorm_6Waves_x1", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 1, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_6Waves_x10": {
+								"EventID": "sandstorm_6Waves_x10", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_6Waves_x2": {
+								"EventID": "sandstorm_6Waves_x2", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"sandstorm_6Waves_x3": {
+								"EventID": "sandstorm_6Waves_x3", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"sandstorm_6Waves_x4": {
+								"EventID": "sandstorm_6Waves_x4", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"sandstorm_6Waves_x5": {
+								"EventID": "sandstorm_6Waves_x5", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"sandstorm_6Waves_x6": {
+								"EventID": "sandstorm_6Waves_x6", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"sandstorm_6Waves_x8": {
+								"EventID": "sandstorm_6Waves_x8", 
+								"PropertySheet": "LevelGenSandstorm_6Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"spiderrain": {
+						"EventGroupID": "spiderrain", 
+						"EventData": {
+							"spiderrain_1wave_x10": {
+								"EventID": "spiderrain_1wave_x10", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"spiderrain_1wave_x12": {
+								"EventID": "spiderrain_1wave_x12", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 12, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_1wave_x14": {
+								"EventID": "spiderrain_1wave_x14", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 14, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_1wave_x15": {
+								"EventID": "spiderrain_1wave_x15", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 15, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"spiderrain_1wave_x16": {
+								"EventID": "spiderrain_1wave_x16", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 16, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"spiderrain_1wave_x18": {
+								"EventID": "spiderrain_1wave_x18", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 18, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"spiderrain_1wave_x2": {
+								"EventID": "spiderrain_1wave_x2", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"spiderrain_1wave_x20": {
+								"EventID": "spiderrain_1wave_x20", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 20, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"spiderrain_1wave_x3": {
+								"EventID": "spiderrain_1wave_x3", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_1wave_x4": {
+								"EventID": "spiderrain_1wave_x4", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_1wave_x5": {
+								"EventID": "spiderrain_1wave_x5", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_1wave_x6": {
+								"EventID": "spiderrain_1wave_x6", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_1wave_x8": {
+								"EventID": "spiderrain_1wave_x8", 
+								"PropertySheet": "LevelGenSpiderRain_1Wave", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_2waves_x10": {
+								"EventID": "spiderrain_2waves_x10", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"spiderrain_2waves_x12": {
+								"EventID": "spiderrain_2waves_x12", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 12, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_2waves_x14": {
+								"EventID": "spiderrain_2waves_x14", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 14, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_2waves_x15": {
+								"EventID": "spiderrain_2waves_x15", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 15, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"spiderrain_2waves_x16": {
+								"EventID": "spiderrain_2waves_x16", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 16, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 25
+							}, 
+							"spiderrain_2waves_x18": {
+								"EventID": "spiderrain_2waves_x18", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 18, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"spiderrain_2waves_x2": {
+								"EventID": "spiderrain_2waves_x2", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_2waves_x20": {
+								"EventID": "spiderrain_2waves_x20", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 20, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 5
+							}, 
+							"spiderrain_2waves_x3": {
+								"EventID": "spiderrain_2waves_x3", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_2waves_x4": {
+								"EventID": "spiderrain_2waves_x4", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_2waves_x5": {
+								"EventID": "spiderrain_2waves_x5", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_2waves_x6": {
+								"EventID": "spiderrain_2waves_x6", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_2waves_x8": {
+								"EventID": "spiderrain_2waves_x8", 
+								"PropertySheet": "LevelGenSpiderRain_2Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_3waves_x10": {
+								"EventID": "spiderrain_3waves_x10", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"spiderrain_3waves_x12": {
+								"EventID": "spiderrain_3waves_x12", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 12, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_3waves_x14": {
+								"EventID": "spiderrain_3waves_x14", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 14, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_3waves_x15": {
+								"EventID": "spiderrain_3waves_x15", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 15, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"spiderrain_3waves_x16": {
+								"EventID": "spiderrain_3waves_x16", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 16, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 25
+							}, 
+							"spiderrain_3waves_x18": {
+								"EventID": "spiderrain_3waves_x18", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 18, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"spiderrain_3waves_x2": {
+								"EventID": "spiderrain_3waves_x2", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_3waves_x20": {
+								"EventID": "spiderrain_3waves_x20", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 20, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 5
+							}, 
+							"spiderrain_3waves_x3": {
+								"EventID": "spiderrain_3waves_x3", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_3waves_x4": {
+								"EventID": "spiderrain_3waves_x4", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_3waves_x5": {
+								"EventID": "spiderrain_3waves_x5", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_3waves_x6": {
+								"EventID": "spiderrain_3waves_x6", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_3waves_x8": {
+								"EventID": "spiderrain_3waves_x8", 
+								"PropertySheet": "LevelGenSpiderRain_3Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_4waves_x10": {
+								"EventID": "spiderrain_4waves_x10", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}, 
+							"spiderrain_4waves_x12": {
+								"EventID": "spiderrain_4waves_x12", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 12, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_4waves_x14": {
+								"EventID": "spiderrain_4waves_x14", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 14, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_4waves_x15": {
+								"EventID": "spiderrain_4waves_x15", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 15, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"spiderrain_4waves_x16": {
+								"EventID": "spiderrain_4waves_x16", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 16, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 25
+							}, 
+							"spiderrain_4waves_x18": {
+								"EventID": "spiderrain_4waves_x18", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 18, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"spiderrain_4waves_x2": {
+								"EventID": "spiderrain_4waves_x2", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_4waves_x20": {
+								"EventID": "spiderrain_4waves_x20", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 20, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 5
+							}, 
+							"spiderrain_4waves_x3": {
+								"EventID": "spiderrain_4waves_x3", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_4waves_x4": {
+								"EventID": "spiderrain_4waves_x4", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_4waves_x5": {
+								"EventID": "spiderrain_4waves_x5", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1000
+							}, 
+							"spiderrain_4waves_x6": {
+								"EventID": "spiderrain_4waves_x6", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_4waves_x8": {
+								"EventID": "spiderrain_4waves_x8", 
+								"PropertySheet": "LevelGenSpiderRain_4Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_5waves_x10": {
+								"EventID": "spiderrain_5waves_x10", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 10, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_5waves_x12": {
+								"EventID": "spiderrain_5waves_x12", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 12, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 100
+							}, 
+							"spiderrain_5waves_x14": {
+								"EventID": "spiderrain_5waves_x14", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 14, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 50
+							}, 
+							"spiderrain_5waves_x15": {
+								"EventID": "spiderrain_5waves_x15", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 15, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 25
+							}, 
+							"spiderrain_5waves_x16": {
+								"EventID": "spiderrain_5waves_x16", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 16, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 10
+							}, 
+							"spiderrain_5waves_x18": {
+								"EventID": "spiderrain_5waves_x18", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 18, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 5
+							}, 
+							"spiderrain_5waves_x2": {
+								"EventID": "spiderrain_5waves_x2", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 2, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_5waves_x20": {
+								"EventID": "spiderrain_5waves_x20", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 20, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 5
+							}, 
+							"spiderrain_5waves_x3": {
+								"EventID": "spiderrain_5waves_x3", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 3, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_5waves_x4": {
+								"EventID": "spiderrain_5waves_x4", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 4, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_5waves_x5": {
+								"EventID": "spiderrain_5waves_x5", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 5, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 700
+							}, 
+							"spiderrain_5waves_x6": {
+								"EventID": "spiderrain_5waves_x6", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 6, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 500
+							}, 
+							"spiderrain_5waves_x8": {
+								"EventID": "spiderrain_5waves_x8", 
+								"PropertySheet": "LevelGenSpiderRain_5Waves", 
+								"EventLevel": 8, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 300
+							}
+						}, 
+						"IsObstacleGroup": false
+					}, 
+					"tide": {
+						"EventGroupID": "tide", 
+						"EventData": {
+							"tide": {
+								"EventID": "tide", 
+								"PropertySheet": "LevelGenTide", 
+								"EventLevel": 15, 
+								"Prerequisite": "", 
+								"Priority": 0, 
+								"Weight": 1
+							}
+						}, 
+						"IsObstacleGroup": false
+					}
+				}, 
+				"CustomSeeds": [
+					{
+						"World": "", 
+						"Seed": "MyCustomSeed"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

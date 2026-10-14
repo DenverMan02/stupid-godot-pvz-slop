@@ -1,0 +1,863 @@
+{
+	"#comment": "Make new quest types here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "QuestMgr", 
+			"objdata": {
+				"LimitingMgr": "RTID(QuestLimitingMgr@Quests)", 
+				"LevelsRequiredToUnlock": 7, 
+				"Quests": [
+					{
+						"LevelQuestData": {
+							"LevelName": "egypt7", 
+							"Slot": "Tutorial", 
+							"QuestCategory": "Tutorial", 
+							"OverrideQuestTheme": "Egypt", 
+							"UniqueID": "FINISH_EGYPT_7", 
+							"QuestName": "[FINISH_EGYPT_7_TITLE]", 
+							"Description": "[FINISH_EGYPT_7_DESC]", 
+							"CompletionAwards": {
+								"Awards": [
+									{
+										"Type": "unlock_plant", 
+										"SubType": "coldslaw", 
+										"Amount": 1
+									}
+								]
+							}, 
+							"Prerequisites": {
+								"SpineLevelCompletions": [
+									"egypt6"
+								]
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelQuestData": {
+							"LevelName": "egypt10", 
+							"Slot": "Egypt", 
+							"QuestCategory": "Egypt", 
+							"OverrideQuestTheme": "Egypt", 
+							"UniqueID": "FINISH_EGYPT_10", 
+							"QuestName": "[EGYPT_KEY_TITLE]", 
+							"Description": "[EGYPT_KEY_DESC]", 
+							"CompletionAwards": {
+								"Awards": [
+									{
+										"Type": "mints", 
+										"SubType": "", 
+										"Amount": 1
+									}
+								]
+							}, 
+							"Prerequisites": {
+								"SpineLevelCompletions": [
+									"egypt7"
+								]
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelQuestData": {
+							"LevelName": "heian10", 
+							"Slot": "Heian", 
+							"QuestCategory": "Heian", 
+							"OverrideQuestTheme": "Heian", 
+							"UniqueID": "FINISH_HEIAN_10", 
+							"QuestName": "[HEIAN_KEY_TITLE]", 
+							"Description": "[HEIAN_KEY_DESC]", 
+							"CompletionAwards": {
+								"Awards": [
+									{
+										"Type": "mints", 
+										"SubType": "", 
+										"Amount": 1
+									}
+								]
+							}, 
+							"Prerequisites": {
+								"SpineLevelCompletions": [
+									"heian1"
+								]
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelQuestData": {
+							"LevelName": "pirate10", 
+							"Slot": "Pirate", 
+							"QuestCategory": "Pirate", 
+							"OverrideQuestTheme": "Pirate", 
+							"UniqueID": "FINISH_PIRATE_10", 
+							"QuestName": "[PIRATE_KEY_TITLE]", 
+							"Description": "[PIRATE_KEY_DESC]", 
+							"CompletionAwards": {
+								"Awards": [
+									{
+										"Type": "mints", 
+										"SubType": "", 
+										"Amount": 1
+									}
+								]
+							}, 
+							"Prerequisites": {
+								"SpineLevelCompletions": [
+									"pirate1"
+								]
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "EPIC_QUEST_TORCHWOOD_STEP_1", 
+							"QuestName": "[EPIC_QUEST_TORCHWOOD_STEP_1_TITLE]", 
+							"Description": "[EPIC_QUEST_TORCHWOOD_STEP_1_DESC]", 
+							"LevelName": "epicquest_torchwood_1", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "EPIC_QUEST_TORCHWOOD_STEP_2", 
+							"QuestName": "[EPIC_QUEST_TORCHWOOD_STEP_2_TITLE]", 
+							"Description": "[EPIC_QUEST_TORCHWOOD_STEP_2_DESC]", 
+							"LevelName": "epicquest_torchwood_2", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "EPIC_QUEST_TORCHWOOD_STEP_3", 
+							"QuestName": "[EPIC_QUEST_TORCHWOOD_STEP_3_TITLE]", 
+							"Description": "[EPIC_QUEST_TORCHWOOD_STEP_3_DESC]", 
+							"LevelName": "epicquest_torchwood_3", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"EpicQuestData": {
+							"Slot": "Epic", 
+							"QuestCategory": "Epic", 
+							"OverrideQuestTheme": "Adventure", 
+							"UniqueID": "INFINITEADVENTURE1", 
+							"QuestName": "Infinite Adventure!", 
+							"Description": "Beat adventure lvl 10!", 
+							"UniqueIDList": [
+								"INFINITE_ADVENTURE_1", 
+								"INFINITE_ADVENTURE_2", 
+								"INFINITE_ADVENTURE_3", 
+								"INFINITE_ADVENTURE_4", 
+								"INFINITE_ADVENTURE_5", 
+								"INFINITE_ADVENTURE_6", 
+								"INFINITE_ADVENTURE_7", 
+								"INFINITE_ADVENTURE_8", 
+								"INFINITE_ADVENTURE_9", 
+								"INFINITE_ADVENTURE_10"
+							], 
+							"CompletionAwards": {
+								"Awards": [
+									{
+										"Type": "coins", 
+										"SubType": "", 
+										"Amount": 100
+									}
+								]
+							}, 
+							"Prerequisites": {
+								"SpineLevelCompletions": [
+									"egypt7"
+								]
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"EpicQuestData": {
+							"Slot": "Epic", 
+							"QuestCategory": "Epic", 
+							"OverrideQuestTheme": "Space_Step", 
+							"UniqueID": "EPIC_QUEST_LEVELGEN_SPARKS", 
+							"QuestName": "[EPIC_QUEST_LEVELGEN_TITLE]", 
+							"Description": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"UniqueIDList": [
+								"EPIC_QUEST_LEVELGEN_SPARKS_01", 
+								"EPIC_QUEST_LEVELGEN_SPARKS_02", 
+								"EPIC_QUEST_LEVELGEN_SPARKS_03", 
+								"EPIC_QUEST_LEVELGEN_SPARKS_04", 
+								"EPIC_QUEST_LEVELGEN_SPARKS_05"
+							], 
+							"CompletionAwards": {
+								"Awards": [
+									{
+										"Type": "gems", 
+										"SubType": "", 
+										"Amount": 15
+									}
+								]
+							}, 
+							"Priority": "Epic", 
+							"Prerequisites": {
+								"PlayerSegments": [
+									"FtueComplete"
+								]
+							}, 
+							"Repeatable": true, 
+							"Disabled": false
+						}
+					}, 
+					{
+						"LevelGenLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"OverrideQuestTheme": "Modern", 
+							"UniqueID": "EPIC_QUEST_LEVELGEN_SPARKS_01", 
+							"QuestName": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"Description": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"WorldConfigs": [
+								"egypt", 
+								"egyptnight", 
+								"pirate", 
+								"piratenight", 
+								"heian", 
+								"heian"
+							], 
+							"SeedMin": 0, 
+							"SeedMax": 100000, 
+							"LevelParams": {
+								"Title": "[EPIC_QUEST_LEVELGEN_LEVEL_NAME]", 
+								"Description": "[PLAYERS_EPIC_QUEST_LEVELGEN]", 
+								"DisableSaveGame": true
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelGenLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"OverrideQuestTheme": "Modern", 
+							"UniqueID": "EPIC_QUEST_LEVELGEN_SPARKS_02", 
+							"QuestName": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"Description": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"WorldConfigs": [
+								"egypt", 
+								"egyptnight", 
+								"pirate", 
+								"piratenight", 
+								"heian", 
+								"heian"
+							], 
+							"SeedMin": 0, 
+							"SeedMax": 100000, 
+							"LevelParams": {
+								"Title": "[EPIC_QUEST_LEVELGEN_SPARKS_LEVEL_NAME]", 
+								"Description": "[PLAYERS_EPIC_QUEST_LEVELGEN]", 
+								"DisableSaveGame": true
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelGenLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"OverrideQuestTheme": "Modern", 
+							"UniqueID": "EPIC_QUEST_LEVELGEN_SPARKS_03", 
+							"QuestName": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"Description": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"WorldConfigs": [
+								"egypt", 
+								"egyptnight", 
+								"pirate", 
+								"piratenight", 
+								"heian", 
+								"heian"
+							], 
+							"SeedMin": 0, 
+							"SeedMax": 100000, 
+							"LevelParams": {
+								"Title": "[EPIC_QUEST_LEVELGEN_LEVEL_NAME]", 
+								"Description": "[PLAYERS_EPIC_QUEST_LEVELGEN]", 
+								"DisableSaveGame": true
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelGenLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"OverrideQuestTheme": "Modern", 
+							"UniqueID": "EPIC_QUEST_LEVELGEN_SPARKS_04", 
+							"QuestName": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"Description": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"WorldConfigs": [
+								"egypt", 
+								"egyptnight", 
+								"pirate", 
+								"piratenight", 
+								"heian", 
+								"heian"
+							], 
+							"SeedMin": 0, 
+							"SeedMax": 100000, 
+							"LevelParams": {
+								"Title": "[EPIC_QUEST_LEVELGEN_LEVEL_NAME]", 
+								"Description": "[PLAYERS_EPIC_QUEST_LEVELGEN]", 
+								"DisableSaveGame": true
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"LevelGenLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"OverrideQuestTheme": "Modern", 
+							"UniqueID": "EPIC_QUEST_LEVELGEN_SPARKS_05", 
+							"QuestName": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"Description": "[EPIC_QUEST_LEVELGEN_DESC]", 
+							"WorldConfigs": [
+								"egypt", 
+								"egyptnight", 
+								"pirate", 
+								"piratenight", 
+								"heian", 
+								"heian"
+							], 
+							"SeedMin": 0, 
+							"SeedMax": 100000, 
+							"LevelParams": {
+								"Title": "[EPIC_QUEST_LEVELGEN_LEVEL_NAME]", 
+								"Description": "[PLAYERS_EPIC_QUEST_LEVELGEN]", 
+								"DisableSaveGame": true
+							}, 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_1", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level1", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_2", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level2", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_3", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level3", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_4", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level4", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_5", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level5", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_6", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level6", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_7", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level7", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_8", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level8", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_9", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level9", 
+							"Priority": "Primary"
+						}
+					}, 
+					{
+						"ChallengeLevelQuestData": {
+							"Slot": "Unused", 
+							"QuestCategory": "Unused", 
+							"UniqueID": "INFINITE_ADVENTURE_10", 
+							"QuestName": "Beat adventure lvl 10!", 
+							"Description": "Beat adventure lvl 10!", 
+							"LevelName": "infinite/level10", 
+							"Priority": "Primary"
+						}
+					}
+				], 
+				"SlotDisplayOrder": [
+					"Tutorial", 
+					"Egypt", 
+					"Heian", 
+					"Pirate", 
+					"Scheduled", 
+					"Epic", 
+					"DailyPinataHunt", 
+					"Currency", 
+					"Egypt", 
+					"Pirate", 
+					"Cowboy", 
+					"Future", 
+					"IceAge", 
+					"LostCity", 
+					"Dark", 
+					"Eighties", 
+					"Beach", 
+					"Dino", 
+					"Modern", 
+					"UnlockWorld", 
+					"PremiumPlant", 
+					"EgyptElder", 
+					"PirateElder", 
+					"CowboyElder", 
+					"FutureElder", 
+					"IceAgeElder", 
+					"LostCityElder", 
+					"DarkElder", 
+					"EightiesElder", 
+					"BeachElder", 
+					"DinoElder", 
+					"ModernElder", 
+					"Generic"
+				], 
+				"SlotPickSortByDistance": [
+					"Egypt", 
+					"Heian", 
+					"Pirate", 
+					"Cowboy", 
+					"Future", 
+					"Dark", 
+					"Beach", 
+					"IceAge", 
+					"LostCity", 
+					"Eighties", 
+					"Dino", 
+					"Modern"
+				], 
+				"RecyclableSlots": [
+					"EgyptElder", 
+					"HeianElder", 
+					"PirateElder", 
+					"CowboyElder", 
+					"FutureElder", 
+					"IceAgeElder", 
+					"LostCityElder", 
+					"DarkElder", 
+					"EightiesElder", 
+					"BeachElder", 
+					"DinoElder", 
+					"ModernElder", 
+					"Generic"
+				], 
+				"RecycleCountPerDay": 3, 
+				"SlotPickingGroups": [
+					{
+						"GroupID": "Tutorial", 
+						"Slots": [
+							{
+								"Slot": "Tutorial", 
+								"LimitingGroup": "TutorialPickingGroup"
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"ReducePicksByVisibleQuests": false, 
+						"AvailableDuringTutorial": true, 
+						"AvailableInInitial": true
+					}, 
+					{
+						"GroupID": "UnlockWorld", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"AvailableDuringTutorial": false, 
+						"Slots": [
+							{
+								"Slot": "UnlockWorld"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Egypt", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_EGYPT", 
+						"AvailableDuringTutorial": false, 
+						"AvailableInInitial": true, 
+						"Slots": [
+							{
+								"Slot": "Egypt", 
+								"LimitingGroup": ""
+							}, 
+							{
+								"Slot": "EgyptElder", 
+								"LimitingGroup": ""
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"ReducePicksByVisibleQuests": false, 
+						"AvailableDuringTutorial": false, 
+						"AvailableInInitial": true
+					}, 
+					{
+						"GroupID": "Heian", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_HEIAN", 
+						"AvailableDuringTutorial": false, 
+						"AvailableInInitial": true, 
+						"Slots": [
+							{
+								"Slot": "Heian", 
+								"LimitingGroup": ""
+							}, 
+							{
+								"Slot": "HeianElder", 
+								"LimitingGroup": ""
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"ReducePicksByVisibleQuests": false, 
+						"AvailableDuringTutorial": false, 
+						"AvailableInInitial": true
+					}, 
+					{
+						"GroupID": "Pirate", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_PIRATE", 
+						"Slots": [
+							{
+								"Slot": "Pirate", 
+								"LimitingGroup": ""
+							}, 
+							{
+								"Slot": "PirateElder", 
+								"LimitingGroup": ""
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"ReducePicksByVisibleQuests": false, 
+						"AvailableDuringTutorial": false, 
+						"AvailableInInitial": true
+					}, 
+					{
+						"GroupID": "Cowboy", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_WEST", 
+						"Slots": [
+							{
+								"Slot": "Cowboy"
+							}, 
+							{
+								"Slot": "CowboyElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Future", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_FUTURE", 
+						"Slots": [
+							{
+								"Slot": "Future"
+							}, 
+							{
+								"Slot": "FutureElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Dark", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_DARKAGES", 
+						"Slots": [
+							{
+								"Slot": "Dark"
+							}, 
+							{
+								"Slot": "DarkElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Beach", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_BEACH", 
+						"Slots": [
+							{
+								"Slot": "Beach"
+							}, 
+							{
+								"Slot": "BeachElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "IceAge", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_ICEAGE", 
+						"Slots": [
+							{
+								"Slot": "IceAge"
+							}, 
+							{
+								"Slot": "IceAgeElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "LostCity", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_LOST_CITY", 
+						"Slots": [
+							{
+								"Slot": "LostCity"
+							}, 
+							{
+								"Slot": "LostCityElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Eighties", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_EIGHTIES", 
+						"Slots": [
+							{
+								"Slot": "Eighties"
+							}, 
+							{
+								"Slot": "EightiesElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Dino", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_DINO", 
+						"Slots": [
+							{
+								"Slot": "Dino"
+							}, 
+							{
+								"Slot": "DinoElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Modern", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_MODERN", 
+						"Slots": [
+							{
+								"Slot": "Modern"
+							}, 
+							{
+								"Slot": "ModernElder", 
+								"LimitingGroup": "ElderPickingGroup"
+							}
+						]
+					}, 
+					{
+						"GroupID": "Generic", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"Slots": [
+							{
+								"Slot": "Generic", 
+								"LimitingGroup": "GenericPickingGroup"
+							}
+						], 
+						"MaxPicks": 4, 
+						"MinPicks": 1, 
+						"ReducePicksByVisibleQuests": true
+					}, 
+					{
+						"GroupID": "Currency", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"Slots": [
+							{
+								"Slot": "Currency", 
+								"LimitingGroup": "CurrencyPickingGroup"
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"ReducePicksByVisibleQuests": true
+					}, 
+					{
+						"GroupID": "PremiumPlant", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_PREMIUM_PLANT", 
+						"Slots": [
+							{
+								"Slot": "PremiumPlant", 
+								"LimitingGroup": "PremiumPickingGroup"
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1
+					}, 
+					{
+						"GroupID": "Epic", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_EPIC", 
+						"Slots": [
+							{
+								"Slot": "Epic", 
+								"LimitingGroup": "EpicPickingGroup"
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"RequiredToggle": "EnableEpicQuests"
+					}, 
+					{
+						"GroupID": "PinataHuntDaily", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"Slots": [
+							{
+								"Slot": "DailyPinataHunt", 
+								"LimitingGroup": "PinataHuntGroup"
+							}
+						], 
+						"MaxPicks": 1, 
+						"MinPicks": 1, 
+						"RequiredToggle": "EnablePinataHuntQuests"
+					}, 
+					{
+						"GroupID": "Scheduled", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"Slots": [
+							{
+								"Slot": "Scheduled"
+							}
+						], 
+						"RequiredToggle": "EnableScheduledQuests"
+					}, 
+					{
+						"GroupID": "DailyActivities", 
+						"PanelImage": "IMAGE_UI_EVENT_PANELS_GENERIC", 
+						"Slots": [
+							{
+								"Slot": "DailyActivities"
+							}
+						], 
+						"RequiredToggle": "EnableScheduledQuests"
+					}
+				]
+			}
+		}, 
+		{
+			"aliases": [
+				"QuestLimitingMgr"
+			], 
+			"objclass": "QuestLimitingMgr", 
+			"objdata": {
+				"SlotPickLimitingGroups": [
+					{
+						"ID": "ElderPickingGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 1440
+					}, 
+					{
+						"ID": "GenericPickingGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 720
+					}, 
+					{
+						"ID": "PremiumPickingGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 720
+					}, 
+					{
+						"ID": "EpicPickingGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 0
+					}, 
+					{
+						"ID": "CurrencyPickingGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 10080
+					}, 
+					{
+						"ID": "PinataHuntGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 720, 
+						"ForceRepickAllQuests": "true", 
+						"RetryImmediatelyIfNoPick": "true"
+					}, 
+					{
+						"ID": "TutorialPickingGroup", 
+						"NumToPickTotal": 100, 
+						"NumberOfMinutesTillNextPick": 720
+					}
+				]
+			}
+		}
+	]
+}

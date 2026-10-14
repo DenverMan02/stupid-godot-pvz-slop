@@ -1,0 +1,45 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"CrownSet_Normal"
+			], 
+			"objclass": "JoustCrownRewardDefinition", 
+			"objdata": {
+				"CrownsLoss": 1, 
+				"CrownsProgressiveBonus": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"CrownsSurrender": 0, 
+				"CrownsWinBase": 5
+			}
+		}, 
+		{
+			"aliases": [
+				"CrownSet_High"
+			], 
+			"objclass": "JoustCrownRewardDefinition", 
+			"objdata": {
+				"CrownsLoss": 0, 
+				"CrownsProgressiveBonus": [
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0, 
+					0
+				], 
+				"CrownsSurrender": 0, 
+				"CrownsWinBase": 10
+			}
+		}
+	], 
+	"version": 1
+}

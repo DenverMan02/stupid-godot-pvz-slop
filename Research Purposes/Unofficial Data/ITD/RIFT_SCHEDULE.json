@@ -1,0 +1,2465 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"RiftSchedule"
+			], 
+			"objclass": "RiftSchedule", 
+			"objdata": {
+				"Events": [
+					{
+						"EndDate": 1577898000, 
+						"PerkProgressionKey": "RiftSandboxProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftSandboxRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftSandboxUnlocksKey", 
+						"RiftWorld": "rift1", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1546362000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 1000, 
+								"SubEventPropertyKey": "RiftSandboxSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 365, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftSandboxSubEvent"
+							}
+						], 
+						"TitleText": "Rift Sandbox", 
+						"ZombossLevel": "rifts/rift_sandbox/rift_sandbox_zomboss", 
+						"ZombossRewards": "Rift3ZombossRewards"
+					}, 
+					{
+						"EndDate": 1580835600, 
+						"PerkProgressionKey": "Rift1BProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift1BRewardsKey", 
+						"RiftLevelUnlocksKey": "Rift1BUnlocksKey", 
+						"RiftWorld": "rift1b", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1577898000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 1000, 
+								"SubEventPropertyKey": "Rift1BSoftLaunchSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 365, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift1BSoftLaunchSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_02]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift1BZombossRewards"
+					}, 
+					{
+						"EndDate": 1581526800, 
+						"PerkProgressionKey": "Rift1AProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift1ARewardsKey", 
+						"RiftLevelUnlocksKey": "Rift1AUnlocksKey", 
+						"RiftWorld": "rift1a", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1580835600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 8, 
+								"SubEventPropertyKey": "Rift1ASoftLaunchSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 8, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift1ASoftLaunchSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_01]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift1AZombossRewards"
+					}, 
+					{
+						"EndDate": 1582131600, 
+						"PerkProgressionKey": "Rift1BProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift1BRewardsKey", 
+						"RiftLevelUnlocksKey": "Rift1BUnlocksKey", 
+						"RiftWorld": "rift1b", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1581526800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift1BSoftLaunchSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift1BSoftLaunchSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_02]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift1BZombossRewards"
+					}, 
+					{
+						"EndDate": 1582736400, 
+						"PerkProgressionKey": "Rift2ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift2RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift2UnlocksKey", 
+						"RiftWorld": "rift2", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1582131600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift2HotdateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift2HotdateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_03]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift2ZombossRewards"
+					}, 
+					{
+						"EndDate": 1583341200, 
+						"PerkProgressionKey": "Rift3ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift3RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift3UnlocksKey", 
+						"RiftWorld": "rift3", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1582736400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift3ExplodeonutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift3ExplodeonutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_04]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future1", 
+						"ZombossRewards": "Rift3ZombossRewards"
+					}, 
+					{
+						"EndDate": 1584550800, 
+						"PerkProgressionKey": "Rift4ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift4RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift4UnlocksKey", 
+						"RiftWorld": "rift4", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1583341200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 14, 
+								"SubEventPropertyKey": "Rift4StarfruitSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 14, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift4StarfruitSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_05]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift4ZombossRewards"
+					}, 
+					{
+						"EndDate": 1585155600, 
+						"PerkProgressionKey": "Rift5ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift5RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5UnlocksKey", 
+						"RiftWorld": "rift5", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1584550800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift5SolartomatoSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift5SolartomatoSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_06]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy1", 
+						"ZombossRewards": "Rift5ZombossRewards"
+					}, 
+					{
+						"EndDate": 1585760400, 
+						"PerkProgressionKey": "Rift6ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift6RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift6UnlocksKey", 
+						"RiftWorld": "rift6", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1585155600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift6BombegranateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift6BombegranateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_07]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino1", 
+						"ZombossRewards": "Rift6ZombossRewards"
+					}, 
+					{
+						"EndDate": 1586970000, 
+						"PerkProgressionKey": "Rift7ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift7RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift7UnlocksKey", 
+						"RiftWorld": "rift7", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1585760400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 14, 
+								"SubEventPropertyKey": "Rift7DandelionSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 14, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift7DandelionSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_08]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt1", 
+						"ZombossRewards": "Rift7ZombossRewards"
+					}, 
+					{
+						"EndDate": 1587574800, 
+						"PerkProgressionKey": "Rift8ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift8RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift8UnlocksKey", 
+						"RiftWorld": "rift8", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1586970000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift8ChomperSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift8ChomperSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_09]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift8ZombossRewards"
+					}, 
+					{
+						"EndDate": 1588179600, 
+						"PerkProgressionKey": "Rift9ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift9RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift9UnlocksKey", 
+						"RiftWorld": "rift9", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1587574800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift9KiwibeastSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift9KiwibeastSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_10]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage1", 
+						"ZombossRewards": "Rift9ZombossRewards"
+					}, 
+					{
+						"EndDate": 1588784400, 
+						"PerkProgressionKey": "Rift10ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift10RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift10UnlocksKey", 
+						"RiftWorld": "rift10", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1588179600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift10ShadowpeashooterSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift10ShadowpeashooterSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_11]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift10ZombossRewards"
+					}, 
+					{
+						"EndDate": 1589389200, 
+						"PerkProgressionKey": "Rift11ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift11RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift11UnlocksKey", 
+						"RiftWorld": "rift1a", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1588784400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift11AloeSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift11AloeSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_12]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift11ZombossRewards"
+					}, 
+					{
+						"EndDate": 1589994000, 
+						"PerkProgressionKey": "Rift12ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift12RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift12UnlocksKey", 
+						"RiftWorld": "rift1b", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1589389200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift12ExplodeonutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift12ExplodeonutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_13]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy1", 
+						"ZombossRewards": "Rift12ZombossRewards"
+					}, 
+					{
+						"EndDate": 1592413200, 
+						"PerkProgressionKey": "RiftFutureProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftFutureRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftFutureUnlocksKey", 
+						"RiftWorld": "riftfuture", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1589994000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 28, 
+								"SubEventPropertyKey": "RiftFutureSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 28, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftFutureSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_14]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future2", 
+						"ZombossRewards": "RiftFutureZombossRewards"
+					}, 
+					{
+						"EndDate": 1593018000, 
+						"PerkProgressionKey": "Rift14ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift14RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift14UnlocksKey", 
+						"RiftWorld": "rift14", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1592413200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift14DazeychainSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift14DazeychainSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_15]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino1", 
+						"ZombossRewards": "Rift14ZombossRewards"
+					}, 
+					{
+						"EndDate": 1593622800, 
+						"PerkProgressionKey": "Rift15ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift15RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift15UnlocksKey", 
+						"RiftWorld": "rift15", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1593018000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift15ZoybeanpodSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift15ZoybeanpodSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_16]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt1", 
+						"ZombossRewards": "Rift15ZombossRewards"
+					}, 
+					{
+						"EndDate": 1595437200, 
+						"PerkProgressionKey": "RiftDarkProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftDarkRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftDarkUnlocksKey", 
+						"RiftWorld": "riftdark", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1593622800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftDarkSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftDarkSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_17]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark2", 
+						"ZombossRewards": "RiftDarkZombossRewards"
+					}, 
+					{
+						"EndDate": 1596042000, 
+						"PerkProgressionKey": "Rift17ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift17RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift17UnlocksKey", 
+						"RiftWorld": "rift17", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1595437200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift17PowerlilySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift17PowerlilySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_18]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage1", 
+						"ZombossRewards": "Rift17ZombossRewards"
+					}, 
+					{
+						"EndDate": 1596646800, 
+						"PerkProgressionKey": "Rift18ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift18RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift18UnlocksKey", 
+						"RiftWorld": "rift18", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1596042000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift18SapflingSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift18SapflingSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_19]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift18ZombossRewards"
+					}, 
+					{
+						"EndDate": 1597251600, 
+						"PerkProgressionKey": "Rift19ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift19RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift19UnlocksKey", 
+						"RiftWorld": "rift19", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1596646800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift19DazeychainSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift19DazeychainSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_20]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future1", 
+						"ZombossRewards": "Rift19ZombossRewards"
+					}, 
+					{
+						"EndDate": 1599066000, 
+						"PerkProgressionKey": "RiftPirateProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftPirateRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftPirateUnlocksKey", 
+						"RiftWorld": "riftpirate", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1597251600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftPirateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftPirateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_21]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate2", 
+						"ZombossRewards": "RiftPirateZombossRewards"
+					}, 
+					{
+						"EndDate": 1599670800, 
+						"PerkProgressionKey": "Rift21ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift21RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift21UnlocksKey", 
+						"RiftWorld": "rift21", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1599066000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift21BloomingheartsSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift21BloomingheartsSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_22]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift21ZombossRewards"
+					}, 
+					{
+						"EndDate": 1600275600, 
+						"PerkProgressionKey": "Rift22ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift22RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift22UnlocksKey", 
+						"RiftWorld": "rift22", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1599670800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift22GumnutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift22GumnutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_23]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino2", 
+						"ZombossRewards": "Rift22ZombossRewards"
+					}, 
+					{
+						"EndDate": 1600880400, 
+						"PerkProgressionKey": "Rift23ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift23RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift23UnlocksKey", 
+						"RiftWorld": "rift23", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1600275600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift23HotdateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift23HotdateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_24]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt2", 
+						"ZombossRewards": "Rift23ZombossRewards"
+					}, 
+					{
+						"EndDate": 1601485200, 
+						"PerkProgressionKey": "Rift24ProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift24RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift24UnlocksKey", 
+						"RiftWorld": "rift2", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1600880400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift24EscapeRootSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift24EscapeRootSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_25]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift24ZombossRewards"
+					}, 
+					{
+						"EndDate": 1603299600, 
+						"PerkProgressionKey": "RiftLostcityProgressionKey", 
+						"RiftConfigKey": "RiftBaseConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftLostcityRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftLostcityUnlocksKey", 
+						"RiftWorld": "riftlostcity", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1601485200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftLostcitySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftLostcitySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_26]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity2", 
+						"ZombossRewards": "RiftLostcityZombossRewards"
+					}, 
+					{
+						"EndDate": 1603904400, 
+						"PerkProgressionKey": "Rift26ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift26RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift26UnlocksKey", 
+						"RiftWorld": "rift26", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1603299600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift26ShadowpeashooterSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift26ShadowpeashooterSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_27]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage2", 
+						"ZombossRewards": "Rift26ZombossRewards"
+					}, 
+					{
+						"EndDate": 1604509200, 
+						"PerkProgressionKey": "Rift27ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift27RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift27UnlocksKey", 
+						"RiftWorld": "rift27", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1603904400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift27ElectricblueberrySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift27ElectricblueberrySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_28]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift27ZombossRewards"
+					}, 
+					{
+						"EndDate": 1605114000, 
+						"PerkProgressionKey": "Rift28ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift28RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift28UnlocksKey", 
+						"RiftWorld": "rift28", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1604509200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift28WasabiwhipSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift28WasabiwhipSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_29]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift28ZombossRewards"
+					}, 
+					{
+						"EndDate": 1605718800, 
+						"PerkProgressionKey": "Rift29ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift29RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift29UnlocksKey", 
+						"RiftWorld": "rift29", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1605114000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift29BlastBerrySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift29BlastBerrySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_30]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino2", 
+						"ZombossRewards": "Rift29ZombossRewards"
+					}, 
+					{
+						"EndDate": 1606323600, 
+						"PerkProgressionKey": "Rift30ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift30RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift30UnlocksKey", 
+						"RiftWorld": "rift30", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1605718800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift30AppleMortarSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift30AppleMortarSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_31]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift30ZombossRewards"
+					}, 
+					{
+						"EndDate": 1606928400, 
+						"PerkProgressionKey": "Rift31ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift31RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift31UnlocksKey", 
+						"RiftWorld": "rift31", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1606323600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift31SlingPeaSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift31SlingPeaSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_32]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift31ZombossRewards"
+					}, 
+					{
+						"EndDate": 1607533200, 
+						"PerkProgressionKey": "Rift32ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift32RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift32UnlocksKey", 
+						"RiftWorld": "rift32", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1606928400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift32BombegranateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift32BombegranateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_33]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future1", 
+						"ZombossRewards": "Rift32ZombossRewards"
+					}, 
+					{
+						"EndDate": 1608138000, 
+						"PerkProgressionKey": "Rift33ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift33RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift33UnlocksKey", 
+						"RiftWorld": "rift33", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1607533200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift33PyreVineSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift33PyreVineSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_34]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt1", 
+						"ZombossRewards": "Rift33ZombossRewards"
+					}, 
+					{
+						"EndDate": 1608742800, 
+						"PerkProgressionKey": "Rift34ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift34RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift34UnlocksKey", 
+						"RiftWorld": "rift34", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1608138000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift34SnowPeaSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift34SnowPeaSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_35]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift34ZombossRewards"
+					}, 
+					{
+						"EndDate": 1610557200, 
+						"PerkProgressionKey": "RiftCowboyProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftCowboyRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftCowboyUnlocksKey", 
+						"RiftWorld": "riftcowboy", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1608742800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftCowboySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftCowboySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_36]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy3", 
+						"ZombossRewards": "RiftCowboyZombossRewards"
+					}, 
+					{
+						"EndDate": 1611162000, 
+						"PerkProgressionKey": "Rift36ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift36RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift36UnlocksKey", 
+						"RiftWorld": "rift36", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1610557200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift36StarfruitSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift36StarfruitSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_37]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage1", 
+						"ZombossRewards": "Rift36ZombossRewards"
+					}, 
+					{
+						"EndDate": 1611766800, 
+						"PerkProgressionKey": "Rift37ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift37RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift37UnlocksKey", 
+						"RiftWorld": "rift37", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1611162000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift37TumbleweedSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift37TumbleweedSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_38]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark2", 
+						"ZombossRewards": "Rift37ZombossRewards"
+					}, 
+					{
+						"EndDate": 1612371600, 
+						"PerkProgressionKey": "Rift38ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift38RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift38UnlocksKey", 
+						"RiftWorld": "rift38", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1611766800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift38PowerlilySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift38PowerlilySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_39]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift38ZombossRewards"
+					}, 
+					{
+						"EndDate": 1612976400, 
+						"PerkProgressionKey": "Rift39ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift39RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift39UnlocksKey", 
+						"RiftWorld": "rift39", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1612371600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift39WitchHazelSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift39WitchHazelSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_40]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift39ZombossRewards"
+					}, 
+					{
+						"EndDate": 1613581200, 
+						"PerkProgressionKey": "Rift40ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift40RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift40UnlocksKey", 
+						"RiftWorld": "rift40", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1612976400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift40CaulipowerSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift40CaulipowerSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_41]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino1", 
+						"ZombossRewards": "Rift40ZombossRewards"
+					}, 
+					{
+						"EndDate": 1614186000, 
+						"PerkProgressionKey": "Rift41ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift41RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift41UnlocksKey", 
+						"RiftWorld": "rift41", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1613581200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift41ZoyBeanPodSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift41ZoyBeanPodSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_42]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift41ZombossRewards"
+					}, 
+					{
+						"EndDate": 1614790800, 
+						"PerkProgressionKey": "Rift42ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift42RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift42UnlocksKey", 
+						"RiftWorld": "rift42", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1614186000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift42ImpPearSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift42ImpPearSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_43]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt1", 
+						"ZombossRewards": "Rift42ZombossRewards"
+					}, 
+					{
+						"EndDate": 1615395600, 
+						"PerkProgressionKey": "Rift43ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift43RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift43UnlocksKey", 
+						"RiftWorld": "rift43", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1614790800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift43GumNutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift43GumNutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_44]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift43ZombossRewards"
+					}, 
+					{
+						"EndDate": 1616000400, 
+						"PerkProgressionKey": "Rift44ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift44RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift44UnlocksKey", 
+						"RiftWorld": "rift44", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1615395600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift44ShadowPeashooterSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift44ShadowPeashooterSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_45]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino1", 
+						"ZombossRewards": "Rift44ZombossRewards"
+					}, 
+					{
+						"EndDate": 1616605200, 
+						"PerkProgressionKey": "Rift45ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift45RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift45UnlocksKey", 
+						"RiftWorld": "rift45", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1616000400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift45MurkadamiaNutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift45MurkadamiaNutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_46]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift45ZombossRewards"
+					}, 
+					{
+						"EndDate": 1617210000, 
+						"PerkProgressionKey": "Rift46ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift46RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift46UnlocksKey", 
+						"RiftWorld": "rift46", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1616605200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift46PokraSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift46PokraSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_47]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift46ZombossRewards"
+					}, 
+					{
+						"EndDate": 1617814800, 
+						"PerkProgressionKey": "Rift47ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift47RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift47UnlocksKey", 
+						"RiftWorld": "rift47", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1617210000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift47DandelionSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift47DandelionSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_48]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift47ZombossRewards"
+					}, 
+					{
+						"EndDate": 1618419600, 
+						"PerkProgressionKey": "Rift48ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift48RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift48UnlocksKey", 
+						"RiftWorld": "rift48", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1617814800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift48OlivePitSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift48OlivePitSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_49]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage2", 
+						"ZombossRewards": "Rift48ZombossRewards"
+					}, 
+					{
+						"EndDate": 1619024400, 
+						"PerkProgressionKey": "Rift49ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift49RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift49UnlocksKey", 
+						"RiftWorld": "rift49", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1618419600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift49DazeyChainSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift49DazeyChainSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_50]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino2", 
+						"ZombossRewards": "Rift49ZombossRewards"
+					}, 
+					{
+						"EndDate": 1619629200, 
+						"PerkProgressionKey": "Rift50ProgressionKey", 
+						"RiftConfigKey": "RiftBase2ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift50RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift50UnlocksKey", 
+						"RiftWorld": "rift50", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1619024400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift50SnapPeaSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift50SnapPeaSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_51]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark3", 
+						"ZombossRewards": "Rift50ZombossRewards"
+					}, 
+					{
+						"EndDate": 1620234000, 
+						"PerkProgressionKey": "Rift51ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift51RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift51UnlocksKey", 
+						"RiftWorld": "rift51", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1619629200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift51GrapeshotSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift51GrapeshotSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_52]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift51ZombossRewards"
+					}, 
+					{
+						"EndDate": 1620838800, 
+						"PerkProgressionKey": "Rift52ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift52RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift52UnlocksKey", 
+						"RiftWorld": "rift52", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1620234000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift52BombegranateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift52BombegranateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_55]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate3", 
+						"ZombossRewards": "Rift52ZombossRewards"
+					}, 
+					{
+						"EndDate": 1621443600, 
+						"PerkProgressionKey": "Rift53ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift53RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift53UnlocksKey", 
+						"RiftWorld": "rift53", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1620838800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift53ExplodeOVineSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift53ExplodeOVineSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_54]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift53ZombossRewards"
+					}, 
+					{
+						"EndDate": 1622048400, 
+						"PerkProgressionKey": "Rift54ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift54RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift54UnlocksKey", 
+						"RiftWorld": "rift54", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1621443600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift54ExplodeONutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift54ExplodeONutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_55]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt2", 
+						"ZombossRewards": "Rift54ZombossRewards"
+					}, 
+					{
+						"EndDate": 1623862800, 
+						"PerkProgressionKey": "RiftDinoProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftDinoRewardsKey", 
+						"RiftLevelUnlocksKey": "RiftDinoUnlocksKey", 
+						"RiftWorld": "riftdino", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1622048400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftDinoSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftDinoSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_56]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino3", 
+						"ZombossRewards": "RiftDinoZombossRewards"
+					}, 
+					{
+						"EndDate": 1624467600, 
+						"PerkProgressionKey": "Rift56ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift56RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift56UnlocksKey", 
+						"RiftWorld": "rift56", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1623862800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift56StarfruitSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift56StarfruitSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_57]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift56ZombossRewards"
+					}, 
+					{
+						"EndDate": 1625072400, 
+						"PerkProgressionKey": "Rift57ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift57RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift57UnlocksKey", 
+						"RiftWorld": "rift57", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1624467600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift57GoldbloomSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift57GoldbloomSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_58]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark3", 
+						"ZombossRewards": "Rift57ZombossRewards"
+					}, 
+					{
+						"EndDate": 1625677200, 
+						"PerkProgressionKey": "Rift58ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift58RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift58UnlocksKey", 
+						"RiftWorld": "rift58", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1625072400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift58StrawburstSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift58StrawburstSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_59]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift58ZombossRewards"
+					}, 
+					{
+						"EndDate": 1626282000, 
+						"PerkProgressionKey": "Rift59ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift59RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift59UnlocksKey", 
+						"RiftWorld": "rift59", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1625677200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift59PyreVineSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift59PyreVineSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_60]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage2", 
+						"ZombossRewards": "Rift59ZombossRewards"
+					}, 
+					{
+						"EndDate": 1626886800, 
+						"PerkProgressionKey": "Rift60ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift60RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift60UnlocksKey", 
+						"RiftWorld": "rift60", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1626282000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift60HotDateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift60HotDateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_61]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift60ZombossRewards"
+					}, 
+					{
+						"EndDate": 1627491600, 
+						"PerkProgressionKey": "Rift61ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift61RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift61UnlocksKey", 
+						"RiftWorld": "rift61", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1626886800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift61ShineVineSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift61ShineVineSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_62]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino2", 
+						"ZombossRewards": "Rift61ZombossRewards"
+					}, 
+					{
+						"EndDate": 1628096400, 
+						"PerkProgressionKey": "Rift62ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift62RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift62UnlocksKey", 
+						"RiftWorld": "rift62", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1627491600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift62StickyBombRiceSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift62StickyBombRiceSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_63]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift62ZombossRewards"
+					}, 
+					{
+						"EndDate": 1628701200, 
+						"PerkProgressionKey": "Rift63ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift63RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift63UnlocksKey", 
+						"RiftWorld": "rift63", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1628096400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift63PuffballSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift63PuffballSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_64]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt1", 
+						"ZombossRewards": "Rift63ZombossRewards"
+					}, 
+					{
+						"EndDate": 1629306000, 
+						"PerkProgressionKey": "Rift64ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift64RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift64UnlocksKey", 
+						"RiftWorld": "rift64", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1628701200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift64DartichokeSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift64DartichokeSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_65]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift64ZombossRewards"
+					}, 
+					{
+						"EndDate": 1630515600, 
+						"PerkProgressionKey": "RiftIceAge1ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftIceAge1RewardsKey", 
+						"RiftLevelUnlocksKey": "RiftIceAge1UnlocksKey", 
+						"RiftWorld": "rifticeage1", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1629306000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 14, 
+								"SubEventPropertyKey": "RiftIceAge1SubEvent"
+							}, 
+							{
+								"StartDeltaDays": 14, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftIceAge1SubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_66]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage3", 
+						"ZombossRewards": "RiftIceAge1ZombossRewards"
+					}, 
+					{
+						"EndDate": 1631120400, 
+						"PerkProgressionKey": "Rift66ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift66RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift66UnlocksKey", 
+						"RiftWorld": "rift66", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1630515600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift66ToadstoolSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift66ToadstoolSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_67]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate3", 
+						"ZombossRewards": "Rift66ZombossRewards"
+					}, 
+					{
+						"EndDate": 1631725200, 
+						"PerkProgressionKey": "Rift67ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift67RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift67UnlocksKey", 
+						"RiftWorld": "rift67", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1631120400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift67AppleMortarSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift67AppleMortarSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_68]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift67ZombossRewards"
+					}, 
+					{
+						"EndDate": 1632934800, 
+						"PerkProgressionKey": "RiftIceAge2ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftIceAge2RewardsKey", 
+						"RiftLevelUnlocksKey": "RiftIceAge2UnlocksKey", 
+						"RiftWorld": "rifticeage2", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1631725200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 14, 
+								"SubEventPropertyKey": "RiftIceAge2SubEvent"
+							}, 
+							{
+								"StartDeltaDays": 14, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftIceAge2SubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_69]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage3_P2", 
+						"ZombossRewards": "RiftIceAge2ZombossRewards"
+					}, 
+					{
+						"EndDate": 1633539600, 
+						"PerkProgressionKey": "Rift69ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift69RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift69UnlocksKey", 
+						"RiftWorld": "rift69", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1632934800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift69ElectriciteaSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift69ElectriciteaSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_70]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark3", 
+						"ZombossRewards": "Rift69ZombossRewards"
+					}, 
+					{
+						"EndDate": 1634144400, 
+						"PerkProgressionKey": "Rift70ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift70RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift70UnlocksKey", 
+						"RiftWorld": "rift70", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1633539600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift70ElectricBlueberrySubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift70ElectricBlueberrySubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_71]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino2", 
+						"ZombossRewards": "Rift70ZombossRewards"
+					}, 
+					{
+						"EndDate": 1634749200, 
+						"PerkProgressionKey": "Rift71ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift71RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift71UnlocksKey", 
+						"RiftWorld": "rift71", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1634144400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift71ShadowPeashooterSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift71ShadowPeashooterSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_72]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift71ZombossRewards"
+					}, 
+					{
+						"EndDate": 1635354000, 
+						"PerkProgressionKey": "Rift72ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift72RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift72UnlocksKey", 
+						"RiftWorld": "rift72", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1634749200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift72MurkadamiaNutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift72MurkadamiaNutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_73]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift72ZombossRewards"
+					}, 
+					{
+						"EndDate": 1635958800, 
+						"PerkProgressionKey": "Rift73ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift73RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift73UnlocksKey", 
+						"RiftWorld": "rift73", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1635354000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift73GhostPepperSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift73GhostPepperSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_74]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate3", 
+						"ZombossRewards": "Rift73ZombossRewards"
+					}, 
+					{
+						"EndDate": 1636563600, 
+						"PerkProgressionKey": "Rift74ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift74RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift74UnlocksKey", 
+						"RiftWorld": "rift74", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1635958800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift74GloomVineSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift74GloomVineSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_75]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt2", 
+						"ZombossRewards": "Rift74ZombossRewards"
+					}, 
+					{
+						"EndDate": 1637168400, 
+						"PerkProgressionKey": "Rift75ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift75RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift75UnlocksKey", 
+						"RiftWorld": "rift19", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1636563600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift75CactusSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift75CactusSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_76]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future1", 
+						"ZombossRewards": "Rift75ZombossRewards"
+					}, 
+					{
+						"EndDate": 1637773200, 
+						"PerkProgressionKey": "Rift10ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift76RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5LevelUnlocksKey", 
+						"RiftWorld": "rift10", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1637168400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift76PokraSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift76PokraSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_77]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift76ZombossRewards"
+					}, 
+					{
+						"EndDate": 1638378000, 
+						"PerkProgressionKey": "Rift77ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift77RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5LevelUnlocksKey", 
+						"RiftWorld": "rift77", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1637773200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift77TurkeypultSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift77TurkeypultSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_78]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy1", 
+						"ZombossRewards": "Rift77ZombossRewards"
+					}, 
+					{
+						"EndDate": 1638982800, 
+						"PerkProgressionKey": "Rift78ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift78RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5LevelUnlocksKey", 
+						"RiftWorld": "rift78", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1638378000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift78ParsnipSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift78ParsnipSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_79]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate1", 
+						"ZombossRewards": "Rift78ZombossRewards"
+					}, 
+					{
+						"EndDate": 1639587600, 
+						"PerkProgressionKey": "Rift79ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift79RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5LevelUnlocksKey", 
+						"RiftWorld": "rift79", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1638982800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift79BoingsettaSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift79BoingsettaSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_80]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt1", 
+						"ZombossRewards": "Rift79ZombossRewards"
+					}, 
+					{
+						"EndDate": 1640192400, 
+						"PerkProgressionKey": "Rift80ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift80RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5LevelUnlocksKey", 
+						"RiftWorld": "rift80", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1639587600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift80ColdSnapdragonSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift80ColdSnapdragonSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_81]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage2", 
+						"ZombossRewards": "Rift80ZombossRewards"
+					}, 
+					{
+						"EndDate": 1642006800, 
+						"PerkProgressionKey": "RiftFuture2ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftFuture2RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift25LevelUnlocksKey", 
+						"RiftWorld": "riftfuture", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1640192400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftFuture2SubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftFuture2SubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_82]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future2", 
+						"ZombossRewards": "RiftFuture2ZombossRewards"
+					}, 
+					{
+						"EndDate": 1642611600, 
+						"PerkProgressionKey": "Rift6ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift82RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift6UnlocksKey", 
+						"RiftWorld": "rift6", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1642006800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift82ExplodeONutSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift82ExplodeONutSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_83]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino1", 
+						"ZombossRewards": "Rift82ZombossRewards"
+					}, 
+					{
+						"EndDate": 1643216400, 
+						"PerkProgressionKey": "Rift23ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift83RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift23UnlocksKey", 
+						"RiftWorld": "rift23", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1642611600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift83GrapeshotSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift83GrapeshotSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_84]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt2", 
+						"ZombossRewards": "Rift83ZombossRewards"
+					}, 
+					{
+						"EndDate": 1643821200, 
+						"PerkProgressionKey": "Rift36ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift84RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift36UnlocksKey", 
+						"RiftWorld": "rift36", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1643216400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift84BombegranateSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift84BombegranateSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_85]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage1", 
+						"ZombossRewards": "Rift84ZombossRewards"
+					}, 
+					{
+						"EndDate": 1645635600, 
+						"PerkProgressionKey": "RiftDarkProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftDark2RewardsKey", 
+						"RiftLevelUnlocksKey": "RiftDarkUnlocksKey", 
+						"RiftWorld": "riftdark", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1643821200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftDark2SubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftDark2SubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_86]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark2", 
+						"ZombossRewards": "RiftDark2ZombossRewards"
+					}, 
+					{
+						"EndDate": 1646240400, 
+						"PerkProgressionKey": "Rift8ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift86RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift8UnlocksKey", 
+						"RiftWorld": "rift8", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1645635600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift86KiwibeastSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift86KiwibeastSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_87]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1", 
+						"ZombossRewards": "Rift86ZombossRewards"
+					}, 
+					{
+						"EndDate": 1646845200, 
+						"PerkProgressionKey": "Rift21ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift87RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift21UnlocksKey", 
+						"RiftWorld": "rift21", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1646240400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift87AloeSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift87AloeSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_88]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2", 
+						"ZombossRewards": "Rift87ZombossRewards"
+					}, 
+					{
+						"EndDate": 1647450000, 
+						"PerkProgressionKey": "Rift76ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift88RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift5LevelUnlocksKey", 
+						"RiftWorld": "rift76", 
+						"RiftZombieSwapPropsKey": "LuckOTheZombie", 
+						"StartDate": 1646845200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift88PumpkinSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift88PumpkinSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_89]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dark1", 
+						"ZombossRewards": "Rift88ZombossRewards"
+					}, 
+					{
+						"EndDate": 1649264400, 
+						"PerkProgressionKey": "RiftPirateProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "RiftPirate2RewardsKey", 
+						"RiftLevelUnlocksKey": "RiftPirateUnlocksKey", 
+						"RiftWorld": "riftpirate", 
+						"RiftZombieSwapPropsKey": "Springening", 
+						"StartDate": 1647450000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 21, 
+								"SubEventPropertyKey": "RiftPirate2SubEvent"
+							}, 
+							{
+								"StartDeltaDays": 21, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "RiftPirate2SubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_90]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_pirate2", 
+						"ZombossRewards": "RiftPirate2ZombossRewards"
+					}, 
+					{
+						"EndDate": 1649869200, 
+						"PerkProgressionKey": "Rift18ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift90RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift18UnlocksKey", 
+						"RiftWorld": "rift18", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1649264400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift90DraftodilSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift90DraftodilSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_91]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_lostcity1a", 
+						"ZombossRewards": "Rift90ZombossRewards"
+					}, 
+					{
+						"EndDate": 1650474000, 
+						"PerkProgressionKey": "Rift29ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift91RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift29UnlocksKey", 
+						"RiftWorld": "rift29", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1649869200, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift91DazeyChainSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift91DazeyChainSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_92]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_egypt2", 
+						"ZombossRewards": "Rift91ZombossRewards"
+					}, 
+					{
+						"EndDate": 1651078800, 
+						"PerkProgressionKey": "Rift9ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift92RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift9UnlocksKey", 
+						"RiftWorld": "rift9", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1650474000, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift92OlivePitSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift92OlivePitSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_93]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_cowboy2a", 
+						"ZombossRewards": "Rift92ZombossRewards"
+					}, 
+					{
+						"EndDate": 1651683600, 
+						"PerkProgressionKey": "Rift26ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift93RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift26UnlocksKey", 
+						"RiftWorld": "rift26", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1651078800, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift93HomingThistleSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift93HomingThistleSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_94]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_iceage2", 
+						"ZombossRewards": "Rift93ZombossRewards"
+					}, 
+					{
+						"EndDate": 1652288400, 
+						"PerkProgressionKey": "Rift14ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift94RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift14UnlocksKey", 
+						"RiftWorld": "rift14", 
+						"RiftZombieSwapPropsKey": "Birthdayz", 
+						"StartDate": 1651683600, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift94DartichokeSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift94DartichokeSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_95]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_dino1", 
+						"ZombossRewards": "Rift94ZombossRewards"
+					}, 
+					{
+						"EndDate": 1652893200, 
+						"PerkProgressionKey": "Rift22ProgressionKey", 
+						"RiftConfigKey": "RiftBase1ConfigKey", 
+						"RiftLevelFirstClearRewardsKey": "Rift95RewardsKey", 
+						"RiftLevelUnlocksKey": "Rift22UnlocksKey", 
+						"RiftWorld": "rift22", 
+						"RiftZombieSwapPropsKey": "", 
+						"StartDate": 1652288400, 
+						"SubEvents": [
+							{
+								"StartDeltaDays": 0, 
+								"EndDeltaDays": 7, 
+								"SubEventPropertyKey": "Rift95HeathSeekerSubEvent"
+							}, 
+							{
+								"StartDeltaDays": 7, 
+								"EndDeltaDays": 1, 
+								"SubEventPropertyKey": "Rift95HeathSeekerSubEvent"
+							}
+						], 
+						"TitleText": "[RIFT_TITLE_TEXT_96]", 
+						"ZombossLevel": "rifts/rift_zombosses/rift_zomboss_future3", 
+						"ZombossRewards": "Rift95ZombossRewards"
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

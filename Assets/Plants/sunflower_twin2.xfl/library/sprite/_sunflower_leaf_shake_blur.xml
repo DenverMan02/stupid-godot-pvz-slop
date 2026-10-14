@@ -1,0 +1,105 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/_sunflower_leaf_shake_blur" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="_sunflower_leaf_shake_blur">
+      <layers>
+        <DOMLayer name="3">
+          <frames>
+            <DOMFrame index="0" duration="6">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_up" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix d="-1" tx="0.25" ty="11.85"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_up" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix b="-0.203887939453125" d="-1" tx="0.25" ty="11.85"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0" duration="4">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_down" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix b="-0.096160888671875" d="-1" tx="0.4" ty="12.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_down" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix b="-0.021270751953125" d="-1" tx="0.4" ty="12.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0" duration="2">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_up" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="0.4" ty="0.1"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_up" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix b="0.126220703125" tx="0.4" ty="0.1"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_down" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="0.55" ty="-1.4"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/sunflower_leaf_blur_down" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix b="-0.0487060546875" tx="0.55" ty="-1.4"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,2124 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"LevelOfTheDayRewards"
+			], 
+			"objclass": "LevelOfTheDayRewards", 
+			"objdata": {
+				"Rewards": [
+					{
+						"#comment": "//////// BEGIN DEFAULT LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_default", 
+						"AwardQuantity": 1, 
+						"Category": "Common", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN SCHEDULED DEFAULT LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk1", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk1", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk2", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk3", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk3", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk4", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk4", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk5", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk5", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk6", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk6", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk7", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk7", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk8", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk8", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk9", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk9", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_def_wk10", 
+						"AwardQuantity": 1, 
+						"Category": "Common_lod_def_wk10", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN HARVEST LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_harvest", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Harvest", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Harvest", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Harvest", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Harvest", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Harvest", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN HARVEST 2 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_harvest_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Harvest_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN BEGHOULED LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_beghouledbeyond", 
+						"AwardQuantity": 1, 
+						"Category": "Common_BeghouledBeyond", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_BeghouledBeyond", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_BeghouledBeyond", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_BeghouledBeyond", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_BeghouledBeyond", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN FEASTIVUS LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_feastivus", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Feastivus", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Feastivus", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Feastivus", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Feastivus", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Feastivus", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN FEASTIVUS 2021 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_feastivus_2021", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Feastivus_2021", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN FEASTIVUS 2021 2 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_feastivus_2021_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Feastivus_2021_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN FEASTIVUS 2021 3 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_feastivus_2021_3", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Feastivus_2021_3", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN FOOD FIGHT LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_foodfight", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Foodfight", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Foodfight", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Foodfight", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Foodfight", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Foodfight", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN Food Fight 2021 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_foodfight_2021", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Foodfight_2021", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN Food Fight 2021 2 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_foodfight_2021_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Foodfight_2021_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN Food Fight 2021 3 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_foodfight_2021_3", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Foodfight_2021_3", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN HALLOWEEN LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_halloween", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Halloween", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Halloween", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Halloween", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Halloween", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Halloween", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN HALLOWEEN 2021 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_halloween_2021", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Halloween_2021", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN HALLOWEEN 2021 2 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_halloween_2021_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Halloween_2021_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN HALLOWEEN 2021 3 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_halloween_2021_3", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Halloween_2021_3", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN HEROES LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_heroes", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Heroes", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Heroes", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Heroes", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Heroes", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Heroes", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN PROGRESSIVE LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_progressive", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Progressive", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2000, 
+						"Category": "Valuable_Progressive", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 3000, 
+						"Category": "Valuable_Progressive", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Progressive", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 10000, 
+						"Category": "Valuable_Progressive", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN SPRINGENING LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_springening_2022", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Springening_2022", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Spring", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Spring", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Spring", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Spring", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// SPRINGENING 2 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_springening_2022_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Springening_2022_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// SPRINGENING 3 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_springening_2022_3", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Springening_2022_3", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN LUCK O THE ZOMBIE LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_lotz_2022", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Lotz_2022", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_StPatrick", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_StPatrick", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_StPatrick", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_StPatrick", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN LUCK O THE ZOMBIE LOOT VALUES Week 2 ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_lotz_2022_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Lotz_2022_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN SUMMER NIGHTS LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_summernights", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Summernights", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Summernights", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Summernights", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Summernights", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Summernights", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN SUMMER NIGHTS ALT LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_summernights_alt", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Summernights_alt", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN BIG BRAINZ LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_bigbrainz", 
+						"AwardQuantity": 1, 
+						"Category": "Common_BigBrainz", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Bigbrainz", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Bigbrainz", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Bigbrainz", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Bigbrainz", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN BIG BRAINZ 2 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_bigbrainz_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_BigBrainz_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN BIG BRAINZ 3 LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_bigbrainz_3", 
+						"AwardQuantity": 1, 
+						"Category": "Common_BigBrainz_3", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN TIME TWIST LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_timetwister", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Timetwist", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BEGIN VALENBRAINZ LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_valenbrainz_2022", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Valenbrainz_2022", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "plantXP", 
+						"AwardParam": "lod_valenbrainz_2022_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Valenbrainz_2022_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Valentines", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Valentines", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Valentines", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Valentines", 
+						"Probability": 10
+					}, 
+					{
+						"#comment": "//////// BEGIN BIRTHDAYZ LOOT VALUES ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_birthdayz_2022", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Birthdayz_2022", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"#comment": "//////// BIRTHDAYZ LOOT VALUES 2 ////////", 
+						"Award": "plantXP", 
+						"AwardParam": "lod_birthdayz_2022_2", 
+						"AwardQuantity": 1, 
+						"Category": "Common_Birthdayz_2022_2", 
+						"Comment": "", 
+						"Probability": 100
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable_Birthday", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable_Birthday", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable_Birthday", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable_Birthday", 
+						"Probability": 10
+					}, 
+					{
+						"Comment": "//////// BEGIN COSTUMES LOOT VALUES ////////", 
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 4000, 
+						"Category": "Costumes", 
+						"Probability": 1000
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "1", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "2", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "3", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "4", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "5", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "6", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "7", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "8", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "9", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "10", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "11", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "12", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "13", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "14", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "15", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "16", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "17", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "18", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "19", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "20", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "21", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "22", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "23", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "24", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "25", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "26", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "27", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "28", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "29", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "30", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "31", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "32", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "33", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "34", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "35", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "36", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "37", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "38", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "39", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "40", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "41", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "42", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "43", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "44", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "106", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "68", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "69", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "54", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "66", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "122", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "124", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "125", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "126", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "127", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "129", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "130", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "131", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "132", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "133", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "135", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "136", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "137", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "139", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "143", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "145", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "146", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "147", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "148", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "149", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "150", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "151", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "152", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "153", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "154", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "155", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "156", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "157", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "158", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "159", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "160", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "161", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "162", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "163", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "164", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "165", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "166", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "167", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "168", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "169", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "170", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "171", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "172", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "173", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "174", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "175", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "176", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 0
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "177", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "178", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "179", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "180", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "181", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "182", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "183", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "184", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "185", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "186", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "187", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "188", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "189", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "190", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "191", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "192", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "193", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "194", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "195", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "196", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "197", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "198", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "199", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "200", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "201", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "202", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "203", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "204", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "205", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "206", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "207", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "208", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "209", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "210", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "211", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "212", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "213", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "214", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "215", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "216", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "217", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "218", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "219", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "220", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "221", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "222", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "223", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "224", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "225", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "226", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "227", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "231", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "232", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "233", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "234", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "235", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "236", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "240", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "241", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "242", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "245", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "246", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "247", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "248", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "243", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "244", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "249", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "250", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "251", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "costume", 
+						"AwardParam": "252", 
+						"AwardQuantity": 1, 
+						"Category": "Costumes", 
+						"Comment": "", 
+						"Probability": 1
+					}, 
+					{
+						"#comment": "//////// BEGIN SENOR PINATA FALLBACK LOOT VALUES ////////", 
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Fallback", 
+						"Probability": 1
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 4000, 
+						"Category": "FallbackSenor", 
+						"Probability": 1000
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1000, 
+						"Category": "Valuable", 
+						"Probability": 750
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 1500, 
+						"Category": "Valuable", 
+						"Probability": 200
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 2500, 
+						"Category": "Valuable", 
+						"Probability": 40
+					}, 
+					{
+						"Award": "coins", 
+						"AwardParam": "", 
+						"AwardQuantity": 5000, 
+						"Category": "Valuable", 
+						"Probability": 10
+					}
+				]
+			}
+		}
+	], 
+	"version": 1
+}

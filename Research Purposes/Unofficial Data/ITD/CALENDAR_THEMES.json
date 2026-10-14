@@ -1,0 +1,777 @@
+{
+	"objects": [
+		{
+			"aliases": [
+				"Default"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_GENERIC_CONTENT_WELL", 
+				"InnerBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGTEXTURE", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND", 
+				"MonthlyDayImage": "IMAGE_UI_DIALOG_ASSET_SCROLLBAR", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_BLUE7DAY", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_EVENT_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_EVENT_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"DayTextColor": {
+					"mRed": 0, 
+					"mGreen": 0, 
+					"mBlue": 0
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 0
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Test"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_TEMP_CORNER_LEFT_COBWEB", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_TEMP_CORNER_RIGHT_COBWEB", 
+				"TimerCharacter": "IMAGE_UI_GENERIC_COIN_ICON_SMALL", 
+				"BackgroundImage": "IMAGE_UI_GENERIC_CONTENT_WELL", 
+				"InnerBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGTEXTURE", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_SUMMERNIGHTS", 
+				"MonthlyDayImage": "IMAGE_UI_DIALOG_ASSET_SCROLLBAR", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_BLUE7DAY", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_WEEKLY_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_WEEKLY_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 0, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 0, 
+					"mBlue": 255
+				}, 
+				"DayTextColor": {
+					"mRed": 0, 
+					"mGreen": 0, 
+					"mBlue": 255
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 100, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 100, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 100
+				}, 
+				"RewardTextColor": {
+					"mRed": 0, 
+					"mGreen": 255, 
+					"mBlue": 0
+				}, 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_BLUE7DAY", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_BLUE7DAY", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_BLUE7DAY", 
+				"CustomCellsForDays": {
+					"1": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SUMMERNIGHTS", 
+					"4": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SUMMERNIGHTS"
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"SummerNights"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_SUMMERNIGHTS", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_SUMMERNIGHTS", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_SUMMERNIGHTS", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_SUMMERNIGHTS", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_SUMMERNIGHTS", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SUMMERNIGHTS", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SUMMERNIGHTS", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SUMMERNIGHTS", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_SUMMERNIGHTS", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_TEAL_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_TEAL_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 247, 
+					"mGreen": 243, 
+					"mBlue": 105
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"DayTextColor": {
+					"mRed": 47, 
+					"mGreen": 23, 
+					"mBlue": 83
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 247, 
+					"mGreen": 243, 
+					"mBlue": 105
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"BigBrainz"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_GENERIC_CONTENT_WELL", 
+				"InnerBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGTEXTURE", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_BIGBRAINZ", 
+				"BottomLeftImage": "", 
+				"BottomRightImage": "", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_BIGBRAINZ", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_BIGBRAINZ", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_BIGBRAINZ", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_BIGBRAINZ", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_BIGBRAINZ", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIGBRAINZ", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIGBRAINZ", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIGBRAINZ", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIGBRAINZ", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_RED_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_RED_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"DayTextColor": {
+					"mRed": 83, 
+					"mGreen": 168, 
+					"mBlue": 165
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 253, 
+					"mGreen": 220, 
+					"mBlue": 103
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"FallFestival"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_FALLFESTIVAL", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_FALLFESTIVAL", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_FALLFESTIVAL", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_FALLFESTIVAL", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_FALLFESTIVAL", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_FALLFESTIVAL", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_FALLFESTIVAL", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_FALLFESTIVAL", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FALLFESTIVAL", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FALLFESTIVAL", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FALLFESTIVAL", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FALLFESTIVAL", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FALLFESTIVAL", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FALLFESTIVAL", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FALLFESTIVAL", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_RED_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_RED_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"DayTextColor": {
+					"mRed": 76, 
+					"mGreen": 5, 
+					"mBlue": 6
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 230, 
+					"mGreen": 220, 
+					"mBlue": 219
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"LawnOfDoom"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_LAWNOFDOOM", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_LAWNOFDOOM", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_LAWNOFDOOM", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_LAWNOFDOOM", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_LAWNOFDOOM", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_LAWNOFDOOM", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_LAWNOFDOOM", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_LAWNOFDOOM", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LAWNOFDOOM", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LAWNOFDOOM", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LAWNOFDOOM", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LAWNOFDOOM", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LAWNOFDOOM", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LAWNOFDOOM", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LAWNOFDOOM", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_PURPLE_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_PURPLE_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 117, 
+					"mGreen": 255, 
+					"mBlue": 85
+				}, 
+				"NameColor": {
+					"mRed": 117, 
+					"mGreen": 255, 
+					"mBlue": 85
+				}, 
+				"DayTextColor": {
+					"mRed": 117, 
+					"mGreen": 255, 
+					"mBlue": 85
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 117, 
+					"mGreen": 255, 
+					"mBlue": 85
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"FoodFight"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_FOODFIGHT", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_FOODFIGHT", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_FOODFIGHT", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_FOODFIGHT", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_FOODFIGHT", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_FOODFIGHT", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_FOODFIGHT", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_FOODFIGHT", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FOODFIGHT", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FOODFIGHT", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FOODFIGHT", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FOODFIGHT", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FOODFIGHT", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FOODFIGHT", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FOODFIGHT", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_BROWN_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_BROWN_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 253, 
+					"mGreen": 247, 
+					"mBlue": 86
+				}, 
+				"NameColor": {
+					"mRed": 159, 
+					"mGreen": 91, 
+					"mBlue": 0
+				}, 
+				"DayTextColor": {
+					"mRed": 159, 
+					"mGreen": 91, 
+					"mBlue": 0
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 240, 
+					"mGreen": 198, 
+					"mBlue": 84
+				}, 
+				"RewardTextColor": {
+					"mRed": 240, 
+					"mGreen": 198, 
+					"mBlue": 84
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Feastivus"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_FEASTIVUS", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_FEASTIVUS", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_FEASTIVUS", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_FEASTIVUS", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_FEASTIVUS", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_FEASTIVUS", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_FEASTIVUS", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_FEASTIVUS", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FEASTIVUS", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FEASTIVUS", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_FEASTIVUS", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FEASTIVUS", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FEASTIVUS", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FEASTIVUS", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_FEASTIVUS", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_FEASTIVUS_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_FEASTIVUS_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 117, 
+					"mGreen": 255, 
+					"mBlue": 85
+				}, 
+				"NameColor": {
+					"mRed": 183, 
+					"mGreen": 255, 
+					"mBlue": 163
+				}, 
+				"DayTextColor": {
+					"mRed": 183, 
+					"mGreen": 255, 
+					"mBlue": 163
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 237, 
+					"mBlue": 15
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 237, 
+					"mBlue": 15
+				}, 
+				"TimerTextColor": {
+					"mRed": 183, 
+					"mGreen": 255, 
+					"mBlue": 163
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 217, 
+					"mBlue": 15
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"LunarNewYear"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_LUNAR_NEW_YEAR", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_LUNAR_NEW_YEAR", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_LUNAR_NEW_YEAR", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_LUNAR_NEW_YEAR", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_LUNAR_NEW_YEAR", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_LUNAR_NEW_YEAR", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_LUNAR_NEW_YEAR", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_LUNAR_NEW_YEAR", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LUNAR_NEW_YEAR", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LUNAR_NEW_YEAR", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LUNAR_NEW_YEAR", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUNAR_NEW_YEAR", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUNAR_NEW_YEAR", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUNAR_NEW_YEAR", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUNAR_NEW_YEAR", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_LUNAR_NEW_YEAR_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_LUNAR_NEW_YEAR_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 243, 
+					"mGreen": 196, 
+					"mBlue": 62
+				}, 
+				"NameColor": {
+					"mRed": 245, 
+					"mGreen": 172, 
+					"mBlue": 39
+				}, 
+				"DayTextColor": {
+					"mRed": 245, 
+					"mGreen": 172, 
+					"mBlue": 39
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 217, 
+					"mBlue": 198
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 217, 
+					"mBlue": 198
+				}, 
+				"TimerTextColor": {
+					"mRed": 243, 
+					"mGreen": 196, 
+					"mBlue": 62
+				}, 
+				"RewardTextColor": {
+					"mRed": 76, 
+					"mGreen": 9, 
+					"mBlue": 16
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Valenbrainz"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_VALENBRAINZ", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_VALENBRAINZ", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_VALENBRAINZ", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_VALENBRAINZ", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_VALENBRAINZ", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_VALENBRAINZ", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_VALENBRAINZ", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_VALENBRAINZ", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_VALENBRAINZ", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_VALENBRAINZ", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_VALENBRAINZ", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_VALENBRAINZ", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_VALENBRAINZ", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_VALENBRAINZ", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_VALENBRAINZ", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_RED_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_RED_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 255, 
+					"mGreen": 220, 
+					"mBlue": 242
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 220, 
+					"mBlue": 242
+				}, 
+				"DayTextColor": {
+					"mRed": 212, 
+					"mGreen": 11, 
+					"mBlue": 87
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 220, 
+					"mBlue": 242
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 220, 
+					"mBlue": 242
+				}, 
+				"TimerTextColor": {
+					"mRed": 255, 
+					"mGreen": 220, 
+					"mBlue": 242
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 220, 
+					"mBlue": 242
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"LuckOTheZombie"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_LUCKOTHEZOMBIE", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_LUCKOTHEZOMBIE", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_LUCKOTHEZOMBIE", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_LUCKOTHEZOMBIE", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_LUCKOTHEZOMBIE", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_LUCKOTHEZOMBIE", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_LUCKOTHEZOMBIE", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_LUCKOTHEZOMBIE", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LUCKOTHEZOMBIE", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LUCKOTHEZOMBIE", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_LUCKOTHEZOMBIE", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUCKOTHEZOMBIE", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUCKOTHEZOMBIE", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUCKOTHEZOMBIE", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_LUCKOTHEZOMBIE", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_LUCKOTHEZOMBIE_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_LUCKOTHEZOMBIE_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"NameColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"DayTextColor": {
+					"mRed": 0, 
+					"mGreen": 43, 
+					"mBlue": 37
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Birthdayz"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_GENERIC_CONTENT_WELL", 
+				"InnerBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGTEXTURE", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_BIRTHDAYZ", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_BIRTHDAYZ", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_BIRTHDAYZ", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_BIRTHDAYZ", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_BIRTHDAYZ", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_BIRTHDAYZ", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_BIRTHDAYZ", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_BIRTHDAYZ", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIRTHDAYZ", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIRTHDAYZ", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIRTHDAYZ", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_BIRTHDAYZ", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_TEAL_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_TEAL_DOWN", 
+				"TabTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"NameColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"DayTextColor": {
+					"mRed": 199, 
+					"mGreen": 52, 
+					"mBlue": 193
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"RewardTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}
+			}
+		}, 
+		{
+			"aliases": [
+				"Springening"
+			], 
+			"objclass": "CalendarThemeProps", 
+			"objdata": {
+				"BackgroundImage": "IMAGE_UI_CALENDAR_CONTENT_WELL_SPRINGENING", 
+				"InnerBorderImage": "IMAGE_UI_CALENDAR_DIALOGTEXTURE_SPRINGENING", 
+				"OuterBorderImage": "IMAGE_UI_DIALOG_ASSET_DIALOGBORDER_SPRINGENING", 
+				"RewardBackgroundImage": "IMAGE_UI_CALENDAR_REWARD_QUANTITY_BACKGROUND_SPRINGENING", 
+				"BottomLeftImage": "IMAGE_UI_CALENDAR_CORNER_LEFT_SPRINGENING", 
+				"BottomRightImage": "IMAGE_UI_CALENDAR_CORNER_RIGHT_SPRINGENING", 
+				"TimerCharacter": "IMAGE_UI_CALENDAR_TIMER_DECO_SPRINGENING", 
+				"MonthlyDayImage": "IMAGE_UI_CALENDAR_SCROLLBAR_SPRINGENING", 
+				"WeeklyDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SPRINGENING", 
+				"Event10DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SPRINGENING", 
+				"Event14DayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_DAY_SPRINGENING", 
+				"LargeDayImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_SPRINGENING", 
+				"Event7BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_SPRINGENING", 
+				"Event10BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_SPRINGENING", 
+				"Event14BannerImage": "IMAGE_UI_CALENDAR_CALENDAR_CARD_7DAY_SPRINGENING", 
+				"TabUpIcon": "IMAGE_UI_CALENDAR_SPRINGENING_DOWN", 
+				"TabDownIcon": "IMAGE_UI_CALENDAR_SPRINGENING_ACTIVE", 
+				"TabTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"NameColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"DayTextColor": {
+					"mRed": 231, 
+					"mGreen": 126, 
+					"mBlue": 197
+				}, 
+				"LargeDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"ClaimableDayTextColor": {
+					"mRed": 255, 
+					"mGreen": 255, 
+					"mBlue": 255
+				}, 
+				"TimerTextColor": {
+					"mRed": 250, 
+					"mGreen": 217, 
+					"mBlue": 108
+				}, 
+				"RewardTextColor": {
+					"mRed": 74, 
+					"mGreen": 163, 
+					"mBlue": 228
+				}
+			}
+		}
+	], 
+	"version": 1
+}

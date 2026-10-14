@@ -1,0 +1,69 @@
+{
+	"#comment": "Daily Quest Schedule", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "DailyQuestSchedule", 
+			"aliases": [
+				"DailyQuestSchedule"
+			], 
+			"objdata": {
+				"DailyQuestScheduleDefinitions": [
+					{
+						"UniqueName": "NewPlayerSchedule", 
+						"PlayerSegment": [
+							"NewPlayers"
+						], 
+						"StartDate": 0, 
+						"EndDate": 0, 
+						"DailyQuestDefinitions": [
+							{
+								"CompletionRequirement": 40, 
+								"Disabled": false, 
+								"QuestID": "COLLECT_SEED_PACKETS_DQ"
+							}, 
+							{
+								"CompletionRequirement": 1, 
+								"Disabled": false, 
+								"QuestID": "PLAY_LEVEL_OF_THE_DAY_DQ"
+							}, 
+							{
+								"CompletionRequirement": 2, 
+								"Disabled": false, 
+								"QuestID": "DAILY_2_ADVENTURE_DQ"
+							}, 
+							{
+								"CompletionRequirement": 1, 
+								"Disabled": false, 
+								"QuestID": "STORE_BUY_SKU_FREE_GIFT_DQ"
+							}
+						]
+					}, 
+					{
+						"UniqueName": "default", 
+						"PlayerSegment": [], 
+						"StartDate": 0, 
+						"EndDate": 0, 
+						"DailyQuestDefinitions": [
+							{
+								"CompletionRequirement": 40, 
+								"Disabled": false, 
+								"QuestID": "COLLECT_SEED_PACKETS_DQ"
+							}, 
+							{
+								"CompletionRequirement": 1, 
+								"Disabled": false, 
+								"QuestID": "PLAY_LEVEL_OF_THE_DAY_DQ"
+							}, 
+							{
+								"CompletionRequirement": 1, 
+								"Disabled": false, 
+								"QuestID": "STORE_BUY_SKU_FREE_GIFT_DQ"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

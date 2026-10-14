@@ -1,0 +1,206 @@
+{
+	"#comment": "Configuration for server connection", 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ServerConfig", 
+			"aliases": [
+				"ServerConfig"
+			], 
+			"objdata": {
+				"#comment": "web frontend ip", 
+				"ip": "https://notarealwebsitelunutics.com", 
+				"fb_app_id": "126593634205650", 
+				"fb_permissions": "email,publish_actions", 
+				"franklin_url": "https://notarealwebsitelunutics.com"
+			}
+		}, 
+		{
+			"objclass": "CDNConfig", 
+			"aliases": [
+				"CDNConfig"
+			], 
+			"objdata": {
+				"#comment": "CDN ip", 
+				"timeout": 30, 
+				"ip": "https://DenverMoon.pythonanywhere.com/"
+			}
+		}, 
+		{
+			"objclass": "AuthServerConfig", 
+			"aliases": [
+				"AuthServerConfig"
+			], 
+			"objdata": {
+				"#comment": "AuthServer ip", 
+				"ip": "https://notarealwebsitelunutics.com"
+			}
+		}, 
+		{
+			"objclass": "JoustServerConfig", 
+			"aliases": [
+				"JoustServerConfig"
+			], 
+			"objdata": {
+				"dev": "https://notarealwebsitelunutics.com", 
+				"live": "https://notarealwebsitelunutics.com", 
+				"future": "https://notarealwebsitelunutics.com", 
+				"test": "https://notarealwebsitelunutics.com"
+			}
+		}, 
+		{
+			"objclass": "MetricsServerConfig", 
+			"aliases": [
+				"MetricsServerConfig"
+			], 
+			"objdata": {
+				"CopernicusURL": "https://notarealwebsitelunutics.com", 
+				"Environment": "LIVE", 
+				"GATSURL": "https://notarealwebsitelunutics.com", 
+				"GATSEnvironment": "", 
+				"GATSConditions": []
+			}
+		}, 
+		{
+			"objclass": "SwrveServerConfig", 
+			"aliases": [
+				"SwrveServerConfigIOS"
+			], 
+			"objdata": {
+				"APIKey": "GhlWuHhw178AxkOL7U4p", 
+				"EventsServer": "https://notarealwebsitelunutics.com", 
+				"ABServer": "https://notarealwebsitelunutics.com", 
+				"GameID": 638
+			}
+		}, 
+		{
+			"objclass": "SwrveServerConfig", 
+			"aliases": [
+				"SwrveServerConfigAndroid"
+			], 
+			"objdata": {
+				"APIKey": "y1YqN4iXBLUeDXHm8KN", 
+				"EventsServer": "https://notarealwebsitelunutics.com", 
+				"GameID": 804
+			}
+		}, 
+		{
+			"objclass": "SwrveServerConfig", 
+			"aliases": [
+				"SwrveServerConfigIOSDev"
+			], 
+			"objdata": {
+				"APIKey": "3loBa749z28yVqmeyb9", 
+				"EventsServer": "https://notarealwebsitelunutics.com", 
+				"ABServer": "https://notarealwebsitelunutics.com", 
+				"GameID": 324
+			}
+		}, 
+		{
+			"objclass": "SwrveServerConfig", 
+			"aliases": [
+				"SwrveServerConfigAndroidDev"
+			], 
+			"objdata": {
+				"APIKey": "42DLidierKq8Z0R2kPm", 
+				"EventsServer": "https://notarealwebsitelunutics.com", 
+				"GameID": 805
+			}
+		}, 
+		{
+			"objclass": "SwrveServerConfig", 
+			"aliases": [
+				"SwrveServerConfigIOSLive"
+			], 
+			"objdata": {
+				"APIKey": "GhlWuHhw178AxkOL7U4p", 
+				"EventsServer": "https://notarealwebsitelunutics.com", 
+				"ABServer": "https://notarealwebsitelunutics.com", 
+				"GameID": 638
+			}
+		}, 
+		{
+			"objclass": "SwrveServerConfig", 
+			"aliases": [
+				"SwrveServerConfigAndroidLive"
+			], 
+			"objdata": {
+				"APIKey": "y1YqN4iXBLUeDXHm8KN", 
+				"EventsServer": "https://notarealwebsitelunutics.com", 
+				"GameID": 804
+			}
+		}, 
+		{
+			"objclass": "MagentoServerConfig", 
+			"aliases": [
+				"MagentoServerConfigIOS"
+			], 
+			"objdata": {
+				"ReceiptValidationURL": "https://notarealwebsitelunutics.com", 
+				"RVSURL": "https://notarealwebsitelunutics.com", 
+				"IsSandbox": false
+			}
+		}, 
+		{
+			"objclass": "MagentoServerConfig", 
+			"aliases": [
+				"MagentoServerConfigDev"
+			], 
+			"objdata": {
+				"RVSURL": "https://notarealwebsitelunutics.com", 
+				"IsSandbox": false
+			}
+		}, 
+		{
+			"objclass": "MagentoServerConfig", 
+			"aliases": [
+				"MagentoServerConfigNa"
+			], 
+			"objdata": {
+				"RVSURL": "https://notarealwebsitelunutics.com", 
+				"IsSandbox": false
+			}
+		}, 
+		{
+			"objclass": "MagentoServerConfig", 
+			"aliases": [
+				"MagentoServerConfigRow"
+			], 
+			"objdata": {
+				"RVSURL": "https://notarealwebsitelunutics.com", 
+				"IsSandbox": false
+			}
+		}, 
+		{
+			"objclass": "ForceUpdateConfig", 
+			"aliases": [
+				"ForceUpdateConfig"
+			], 
+			"objdata": {
+				"ForceUpdateURL": "https://notarealwebsitelunutics.com"
+			}
+		}, 
+		{
+			"objclass": "DraperConfig", 
+			"aliases": [
+				"DraperConfig"
+			], 
+			"objdata": {
+				"DraperURL": "https://notarealwebsitelunutics.com"
+			}
+		}, 
+		{
+			"objclass": "FBOpenGraphConfig", 
+			"aliases": [
+				"FBOpenGraphConfig"
+			], 
+			"objdata": {
+				"#comment": "fog parameters", 
+				"fog_url": "https://notarealwebsitelunutics.com", 
+				"fog_path": "/fog_consumer/v1/action", 
+				"fog_sku": "PVZ02IOS", 
+				"fog_auth": "v6s6mv450p0c54h29h0sen8s7pyv6qeyvauvo13o"
+			}
+		}
+	]
+}

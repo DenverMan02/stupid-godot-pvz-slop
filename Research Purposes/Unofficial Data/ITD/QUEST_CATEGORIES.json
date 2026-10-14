@@ -1,0 +1,87 @@
+{
+	"#comment": "Set up quest categories here!", 
+	"version": 1, 
+	"objects": [
+		{
+			"aliases": [
+				"QuestTabCategories"
+			], 
+			"objclass": "QuestTabCategories", 
+			"objdata": {
+				"Name": "QuestTabCategories", 
+				"TabCategories": [
+					"DailyActivities", 
+					"EpicQuests", 
+					"SpineQuests", 
+					"CompletedQuests"
+				], 
+				"CompletedQuestTabIdx": 3
+			}
+		}, 
+		{
+			"aliases": [
+				"DailyActivities"
+			], 
+			"objclass": "QuestTabCategoryData", 
+			"objdata": {
+				"Name": "DailyActivities", 
+				"QuestTabCategory": "DailyActivities", 
+				"QuestCategories": [
+					"DailyActivities"
+				], 
+				"TabLabel": "[QUEST_TAB_LABEL_DAILY]", 
+				"TabImageType": "normal", 
+				"TabSelectedImage": "IMAGE_UI_QUESTS_DAILY_ACTIVE", 
+				"TabUnselectedImage": "IMAGE_UI_QUESTS_DAILY_INACTIVE", 
+				"ShowTimer": true
+			}
+		}, 
+		{
+			"aliases": [
+				"EpicQuests"
+			], 
+			"objclass": "QuestTabCategoryData", 
+			"objdata": {
+				"Name": "EpicQuests", 
+				"QuestTabCategory": "EpicQuests", 
+				"QuestCategories": [
+					"Epic"
+				], 
+				"TabLabel": "[QUEST_TAB_LABEL_EPIC]", 
+				"TabImageType": "normal", 
+				"TabSelectedImage": "IMAGE_UI_QUESTS_EPIC_ACTIVE", 
+				"TabUnselectedImage": "IMAGE_UI_QUESTS_EPIC_INACTIVE"
+			}
+		}, 
+		{
+			"aliases": [
+				"SpineQuests"
+			], 
+			"objclass": "QuestTabCategoryData", 
+			"objdata": {
+				"Name": "SpineQuests", 
+				"QuestTabCategory": "SpineQuests", 
+				"QuestCategories": [
+					"Tutorial", 
+					"Egypt", 
+					"Pirate", 
+					"Cowboy", 
+					"UnlockWorld", 
+					"Future", 
+					"Dark", 
+					"Beach", 
+					"IceAge", 
+					"LostCity", 
+					"Eighties", 
+					"Dino", 
+					"Modern", 
+					"PremiumPlant"
+				], 
+				"TabLabel": "[QUEST_TAB_LABEL_SPINE]", 
+				"TabImageType": "normal", 
+				"TabSelectedImage": "IMAGE_UI_QUESTS_ACHIEVEMENTS_ACTIVE", 
+				"TabUnselectedImage": "IMAGE_UI_QUESTS_ACHIEVEMENTS_INACTIVE"
+			}
+		}
+	]
+}

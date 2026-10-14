@@ -1,0 +1,268 @@
+{
+	"#comment": "Plant Power Data!  Beware ye all who enter here!", 
+	"objects": [
+		{
+			"aliases": [
+				"wintermint_puffshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"Name": "Cost", 
+						"Values": [
+							0, 
+							0, 
+							0
+						]
+					}, 
+					{
+						"Name": "Hitpoints", 
+						"Values": [
+							100, 
+							100, 
+							100
+						]
+					}, 
+					{
+						"Name": "PacketCooldown", 
+						"Values": [
+							10, 
+							7.5, 
+							5
+						]
+					}, 
+					{
+						"Name": "PlantFoodDurationSeconds", 
+						"Values": [
+							1, 
+							1, 
+							1
+						]
+					}, 
+					{
+						"Name": "ActionDamage", 
+						"SubType": "0", 
+						"Type": "ActionDamage", 
+						"Values": [
+							20, 
+							20, 
+							20
+						]
+					}, 
+					{
+						"Name": "ActionDamagePF", 
+						"SubType": "1", 
+						"Type": "ActionDamage", 
+						"Values": [
+							20, 
+							20, 
+							20
+						]
+					}, 
+					{
+						"Name": "ActionXVelocity", 
+						"SubType": "0", 
+						"Values": [
+							333, 
+							533, 
+							733
+						]
+					}, 
+					{
+						"Name": "Puffshroom_ExpirationDurationSeconds", 
+						"Values": [
+							2000000000, 
+							2000000000, 
+							2000000000
+						]
+					}, 
+					{
+						"Name": "ActionCooldownMin", 
+						"SubType": "0", 
+						"Values": [
+							1, 
+							1, 
+							1
+						]
+					}, 
+					{
+						"Name": "ActionCooldownMax", 
+						"SubType": "0", 
+						"Values": [
+							1.15, 
+							1.15, 
+							1.15
+						]
+					}, 
+					{
+						"Name": "PlantTier", 
+						"Values": [
+							1, 
+							2, 
+							3
+						]
+					}
+				], 
+				"LevelCap": 3, 
+				"LevelCoins": [
+					0, 
+					0, 
+					0
+				], 
+				"LevelXP": [
+					5, 
+					5, 
+					5
+				], 
+				"PlantTier": [
+					1, 
+					2, 
+					3
+				], 
+				"StringStats": [
+					{
+						"Name": "Range", 
+						"Values": [
+							"", 
+							"", 
+							""
+						]
+					}
+				], 
+				"TypeName": "puffshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"wintermint_sunshroom"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"Name": "Cost", 
+						"Values": [
+							25, 
+							25, 
+							25
+						]
+					}, 
+					{
+						"Name": "PacketCooldown", 
+						"Values": [
+							6, 
+							6, 
+							6
+						]
+					}, 
+					{
+						"Name": "Hitpoints", 
+						"Values": [
+							300, 
+							300, 
+							300
+						]
+					}, 
+					{
+						"Name": "PlantTier", 
+						"Values": [
+							1, 
+							2, 
+							3
+						]
+					}
+				], 
+				"LevelCap": 3, 
+				"LevelCoins": [
+					0, 
+					0, 
+					0
+				], 
+				"LevelXP": [
+					5, 
+					5, 
+					5
+				], 
+				"PlantTier": [
+					1, 
+					2, 
+					3
+				], 
+				"StringStats": [
+					{
+						"Name": "SunshroomGrowthStages", 
+						"SubType": "SunshroomGrowth", 
+						"Type": "Power", 
+						"Values": [
+							"SunshroomNightGrowthLevel1", 
+							"SunshroomNightGrowthLevel2", 
+							"SunshroomNightGrowthLevel3"
+						]
+					}
+				], 
+				"TypeName": "sunshroom"
+			}
+		}, 
+		{
+			"aliases": [
+				"ailmint_lilypad"
+			], 
+			"objclass": "PlantLevelStats", 
+			"objdata": {
+				"FloatStats": [
+					{
+						"Name": "Cost", 
+						"Values": [
+							0, 
+							0, 
+							0
+						]
+					}, 
+					{
+						"Name": "Hitpoints", 
+						"Values": [
+							400, 
+							400, 
+							400
+						]
+					}, 
+					{
+						"Name": "PacketCooldown", 
+						"Values": [
+							10, 
+							7.5, 
+							5
+						]
+					}, 
+					{
+						"Name": "PlantTier", 
+						"Values": [
+							1, 
+							2, 
+							3
+						]
+					}
+				], 
+				"LevelCap": 3, 
+				"LevelCoins": [
+					0, 
+					0, 
+					0
+				], 
+				"LevelXP": [
+					5, 
+					5, 
+					5
+				], 
+				"PlantTier": [
+					1, 
+					2, 
+					3
+				], 
+				"TypeName": "lilypad"
+			}
+		}
+	], 
+	"version": 1
+}

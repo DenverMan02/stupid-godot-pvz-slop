@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/Peanut_Plantfood_Helmet" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="Peanut_Plantfood_Helmet">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/Plantfood_Helmet2" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="7.8" ty="8.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/Plantfood_Helmet2_damage1" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="7.8" ty="8.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/Plantfood_Helmet2_Damage2" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="7.8" ty="8.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

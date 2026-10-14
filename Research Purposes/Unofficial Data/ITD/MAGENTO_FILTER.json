@@ -1,0 +1,77 @@
+{
+	"#comment": [
+		"Magento Filter objects", 
+		"This list allows only items included in this list - any item not in this list should be excluded"
+	], 
+	"version": 1, 
+	"objects": [
+		{
+			"objclass": "ProductFilterPropertySheet", 
+			"aliases": [
+				"MagentoFilter"
+			], 
+			"objdata": {
+				"#comment": "Covers entire object Type categories - use only for types that will never fail in the future such as currencies", 
+				"ObjectTypeFilters": [
+					{
+						"Type": "coin", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "gem", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "ticket", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "fuel", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "mint", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "bundle", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "keygate", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "stargate", 
+						"WarnEnsureRealMoneyOnly": false
+					}, 
+					{
+						"Type": "sprout", 
+						"WarnEnsureGemsOnly": false
+					}, 
+					{
+						"Type": "plant", 
+						"#comment": "SubTypeFilters removed to allow any plant for sale", 
+						"SubTypeFilters": []
+					}, 
+					{
+						"Type": "gameupgrade", 
+						"WarnEnsureRealMoneyOnly": true, 
+						"#comment": "SubTypeFilters removed to allow any upgrade for sale", 
+						"SubTypeFilters": []
+					}, 
+					{
+						"Type": "costume", 
+						"#comment": "SubTypeFilters removed to allow any costume for sale", 
+						"SubTypeFilters": []
+					}, 
+					{
+						"Type": "pinata", 
+						"WarnEnsureGemsOnly": false, 
+						"WarnEnsureRealMoneyOnly": false
+					}
+				]
+			}
+		}
+	]
+}

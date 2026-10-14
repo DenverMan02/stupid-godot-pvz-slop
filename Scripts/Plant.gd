@@ -36,6 +36,7 @@ var peashooter_pf_firing: bool = false
 var peashooter_pf_peas_remaining: int = 0
 var peashooter_pf_timer: float = 0.0
 var plantfood_glow_material: ShaderMaterial = null
+var pf_vfx_node: Node2D = null
 
 var eaten_timer: float = 0.0
 
@@ -53,9 +54,48 @@ func _set_plantfood_glow(enabled: bool) -> void:
 			plantfood_glow_material.set_shader_parameter("params", Color(0.4, 1.0, 0.45, 0.65))
 			plantfood_glow_material.set_shader_parameter("intensity", 0.8)
 			sprite.material = plantfood_glow_material
+		_spawn_plantfood_vfx()
 	else:
 		if sprite.material == plantfood_glow_material:
 			sprite.material = null
+		_cleanup_plantfood_vfx()
+
+func _spawn_plantfood_vfx() -> void:
+	if pf_vfx_node != null and is_instance_valid(pf_vfx_node):
+		return
+	var vfx_json = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/plantfood_fx/plantfood_fx.anim.json"
+	var vfx_tex = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/plantfood_fx/plantfood_fx.xfl/library/"
+	if not ResourceLoader.exists(vfx_json):
+		return
+	pf_vfx_node = Node2D.new()
+	pf_vfx_node.position = visual_offset + Vector2(0.0, 15.0)
+	pf_vfx_node.z_index = 10
+	var vfx_spr = XFLSprite2D.new()
+	vfx_spr.anim_data_path = vfx_json
+	vfx_spr.textures_base_dir = vfx_tex
+	vfx_spr.autoplay = false
+	pf_vfx_node.add_child(vfx_spr)
+	add_child(pf_vfx_node)
+	vfx_spr._load_resources()
+	vfx_spr.play("plantfood_on", false)
+	vfx_spr.anim_finished.connect(func(aname):
+		if aname == "plantfood_on":
+			if is_instance_valid(vfx_spr):
+				vfx_spr.play("plantfood", true)
+		elif aname == "plantfood_off":
+			if is_instance_valid(pf_vfx_node):
+				pf_vfx_node.queue_free()
+				pf_vfx_node = null
+	)
+
+func _cleanup_plantfood_vfx() -> void:
+	if pf_vfx_node != null and is_instance_valid(pf_vfx_node):
+		var vfx_spr = pf_vfx_node.get_child(0) as XFLSprite2D
+		if vfx_spr and vfx_spr.has_animation("plantfood_off"):
+			vfx_spr.play("plantfood_off", false)
+		else:
+			pf_vfx_node.queue_free()
+			pf_vfx_node = null
 
 
 func setup_prearmed() -> void:
@@ -526,10 +566,7 @@ func _explode_potatomine() -> void:
 		lawn.add_child(exp_node)
 		exp_spr._load_resources()
 		exp_spr.play("animation", false)
-		exp_spr.anim_finished.connect(func(_a):
-			if is_instance_valid(exp_node) and not exp_node.is_queued_for_deletion():
-				exp_node.queue_free()
-		)
+		exp_spr.anim_finished.connect(exp_node.queue_free.unbind(1))
 
 		# 2. Damage zombies in range (1800 dmg)
 		# Extended slightly more left to catch zombies eating a wallnut on the adjacent tile

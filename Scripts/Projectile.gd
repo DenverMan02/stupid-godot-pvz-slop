@@ -215,10 +215,7 @@ func _spawn_splat_effect() -> void:
 
 		spr._load_resources()
 		spr.play("animation", false)
-		spr.anim_finished.connect(func(_a):
-			if is_instance_valid(splat) and not splat.is_queued_for_deletion():
-				splat.queue_free()
-		)
+		spr.anim_finished.connect(splat.queue_free.unbind(1))
 	elif projectile_type == "cabbage_giant":
 		var splat = Node2D.new()
 		splat.global_position = global_position
@@ -233,10 +230,7 @@ func _spawn_splat_effect() -> void:
 
 		spr._load_resources()
 		spr.play("plantfood_cabbageExplode", false)
-		spr.anim_finished.connect(func(_a):
-			if is_instance_valid(splat) and not splat.is_queued_for_deletion():
-				splat.queue_free()
-		)
+		spr.anim_finished.connect(splat.queue_free.unbind(1))
 
 func _on_potato_land() -> void:
 	if has_hit:

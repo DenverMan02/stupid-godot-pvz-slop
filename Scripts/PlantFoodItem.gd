@@ -61,8 +61,10 @@ func collect() -> void:
 	var tw = create_tween().set_parallel(true)
 	tw.tween_property(self, "global_position", target_pos, 0.55).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
 	tw.tween_property(self, "scale", Vector2(0.4, 0.4), 0.55)
-	tw.finished.connect(func():
-		if lawn and lawn.has_method("add_plant_food"):
-			lawn.add_plant_food(1)
-		queue_free()
-	)
+	tw.finished.connect(_on_fly_finished)
+
+func _on_fly_finished() -> void:
+	var l = get_tree().current_scene if get_tree() else null
+	if l and l.has_method("add_plant_food"):
+		l.add_plant_food(1)
+	queue_free()

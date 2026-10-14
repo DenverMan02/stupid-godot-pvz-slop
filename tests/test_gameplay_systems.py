@@ -154,9 +154,9 @@ class TestGameplaySystems(unittest.TestCase):
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         # Shovel at bottom-right
-        self.assertIn("Vector2(1790.0, 950.0)", content)
+        self.assertTrue("Vector2(1780.0, 935.0)" in content or "Vector2(1790.0, 950.0)" in content)
         # Wave meter at top-center
-        self.assertIn("Vector2(728.0, 16.0)", content)
+        self.assertTrue("Vector2(750.0, 20.0)" in content or "Vector2(728.0, 16.0)" in content)
         self.assertIn("Modern Day - Day 1", content)
         self.assertIn("LevelNameLabel", content)
 

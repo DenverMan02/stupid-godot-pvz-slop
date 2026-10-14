@@ -31,5 +31,5 @@ func _on_start() -> void:
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_sfx(click_sfx)
 
-	print("[TitleScreen] Clicked! Starting game...")
-	get_tree().change_scene_to_file("res://Scenes/Lawn.tscn")
+	print("[TitleScreen] Clicked! Entering Town...")
+	get_tree().change_scene_to_file("res://Scenes/Town.tscn")

@@ -36,7 +36,6 @@ var peashooter_pf_firing: bool = false
 var peashooter_pf_peas_remaining: int = 0
 var peashooter_pf_timer: float = 0.0
 var pf_shooter_type: String = "peashooter"
-var plantfood_glow_material: ShaderMaterial = null
 var pf_vfx_node: Node2D = null
 
 var eaten_timer: float = 0.0

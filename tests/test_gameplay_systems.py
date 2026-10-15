@@ -347,7 +347,7 @@ class TestGameplaySystems(unittest.TestCase):
 
     def test_town_rework_assets_and_ui(self):
         """Verify Town scene and script use authentic town.jpg background and UI elements."""
-        self.assertTrue(os.path.exists("Assets/Town/town_background.png"))
+        self.assertTrue(os.path.exists("Assets/Town/town_background.svg"))
         self.assertTrue(os.path.exists("Assets/Town/UI/energy_icon.png"))
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_player_profile.png"))
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_neighborville_sign.png"))
@@ -360,7 +360,7 @@ class TestGameplaySystems(unittest.TestCase):
 
         with open("Scenes/Town.tscn", "r") as f:
             tscn_code = f.read()
-        self.assertIn("res://Assets/Town/town_background.png", tscn_code)
+        self.assertIn("res://Assets/Town/town_background.svg", tscn_code)
         self.assertIn("ui_player_profile.png", tscn_code)
         self.assertIn("ui_battle_button.png", tscn_code)
         self.assertIn("ChatBox", tscn_code)

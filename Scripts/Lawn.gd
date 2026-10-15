@@ -111,8 +111,8 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 	{
 		"id": "sunflower_twin",
 		"name": "Twin Sunflower",
-		"anim_json": "res://Assets/Plants/sunflower_twin1.anim.json",
-		"tex_dir": "res://Assets/Plants/sunflower_twin1.xfl/library/",
+		"anim_json": "res://Assets/Plants/sunflower_twin.anim.json",
+		"tex_dir": "res://Assets/Plants/sunflower_twin.xfl/library/",
 		"health": 300.0,
 		"offset": Vector2(0.0, 34.0),
 	},
@@ -1188,14 +1188,14 @@ func _on_save_and_exit_pressed() -> void:
 	else:
 		get_tree().change_scene_to_file("res://Scenes/TitleScreen.tscn")
 
-func is_cell_occupied(col: int, row: int) -> bool:
+func is_cell_occupied(col: int, row: int, ignore_projectile: Projectile = null) -> bool:
 	for p in plants_container.get_children():
 		if p.get("col") == col and p.get("row") == row and not p.is_queued_for_deletion():
 			return true
 	var proj_container = get_node_or_null("Projectiles")
 	if proj_container:
 		for pr in proj_container.get_children():
-			if pr is Projectile and not pr.is_queued_for_deletion() and pr.projectile_type == "potato_pf":
+			if pr is Projectile and not pr.is_queued_for_deletion() and pr != ignore_projectile and pr.projectile_type == "potato_pf":
 				if pr.target_cell == Vector2i(col, row):
 					return true
 	return false

@@ -6,12 +6,14 @@ signal collected
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var area: Area2D = $Area2D
 
+var xfl_sprite: XFLSprite2D = null
 var is_collected: bool = false
 var ground_y: float = 0.0
 var despawn_timer: float = 16.0
 
 func _ready() -> void:
 	ground_y = position.y
+	_setup_sprite()
 	# Pop up arc
 	var tw = create_tween().set_parallel(false)
 	var peak_y = ground_y - 65.0
@@ -22,12 +24,31 @@ func _ready() -> void:
 	if area:
 		area.input_event.connect(_on_input_event)
 
+func _setup_sprite() -> void:
+	var pf_json = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/plantfood_pickup/plantfood_pickup.anim.json"
+	var pf_tex = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/plantfood_pickup/plantfood_pickup.xfl/library/"
+	if ResourceLoader.exists(pf_json):
+		var spr_node = get_node_or_null("Sprite2D")
+		if spr_node:
+			spr_node.visible = false
+		xfl_sprite = XFLSprite2D.new()
+		xfl_sprite.name = "XFLSprite2D"
+		xfl_sprite.anim_data_path = pf_json
+		xfl_sprite.textures_base_dir = pf_tex
+		xfl_sprite.scale = Vector2(0.85, 0.85)
+		xfl_sprite.autoplay = false
+		add_child(xfl_sprite)
+		xfl_sprite._load_resources()
+		xfl_sprite.play("idle", true)
+
 func _start_idle_bob() -> void:
 	if is_collected:
 		return
-	var tw = create_tween().set_loops()
-	tw.tween_property(sprite, "position:y", -8.0, 0.7).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	tw.tween_property(sprite, "position:y", 0.0, 0.7).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	var target_node = xfl_sprite if xfl_sprite else sprite
+	if target_node:
+		var tw = create_tween().set_loops()
+		tw.tween_property(target_node, "position:y", -8.0, 0.7).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+		tw.tween_property(target_node, "position:y", 0.0, 0.7).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func _process(delta: float) -> void:
 	if is_collected:

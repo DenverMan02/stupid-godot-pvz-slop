@@ -263,13 +263,13 @@ func _on_potato_land() -> void:
 		return
 
 	# If target cell is already occupied, bounce to another unoccupied tile or launch off-screen
-	if lawn.has_method("is_cell_occupied") and lawn.is_cell_occupied(target_cell.x, target_cell.y):
+	if lawn.has_method("is_cell_occupied") and lawn.is_cell_occupied(target_cell.x, target_cell.y, self):
 		var grid = lawn.get("grid")
 		if grid and ("rows" in grid) and ("columns" in grid):
 			var unoccupied: Array[Vector2i] = []
 			for r in range(grid.rows):
 				for c in range(grid.columns):
-					if not lawn.is_cell_occupied(c, r):
+					if not lawn.is_cell_occupied(c, r, self):
 						unoccupied.append(Vector2i(c, r))
 
 			if not unoccupied.is_empty():

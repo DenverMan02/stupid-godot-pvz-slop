@@ -66,6 +66,8 @@ func set_female_variant(val: bool) -> void:
 				sprite.play(sprite.current_animation, sprite.loop)
 
 var plantfood_glow_material: ShaderMaterial = null
+var pf_vfx_node1: XFLSprite2D = null
+var pf_vfx_node2: XFLSprite2D = null
 
 func setup_plant_food(val: bool = true) -> void:
 	has_plant_food = val
@@ -86,10 +88,43 @@ func _update_plant_food_visuals() -> void:
 			plantfood_glow_material.set_shader_parameter("intensity", 0.8)
 			sprite.material = plantfood_glow_material
 		sprite.modulate = Color.WHITE
+
+		var pf_json = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/plantfood_pickup/plantfood_pickup.anim.json"
+		var pf_tex = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/plantfood_pickup/plantfood_pickup.xfl/library/"
+		if ResourceLoader.exists(pf_json):
+			if pf_vfx_node1 == null:
+				pf_vfx_node1 = XFLSprite2D.new()
+				pf_vfx_node1.name = "PlantFoodVFX1"
+				pf_vfx_node1.anim_data_path = pf_json
+				pf_vfx_node1.textures_base_dir = pf_tex
+				pf_vfx_node1.scale = Vector2(0.9, 0.9)
+				pf_vfx_node1.position = Vector2(0.0, -50.0)
+				pf_vfx_node1.z_index = 5
+				add_child(pf_vfx_node1)
+				pf_vfx_node1._load_resources()
+				pf_vfx_node1.play("animation", true)
+
+			if pf_vfx_node2 == null:
+				pf_vfx_node2 = XFLSprite2D.new()
+				pf_vfx_node2.name = "PlantFoodVFX2"
+				pf_vfx_node2.anim_data_path = pf_json
+				pf_vfx_node2.textures_base_dir = pf_tex
+				pf_vfx_node2.scale = Vector2(0.9, 0.9)
+				pf_vfx_node2.position = Vector2(0.0, -50.0)
+				pf_vfx_node2.z_index = 6
+				add_child(pf_vfx_node2)
+				pf_vfx_node2._load_resources()
+				pf_vfx_node2.play("animation2", true)
 	else:
 		if sprite.material == plantfood_glow_material:
 			sprite.material = null
 		sprite.modulate = Color.WHITE
+		if pf_vfx_node1 and is_instance_valid(pf_vfx_node1):
+			pf_vfx_node1.queue_free()
+			pf_vfx_node1 = null
+		if pf_vfx_node2 and is_instance_valid(pf_vfx_node2):
+			pf_vfx_node2.queue_free()
+			pf_vfx_node2 = null
 
 func setup_flag_variant() -> void:
 	is_flag_zombie = true

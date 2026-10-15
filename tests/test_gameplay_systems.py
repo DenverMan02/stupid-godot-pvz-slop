@@ -298,5 +298,69 @@ class TestGameplaySystems(unittest.TestCase):
             lawn_code = f.read()
         self.assertIn("func _setup_lawn_mowers()", lawn_code)
         self.assertIn("Vector2(705.0, row_y)", lawn_code)
+
+    def test_plantfood_pickup_vfx_and_item(self):
+        """Verify plantfood pickup animations: idle for dropped item, animation/animation2 for carrying zombies."""
+        with open("Scripts/PlantFoodItem.gd", "r") as f:
+            item_code = f.read()
+        self.assertIn("plantfood_pickup.anim.json", item_code)
+        self.assertIn('play("idle", true)', item_code)
+
+        with open("Scripts/Zombie.gd", "r") as f:
+            zombie_code = f.read()
+        self.assertIn("plantfood_pickup.anim.json", zombie_code)
+        self.assertIn('play("animation", true)', zombie_code)
+        self.assertIn('play("animation2", true)', zombie_code)
+        self.assertIn("pf_vfx_node1", zombie_code)
+        self.assertIn("pf_vfx_node2", zombie_code)
+
+    def test_yellow_twin_sunflower_assets(self):
+        """Verify yellow Twin Sunflower assets are used in PLANT_REGISTRY."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn('"anim_json": "res://Assets/Plants/sunflower_twin.anim.json"', lawn_code)
+        self.assertIn('"tex_dir": "res://Assets/Plants/sunflower_twin.xfl/library/"', lawn_code)
+        self.assertTrue(os.path.exists("Assets/Plants/sunflower_twin.anim.json"))
+        self.assertTrue(os.path.exists("Assets/Plants/sunflower_twin.xfl"))
+
+    def test_potato_mine_no_infinite_bounce(self):
+        """Verify potato mine projectile passes self to is_cell_occupied so it does not bounce infinitely."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("func is_cell_occupied(col: int, row: int, ignore_projectile: Projectile = null)", lawn_code)
+        self.assertIn("pr != ignore_projectile", lawn_code)
+
+        with open("Scripts/Projectile.gd", "r") as f:
+            proj_code = f.read()
+        self.assertIn("lawn.is_cell_occupied(target_cell.x, target_cell.y, self)", proj_code)
+        self.assertIn("not lawn.is_cell_occupied(c, r, self)", proj_code)
+
+    def test_town_rework_assets_and_ui(self):
+        """Verify Town scene and script use generated town background and concept building cutouts."""
+        self.assertTrue(os.path.exists("Assets/Town/town_background.png"))
+        for b_name in [
+            "building_player_house.png",
+            "building_dave_workshop.png",
+            "building_taco_park.png",
+            "building_zen_garden.png",
+            "building_arena.png",
+            "building_devour_tower.png",
+            "building_zomboss_lab.png"
+        ]:
+            self.assertTrue(os.path.exists(os.path.join("Assets/Town", b_name)))
+
+        with open("Scenes/Town.tscn", "r") as f:
+            tscn_code = f.read()
+        self.assertIn("res://Assets/Town/town_background.png", tscn_code)
+        self.assertIn("building_player_house.png", tscn_code)
+        self.assertIn("building_zomboss_lab.png", tscn_code)
+
+        with open("Scripts/Town.gd", "r") as f:
+            town_code = f.read()
+        self.assertIn("BUILDING_METADATA", town_code)
+        self.assertIn("Crazy Dave's Workshop", town_code)
+        self.assertIn("Zomboss Test Lab", town_code)
+        self.assertIn("_on_battle_button_pressed", town_code)
+
 if __name__ == "__main__":
     unittest.main()

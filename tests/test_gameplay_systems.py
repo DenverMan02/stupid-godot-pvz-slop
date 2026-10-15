@@ -348,6 +348,7 @@ class TestGameplaySystems(unittest.TestCase):
     def test_town_rework_assets_and_ui(self):
         """Verify the black town canvas, separate concept renders, and non-duplicated UI."""
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box_shell.svg"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box_shell_guild.svg"))
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_bottom_shelf.png"))
         self.assertTrue(os.path.exists("Scripts/white_background_cutout.gdshader"))
         for asset in [

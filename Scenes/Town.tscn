@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://c_town_scene_id_003"]
+[gd_scene load_steps=16 format=3 uid="uid://c_town_scene_id_003"]
 
 [ext_resource type="Script" path="res://Scripts/Town.gd" id="1_town_script"]
-[ext_resource type="Texture2D" path="res://Assets/Town/town_background.svg" id="2_town_bg"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_player_profile.png" id="3_player_profile"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_neighborville_sign.png" id="4_neighborville_sign"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/energy_icon.png" id="5_energy_icon"]
@@ -9,8 +8,13 @@
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/gem_icon.png" id="7_gem_icon"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/plus_button.png" id="8_plus_btn"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/settings_gear.png" id="9_gear_btn"]
-[ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_chat_box.png" id="10_chat_box"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_battle_button.png" id="11_battle_btn"]
+[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_PlayerHouse.jpg" id="12_house_render"]
+[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_DaveWorkshop.jpg" id="13_workshop_render"]
+[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_ZenGarden.jpg" id="14_zen_render"]
+[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_Arena.jpg" id="15_arena_render"]
+[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_DevourTower.jpg" id="16_tower_render"]
+[ext_resource type="Shader" path="res://Scripts/white_background_cutout.gdshader" id="17_white_bg_shader"]
 
 [node name="Town" type="Control"]
 layout_mode = 3
@@ -21,16 +25,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_town_script")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_town_bg")
-expand_mode = 1
-stretch_mode = 6
+color = Color(0, 0, 0, 1)
 
 [node name="Buildings" type="Control" parent="."]
 layout_mode = 1
@@ -43,10 +45,22 @@ grow_vertical = 2
 [node name="Player_House" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 180.0
-offset_top = 450.0
-offset_right = 530.0
-offset_bottom = 760.0
+offset_left = 70.0
+offset_top = 380.0
+offset_right = 520.0
+offset_bottom = 720.0
+
+[node name="Render" type="TextureRect" parent="Buildings/Player_House"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_house_render")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
 
 [node name="Button" type="Button" parent="Buildings/Player_House"]
 layout_mode = 1
@@ -61,10 +75,22 @@ flat = true
 [node name="Dave_Workshop" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 570.0
-offset_top = 280.0
-offset_right = 880.0
-offset_bottom = 570.0
+offset_left = 400.0
+offset_top = 220.0
+offset_right = 850.0
+offset_bottom = 550.0
+
+[node name="Render" type="TextureRect" parent="Buildings/Dave_Workshop"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_workshop_render")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
 
 [node name="Button" type="Button" parent="Buildings/Dave_Workshop"]
 layout_mode = 1
@@ -79,10 +105,22 @@ flat = true
 [node name="Zen_Garden" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 930.0
-offset_top = 200.0
-offset_right = 1240.0
-offset_bottom = 480.0
+offset_left = 820.0
+offset_top = 260.0
+offset_right = 1230.0
+offset_bottom = 560.0
+
+[node name="Render" type="TextureRect" parent="Buildings/Zen_Garden"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_zen_render")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
 
 [node name="Button" type="Button" parent="Buildings/Zen_Garden"]
 layout_mode = 1
@@ -97,10 +135,22 @@ flat = true
 [node name="Guildhall" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 1260.0
-offset_top = 540.0
-offset_right = 1620.0
-offset_bottom = 880.0
+offset_left = 1030.0
+offset_top = 470.0
+offset_right = 1500.0
+offset_bottom = 820.0
+
+[node name="Render" type="TextureRect" parent="Buildings/Guildhall"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_arena_render")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
 
 [node name="Button" type="Button" parent="Buildings/Guildhall"]
 layout_mode = 1
@@ -115,10 +165,22 @@ flat = true
 [node name="Devour_Tower" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 1570.0
-offset_top = 100.0
-offset_right = 1860.0
-offset_bottom = 450.0
+offset_left = 1460.0
+offset_top = 120.0
+offset_right = 1890.0
+offset_bottom = 520.0
+
+[node name="Render" type="TextureRect" parent="Buildings/Devour_Tower"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_tower_render")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
 
 [node name="Button" type="Button" parent="Buildings/Devour_Tower"]
 layout_mode = 1

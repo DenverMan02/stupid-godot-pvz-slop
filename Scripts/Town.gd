@@ -67,6 +67,7 @@ func _ready() -> void:
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_music(AudioManager.title_music)
 
+	_setup_concept_render_materials()
 	_setup_top_hud()
 	_setup_chat_box()
 	_setup_bottom_shelf()
@@ -74,6 +75,25 @@ func _ready() -> void:
 	_setup_modal()
 	_connect_building_buttons()
 	_start_energy_timer()
+
+func _setup_concept_render_materials() -> void:
+	# Each concept render is a JPG on white. A shader removes the near-white
+	# backdrop so the original illustrations sit on the black canvas.
+	var white_bg_shader = load("res://Scripts/white_background_cutout.gdshader") as Shader
+	if not white_bg_shader:
+		push_warning("Town: could not load the concept-render background shader.")
+		return
+
+	var building_names = ["Player_House", "Dave_Workshop", "Zen_Garden", "Guildhall", "Devour_Tower"]
+	for building_name in building_names:
+		var render = get_node_or_null("Buildings/" + building_name + "/Render") as TextureRect
+		if render:
+			var material = ShaderMaterial.new()
+			material.shader = white_bg_shader
+			material.set_shader_parameter("white_threshold", 0.985)
+			material.set_shader_parameter("feather_width", 0.015)
+			material.set_shader_parameter("neutral_tolerance", 0.08)
+			render.material = material
 
 func _setup_top_hud() -> void:
 	var hud = get_node_or_null("TopHUD")
@@ -196,7 +216,7 @@ func _setup_chat_box() -> void:
 
 	# Background TextureRect
 	var bg = TextureRect.new()
-	bg.texture = load("res://Assets/Town/UI/ui_chat_box.png")
+	bg.texture = load("res://Assets/Town/UI/ui_chat_box_shell.svg")
 	bg.size = Vector2(440.0, 390.0)
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	bg.stretch_mode = TextureRect.STRETCH_SCALE
@@ -209,6 +229,11 @@ func _setup_chat_box() -> void:
 	world_tab_btn.size = Vector2(130.0, 48.0)
 	world_tab_btn.focus_mode = Control.FOCUS_NONE
 	world_tab_btn.flat = true
+	world_tab_btn.add_theme_font_override("font", load(FONT_PATH))
+	world_tab_btn.add_theme_font_size_override("font_size", 22)
+	world_tab_btn.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
+	world_tab_btn.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	world_tab_btn.add_theme_constant_override("outline_size", 4)
 	world_tab_btn.pressed.connect(func(): _switch_chat_tab("WORLD"))
 	chat_root.add_child(world_tab_btn)
 
@@ -218,6 +243,11 @@ func _setup_chat_box() -> void:
 	guild_tab_btn.size = Vector2(130.0, 48.0)
 	guild_tab_btn.focus_mode = Control.FOCUS_NONE
 	guild_tab_btn.flat = true
+	guild_tab_btn.add_theme_font_override("font", load(FONT_PATH))
+	guild_tab_btn.add_theme_font_size_override("font_size", 22)
+	guild_tab_btn.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
+	guild_tab_btn.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	guild_tab_btn.add_theme_constant_override("outline_size", 4)
 	guild_tab_btn.pressed.connect(func(): _switch_chat_tab("GUILD"))
 	chat_root.add_child(guild_tab_btn)
 
@@ -257,41 +287,39 @@ func _setup_bottom_shelf() -> void:
 	if not shelf:
 		return
 
-	# Wooden Shelf Base
+	# This artwork already contains the four icons and labels. Keep it as the
+	# single visual source and place transparent hit targets over each item.
 	var shelf_bg = TextureRect.new()
 	shelf_bg.texture = load("res://Assets/Town/UI/ui_bottom_shelf.png")
-	shelf_bg.size = Vector2(760.0, 220.0)
-	shelf_bg.position = Vector2(0.0, 0.0)
+	shelf_bg.position = Vector2(55.0, 0.0)
+	shelf_bg.size = Vector2(649.0, 220.0)
 	shelf_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	shelf_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	shelf_bg.stretch_mode = TextureRect.STRETCH_SCALE
+	shelf_bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	shelf.add_child(shelf_bg)
 
-	# 4 Action Buttons: DECK, ALMANAC, GUILD, FRIENDS
 	var btn_configs = [
-		{"name": "Deck", "tex": "res://Assets/Town/UI/btn_deck.png", "x": 55.0, "title": "Seed Deck", "desc": "Choose your plant line-up for future lawn battles and world levels."},
-		{"name": "Almanac", "tex": "res://Assets/Town/UI/btn_almanac.png", "x": 225.0, "title": "Suburban Almanac", "desc": "Study official stats, weaknesses, and plant food powers for every plant and zombie."},
-		{"name": "Guild", "tex": "res://Assets/Town/UI/btn_guild.png", "x": 395.0, "title": "Guild Headquarters", "desc": "Join an alliance of defenders to tackle weekly Boss raids and earn mints."},
-		{"name": "Friends", "tex": "res://Assets/Town/UI/btn_friends.png", "x": 565.0, "title": "Friend List", "desc": "Send daily sun gifts to neighbors and challenge buddies in friendly lawn duels."}
+		{"x": 113.0, "title": "Seed Deck", "desc": "Choose your plant line-up for future lawn battles and world levels.", "tex": "res://Assets/Town/UI/btn_deck.png"},
+		{"x": 247.0, "title": "Suburban Almanac", "desc": "Study official stats, weaknesses, and plant food powers for every plant and zombie.", "tex": "res://Assets/Town/UI/btn_almanac.png"},
+		{"x": 387.0, "title": "Guild Headquarters", "desc": "Join an alliance of defenders to tackle weekly Boss raids and earn mints.", "tex": "res://Assets/Town/UI/btn_guild.png"},
+		{"x": 535.0, "title": "Friend List", "desc": "Send daily sun gifts to neighbors and challenge buddies in friendly lawn duels.", "tex": "res://Assets/Town/UI/btn_friends.png"}
 	]
 
 	for cfg in btn_configs:
-		var btn = TextureButton.new()
-		btn.texture_normal = load(cfg["tex"])
-		btn.position = Vector2(cfg["x"], 18.0)
-		btn.size = Vector2(145.0, 180.0)
-		btn.ignore_texture_size = true
-		btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
+		var btn = Button.new()
+		btn.text = ""
+		btn.position = Vector2(cfg["x"], 8.0)
+		btn.size = Vector2(112.0, 180.0)
+		btn.flat = true
 		btn.focus_mode = Control.FOCUS_NONE
-		btn.pivot_offset = btn.size / 2.0
 
-		btn.mouse_entered.connect(func():
-			var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-			tw.tween_property(btn, "scale", Vector2(1.08, 1.08), 0.18)
-		)
-		btn.mouse_exited.connect(func():
-			var tw = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
-			tw.tween_property(btn, "scale", Vector2.ONE, 0.15)
-		)
+		var transparent_style = StyleBoxFlat.new()
+		transparent_style.bg_color = Color(0.0, 0.0, 0.0, 0.0)
+		btn.add_theme_stylebox_override("normal", transparent_style)
+		btn.add_theme_stylebox_override("hover", transparent_style)
+		btn.add_theme_stylebox_override("pressed", transparent_style)
+		btn.add_theme_stylebox_override("focus", transparent_style)
+
 		btn.pressed.connect(func():
 			_play_click_sfx()
 			_show_modal(cfg["title"], cfg["desc"], cfg["tex"])

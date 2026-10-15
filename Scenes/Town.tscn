@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://c_town_scene_id_002"]
+[gd_scene load_steps=12 format=3 uid="uid://c_town_scene_id_003"]
 
 [ext_resource type="Script" path="res://Scripts/Town.gd" id="1_town_script"]
 [ext_resource type="Texture2D" path="res://Assets/Town/town_background.png" id="2_town_bg"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_player_house.png" id="3_player_house"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_dave_workshop.png" id="4_dave_workshop"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_taco_park.png" id="5_taco_park"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_zen_garden.png" id="6_zen_garden"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_arena.png" id="7_arena"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_devour_tower.png" id="8_devour_tower"]
-[ext_resource type="Texture2D" path="res://Assets/Town/building_zomboss_lab.png" id="9_zomboss_lab"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_player_profile.png" id="3_player_profile"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_neighborville_sign.png" id="4_neighborville_sign"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/energy_icon.png" id="5_energy_icon"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/coin_icon.png" id="6_coin_icon"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/gem_icon.png" id="7_gem_icon"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/plus_button.png" id="8_plus_btn"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/settings_gear.png" id="9_gear_btn"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_chat_box.png" id="10_chat_box"]
+[ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_battle_button.png" id="11_battle_btn"]
 
 [node name="Town" type="Control"]
 layout_mode = 3
@@ -30,13 +32,6 @@ texture = ExtResource("2_town_bg")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="TopHUD" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 100.0
-grow_horizontal = 2
-
 [node name="Buildings" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -48,149 +43,169 @@ grow_vertical = 2
 [node name="Player_House" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 110.0
-offset_top = 130.0
-offset_right = 430.0
-offset_bottom = 430.0
+offset_left = 180.0
+offset_top = 450.0
+offset_right = 530.0
+offset_bottom = 760.0
 
-[node name="Button" type="TextureButton" parent="Buildings/Player_House"]
+[node name="Button" type="Button" parent="Buildings/Player_House"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-texture_normal = ExtResource("3_player_house")
-ignore_texture_size = true
-stretch_mode = 5
+flat = true
 
 [node name="Dave_Workshop" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 550.0
-offset_top = 120.0
-offset_right = 890.0
-offset_bottom = 420.0
+offset_left = 570.0
+offset_top = 280.0
+offset_right = 880.0
+offset_bottom = 570.0
 
-[node name="Button" type="TextureButton" parent="Buildings/Dave_Workshop"]
+[node name="Button" type="Button" parent="Buildings/Dave_Workshop"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-texture_normal = ExtResource("4_dave_workshop")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="Taco_Park" type="Control" parent="Buildings"]
-layout_mode = 1
-anchors_preset = 0
-offset_left = 1010.0
-offset_top = 120.0
-offset_right = 1360.0
-offset_bottom = 420.0
-
-[node name="Button" type="TextureButton" parent="Buildings/Taco_Park"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_bottom = -50.0
-grow_horizontal = 2
-grow_vertical = 2
-focus_mode = 0
-texture_normal = ExtResource("5_taco_park")
-ignore_texture_size = true
-stretch_mode = 5
+flat = true
 
 [node name="Zen_Garden" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 1480.0
-offset_top = 130.0
-offset_right = 1820.0
-offset_bottom = 430.0
+offset_left = 930.0
+offset_top = 200.0
+offset_right = 1240.0
+offset_bottom = 480.0
 
-[node name="Button" type="TextureButton" parent="Buildings/Zen_Garden"]
+[node name="Button" type="Button" parent="Buildings/Zen_Garden"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-texture_normal = ExtResource("6_zen_garden")
-ignore_texture_size = true
-stretch_mode = 5
+flat = true
 
-[node name="Arena" type="Control" parent="Buildings"]
+[node name="Guildhall" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 120.0
-offset_top = 490.0
-offset_right = 470.0
-offset_bottom = 790.0
+offset_left = 1260.0
+offset_top = 540.0
+offset_right = 1620.0
+offset_bottom = 880.0
 
-[node name="Button" type="TextureButton" parent="Buildings/Arena"]
+[node name="Button" type="Button" parent="Buildings/Guildhall"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-texture_normal = ExtResource("7_arena")
-ignore_texture_size = true
-stretch_mode = 5
+flat = true
 
 [node name="Devour_Tower" type="Control" parent="Buildings"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 640.0
-offset_top = 470.0
-offset_right = 930.0
-offset_bottom = 790.0
+offset_left = 1570.0
+offset_top = 100.0
+offset_right = 1860.0
+offset_bottom = 450.0
 
-[node name="Button" type="TextureButton" parent="Buildings/Devour_Tower"]
+[node name="Button" type="Button" parent="Buildings/Devour_Tower"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-texture_normal = ExtResource("8_devour_tower")
-ignore_texture_size = true
+flat = true
+
+[node name="TopHUD" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 180.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="PlayerProfile" type="TextureRect" parent="TopHUD"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 450.0
+offset_bottom = 190.0
+texture = ExtResource("3_player_profile")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="Zomboss_Lab" type="Control" parent="Buildings"]
-layout_mode = 1
-anchors_preset = 0
-offset_left = 1080.0
-offset_top = 480.0
-offset_right = 1420.0
-offset_bottom = 790.0
-
-[node name="Button" type="TextureButton" parent="Buildings/Zomboss_Lab"]
+[node name="ProfileButton" type="Button" parent="TopHUD/PlayerProfile"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
-texture_normal = ExtResource("9_zomboss_lab")
-ignore_texture_size = true
+flat = true
+
+[node name="NeighborvilleSign" type="TextureRect" parent="TopHUD"]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 135.0
+offset_right = 1190.0
+offset_bottom = 250.0
+texture = ExtResource("4_neighborville_sign")
+expand_mode = 1
 stretch_mode = 5
+
+[node name="EnergyBarContainer" type="Control" parent="TopHUD"]
+layout_mode = 0
+offset_left = 740.0
+offset_top = 25.0
+offset_right = 1150.0
+offset_bottom = 115.0
+
+[node name="CurrenciesContainer" type="Control" parent="TopHUD"]
+layout_mode = 0
+offset_left = 1200.0
+offset_top = 20.0
+offset_right = 1890.0
+offset_bottom = 110.0
+
+[node name="ChatBox" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -420.0
+offset_right = 480.0
+offset_bottom = -20.0
+grow_vertical = 0
+
+[node name="BottomShelf" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -380.0
+offset_top = -220.0
+offset_right = 380.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="BattleButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -199,22 +214,13 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -380.0
-offset_top = -180.0
-offset_right = -60.0
-offset_bottom = -60.0
+offset_left = -500.0
+offset_top = -250.0
+offset_right = -40.0
+offset_bottom = -30.0
 grow_horizontal = 0
 grow_vertical = 0
 focus_mode = 0
+texture_normal = ExtResource("11_battle_btn")
 ignore_texture_size = true
 stretch_mode = 5
-
-[node name="ComingSoonModal" type="ColorRect" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 0.7)

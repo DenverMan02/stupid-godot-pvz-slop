@@ -1337,8 +1337,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			elif debug_mode and grid.is_valid_cell(cell.x, cell.y):
 				spawn_plant_at(cell.x, cell.y, selected_plant_index)
 
-		# Middle-click directly triggers plant food on hovered plant
-		elif event.button_index == MOUSE_BUTTON_MIDDLE:
+		# Middle-click directly triggers plant food on hovered plant (debug cheat only)
+		elif event.button_index == MOUSE_BUTTON_MIDDLE and debug_mode:
 			var target_p = _get_plant_at_cell(cell.x, cell.y)
 			if target_p:
 				use_plant_food_on(target_p)

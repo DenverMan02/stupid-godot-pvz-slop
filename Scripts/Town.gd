@@ -1,8 +1,8 @@
 extends Control
 
-## PvZ2 Suburbia Town Map Scene
-## Interactive hub providing access to Player House, Dave's Workshop, Taco Park,
-## Zen Garden, The Arena, Devour Tower, and Zomboss Test Lab.
+## PvZ2 Suburbia Town Map Scene (Neighborville Hub)
+## Interactive hub providing access to My House, Crazy Dave's Workshop,
+## Zen Garden, Guildhall, Devour Tower, and Deck/Almanac/Guild/Friends.
 
 const FONT_PATH = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
 
@@ -10,39 +10,29 @@ var click_sfx: AudioStream = preload("res://Audio/SFX/click_buy_button.ogg")
 
 const BUILDING_METADATA = {
 	"Player_House": {
-		"name": "Player's House",
+		"name": "My House",
 		"desc": "Home sweet home! Inspect your collected plants, view player achievements, and manage your defensive lawn setups.",
 		"icon": "res://Assets/Town/building_player_house.png"
 	},
 	"Dave_Workshop": {
 		"name": "Crazy Dave's Workshop",
-		"desc": "Upgrade tactical gadgets, unlock extra Plant Food slots, craft plant boosts, and tune up Penny for world expeditions!",
+		"desc": "Crazy Dave's tactical workshop! Upgrade plant food slots, tinker with Penny, and craft plant boosts for world expeditions.",
 		"icon": "res://Assets/Town/building_dave_workshop.png"
-	},
-	"Taco_Park": {
-		"name": "Taco Park",
-		"desc": "The bustling heart of Suburbia! Enjoy gourmet hot sauce tacos with Dave to earn daily energy refills and special plant buffs.",
-		"icon": "res://Assets/Town/building_taco_park.png"
 	},
 	"Zen_Garden": {
 		"name": "Zen Garden",
 		"desc": "Nurture rare sprouts, tend to flowering plants with your watering can, and harvest golden coins and permanent mastery boosts.",
 		"icon": "res://Assets/Town/building_zen_garden.png"
 	},
-	"Arena": {
-		"name": "The Arena",
-		"desc": "Engage in competitive tournaments! Battle against zombie hordes, climb weekly leagues, and claim champion crowns and mint rewards.",
+	"Guildhall": {
+		"name": "Guildhall",
+		"desc": "Gather with fellow plant defenders, coordinate alliance raids against Dr. Zomboss, and earn exclusive guild trophies.",
 		"icon": "res://Assets/Town/building_arena.png"
 	},
 	"Devour_Tower": {
 		"name": "Devour Tower",
 		"desc": "Climb the perilous endless tower! Test your survival skills against increasingly ruthless waves of exotic zombie invaders.",
 		"icon": "res://Assets/Town/building_devour_tower.png"
-	},
-	"Zomboss_Lab": {
-		"name": "Zomboss Test Lab",
-		"desc": "Infiltrate Dr. Zomboss' clandestine laboratory. Analyze classified mechanical prototypes and confront rogue robotic bosses!",
-		"icon": "res://Assets/Town/building_zomboss_lab.png"
 	}
 }
 
@@ -54,173 +44,306 @@ var modal_desc_lbl: Label = null
 var modal_enter_btn: TextureButton = null
 var modal_close_btn: TextureButton = null
 
+var energy_timer_seconds: int = 255
+var timer_lbl: Label = null
+
+var chat_current_tab: String = "WORLD"
+var chat_labels_container: VBoxContainer = null
+
+const CHAT_MESSAGES = {
+	"WORLD": [
+		"[color=#9fd944][World][/color] [color=#ffde42]ZombieSlayer_99:[/color] Anyone want to raid Devour Tower?",
+		"[color=#9fd944][World][/color] [color=#61c7ff]PlantLover:[/color] Need a group for daily quests!",
+		"[color=#9fd944][World][/color] [color=#ff94d2]GamerRose:[/color] Just unlocked Primal Peashooter!"
+	],
+	"GUILD": [
+		"[color=#d974ff][Guild][/color] [color=#ffae42]Dave_Fan:[/color] Meet at the Guildhall for boss battle!",
+		"[color=#d974ff][Guild][/color] [color=#9fd944]PeashooterPRO:[/color] Donated 500 guild coins to bank.",
+		"[color=#d974ff][Guild][/color] [color=#ffde42]ZombieSlayer_99:[/color] Ready when you all are!"
+	]
+}
+
 func _ready() -> void:
 	if get_node_or_null("/root/AudioManager"):
 		AudioManager.play_music(AudioManager.title_music)
 
 	_setup_top_hud()
-	_setup_building_badges()
+	_setup_chat_box()
+	_setup_bottom_shelf()
 	_setup_battle_button()
 	_setup_modal()
 	_connect_building_buttons()
+	_start_energy_timer()
 
 func _setup_top_hud() -> void:
 	var hud = get_node_or_null("TopHUD")
 	if not hud:
 		return
 
-	# Dark translucent wood banner strip
-	var bar_bg = ColorRect.new()
-	bar_bg.size = Vector2(1920.0, 90.0)
-	bar_bg.color = Color(0.12, 0.08, 0.05, 0.85)
-	bar_bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	hud.add_child(bar_bg)
+	# 1. Player Profile Button
+	var profile_btn = hud.get_node_or_null("PlayerProfile/ProfileButton")
+	if profile_btn:
+		profile_btn.pressed.connect(func():
+			_play_click_sfx()
+			_show_modal("Player Profile", "Level 19 Suburbia Champion • 14 Plants Unlocked • 82 Levels Mastered", "res://Assets/Town/UI/ui_player_profile.png")
+		)
 
-	# Left: Player Profile Card
-	var profile = HBoxContainer.new()
-	profile.position = Vector2(30.0, 10.0)
-	profile.size = Vector2(400.0, 70.0)
-	profile.add_theme_constant_override("separation", 16)
+	# 2. Energy Bar (Lightning + Bar + Timer)
+	var energy_container = hud.get_node_or_null("EnergyBarContainer")
+	if energy_container:
+		var energy_bg = ColorRect.new()
+		energy_bg.size = Vector2(280.0, 48.0)
+		energy_bg.position = Vector2(35.0, 10.0)
+		energy_bg.color = Color(0.12, 0.08, 0.04, 0.85)
+		energy_container.add_child(energy_bg)
 
-	var avatar = TextureRect.new()
-	avatar.custom_minimum_size = Vector2(70.0, 70.0)
-	avatar.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	avatar.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button.png")
-	profile.add_child(avatar)
+		var energy_fill = ColorRect.new()
+		energy_fill.size = Vector2(250.0, 40.0)
+		energy_fill.position = Vector2(39.0, 14.0)
+		energy_fill.color = Color(0.98, 0.78, 0.12, 1.0)
+		energy_container.add_child(energy_fill)
 
-	var p_vbox = VBoxContainer.new()
-	p_vbox.alignment = BoxContainer.ALIGNMENT_CENTER
-	p_vbox.add_theme_constant_override("separation", 2)
+		var energy_icon = TextureRect.new()
+		energy_icon.texture = load("res://Assets/Town/UI/energy_icon.png")
+		energy_icon.position = Vector2(0.0, 0.0)
+		energy_icon.size = Vector2(60.0, 68.0)
+		energy_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		energy_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		energy_container.add_child(energy_icon)
 
-	var name_lbl = Label.new()
-	name_lbl.text = "Crazy Dave"
-	_apply_font(name_lbl, 28, Color(1.0, 0.9, 0.2, 1.0), 6)
-	p_vbox.add_child(name_lbl)
+		var energy_lbl = Label.new()
+		energy_lbl.text = "45/50"
+		energy_lbl.position = Vector2(70.0, 12.0)
+		energy_lbl.size = Vector2(160.0, 42.0)
+		energy_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		energy_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		_apply_font(energy_lbl, 26, Color(1.0, 1.0, 1.0, 1.0), 5)
+		energy_container.add_child(energy_lbl)
 
-	var sub_lbl = Label.new()
-	sub_lbl.text = "Level 12 • Suburbia Hub"
-	_apply_font(sub_lbl, 18, Color(0.85, 0.9, 0.85, 0.9), 4)
-	p_vbox.add_child(sub_lbl)
+		timer_lbl = Label.new()
+		timer_lbl.text = "04:15"
+		timer_lbl.position = Vector2(230.0, 60.0)
+		timer_lbl.size = Vector2(90.0, 30.0)
+		_apply_font(timer_lbl, 20, Color(1.0, 0.95, 0.75, 1.0), 4)
+		energy_container.add_child(timer_lbl)
 
-	profile.add_child(p_vbox)
-	hud.add_child(profile)
+	# 3. Currencies (Coins, Gems, Gear Settings)
+	var curr_container = hud.get_node_or_null("CurrenciesContainer")
+	if curr_container:
+		var hbox = HBoxContainer.new()
+		hbox.position = Vector2(0.0, 10.0)
+		hbox.size = Vector2(680.0, 65.0)
+		hbox.alignment = BoxContainer.ALIGNMENT_END
+		hbox.add_theme_constant_override("separation", 24)
 
-	# Right: Currencies (Coins, Gems, Mints)
-	var curr_container = HBoxContainer.new()
-	curr_container.position = Vector2(1050.0, 15.0)
-	curr_container.size = Vector2(740.0, 60.0)
-	curr_container.alignment = BoxContainer.ALIGNMENT_END
-	curr_container.add_theme_constant_override("separation", 35)
+		# Coins
+		_add_currency_entry(hbox, "res://Assets/Town/UI/coin_icon.png", "11,000", Color(1.0, 0.88, 0.2, 1.0), "Coins Shop", "Purchase lawn plant seeds and fertilizers with your golden coins.")
 
-	_create_currency_badge(curr_container, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png", "12,500", Color(1.0, 0.88, 0.2, 1.0))
-	_create_currency_badge(curr_container, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png", "350", Color(0.3, 0.85, 1.0, 1.0))
-	_create_currency_badge(curr_container, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/mint.png", "85", Color(0.4, 1.0, 0.5, 1.0))
+		# Gems
+		_add_currency_entry(hbox, "res://Assets/Town/UI/gem_icon.png", "15", Color(0.3, 0.85, 1.0, 1.0), "Gem Vault", "Collect precious gems to unlock premium costumes and rare plant pinatas.")
 
-	hud.add_child(curr_container)
+		# Settings Gear
+		var gear_btn = TextureButton.new()
+		gear_btn.custom_minimum_size = Vector2(65.0, 65.0)
+		gear_btn.size = Vector2(65.0, 65.0)
+		gear_btn.texture_normal = load("res://Assets/Town/UI/settings_gear.png")
+		gear_btn.ignore_texture_size = true
+		gear_btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
+		gear_btn.focus_mode = Control.FOCUS_NONE
+		gear_btn.pressed.connect(_on_settings_button_pressed)
+		hbox.add_child(gear_btn)
 
-	# Top right pause/settings button
-	var settings_btn = TextureButton.new()
-	settings_btn.name = "SettingsButton"
-	settings_btn.position = Vector2(1825.0, 12.0)
-	settings_btn.custom_minimum_size = Vector2(65.0, 65.0)
-	settings_btn.size = Vector2(65.0, 65.0)
-	settings_btn.ignore_texture_size = true
-	settings_btn.stretch_mode = TextureButton.STRETCH_SCALE
-	settings_btn.texture_normal = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/pause_button.png")
-	settings_btn.texture_pressed = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/pause_button_down.png")
-	settings_btn.focus_mode = Control.FOCUS_NONE
-	settings_btn.pressed.connect(_on_settings_button_pressed)
-	hud.add_child(settings_btn)
+		curr_container.add_child(hbox)
 
-func _create_currency_badge(parent: Control, icon_path: String, amount_text: String, col: Color) -> void:
+func _add_currency_entry(parent: BoxContainer, icon_path: String, amount: String, col: Color, shop_title: String, shop_desc: String) -> void:
 	var box = HBoxContainer.new()
-	box.add_theme_constant_override("separation", 10)
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
+	box.add_theme_constant_override("separation", 8)
 
 	if ResourceLoader.exists(icon_path):
 		var icon = TextureRect.new()
-		icon.custom_minimum_size = Vector2(40.0, 40.0)
-		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		icon.custom_minimum_size = Vector2(50.0, 50.0)
 		icon.texture = load(icon_path)
+		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		box.add_child(icon)
 
 	var lbl = Label.new()
-	lbl.text = amount_text
-	_apply_font(lbl, 24, col, 5)
+	lbl.text = amount
+	_apply_font(lbl, 26, col, 5)
 	box.add_child(lbl)
+
+	var plus_path = "res://Assets/Town/UI/plus_button.png"
+	if ResourceLoader.exists(plus_path):
+		var plus_btn = TextureButton.new()
+		plus_btn.custom_minimum_size = Vector2(38.0, 38.0)
+		plus_btn.texture_normal = load(plus_path)
+		plus_btn.ignore_texture_size = true
+		plus_btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
+		plus_btn.focus_mode = Control.FOCUS_NONE
+		plus_btn.pressed.connect(func():
+			_play_click_sfx()
+			_show_modal(shop_title, shop_desc, icon_path)
+		)
+		box.add_child(plus_btn)
 
 	parent.add_child(box)
 
-func _setup_building_badges() -> void:
-	var buildings_container = get_node_or_null("Buildings")
-	if not buildings_container:
+func _setup_chat_box() -> void:
+	var chat_root = get_node_or_null("ChatBox")
+	if not chat_root:
 		return
 
-	for child in buildings_container.get_children():
-		var b_name = child.name
-		var data = BUILDING_METADATA.get(b_name, { "name": b_name.replace("_", " ") })
-		var display_name = data["name"]
+	# Background TextureRect
+	var bg = TextureRect.new()
+	bg.texture = load("res://Assets/Town/UI/ui_chat_box.png")
+	bg.size = Vector2(440.0, 390.0)
+	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	bg.stretch_mode = TextureRect.STRETCH_SCALE
+	chat_root.add_child(bg)
 
-		# Wooden nameplate badge at bottom of building
-		var badge = NinePatchRect.new()
-		badge.name = "NameBadge"
-		badge.texture = load("res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton.png")
-		var w = child.size.x
-		badge.size = Vector2(max(w, 220.0), 48.0)
-		badge.position = Vector2((child.size.x - badge.size.x) / 2.0, child.size.y - 40.0)
-		badge.patch_margin_left = 18
-		badge.patch_margin_right = 18
-		badge.patch_margin_top = 14
-		badge.patch_margin_bottom = 14
-		badge.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Tabs Container at top
+	var world_tab_btn = Button.new()
+	world_tab_btn.text = "WORLD"
+	world_tab_btn.position = Vector2(10.0, 10.0)
+	world_tab_btn.size = Vector2(130.0, 48.0)
+	world_tab_btn.focus_mode = Control.FOCUS_NONE
+	world_tab_btn.flat = true
+	world_tab_btn.pressed.connect(func(): _switch_chat_tab("WORLD"))
+	chat_root.add_child(world_tab_btn)
 
-		var lbl = Label.new()
-		lbl.text = display_name
-		lbl.anchors_preset = Control.PRESET_FULL_RECT
-		lbl.size = badge.size
-		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		_apply_font(lbl, 20, Color(1.0, 0.95, 0.75, 1.0), 5)
-		badge.add_child(lbl)
+	var guild_tab_btn = Button.new()
+	guild_tab_btn.text = "GUILD"
+	guild_tab_btn.position = Vector2(150.0, 10.0)
+	guild_tab_btn.size = Vector2(130.0, 48.0)
+	guild_tab_btn.focus_mode = Control.FOCUS_NONE
+	guild_tab_btn.flat = true
+	guild_tab_btn.pressed.connect(func(): _switch_chat_tab("GUILD"))
+	chat_root.add_child(guild_tab_btn)
 
-		child.add_child(badge)
+	chat_labels_container = VBoxContainer.new()
+	chat_labels_container.position = Vector2(24.0, 75.0)
+	chat_labels_container.size = Vector2(390.0, 290.0)
+	chat_labels_container.add_theme_constant_override("separation", 10)
+	chat_root.add_child(chat_labels_container)
 
-		# Add hover animations to building button
-		var btn = child.get_node_or_null("Button")
-		if btn and btn is TextureButton:
-			btn.pivot_offset = btn.size / 2.0
-			btn.mouse_entered.connect(func():
-				var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-				tw.tween_property(btn, "scale", Vector2(1.06, 1.06), 0.22)
-			)
-			btn.mouse_exited.connect(func():
-				var tw = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
-				tw.tween_property(btn, "scale", Vector2.ONE, 0.18)
-			)
+	_update_chat_display()
+
+func _switch_chat_tab(tab_name: String) -> void:
+	_play_click_sfx()
+	chat_current_tab = tab_name
+	_update_chat_display()
+
+func _update_chat_display() -> void:
+	if not chat_labels_container:
+		return
+	for c in chat_labels_container.get_children():
+		c.queue_free()
+
+	var msgs = CHAT_MESSAGES.get(chat_current_tab, [])
+	for m in msgs:
+		var rtl = RichTextLabel.new()
+		rtl.bbcode_enabled = true
+		rtl.text = m
+		rtl.fit_content = true
+		rtl.scroll_active = false
+		rtl.custom_minimum_size = Vector2(380.0, 50.0)
+		rtl.add_theme_font_override("normal_font", load(FONT_PATH))
+		rtl.add_theme_font_size_override("normal_font_size", 18)
+		chat_labels_container.add_child(rtl)
+
+func _setup_bottom_shelf() -> void:
+	var shelf = get_node_or_null("BottomShelf")
+	if not shelf:
+		return
+
+	# Wooden Shelf Base
+	var shelf_bg = TextureRect.new()
+	shelf_bg.texture = load("res://Assets/Town/UI/ui_bottom_shelf.png")
+	shelf_bg.size = Vector2(760.0, 220.0)
+	shelf_bg.position = Vector2(0.0, 0.0)
+	shelf_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	shelf_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	shelf.add_child(shelf_bg)
+
+	# 4 Action Buttons: DECK, ALMANAC, GUILD, FRIENDS
+	var btn_configs = [
+		{"name": "Deck", "tex": "res://Assets/Town/UI/btn_deck.png", "x": 55.0, "title": "Seed Deck", "desc": "Choose your plant line-up for future lawn battles and world levels."},
+		{"name": "Almanac", "tex": "res://Assets/Town/UI/btn_almanac.png", "x": 225.0, "title": "Suburban Almanac", "desc": "Study official stats, weaknesses, and plant food powers for every plant and zombie."},
+		{"name": "Guild", "tex": "res://Assets/Town/UI/btn_guild.png", "x": 395.0, "title": "Guild Headquarters", "desc": "Join an alliance of defenders to tackle weekly Boss raids and earn mints."},
+		{"name": "Friends", "tex": "res://Assets/Town/UI/btn_friends.png", "x": 565.0, "title": "Friend List", "desc": "Send daily sun gifts to neighbors and challenge buddies in friendly lawn duels."}
+	]
+
+	for cfg in btn_configs:
+		var btn = TextureButton.new()
+		btn.texture_normal = load(cfg["tex"])
+		btn.position = Vector2(cfg["x"], 18.0)
+		btn.size = Vector2(145.0, 180.0)
+		btn.ignore_texture_size = true
+		btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
+		btn.focus_mode = Control.FOCUS_NONE
+		btn.pivot_offset = btn.size / 2.0
+
+		btn.mouse_entered.connect(func():
+			var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+			tw.tween_property(btn, "scale", Vector2(1.08, 1.08), 0.18)
+		)
+		btn.mouse_exited.connect(func():
+			var tw = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+			tw.tween_property(btn, "scale", Vector2.ONE, 0.15)
+		)
+		btn.pressed.connect(func():
+			_play_click_sfx()
+			_show_modal(cfg["title"], cfg["desc"], cfg["tex"])
+		)
+		shelf.add_child(btn)
 
 func _setup_battle_button() -> void:
 	var btn = get_node_or_null("BattleButton")
 	if not btn:
 		return
-	btn.position = Vector2(1540.0, 890.0)
-	btn.size = Vector2(330.0, 120.0)
-	btn.texture_normal = load("res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton.png")
-	btn.texture_pressed = load("res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton_Down.png")
+	btn.pivot_offset = btn.size / 2.0
 	btn.pressed.connect(_on_battle_button_pressed)
 
-	var lbl = Label.new()
-	lbl.text = "⚔️ BATTLE!"
-	lbl.anchors_preset = Control.PRESET_FULL_RECT
-	lbl.size = btn.size
-	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	_apply_font(lbl, 36, Color(1.0, 0.95, 0.2, 1.0), 8)
-	btn.add_child(lbl)
+	btn.mouse_entered.connect(func():
+		var tw = create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		tw.tween_property(btn, "scale", Vector2(1.06, 1.06), 0.2)
+	)
+	btn.mouse_exited.connect(func():
+		var tw = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		tw.tween_property(btn, "scale", Vector2.ONE, 0.18)
+	)
 
-	# Gentle pulsing animation for the battle button
+	# Gentle breathing animation
 	var tw = create_tween().set_loops()
 	tw.tween_property(btn, "scale", Vector2(1.03, 1.03), 0.9).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	tw.tween_property(btn, "scale", Vector2.ONE, 0.9).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+func _connect_building_buttons() -> void:
+	var buildings_container = get_node_or_null("Buildings")
+	if not buildings_container:
+		return
+
+	for child in buildings_container.get_children():
+		var btn = child.get_node_or_null("Button")
+		if btn and btn is BaseButton:
+			var b_name = child.name
+			btn.pressed.connect(func(): _on_building_clicked(b_name))
+			btn.mouse_entered.connect(func():
+				Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
+			)
+			btn.mouse_exited.connect(func():
+				Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+			)
+
+func _on_building_clicked(building_name: String) -> void:
+	_play_click_sfx()
+	var data = BUILDING_METADATA.get(building_name, {
+		"name": building_name.replace("_", " "),
+		"desc": "This suburban establishment will unlock in an upcoming update!",
+		"icon": ""
+	})
+	_show_modal(data["name"], data["desc"], data.get("icon", ""))
 
 func _setup_modal() -> void:
 	modal_overlay = get_node_or_null("ComingSoonModal")
@@ -335,26 +458,6 @@ func _setup_modal() -> void:
 
 	modal_overlay.add_child(modal_dialog)
 
-func _connect_building_buttons() -> void:
-	var buildings_container = get_node_or_null("Buildings")
-	if not buildings_container:
-		return
-
-	for child in buildings_container.get_children():
-		var btn = child.get_node_or_null("Button")
-		if btn and btn is BaseButton:
-			var b_name = child.name
-			btn.pressed.connect(func(): _on_building_clicked(b_name))
-
-func _on_building_clicked(building_name: String) -> void:
-	_play_click_sfx()
-	var data = BUILDING_METADATA.get(building_name, {
-		"name": building_name.replace("_", " "),
-		"desc": "This suburban feature will unlock in an upcoming update!",
-		"icon": ""
-	})
-	_show_modal(data["name"], data["desc"], data.get("icon", ""))
-
 func _show_modal(title_text: String, msg_text: String, icon_path: String = "") -> void:
 	if modal_title_lbl:
 		modal_title_lbl.text = title_text
@@ -375,7 +478,7 @@ func _show_modal(title_text: String, msg_text: String, icon_path: String = "") -
 func _on_enter_building_pressed() -> void:
 	_play_click_sfx()
 	if modal_desc_lbl:
-		modal_desc_lbl.text = "Dave says:\n'Wabby wabbo! Construction is still underway here, but the blueprints are looking magnificent!'"
+		modal_desc_lbl.text = "Crazy Dave says:\n'Wabby wabbo! Welcome inside, neighbor! Construction is still underway, but exciting surprises are coming!'"
 
 func _close_modal() -> void:
 	_play_click_sfx()
@@ -391,7 +494,23 @@ func _on_battle_button_pressed() -> void:
 
 func _on_settings_button_pressed() -> void:
 	_play_click_sfx()
-	_show_modal("Game Settings", "Audio, graphics preferences, and community controls will be available here.", "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/pause_button.png")
+	_show_modal("Game Settings", "Audio, graphics preferences, and community controls will be available here.", "res://Assets/Town/UI/settings_gear.png")
+
+func _start_energy_timer() -> void:
+	var timer = Timer.new()
+	timer.wait_time = 1.0
+	timer.autostart = true
+	timer.timeout.connect(func():
+		if energy_timer_seconds > 0:
+			energy_timer_seconds -= 1
+		else:
+			energy_timer_seconds = 300
+		var mins = energy_timer_seconds / 60
+		var secs = energy_timer_seconds % 60
+		if timer_lbl:
+			timer_lbl.text = "%02d:%02d" % [mins, secs]
+	)
+	add_child(timer)
 
 func _play_click_sfx() -> void:
 	if get_node_or_null("/root/AudioManager") and click_sfx:

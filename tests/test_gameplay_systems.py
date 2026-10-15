@@ -335,31 +335,44 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("lawn.is_cell_occupied(target_cell.x, target_cell.y, self)", proj_code)
         self.assertIn("not lawn.is_cell_occupied(c, r, self)", proj_code)
 
+    def test_debug_mode_plantfoodcheat(self):
+        """Verify middle-click plant food cheat only works when debug mode is enabled."""
+        with open("Scripts/Plant.gd", "r") as f:
+            plant_code = f.read()
+        self.assertIn("MOUSE_BUTTON_MIDDLE and is_debug:", plant_code)
+
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("MOUSE_BUTTON_MIDDLE and debug_mode:", lawn_code)
+
     def test_town_rework_assets_and_ui(self):
-        """Verify Town scene and script use generated town background and concept building cutouts."""
+        """Verify Town scene and script use authentic town.jpg background and UI elements."""
         self.assertTrue(os.path.exists("Assets/Town/town_background.png"))
-        for b_name in [
-            "building_player_house.png",
-            "building_dave_workshop.png",
-            "building_taco_park.png",
-            "building_zen_garden.png",
-            "building_arena.png",
-            "building_devour_tower.png",
-            "building_zomboss_lab.png"
-        ]:
-            self.assertTrue(os.path.exists(os.path.join("Assets/Town", b_name)))
+        self.assertTrue(os.path.exists("Assets/Town/UI/energy_icon.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_player_profile.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_neighborville_sign.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_bottom_shelf.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_battle_button.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/coin_icon.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/gem_icon.png"))
+        self.assertTrue(os.path.exists("Assets/Town/UI/settings_gear.png"))
 
         with open("Scenes/Town.tscn", "r") as f:
             tscn_code = f.read()
         self.assertIn("res://Assets/Town/town_background.png", tscn_code)
-        self.assertIn("building_player_house.png", tscn_code)
-        self.assertIn("building_zomboss_lab.png", tscn_code)
+        self.assertIn("ui_player_profile.png", tscn_code)
+        self.assertIn("ui_battle_button.png", tscn_code)
+        self.assertIn("ChatBox", tscn_code)
+        self.assertIn("BottomShelf", tscn_code)
 
         with open("Scripts/Town.gd", "r") as f:
             town_code = f.read()
         self.assertIn("BUILDING_METADATA", town_code)
         self.assertIn("Crazy Dave's Workshop", town_code)
-        self.assertIn("Zomboss Test Lab", town_code)
+        self.assertIn("Zen Garden", town_code)
+        self.assertIn("Guildhall", town_code)
+        self.assertIn("Devour Tower", town_code)
         self.assertIn("_on_battle_button_pressed", town_code)
         self.assertNotIn("theme_override_constants.", town_code)
         self.assertIn('add_theme_constant_override("separation"', town_code)

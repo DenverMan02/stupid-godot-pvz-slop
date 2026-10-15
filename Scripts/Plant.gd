@@ -966,5 +966,5 @@ func _input(event: InputEvent) -> void:
 		if global_position.distance_to(mouse_pos) < 60.0:
 			if event.button_index == MOUSE_BUTTON_LEFT and is_debug:
 				play_attack()
-			elif event.button_index == MOUSE_BUTTON_MIDDLE:
+			elif event.button_index == MOUSE_BUTTON_MIDDLE and is_debug:
 				play_plantfood()

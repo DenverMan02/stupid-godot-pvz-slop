@@ -78,22 +78,21 @@ func _ready() -> void:
 	_start_energy_timer()
 
 func _setup_concept_render_materials() -> void:
-	# Each concept render is a JPG on white. A shader removes the near-white
-	# backdrop so the original illustrations sit on the black canvas.
+	# Concept renders in Assets/Town/ are transparent PNGs with clean alpha defringing.
+	# Any legacy JPGs can fallback to the cutout shader if needed.
 	var white_bg_shader = load("res://Scripts/white_background_cutout.gdshader") as Shader
 	if not white_bg_shader:
-		push_warning("Town: could not load the concept-render background shader.")
 		return
 
 	var building_names = ["Player_House", "Dave_Workshop", "Zen_Garden", "Guildhall", "Devour_Tower"]
 	for building_name in building_names:
 		var render = get_node_or_null("Buildings/" + building_name + "/Render") as TextureRect
-		if render:
+		if render and render.texture and render.texture.resource_path.ends_with(".jpg"):
 			var material = ShaderMaterial.new()
 			material.shader = white_bg_shader
-			material.set_shader_parameter("white_threshold", 0.985)
-			material.set_shader_parameter("feather_width", 0.015)
-			material.set_shader_parameter("neutral_tolerance", 0.08)
+			material.set_shader_parameter("white_threshold", 0.94)
+			material.set_shader_parameter("feather_width", 0.02)
+			material.set_shader_parameter("neutral_tolerance", 0.10)
 			render.material = material
 
 func _setup_top_hud() -> void:
@@ -126,8 +125,8 @@ func _setup_top_hud() -> void:
 
 		var energy_icon = TextureRect.new()
 		energy_icon.texture = load("res://Assets/Town/UI/energy_icon.png")
-		energy_icon.position = Vector2(0.0, 0.0)
-		energy_icon.size = Vector2(60.0, 68.0)
+		energy_icon.position = Vector2(18.0, 11.0)
+		energy_icon.size = Vector2(32.0, 46.0)
 		energy_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		energy_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		energy_container.add_child(energy_icon)
@@ -148,7 +147,7 @@ func _setup_top_hud() -> void:
 		_apply_font(timer_lbl, 20, Color(1.0, 0.95, 0.75, 1.0), 4)
 		energy_container.add_child(timer_lbl)
 
-	# 3. Currencies (Coins, Gems, Gear Settings)
+	# 3. Currencies (Coins, Gems, Gear Settings) using authentic PvZ2 assets
 	var curr_container = hud.get_node_or_null("CurrenciesContainer")
 	if curr_container:
 		var hbox = HBoxContainer.new()
@@ -158,16 +157,19 @@ func _setup_top_hud() -> void:
 		hbox.add_theme_constant_override("separation", 24)
 
 		# Coins
-		_add_currency_entry(hbox, "res://Assets/Town/UI/coin_icon.png", "11,000", Color(1.0, 0.88, 0.2, 1.0), "Coins Shop", "Purchase lawn plant seeds and fertilizers with your golden coins.")
+		_add_currency_entry(hbox, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png", "11,000", Color(1.0, 0.88, 0.2, 1.0), "Coins Shop", "Purchase lawn plant seeds and fertilizers with your golden coins.")
 
 		# Gems
-		_add_currency_entry(hbox, "res://Assets/Town/UI/gem_icon.png", "15", Color(0.3, 0.85, 1.0, 1.0), "Gem Vault", "Collect precious gems to unlock premium costumes and rare plant pinatas.")
+		_add_currency_entry(hbox, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png", "15", Color(0.3, 0.85, 1.0, 1.0), "Gem Vault", "Collect precious gems to unlock premium costumes and rare plant pinatas.")
 
 		# Settings Gear
 		var gear_btn = TextureButton.new()
-		gear_btn.custom_minimum_size = Vector2(65.0, 65.0)
-		gear_btn.size = Vector2(65.0, 65.0)
-		gear_btn.texture_normal = load("res://Assets/Town/UI/settings_gear.png")
+		gear_btn.custom_minimum_size = Vector2(60.0, 60.0)
+		gear_btn.size = Vector2(60.0, 60.0)
+		gear_btn.texture_normal = load("res://Assets/UI/UI_SettingsButton/resource/images/initial/UI/hud_settingsbutton/buttons_hud_settings_normal.png")
+		var gear_selected_path = "res://Assets/UI/UI_SettingsButton/resource/images/initial/UI/hud_settingsbutton/buttons_hud_settings_selected.png"
+		if ResourceLoader.exists(gear_selected_path):
+			gear_btn.texture_pressed = load(gear_selected_path)
 		gear_btn.ignore_texture_size = true
 		gear_btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
 		gear_btn.focus_mode = Control.FOCUS_NONE
@@ -183,7 +185,7 @@ func _add_currency_entry(parent: BoxContainer, icon_path: String, amount: String
 
 	if ResourceLoader.exists(icon_path):
 		var icon = TextureRect.new()
-		icon.custom_minimum_size = Vector2(50.0, 50.0)
+		icon.custom_minimum_size = Vector2(48.0, 48.0)
 		icon.texture = load(icon_path)
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -194,11 +196,14 @@ func _add_currency_entry(parent: BoxContainer, icon_path: String, amount: String
 	_apply_font(lbl, 26, col, 5)
 	box.add_child(lbl)
 
-	var plus_path = "res://Assets/Town/UI/plus_button.png"
+	var plus_path = "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin_buy.png"
+	var plus_pressed_path = "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin_buy_down.png"
 	if ResourceLoader.exists(plus_path):
 		var plus_btn = TextureButton.new()
-		plus_btn.custom_minimum_size = Vector2(38.0, 38.0)
+		plus_btn.custom_minimum_size = Vector2(36.0, 36.0)
 		plus_btn.texture_normal = load(plus_path)
+		if ResourceLoader.exists(plus_pressed_path):
+			plus_btn.texture_pressed = load(plus_pressed_path)
 		plus_btn.ignore_texture_size = true
 		plus_btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
 		plus_btn.focus_mode = Control.FOCUS_NONE
@@ -293,28 +298,28 @@ func _setup_bottom_shelf() -> void:
 		return
 
 	# This artwork already contains the four icons and labels. Keep it as the
-	# single visual source and place transparent hit targets over each item.
+	# single visual source with correct aspect ratio and place transparent hit targets over each item.
 	var shelf_bg = TextureRect.new()
 	shelf_bg.texture = load("res://Assets/Town/UI/ui_bottom_shelf.png")
-	shelf_bg.position = Vector2(55.0, 0.0)
-	shelf_bg.size = Vector2(649.0, 220.0)
+	shelf_bg.position = Vector2(0.0, 0.0)
+	shelf_bg.size = Vector2(650.0, 188.0)
 	shelf_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	shelf_bg.stretch_mode = TextureRect.STRETCH_SCALE
+	shelf_bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	shelf_bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	shelf.add_child(shelf_bg)
 
 	var btn_configs = [
-		{"x": 113.0, "title": "Seed Deck", "desc": "Choose your plant line-up for future lawn battles and world levels.", "tex": "res://Assets/Town/UI/btn_deck.png"},
-		{"x": 247.0, "title": "Suburban Almanac", "desc": "Study official stats, weaknesses, and plant food powers for every plant and zombie.", "tex": "res://Assets/Town/UI/btn_almanac.png"},
-		{"x": 387.0, "title": "Guild Headquarters", "desc": "Join an alliance of defenders to tackle weekly Boss raids and earn mints.", "tex": "res://Assets/Town/UI/btn_guild.png"},
-		{"x": 535.0, "title": "Friend List", "desc": "Send daily sun gifts to neighbors and challenge buddies in friendly lawn duels.", "tex": "res://Assets/Town/UI/btn_friends.png"}
+		{"x": 55.0, "title": "Seed Deck", "desc": "Choose your plant line-up for future lawn battles and world levels.", "tex": "res://Assets/Town/UI/btn_deck.png"},
+		{"x": 197.0, "title": "Suburban Almanac", "desc": "Study official stats, weaknesses, and plant food powers for every plant and zombie.", "tex": "res://Assets/Town/UI/btn_almanac.png"},
+		{"x": 339.0, "title": "Guild Headquarters", "desc": "Join an alliance of defenders to tackle weekly Boss raids and earn mints.", "tex": "res://Assets/Town/UI/btn_guild.png"},
+		{"x": 481.0, "title": "Friend List", "desc": "Send daily sun gifts to neighbors and challenge buddies in friendly lawn duels.", "tex": "res://Assets/Town/UI/btn_friends.png"}
 	]
 
 	for cfg in btn_configs:
 		var btn = Button.new()
 		btn.text = ""
-		btn.position = Vector2(cfg["x"], 8.0)
-		btn.size = Vector2(112.0, 180.0)
+		btn.position = Vector2(cfg["x"], 4.0)
+		btn.size = Vector2(118.0, 180.0)
 		btn.flat = true
 		btn.focus_mode = Control.FOCUS_NONE
 

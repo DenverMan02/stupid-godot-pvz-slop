@@ -4,16 +4,16 @@
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_player_profile.png" id="3_player_profile"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_neighborville_sign.png" id="4_neighborville_sign"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/energy_icon.png" id="5_energy_icon"]
-[ext_resource type="Texture2D" path="res://Assets/Town/UI/coin_icon.png" id="6_coin_icon"]
-[ext_resource type="Texture2D" path="res://Assets/Town/UI/gem_icon.png" id="7_gem_icon"]
-[ext_resource type="Texture2D" path="res://Assets/Town/UI/plus_button.png" id="8_plus_btn"]
-[ext_resource type="Texture2D" path="res://Assets/Town/UI/settings_gear.png" id="9_gear_btn"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png" id="6_coin_icon"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png" id="7_gem_icon"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin_buy.png" id="8_plus_btn"]
+[ext_resource type="Texture2D" path="res://Assets/UI/UI_SettingsButton/resource/images/initial/UI/hud_settingsbutton/buttons_hud_settings_normal.png" id="9_gear_btn"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_battle_button.png" id="11_battle_btn"]
-[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_PlayerHouse.jpg" id="12_house_render"]
-[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_DaveWorkshop.jpg" id="13_workshop_render"]
-[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_ZenGarden.jpg" id="14_zen_render"]
-[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_Arena.jpg" id="15_arena_render"]
-[ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_DevourTower.jpg" id="16_tower_render"]
+[ext_resource type="Texture2D" path="res://Assets/Town/building_player_house.png" id="12_house_render"]
+[ext_resource type="Texture2D" path="res://Assets/Town/building_dave_workshop.png" id="13_workshop_render"]
+[ext_resource type="Texture2D" path="res://Assets/Town/building_zen_garden.png" id="14_zen_render"]
+[ext_resource type="Texture2D" path="res://Assets/Town/building_arena.png" id="15_arena_render"]
+[ext_resource type="Texture2D" path="res://Assets/Town/building_devour_tower.png" id="16_tower_render"]
 
 [node name="Town" type="Control"]
 layout_mode = 3
@@ -262,9 +262,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -380.0
-offset_top = -220.0
-offset_right = 380.0
+offset_left = -325.0
+offset_top = -188.0
+offset_right = 325.0
 offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 0

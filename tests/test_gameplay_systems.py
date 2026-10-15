@@ -346,24 +346,26 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("MOUSE_BUTTON_MIDDLE and debug_mode:", lawn_code)
 
     def test_town_rework_assets_and_ui(self):
-        """Verify the black town canvas, separate concept renders, and non-duplicated UI."""
+        """Verify the black town canvas, clean transparent building renders, authentic PvZ2 currencies, and unsquished UI."""
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box_shell.svg"))
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box_shell_guild.svg"))
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_bottom_shelf.png"))
         self.assertTrue(os.path.exists("Scripts/white_background_cutout.gdshader"))
         for asset in [
-            "Assets/AIImagery/Concepts/Buildings/Building_PlayerHouse.jpg",
-            "Assets/AIImagery/Concepts/Buildings/Building_DaveWorkshop.jpg",
-            "Assets/AIImagery/Concepts/Buildings/Building_ZenGarden.jpg",
-            "Assets/AIImagery/Concepts/Buildings/Building_Arena.jpg",
-            "Assets/AIImagery/Concepts/Buildings/Building_DevourTower.jpg",
+            "Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png",
+            "Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png",
+            "Assets/UI/UI_AlwaysLoaded/hud_ingame/coin_buy.png",
+            "Assets/UI/UI_AlwaysLoaded/hud_ingame/coin_buy_down.png",
+            "Assets/UI/UI_SettingsButton/resource/images/initial/UI/hud_settingsbutton/buttons_hud_settings_normal.png",
+            "Assets/Town/building_player_house.png",
+            "Assets/Town/building_dave_workshop.png",
+            "Assets/Town/building_zen_garden.png",
+            "Assets/Town/building_arena.png",
+            "Assets/Town/building_devour_tower.png",
             "Assets/Town/UI/energy_icon.png",
             "Assets/Town/UI/ui_player_profile.png",
             "Assets/Town/UI/ui_neighborville_sign.png",
             "Assets/Town/UI/ui_battle_button.png",
-            "Assets/Town/UI/coin_icon.png",
-            "Assets/Town/UI/gem_icon.png",
-            "Assets/Town/UI/settings_gear.png",
         ]:
             self.assertTrue(os.path.exists(asset), f"Missing town asset: {asset}")
 
@@ -373,17 +375,23 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("color = Color(0, 0, 0, 1)", tscn_code)
         self.assertNotIn("res://Assets/Town/town_background.svg", tscn_code)
         for image in [
-            "Building_PlayerHouse.jpg",
-            "Building_DaveWorkshop.jpg",
-            "Building_ZenGarden.jpg",
-            "Building_Arena.jpg",
-            "Building_DevourTower.jpg",
+            "building_player_house.png",
+            "building_dave_workshop.png",
+            "building_zen_garden.png",
+            "building_arena.png",
+            "building_devour_tower.png",
         ]:
             self.assertIn(image, tscn_code)
+        self.assertIn("coin.png", tscn_code)
+        self.assertIn("gem.png", tscn_code)
+        self.assertIn("coin_buy.png", tscn_code)
+        self.assertIn("buttons_hud_settings_normal.png", tscn_code)
         self.assertIn("ui_player_profile.png", tscn_code)
         self.assertIn("ui_battle_button.png", tscn_code)
         self.assertIn("ChatBox", tscn_code)
         self.assertIn("BottomShelf", tscn_code)
+        self.assertIn("offset_left = -325.0", tscn_code)
+        self.assertIn("offset_top = -188.0", tscn_code)
 
         with open("Scripts/Town.gd", "r") as f:
             town_code = f.read()
@@ -396,6 +404,13 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("ui_chat_box_shell.svg", town_code)
         self.assertIn("white_background_cutout.gdshader", town_code)
         self.assertIn("transparent_style", town_code)
+        self.assertIn("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png", town_code)
+        self.assertIn("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png", town_code)
+        self.assertIn("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin_buy.png", town_code)
+        self.assertIn("res://Assets/UI/UI_SettingsButton/resource/images/initial/UI/hud_settingsbutton/buttons_hud_settings_normal.png", town_code)
+        self.assertIn("Vector2(32.0, 46.0)", town_code)
+        self.assertIn("STRETCH_KEEP_ASPECT_CENTERED", town_code)
+        self.assertIn("Vector2(650.0, 188.0)", town_code)
         self.assertNotIn('bg.texture = load("res://Assets/Town/UI/ui_chat_box.png")', town_code)
         self.assertNotIn("theme_override_constants.", town_code)
         self.assertIn('add_theme_constant_override("separation"', town_code)

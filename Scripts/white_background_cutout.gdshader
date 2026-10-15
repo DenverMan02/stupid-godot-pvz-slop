@@ -1,13 +1,17 @@
 shader_type canvas_item;
 
-// The concept renders are JPGs on white. Key near-white pixels so the renders
-// sit naturally on the black town canvas instead of appearing as white cards.
-uniform float white_threshold : hint_range(0.90, 1.0) = 0.985;
-uniform float feather_width : hint_range(0.001, 0.08) = 0.015;
-uniform float neutral_tolerance : hint_range(0.0, 0.25) = 0.08;
+// Key near-white pixels if rendering legacy JPGs so they sit naturally on the
+// black town canvas instead of appearing as white cards.
+uniform float white_threshold : hint_range(0.85, 1.0) = 0.94;
+uniform float feather_width : hint_range(0.001, 0.08) = 0.02;
+uniform float neutral_tolerance : hint_range(0.0, 0.25) = 0.10;
 
 void fragment() {
     vec4 pixel = texture(TEXTURE, UV) * COLOR;
+    if (pixel.a < 0.001) {
+        COLOR = pixel;
+        return;
+    }
     float brightest = max(pixel.r, max(pixel.g, pixel.b));
     float darkest = min(pixel.r, min(pixel.g, pixel.b));
     float saturation = brightest - darkest;

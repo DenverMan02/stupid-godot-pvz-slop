@@ -38,7 +38,11 @@ def main():
     tree_data = api_request(f"git/trees/{base_tree_sha}?recursive=1")
     remote_files = {item["path"]: item["sha"] for item in tree_data.get("tree", []) if item["type"] == "blob"}
 
-    local_files = subprocess.check_output(["git", "ls-files"]).decode().splitlines()
+    if "--files" in sys.argv:
+        idx = sys.argv.index("--files")
+        local_files = [f for f in sys.argv[idx + 1:] if not f.startswith("-")]
+    else:
+        local_files = subprocess.check_output(["git", "ls-files"]).decode().splitlines()
     files_to_update = []
     for p in local_files:
         if not os.path.isfile(p):
@@ -81,9 +85,13 @@ def main():
     new_tree_sha = new_tree["sha"]
     print(f"   New Tree SHA: {new_tree_sha}")
 
-    commit_msg = sys.argv[1] if len(sys.argv) > 1 else (
-        "Refine pause menu & wave bar, center plant food button, add LawnMowers, dynamic XFL animation viewer, and 5 new plants (Repeater, Twin Sunflower, Gatling Pea, Threepeater, Triplet Sunflower)"
-    )
+    commit_msg = "Fix bottom shelf stretching, energy icon scale, PvZ2 currencies and building cutouts"
+    for arg in sys.argv[1:]:
+        if arg == "--files":
+            break
+        if not arg.startswith("-"):
+            commit_msg = arg
+            break
 
     print("4. Creating new git commit...")
     new_commit = api_request("git/commits", {

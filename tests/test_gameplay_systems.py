@@ -361,6 +361,8 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("Crazy Dave's Workshop", town_code)
         self.assertIn("Zomboss Test Lab", town_code)
         self.assertIn("_on_battle_button_pressed", town_code)
+        self.assertNotIn("theme_override_constants.", town_code)
+        self.assertIn('add_theme_constant_override("separation"', town_code)
 
 if __name__ == "__main__":
     unittest.main()

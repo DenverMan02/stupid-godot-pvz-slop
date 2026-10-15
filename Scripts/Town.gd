@@ -80,7 +80,7 @@ func _setup_top_hud() -> void:
 	var profile = HBoxContainer.new()
 	profile.position = Vector2(30.0, 10.0)
 	profile.size = Vector2(400.0, 70.0)
-	profile.theme_override_constants.separation = 16
+	profile.add_theme_constant_override("separation", 16)
 
 	var avatar = TextureRect.new()
 	avatar.custom_minimum_size = Vector2(70.0, 70.0)
@@ -90,7 +90,7 @@ func _setup_top_hud() -> void:
 
 	var p_vbox = VBoxContainer.new()
 	p_vbox.alignment = BoxContainer.ALIGNMENT_CENTER
-	p_vbox.theme_override_constants.separation = 2
+	p_vbox.add_theme_constant_override("separation", 2)
 
 	var name_lbl = Label.new()
 	name_lbl.text = "Crazy Dave"
@@ -110,7 +110,7 @@ func _setup_top_hud() -> void:
 	curr_container.position = Vector2(1050.0, 15.0)
 	curr_container.size = Vector2(740.0, 60.0)
 	curr_container.alignment = BoxContainer.ALIGNMENT_END
-	curr_container.theme_override_constants.separation = 35
+	curr_container.add_theme_constant_override("separation", 35)
 
 	_create_currency_badge(curr_container, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png", "12,500", Color(1.0, 0.88, 0.2, 1.0))
 	_create_currency_badge(curr_container, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png", "350", Color(0.3, 0.85, 1.0, 1.0))
@@ -134,7 +134,7 @@ func _setup_top_hud() -> void:
 
 func _create_currency_badge(parent: Control, icon_path: String, amount_text: String, col: Color) -> void:
 	var box = HBoxContainer.new()
-	box.theme_override_constants.separation = 10
+	box.add_theme_constant_override("separation", 10)
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
 
 	if ResourceLoader.exists(icon_path):

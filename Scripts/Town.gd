@@ -49,6 +49,7 @@ var timer_lbl: Label = null
 
 var chat_current_tab: String = "WORLD"
 var chat_labels_container: VBoxContainer = null
+var chat_background: TextureRect = null
 
 const CHAT_MESSAGES = {
 	"WORLD": [
@@ -216,6 +217,7 @@ func _setup_chat_box() -> void:
 
 	# Background TextureRect
 	var bg = TextureRect.new()
+	chat_background = bg
 	bg.texture = load("res://Assets/Town/UI/ui_chat_box_shell.svg")
 	bg.size = Vector2(440.0, 390.0)
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
@@ -262,6 +264,9 @@ func _setup_chat_box() -> void:
 func _switch_chat_tab(tab_name: String) -> void:
 	_play_click_sfx()
 	chat_current_tab = tab_name
+	if chat_background:
+		var shell_path = "res://Assets/Town/UI/ui_chat_box_shell_guild.svg" if tab_name == "GUILD" else "res://Assets/Town/UI/ui_chat_box_shell.svg"
+		chat_background.texture = load(shell_path)
 	_update_chat_display()
 
 func _update_chat_display() -> void:

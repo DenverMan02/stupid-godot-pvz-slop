@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c_town_scene_id_003"]
+[gd_scene load_steps=15 format=3 uid="uid://c_town_scene_id_003"]
 
 [ext_resource type="Script" path="res://Scripts/Town.gd" id="1_town_script"]
 [ext_resource type="Texture2D" path="res://Assets/Town/UI/ui_player_profile.png" id="3_player_profile"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_ZenGarden.jpg" id="14_zen_render"]
 [ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_Arena.jpg" id="15_arena_render"]
 [ext_resource type="Texture2D" path="res://Assets/AIImagery/Concepts/Buildings/Building_DevourTower.jpg" id="16_tower_render"]
-[ext_resource type="Shader" path="res://Scripts/white_background_cutout.gdshader" id="17_white_bg_shader"]
 
 [node name="Town" type="Control"]
 layout_mode = 3
@@ -33,6 +32,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+mouse_filter = 2
 
 [node name="Buildings" type="Control" parent="."]
 layout_mode = 1

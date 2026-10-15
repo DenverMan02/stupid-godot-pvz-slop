@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/bonkchoy_fist_attack" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="bonkchoy_fist_attack">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0" duration="15">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/bonkchoy_fist_outer_attack" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="-0.05" ty="-0.15"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0" duration="15">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/bonkchoy_fist_center_attack" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="1.8" ty="4.15"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0" duration="15">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/bonkchoy_fist_inner_attack" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="-0.65" ty="9.55"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

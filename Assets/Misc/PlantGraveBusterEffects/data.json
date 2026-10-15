@@ -1,0 +1,31 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"PlantGraveBuster": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_GRAVEBUSTER_DIRT", 
+					"path": "images/initial/effects/gravebuster_dirt/gravebuster_dirt.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_GRAVEBUSTER_EXPLOSION_POTATOMINE", 
+					"path": "images/initial/effects/gravebuster_explosion_potatomine/gravebuster_explosion_potatomine.xfl"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"ZombieEgyptPharaohEffectsGroup": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_EGYPT_SARCOPHAGUS_BEAM_UP", 
+					"path": "images/initial/effects/zombie_egypt_sarcophagus_beam_up/zombie_egypt_sarcophagus_beam_up.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_EGYPT_SARCOPHAGUS_BEAM_DOWN", 
+					"path": "images/initial/effects/zombie_egypt_sarcophagus_beam_down/zombie_egypt_sarcophagus_beam_down.xfl"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,129 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" frameRate="30.000000" width="390.000000" height="390.000000" xflVersion="2.971">
+  <folders>
+    <DOMFolderItem name="media"/>
+    <DOMFolderItem name="image"/>
+    <DOMFolderItem name="sprite"/>
+    <DOMFolderItem name="label"/>
+  </folders>
+  <media>
+    <DOMBitmapItem name="media/mower_egypt_33x33" href="media/mower_egypt_33x33.png"/>
+    <DOMBitmapItem name="media/mower_egypt_57x90" href="media/mower_egypt_57x90.png"/>
+    <DOMBitmapItem name="media/mower_egypt_40x39" href="media/mower_egypt_40x39.png"/>
+    <DOMBitmapItem name="media/mower_egypt_76x120" href="media/mower_egypt_76x120.png"/>
+    <DOMBitmapItem name="media/mower_egypt_96x63" href="media/mower_egypt_96x63.png"/>
+    <DOMBitmapItem name="media/mower_egypt_73x47" href="media/mower_egypt_73x47.png"/>
+    <DOMBitmapItem name="media/mower_egypt_38x34" href="media/mower_egypt_38x34.png"/>
+    <DOMBitmapItem name="media/mower_egypt_45x45" href="media/mower_egypt_45x45.png"/>
+    <DOMBitmapItem name="media/mower_egypt_57x90_2" href="media/mower_egypt_57x90_2.png"/>
+    <DOMBitmapItem name="media/mower_egypt_16x11" href="media/mower_egypt_16x11.png"/>
+    <DOMBitmapItem name="media/mower_egypt_11x7" href="media/mower_egypt_11x7.png"/>
+    <DOMBitmapItem name="media/mower_egypt_45x45_2" href="media/mower_egypt_45x45_2.png"/>
+    <DOMBitmapItem name="media/mower_egypt_37x37" href="media/mower_egypt_37x37.png"/>
+    <DOMBitmapItem name="media/mower_egypt_22x22" href="media/mower_egypt_22x22.png"/>
+  </media>
+  <symbols>
+    <Include href="image/mower_egypt_33x33.xml"/>
+    <Include href="image/mower_egypt_57x90.xml"/>
+    <Include href="image/mower_egypt_40x39.xml"/>
+    <Include href="image/mower_egypt_76x120.xml"/>
+    <Include href="image/mower_egypt_96x63.xml"/>
+    <Include href="image/mower_egypt_73x47.xml"/>
+    <Include href="image/mower_egypt_38x34.xml"/>
+    <Include href="image/mower_egypt_45x45.xml"/>
+    <Include href="image/mower_egypt_57x90_2.xml"/>
+    <Include href="image/mower_egypt_16x11.xml"/>
+    <Include href="image/mower_egypt_11x7.xml"/>
+    <Include href="image/mower_egypt_45x45_2.xml"/>
+    <Include href="image/mower_egypt_37x37.xml"/>
+    <Include href="image/mower_egypt_22x22.xml"/>
+    <Include href="sprite/vacuum_backwheel_anim.xml"/>
+    <Include href="sprite/vacuum_bag_2_anim.xml"/>
+    <Include href="sprite/vacuum_bag_top_anim.xml"/>
+    <Include href="sprite/vacuum_handle_anim.xml"/>
+    <Include href="sprite/vacuum_base_anim.xml"/>
+    <Include href="sprite/vacuum_mid_anim.xml"/>
+    <Include href="sprite/vacuum_top_anim.xml"/>
+    <Include href="sprite/vacuum_wheel_idle_anim.xml"/>
+    <Include href="sprite/vacuum_bag_2_transition_anim.xml"/>
+    <Include href="sprite/_vacuum_main_pyramid.xml"/>
+    <Include href="sprite/vacuum_wheel_shine_anim.xml"/>
+    <Include href="sprite/vacuum_wheel_rim_shine_anim.xml"/>
+    <Include href="sprite/_vacuum_wheel_transition.xml"/>
+    <Include href="sprite/vacuum_wheel_edge_outer.xml"/>
+    <Include href="sprite/vacuum_wheel_innerEdge.xml"/>
+    <Include href="sprite/vacuum_wheel_spoke.xml"/>
+    <Include href="sprite/vacuum_bag_2_run_anim.xml"/>
+    <Include href="label/idle.xml"/>
+    <Include href="label/transition.xml"/>
+    <Include href="label/attack.xml"/>
+  </symbols>
+  <timelines>
+    <DOMTimeline name="animation">
+      <layers>
+        <DOMLayer name="label">
+          <frames>
+            <DOMFrame index="0" duration="9" name="idle" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="8" name="transition" labelType="name">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="17" duration="12" name="attack" labelType="name">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action">
+          <frames>
+            <DOMFrame index="0" duration="8">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="7">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="17" duration="11">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="28">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="instance">
+          <frames>
+            <DOMFrame index="0" duration="9">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/idle" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="8">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/transition" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="12">
+              <elements>
+                <DOMSymbolInstance libraryItemName="label/attack" symbolType="graphic" loop="loop"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+</DOMDocument>

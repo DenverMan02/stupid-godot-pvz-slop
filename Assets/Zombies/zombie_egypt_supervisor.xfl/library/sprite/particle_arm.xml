@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/particle_arm" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="particle_arm">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_arm_outer_lower" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="7.1" ty="3.35"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_hand_outer_01" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.995395537857015" b="0.095852611932817" c="-0.095852611932817" d="0.995395537857015" tx="4.15" ty="45.45"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/_armor" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="_armor">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_egypt_sarcophagus_norm" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="15" ty="10"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_egypt_sarcophagus_damage1" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="22" ty="9"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_egypt_sarcophagus_damage2" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="22" ty="9"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

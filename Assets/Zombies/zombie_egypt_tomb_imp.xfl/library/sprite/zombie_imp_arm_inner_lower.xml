@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/zombie_imp_arm_inner_lower" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="zombie_imp_arm_inner_lower">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/zombie_egypt_tomb_imp_17x23" loop="loop">
+                  <matrix>
+                    <Matrix tx="-6.2" ty="15.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/zombie_egypt_tomb_imp_13x25" loop="loop">
+                  <matrix>
+                    <Matrix tx="-6.2" ty="1.05"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

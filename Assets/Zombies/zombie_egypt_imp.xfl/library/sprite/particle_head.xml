@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/particle_head" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="particle_head">
+      <layers>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_imp_skull" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="-125.4" ty="-125.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_imp_jaw" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.966132414430519" b="-0.258046813168959" c="0.258046813168959" d="0.966132414430519" tx="-105.5" ty="-75.5"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

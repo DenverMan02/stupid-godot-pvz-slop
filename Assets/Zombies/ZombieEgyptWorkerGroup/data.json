@@ -1,0 +1,36 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"ZombieEgyptWorkerGroup": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_WORKER", 
+					"path": "images/initial/zombie/zombie_egypt_worker/zombie_egypt_worker.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_WORKER_FLAG", 
+					"path": "images/initial/zombie/zombie_egypt_worker_flag/zombie_egypt_worker_flag.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_WORKER_VET_FLAG", 
+					"path": "images/initial/zombie/zombie_egypt_worker_vet_flag/zombie_egypt_worker_vet_flag.xfl"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"ZombieEgyptZombossGroup": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_ZOMBOSS", 
+					"path": "images/initial/zombie/Zombie_Egypt_Zomboss/Zombie_Egypt_Zomboss.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_EGYPT", 
+					"path": "images/initial/effects/Zomboss_Missile_Explosion_Egypt/Zomboss_Missile_Explosion_Egypt.xfl"
+				}
+			]
+		}
+	}
+}

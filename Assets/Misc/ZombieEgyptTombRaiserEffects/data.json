@@ -1,0 +1,31 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"ZombieEgyptTombRaiserGroup": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_EFFECTS_ZOMBIE_EGYPT_TOMBRAISER_BONE_HIT", 
+					"path": "images/initial/effects/zombie_egypt_tombraiser_bone_hit/zombie_egypt_tombraiser_bone_hit.xfl"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_ZOMBIE_BONE_PROJECTILE", 
+					"path": "images/initial/zombie_bone_projectile.png"
+				}
+			]
+		}
+	}
+}

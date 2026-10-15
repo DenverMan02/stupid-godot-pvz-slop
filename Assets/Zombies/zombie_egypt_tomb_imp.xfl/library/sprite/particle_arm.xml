@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/particle_arm" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="particle_arm">
+      <layers>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/zombie_troglobite_arm_outer_lower" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.7073882691672" b="0.706825181105366" c="-0.706825181105366" d="0.7073882691672" tx="-43.45" ty="-53.5"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

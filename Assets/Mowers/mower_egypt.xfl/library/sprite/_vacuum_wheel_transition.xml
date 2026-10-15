@@ -1,0 +1,125 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/_vacuum_wheel_transition" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="_vacuum_wheel_transition">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0" duration="5">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_rim_shine_anim" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.961606227129189" b="0.274432986257786" c="-0.274432986257786" d="0.961606227129189" tx="0.7" ty="-3.6"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_rim_shine_anim" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix a="0.924301147460938" b="-0.0364990234375" c="-0.01312255859375" d="0.937789916992188" tx="-1.15" ty="-3.8"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_rim_shine_anim" loop="loop" firstFrame="2">
+                  <matrix>
+                    <Matrix a="0.796249389648438" b="-0.298324584960938" c="0.212295532226562" d="0.849746704101562" tx="-3" ty="-3.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_rim_shine_anim" loop="loop" firstFrame="3">
+                  <matrix>
+                    <Matrix a="0.60528564453125" b="-0.4869384765625" c="0.395828247070312" d="0.712203979492188" tx="-4.6" ty="-2.75"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_rim_shine_anim" loop="loop" firstFrame="4">
+                  <matrix>
+                    <Matrix a="0.796249389648438" b="-0.298324584960938" c="0.212295532226562" d="0.849746704101562" tx="-3" ty="-3.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0" duration="5">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_shine_anim" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.998432409727834" b="0.0559707352557555" c="-0.0559707352557555" d="0.998432409727834" tx="-0.2" ty="-15.8"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_shine_anim" loop="loop" firstFrame="1">
+                  <matrix>
+                    <Matrix a="0.987045288085938" b="-0.157211303710938" c="0.0748748779296875" d="0.810592651367188" tx="-3.5" ty="-15.55"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_shine_anim" loop="loop" firstFrame="2">
+                  <matrix>
+                    <Matrix a="0.9256591796875" b="-0.379852294921875" c="0.168075561523438" d="0.684463500976562" tx="-7.35" ty="-14.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_shine_anim" loop="loop" firstFrame="3">
+                  <matrix>
+                    <Matrix a="0.8291015625" b="-0.559112548828125" c="0.282440185546875" d="0.68145751953125" tx="-10.15" ty="-12.7"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_shine_anim" loop="loop" firstFrame="4">
+                  <matrix>
+                    <Matrix a="0.9256591796875" b="-0.379852294921875" c="0.168075561523438" d="0.684463500976562" tx="-7.35" ty="-14.65"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0" duration="10">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/vacuum_wheel_idle_anim" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix tx="-0.2"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

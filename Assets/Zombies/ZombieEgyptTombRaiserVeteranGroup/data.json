@@ -1,0 +1,46 @@
+{
+	"version": 5, 
+	"expand_data": 1, 
+	"composite": true, 
+	"category": {
+		"resolution": [
+			1536, 
+			768
+		], 
+		"format": 147, 
+		"texture_format_category": 0
+	}, 
+	"subgroups": {
+		"ZombieEgyptTombRaiserVeteranGroup": {
+			"compression": 3, 
+			"common_type": true, 
+			"resource": [
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_SPARKS_ZOMBIE_EGYPT_TOMBRAISER", 
+					"path": "images/sparks/zombie_egypt_tombraiser/zombie_egypt_tombraiser.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_SPARKS_ZOMBIE_EGYPT_TOMBRAISER_ANIMATION", 
+					"path": "images/sparks/zombie_egypt_tombraiser_animation/zombie_egypt_tombraiser_animation.xfl"
+				}, 
+				{
+					"type": "PopAnim", 
+					"id": "POPANIM_SPARKS_ZOMBIE_EGYPT_TOMBRAISER_ANIMATION_02", 
+					"path": "images/sparks/zombie_egypt_tombraiser_animation_02/zombie_egypt_tombraiser_animation_02.xfl"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_SPARKS_BONE_PROJECTILE", 
+					"path": "images/sparks/bone_projectile.png"
+				}, 
+				{
+					"type": "Image", 
+					"id": "IMAGE_SPARKS_BONE_PROJECTILE_AMBER", 
+					"path": "images/sparks/bone_projectile_amber.png"
+				}
+			]
+		}
+	}
+}

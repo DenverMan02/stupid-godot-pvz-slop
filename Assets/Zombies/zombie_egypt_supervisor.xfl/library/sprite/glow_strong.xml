@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/glow_strong" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="glow_strong">
+      <layers>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="image/zombie_egypt_supervisor_12" loop="loop">
+                  <matrix>
+                    <Matrix a="0.78125" d="0.78125"/>
+                  </matrix>
+                  <color>
+                    <Color blueMultiplier="0.6" alphaMultiplier="0.6"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

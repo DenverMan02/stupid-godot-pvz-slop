@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sprite/zombie_armor_brick_norm" symbolType="graphic">
+  <timeline>
+    <DOMTimeline name="zombie_armor_brick_norm">
+      <layers>
+        <DOMLayer name="2">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/brick_undamaged" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.962425197628238" b="0.271546936956113" c="-0.271546936956113" d="0.962425197628238" tx="23.7" ty="-41.6"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="1">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/brick_damaged1" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.962425197628238" b="0.271546936956113" c="-0.271546936956113" d="0.962425197628238" tx="26.8" ty="-40.5"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="0">
+          <frames>
+            <DOMFrame index="0">
+              <elements>
+                <DOMSymbolInstance libraryItemName="sprite/brick_damaged2" loop="loop" firstFrame="0">
+                  <matrix>
+                    <Matrix a="0.962425197628238" b="0.271546936956113" c="-0.271546936956113" d="0.962425197628238" tx="35.65" ty="-12.25"/>
+                  </matrix>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

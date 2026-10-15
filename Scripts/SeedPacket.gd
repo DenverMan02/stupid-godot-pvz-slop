@@ -23,9 +23,16 @@ func _ready() -> void:
 	size = Vector2(156, 112)
 	mouse_filter = MOUSE_FILTER_STOP
 
-	var packet_path = "res://SeedPackets/%s.png" % plant_id
+	var icon_name = plant_id
+	if plant_id == "peashooter_super":
+		icon_name = "gatlingpea"
+	elif plant_id == "sunflower_twin" or plant_id == "three_head_sunflower":
+		icon_name = "twinsunflower"
+	var packet_path = "res://SeedPackets/%s.png" % icon_name
 	if ResourceLoader.exists(packet_path):
 		card_texture.texture = load(packet_path)
+	elif ResourceLoader.exists("res://SeedPackets/%s.png" % plant_id):
+		card_texture.texture = load("res://SeedPackets/%s.png" % plant_id)
 
 	if cost_label:
 		cost_label.text = str(sun_cost)

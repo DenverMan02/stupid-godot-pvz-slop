@@ -7,134 +7,7 @@ class_name AnimationViewer
 
 signal closed
 
-const ENTITY_CATALOG = [
-	{
-		"name": "Peashooter",
-		"json": "res://Assets/Plants/peashooter.anim.json",
-		"tex": "res://Assets/Plants/peashooter.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "Sunflower",
-		"json": "res://Assets/Plants/sunflower.anim.json",
-		"tex": "res://Assets/Plants/sunflower.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "Wall-nut",
-		"json": "res://Assets/Plants/wallnut.anim.json",
-		"tex": "res://Assets/Plants/wallnut.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "Wall-nut (PF Armor)",
-		"json": "res://Assets/Plants/wallnut.anim.json",
-		"tex": "res://Assets/Plants/wallnut.xfl/library/",
-		"scale": 1.2,
-		"armor": "wallnut_pf"
-	},
-	{
-		"name": "Potato Mine",
-		"json": "res://Assets/Plants/potatomine.anim.json",
-		"tex": "res://Assets/Plants/potatomine.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "Potato Mine Explosion",
-		"json": "res://Assets/Plants/potatomine_explosion.anim.json",
-		"tex": "res://Assets/Plants/potatomine_explosion.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "Cabbage-pult",
-		"json": "res://Assets/Plants/cabbagepult.anim.json",
-		"tex": "res://Assets/Plants/cabbagepult.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "LingFugu",
-		"json": "res://Assets/Plants/lingfugu.anim.json",
-		"tex": "res://Assets/Plants/lingfugu.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	},
-	{
-		"name": "Clivia",
-		"json": "res://Assets/Plants/clivia.anim.json",
-		"tex": "res://Assets/Plants/clivia.xfl/LIBRARY/",
-		"scale": 1.8,
-		"armor": "none"
-	},
-	{
-		"name": "Garlic",
-		"json": "res://Assets/Plants/garlic.anim.json",
-		"tex": "res://Assets/Plants/garlic.xfl/LIBRARY/",
-		"scale": 1.8,
-		"armor": "none"
-	},
-	{
-		"name": "Zombie (Male)",
-		"json": "res://Assets/Zombies/zombie_tutorial.anim.json",
-		"tex": "res://Assets/Zombies/zombie_tutorial.xfl/library/",
-		"scale": 1.0,
-		"armor": "none"
-	},
-	{
-		"name": "Zombie (Female)",
-		"json": "res://Assets/Zombies/zombie_tutorialfem.anim.json",
-		"tex": "res://Assets/Zombies/zombie_tutorialfem.xfl/library/",
-		"scale": 1.0,
-		"armor": "none"
-	},
-	{
-		"name": "Conehead Zombie",
-		"json": "res://Assets/Zombies/zombie_tutorial.anim.json",
-		"tex": "res://Assets/Zombies/zombie_tutorial.xfl/library/",
-		"scale": 1.0,
-		"armor": "cone"
-	},
-	{
-		"name": "Buckethead Zombie",
-		"json": "res://Assets/Zombies/zombie_tutorial.anim.json",
-		"tex": "res://Assets/Zombies/zombie_tutorial.xfl/library/",
-		"scale": 1.0,
-		"armor": "bucket"
-	},
-	{
-		"name": "Brickhead Zombie",
-		"json": "res://Assets/Zombies/zombie_tutorial.anim.json",
-		"tex": "res://Assets/Zombies/zombie_tutorial.xfl/library/",
-		"scale": 1.0,
-		"armor": "brick"
-	},
-	{
-		"name": "Pea Projectile",
-		"json": "res://Assets/Projectiles/t_pea_projectile.anim.json",
-		"tex": "res://Assets/Projectiles/T_pea_projectile.xfl/library/",
-		"scale": 1.5,
-		"armor": "none"
-	},
-	{
-		"name": "Cabbage Projectile",
-		"json": "res://Assets/Projectiles/t_cabbagepult_projectile.anim.json",
-		"tex": "res://Assets/Projectiles/T_cabbagepult_projectile.xfl/library/",
-		"scale": 1.5,
-		"armor": "none"
-	},
-	{
-		"name": "Giant Cabbage (PF)",
-		"json": "res://Assets/Projectiles/cabbagepult_plantfood_projectile.anim.json",
-		"tex": "res://Assets/Projectiles/cabbagepult_plantfood_projectile.xfl/library/",
-		"scale": 1.2,
-		"armor": "none"
-	}
-]
+var entity_catalog: Array[Dictionary] = []
 
 var cur_entity_idx: int = 0
 var cur_anim_idx: int = 0
@@ -153,8 +26,93 @@ var loop_btn: Button
 
 func _ready() -> void:
 	layer = 120
+	_scan_and_build_catalog()
 	_build_ui()
 	_load_entity(0)
+
+func _format_entity_name(raw: String) -> String:
+	var clean = raw.replace("_", " ").replace("-", " ")
+	var words = clean.split(" ", false)
+	var capitalized: Array[String] = []
+	for w in words:
+		capitalized.append(w.capitalize())
+	return " ".join(capitalized)
+
+func _scan_and_build_catalog() -> void:
+	entity_catalog.clear()
+	var search_dirs = [
+		"res://Assets/Plants",
+		"res://Assets/Zombies",
+		"res://Assets/Mowers",
+		"res://Assets/Projectiles",
+		"res://Assets/Misc",
+		"res://Assets/GridItems",
+		"res://Assets/UI"
+	]
+	for s_dir in search_dirs:
+		_scan_dir_recursive(s_dir)
+	print("[AnimationViewer] Auto-detected %d entity animations!" % entity_catalog.size())
+
+func _scan_dir_recursive(dir_path: String) -> void:
+	var dir = DirAccess.open(dir_path)
+	if not dir:
+		return
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	while file_name != "":
+		if file_name.begins_with("."):
+			file_name = dir.get_next()
+			continue
+		var full_path = dir_path + "/" + file_name
+		if dir.current_is_dir():
+			if not "research purposes" in file_name.to_lower():
+				_scan_dir_recursive(full_path)
+		elif file_name.ends_with(".anim.json"):
+			var base_name = file_name.replace(".anim.json", "")
+			var xfl_name = base_name + ".xfl"
+			var tex_dir = dir_path + "/" + xfl_name + "/library/"
+			if not DirAccess.dir_exists_absolute(tex_dir):
+				tex_dir = dir_path + "/" + xfl_name + "/LIBRARY/"
+			if not DirAccess.dir_exists_absolute(tex_dir):
+				tex_dir = dir_path + "/library/"
+
+			var disp_name = _format_entity_name(base_name)
+			var ent_scale = 1.2
+			if "zombie" in base_name.to_lower():
+				ent_scale = 1.0
+			elif "projectile" in base_name.to_lower() or "splat" in base_name.to_lower() or "bullet" in base_name.to_lower():
+				ent_scale = 1.5
+			elif "mower" in base_name.to_lower():
+				ent_scale = 0.9
+
+			entity_catalog.append({
+				"name": disp_name,
+				"json": full_path,
+				"tex": tex_dir,
+				"scale": ent_scale,
+				"armor": "none"
+			})
+
+			if base_name == "zombie_tutorial":
+				for arm in ["cone", "bucket", "brick"]:
+					entity_catalog.append({
+						"name": "%s Zombie" % arm.capitalize(),
+						"json": full_path,
+						"tex": tex_dir,
+						"scale": 1.0,
+						"armor": arm
+					})
+			elif base_name == "wallnut":
+				entity_catalog.append({
+					"name": "Wall-nut (PF Armor)",
+					"json": full_path,
+					"tex": tex_dir,
+					"scale": 1.2,
+					"armor": "wallnut_pf"
+				})
+
+		file_name = dir.get_next()
+	dir.list_dir_end()
 
 func _build_ui() -> void:
 	# Main container panel
@@ -291,11 +249,11 @@ func _build_ui() -> void:
 	panel.add_child(frame_label)
 
 func _load_entity(idx: int) -> void:
-	if ENTITY_CATALOG.is_empty():
+	if entity_catalog.is_empty():
 		return
-	cur_entity_idx = posmod(idx, ENTITY_CATALOG.size())
-	var info = ENTITY_CATALOG[cur_entity_idx]
-	entity_label.text = "[%d/%d] %s" % [cur_entity_idx + 1, ENTITY_CATALOG.size(), info["name"]]
+	cur_entity_idx = posmod(idx, entity_catalog.size())
+	var info = entity_catalog[cur_entity_idx]
+	entity_label.text = "[%d/%d] %s" % [cur_entity_idx + 1, entity_catalog.size(), info["name"]]
 
 	preview_sprite.scale = Vector2(info["scale"], info["scale"])
 	preview_sprite.set_animation_source(info["json"], info["tex"])

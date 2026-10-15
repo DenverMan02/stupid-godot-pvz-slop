@@ -35,6 +35,7 @@ var potatomine_pf_spawns_left: int = 0
 var peashooter_pf_firing: bool = false
 var peashooter_pf_peas_remaining: int = 0
 var peashooter_pf_timer: float = 0.0
+var pf_shooter_type: String = "peashooter"
 var plantfood_glow_material: ShaderMaterial = null
 var pf_vfx_node: Node2D = null
 
@@ -212,23 +213,25 @@ func _process(delta: float) -> void:
 	if not level_started:
 		return
 
-	# Sunflower sun production
-	if plant_type == "sunflower" and not is_performing_action:
-		sunflower_timer -= delta
-		if sunflower_timer <= 0.0:
-			sunflower_timer = 24.0
-			_produce_sun()
-
-	# Peashooter plant food continuous firing: 60 peas in 2 seconds
-	if plant_type == "peashooter" and peashooter_pf_firing:
+	# Peashooter, Repeater, Gatling, and Threepeater plant food continuous firing
+	if peashooter_pf_firing:
 		peashooter_pf_timer -= delta
 		while peashooter_pf_timer <= 0.0 and peashooter_pf_peas_remaining > 0:
 			peashooter_pf_timer += 2.0 / 60.0
-			_spawn_pea_projectile()
+			if pf_shooter_type == "threepeater":
+				var lawn_inst = get_tree().current_scene
+				var max_r = (lawn_inst.grid.rows if lawn_inst and "grid" in lawn_inst and lawn_inst.grid else 5)
+				for r in [row - 1, row, row + 1]:
+					if r >= 0 and r < max_r:
+						_spawn_pea_projectile_in_row(r)
+			else:
+				_spawn_pea_projectile()
 			peashooter_pf_peas_remaining -= 1
 
 		if peashooter_pf_peas_remaining <= 0:
 			peashooter_pf_firing = false
+			if pf_shooter_type == "repeater":
+				_spawn_giant_pea_projectile()
 			if sprite and sprite.has_animation("plantfood_off"):
 				sprite.play("plantfood_off", false)
 			else:
@@ -237,19 +240,38 @@ func _process(delta: float) -> void:
 				_set_plantfood_glow(false)
 				_play_current_idle()
 
-	# Peashooter and Cabbage-pult lane targeting & attacking
-	elif (plant_type == "peashooter" or plant_type == "cabbagepult") and not is_performing_action and not is_in_plantfood_sequence:
+	# Peashooter, Repeater, Gatling Pea, and Cabbage-pult lane targeting & attacking
+	elif (plant_type in ["peashooter", "repeater", "peashooter_super", "cabbagepult"]) and not is_performing_action and not is_in_plantfood_sequence:
 		var target = _find_zombie_in_row()
 		if target:
 			attack_timer -= delta
 			if attack_timer <= 0.0:
-				var cooldown_time = 1.425 if plant_type == "peashooter" else 2.85
+				var cooldown_time = 1.425
+				if plant_type == "cabbagepult":
+					cooldown_time = 2.85
 				attack_timer = cooldown_time
 				target_zombie_for_shot = target
 				play_attack()
 		else:
 			# Keep attack timer nearly primed so it reacts quickly when a zombie enters the lane
 			attack_timer = min(attack_timer, 0.2)
+
+	elif plant_type == "threepeater" and not is_performing_action and not is_in_plantfood_sequence:
+		var target = _find_threepeater_target()
+		if target:
+			attack_timer -= delta
+			if attack_timer <= 0.0:
+				attack_timer = 1.425
+				target_zombie_for_shot = target
+				play_attack()
+		else:
+			attack_timer = min(attack_timer, 0.2)
+
+	elif (plant_type in ["sunflower", "sunflower_twin", "three_head_sunflower"]) and not is_performing_action and not is_in_plantfood_sequence:
+		sunflower_timer -= delta
+		if sunflower_timer <= 0.0:
+			sunflower_timer = randf_range(23.0, 25.0)
+			_produce_sun()
 
 	# Potato Mine arming & zombie trigger
 	elif plant_type == "potatomine" and not is_in_plantfood_sequence:
@@ -305,11 +327,44 @@ func _find_zombie_in_row() -> Node2D:
 
 	return closest_zombie
 
+func _find_threepeater_target() -> Node2D:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return null
+	var zombies_node = lawn.get_node_or_null("Zombies")
+	if not zombies_node:
+		return null
+
+	var valid_rows = [row - 1, row, row + 1]
+	var closest_zombie: Node2D = null
+	var min_dist: float = 999999.0
+
+	for z in zombies_node.get_children():
+		if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion():
+			if z.row in valid_rows and z.health > 0.0 and z.global_position.x > (global_position.x - 30.0):
+				var dist = z.global_position.x - global_position.x
+				if dist < min_dist:
+					min_dist = dist
+					closest_zombie = z
+	return closest_zombie
+
 func _produce_sun() -> void:
 	play_attack()
-	get_tree().create_timer(0.8).timeout.connect(Callable(self, "_spawn_sun_at_plant"))
+	if plant_type == "sunflower_twin":
+		get_tree().create_timer(0.7).timeout.connect(func():
+			_spawn_sun_at_offset(Vector2(-20.0, 0.0))
+			_spawn_sun_at_offset(Vector2(20.0, 0.0))
+		)
+	elif plant_type == "three_head_sunflower":
+		get_tree().create_timer(0.7).timeout.connect(func():
+			_spawn_sun_at_offset(Vector2(-35.0, 0.0))
+			_spawn_sun_at_offset(Vector2(0.0, -10.0))
+			_spawn_sun_at_offset(Vector2(35.0, 0.0))
+		)
+	else:
+		get_tree().create_timer(0.8).timeout.connect(Callable(self, "_spawn_sun_at_plant"))
 
-func _spawn_sun_at_plant() -> void:
+func _spawn_sun_at_offset(offset: Vector2) -> void:
 	var sun_inst: Sun = sun_scene.instantiate()
 	var lawn = get_tree().current_scene
 	if lawn:
@@ -318,11 +373,14 @@ func _spawn_sun_at_plant() -> void:
 			suns_container.add_child(sun_inst)
 		else:
 			lawn.add_child(sun_inst)
-		sun_inst.spawn_from_sunflower(global_position)
+		sun_inst.spawn_from_sunflower(global_position + offset)
 		sun_inst.collected.connect(func(val):
 			if lawn.has_method("add_sun"):
 				lawn.add_sun(val)
 		)
+
+func _spawn_sun_at_plant() -> void:
+	_spawn_sun_at_offset(Vector2.ZERO)
 
 func _ready() -> void:
 	health = max_health
@@ -628,29 +686,65 @@ func _on_anim_event(event_name: String) -> void:
 
 func _on_use_action() -> void:
 	if plant_type == "peashooter":
-		if is_in_plantfood_sequence:
-			# Plant food rapid shooting is managed by timer in _process
-			pass
-		else:
+		if not is_in_plantfood_sequence:
 			_spawn_pea_projectile()
+	elif plant_type == "repeater":
+		if not is_in_plantfood_sequence:
+			_spawn_pea_projectile()
+			get_tree().create_timer(0.15).timeout.connect(func():
+				if is_instance_valid(self) and not is_queued_for_deletion():
+					_spawn_pea_projectile()
+			)
+	elif plant_type == "peashooter_super":
+		if not is_in_plantfood_sequence:
+			for i in range(4):
+				get_tree().create_timer(i * 0.12).timeout.connect(func():
+					if is_instance_valid(self) and not is_queued_for_deletion():
+						_spawn_pea_projectile()
+				)
+	elif plant_type == "threepeater":
+		if not is_in_plantfood_sequence:
+			var lawn = get_tree().current_scene
+			var max_r = (lawn.grid.rows if lawn and "grid" in lawn and lawn.grid else 5)
+			for r in [row - 1, row, row + 1]:
+				if r >= 0 and r < max_r:
+					_spawn_pea_projectile_in_row(r)
 	elif plant_type == "cabbagepult":
 		if is_in_plantfood_sequence:
 			_fire_cabbagepult_plantfood()
 		else:
 			_spawn_cabbage_projectile(target_zombie_for_shot)
-	elif plant_type == "sunflower":
+	elif plant_type in ["sunflower", "sunflower_twin", "three_head_sunflower"]:
 		pass
 	else:
 		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/click_buy_button.ogg"):
 			AudioManager.play_sfx(load("res://Audio/SFX/click_buy_button.ogg"))
 
-func _spawn_pea_projectile() -> void:
+func _spawn_giant_pea_projectile() -> void:
 	var lawn = get_tree().current_scene
 	if not lawn:
 		return
 	var proj: Projectile = projectile_scene.instantiate()
-	var spawn_pos = global_position + Vector2(28.0, -18.0)
-	proj.setup_straight(row, spawn_pos, 20.0)
+	var spawn_y = (lawn.grid.cell_to_world(col, row).y) if (lawn and "grid" in lawn and lawn.grid) else (global_position.y)
+	var spawn_pos = Vector2(global_position.x + 35.0, spawn_y - 20.0)
+	proj.setup_straight(row, spawn_pos, 600.0, true)
+	var proj_container = lawn.get_node_or_null("Projectiles")
+	if proj_container:
+		proj_container.add_child(proj)
+	else:
+		lawn.add_child(proj)
+
+func _spawn_pea_projectile() -> void:
+	_spawn_pea_projectile_in_row(row)
+
+func _spawn_pea_projectile_in_row(target_row: int) -> void:
+	var lawn = get_tree().current_scene
+	if not lawn:
+		return
+	var proj: Projectile = projectile_scene.instantiate()
+	var spawn_y = (lawn.grid.cell_to_world(col, target_row).y) if (lawn and "grid" in lawn and lawn.grid) else (global_position.y + (target_row - row) * 137.0)
+	var spawn_pos = Vector2(global_position.x + 28.0, spawn_y - 18.0)
+	proj.setup_straight(target_row, spawn_pos, 20.0)
 	var proj_container = lawn.get_node_or_null("Projectiles")
 	if proj_container:
 		proj_container.add_child(proj)
@@ -769,16 +863,48 @@ func play_plantfood() -> void:
 			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
 		sprite.play("plantfood_on", false)
 		return
-	elif plant_type == "peashooter":
+	elif plant_type in ["peashooter", "repeater", "peashooter_super", "threepeater"]:
 		is_performing_action = true
 		is_in_plantfood_sequence = true
 		_set_plantfood_glow(true)
-		_fire_peashooter_plantfood()
+		peashooter_pf_firing = true
+		pf_shooter_type = plant_type
+		peashooter_pf_timer = 0.0
+		if plant_type == "peashooter":
+			peashooter_pf_peas_remaining = 60
+		elif plant_type == "repeater":
+			peashooter_pf_peas_remaining = 60
+		elif plant_type == "peashooter_super":
+			peashooter_pf_peas_remaining = 100
+		elif plant_type == "threepeater":
+			peashooter_pf_peas_remaining = 30
 		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
 			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
 		if sprite.has_animation("plantfood_on"):
 			sprite.play("plantfood_on", false)
-		else:
+		elif sprite.has_animation("plantfood"):
+			sprite.play("plantfood", false)
+		return
+	elif plant_type in ["sunflower_twin", "three_head_sunflower"]:
+		is_performing_action = true
+		is_in_plantfood_sequence = true
+		_set_plantfood_glow(true)
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/plantfood.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/plantfood.ogg"))
+		for i in range(3):
+			get_tree().create_timer(0.35 * (i + 1)).timeout.connect(func():
+				if is_instance_valid(self) and not is_queued_for_deletion():
+					if plant_type == "sunflower_twin":
+						_spawn_sun_at_offset(Vector2(-25.0, 0.0))
+						_spawn_sun_at_offset(Vector2(25.0, 0.0))
+					elif plant_type == "three_head_sunflower":
+						_spawn_sun_at_offset(Vector2(-35.0, 0.0))
+						_spawn_sun_at_offset(Vector2(0.0, -10.0))
+						_spawn_sun_at_offset(Vector2(35.0, 0.0))
+			)
+		if sprite.has_animation("plantfood_on"):
+			sprite.play("plantfood_on", false)
+		elif sprite.has_animation("plantfood"):
 			sprite.play("plantfood", false)
 		return
 

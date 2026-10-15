@@ -10,6 +10,19 @@ signal selection_cleared()
 var selected_packet: SeedPacket = null
 var current_sun: int = 50
 
+const ALL_PLANT_PACKETS: Dictionary = {
+	"sunflower": {"name": "Sunflower", "cost": 50, "cooldown": 5.0},
+	"peashooter": {"name": "Peashooter", "cost": 100, "cooldown": 5.0},
+	"repeater": {"name": "Repeater", "cost": 200, "cooldown": 7.5},
+	"wallnut": {"name": "Wall-nut", "cost": 50, "cooldown": 20.0},
+	"potatomine": {"name": "Potato Mine", "cost": 25, "cooldown": 20.0},
+	"cabbagepult": {"name": "Cabbage-pult", "cost": 100, "cooldown": 5.0},
+	"sunflower_twin": {"name": "Twin Sunflower", "cost": 125, "cooldown": 7.5},
+	"threepeater": {"name": "Threepeater", "cost": 300, "cooldown": 7.5},
+	"peashooter_super": {"name": "Gatling Pea", "cost": 400, "cooldown": 10.0},
+	"three_head_sunflower": {"name": "Triplet Sunflower", "cost": 200, "cooldown": 10.0},
+}
+
 const PACKET_DATA: Array[Dictionary] = [
 	{
 		"id": "sunflower",

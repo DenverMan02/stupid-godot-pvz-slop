@@ -248,5 +248,55 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("_spawn_cabbage_projectile_at(", plant_code)
         self.assertIn("p_is_giant", plant_code)
 
+
+    def test_pause_menu_visual_alignments(self):
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("var diag_w = 920.0", lawn_code)
+        self.assertIn("var w_front = 1040.0", lawn_code)
+        self.assertIn("top_grass_y - 25.0", lawn_code)
+        self.assertIn("var btn_size = Vector2(250.0, 90.0)", lawn_code)
+
+    def test_plant_food_button_pixel_centering(self):
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("pf_main_btn.position = Vector2(22.0, 23.0)", lawn_code)
+
+    def test_wave_bar_full_fill_and_no_gap(self):
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("var track_right = 405.0", lawn_code)
+        self.assertIn("var max_fill_w = 390.0", lawn_code)
+        self.assertIn("meter_fill.position = Vector2(405.0, 51.0)", lawn_code)
+        self.assertIn("final_flag_icon.position = Vector2(14.0, 56.0)", lawn_code)
+
+    def test_animation_viewer_auto_detection(self):
+        with open("Scripts/AnimationViewer.gd", "r") as f:
+            av_code = f.read()
+        self.assertIn("func _scan_and_build_catalog()", av_code)
+        self.assertIn("res://Assets/Plants", av_code)
+        self.assertIn("res://Assets/Zombies", av_code)
+        self.assertIn("res://Assets/Mowers", av_code)
+
+    def test_new_plants_registered(self):
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        for pid in ["repeater", "sunflower_twin", "peashooter_super", "threepeater", "three_head_sunflower"]:
+            self.assertIn('"id": "%s"' % pid, lawn_code)
+
+    def test_lawnmowers_system(self):
+        self.assertTrue(os.path.exists("Scripts/LawnMower.gd"))
+        self.assertTrue(os.path.exists("Scenes/LawnMower.tscn"))
+        with open("Scripts/LawnMower.gd", "r") as f:
+            mower_code = f.read()
+        self.assertIn("class_name LawnMower", mower_code)
+        self.assertIn("State.TRIGGERED", mower_code)
+        self.assertIn("take_damage(99999.0)", mower_code)
+        self.assertIn("res://Assets/Mowers/mower_modern.anim.json", mower_code)
+
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+        self.assertIn("func _setup_lawn_mowers()", lawn_code)
+        self.assertIn("Vector2(705.0, row_y)", lawn_code)
 if __name__ == "__main__":
     unittest.main()

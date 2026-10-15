@@ -35,6 +35,11 @@ func _apply_sprite_config() -> void:
 		z_index = (row * 100) + 65
 		sprite.set_animation_source("res://Assets/Projectiles/t_pea_projectile.anim.json", "res://Assets/Projectiles/T_pea_projectile.xfl/library/")
 		sprite.play("animation", true)
+	elif projectile_type == "giant_pea":
+		sprite.scale = Vector2(1.4, 1.4)
+		z_index = (row * 100) + 70
+		sprite.set_animation_source("res://Assets/Misc/LevelCommon/resource/images/initial/effects/repeater_plantfood_giantpea/repeater_plantfood_giantpea.anim.json", "res://Assets/Misc/LevelCommon/resource/images/initial/effects/repeater_plantfood_giantpea/repeater_plantfood_giantpea.xfl/library/")
+		sprite.play("animation", true)
 	elif projectile_type == "cabbage":
 		sprite.scale = Vector2(0.75, 0.75)
 		z_index = 600 # Lobbed projectiles fly high over the lawn
@@ -51,9 +56,9 @@ func _apply_sprite_config() -> void:
 		sprite.set_animation_source("res://Assets/Plants/potatomine.anim.json", "res://Assets/Plants/potatomine.xfl/library/")
 		sprite.play("plantfood3", true)
 
-func setup_straight(p_row: int, p_pos: Vector2, p_damage: float = 20.0) -> void:
+func setup_straight(p_row: int, p_pos: Vector2, p_damage: float = 20.0, p_is_giant: bool = false) -> void:
 	trajectory = Trajectory.STRAIGHT
-	projectile_type = "pea"
+	projectile_type = "giant_pea" if p_is_giant else "pea"
 	row = p_row
 	global_position = p_pos
 	prev_pos_x = p_pos.x
@@ -201,7 +206,22 @@ func _spawn_splat_effect() -> void:
 	if not lawn:
 		return
 
-	if projectile_type == "cabbage":
+	if projectile_type == "giant_pea":
+		var splat = Node2D.new()
+		splat.global_position = global_position
+		splat.z_index = (row * 100) + 75
+
+		var spr = XFLSprite2D.new()
+		spr.anim_data_path = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/splat_giantpea/splat_giantpea.anim.json"
+		spr.textures_base_dir = "res://Assets/Misc/LevelCommon/resource/images/initial/effects/splat_giantpea/splat_giantpea.xfl/library/"
+		spr.autoplay = false
+		splat.add_child(spr)
+		lawn.add_child(splat)
+
+		spr._load_resources()
+		spr.play("animation", false)
+		spr.anim_finished.connect(splat.queue_free.unbind(1))
+	elif projectile_type == "cabbage":
 		var splat = Node2D.new()
 		splat.global_position = global_position
 		splat.z_index = (row * 100) + 75

@@ -326,7 +326,7 @@ if __name__ == '__main__':
     target = sys.argv[1] if len(sys.argv) > 1 else 'all'
     if target.lower() in ['all', '--all', '-a']:
         # Walk all asset directories for .xfl folders
-        for root_dir in ['Assets/Plants', 'Assets/Zombies', 'Assets/Projectiles', 'Assets/Misc', 'Assets/GridItems', 'Assets/UI']:
+        for root_dir in ['Assets/Plants', 'Assets/Zombies', 'Assets/Mowers', 'Assets/Projectiles', 'Assets/Misc', 'Assets/GridItems', 'Assets/UI']:
             if not os.path.exists(root_dir):
                 continue
             for cur_root, dirs, files in os.walk(root_dir):

@@ -81,11 +81,8 @@ def main():
     new_tree_sha = new_tree["sha"]
     print(f"   New Tree SHA: {new_tree_sha}")
 
-    commit_msg = (
-        "Decode PopFX shaders, fix Peashooter PF 60-pea burst / 2s duration, "
-        "fix Plant Food bank layout, move Shovel to bottom-right, "
-        "move Wave Progress meter to top-center with level label, "
-        "and play speed_up/speed_down SFX on Turbo"
+    commit_msg = sys.argv[1] if len(sys.argv) > 1 else (
+        "Refine pause menu & wave bar, center plant food button, add LawnMowers, dynamic XFL animation viewer, and 5 new plants (Repeater, Twin Sunflower, Gatling Pea, Threepeater, Triplet Sunflower)"
     )
 
     print("4. Creating new git commit...")

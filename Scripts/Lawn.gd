@@ -100,6 +100,46 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"offset": Vector2(-15.0, 56.0),
 		"health": 600.0,
 	},
+	{
+		"id": "repeater",
+		"name": "Repeater",
+		"anim_json": "res://Assets/Plants/repeater.anim.json",
+		"tex_dir": "res://Assets/Plants/repeater.xfl/library/",
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "sunflower_twin",
+		"name": "Twin Sunflower",
+		"anim_json": "res://Assets/Plants/sunflower_twin1.anim.json",
+		"tex_dir": "res://Assets/Plants/sunflower_twin1.xfl/library/",
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "peashooter_super",
+		"name": "Gatling Pea",
+		"anim_json": "res://Assets/Plants/peashooter_super.anim.json",
+		"tex_dir": "res://Assets/Plants/peashooter_super.xfl/library/",
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "threepeater",
+		"name": "Threepeater",
+		"anim_json": "res://Assets/Plants/threepeater.anim.json",
+		"tex_dir": "res://Assets/Plants/threepeater.xfl/library/",
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "three_head_sunflower",
+		"name": "Triplet Sunflower",
+		"anim_json": "res://Assets/Plants/three_head_sunflower.anim.json",
+		"tex_dir": "res://Assets/Plants/three_head_sunflower.xfl/library/",
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
 ]
 
 var level_started: bool = false
@@ -147,6 +187,10 @@ var sfx_pause: AudioStream = preload("res://Audio/SFX/pause.ogg")
 var pause_btn: TextureButton = null
 var pause_menu: Control = null
 
+# LawnMowers
+var lawn_mowers_container: Node2D = null
+var mower_scene: PackedScene = preload("res://Scenes/LawnMower.tscn")
+
 # Progress Meter UI nodes
 var meter_fill: NinePatchRect = null
 var zombie_head_icon: TextureRect = null
@@ -172,6 +216,7 @@ func _ready() -> void:
 			shd.position = Vector2(0.0, 36.0)
 
 	_setup_hud()
+	_setup_lawn_mowers()
 	_update_hud()
 	_update_wave_meter(0.0)
 	_update_plant_food_display()
@@ -213,7 +258,7 @@ func _setup_hud() -> void:
 	# Main round plant food button (displays green leaf, only gone when selecting a plant to plantfood)
 	pf_main_btn = TextureButton.new()
 	pf_main_btn.name = "PlantFoodButton"
-	pf_main_btn.position = Vector2(14.0, 19.0)
+	pf_main_btn.position = Vector2(22.0, 23.0)
 	pf_main_btn.custom_minimum_size = Vector2(68.0, 72.0)
 	pf_main_btn.size = Vector2(68.0, 72.0)
 	pf_main_btn.ignore_texture_size = true
@@ -328,14 +373,14 @@ func _setup_hud() -> void:
 	meter_fill.patch_margin_right = 6
 	meter_fill.patch_margin_top = 4
 	meter_fill.patch_margin_bottom = 4
-	meter_fill.position = Vector2(398.0, 51.0)
+	meter_fill.position = Vector2(405.0, 51.0)
 	meter_fill.size = Vector2(0.0, 28.0)
 	meter_fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(meter_fill)
 
 	# Flags (unraised by default, raise when reached)
 	# Progress moves from right (0%) to left (100%)
-	# Mid-flag at 50% (x ≈ 200), Final flag at 100% (x ≈ 16)
+	# Mid-flag at 50% (x ≈ 200), Final flag at 100% (x ≈ 14)
 	mid_flag_icon = TextureRect.new()
 	mid_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	mid_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
@@ -348,7 +393,7 @@ func _setup_hud() -> void:
 	final_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	final_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	final_flag_icon.size = Vector2(30.0, 25.0)
-	final_flag_icon.position = Vector2(16.0, 56.0) # Unraised (lowered)
+	final_flag_icon.position = Vector2(14.0, 56.0) # Unraised (lowered)
 	final_flag_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(final_flag_icon)
 
@@ -638,8 +683,8 @@ func _drop_final_flag() -> void:
 
 func _update_wave_meter(progress: float) -> void:
 	var clamped_p = clampf(progress, 0.0, 1.0)
-	var track_right = 398.0
-	var max_fill_w = 376.0
+	var track_right = 405.0
+	var max_fill_w = 390.0
 	var fill_w = max_fill_w * clamped_p
 	if meter_fill:
 		# Fills from RIGHT to LEFT
@@ -874,8 +919,8 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 	# Main Dialog Box (matching PvZ2 NewOptionsDialog & Picture 6)
 	var dialog = Control.new()
 	dialog.name = "DialogBox"
-	var diag_w = 1050.0
-	var diag_h = 410.0
+	var diag_w = 920.0
+	var diag_h = 420.0
 	dialog.size = Vector2(diag_w, diag_h)
 	dialog.position = Vector2((1920.0 - diag_w) / 2.0, 420.0)
 	dialog.mouse_filter = Control.MOUSE_FILTER_PASS
@@ -905,13 +950,12 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 	dialog.add_child(border_frame)
 
 	# Flowerbox Toppers (Back grass, Sunflower, Front grass + gears)
-	var scale_topper = 0.95
 	var topper_back_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/windowtopper_back_half.png")
 	var sunflower_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/sunflower_topper.png")
 	var topper_front_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/windowtopper.png")
 
-	var w_front = 1102.0 * scale_topper
-	var h_front = 215.0 * scale_topper
+	var w_front = 1040.0
+	var h_front = 203.0
 	var top_grass_y = -h_front + 45.0
 
 	# 1. Back half grass
@@ -919,26 +963,26 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 	topper_back.name = "TopperBack"
 	topper_back.texture = topper_back_tex
 	topper_back.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	var w_back = 309.0 * scale_topper
-	var h_back = 142.0 * scale_topper
+	var w_back = 293.0
+	var h_back = 135.0
 	topper_back.size = Vector2(w_back, h_back)
 	topper_back.position = Vector2((diag_w - w_back) / 2.0, top_grass_y + 35.0)
 	topper_back.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	dialog.add_child(topper_back)
 
-	# 2. Smiling Sunflower peeking up
+	# 2. Smiling Sunflower nestled into grass blades
 	var sunflower = TextureRect.new()
 	sunflower.name = "SunflowerTopper"
 	sunflower.texture = sunflower_tex
 	sunflower.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	var w_sun = 247.0 * scale_topper
-	var h_sun = 206.0 * scale_topper
+	var w_sun = 235.0
+	var h_sun = 196.0
 	sunflower.size = Vector2(w_sun, h_sun)
-	sunflower.position = Vector2((diag_w - w_sun) / 2.0, top_grass_y - 65.0)
+	sunflower.position = Vector2((diag_w - w_sun) / 2.0, top_grass_y - 25.0)
 	sunflower.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	dialog.add_child(sunflower)
 
-	# 3. Front grass with metal gear bolts
+	# 3. Front grass with metal gear bolts draping over wooden edges
 	var topper_front = TextureRect.new()
 	topper_front.name = "TopperFront"
 	topper_front.texture = topper_front_tex
@@ -952,8 +996,8 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 	var title_lbl = Label.new()
 	title_lbl.name = "TitleLabel"
 	title_lbl.text = "GAME PAUSED"
-	title_lbl.position = Vector2(0.0, top_grass_y - 85.0)
-	title_lbl.size = Vector2(diag_w, 60.0)
+	title_lbl.position = Vector2(0.0, top_grass_y - 75.0)
+	title_lbl.size = Vector2(diag_w, 55.0)
 	title_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
@@ -970,11 +1014,11 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 	_create_volume_slider_row(dialog, "Sound FX", 215.0, "SFX")
 
 	# Bottom Action Buttons (SAVE AND EXIT, RESTART, RESUME)
-	var btn_size = Vector2(270.0, 95.0)
-	var btn_y = diag_h - 55.0 # Slightly overlaps bottom frame edge like official game
-	_create_pause_button(dialog, "SAVE AND EXIT", Vector2(65.0, btn_y), btn_size, false, _on_save_and_exit_pressed)
-	_create_pause_button(dialog, "RESTART", Vector2(390.0, btn_y), btn_size, false, _restart_game)
-	_create_pause_button(dialog, "RESUME", Vector2(715.0, btn_y), btn_size, true, _resume_game)
+	var btn_size = Vector2(250.0, 90.0)
+	var btn_y = diag_h - 50.0 # Slightly overlaps bottom frame edge like official game
+	_create_pause_button(dialog, "SAVE AND EXIT", Vector2(42.0, btn_y), btn_size, false, _on_save_and_exit_pressed)
+	_create_pause_button(dialog, "RESTART", Vector2(335.0, btn_y), btn_size, false, _restart_game)
+	_create_pause_button(dialog, "RESUME", Vector2(628.0, btn_y), btn_size, true, _resume_game)
 
 	pause_menu.add_child(dialog)
 	hud.add_child(pause_menu)
@@ -982,11 +1026,11 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 func _create_volume_slider_row(parent: Control, label_text: String, pos_y: float, bus_name: String) -> Control:
 	var row = Control.new()
 	row.position = Vector2(0.0, pos_y)
-	row.size = Vector2(1050.0, 60.0)
+	row.size = Vector2(920.0, 60.0)
 
 	var lbl = Label.new()
 	lbl.text = label_text
-	lbl.position = Vector2(120.0, 2.0)
+	lbl.position = Vector2(60.0, 2.0)
 	lbl.size = Vector2(290.0, 48.0)
 	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
@@ -1002,8 +1046,8 @@ func _create_volume_slider_row(parent: Control, label_text: String, pos_y: float
 	# Slider track container
 	var slider_ctrl = Control.new()
 	slider_ctrl.name = "Slider_" + bus_name
-	slider_ctrl.position = Vector2(440.0, 4.0)
-	var slider_w = 400.0
+	slider_ctrl.position = Vector2(380.0, 4.0)
+	var slider_w = 420.0
 	var slider_h = 44.0
 	slider_ctrl.size = Vector2(slider_w, slider_h)
 	slider_ctrl.mouse_filter = Control.MOUSE_FILTER_STOP
@@ -1240,6 +1284,10 @@ func _unhandled_input(event: InputEvent) -> void:
 				_select_plant(6)
 			elif event.keycode in [KEY_8, KEY_KP_8]:
 				_select_plant(7)
+			elif event.keycode in [KEY_9, KEY_KP_9]:
+				_select_plant(8)
+			elif event.keycode in [KEY_0, KEY_KP_0]:
+				_select_plant(9)
 
 	# Mouse clicks for planting / actions
 	if event is InputEventMouseButton and event.pressed:
@@ -1305,6 +1353,19 @@ func _toggle_animation_viewer() -> void:
 			add_child(anim_viewer_instance)
 			anim_viewer_instance.closed.connect(func(): anim_viewer_instance = null)
 
+func _setup_lawn_mowers() -> void:
+	lawn_mowers_container = Node2D.new()
+	lawn_mowers_container.name = "LawnMowers"
+	add_child(lawn_mowers_container)
+
+	var num_rows = grid.rows if grid else 5
+	for r in range(num_rows):
+		var mower = mower_scene.instantiate()
+		mower.row = r
+		var row_y = grid.cell_to_world(0, r).y if grid else (345.0 + r * 137.0)
+		mower.position = Vector2(705.0, row_y)
+		lawn_mowers_container.add_child(mower)
+
 func _select_plant(index: int) -> void:
 	if index >= 0 and index < PLANT_REGISTRY.size():
 		selected_plant_index = index
@@ -1366,7 +1427,7 @@ func _update_hud() -> void:
 		peashooter_count_label.text = "PLANTS: %d | [%d] %s" % [plant_count, selected_plant_index + 1, selected_name]
 	if debug_status_label:
 		if debug_mode:
-			debug_status_label.text = "[DEBUG ON] 1-8: Plant | Z/C/B/K: Zombies | A: AnimViewer | Shovel | PF"
+			debug_status_label.text = "[DEBUG ON] 1-0: Plant | Z/C/B/K: Zombies | A: AnimViewer | Shovel | PF"
 			debug_status_label.modulate = Color(0.4, 1.0, 0.4, 1.0)
 		else:
 			debug_status_label.text = "Press 'G' for Debug Mode"

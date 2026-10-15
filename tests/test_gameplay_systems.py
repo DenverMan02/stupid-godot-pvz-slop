@@ -346,21 +346,39 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("MOUSE_BUTTON_MIDDLE and debug_mode:", lawn_code)
 
     def test_town_rework_assets_and_ui(self):
-        """Verify Town scene and script use authentic town.jpg background and UI elements."""
-        self.assertTrue(os.path.exists("Assets/Town/town_background.svg"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/energy_icon.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/ui_player_profile.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/ui_neighborville_sign.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box.png"))
+        """Verify the black town canvas, separate concept renders, and non-duplicated UI."""
+        self.assertTrue(os.path.exists("Assets/Town/UI/ui_chat_box_shell.svg"))
         self.assertTrue(os.path.exists("Assets/Town/UI/ui_bottom_shelf.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/ui_battle_button.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/coin_icon.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/gem_icon.png"))
-        self.assertTrue(os.path.exists("Assets/Town/UI/settings_gear.png"))
+        self.assertTrue(os.path.exists("Scripts/white_background_cutout.gdshader"))
+        for asset in [
+            "Assets/AIImagery/Concepts/Buildings/Building_PlayerHouse.jpg",
+            "Assets/AIImagery/Concepts/Buildings/Building_DaveWorkshop.jpg",
+            "Assets/AIImagery/Concepts/Buildings/Building_ZenGarden.jpg",
+            "Assets/AIImagery/Concepts/Buildings/Building_Arena.jpg",
+            "Assets/AIImagery/Concepts/Buildings/Building_DevourTower.jpg",
+            "Assets/Town/UI/energy_icon.png",
+            "Assets/Town/UI/ui_player_profile.png",
+            "Assets/Town/UI/ui_neighborville_sign.png",
+            "Assets/Town/UI/ui_battle_button.png",
+            "Assets/Town/UI/coin_icon.png",
+            "Assets/Town/UI/gem_icon.png",
+            "Assets/Town/UI/settings_gear.png",
+        ]:
+            self.assertTrue(os.path.exists(asset), f"Missing town asset: {asset}")
 
         with open("Scenes/Town.tscn", "r") as f:
             tscn_code = f.read()
-        self.assertIn("res://Assets/Town/town_background.svg", tscn_code)
+        self.assertIn('type="ColorRect"', tscn_code)
+        self.assertIn("color = Color(0, 0, 0, 1)", tscn_code)
+        self.assertNotIn("res://Assets/Town/town_background.svg", tscn_code)
+        for image in [
+            "Building_PlayerHouse.jpg",
+            "Building_DaveWorkshop.jpg",
+            "Building_ZenGarden.jpg",
+            "Building_Arena.jpg",
+            "Building_DevourTower.jpg",
+        ]:
+            self.assertIn(image, tscn_code)
         self.assertIn("ui_player_profile.png", tscn_code)
         self.assertIn("ui_battle_button.png", tscn_code)
         self.assertIn("ChatBox", tscn_code)
@@ -374,6 +392,10 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("Guildhall", town_code)
         self.assertIn("Devour Tower", town_code)
         self.assertIn("_on_battle_button_pressed", town_code)
+        self.assertIn("ui_chat_box_shell.svg", town_code)
+        self.assertIn("white_background_cutout.gdshader", town_code)
+        self.assertIn("transparent_style", town_code)
+        self.assertNotIn('bg.texture = load("res://Assets/Town/UI/ui_chat_box.png")', town_code)
         self.assertNotIn("theme_override_constants.", town_code)
         self.assertIn('add_theme_constant_override("separation"', town_code)
 

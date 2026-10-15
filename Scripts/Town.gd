@@ -124,12 +124,15 @@ func _setup_top_hud() -> void:
 		energy_container.add_child(energy_fill)
 
 		var energy_icon = TextureRect.new()
-		energy_icon.texture = load("res://Assets/Town/UI/energy_icon.png")
-		energy_icon.position = Vector2(18.0, 11.0)
-		energy_icon.size = Vector2(32.0, 46.0)
 		energy_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		energy_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		energy_icon.custom_minimum_size = Vector2(24.0, 35.0)
+		energy_icon.size = Vector2(24.0, 35.0)
+		energy_icon.position = Vector2(24.0, 16.0)
+		energy_icon.texture = load("res://Assets/Town/UI/energy_icon.png")
 		energy_container.add_child(energy_icon)
+		energy_icon.size = Vector2(24.0, 35.0)
+		energy_icon.position = Vector2(24.0, 16.0)
 
 		var energy_lbl = Label.new()
 		energy_lbl.text = "45/50"
@@ -156,11 +159,11 @@ func _setup_top_hud() -> void:
 		hbox.alignment = BoxContainer.ALIGNMENT_END
 		hbox.add_theme_constant_override("separation", 24)
 
-		# Coins
-		_add_currency_entry(hbox, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png", "11,000", Color(1.0, 0.88, 0.2, 1.0), "Coins Shop", "Purchase lawn plant seeds and fertilizers with your golden coins.")
+		# Coins (white text)
+		_add_currency_entry(hbox, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png", "11,000", Color(1.0, 1.0, 1.0, 1.0), "Coins Shop", "Purchase lawn plant seeds and fertilizers with your golden coins.")
 
-		# Gems
-		_add_currency_entry(hbox, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png", "15", Color(0.3, 0.85, 1.0, 1.0), "Gem Vault", "Collect precious gems to unlock premium costumes and rare plant pinatas.")
+		# Gems (white text)
+		_add_currency_entry(hbox, "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/gem.png", "15", Color(1.0, 1.0, 1.0, 1.0), "Gem Vault", "Collect precious gems to unlock premium costumes and rare plant pinatas.")
 
 		# Settings Gear
 		var gear_btn = TextureButton.new()

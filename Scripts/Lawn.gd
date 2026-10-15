@@ -267,21 +267,21 @@ func _setup_hud() -> void:
 	pf_main_btn.texture_pressed = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button_down.png")
 	pf_main_btn.focus_mode = Control.FOCUS_NONE
 	pf_main_btn.pressed.connect(toggle_plant_food_armed)
-	pf_main_btn.visible = true
+	pf_main_btn.visible = (plant_food_count >= 1) and (!is_plant_food_active)
 	pf_bank_ctrl.add_child(pf_main_btn)
 
-	# 3 small socket slots for plant food charges (base MAX_PLANT_FOOD = 3)
-	var slot_offsets = [Vector2(94.0, 40.0), Vector2(125.0, 40.0), Vector2(156.0, 40.0)]
+	# 2 small socket slots for extra plant food charges (base MAX_PLANT_FOOD = 3: 1 leaf + 2 extra charge sockets)
+	var slot_offsets = [Vector2(96.0, 41.0), Vector2(126.0, 41.0)]
 	plant_food_slots.clear()
 	plant_food_glows.clear()
-	for i in range(MAX_PLANT_FOOD):
+	for i in range(MAX_PLANT_FOOD - 1):
 		var slot_tex = TextureRect.new()
 		slot_tex.name = "PlantFoodSlot_%d" % i
 		slot_tex.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_filled_slot.png")
 		slot_tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		slot_tex.size = Vector2(32.0, 32.0)
 		slot_tex.position = slot_offsets[i]
-		slot_tex.visible = (plant_food_count >= (i + 1))
+		slot_tex.visible = (plant_food_count >= (i + 2))
 		slot_tex.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 		# Glowing dot effect around each filled slot
@@ -385,7 +385,7 @@ func _setup_hud() -> void:
 	mid_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	mid_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	mid_flag_icon.size = Vector2(30.0, 25.0)
-	mid_flag_icon.position = Vector2(200.0, 56.0) # Unraised (lowered)
+	mid_flag_icon.position = Vector2(195.0, 56.0) # Unraised (lowered)
 	mid_flag_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(mid_flag_icon)
 
@@ -819,11 +819,12 @@ func add_plant_food(amount: int = 1) -> void:
 
 func _update_plant_food_display() -> void:
 	if pf_main_btn:
-		pf_main_btn.visible = true
-		pf_main_btn.texture_normal = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button_down.png") if is_plant_food_active else load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button.png")
+		# Plantfood leaf should only be gone when selecting a plant to plantfood (or if 0 plant food)
+		pf_main_btn.visible = (plant_food_count >= 1) and (!is_plant_food_active)
 	for i in range(plant_food_slots.size()):
 		if plant_food_slots[i]:
-			plant_food_slots[i].visible = (plant_food_count >= (i + 1))
+			# The leaf is charge #1; small slots display extra charges #2 and #3
+			plant_food_slots[i].visible = (plant_food_count >= (i + 2))
 
 func toggle_plant_food_armed() -> void:
 	if plant_food_count <= 0 and not is_plant_food_active and not debug_mode:

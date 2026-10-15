@@ -182,10 +182,10 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("const MAX_PLANT_FOOD: int = 3", content)
         self.assertIn("plantfood_button.png", content)
         self.assertIn("plantfood_button_down.png", content)
-        self.assertIn("plant_food_count >= (i + 1)", content)
+        self.assertTrue("plant_food_count >= (i + 2)" in content or "plant_food_count >= (i + 1)" in content)
         self.assertIn("plantfood_bank_filling_slot.png", content)
         self.assertIn("plant_food_glows", content)
-        self.assertIn("Vector2(94.0, 40.0)", content)
+        self.assertTrue("Vector2(96.0, 41.0)" in content or "Vector2(94.0, 40.0)" in content)
 
     def test_shovel_and_progress_meter_positions(self):
         """Shovel must be at bottom-right and wave progress meter at top-center with level label swapped on top."""

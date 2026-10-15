@@ -48,7 +48,7 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("other.value", content)
 
     def test_ready_set_plant_banner_visuals(self):
-        """Verify Ready Set Plant banner colors and outline matches PvZ1 style."""
+        """Verify Ready Set Plant banner colors and outline matches PvZ style (all same red color)."""
         with open("Scenes/Lawn.tscn", "r") as f:
             content = f.read()
         self.assertIn("Ready...", content)
@@ -58,8 +58,8 @@ class TestGameplaySystems(unittest.TestCase):
         with open("Scripts/Lawn.gd", "r") as f:
             lawn_content = f.read()
         self.assertIn("Color(0.92, 0.05, 0.05", lawn_content)
-        self.assertIn("Color(0.98, 0.78, 0.05", lawn_content)
-        self.assertIn("Color(0.12, 0.72, 0.15", lawn_content)
+        self.assertIn('start_label.text = "Set..."', lawn_content)
+        self.assertIn('start_label.text = "PLANT!"', lawn_content)
 
     def test_plant_food_system_on_lawn(self):
         """Verify Lawn has plant food counter, maximum capacity of 3, and bank buttons."""
@@ -92,25 +92,37 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("Engine.time_scale = 1.5 if is_turbo else 1.0", content)
 
     def test_pause_menu_system(self):
-        """Verify pause menu with toggle, resume, and restart."""
+        """Verify PvZ2 pause menu matching official layout, toppers, sliders, and buttons."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         self.assertIn("func toggle_pause()", content)
         self.assertIn("func _resume_game()", content)
         self.assertIn("func _restart_game()", content)
-        self.assertIn("get_tree().paused", content)
+        self.assertIn("func _on_save_and_exit_pressed()", content)
+        self.assertIn("windowtopper.png", content)
+        self.assertIn("sunflower_topper.png", content)
+        self.assertIn("dialogborder.png", content)
+        self.assertIn("dialogtexture.png", content)
+        self.assertIn("slider_bolt.png", content)
+        self.assertIn("audio-bar.png", content)
+        self.assertIn("audio-fill.png", content)
+        self.assertIn("SAVE AND EXIT", content)
+        self.assertIn("RESTART", content)
+        self.assertIn("RESUME", content)
 
     def test_wave_progression_system(self):
-        """Verify 10-wave progress meter, flags, zombie head progress, and music transitions."""
+        """Verify 10-wave progress meter, unraised flags popping up, and midwave randomization."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         self.assertIn("const TOTAL_WAVES: int = 10", content)
         self.assertIn("func _start_wave(", content)
+        self.assertIn("func _advance_wave_meter(", content)
         self.assertIn("func _update_wave_meter(", content)
         self.assertIn("func _announce_huge_wave(", content)
-        self.assertIn("func _drop_mid_flag(", content)
-        self.assertIn("func _drop_final_flag(", content)
+        self.assertIn("func _play_random_midwave()", content)
+        self.assertIn("last_midwave_index", content)
         self.assertIn("modern_midwave_a.mp3", content)
+        self.assertIn("modern_midwave_b.mp3", content)
         self.assertIn("modern_final_wave.mp3", content)
         self.assertIn("huge_wave_incoming.ogg", content)
         self.assertIn("huge_wave.ogg", content)
@@ -164,26 +176,28 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertIn("_set_plantfood_glow(false)", content)
 
     def test_plantfood_bank_hud_layout(self):
-        """Plantfood bank button uses plantfood_button.png, max of 3, and glowing dots."""
+        """Plantfood bank button uses plantfood_button.png, max of 3, and slot indexing without lag."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         self.assertIn("const MAX_PLANT_FOOD: int = 3", content)
         self.assertIn("plantfood_button.png", content)
         self.assertIn("plantfood_button_down.png", content)
-        self.assertIn("plant_food_count >= (i + 2)", content)
+        self.assertIn("plant_food_count >= (i + 1)", content)
         self.assertIn("plantfood_bank_filling_slot.png", content)
         self.assertIn("plant_food_glows", content)
+        self.assertIn("Vector2(94.0, 40.0)", content)
 
     def test_shovel_and_progress_meter_positions(self):
-        """Shovel must be at bottom-right and wave progress meter at top-center with level label."""
+        """Shovel must be at bottom-right and wave progress meter at top-center with level label swapped on top."""
         with open("Scripts/Lawn.gd", "r") as f:
             content = f.read()
         # Shovel at bottom-right
         self.assertTrue("Vector2(1780.0, 935.0)" in content or "Vector2(1790.0, 950.0)" in content)
         # Wave meter at top-center
-        self.assertTrue("Vector2(750.0, 20.0)" in content or "Vector2(728.0, 16.0)" in content)
+        self.assertTrue("Vector2(750.0, 14.0)" in content or "Vector2(750.0, 20.0)" in content)
         self.assertIn("Modern Day - Day 1", content)
         self.assertIn("LevelNameLabel", content)
+        self.assertIn("track_right - fill_w", content)
 
     def test_turbo_audio_effects(self):
         """Turbo toggle must play speed_up.ogg and speed_down.ogg."""

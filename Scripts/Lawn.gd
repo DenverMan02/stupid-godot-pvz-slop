@@ -21,6 +21,11 @@ var cys_music: AudioStream = preload("res://Audio/BGM/Worlds/Modern Day/modern_C
 var battle_music: AudioStream = preload("res://Audio/BGM/Worlds/Modern Day/modern_first_wave.mp3")
 var midwave_music: AudioStream = preload("res://Audio/BGM/Worlds/Modern Day/modern_midwave_a.mp3")
 var final_wave_music: AudioStream = preload("res://Audio/BGM/Worlds/Modern Day/modern_final_wave.mp3")
+var midwave_tracks: Array[AudioStream] = [
+	preload("res://Audio/BGM/Worlds/Modern Day/modern_midwave_a.mp3"),
+	preload("res://Audio/BGM/Worlds/Modern Day/modern_midwave_b.mp3"),
+]
+var last_midwave_index: int = -1
 
 var plant_scene: PackedScene = preload("res://Scenes/Plant.tscn")
 var peashooter_scene: PackedScene = preload("res://Scenes/Peashooter.tscn")
@@ -147,6 +152,8 @@ var meter_fill: NinePatchRect = null
 var zombie_head_icon: TextureRect = null
 var mid_flag_icon: TextureRect = null
 var final_flag_icon: TextureRect = null
+var meter_tween: Tween = null
+var current_meter_progress: float = 0.0
 
 func _ready() -> void:
 	camera.position = Vector2(CAM_ZOMBIE_X, CAM_Y)
@@ -193,20 +200,20 @@ func _setup_hud() -> void:
 	var pf_bank_ctrl = Control.new()
 	pf_bank_ctrl.name = "PlantFoodBank"
 	pf_bank_ctrl.position = Vector2(185.0, 936.0)
-	pf_bank_ctrl.custom_minimum_size = Vector2(268.0, 114.0)
-	pf_bank_ctrl.size = Vector2(268.0, 114.0)
+	pf_bank_ctrl.custom_minimum_size = Vector2(202.0, 114.0)
+	pf_bank_ctrl.size = Vector2(202.0, 114.0)
 
 	var pf_bg = TextureRect.new()
 	pf_bg.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank.png")
 	pf_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	pf_bg.size = Vector2(268.0, 114.0)
+	pf_bg.size = Vector2(202.0, 114.0)
 	pf_bg.mouse_filter = Control.MOUSE_FILTER_PASS
 	pf_bank_ctrl.add_child(pf_bg)
 
-	# Main round plant food button (displays green leaf when charges >= 1)
+	# Main round plant food button (displays green leaf, only gone when selecting a plant to plantfood)
 	pf_main_btn = TextureButton.new()
 	pf_main_btn.name = "PlantFoodButton"
-	pf_main_btn.position = Vector2(21.0, 21.0)
+	pf_main_btn.position = Vector2(14.0, 19.0)
 	pf_main_btn.custom_minimum_size = Vector2(68.0, 72.0)
 	pf_main_btn.size = Vector2(68.0, 72.0)
 	pf_main_btn.ignore_texture_size = true
@@ -215,21 +222,21 @@ func _setup_hud() -> void:
 	pf_main_btn.texture_pressed = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button_down.png")
 	pf_main_btn.focus_mode = Control.FOCUS_NONE
 	pf_main_btn.pressed.connect(toggle_plant_food_armed)
-	pf_main_btn.visible = (plant_food_count >= 1)
+	pf_main_btn.visible = true
 	pf_bank_ctrl.add_child(pf_main_btn)
 
-	# 2 small leaf slots for extra plant food charges (base MAX_PLANT_FOOD = 3)
-	var slot_offsets = [Vector2(98.0, 41.0), Vector2(130.0, 41.0)]
+	# 3 small socket slots for plant food charges (base MAX_PLANT_FOOD = 3)
+	var slot_offsets = [Vector2(94.0, 40.0), Vector2(125.0, 40.0), Vector2(156.0, 40.0)]
 	plant_food_slots.clear()
 	plant_food_glows.clear()
-	for i in range(MAX_PLANT_FOOD - 1):
+	for i in range(MAX_PLANT_FOOD):
 		var slot_tex = TextureRect.new()
 		slot_tex.name = "PlantFoodSlot_%d" % i
 		slot_tex.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_filled_slot.png")
 		slot_tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		slot_tex.size = Vector2(32.0, 33.0)
+		slot_tex.size = Vector2(32.0, 32.0)
 		slot_tex.position = slot_offsets[i]
-		slot_tex.visible = (plant_food_count >= (i + 2))
+		slot_tex.visible = (plant_food_count >= (i + 1))
 		slot_tex.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 		# Glowing dot effect around each filled slot
@@ -238,7 +245,7 @@ func _setup_hud() -> void:
 		glow_tex.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_filling_slot.png")
 		glow_tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		glow_tex.size = Vector2(40.0, 40.0)
-		glow_tex.position = Vector2(-4.0, -3.5)
+		glow_tex.position = Vector2(-4.0, -4.0)
 		glow_tex.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		glow_tex.modulate = Color(1.2, 2.0, 1.2, 0.8)
 		slot_tex.add_child(glow_tex)
@@ -263,7 +270,7 @@ func _setup_hud() -> void:
 	shovel_btn.pressed.connect(toggle_shovel)
 	hud.add_child(shovel_btn)
 
-	# 3. Floating Cursors for Shovel and Plant Food
+	# 3. Floating Cursors for Shovel and Plant Food (Plant Food uses the leaf rather than the orb)
 	floating_shovel_icon = Sprite2D.new()
 	floating_shovel_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/shovel_icon.png")
 	floating_shovel_icon.scale = Vector2(0.35, 0.35)
@@ -273,43 +280,67 @@ func _setup_hud() -> void:
 	hud.add_child(floating_shovel_icon)
 
 	floating_pf_icon = Sprite2D.new()
-	floating_pf_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_bank_collect.png")
-	floating_pf_icon.scale = Vector2(0.4, 0.4)
+	floating_pf_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button.png")
+	floating_pf_icon.scale = Vector2(0.55, 0.55)
 	floating_pf_icon.visible = false
 	floating_pf_icon.z_index = 200
 	hud.add_child(floating_pf_icon)
 
-	# 4. Wave Progress Meter (Top-Center, filling left-to-right, matching official PvZ2)
+	# 4. Wave Progress Meter & Level Name Label (Top-Center, filling right-to-left)
 	var meter_ctrl = Control.new()
 	meter_ctrl.name = "WaveMeter"
-	meter_ctrl.position = Vector2(750.0, 20.0)
-	meter_ctrl.custom_minimum_size = Vector2(420.0, 50.0)
-	meter_ctrl.size = Vector2(420.0, 50.0)
+	meter_ctrl.position = Vector2(750.0, 14.0)
+	meter_ctrl.custom_minimum_size = Vector2(420.0, 96.0)
+	meter_ctrl.size = Vector2(420.0, 96.0)
 
+	# Level Name Label positioned on TOP of the wave meter, bigger font size
+	var level_name_lbl = Label.new()
+	level_name_lbl.name = "LevelNameLabel"
+	level_name_lbl.text = "Modern Day - Day 1"
+	level_name_lbl.position = Vector2(-20.0, 0.0)
+	level_name_lbl.size = Vector2(460.0, 36.0)
+	level_name_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	level_name_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
+	if ResourceLoader.exists(font_path):
+		var custom_font = load(font_path)
+		level_name_lbl.add_theme_font_override("font", custom_font)
+	level_name_lbl.add_theme_font_size_override("font_size", 30)
+	level_name_lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 0.95))
+	level_name_lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	level_name_lbl.add_theme_constant_override("outline_size", 5)
+	meter_ctrl.add_child(level_name_lbl)
+
+	# Wave progress meter background placed BELOW the level label
 	var meter_bg = TextureRect.new()
 	meter_bg.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter.png")
 	meter_bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	meter_bg.size = Vector2(420.0, 50.0)
+	meter_bg.position = Vector2(0.0, 40.0)
 	meter_bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(meter_bg)
 
+	# Green fill bar (fills RIGHT TO LEFT)
+	# Track bounds: left = 22.0, right = 398.0, max_w = 376.0
 	meter_fill = NinePatchRect.new()
 	meter_fill.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_fill.png")
 	meter_fill.patch_margin_left = 6
 	meter_fill.patch_margin_right = 6
 	meter_fill.patch_margin_top = 4
 	meter_fill.patch_margin_bottom = 4
-	meter_fill.position = Vector2(22.0, 11.0)
+	meter_fill.position = Vector2(398.0, 51.0)
 	meter_fill.size = Vector2(0.0, 28.0)
 	meter_fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(meter_fill)
 
-	# Flags (Wave 5 at 50%, Wave 10 at 100%)
+	# Flags (unraised by default, raise when reached)
+	# Progress moves from right (0%) to left (100%)
+	# Mid-flag at 50% (x ≈ 200), Final flag at 100% (x ≈ 16)
 	mid_flag_icon = TextureRect.new()
 	mid_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	mid_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	mid_flag_icon.size = Vector2(30.0, 25.0)
-	mid_flag_icon.position = Vector2(198.0, -10.0)
+	mid_flag_icon.position = Vector2(200.0, 56.0) # Unraised (lowered)
 	mid_flag_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(mid_flag_icon)
 
@@ -317,7 +348,7 @@ func _setup_hud() -> void:
 	final_flag_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_flag_default.png")
 	final_flag_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	final_flag_icon.size = Vector2(30.0, 25.0)
-	final_flag_icon.position = Vector2(380.0, -10.0)
+	final_flag_icon.position = Vector2(16.0, 56.0) # Unraised (lowered)
 	final_flag_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(final_flag_icon)
 
@@ -325,27 +356,9 @@ func _setup_hud() -> void:
 	zombie_head_icon.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/progress_meter_zombiehead.png")
 	zombie_head_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	zombie_head_icon.size = Vector2(40.0, 42.0)
-	zombie_head_icon.position = Vector2(4.0, 2.0)
+	zombie_head_icon.position = Vector2(378.0, 42.0) # Starts at far right
 	zombie_head_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	meter_ctrl.add_child(zombie_head_icon)
-
-	# Level Name Label centered directly below the progress meter
-	var level_name_lbl = Label.new()
-	level_name_lbl.name = "LevelNameLabel"
-	level_name_lbl.text = "Modern Day - Day 1"
-	level_name_lbl.position = Vector2(-20.0, 52.0)
-	level_name_lbl.size = Vector2(460.0, 32.0)
-	level_name_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	level_name_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
-	if ResourceLoader.exists(font_path):
-		var custom_font = load(font_path)
-		level_name_lbl.add_theme_font_override("font", custom_font)
-	level_name_lbl.add_theme_font_size_override("font_size", 24)
-	level_name_lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 0.95))
-	level_name_lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
-	level_name_lbl.add_theme_constant_override("outline_size", 4)
-	meter_ctrl.add_child(level_name_lbl)
 
 	hud.add_child(meter_ctrl)
 
@@ -387,65 +400,7 @@ func _setup_hud() -> void:
 	hud.add_child(top_right)
 
 	# 6. Pause Menu Modal
-	pause_menu = Control.new()
-	pause_menu.name = "PauseMenu"
-	pause_menu.set_anchors_preset(Control.PRESET_FULL_RECT)
-	pause_menu.process_mode = Node.PROCESS_MODE_ALWAYS
-	pause_menu.visible = false
-	pause_menu.mouse_filter = Control.MOUSE_FILTER_STOP
-
-	var overlay = ColorRect.new()
-	overlay.color = Color(0.0, 0.0, 0.0, 0.65)
-	overlay.set_anchors_preset(Control.PRESET_FULL_RECT)
-	overlay.mouse_filter = Control.MOUSE_FILTER_STOP
-	pause_menu.add_child(overlay)
-
-	var panel = NinePatchRect.new()
-	panel.texture = load("res://Assets/UI/UI_AlwaysLoaded_Uncompressed/Dialog_Asset/dialogborder.png")
-	panel.patch_margin_left = 64
-	panel.patch_margin_right = 64
-	panel.patch_margin_top = 64
-	panel.patch_margin_bottom = 64
-	panel.custom_minimum_size = Vector2(500.0, 360.0)
-	panel.size = Vector2(500.0, 360.0)
-	panel.position = Vector2((1920.0 - 500.0) * 0.5, (1080.0 - 360.0) * 0.5)
-	panel.mouse_filter = Control.MOUSE_FILTER_STOP
-
-	var p_vbox = VBoxContainer.new()
-	p_vbox.set_anchors_preset(Control.PRESET_FULL_RECT)
-	p_vbox.alignment = BoxContainer.ALIGNMENT_CENTER
-	p_vbox.add_theme_constant_override("separation", 28)
-
-	var p_title = Label.new()
-	p_title.text = "GAME PAUSED"
-	p_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	p_title.add_theme_font_size_override("font_size", 44)
-	p_title.add_theme_color_override("font_color", Color(1.0, 0.9, 0.2, 1.0))
-	p_title.add_theme_color_override("font_outline_color", Color(0.0, 0.0, 0.0, 1.0))
-	p_title.add_theme_constant_override("outline_size", 14)
-	p_vbox.add_child(p_title)
-
-	var resume_btn = Button.new()
-	resume_btn.text = "RESUME"
-	resume_btn.custom_minimum_size = Vector2(260.0, 56.0)
-	resume_btn.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	resume_btn.add_theme_font_size_override("font_size", 26)
-	resume_btn.focus_mode = Control.FOCUS_NONE
-	resume_btn.pressed.connect(_resume_game)
-	p_vbox.add_child(resume_btn)
-
-	var restart_btn = Button.new()
-	restart_btn.text = "RESTART LEVEL"
-	restart_btn.custom_minimum_size = Vector2(260.0, 56.0)
-	restart_btn.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	restart_btn.add_theme_font_size_override("font_size", 26)
-	restart_btn.focus_mode = Control.FOCUS_NONE
-	restart_btn.pressed.connect(_restart_game)
-	p_vbox.add_child(restart_btn)
-
-	panel.add_child(p_vbox)
-	pause_menu.add_child(panel)
-	hud.add_child(pause_menu)
+	_setup_pause_menu(hud)
 
 func _start_camera_pan() -> void:
 	var tween = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN_OUT)
@@ -474,18 +429,18 @@ func _on_pan_finished() -> void:
 		tw.tween_property(start_label, "modulate:a", 1.0, 0.15)
 		tw.parallel().tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 		tw.tween_interval(0.4)
-		# Set...
+		# Set... (all same red color)
 		tw.tween_callback(func():
 			start_label.text = "Set..."
-			start_label.set("theme_override_colors/font_color", Color(0.98, 0.78, 0.05, 1.0))
+			start_label.set("theme_override_colors/font_color", Color(0.92, 0.05, 0.05, 1.0))
 			start_label.scale = Vector2(0.65, 0.65)
 		)
 		tw.tween_property(start_label, "scale", Vector2.ONE, 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 		tw.tween_interval(0.35)
-		# PLANT!
+		# PLANT! (all same red color)
 		tw.tween_callback(func():
 			start_label.text = "PLANT!"
-			start_label.set("theme_override_colors/font_color", Color(0.12, 0.72, 0.15, 1.0))
+			start_label.set("theme_override_colors/font_color", Color(0.92, 0.05, 0.05, 1.0))
 			start_label.scale = Vector2(0.65, 0.65)
 		)
 		tw.tween_property(start_label, "scale", Vector2(1.3, 1.3), 0.35).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
@@ -525,11 +480,8 @@ func _process(delta: float) -> void:
 		sky_sun_timer = randf_range(8.5, 11.5)
 		_spawn_sky_sun()
 
-	# Wave progression
+	# Wave timer progression (meter only updates when new wave cluster spawns)
 	wave_timer += delta
-	var wave_ratio = clampf(wave_timer / wave_time_limit, 0.0, 1.0)
-	var total_progress = (float(current_wave - 1) + wave_ratio) / float(TOTAL_WAVES)
-	_update_wave_meter(total_progress)
 
 	var living_zombies = 0
 	if zombies_container:
@@ -543,10 +495,35 @@ func _process(delta: float) -> void:
 		elif current_wave >= TOTAL_WAVES and living_zombies == 0:
 			_on_level_victory()
 
+func _play_random_midwave() -> void:
+	if midwave_tracks.is_empty():
+		return
+	var available_indices: Array[int] = []
+	for i in range(midwave_tracks.size()):
+		if i != last_midwave_index:
+			available_indices.append(i)
+	if available_indices.is_empty():
+		available_indices = [0]
+	var chosen_index = available_indices.pick_random()
+	last_midwave_index = chosen_index
+	if get_node_or_null("/root/AudioManager"):
+		AudioManager.play_music(midwave_tracks[chosen_index])
+
+func _advance_wave_meter(target_progress: float) -> void:
+	if meter_tween and meter_tween.is_valid():
+		meter_tween.kill()
+	meter_tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	meter_tween.tween_method(_update_wave_meter, current_meter_progress, target_progress, 0.7)
+	current_meter_progress = target_progress
+
 func _start_wave(wave_num: int) -> void:
 	current_wave = wave_num
 	wave_timer = 0.0
 	print("[Lawn] === Starting Wave %d / %d ===" % [current_wave, TOTAL_WAVES])
+
+	# Visual wave progress meter advances smoothly when each wave cluster spawns
+	var total_progress = float(current_wave) / float(TOTAL_WAVES)
+	_advance_wave_meter(total_progress)
 
 	match current_wave:
 		1:
@@ -613,10 +590,11 @@ func _announce_huge_wave(is_final: bool) -> void:
 				AudioManager.play_sfx(load("res://Audio/SFX/huge_wave.ogg"))
 			if is_final:
 				AudioManager.play_music(final_wave_music)
-				_drop_final_flag()
+				_raise_final_flag()
 			else:
-				AudioManager.play_music(midwave_music)
-				_drop_mid_flag()
+				# A RANDOM midwave song plays after every flag besides the last one, never repeating the same track
+				_play_random_midwave()
+				_raise_mid_flag()
 		_spawn_huge_wave_roster(is_final)
 	)
 
@@ -642,27 +620,35 @@ func _spawn_huge_wave_roster(is_final: bool) -> void:
 		for r in range(4):
 			spawn_zombie(r, randf_range(2450.0, 2550.0), "none")
 
-func _drop_mid_flag() -> void:
+func _raise_mid_flag() -> void:
 	if mid_flag_icon:
 		var tw = create_tween()
-		tw.tween_property(mid_flag_icon, "position:y", 12.0, 0.4).set_trans(Tween.TRANS_BOUNCE)
+		tw.tween_property(mid_flag_icon, "position:y", 26.0, 0.45).set_trans(Tween.TRANS_BOUNCE)
 
-func _drop_final_flag() -> void:
+func _drop_mid_flag() -> void:
+	_raise_mid_flag()
+
+func _raise_final_flag() -> void:
 	if final_flag_icon:
 		var tw = create_tween()
-		tw.tween_property(final_flag_icon, "position:y", 12.0, 0.4).set_trans(Tween.TRANS_BOUNCE)
+		tw.tween_property(final_flag_icon, "position:y", 26.0, 0.45).set_trans(Tween.TRANS_BOUNCE)
+
+func _drop_final_flag() -> void:
+	_raise_final_flag()
 
 func _update_wave_meter(progress: float) -> void:
 	var clamped_p = clampf(progress, 0.0, 1.0)
-	var start_x = 22.0
+	var track_right = 398.0
 	var max_fill_w = 376.0
 	var fill_w = max_fill_w * clamped_p
 	if meter_fill:
-		meter_fill.position.x = start_x
+		# Fills from RIGHT to LEFT
+		meter_fill.position.x = track_right - fill_w
 		meter_fill.size.x = fill_w
 		meter_fill.visible = (fill_w > 2.0)
 	if zombie_head_icon:
-		zombie_head_icon.position.x = start_x + fill_w - 18.0
+		# Zombie head walks from RIGHT to LEFT
+		zombie_head_icon.position.x = track_right - fill_w - 20.0
 
 func _show_banner_message(msg: String, col: Color = Color.WHITE, duration: float = 2.5) -> void:
 	if not start_label:
@@ -788,11 +774,11 @@ func add_plant_food(amount: int = 1) -> void:
 
 func _update_plant_food_display() -> void:
 	if pf_main_btn:
-		pf_main_btn.visible = (plant_food_count >= 1)
+		pf_main_btn.visible = true
 		pf_main_btn.texture_normal = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button_down.png") if is_plant_food_active else load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/plantfood_button.png")
 	for i in range(plant_food_slots.size()):
 		if plant_food_slots[i]:
-			plant_food_slots[i].visible = (plant_food_count >= (i + 2))
+			plant_food_slots[i].visible = (plant_food_count >= (i + 1))
 
 func toggle_plant_food_armed() -> void:
 	if plant_food_count <= 0 and not is_plant_food_active and not debug_mode:
@@ -867,6 +853,268 @@ func toggle_turbo() -> void:
 	print("[Lawn] Turbo speed: %s (time_scale=%.1f)" % [("1.5x" if is_turbo else "1.0x"), Engine.time_scale])
 
 # Pause System Methods
+func _setup_pause_menu(hud: CanvasLayer) -> void:
+	pause_menu = Control.new()
+	pause_menu.name = "PauseMenu"
+	pause_menu.anchors_preset = Control.PRESET_FULL_RECT
+	pause_menu.size = Vector2(1920.0, 1080.0)
+	pause_menu.visible = false
+	pause_menu.process_mode = Node.PROCESS_MODE_ALWAYS
+	pause_menu.z_index = 300
+
+	# Dark semi-transparent background overlay
+	var overlay = ColorRect.new()
+	overlay.name = "Overlay"
+	overlay.anchors_preset = Control.PRESET_FULL_RECT
+	overlay.size = Vector2(1920.0, 1080.0)
+	overlay.color = Color(0.0, 0.0, 0.0, 0.65)
+	overlay.mouse_filter = Control.MOUSE_FILTER_STOP
+	pause_menu.add_child(overlay)
+
+	# Main Dialog Box (matching PvZ2 NewOptionsDialog & Picture 6)
+	var dialog = Control.new()
+	dialog.name = "DialogBox"
+	var diag_w = 1050.0
+	var diag_h = 410.0
+	dialog.size = Vector2(diag_w, diag_h)
+	dialog.position = Vector2((1920.0 - diag_w) / 2.0, 420.0)
+	dialog.mouse_filter = Control.MOUSE_FILTER_PASS
+
+	# Wooden panel background texture
+	var bg_wood = NinePatchRect.new()
+	bg_wood.name = "WoodBackground"
+	bg_wood.texture = load("res://Assets/UI/UI_AlwaysLoaded_Uncompressed/Dialog_Asset/dialogtexture.png")
+	bg_wood.size = Vector2(diag_w, diag_h)
+	bg_wood.patch_margin_left = 60
+	bg_wood.patch_margin_right = 60
+	bg_wood.patch_margin_top = 60
+	bg_wood.patch_margin_bottom = 60
+	bg_wood.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	dialog.add_child(bg_wood)
+
+	# Golden rounded border frame
+	var border_frame = NinePatchRect.new()
+	border_frame.name = "GoldenBorder"
+	border_frame.texture = load("res://Assets/UI/UI_AlwaysLoaded_Uncompressed/Dialog_Asset/dialogborder.png")
+	border_frame.size = Vector2(diag_w, diag_h)
+	border_frame.patch_margin_left = 60
+	border_frame.patch_margin_right = 60
+	border_frame.patch_margin_top = 60
+	border_frame.patch_margin_bottom = 60
+	border_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	dialog.add_child(border_frame)
+
+	# Flowerbox Toppers (Back grass, Sunflower, Front grass + gears)
+	var scale_topper = 0.95
+	var topper_back_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/windowtopper_back_half.png")
+	var sunflower_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/sunflower_topper.png")
+	var topper_front_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/windowtopper.png")
+
+	var w_front = 1102.0 * scale_topper
+	var h_front = 215.0 * scale_topper
+	var top_grass_y = -h_front + 45.0
+
+	# 1. Back half grass
+	var topper_back = TextureRect.new()
+	topper_back.name = "TopperBack"
+	topper_back.texture = topper_back_tex
+	topper_back.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	var w_back = 309.0 * scale_topper
+	var h_back = 142.0 * scale_topper
+	topper_back.size = Vector2(w_back, h_back)
+	topper_back.position = Vector2((diag_w - w_back) / 2.0, top_grass_y + 35.0)
+	topper_back.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	dialog.add_child(topper_back)
+
+	# 2. Smiling Sunflower peeking up
+	var sunflower = TextureRect.new()
+	sunflower.name = "SunflowerTopper"
+	sunflower.texture = sunflower_tex
+	sunflower.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	var w_sun = 247.0 * scale_topper
+	var h_sun = 206.0 * scale_topper
+	sunflower.size = Vector2(w_sun, h_sun)
+	sunflower.position = Vector2((diag_w - w_sun) / 2.0, top_grass_y - 65.0)
+	sunflower.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	dialog.add_child(sunflower)
+
+	# 3. Front grass with metal gear bolts
+	var topper_front = TextureRect.new()
+	topper_front.name = "TopperFront"
+	topper_front.texture = topper_front_tex
+	topper_front.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	topper_front.size = Vector2(w_front, h_front)
+	topper_front.position = Vector2((diag_w - w_front) / 2.0, top_grass_y)
+	topper_front.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	dialog.add_child(topper_front)
+
+	# 4. GAME PAUSED Header Text above sunflower
+	var title_lbl = Label.new()
+	title_lbl.name = "TitleLabel"
+	title_lbl.text = "GAME PAUSED"
+	title_lbl.position = Vector2(0.0, top_grass_y - 85.0)
+	title_lbl.size = Vector2(diag_w, 60.0)
+	title_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
+	if ResourceLoader.exists(font_path):
+		title_lbl.add_theme_font_override("font", load(font_path))
+	title_lbl.add_theme_font_size_override("font_size", 48)
+	title_lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
+	title_lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	title_lbl.add_theme_constant_override("outline_size", 10)
+	dialog.add_child(title_lbl)
+
+	# Volume Sliders (Music & Sound FX)
+	_create_volume_slider_row(dialog, "Music", 130.0, "BGM")
+	_create_volume_slider_row(dialog, "Sound FX", 215.0, "SFX")
+
+	# Bottom Action Buttons (SAVE AND EXIT, RESTART, RESUME)
+	var btn_size = Vector2(270.0, 95.0)
+	var btn_y = diag_h - 55.0 # Slightly overlaps bottom frame edge like official game
+	_create_pause_button(dialog, "SAVE AND EXIT", Vector2(65.0, btn_y), btn_size, false, _on_save_and_exit_pressed)
+	_create_pause_button(dialog, "RESTART", Vector2(390.0, btn_y), btn_size, false, _restart_game)
+	_create_pause_button(dialog, "RESUME", Vector2(715.0, btn_y), btn_size, true, _resume_game)
+
+	pause_menu.add_child(dialog)
+	hud.add_child(pause_menu)
+
+func _create_volume_slider_row(parent: Control, label_text: String, pos_y: float, bus_name: String) -> Control:
+	var row = Control.new()
+	row.position = Vector2(0.0, pos_y)
+	row.size = Vector2(1050.0, 60.0)
+
+	var lbl = Label.new()
+	lbl.text = label_text
+	lbl.position = Vector2(120.0, 2.0)
+	lbl.size = Vector2(290.0, 48.0)
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
+	if ResourceLoader.exists(font_path):
+		lbl.add_theme_font_override("font", load(font_path))
+	lbl.add_theme_font_size_override("font_size", 38)
+	lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
+	lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	lbl.add_theme_constant_override("outline_size", 8)
+	row.add_child(lbl)
+
+	# Slider track container
+	var slider_ctrl = Control.new()
+	slider_ctrl.name = "Slider_" + bus_name
+	slider_ctrl.position = Vector2(440.0, 4.0)
+	var slider_w = 400.0
+	var slider_h = 44.0
+	slider_ctrl.size = Vector2(slider_w, slider_h)
+	slider_ctrl.mouse_filter = Control.MOUSE_FILTER_STOP
+
+	# Track background (audio-bar.png)
+	var track = NinePatchRect.new()
+	track.texture = load("res://Assets/UI/UI_AlwaysLoaded/Generic/audio-bar.png")
+	track.size = Vector2(slider_w, slider_h)
+	track.patch_margin_left = 22
+	track.patch_margin_right = 22
+	track.patch_margin_top = 16
+	track.patch_margin_bottom = 16
+	track.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	slider_ctrl.add_child(track)
+
+	# Green progress fill (audio-fill.png)
+	var fill = NinePatchRect.new()
+	fill.texture = load("res://Assets/UI/UI_AlwaysLoaded/Generic/audio-fill.png")
+	fill.patch_margin_left = 18
+	fill.patch_margin_right = 18
+	fill.patch_margin_top = 12
+	fill.patch_margin_bottom = 12
+	fill.position = Vector2(4.0, 4.0)
+	var max_fill_w = slider_w - 8.0
+	var fill_h = slider_h - 8.0
+	fill.size = Vector2(max_fill_w, fill_h)
+	fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	slider_ctrl.add_child(fill)
+
+	# Bolt gear knob (slider_bolt.png)
+	var knob = TextureRect.new()
+	knob.texture = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/slider_bolt.png")
+	knob.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	var knob_size = 52.0
+	knob.size = Vector2(knob_size, knob_size)
+	knob.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	slider_ctrl.add_child(knob)
+
+	var bus_idx = AudioServer.get_bus_index(bus_name)
+	var current_vol = 1.0
+	if bus_idx != -1:
+		if AudioServer.is_bus_mute(bus_idx):
+			current_vol = 0.0
+		else:
+			current_vol = clampf(db_to_linear(AudioServer.get_bus_volume_db(bus_idx)), 0.0, 1.0)
+
+	var update_slider_visuals = func(vol: float):
+		var clamped = clampf(vol, 0.0, 1.0)
+		var fw = max_fill_w * clamped
+		fill.size.x = max(fw, 0.0)
+		fill.visible = (clamped > 0.02)
+		knob.position = Vector2(clamped * (slider_w - knob_size), (slider_h - knob_size) / 2.0)
+		if bus_idx != -1:
+			if clamped <= 0.02:
+				AudioServer.set_bus_mute(bus_idx, true)
+			else:
+				AudioServer.set_bus_mute(bus_idx, false)
+				AudioServer.set_bus_volume_db(bus_idx, linear_to_db(clamped))
+
+	update_slider_visuals.call(current_vol)
+
+	var is_dragging = [false]
+	slider_ctrl.gui_input.connect(func(event: InputEvent):
+		if event is InputEventMouseButton:
+			if event.button_index == MOUSE_BUTTON_LEFT:
+				is_dragging[0] = event.pressed
+				if event.pressed:
+					var ratio = clampf(event.position.x / slider_w, 0.0, 1.0)
+					update_slider_visuals.call(ratio)
+		elif event is InputEventMouseMotion and is_dragging[0]:
+			var ratio = clampf(event.position.x / slider_w, 0.0, 1.0)
+			update_slider_visuals.call(ratio)
+	)
+
+	row.add_child(slider_ctrl)
+	parent.add_child(row)
+	return row
+
+func _create_pause_button(parent: Control, text: String, pos: Vector2, b_size: Vector2, is_purple: bool, on_pressed: Callable) -> TextureButton:
+	var btn = TextureButton.new()
+	btn.custom_minimum_size = b_size
+	btn.size = b_size
+	btn.position = pos
+	btn.ignore_texture_size = true
+	btn.stretch_mode = TextureButton.STRETCH_SCALE
+	var norm_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton.png" if is_purple else "res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton.png"
+	var down_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton_Down.png" if is_purple else "res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton_Down.png"
+	btn.texture_normal = load(norm_path)
+	btn.texture_pressed = load(down_path)
+	btn.focus_mode = Control.FOCUS_NONE
+	btn.process_mode = Node.PROCESS_MODE_ALWAYS
+	btn.pressed.connect(on_pressed)
+
+	var lbl = Label.new()
+	lbl.text = text
+	lbl.anchors_preset = Control.PRESET_FULL_RECT
+	lbl.size = b_size
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
+	if ResourceLoader.exists(font_path):
+		lbl.add_theme_font_override("font", load(font_path))
+	lbl.add_theme_font_size_override("font_size", 28)
+	lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
+	lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	lbl.add_theme_constant_override("outline_size", 6)
+	btn.add_child(lbl)
+
+	parent.add_child(btn)
+	return btn
+
 func toggle_pause() -> void:
 	var new_paused = !get_tree().paused
 	get_tree().paused = new_paused
@@ -886,6 +1134,14 @@ func _restart_game() -> void:
 	get_tree().paused = false
 	Engine.time_scale = 1.0
 	get_tree().reload_current_scene()
+
+func _on_save_and_exit_pressed() -> void:
+	get_tree().paused = false
+	Engine.time_scale = 1.0
+	if ResourceLoader.exists("res://Scenes/Town.tscn"):
+		get_tree().change_scene_to_file("res://Scenes/Town.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Scenes/TitleScreen.tscn")
 
 func is_cell_occupied(col: int, row: int) -> bool:
 	for p in plants_container.get_children():

@@ -187,6 +187,13 @@ var sfx_pause: AudioStream = preload("res://Audio/SFX/pause.ogg")
 var pause_btn: TextureButton = null
 var pause_menu: Control = null
 
+# GameOver and Victory Dialogs (Authentic PvZ2 GameOverDialog & VictoryOutro)
+var level_lost: bool = false
+var level_won: bool = false
+var game_over_screen: Control = null
+var victory_screen: Control = null
+var trophy_node: Node2D = null
+
 # LawnMowers
 var lawn_mowers_container: Node2D = null
 var mower_scene: PackedScene = preload("res://Scenes/LawnMower.tscn")
@@ -533,12 +540,17 @@ func _process(delta: float) -> void:
 		for z in zombies_container.get_children():
 			if z is Zombie and is_instance_valid(z) and not z.is_queued_for_deletion() and z.health > 0.0:
 				living_zombies += 1
+				# Authentic PvZ2 Breach Detection: Zombie reaching the house threshold
+				if z.global_position.x <= 620.0 and not level_lost and not level_won:
+					_trigger_game_over(z)
+					return
 
-	if (living_zombies == 0 and wave_timer >= 6.0 and not is_huge_wave_spawning) or (wave_timer >= wave_time_limit and not is_huge_wave_spawning):
-		if current_wave < TOTAL_WAVES:
-			_start_wave(current_wave + 1)
-		elif current_wave >= TOTAL_WAVES and living_zombies == 0:
-			_on_level_victory()
+	if not level_lost and not level_won:
+		if (living_zombies == 0 and wave_timer >= 6.0 and not is_huge_wave_spawning) or (wave_timer >= wave_time_limit and not is_huge_wave_spawning):
+			if current_wave < TOTAL_WAVES:
+				_start_wave(current_wave + 1)
+			elif current_wave >= TOTAL_WAVES and living_zombies == 0:
+				_on_level_victory()
 
 func _play_random_midwave() -> void:
 	if midwave_tracks.is_empty():
@@ -718,12 +730,363 @@ func _show_banner_message(msg: String, col: Color = Color.WHITE, duration: float
 			start_banner.visible = false
 	)
 
-func _on_level_victory() -> void:
-	if level_finished:
+func _trigger_game_over(breaching_zombie: Zombie = null) -> void:
+	if level_lost or level_won:
 		return
+	level_lost = true
 	level_finished = true
-	print("[Lawn] *** LEVEL COMPLETE! ***")
-	_show_banner_message("VICTORY!", Color(1.0, 0.85, 0.1, 1.0), 6.0)
+	print("[Lawn] *** GAME OVER - THE ZOMBIES ATE YOUR BRAINS! ***")
+
+	# Stop background battle music
+	if get_node_or_null("/root/AudioManager"):
+		AudioManager.stop_music()
+		if ResourceLoader.exists("res://Audio/SFX/failure.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/failure.ogg"))
+		if ResourceLoader.exists("res://Audio/BGM/Worlds/Modern Day/modern_lose.mp3"):
+			AudioManager.play_music(load("res://Audio/BGM/Worlds/Modern Day/modern_lose.mp3"))
+
+	# Freeze gameplay actions & seed bank
+	if seed_bank:
+		seed_bank.set_active(false)
+	set_shovel_active(false)
+	set_plant_food_active(false)
+
+	# Stop all zombie movement
+	if zombies_container:
+		for z in zombies_container.get_children():
+			if z is Zombie and is_instance_valid(z):
+				z.speed = 0.0
+
+	_setup_game_over_dialog()
+
+func _setup_game_over_dialog() -> void:
+	var hud = get_node_or_null("HUD")
+	if not hud:
+		return
+
+	game_over_screen = Control.new()
+	game_over_screen.name = "GameOverDialog"
+	game_over_screen.anchors_preset = Control.PRESET_FULL_RECT
+	game_over_screen.size = Vector2(1920.0, 1080.0)
+	game_over_screen.z_index = 400
+	game_over_screen.process_mode = Node.PROCESS_MODE_ALWAYS
+
+	# 1. Dark background overlay fading in
+	var bg = ColorRect.new()
+	bg.name = "Overlay"
+	bg.anchors_preset = Control.PRESET_FULL_RECT
+	bg.size = Vector2(1920.0, 1080.0)
+	bg.color = Color(0.0, 0.0, 0.0, 0.0)
+	bg.mouse_filter = Control.MOUSE_FILTER_STOP
+	game_over_screen.add_child(bg)
+
+	# 2. Authentic PvZ2 Brain / Game Over Graphic (fail_screen_brain_only.png)
+	var brain_rect = TextureRect.new()
+	brain_rect.name = "BrainGraphic"
+	var brain_path = "res://Assets/UI/UI_GameOver/resource/images/initial/UI/gameover/fail_screen_brain_only.png"
+	if ResourceLoader.exists(brain_path):
+		brain_rect.texture = load(brain_path)
+	brain_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	var brain_w = 980.0
+	var brain_h = 640.0
+	brain_rect.size = Vector2(brain_w, brain_h)
+	brain_rect.pivot_offset = Vector2(brain_w / 2.0, brain_h / 2.0)
+	brain_rect.position = Vector2((1920.0 - brain_w) / 2.0, 120.0)
+	brain_rect.modulate = Color(1.0, 1.0, 1.0, 0.0)
+	brain_rect.scale = Vector2(0.2, 0.2)
+	brain_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	game_over_screen.add_child(brain_rect)
+
+	# 3. Action Buttons container (Try Again & Exit To Map)
+	var btn_container = Control.new()
+	btn_container.name = "Buttons"
+	btn_container.position = Vector2(0.0, 800.0)
+	btn_container.size = Vector2(1920.0, 150.0)
+	btn_container.modulate = Color(1.0, 1.0, 1.0, 0.0)
+	game_over_screen.add_child(btn_container)
+
+	var b_size = Vector2(280.0, 95.0)
+	# TRY AGAIN (Green button)
+	_create_dialog_button(btn_container, "TRY AGAIN", Vector2(1920.0 / 2.0 - b_size.x - 30.0, 20.0), b_size, "green", _restart_game)
+	# EXIT TO MAP / TOWN (Brown button)
+	_create_dialog_button(btn_container, "EXIT TO MAP", Vector2(1920.0 / 2.0 + 30.0, 20.0), b_size, "brown", _on_save_and_exit_pressed)
+
+	hud.add_child(game_over_screen)
+
+	# Animating brain popup & fade in (matching 2C GameOverDialog StartImageFade / StartImageScale)
+	var tw = create_tween().set_parallel(true)
+	tw.tween_property(bg, "color:a", 0.78, 0.8)
+	tw.tween_property(brain_rect, "modulate:a", 1.0, 0.55)
+	tw.tween_property(brain_rect, "scale", Vector2.ONE, 0.85).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+
+	var tw_btn = create_tween()
+	tw_btn.tween_interval(0.7)
+	tw_btn.tween_property(btn_container, "modulate:a", 1.0, 0.35)
+
+func _on_level_victory() -> void:
+	if level_finished or level_won or level_lost:
+		return
+	level_won = true
+	level_finished = true
+	print("[Lawn] *** LEVEL COMPLETE! Starting VictoryOutro... ***")
+
+	# 1. Stop combat music and trigger victory fanfare
+	if get_node_or_null("/root/AudioManager"):
+		AudioManager.stop_music()
+		if ResourceLoader.exists("res://Audio/BGM/Worlds/Modern Day/modern_victory.mp3"):
+			AudioManager.play_music(load("res://Audio/BGM/Worlds/Modern Day/modern_victory.mp3"))
+
+	_show_banner_message("VICTORY!", Color(1.0, 0.88, 0.15, 1.0), 3.0)
+
+	# 2. Victory Outro Coin Shower from remaining lawn mowers (PvZ2 VictoryOutroModule)
+	_start_victory_mower_shower()
+
+func _start_victory_mower_shower() -> void:
+	var ready_mowers: Array[LawnMower] = []
+	if lawn_mowers_container:
+		for m in lawn_mowers_container.get_children():
+			if m is LawnMower and m.state == LawnMower.State.READY:
+				ready_mowers.append(m)
+
+	print("[Lawn] VictoryOutro: %d lawn mowers remaining for bonus coins" % ready_mowers.size())
+
+	if ready_mowers.is_empty():
+		# Directly drop trophy after brief delay
+		get_tree().create_timer(1.2).timeout.connect(_spawn_victory_trophy)
+		return
+
+	# Launch remaining mowers across the lawn with coin showers (CoinsPerMower = 5)
+	for i in range(ready_mowers.size()):
+		var m = ready_mowers[i]
+		var delay = 0.5 + float(i) * 0.25
+		get_tree().create_timer(delay).timeout.connect(func():
+			if is_instance_valid(m) and m.state == LawnMower.State.READY:
+				m.trigger()
+				_spawn_mower_coin_burst(m.global_position)
+		)
+
+	var total_mower_time = 0.5 + float(ready_mowers.size()) * 0.25 + 1.2
+	get_tree().create_timer(total_mower_time).timeout.connect(_spawn_victory_trophy)
+
+func _spawn_mower_coin_burst(origin: Vector2) -> void:
+	# PvZ2 CoinsPerMower = 5 coins dropped per surviving mower
+	var coin_tex_path = "res://Assets/UI/UI_AlwaysLoaded/hud_ingame/coin.png"
+	var coin_tex = load(coin_tex_path) if ResourceLoader.exists(coin_tex_path) else null
+	if not coin_tex:
+		return
+
+	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/coin_drop.ogg"):
+		AudioManager.play_sfx(load("res://Audio/SFX/coin_drop.ogg"))
+
+	for c in range(5):
+		var coin = Sprite2D.new()
+		coin.texture = coin_tex
+		coin.scale = Vector2(0.45, 0.45)
+		coin.global_position = origin + Vector2(randf_range(-20.0, 20.0), randf_range(-15.0, 15.0))
+		coin.z_index = 250
+		add_child(coin)
+
+		# Pop out in small arc then fly to HUD top-left
+		var target_pop = coin.global_position + Vector2(randf_range(-70.0, 70.0), randf_range(-80.0, 10.0))
+		var tw = create_tween()
+		tw.tween_property(coin, "global_position", target_pop, 0.35).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		tw.tween_interval(0.2 + float(c) * 0.08)
+		# Fly toward coin bank / sun bank
+		var dest = Vector2(250.0, 60.0)
+		tw.tween_property(coin, "global_position", dest, 0.45).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+		tw.parallel().tween_property(coin, "scale", Vector2(0.2, 0.2), 0.45)
+		tw.tween_callback(func():
+			if is_instance_valid(coin):
+				coin.queue_free()
+			if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/coin_collect.ogg"):
+				AudioManager.play_sfx(load("res://Audio/SFX/coin_collect.ogg"))
+			add_sun(10)
+		)
+
+func _spawn_victory_trophy() -> void:
+	var trophy_path = "res://Assets/Misc/CollectableUnique/resource/images/full/endlevel/modern_trophy.png"
+	var trophy_tex = load(trophy_path) if ResourceLoader.exists(trophy_path) else null
+	if not trophy_tex:
+		_show_victory_award_dialog()
+		return
+
+	trophy_node = Node2D.new()
+	trophy_node.name = "VictoryTrophy"
+	trophy_node.z_index = 320
+
+	var spr = Sprite2D.new()
+	spr.name = "Sprite2D"
+	spr.texture = trophy_tex
+	spr.scale = Vector2(1.15, 1.15)
+	trophy_node.add_child(spr)
+
+	# Interactive Area2D for clicking to collect the trophy
+	var area = Area2D.new()
+	var col = CollisionShape2D.new()
+	var shape = CircleShape2D.new()
+	shape.radius = 90.0
+	col.shape = shape
+	area.add_child(col)
+	area.input_pickable = true
+	trophy_node.add_child(area)
+
+	var land_pos = Vector2(1380.0, 520.0)
+	var spawn_pos = Vector2(land_pos.x, -160.0)
+	trophy_node.position = spawn_pos
+	add_child(trophy_node)
+
+	if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/world_unlock.ogg"):
+		AudioManager.play_sfx(load("res://Audio/SFX/world_unlock.ogg"))
+
+	# Fall down with bounce
+	var tw = create_tween()
+	tw.tween_property(trophy_node, "position:y", land_pos.y, 0.85).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
+
+	var is_collected = [false]
+	var on_collect = func():
+		if is_collected[0]:
+			return
+		is_collected[0] = true
+		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/coin_collect.ogg"):
+			AudioManager.play_sfx(load("res://Audio/SFX/coin_collect.ogg"))
+		var c_tw = create_tween().set_parallel(true)
+		c_tw.tween_property(trophy_node, "scale", Vector2(1.4, 1.4), 0.25)
+		c_tw.tween_property(trophy_node, "modulate:a", 0.0, 0.3)
+		c_tw.finished.connect(func():
+			if is_instance_valid(trophy_node):
+				trophy_node.queue_free()
+				trophy_node = null
+			_show_victory_award_dialog()
+		)
+
+	area.input_event.connect(func(_vp: Node, event: InputEvent, _shape_idx: int):
+		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			on_collect.call()
+	)
+
+	# Auto-collect after 3 seconds if user hasn't clicked
+	get_tree().create_timer(3.2).timeout.connect(func():
+		if not is_collected[0]:
+			on_collect.call()
+	)
+
+func _show_victory_award_dialog() -> void:
+	var hud = get_node_or_null("HUD")
+	if not hud:
+		return
+
+	victory_screen = Control.new()
+	victory_screen.name = "VictoryScreen"
+	victory_screen.anchors_preset = Control.PRESET_FULL_RECT
+	victory_screen.size = Vector2(1920.0, 1080.0)
+	victory_screen.z_index = 450
+	victory_screen.process_mode = Node.PROCESS_MODE_ALWAYS
+
+	# Dark background overlay
+	var bg = ColorRect.new()
+	bg.name = "Overlay"
+	bg.anchors_preset = Control.PRESET_FULL_RECT
+	bg.size = Vector2(1920.0, 1080.0)
+	bg.color = Color(0.0, 0.0, 0.0, 0.65)
+	bg.mouse_filter = Control.MOUSE_FILTER_STOP
+	victory_screen.add_child(bg)
+
+	# Main Dialog Box (matching PvZ2 VictoryScreen / AwardScreen)
+	var diag_w = 940.0
+	var diag_h = 490.0
+	var dialog = Control.new()
+	dialog.name = "DialogBox"
+	dialog.size = Vector2(diag_w, diag_h)
+	dialog.position = Vector2((1920.0 - diag_w) / 2.0, 390.0)
+	dialog.mouse_filter = Control.MOUSE_FILTER_PASS
+
+	# Wooden panel background texture
+	var bg_wood = NinePatchRect.new()
+	bg_wood.name = "WoodBackground"
+	bg_wood.texture = load("res://Assets/UI/UI_AlwaysLoaded_Uncompressed/Dialog_Asset/dialogtexture.png")
+	bg_wood.size = Vector2(diag_w, diag_h)
+	bg_wood.patch_margin_left = 60
+	bg_wood.patch_margin_right = 60
+	bg_wood.patch_margin_top = 60
+	bg_wood.patch_margin_bottom = 60
+	dialog.add_child(bg_wood)
+
+	# Golden border frame
+	var border_frame = NinePatchRect.new()
+	border_frame.name = "GoldenBorder"
+	border_frame.texture = load("res://Assets/UI/UI_AlwaysLoaded_Uncompressed/Dialog_Asset/dialogborder.png")
+	border_frame.size = Vector2(diag_w, diag_h)
+	border_frame.patch_margin_left = 60
+	border_frame.patch_margin_right = 60
+	border_frame.patch_margin_top = 60
+	border_frame.patch_margin_bottom = 60
+	dialog.add_child(border_frame)
+
+	# Sunflower topper on dialog
+	var sunflower_tex = load("res://Assets/UI/UI_PauseMenu/resource/images/initial/UI/pausemenu/sunflower_topper.png")
+	var sunflower = TextureRect.new()
+	sunflower.texture = sunflower_tex
+	sunflower.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	sunflower.size = Vector2(215.0, 180.0)
+	sunflower.position = Vector2((diag_w - 215.0) / 2.0, -110.0)
+	dialog.add_child(sunflower)
+
+	# Title: LEVEL COMPLETE!
+	var title_lbl = Label.new()
+	title_lbl.name = "TitleLabel"
+	title_lbl.text = "LEVEL COMPLETE!"
+	title_lbl.position = Vector2(0.0, -165.0)
+	title_lbl.size = Vector2(diag_w, 60.0)
+	title_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var font_path = "res://Fonts/PvZ2 Regular By Beast and MF.ttf"
+	if ResourceLoader.exists(font_path):
+		title_lbl.add_theme_font_override("font", load(font_path))
+	title_lbl.add_theme_font_size_override("font_size", 52)
+	title_lbl.add_theme_color_override("font_color", Color(1.0, 0.9, 0.2, 1.0))
+	title_lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	title_lbl.add_theme_constant_override("outline_size", 12)
+	dialog.add_child(title_lbl)
+
+	# Trophy display icon inside dialog
+	var trophy_path = "res://Assets/Misc/CollectableUnique/resource/images/full/endlevel/modern_trophy.png"
+	if ResourceLoader.exists(trophy_path):
+		var trophy_icon = TextureRect.new()
+		trophy_icon.texture = load(trophy_path)
+		trophy_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		trophy_icon.size = Vector2(140.0, 190.0)
+		trophy_icon.position = Vector2(80.0, 120.0)
+		dialog.add_child(trophy_icon)
+
+	# Summary text
+	var summary_lbl = Label.new()
+	summary_lbl.text = "Modern Day - Day 1\n\nYou defended your lawn\nand defeated the zombie invasion!"
+	summary_lbl.position = Vector2(250.0, 130.0)
+	summary_lbl.size = Vector2(620.0, 170.0)
+	if ResourceLoader.exists(font_path):
+		summary_lbl.add_theme_font_override("font", load(font_path))
+	summary_lbl.add_theme_font_size_override("font_size", 30)
+	summary_lbl.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
+	summary_lbl.add_theme_color_override("font_outline_color", Color(0.12, 0.08, 0.04, 1.0))
+	summary_lbl.add_theme_constant_override("outline_size", 6)
+	dialog.add_child(summary_lbl)
+
+	# Action Buttons: REPLAY (Brown) and CONTINUE (Green)
+	var btn_size = Vector2(260.0, 95.0)
+	var btn_y = diag_h - 50.0
+	_create_dialog_button(dialog, "REPLAY", Vector2(170.0, btn_y), btn_size, "brown", _restart_game)
+	_create_dialog_button(dialog, "CONTINUE", Vector2(510.0, btn_y), btn_size, "green", _on_save_and_exit_pressed)
+
+	victory_screen.add_child(dialog)
+	hud.add_child(victory_screen)
+
+	# Pop dialog in
+	dialog.scale = Vector2(0.4, 0.4)
+	dialog.pivot_offset = Vector2(diag_w / 2.0, diag_h / 2.0)
+	dialog.modulate = Color(1.0, 1.0, 1.0, 0.0)
+	var tw = create_tween().set_parallel(true)
+	tw.tween_property(dialog, "scale", Vector2.ONE, 0.5).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(dialog, "modulate:a", 1.0, 0.35)
 
 func _spawn_sky_sun() -> void:
 	if not sun_scene:
@@ -1127,15 +1490,21 @@ func _create_volume_slider_row(parent: Control, label_text: String, pos_y: float
 	parent.add_child(row)
 	return row
 
-func _create_pause_button(parent: Control, text: String, pos: Vector2, b_size: Vector2, is_purple: bool, on_pressed: Callable) -> TextureButton:
+func _create_dialog_button(parent: Control, text: String, pos: Vector2, b_size: Vector2, color_type: String, on_pressed: Callable) -> TextureButton:
 	var btn = TextureButton.new()
 	btn.custom_minimum_size = b_size
 	btn.size = b_size
 	btn.position = pos
 	btn.ignore_texture_size = true
 	btn.stretch_mode = TextureButton.STRETCH_SCALE
-	var norm_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton.png" if is_purple else "res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton.png"
-	var down_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton_Down.png" if is_purple else "res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton_Down.png"
+	var norm_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/GreenButton.png"
+	var down_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/GreenButton_Down.png"
+	if color_type == "purple":
+		norm_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton.png"
+		down_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/PurpleButton_Down.png"
+	elif color_type == "brown":
+		norm_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton.png"
+		down_path = "res://Assets/UI/UI_AlwaysLoaded/Generic/BrownButton_Down.png"
 	btn.texture_normal = load(norm_path)
 	btn.texture_pressed = load(down_path)
 	btn.focus_mode = Control.FOCUS_NONE
@@ -1159,6 +1528,9 @@ func _create_pause_button(parent: Control, text: String, pos: Vector2, b_size: V
 
 	parent.add_child(btn)
 	return btn
+
+func _create_pause_button(parent: Control, text: String, pos: Vector2, b_size: Vector2, is_purple: bool, on_pressed: Callable) -> TextureButton:
+	return _create_dialog_button(parent, text, pos, b_size, "purple" if is_purple else "brown", on_pressed)
 
 func toggle_pause() -> void:
 	var new_paused = !get_tree().paused
@@ -1263,6 +1635,14 @@ func _unhandled_input(event: InputEvent) -> void:
 				var cell = grid.world_to_cell(mouse_pos)
 				var target_row = cell.y if grid.is_valid_cell(cell.x, cell.y) else randi_range(0, grid.rows - 1)
 				spawn_zombie(target_row, mouse_pos.x, "brick")
+
+			# D key to trigger Game Over / Death Screen test
+			elif event.keycode == KEY_D:
+				_trigger_game_over()
+
+			# V key to trigger Victory Outro test
+			elif event.keycode == KEY_V:
+				_on_level_victory()
 
 			# A key during debug mode toggles animation viewer
 			elif event.keycode == KEY_A:
@@ -1428,7 +1808,7 @@ func _update_hud() -> void:
 		peashooter_count_label.text = "PLANTS: %d | [%d] %s" % [plant_count, selected_plant_index + 1, selected_name]
 	if debug_status_label:
 		if debug_mode:
-			debug_status_label.text = "[DEBUG ON] 1-0: Plant | Z/C/B/K: Zombies | A: AnimViewer | Shovel | PF"
+			debug_status_label.text = "[DEBUG ON] 1-0: Plant | Z/C/B/K: Zombies | D: Death | V: Victory | A: Anim"
 			debug_status_label.modulate = Color(0.4, 1.0, 0.4, 1.0)
 		else:
 			debug_status_label.text = "Press 'G' for Debug Mode"

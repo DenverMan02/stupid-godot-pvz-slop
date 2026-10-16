@@ -416,5 +416,49 @@ class TestGameplaySystems(unittest.TestCase):
         self.assertNotIn("theme_override_constants.", town_code)
         self.assertIn('add_theme_constant_override("separation"', town_code)
 
+    def test_game_over_and_victory_dialogs(self):
+        """Verify authentic PvZ2 GameOverDialog and VictoryOutro implementation in Lawn.gd."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            code = f.read()
+
+        # Check Game Over Dialog routines & assets
+        self.assertIn("func _trigger_game_over(", code)
+        self.assertIn("func _setup_game_over_dialog(", code)
+        self.assertIn("fail_screen_brain_only.png", code)
+        self.assertIn("res://Audio/SFX/failure.ogg", code)
+        self.assertIn("res://Audio/BGM/Worlds/Modern Day/modern_lose.mp3", code)
+        self.assertIn("TRY AGAIN", code)
+        self.assertIn("EXIT TO MAP", code)
+        self.assertIn("TRANS_BACK", code)
+
+        # Check Zombie breach check threshold
+        self.assertIn("z.global_position.x <= 620.0", code)
+        self.assertIn("_trigger_game_over(z)", code)
+
+        # Check Victory Outro routines & assets
+        self.assertIn("func _on_level_victory(", code)
+        self.assertIn("func _start_victory_mower_shower(", code)
+        self.assertIn("func _spawn_mower_coin_burst(", code)
+        self.assertIn("func _spawn_victory_trophy(", code)
+        self.assertIn("func _show_victory_award_dialog(", code)
+        self.assertIn("res://Audio/BGM/Worlds/Modern Day/modern_victory.mp3", code)
+        self.assertIn("modern_trophy.png", code)
+        self.assertIn("res://Audio/SFX/world_unlock.ogg", code)
+        self.assertIn("res://Audio/SFX/coin_drop.ogg", code)
+        self.assertIn("res://Audio/SFX/coin_collect.ogg", code)
+        self.assertIn("LEVEL COMPLETE!", code)
+        self.assertIn("REPLAY", code)
+        self.assertIn("CONTINUE", code)
+
+        # Check Dialog button helper supports green, brown, purple
+        self.assertIn("func _create_dialog_button(", code)
+        self.assertIn("GreenButton.png", code)
+        self.assertIn("BrownButton.png", code)
+        self.assertIn("PurpleButton.png", code)
+
+        # Check debug shortcuts for testing
+        self.assertIn("KEY_D", code)
+        self.assertIn("KEY_V", code)
+
 if __name__ == "__main__":
     unittest.main()

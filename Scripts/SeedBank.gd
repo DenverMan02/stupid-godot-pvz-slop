@@ -20,6 +20,9 @@ const ALL_PLANT_PACKETS: Dictionary = {
 	"sunflower_twin": {"name": "Twin Sunflower", "cost": 125, "cooldown": 7.5},
 	"threepeater": {"name": "Threepeater", "cost": 300, "cooldown": 7.5},
 	"peashooter_super": {"name": "Gatling Pea", "cost": 400, "cooldown": 10.0},
+	"clivia": {"name": "Clivia", "cost": 150, "cooldown": 10.0},
+	"garlic": {"name": "Garlic", "cost": 50, "cooldown": 10.0},
+	"lingfugu": {"name": "LingFugu", "cost": 175, "cooldown": 10.0},
 	"three_head_sunflower": {"name": "Triplet Sunflower", "cost": 200, "cooldown": 10.0},
 }
 
@@ -67,6 +70,12 @@ func set_chosen_plants(plant_ids: Array[String]) -> void:
 	for child in packets_container.get_children():
 		child.queue_free()
 	packet_nodes.clear()
+
+	# Adjust separation dynamically so 8 slots fit nicely in the sidebar
+	if plant_ids.size() >= 8:
+		packets_container.add_theme_constant_override("separation", -18)
+	else:
+		packets_container.add_theme_constant_override("separation", -14)
 
 	for pid in plant_ids:
 		var info = ALL_PLANT_PACKETS.get(pid, {"name": pid.capitalize(), "cost": 100, "cooldown": 5.0})

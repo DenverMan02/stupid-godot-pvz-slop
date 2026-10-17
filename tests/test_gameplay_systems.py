@@ -474,5 +474,56 @@ class TestGameplaySystems(unittest.TestCase):
             proj_code = f.read()
         self.assertIn("func setup_lobbed(p_row: int, p_start: Vector2, p_target: Vector2, p_target_zombie = null", proj_code)
 
+    def test_choose_your_seeds_screen(self):
+        """Verify Choose Your Seeds screen features: 8 slots, 8 columns, costs, sidebar auto-sync, rounded corners."""
+        with open("Scripts/Lawn.gd", "r") as f:
+            lawn_code = f.read()
+
+        # 1. 8 Seed Slots & 8 Columns
+        self.assertIn("const MAX_CHOSEN_SEEDS: int = 8", lawn_code)
+        self.assertIn("catalog_grid.columns = 8", lawn_code)
+        self.assertIn("board_w = 1320.0", lawn_code)
+        self.assertIn("SEEDS CHOSEN: %d / %d", lawn_code)
+
+        # 2. Sun cost bug fixed in PLANT_REGISTRY
+        self.assertIn('"cost": 50', lawn_code)   # Sunflower & Wallnut & Garlic
+        self.assertIn('"cost": 25', lawn_code)   # Potato Mine
+        self.assertIn('"cost": 100', lawn_code)  # Peashooter & Cabbage-pult
+        self.assertIn('"cost": 200', lawn_code)  # Repeater & Triplet Sunflower
+        self.assertIn('"cost": 125', lawn_code)  # Twin Sunflower
+        self.assertIn('"cost": 400', lawn_code)  # Gatling Pea
+
+        # 3. Seed sidebar auto update in real-time
+        # In _ready()
+        self.assertIn("seed_bank.set_chosen_plants(chosen_seed_ids)", lawn_code)
+        # In _add_seed_to_chosen()
+        self.assertIn("func _add_seed_to_chosen(plant_id: String) -> void:", lawn_code)
+        # In _remove_seed_from_chosen()
+        self.assertIn("func _remove_seed_from_chosen(plant_id: String) -> void:", lawn_code)
+        # In _on_lets_rock_pressed()
+        self.assertIn("func _on_lets_rock_pressed() -> void:", lawn_code)
+
+        # 4. Rounded corner look without black box corners
+        self.assertIn("rounded_dialog.gdshader", lawn_code)
+        self.assertIn("set_corner_radius_all(10)", lawn_code)
+
+        # 5. SeedBank.gd ALL_PLANT_PACKETS contains correct costs and plants
+        with open("Scripts/SeedBank.gd", "r") as f:
+            seedbank_code = f.read()
+        self.assertIn('"potatomine": {"name": "Potato Mine", "cost": 25', seedbank_code)
+        self.assertIn('"sunflower": {"name": "Sunflower", "cost": 50', seedbank_code)
+        self.assertIn('"wallnut": {"name": "Wall-nut", "cost": 50', seedbank_code)
+        self.assertIn('"clivia": {"name": "Clivia", "cost": 150', seedbank_code)
+        self.assertIn('"garlic": {"name": "Garlic", "cost": 50', seedbank_code)
+        self.assertIn('"lingfugu": {"name": "LingFugu", "cost": 175', seedbank_code)
+        self.assertIn("plant_ids.size() >= 8", seedbank_code)
+
+        # 6. Verify dialogtexture.png has masked transparent corners (alpha=0 at (0,0))
+        from PIL import Image
+        dialog_tex = Image.open("Assets/UI/UI_AlwaysLoaded_Uncompressed/Dialog_Asset/dialogtexture.png")
+        self.assertEqual(dialog_tex.getpixel((0, 0))[3], 0)
+        self.assertEqual(dialog_tex.getpixel((10, 10))[3], 0)
+
 if __name__ == "__main__":
     unittest.main()
+

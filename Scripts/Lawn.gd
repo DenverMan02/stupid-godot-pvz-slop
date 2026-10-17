@@ -38,6 +38,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "Peashooter",
 		"anim_json": "res://Assets/Plants/peashooter.anim.json",
 		"tex_dir": "res://Assets/Plants/peashooter.xfl/library/",
+		"cost": 100,
 		"health": 300.0,
 		"offset": Vector2(0.0, 34.0),
 	},
@@ -46,6 +47,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "Sunflower",
 		"anim_json": "res://Assets/Plants/sunflower.anim.json",
 		"tex_dir": "res://Assets/Plants/sunflower.xfl/library/",
+		"cost": 50,
 		"health": 300.0,
 		"offset": Vector2(0.0, 34.0),
 	},
@@ -54,6 +56,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "Wall-nut",
 		"anim_json": "res://Assets/Plants/wallnut.anim.json",
 		"tex_dir": "res://Assets/Plants/wallnut.xfl/library/",
+		"cost": 50,
 		"health": 4000.0,
 		"offset": Vector2(0.0, 34.0),
 	},
@@ -62,6 +65,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "Potato Mine",
 		"anim_json": "res://Assets/Plants/potatomine.anim.json",
 		"tex_dir": "res://Assets/Plants/potatomine.xfl/library/",
+		"cost": 25,
 		"health": 300.0,
 		"offset": Vector2(0.0, 34.0),
 	},
@@ -70,17 +74,45 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"name": "Cabbage-pult",
 		"anim_json": "res://Assets/Plants/cabbagepult.anim.json",
 		"tex_dir": "res://Assets/Plants/cabbagepult.xfl/library/",
+		"cost": 100,
 		"health": 300.0,
 		"offset": Vector2(0.0, 34.0),
 	},
 	{
-		"id": "lingfugu",
-		"name": "LingFugu",
-		"anim_json": "res://Assets/Plants/lingfugu.anim.json",
-		"tex_dir": "res://Assets/Plants/lingfugu.xfl/library/",
-		"scale": 1.0,
-		"offset": Vector2.ZERO,
+		"id": "repeater",
+		"name": "Repeater",
+		"anim_json": "res://Assets/Plants/repeater.anim.json",
+		"tex_dir": "res://Assets/Plants/repeater.xfl/library/",
+		"cost": 200,
 		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "sunflower_twin",
+		"name": "Twin Sunflower",
+		"anim_json": "res://Assets/Plants/sunflower_twin.anim.json",
+		"tex_dir": "res://Assets/Plants/sunflower_twin.xfl/library/",
+		"cost": 125,
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "peashooter_super",
+		"name": "Gatling Pea",
+		"anim_json": "res://Assets/Plants/peashooter_super.anim.json",
+		"tex_dir": "res://Assets/Plants/peashooter_super.xfl/library/",
+		"cost": 400,
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
+	},
+	{
+		"id": "threepeater",
+		"name": "Threepeater",
+		"anim_json": "res://Assets/Plants/threepeater.anim.json",
+		"tex_dir": "res://Assets/Plants/threepeater.xfl/library/",
+		"cost": 300,
+		"health": 300.0,
+		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "clivia",
@@ -89,6 +121,7 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"tex_dir": "res://Assets/Plants/clivia.xfl/LIBRARY/",
 		"scale": 1.8,
 		"offset": Vector2(-25.0, 34.0),
+		"cost": 150,
 		"health": 300.0,
 	},
 	{
@@ -98,45 +131,25 @@ const PLANT_REGISTRY: Array[Dictionary] = [
 		"tex_dir": "res://Assets/Plants/garlic.xfl/LIBRARY/",
 		"scale": 1.8,
 		"offset": Vector2(-15.0, 56.0),
+		"cost": 50,
 		"health": 600.0,
 	},
 	{
-		"id": "repeater",
-		"name": "Repeater",
-		"anim_json": "res://Assets/Plants/repeater.anim.json",
-		"tex_dir": "res://Assets/Plants/repeater.xfl/library/",
+		"id": "lingfugu",
+		"name": "LingFugu",
+		"anim_json": "res://Assets/Plants/lingfugu.anim.json",
+		"tex_dir": "res://Assets/Plants/lingfugu.xfl/library/",
+		"scale": 1.0,
+		"offset": Vector2.ZERO,
+		"cost": 175,
 		"health": 300.0,
-		"offset": Vector2(0.0, 34.0),
-	},
-	{
-		"id": "sunflower_twin",
-		"name": "Twin Sunflower",
-		"anim_json": "res://Assets/Plants/sunflower_twin.anim.json",
-		"tex_dir": "res://Assets/Plants/sunflower_twin.xfl/library/",
-		"health": 300.0,
-		"offset": Vector2(0.0, 34.0),
-	},
-	{
-		"id": "peashooter_super",
-		"name": "Gatling Pea",
-		"anim_json": "res://Assets/Plants/peashooter_super.anim.json",
-		"tex_dir": "res://Assets/Plants/peashooter_super.xfl/library/",
-		"health": 300.0,
-		"offset": Vector2(0.0, 34.0),
-	},
-	{
-		"id": "threepeater",
-		"name": "Threepeater",
-		"anim_json": "res://Assets/Plants/threepeater.anim.json",
-		"tex_dir": "res://Assets/Plants/threepeater.xfl/library/",
-		"health": 300.0,
-		"offset": Vector2(0.0, 34.0),
 	},
 	{
 		"id": "three_head_sunflower",
 		"name": "Triplet Sunflower",
 		"anim_json": "res://Assets/Plants/three_head_sunflower.anim.json",
 		"tex_dir": "res://Assets/Plants/three_head_sunflower.xfl/library/",
+		"cost": 200,
 		"health": 300.0,
 		"offset": Vector2(0.0, 34.0),
 	},
@@ -197,7 +210,7 @@ var trophy_node: Node2D = null
 # Choose Your Seeds Screen (PvZ2 SeedChooserScreen)
 var seed_chooser_screen: Control = null
 var is_choosing_seeds: bool = false
-const MAX_CHOSEN_SEEDS: int = 7
+const MAX_CHOSEN_SEEDS: int = 8
 var chosen_seed_ids: Array[String] = []
 
 # LawnMowers
@@ -234,7 +247,11 @@ func _ready() -> void:
 	_update_wave_meter(0.0)
 	_update_plant_food_display()
 
+	if chosen_seed_ids.is_empty():
+		chosen_seed_ids = ["sunflower", "peashooter", "cabbagepult", "wallnut", "potatomine"]
+
 	if seed_bank:
+		seed_bank.set_chosen_plants(chosen_seed_ids)
 		seed_bank.update_sun_display(sun_amount)
 		seed_bank.set_active(false)
 
@@ -473,6 +490,10 @@ func _show_seed_chooser() -> void:
 	if chosen_seed_ids.is_empty():
 		chosen_seed_ids = ["sunflower", "peashooter", "cabbagepult", "wallnut", "potatomine"]
 
+	# Auto update seed bank sidebar immediately
+	if seed_bank:
+		seed_bank.set_chosen_plants(chosen_seed_ids)
+
 	var hud = get_node_or_null("HUD")
 	if not hud:
 		_start_camera_pan()
@@ -485,10 +506,10 @@ func _show_seed_chooser() -> void:
 	seed_chooser_screen.z_index = 350
 	seed_chooser_screen.process_mode = Node.PROCESS_MODE_ALWAYS
 
-	# Main Chooser Wooden Board Background
+	# Main Chooser Wooden Board Background (expanded width for 8 slots & 8 columns)
 	var chooser_board = Control.new()
 	chooser_board.name = "ChooserBoard"
-	var board_w = 1200.0
+	var board_w = 1320.0
 	var board_h = 920.0
 	chooser_board.size = Vector2(board_w, board_h)
 	chooser_board.position = Vector2((1920.0 - board_w) / 2.0, 60.0)
@@ -503,6 +524,12 @@ func _show_seed_chooser() -> void:
 	bg_wood.patch_margin_right = 60
 	bg_wood.patch_margin_top = 60
 	bg_wood.patch_margin_bottom = 60
+	if ResourceLoader.exists("res://Shaders/rounded_dialog.gdshader"):
+		var mat = ShaderMaterial.new()
+		mat.shader = load("res://Shaders/rounded_dialog.gdshader")
+		mat.set_shader_parameter("corner_radius", 45.0)
+		mat.set_shader_parameter("rect_size", Vector2(board_w, board_h))
+		bg_wood.material = mat
 	chooser_board.add_child(bg_wood)
 
 	# Golden border frame
@@ -533,10 +560,10 @@ func _show_seed_chooser() -> void:
 	title_lbl.add_theme_constant_override("outline_size", 10)
 	chooser_board.add_child(title_lbl)
 
-	# Top Slots Header Label (e.g. "SEEDS CHOSEN: X / 7")
+	# Top Slots Header Label (e.g. "SEEDS CHOSEN: X / 8")
 	var slots_label = Label.new()
 	slots_label.name = "SlotsLabel"
-	slots_label.position = Vector2(80.0, 85.0)
+	slots_label.position = Vector2(60.0, 85.0)
 	slots_label.size = Vector2(600.0, 35.0)
 	if ResourceLoader.exists(font_path):
 		slots_label.add_theme_font_override("font", load(font_path))
@@ -546,35 +573,35 @@ func _show_seed_chooser() -> void:
 	slots_label.add_theme_constant_override("outline_size", 6)
 	chooser_board.add_child(slots_label)
 
-	# Top Tray Container: Selected Seeds Horizontal Row
+	# Top Tray Container: Selected Seeds Horizontal Row (Fits 8 slots)
 	var chosen_tray = HBoxContainer.new()
 	chosen_tray.name = "ChosenTray"
-	chosen_tray.position = Vector2(80.0, 125.0)
-	chosen_tray.size = Vector2(1040.0, 120.0)
+	chosen_tray.position = Vector2(60.0, 125.0)
+	chosen_tray.size = Vector2(1200.0, 120.0)
 	chosen_tray.add_theme_constant_override("separation", 16)
 	chooser_board.add_child(chosen_tray)
 
 	# Middle Separator divider
 	var sep_line = ColorRect.new()
 	sep_line.name = "Separator"
-	sep_line.position = Vector2(70.0, 260.0)
-	sep_line.size = Vector2(1060.0, 4.0)
+	sep_line.position = Vector2(50.0, 260.0)
+	sep_line.size = Vector2(1220.0, 4.0)
 	sep_line.color = Color(0.8, 0.6, 0.2, 0.5)
 	chooser_board.add_child(sep_line)
 
-	# Bottom Grid Container: Catalog of Available Plants (Scrollable)
+	# Bottom Grid Container: Catalog of Available Plants (Scrollable with 8 columns)
 	var catalog_scroll = ScrollContainer.new()
 	catalog_scroll.name = "CatalogScroll"
-	catalog_scroll.position = Vector2(70.0, 280.0)
-	catalog_scroll.size = Vector2(1060.0, 500.0)
+	catalog_scroll.position = Vector2(50.0, 280.0)
+	catalog_scroll.size = Vector2(1220.0, 500.0)
 	catalog_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	chooser_board.add_child(catalog_scroll)
 
 	var catalog_grid = GridContainer.new()
 	catalog_grid.name = "CatalogGrid"
-	catalog_grid.columns = 6
-	catalog_grid.add_theme_constant_override("h_separation", 18)
-	catalog_grid.add_theme_constant_override("v_separation", 18)
+	catalog_grid.columns = 8
+	catalog_grid.add_theme_constant_override("h_separation", 16)
+	catalog_grid.add_theme_constant_override("v_separation", 16)
 	catalog_scroll.add_child(catalog_grid)
 
 	# Bottom Action Button: "LET'S ROCK!"
@@ -609,21 +636,24 @@ func _refresh_seed_chooser_ui() -> void:
 		for child in chosen_tray.get_children():
 			child.queue_free()
 
-		# Populate the chosen tray slots (up to MAX_CHOSEN_SEEDS)
+		# Populate the chosen tray slots (up to MAX_CHOSEN_SEEDS = 8)
 		for i in range(MAX_CHOSEN_SEEDS):
 			var slot_ctrl = Control.new()
-			slot_ctrl.custom_minimum_size = Vector2(130.0, 105.0)
-			slot_ctrl.size = Vector2(130.0, 105.0)
+			slot_ctrl.custom_minimum_size = Vector2(136.0, 105.0)
+			slot_ctrl.size = Vector2(136.0, 105.0)
 
-			# Slot background texture
-			var slot_bg = NinePatchRect.new()
-			slot_bg.texture = load("res://Assets/UI/UI_AlwaysLoaded/hud_ingame/background_3slice.png")
-			slot_bg.size = Vector2(130.0, 105.0)
-			slot_bg.patch_margin_left = 12
-			slot_bg.patch_margin_top = 12
-			slot_bg.patch_margin_right = 12
-			slot_bg.patch_margin_bottom = 12
-			slot_bg.modulate = Color(0.7, 0.7, 0.7, 0.8)
+			# Slot background with clean border (no black corners)
+			var slot_bg = Panel.new()
+			slot_bg.size = Vector2(136.0, 105.0)
+			var slot_style = StyleBoxFlat.new()
+			slot_style.bg_color = Color(0.12, 0.08, 0.04, 0.65)
+			slot_style.set_corner_radius_all(10)
+			slot_style.border_width_left = 2
+			slot_style.border_width_top = 2
+			slot_style.border_width_right = 2
+			slot_style.border_width_bottom = 2
+			slot_style.border_color = Color(0.45, 0.35, 0.18, 0.85)
+			slot_bg.add_theme_stylebox_override("panel", slot_style)
 			slot_ctrl.add_child(slot_bg)
 
 			if i < chosen_seed_ids.size():
@@ -654,7 +684,7 @@ func _refresh_seed_chooser_ui() -> void:
 
 func _create_chooser_packet_button(plant_id: String, is_in_tray: bool, is_disabled_choice: bool = false) -> TextureButton:
 	var btn = TextureButton.new()
-	var b_w = 130.0
+	var b_w = 136.0
 	var b_h = 105.0
 	btn.custom_minimum_size = Vector2(b_w, b_h)
 	btn.size = Vector2(b_w, b_h)
@@ -675,6 +705,21 @@ func _create_chooser_packet_button(plant_id: String, is_in_tray: bool, is_disabl
 	else:
 		btn.texture_normal = load("res://SeedPackets/peashooter.png")
 
+	# Clean rounded styling for the seed packets (removes outer black corners while keeping rounded card shape)
+	var panel_mask = Panel.new()
+	panel_mask.size = Vector2(b_w, b_h)
+	panel_mask.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var p_style = StyleBoxFlat.new()
+	p_style.bg_color = Color(0, 0, 0, 0)
+	p_style.set_corner_radius_all(8)
+	p_style.border_width_left = 2
+	p_style.border_width_top = 2
+	p_style.border_width_right = 2
+	p_style.border_width_bottom = 2
+	p_style.border_color = Color(0.85, 0.7, 0.3, 0.7) if is_in_tray else Color(0.4, 0.3, 0.15, 0.4)
+	panel_mask.add_theme_stylebox_override("panel", p_style)
+	btn.add_child(panel_mask)
+
 	# If chosen already and shown in bottom catalog, dim it down like official PvZ2
 	if is_disabled_choice and not is_in_tray:
 		btn.modulate = Color(0.38, 0.38, 0.38, 0.7)
@@ -687,7 +732,7 @@ func _create_chooser_packet_button(plant_id: String, is_in_tray: bool, is_disabl
 
 	var cost_lbl = Label.new()
 	cost_lbl.text = str(sun_cost)
-	cost_lbl.position = Vector2(b_w - 60.0, b_h - 32.0)
+	cost_lbl.position = Vector2(b_w - 62.0, b_h - 32.0)
 	cost_lbl.size = Vector2(52.0, 26.0)
 	cost_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	cost_lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
@@ -709,6 +754,8 @@ func _add_seed_to_chosen(plant_id: String) -> void:
 		return
 	if plant_id not in chosen_seed_ids:
 		chosen_seed_ids.append(plant_id)
+		if seed_bank:
+			seed_bank.set_chosen_plants(chosen_seed_ids)
 		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/select_plant.ogg"):
 			AudioManager.play_sfx(load("res://Audio/SFX/select_plant.ogg"))
 		_refresh_seed_chooser_ui()
@@ -716,6 +763,8 @@ func _add_seed_to_chosen(plant_id: String) -> void:
 func _remove_seed_from_chosen(plant_id: String) -> void:
 	if plant_id in chosen_seed_ids:
 		chosen_seed_ids.erase(plant_id)
+		if seed_bank:
+			seed_bank.set_chosen_plants(chosen_seed_ids)
 		if get_node_or_null("/root/AudioManager") and ResourceLoader.exists("res://Audio/SFX/select_plant.ogg"):
 			AudioManager.play_sfx(load("res://Audio/SFX/select_plant.ogg"))
 		_refresh_seed_chooser_ui()
@@ -1315,6 +1364,12 @@ func _show_victory_award_dialog() -> void:
 	bg_wood.patch_margin_right = 60
 	bg_wood.patch_margin_top = 60
 	bg_wood.patch_margin_bottom = 60
+	if ResourceLoader.exists("res://Shaders/rounded_dialog.gdshader"):
+		var mat = ShaderMaterial.new()
+		mat.shader = load("res://Shaders/rounded_dialog.gdshader")
+		mat.set_shader_parameter("corner_radius", 45.0)
+		mat.set_shader_parameter("rect_size", Vector2(diag_w, diag_h))
+		bg_wood.material = mat
 	dialog.add_child(bg_wood)
 
 	# Golden border frame
@@ -1605,6 +1660,12 @@ func _setup_pause_menu(hud: CanvasLayer) -> void:
 	bg_wood.patch_margin_top = 60
 	bg_wood.patch_margin_bottom = 60
 	bg_wood.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	if ResourceLoader.exists("res://Shaders/rounded_dialog.gdshader"):
+		var mat = ShaderMaterial.new()
+		mat.shader = load("res://Shaders/rounded_dialog.gdshader")
+		mat.set_shader_parameter("corner_radius", 45.0)
+		mat.set_shader_parameter("rect_size", Vector2(diag_w, diag_h))
+		bg_wood.material = mat
 	dialog.add_child(bg_wood)
 
 	# Golden rounded border frame

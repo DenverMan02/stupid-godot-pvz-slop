@@ -63,6 +63,24 @@ func _ready() -> void:
 	_init_packets()
 	update_sun_display(current_sun)
 
+func set_chosen_plants(plant_ids: Array[String]) -> void:
+	for child in packets_container.get_children():
+		child.queue_free()
+	packet_nodes.clear()
+
+	for pid in plant_ids:
+		var info = ALL_PLANT_PACKETS.get(pid, {"name": pid.capitalize(), "cost": 100, "cooldown": 5.0})
+		var pkt: SeedPacket = packet_scene.instantiate()
+		pkt.plant_id = pid
+		pkt.plant_name = info["name"]
+		pkt.sun_cost = info["cost"]
+		pkt.cooldown_duration = info["cooldown"]
+		pkt.packet_clicked.connect(_on_packet_clicked)
+		packets_container.add_child(pkt)
+		packet_nodes.append(pkt)
+
+	update_sun_display(current_sun)
+
 func _init_packets() -> void:
 	# Clear any existing placeholder children
 	for child in packets_container.get_children():

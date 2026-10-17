@@ -434,6 +434,8 @@ class TestGameplaySystems(unittest.TestCase):
         # Check Zombie breach check threshold
         self.assertIn("z.global_position.x <= 620.0", code)
         self.assertIn("_trigger_game_over(z)", code)
+        self.assertIn("z.walk_speed = 0.0", code)
+        self.assertIn("z.set_process(false)", code)
 
         # Check Victory Outro routines & assets
         self.assertIn("func _on_level_victory(", code)
@@ -459,6 +461,18 @@ class TestGameplaySystems(unittest.TestCase):
         # Check debug shortcuts for testing
         self.assertIn("KEY_D", code)
         self.assertIn("KEY_V", code)
+
+    def test_cabbagepult_freed_zombie_safety(self):
+        """Verify Plant.gd and Projectile.gd safely guard against freed zombie targets."""
+        with open("Scripts/Plant.gd", "r") as f:
+            p_code = f.read()
+        self.assertIn("is_instance_valid(target_zombie_for_shot)", p_code)
+        self.assertIn("func _spawn_cabbage_projectile(target = null)", p_code)
+        self.assertIn("func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zombie = null", p_code)
+
+        with open("Scripts/Projectile.gd", "r") as f:
+            proj_code = f.read()
+        self.assertIn("func setup_lobbed(p_row: int, p_start: Vector2, p_target: Vector2, p_target_zombie = null", proj_code)
 
 if __name__ == "__main__":
     unittest.main()

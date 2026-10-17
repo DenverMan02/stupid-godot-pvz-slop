@@ -712,7 +712,10 @@ func _on_use_action() -> void:
 		if is_in_plantfood_sequence:
 			_fire_cabbagepult_plantfood()
 		else:
-			_spawn_cabbage_projectile(target_zombie_for_shot)
+			var valid_target: Node2D = null
+			if is_instance_valid(target_zombie_for_shot) and not target_zombie_for_shot.is_queued_for_deletion():
+				valid_target = target_zombie_for_shot
+			_spawn_cabbage_projectile(valid_target)
 	elif plant_type in ["sunflower", "sunflower_twin", "three_head_sunflower"]:
 		pass
 	else:
@@ -750,11 +753,11 @@ func _spawn_pea_projectile_in_row(target_row: int) -> void:
 	else:
 		lawn.add_child(proj)
 
-func _spawn_cabbage_projectile(target: Node2D = null) -> void:
+func _spawn_cabbage_projectile(target = null) -> void:
 	var lawn = get_tree().current_scene
 	if not lawn:
 		return
-	if target == null or not is_instance_valid(target) or target.is_queued_for_deletion():
+	if target == null or not is_instance_valid(target) or not (target is Node2D) or target.is_queued_for_deletion():
 		target = _find_zombie_in_row()
 
 	var target_pos = (target.global_position + Vector2(-20.0, -10.0)) if (target and is_instance_valid(target)) else Vector2(global_position.x + 600.0, global_position.y)
@@ -767,20 +770,23 @@ func _spawn_cabbage_projectile(target: Node2D = null) -> void:
 	else:
 		lawn.add_child(proj)
 
-func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zombie: Node2D = null, p_is_giant: bool = false, p_delay: float = 0.0) -> void:
+func _spawn_cabbage_projectile_at(p_row: int, p_target_pos: Vector2, p_target_zombie = null, p_is_giant: bool = false, p_delay: float = 0.0) -> void:
 	var lawn = get_tree().current_scene
 	if not lawn:
 		return
+	var valid_zombie: Node2D = null
+	if p_target_zombie != null and is_instance_valid(p_target_zombie) and (p_target_zombie is Node2D) and not p_target_zombie.is_queued_for_deletion():
+		valid_zombie = p_target_zombie
 	if p_delay > 0.0:
 		get_tree().create_timer(p_delay).timeout.connect(func():
 			if is_instance_valid(self) and not is_queued_for_deletion():
-				_spawn_cabbage_projectile_at(p_row, p_target_pos, p_target_zombie, p_is_giant, 0.0)
+				_spawn_cabbage_projectile_at(p_row, p_target_pos, valid_zombie, p_is_giant, 0.0)
 		)
 		return
 	var proj: Projectile = projectile_scene.instantiate()
 	var spawn_pos = global_position + Vector2(10.0, -25.0)
 	var dmg = 300.0 if p_is_giant else 40.0
-	proj.setup_lobbed(p_row, spawn_pos, p_target_pos, p_target_zombie, dmg, p_is_giant)
+	proj.setup_lobbed(p_row, spawn_pos, p_target_pos, valid_zombie, dmg, p_is_giant)
 	var proj_container = lawn.get_node_or_null("Projectiles")
 	if proj_container:
 		proj_container.add_child(proj)

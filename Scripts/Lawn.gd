@@ -755,7 +755,11 @@ func _trigger_game_over(breaching_zombie: Zombie = null) -> void:
 	if zombies_container:
 		for z in zombies_container.get_children():
 			if z is Zombie and is_instance_valid(z):
-				z.speed = 0.0
+				z.walk_speed = 0.0
+				z.set_process(false)
+				var spr = z.get_node_or_null("XFLSprite2D")
+				if spr:
+					spr.set_process(false)
 
 	_setup_game_over_dialog()
 

@@ -66,14 +66,14 @@ func setup_straight(p_row: int, p_pos: Vector2, p_damage: float = 20.0, p_is_gia
 	if is_node_ready():
 		_apply_sprite_config()
 
-func setup_lobbed(p_row: int, p_start: Vector2, p_target: Vector2, p_target_zombie: Node2D = null, p_damage: float = 40.0, p_is_giant: bool = false) -> void:
+func setup_lobbed(p_row: int, p_start: Vector2, p_target: Vector2, p_target_zombie = null, p_damage: float = 40.0, p_is_giant: bool = false) -> void:
 	trajectory = Trajectory.LOBBED
 	projectile_type = "cabbage_giant" if p_is_giant else "cabbage"
 	row = p_row
 	global_position = p_start
 	start_pos = p_start
 	target_pos = p_target
-	target_zombie = p_target_zombie
+	target_zombie = p_target_zombie if (p_target_zombie != null and is_instance_valid(p_target_zombie) and not p_target_zombie.is_queued_for_deletion()) else null
 	damage = p_damage
 	lob_time = 0.0
 
